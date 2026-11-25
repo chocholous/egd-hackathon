@@ -1,0 +1,26 @@
+201 25546f31-28e7-f111-84ea-000d3a832204 Stopped
+{
+  "Recurrence": {
+    "recurrence": {
+      "frequency": "Week",
+      "interval": 1,
+      "timeZone": "Central Europe Standard Time",
+      "schedule": {
+        "weekDays": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "hours": [
+          "6"
+        ],
+        "minutes": [
+          0
+        ]
+      }
+    },
+    "type": "Recurrence"
+  }
+}

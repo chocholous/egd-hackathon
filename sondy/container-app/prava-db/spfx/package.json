@@ -1,0 +1,33 @@
+{
+  "name": "egd-prava-db-spfx",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.14.0 < 23.0.0"
+  },
+  "scripts": {
+    "build": "heft build --clean --production && heft package-solution --production",
+    "start": "heft start --clean",
+    "clean": "heft clean"
+  },
+  "dependencies": {
+    "@microsoft/sp-component-base": "1.23.2",
+    "@microsoft/sp-core-library": "1.23.2",
+    "@microsoft/sp-http": "1.23.2",
+    "@microsoft/sp-property-pane": "1.23.2",
+    "@microsoft/sp-webpart-base": "1.23.2",
+    "tslib": "2.3.1"
+  },
+  "devDependencies": {
+    "@microsoft/sp-module-interfaces": "1.23.2",
+    "@microsoft/spfx-heft-plugins": "1.23.2",
+    "@microsoft/spfx-web-build-rig": "1.23.2",
+    "@rushstack/heft": "1.2.17",
+    "@types/webpack-env": "~1.15.2",
+    "css-loader": "~7.1.2",
+    "typescript": "~5.8.0"
+  },
+  "overrides": {
+    "@rushstack/heft": "1.2.17"
+  }
+}

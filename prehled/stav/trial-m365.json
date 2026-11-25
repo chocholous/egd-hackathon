@@ -1,0 +1,23 @@
+{
+  "nazev": "Trial M365 / licence po E5",
+  "stav": "hotovo",
+  "popis": "Nahrazeno úkolem lab-trial: Business Standard EEA do 23. 12., autoRenew Off",
+  "oblast": "lab",
+  "kdo": "Pavel",
+  "vystup": "06-azure-inventar.md",
+  "aktualizovano": "2026-11-24T20:43:38Z",
+  "zacatek": "2026-11-22T18:17:14Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-22T18:34:47Z",
+      "stav": "ceka",
+      "popis": "Plán variant hotový v 07-lab-trial-plan.md, čeká na výběr varianty Pavlem (session lab-trial)"
+    },
+    {
+      "t": "2026-11-24T20:43:38Z",
+      "stav": "hotovo",
+      "popis": "Nahrazeno úkolem lab-trial: Business Standard EEA do 23. 12., autoRenew Off"
+    }
+  ]
+}

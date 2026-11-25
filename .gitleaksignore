@@ -1,0 +1,28 @@
+# Falešné poplachy: appId / object ID aplikací (GUID), ne tajemství. Ověřeno 24. 11.
+sondy/container-app/obo/dukazy/entra-stav.txt:generic-api-key:2
+sondy/container-app/obo/dukazy/entra-stav.txt:generic-api-key:3
+sondy/container-app/obo/stav.json:generic-api-key:2
+sondy/container-app/obo/stav.json:generic-api-key:3
+# Falešné poplachy katalog-funkci (24. 11.): apikey = veřejné instrumentační klíče telemetrie Microsoftu (1DS, client-id=NO_AUTH) v síťových záznamech prohlížeče; apiAppId = appId aplikací (GUID).
+sondy/katalog-funkci/dukazy/karty/mail/egd10-inbox/klik.json:generic-api-key:35
+sondy/katalog-funkci/dukazy/karty/mail/egd10-inbox/klik.json:generic-api-key:41
+sondy/katalog-funkci/dukazy/karty/obo-egd09/klik.json:generic-api-key:75
+sondy/katalog-funkci/dukazy/karty/obo-egd09/klik.json:generic-api-key:81
+sondy/katalog-funkci/dukazy/karty/vlastnik-egd09/klik.json:generic-api-key:72
+sondy/katalog-funkci/dukazy/karty/vlastnik-egd09/klik.json:generic-api-key:78
+sondy/katalog-funkci/dukazy/karty/vlastnik-egd09/klik.json:generic-api-key:84
+sondy/katalog-funkci/dukazy/karty/vlastnik-egd09/prava/klik.json:generic-api-key:66
+sondy/katalog-funkci/dukazy/karty/vzhled-egd09-data/klik.json:generic-api-key:46
+sondy/katalog-funkci/dukazy/karty/vzhled-egd09-data/klik.json:generic-api-key:52
+sondy/katalog-funkci/dukazy/karty/vzhled-egd09/klik.json:generic-api-key:69
+sondy/katalog-funkci/texty.py:generic-api-key:144
+sondy/katalog-funkci/texty.py:generic-api-key:185
+sondy/katalog-funkci/texty.py:generic-api-key:269
+sondy/katalog-funkci/texty.py:generic-api-key:90
+sondy/copilot-nativni/dukazy/p3/klik.json:generic-api-key:35
+sondy/katalog-funkci/dukazy/copilot-licence/egd10-3/klik.json:generic-api-key:134
+sondy/katalog-funkci/dukazy/karty/copilot-licence/kontrola/klik.json:generic-api-key:41
+sondy/katalog-funkci/dukazy/karty/copilot-licence/kontrola/klik.json:generic-api-key:47
+sondy/katalog-funkci/dukazy/karty/obo-copilot-egd09/klik.json:generic-api-key:73
+sondy/katalog-funkci/dukazy/karty/obo-copilot-egd09/klik.json:generic-api-key:79
+sondy/katalog-funkci/dukazy/karty/obo-copilot-egd09/klik.json:generic-api-key:85

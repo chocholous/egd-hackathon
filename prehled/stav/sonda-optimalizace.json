@@ -1,0 +1,53 @@
+{
+  "nazev": "Sonda: optimalizace SharePoint seznamů",
+  "stav": "hotovo",
+  "popis": "Hotovo: sondy/optimalizace-seznamu.md",
+  "oblast": "sondy",
+  "kdo": "agent Sonnet",
+  "vystup": "sondy/optimalizace-seznamu.md",
+  "aktualizovano": "2026-11-22T20:04:30Z",
+  "zacatek": "2026-11-22T19:03:37Z",
+  "kroky": 8,
+  "historie": [
+    {
+      "t": "2026-11-22T19:03:37Z",
+      "stav": "bezi",
+      "popis": "Čtu podklady, zakládám web"
+    },
+    {
+      "t": "2026-11-22T19:05:15Z",
+      "stav": "bezi",
+      "popis": "Web a seznam Velky založeny, plním 12000 položek"
+    },
+    {
+      "t": "2026-11-22T19:10:54Z",
+      "stav": "bezi",
+      "popis": "Velky=12000 položek (38 pol/s přes $batch); měřím REST/CAML"
+    },
+    {
+      "t": "2026-11-22T19:14:26Z",
+      "stav": "bezi",
+      "popis": "REST+CAML hotovo (RLDAS tiše ořezává na 5000); měřím stránkování, agregace"
+    },
+    {
+      "t": "2026-11-22T19:26:22Z",
+      "stav": "bezi",
+      "popis": "REST/CAML/agregace/změny/zápis změřeno; Graph (vlastní Entra app) a Search běží"
+    },
+    {
+      "t": "2026-11-22T19:34:54Z",
+      "stav": "bezi",
+      "popis": "Hotovo: REST/CAML/Graph/složky/sync/zápis. Čekám na crawl Search (index zpožděný >30 min)"
+    },
+    {
+      "t": "2026-11-22T19:44:37Z",
+      "stav": "bezi",
+      "popis": "Měření hotové kromě Search lagu (index mého webu je v backlogu); píšu výstupní dokument"
+    },
+    {
+      "t": "2026-11-22T20:04:30Z",
+      "stav": "hotovo",
+      "popis": "Hotovo: sondy/optimalizace-seznamu.md"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+repliky pred klikem: 0
+2026-11-24T02:02:33Z
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+locator.click: Timeout 90000ms exceeded.
+Call log:
+  - waiting for getByRole('button', { name: 'PDF přes LibreOffice a poslat mailem' })
+
+    at /Users/chocholous/Projects/egd-workshop/tools/maily-spo-klik.mjs:52:74 {
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.5
+--- 2. pokus (1. pokus: stary bundle, tlacitko nenalezeno)
+repliky pred klikem: 0
+2026-11-24T02:04:15Z
+[console] [c1] prevod 34988 ms (server 1085 ms), 18297 B
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 24822
+adresát vyplněn do #pdf-komu: eva.vesela@pavelchocholousgmail.onmicrosoft.com | sendMail: 202 | od kliku 35480 ms
+výsledek v UI: Odesláno: spokojenost-lo-2026-11-24.pdf (18297 B) na eva.vesela@pavelchocholousgmail.onmicrosoft.com.

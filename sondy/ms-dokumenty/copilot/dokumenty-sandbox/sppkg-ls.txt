@@ -1,0 +1,1 @@
+-rw-r--r--@ 1 chocholous  staff  991044 Nov 22 20:59 /var/folders/l0/02qchlk94l3d7cf7x8z0p2340000gn/T/copilot-dok-LkTL/home/egd-workshop/appka/sharepoint/solution/appka.sppkg

@@ -1,0 +1,100 @@
+ ● Copilot Fusion selected MAI Code 2 Flash because it was the best choice out of the models
+   available in your plan.
+
+ ● skill(egd-externi-api)
+
+Ověřím obě adresy z pohledu přesně proti adresy vašeho SharePointu, abych nerozlišoval jen globální a browser-ověřený CORS.
+
+ ✗ Shell Check CNB preflight respo… /bin/bash: curl.exe: command not found Failed with exit code 127
+   curl.exe -sS -D - -o /dev/null -X OPTIONS -H "Origin:
+   ]8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;" -H "Access-Control-Request-Method: GET" ]8;;
+   "]8;id=md-ufqqa2;https://api.cnb.cz/cnbapi/exrates/daily?lang=CZhttps://api.cnb.cz/cnbapi/exrates/daily?lang=CZ]8;;]8;;"]8;;
+
+ ✗ Shell Check ARES preflight resp… /bin/bash: curl.exe: command not found Failed with exit code 127
+   curl.exe -sS -D - -o /dev/null -X OPTIONS -H "Origin:
+   ]8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;" -H "Access-Control-Request-Method: GET" ]8;;
+   "]8;id=md-1aq9i89;https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041]8;;]8;;"]8;;
+
+ ✗ Shell Check CNB CORS response h… /bin/bash: curl.exe: command not found Failed with exit code 127
+   curl.exe -sS -D - -o /dev/null -H "Origin: ]8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;" ]8;;
+   "]8;id=md-ufqqa2;https://api.cnb.cz/cnbapi/exrates/daily?lang=CZhttps://api.cnb.cz/cnbapi/exrates/daily?lang=CZ]8;;]8;;"]8;;
+
+ ✗ Shell Check ARES CORS response … /bin/bash: curl.exe: command not found Failed with exit code 127
+   curl.exe -sS -D - -o /dev/null -H "Origin: ]8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;" ]8;;
+   "]8;id=md-1aq9i89;https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041]8;;]8;;"]8;;
+
+Na tomto macOS prostředí není dostupný Windows alias `curl.exe`; zopakuji stejnou kontrolu přímo přes `curl`, což má u tohoto testu stejnou funkci.
+
+ $ Shell Check CNB preflight with curl 7 lines…
+   curl -sS -D - -o /dev/null -X OPTIONS -H "Origin: ]8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;" -H]8;;
+   "Access-Control-Request-Method: GET" "]8;id=md-ufqqa2;https://api.cnb.cz/cnbapi/exrates/daily?lang=CZhttps://api.cnb.cz/cnbapi/exrates/daily?lang=CZ]8;;]8;;"]8;;
+
+ $ Shell Check ARES preflight with curl 20 lines…
+   curl -sS -D - -o /dev/null -X OPTIONS -H "Origin: ]8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;" -H]8;;
+   "Access-Control-Request-Method: GET"
+   "]8;id=md-1aq9i89;https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041]8;;]8;;"]8;;
+
+ $ Shell Check ARES CORS response with curl 16 lines…
+   curl -sS -D - -o /dev/null -H "Origin: ]8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;" ]8;;
+   "]8;id=md-1aq9i89;https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041]8;;]8;;"]8;;
+
+ $ Shell Check CNB CORS response with curl 8 lines…
+   curl -sS -D - -o /dev/null -H "Origin: ]8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;" ]8;;
+   "]8;id=md-ufqqa2;https://api.cnb.cz/cnbapi/exrates/daily?lang=CZhttps://api.cnb.cz/cnbapi/exrates/daily?lang=CZ]8;;]8;;"]8;;
+
+**Výsledek:** ARES načíst přímo z SharePoint web partu můžete. ČNB API přímo z prohlížeče nefunguje kvůli CORS.
+
+| Zdroj | Z appky | Důvod |
+|---|---|---|
+| ARES | **Ano** | `access-control-allow-origin: *`, preflight `GET` povolen |
+| ČNB | **Ne** | odpověď nemá `Access-Control-Allow-Origin`; preflight vrací `403` |
+
+Nic na SharePointu ani SPFx zapínat není nutné.
+
+## ARES
+
+Ve web partu použijte `this.context.httpClient` místo obyčejného `fetch`:
+
+```ts
+import { HttpClient } from '@microsoft/sp-http';
+
+const url =
+  'https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041';
+
+const response = await this.context.httpClient.get(
+  url,
+  HttpClient.configurations.v1
+);
+
+if (!response.ok) {
+  throw new Error(`ARES vrátil ${response.status}`);
+}
+
+const firma = await response.json();
+```
+
+Výsledek lze zobrazit například jako `firma.obchodniJmeno` a adresu ze `firma.sidlo.textovaAdresa`. Typy přesná jsou, ale názvy odpovědi ověřte podle JSON.
+
+V konzoli Firefox/Chrome by nemělo být `blocked by CORS policy`.
+
+## ČNB
+
+ČNB nelze načíst přímo z SPFx, ani přidáním CORS nastavení ve SharePointu. Potřebujete jednu z variant:
+
+1. **Azure Container Apps Job** — doporučená varianta pro průběžné aktualizace. Stahuje kurzy na serveru a zapisuje je do SharePoint seznamu.
+2. **Ruční data** — každý pracovní den stáhnout kurzy a vložit je do SharePoint seznamu, který appka pouze čte.
+3. **Power Automate** — teoreticky možné, ale akce HTTP bývá Premium a trial/licenci je nutné ověřit u IT.
+
+Pro appku je nejspolehlivější vzor: **server nebo ruční import → SharePoint seznam → web part seznam čte**.
+
+Věta pro IT:
+
+> „Pro aplikaci na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty potřebujeme pravidelně stahovat veřejná denní data z https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ. Zdroj nepovoluje volání z prohlížeče kvůli CORS, proto prosím o Azure prostředek (Container Apps Job) s identitou, která smí zapisovat jen do určeného SharePoint seznamu na tomto webu přes Microsoft Graph `Sites.Selected`, nebo o licenci Power Automate Premium pro jeden flow.“
+
+Session exported to: /var/folders/l0/02qchlk94l3d7cf7x8z0p2340000gn/T/copilot-ucastnik-UEYt4W/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 0.39 (30s)
+Tokens     ↑ 80.6k (56.3k cached) • ↓ 1.8k (298 reasoning)
+Resume     copilot --resume=88ee7248-84f0-49f2-b3dd-f882073feda6

@@ -1,0 +1,28 @@
+{
+  "nazev": "Matice variant × Galíkovy body",
+  "stav": "hotovo",
+  "popis": "132 buněk: ✅36 ❌13 🔒9 ⛔3 DÍRA30; top: 7.2 Job, 3.2 úprava, Premium, Copilot API do 25. 11. 08:31",
+  "oblast": "prehled",
+  "kdo": "matice-variant",
+  "vystup": "prehled/varianty.md",
+  "aktualizovano": "2026-11-24T01:53:32Z",
+  "zacatek": "2026-11-24T01:49:33Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-24T01:49:33Z",
+      "stav": "bezi",
+      "popis": "inventura důkazů"
+    },
+    {
+      "t": "2026-11-24T01:51:29Z",
+      "stav": "bezi",
+      "popis": "píšu matici (37 položek × 6 variant)"
+    },
+    {
+      "t": "2026-11-24T01:53:32Z",
+      "stav": "hotovo",
+      "popis": "132 buněk: ✅36 ❌13 🔒9 ⛔3 DÍRA30; top: 7.2 Job, 3.2 úprava, Premium, Copilot API do 25. 11. 08:31"
+    }
+  ]
+}

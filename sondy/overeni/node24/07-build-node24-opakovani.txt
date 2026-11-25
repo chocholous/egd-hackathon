@@ -1,0 +1,6 @@
+# opakování: appka.mjs build, Node v24.22.3 2026-11-24T09:53:44Z
+Stavim balicek (npm run build, Heft; minuta az dve)...
+[OK]      balicek: /Users/chocholous/Projects/egd-workshop/sondy/overeni/node24/prvni-appka/sharepoint/solution/prvni-appka.sppkg (12062 B, verze 1.0.0.0)
+real 14.09
+user 10.26
+sys 2.66

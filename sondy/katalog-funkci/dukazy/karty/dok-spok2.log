@@ -1,0 +1,39 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/dokumenty.aspx
+[3.9s] OK wait:3000  
+[12.6s] OK rozbal  
+8 zón
+[12.7s] OK click:Word  
+[21.7s] OK wait:9000  
+[21.7s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').querySelector('#log').innerText  
+HOTOVO docx
+[21.9s] OK click:PDF (z Wordu)  
+[33.9s] OK wait:12000  
+[33.9s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').querySelector('#log').innerText  
+HOTOVO graphpdf
+[33.9s] OK click:PDF (pdf-lib)  
+[42.0s] OK wait:8000  
+[42.0s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').querySelector('#log').innerText  
+HOTOVO pdf
+[42.0s] OK click:Excel  
+[50.0s] OK wait:8000  
+[50.0s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').querySelector('#log').innerText  
+HOTOVO xlsx
+[50.1s] OK click:PowerPoint  
+[58.1s] OK wait:8000  
+[58.1s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').querySelector('#log').innerText  
+HOTOVO pptx
+[58.1s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').querySelector('#log').scrollIntoView({block:'center'})  {"interrupted":false}
+[58.2s] OK shotv:02-egd09-export-log  
+dukazy/karty/dok-spokojenost/02-egd09-export-log.png
+[58.3s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Revize')/items?$select
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Dokumenty')/rootFolder
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 302 https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc89

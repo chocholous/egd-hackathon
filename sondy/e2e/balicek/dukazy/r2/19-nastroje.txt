@@ -1,0 +1,16 @@
+Skill: egd-pripravenost
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && ls "$S" && node -v && node "$S" nastroje > .nastroje.log 2>&1; echo "rc=$?"; cat .nastroje.log | t
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && for c in npm sit varianty; do echo "=== $c"; node "$S" $c > .$c.log 2>&1; echo "rc=$?"; tail -40 .
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && node "$S" cli-instalace > .cli.log 2>&1; echo "rc=$?"; tail -30 .cli.log; node "$S" spfx > .spfx.l
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && W=https://pavelchocholousgmail.sharepoint.com/sites/egd10-test && node "$S" prihlaseni > .prih.log
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && W=https://pavelchocholousgmail.sharepoint.com/sites/egd10-test && node "$S" zkouska --web "$W" --j
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && W=https://pavelchocholousgmail.sharepoint.com/sites/egd10-test && node "$S" zkouska --web "$W" --j
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && node "$S" --help 2>&1 | tail -50; rg -n "tenant" "$S" | head -40; echo ----; cat pripravenost-e2e-
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && W=https://pavelchocholousgmail.sharepoint.com/sites/egd10-test && T=pavelchocholousgmail.onmicroso
+Bash: S=.claude/skills/egd-pripravenost/scripts/pripravenost.mjs && W=https://pavelchocholousgmail.sharepoint.com/sites/egd10-test && T=pavelchocholousgmail.onmicroso
+Skill: egd-prvni-appka
+Bash: A=.claude/skills/egd-prvni-appka/scripts/appka.mjs && ls "$A" && node "$A" cesta 2>&1 | tail -20
+Bash: A=.claude/skills/egd-prvni-appka/scripts/appka.mjs && printf '\nZnacka appky: EG.D\nRezim appky: open\n' >> pripravenost-e2e-balicek2.md && node "$A" novy --slo
+Bash: A=.claude/skills/egd-prvni-appka/scripts/appka.mjs && W=https://pavelchocholousgmail.sharepoint.com/sites/egd10-test && node "$A" build --slozka prvni-appka > .
+Bash: A=.claude/skills/egd-prvni-appka/scripts/appka.mjs && W=https://pavelchocholousgmail.sharepoint.com/sites/egd10-test && node "$A" seznam --web "$W" --slozka prv
+Bash: A=.claude/skills/egd-prvni-appka/scripts/appka.mjs && W=https://pavelchocholousgmail.sharepoint.com/sites/egd10-test && node "$A" nasadit --web "$W" --slozka pr

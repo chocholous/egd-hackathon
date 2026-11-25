@@ -1,0 +1,39 @@
+{"step": "add", "who": "zadavatel1", "status": 201, "err": ""}
+{"step": "add", "who": "zadavatel1", "status": 201, "err": ""}
+{"step": "add", "who": "zadavatel2", "status": 201, "err": ""}
+{"step": "add", "who": "zadavatel2", "status": 201, "err": ""}
+{"step": "ids", "zadavatel1": [1, 2], "zadavatel2": [3, 4], "admin": [5]}
+{"who": "zadavatel1", "upn": "tomas.prochazka", "read_status": 200, "sees": ["zadavatel1 #0", "zadavatel1 #1"], "list_perms": ["ViewListItems", "AddListItems", "EditListItems", "DeleteListItems", "OpenItems", "ViewVersions", "ViewFormPages", "Open", "ViewPages", "BrowseUserInfo"], "list_perms_ManageLists": false, "add": 201, "read_foreign_direct": 404, "edit_foreign": 404, "edit_foreign_err": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel.", "edit_own": "OK", "delete_own": "OK", "delete_foreign(admin polozka)": 404}
+{"who": "zadavatel2", "upn": "jakub.kucera", "read_status": 200, "sees": ["zadavatel2 #0", "zadavatel2 #1"], "list_perms": ["ViewListItems", "AddListItems", "EditListItems", "DeleteListItems", "OpenItems", "ViewVersions", "ViewFormPages", "Open", "ViewPages", "BrowseUserInfo"], "list_perms_ManageLists": false, "add": 201, "read_foreign_direct": 404, "edit_foreign": 404, "edit_foreign_err": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel.", "edit_own": "OK", "delete_own": "OK", "delete_foreign(admin polozka)": 404}
+{"who": "schvalovatel", "upn": "eva.vesela", "read_status": 200, "sees": ["zadavatel1 #0", "zadavatel1 #1", "zadavatel2 #0", "zadavatel2 #1", "admin polozka"], "list_perms": ["ViewListItems", "AddListItems", "EditListItems", "DeleteListItems", "OpenItems", "ViewVersions", "CancelCheckout", "ViewFormPages", "Open", "ViewPages", "BrowseUserInfo"], "list_perms_ManageLists": false, "add": 201, "read_foreign_direct": 200, "edit_foreign": "OK", "edit_foreign_err": "", "edit_own": "OK", "delete_own": "OK", "delete_foreign(admin polozka)": "OK (smazáno!)"}
+{"who": "schvalovatel_edit", "upn": "martina.cerna", "read_status": 200, "sees": [], "list_perms": ["ViewListItems", "AddListItems", "EditListItems", "DeleteListItems", "OpenItems", "ViewVersions", "ManageLists", "ViewFormPages", "Open", "ViewPages", "BrowseUserInfo", "UseClientIntegration", "UseRemoteAPIs"], "list_perms_ManageLists": true, "add": 201, "read_foreign_direct": 404, "edit_foreign": 404, "edit_foreign_err": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel.", "edit_own": "OK", "delete_own": "OK", "delete_foreign(admin polozka)": 404}
+{"who": "spravce", "upn": "petra.novakova", "read_status": 200, "sees": ["zadavatel1 #0", "zadavatel1 #1", "zadavatel2 #0", "zadavatel2 #1", "admin polozka"], "list_perms": ["ViewListItems", "AddListItems", "EditListItems", "DeleteListItems", "ApproveItems", "OpenItems", "ViewVersions", "CancelCheckout", "ManageLists", "ViewFormPages", "Open", "ViewPages", "ManagePermissions", "BrowseUserInfo", "UseClientIntegration", "UseRemoteAPIs"], "list_perms_ManageLists": true, "add": 201, "read_foreign_direct": 200, "edit_foreign": "OK", "edit_foreign_err": "", "edit_own": "OK", "delete_own": "OK", "delete_foreign(admin polozka)": null}
+Traceback (most recent call last):
+  File "/Users/chocholous/Projects/egd-workshop/tools/data-prava-sp.py", line 359, in <module>
+    main()
+    ~~~~^^
+  File "/Users/chocholous/Projects/egd-workshop/tools/data-prava-sp.py", line 355, in main
+    globals()["cmd_" + a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/chocholous/Projects/egd-workshop/tools/data-prava-sp.py", line 215, in cmd_matrix
+    s, j = req("POST", "/_api/web/lists/getbytitle('Zadosti')/items", {"Title": f"{who} novy"}, who=who)
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chocholous/Projects/egd-workshop/tools/data-prava-sp.py", line 79, in req
+    _dig[key] = json.load(urllib.request.urlopen(r))["FormDigestValue"]
+                          ~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 495, in open
+    response = meth(req, response)
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 403: Forbidden

@@ -1,0 +1,22 @@
+{
+  "nazev": "Doporučení cest",
+  "stav": "hotovo",
+  "popis": "Nahrazeno maticí prehled/varianty.md a katalogem funkcí egd-ukazky",
+  "oblast": "sondy",
+  "kdo": "hlavní session",
+  "aktualizovano": "2026-11-24T20:43:38Z",
+  "zacatek": "2026-11-22T18:15:54Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-22T18:34:47Z",
+      "stav": "planovano",
+      "popis": "Čeká na dokončení sondy AI (ostatní 3 sondy hotové)"
+    },
+    {
+      "t": "2026-11-24T20:43:38Z",
+      "stav": "hotovo",
+      "popis": "Nahrazeno maticí prehled/varianty.md a katalogem funkcí egd-ukazky"
+    }
+  ]
+}

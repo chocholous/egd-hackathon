@@ -1,0 +1,165 @@
+<title>Návrhy z auditu EG.D</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: souhrn a filtr nahoře, pod tím karty návrhů seřazené podle závažnosti; každá karta má rozhodnutí vpravo dole. */
+:root {
+  --bg: #f5f5fa; --surface: #ffffff; --fg: #17162c; --muted: #5e5d78; --line: #dcdbea;
+  --accent: #3b2fd1; --accent-soft: #ebe9ff;
+  --hi: #b3261e; --hi-bg: #fbe6e4; --mid: #9a5b00; --mid-bg: #fdf0d9; --lo: #4d5a6e; --lo-bg: #e9edf3;
+  --ok: #1f7a4d; --ok-bg: #e2f3e9; --no: #6b6a80; --no-bg: #ececf1;
+  --f-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --f-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #100f1e; --surface: #1a192f; --fg: #ecebf7; --muted: #a4a2c0; --line: #2e2c4a;
+  --accent: #9b92ff; --accent-soft: #262163;
+  --hi: #ff9b92; --hi-bg: #45201d; --mid: #f3c46b; --mid-bg: #3d2e10; --lo: #b3c0d6; --lo-bg: #232a38;
+  --ok: #7fd8a6; --ok-bg: #163a28; --no: #a9a8bd; --no-bg: #2a2940; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #100f1e; --surface: #1a192f; --fg: #ecebf7; --muted: #a4a2c0; --line: #2e2c4a;
+  --accent: #9b92ff; --accent-soft: #262163;
+  --hi: #ff9b92; --hi-bg: #45201d; --mid: #f3c46b; --mid-bg: #3d2e10; --lo: #b3c0d6; --lo-bg: #232a38;
+  --ok: #7fd8a6; --ok-bg: #163a28; --no: #a9a8bd; --no-bg: #2a2940; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--f-body); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
+h1 { font-family: var(--f-display); font-weight: 600; font-size: 1.75rem; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 6px 0 0; max-width: 68ch; }
+.summary { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill { display: inline-flex; align-items: baseline; gap: 6px; padding: 4px 12px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--surface); font-size: .85rem; }
+.pill b { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.filters button { font: inherit; font-size: .84rem; padding: 4px 11px; border-radius: 999px; border: 1px solid var(--line);
+  background: transparent; color: var(--muted); cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+button:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.list { display: grid; gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: grid; gap: 10px; min-width: 0; }
+.card.done-ano { border-color: var(--ok); }
+.card.done-ne { opacity: .72; }
+.head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+.id { font-family: var(--f-mono); font-size: .78rem; color: var(--muted); }
+.sev { font-size: .74rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding: 2px 8px; border-radius: 4px; }
+.sev.vysoka { color: var(--hi); background: var(--hi-bg); } .sev.stredni { color: var(--mid); background: var(--mid-bg); } .sev.nizka { color: var(--lo); background: var(--lo-bg); }
+.area { font-size: .78rem; color: var(--accent); background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; }
+.card h2 { font-size: 1.02rem; font-weight: 600; margin: 0; text-wrap: balance; flex-basis: 100%; }
+.where { font-family: var(--f-mono); font-size: .78rem; color: var(--muted); overflow-wrap: anywhere; }
+dl { margin: 0; display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 6px 12px; font-size: .92rem; }
+dt { color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; padding-top: 2px; }
+dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 560px) { dl { grid-template-columns: minmax(0, 1fr); } dt { padding-top: 6px; } }
+.decide { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; border-top: 1px dashed var(--line); padding-top: 10px; }
+.decide button { font: inherit; font-size: .86rem; padding: 5px 12px; border-radius: 6px; border: 1px solid var(--line);
+  background: transparent; color: var(--fg); cursor: pointer; }
+.decide button[data-v="ano"][aria-pressed="true"] { background: var(--ok); border-color: var(--ok); color: #fff; }
+.decide button[data-v="ne"][aria-pressed="true"] { background: var(--no); border-color: var(--no); color: #fff; }
+.decide button[data-v="jinak"][aria-pressed="true"] { background: var(--mid); border-color: var(--mid); color: #fff; }
+.decide button:disabled { opacity: .5; cursor: default; }
+.decide textarea { flex: 1 1 260px; min-width: 0; font: inherit; font-size: .88rem; padding: 6px 8px; border-radius: 6px;
+  border: 1px solid var(--line); background: var(--bg); color: var(--fg); resize: vertical; min-height: 34px; }
+.saved { font-size: .78rem; color: var(--muted); font-family: var(--f-mono); }
+.empty, .note { color: var(--muted); font-size: .88rem; }
+.bulk { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.bulk button { font: inherit; font-size: .84rem; padding: 5px 12px; border-radius: 6px; border: 1px solid var(--ok); color: var(--ok); background: transparent; cursor: pointer; }
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Návrhy z auditu před workshopem</h1>
+    <p class="sub">Nesrovnalosti v README, přehledu připravenosti a přehledu prací, nalezené 24. 11. večer. U každého návrhu: co je špatně, jak to opravit a co se stane, když se to neopraví. Nic se nemění, dokud návrh neschválíš. Rozhodnutí se ukládá hned po kliknutí a Claude ho přečte.</p>
+  </header>
+  <div class="summary" id="summary"></div>
+  <div class="filters" id="filters" role="group" aria-label="Filtr podle oblasti"></div>
+  <div class="bulk" id="bulk" hidden>
+    <button type="button" id="bulk-ano">Schválit všechny zbývající v tomto filtru</button>
+    <span class="note">Jen ty, u kterých ještě není rozhodnutí.</span>
+  </div>
+  <main class="list" id="list"><p class="empty" id="loading">Načítám návrhy… Pokud se nic neobjeví, Claude je sem ještě nezapsal.</p></main>
+  <p class="note" id="note">Rozhodovat může jen vlastník stránky. Ostatní vidí návrhy jen pro čtení.</p>
+</div>
+
+<script>
+const SEV = { vysoka: ["vysoká", 0], stredni: ["střední", 1], nizka: ["nízká", 2] };
+const VOL = { ano: "Schválit", ne: "Zamítnout", jinak: "Jinak (viz poznámka)" };
+let navrhy = [], rozh = {}, filtr = "vše", db = null, muze = false;
+const $ = id => document.getElementById(id);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+
+async function uloz(id, patch) {
+  if (!db || !muze) return;
+  const cur = rozh[id] || {};
+  const data = { ...cur, ...patch, t: new Date().toISOString() };
+  rozh[id] = data; render();
+  try { await db.doc("rozhodnuti/" + id).set(data); }
+  catch (e) { const n = $("note"); n.textContent = "Uložení se nepovedlo (" + (e && e.code || "chyba") + "). Zkus to znovu."; }
+}
+
+function render() {
+  const oblasti = ["vše", ...new Set(navrhy.map(n => n.oblast).filter(Boolean))];
+  const f = $("filters"); f.replaceChildren();
+  oblasti.forEach(o => { const b = el("button", "", o); b.type = "button"; b.setAttribute("aria-pressed", String(o === filtr));
+    b.onclick = () => { filtr = o; render(); }; f.append(b); });
+  const vis = navrhy.filter(n => filtr === "vše" || n.oblast === filtr)
+    .sort((a, b) => (SEV[a.zavaznost]?.[1] ?? 3) - (SEV[b.zavaznost]?.[1] ?? 3) || String(a.id).localeCompare(String(b.id), "cs", { numeric: true }));
+  const s = $("summary"); s.replaceChildren();
+  const cnt = k => navrhy.filter(n => (rozh[n.id] || {}).volba === k).length;
+  const bez = navrhy.filter(n => !(rozh[n.id] || {}).volba).length;
+  [["Návrhů", navrhy.length], ["Bez rozhodnutí", bez], ["Schváleno", cnt("ano")], ["Zamítnuto", cnt("ne")], ["Jinak", cnt("jinak")]]
+    .forEach(([l, v]) => { const p = el("span", "pill"); p.append(el("span", "", l), el("b", "", String(v))); s.append(p); });
+  $("bulk").hidden = !muze || !vis.some(n => !(rozh[n.id] || {}).volba);
+  const list = $("list"); list.replaceChildren();
+  if (!vis.length) { list.append(el("p", "empty", "V tomto filtru nic.")); return; }
+  vis.forEach(n => {
+    const r = rozh[n.id] || {};
+    const c = el("article", "card" + (r.volba === "ano" ? " done-ano" : r.volba === "ne" ? " done-ne" : ""));
+    const h = el("div", "head");
+    h.append(el("span", "id", n.id));
+    if (SEV[n.zavaznost]) h.append(el("span", "sev " + n.zavaznost, SEV[n.zavaznost][0]));
+    if (n.oblast) h.append(el("span", "area", n.oblast));
+    h.append(el("h2", "", n.nazev || ""));
+    c.append(h);
+    if (n.kde) c.append(el("div", "where", n.kde));
+    const dl = el("dl");
+    [["Co je špatně", n.problem], ["Návrh", n.navrh], ["Dopad", n.dopad], ["Důkaz", n.dukaz]].forEach(([k, v]) => {
+      if (!v) return; dl.append(el("dt", "", k), el("dd", "", v)); });
+    c.append(dl);
+    const d = el("div", "decide");
+    Object.entries(VOL).forEach(([k, l]) => { const b = el("button", "", l); b.type = "button"; b.dataset.v = k;
+      b.setAttribute("aria-pressed", String(r.volba === k)); b.disabled = !muze; b.onclick = () => uloz(n.id, { volba: k }); d.append(b); });
+    const ta = el("textarea"); ta.id = "pozn-" + n.id; ta.placeholder = "Poznámka (volitelně)"; ta.value = r.poznamka || ""; ta.disabled = !muze;
+    ta.setAttribute("aria-label", "Poznámka k návrhu " + n.id);
+    ta.onchange = () => uloz(n.id, { poznamka: ta.value });
+    d.append(ta);
+    if (r.t) d.append(el("span", "saved", "uloženo " + new Date(r.t).toLocaleString("cs-CZ", { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" })));
+    c.append(d);
+    list.append(c);
+  });
+}
+
+$("bulk-ano").onclick = () => {
+  navrhy.filter(n => (filtr === "vše" || n.oblast === filtr) && !(rozh[n.id] || {}).volba).forEach(n => uloz(n.id, { volba: "ano" }));
+};
+
+(async () => {
+  const timer = setTimeout(() => { const l = $("loading"); if (l) l.textContent = "Návrhy se nepodařilo načíst. Otevři stránku znovu přihlášený v claude.ai."; }, 10000);
+  db = await claude.use("db");
+  const user = await claude.use("user");
+  muze = (await user?.isOwner()) ?? false;
+  if (!muze) $("note").textContent = "Jsi tu jen pro čtení: rozhodovat může vlastník stránky.";
+  else $("note").textContent = "Rozhodnutí se ukládá hned po kliknutí. Poznámka se uloží, když z pole odejdeš.";
+  if (!db) { clearTimeout(timer); $("loading").textContent = "Návrhy jsou vidět jen přihlášeným v claude.ai."; return; }
+  db.collection("rozhodnuti").onSnapshot(snap => {
+    rozh = {}; snap.docs.forEach(d => { rozh[d.id] = d.data() || {}; }); render();
+  }, () => {});
+  db.collection("navrhy").onSnapshot(snap => {
+    clearTimeout(timer);
+    navrhy = snap.docs.map(d => ({ id: d.id, ...(d.data() || {}) }));
+    if (!navrhy.length) { $("list").replaceChildren(el("p", "empty", "Zatím žádné návrhy. Claude je sem zapíše po dokončení auditu.")); render(); return; }
+    render();
+  }, () => { clearTimeout(timer); $("note").textContent = "Spojení s daty se přerušilo, otevři stránku znovu."; });
+})();
+</script>

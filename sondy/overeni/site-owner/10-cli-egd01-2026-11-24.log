@@ -1,0 +1,46 @@
+## status
+  "connectedAs": "egd01@pavelchocholousgmail.onmicrosoft.com",
+  "authType": "deviceCode",
+  "appId": "12f19539-b70a-499d-b6dc-517a32c0e904",
+## spo web get
+{
+  "AllowRssFeeds": true,
+  "AlternateCssUrl": "",
+  "AppInstanceId": "00000000-0000-0000-0000-000000000000",
+  "ClassicWelcomePage": null,
+  "Configuration": 0,
+  "Created": "2026-11-22T18:29:29.183",
+  "CurrentChangeToken": {
+    "StringValue": "1;2;0073c481-9b23-45c9-9b98-38a40d8f3607;639311133313000000;1479702539"
+  },
+  "CustomMasterUrl": "/sites/egd01-test/_catalogs/masterpage/seattle.maste## spo list add
+{
+  "AllowContentTypes": true,
+  "BaseTemplate": 100,
+  "BaseType": 0,
+  "ContentTypesEnabled": false,
+  "CrawlNonDefaultViews": false,
+  "Created": "2026-11-24T10:35:33Z",
+  "CurrentChangeToken": {
+    "StringValue": "1;3;f31fbb5a-18b8-4a8d-b4f1-1d0785e076b3;639311133336000000;1479702558"
+  },
+  "DefaultContentApprovalWorkflowId": "00000000-0000-0000-0000-000000000000",
+  "DefaultItemOpenUseListS## spo app add site katalog
+{
+  "CheckInComment": "",
+  "CheckOutType": 2,
+  "ContentTag": "{F1B7D897-22F9-43DC-9C35-A41D3849F067},10,3",
+  "CustomizedPageStatus": 0,
+  "ETag": "\"{F1B7D897-22F9-43DC-9C35-A41D3849F067},10\"",
+  "Exists": true,
+  "ExistsAllowThrowForPolicyFailures": true,
+  "ExistsWithException": true,
+  "IrmEnabled": false,
+  "Length": "8823",
+  "Level": 1,
+  "LinkingUri": null,
+  "LinkingUrl": "",
+  "MajorVersion": 5,
+  "MinorVersion": 0,
+  "Name": "egd-overeni-siteowner-probe.sppkg",
+  "ServerRelativeUrl

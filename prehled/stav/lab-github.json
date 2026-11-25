@@ -1,0 +1,53 @@
+{
+  "nazev": "Lab: GitHub pro 10 účastníků",
+  "stav": "hotovo",
+  "popis": "Pavel 23. 11.: firemní GitHub, lab nepoužit; egd-lab ponecháno jako záloha",
+  "oblast": "lab",
+  "kdo": "session lab-github",
+  "vystup": "09-github-ucastnici.md",
+  "aktualizovano": "2026-11-23T16:17:02Z",
+  "zacatek": "2026-11-22T18:30:46Z",
+  "kroky": 11,
+  "historie": [
+    {
+      "t": "2026-11-22T19:09:50Z",
+      "stav": "ceka",
+      "popis": "09 opraveno po auditu; čeká na volbu varianty a souhlas se skupinou v Entra"
+    },
+    {
+      "t": "2026-11-22T19:12:12Z",
+      "stav": "ceka",
+      "popis": "druhé kolo auditu opraveno; čeká na volbu varianty"
+    },
+    {
+      "t": "2026-11-22T19:36:59Z",
+      "stav": "ceka",
+      "popis": "Pavel zvolil běžný trial; čeká na jeho založení trialu a seznam účastníků"
+    },
+    {
+      "t": "2026-11-22T19:40:23Z",
+      "stav": "ceka",
+      "popis": "formulář trialu otevřen v Chrome, čeká na údaje a souhlas Pavla s podmínkami"
+    },
+    {
+      "t": "2026-11-22T19:42:35Z",
+      "stav": "ceka",
+      "popis": "trial egd-lab odeslán, čeká na 6místný kód z e-mailu (zadá Pavel)"
+    },
+    {
+      "t": "2026-11-22T19:44:45Z",
+      "stav": "ceka",
+      "popis": "enterprise egd-lab + org egd-lab založeny; čeká na seznam účastníků a zrušení stopu odesílání"
+    },
+    {
+      "t": "2026-11-22T19:45:51Z",
+      "stav": "ceka",
+      "popis": "repo egd-kit hotovo, postup pozvání zapsán; čeká na seznam a ano od Pavla ráno"
+    },
+    {
+      "t": "2026-11-23T16:17:02Z",
+      "stav": "hotovo",
+      "popis": "Pavel 23. 11.: firemní GitHub, lab nepoužit; egd-lab ponecháno jako záloha"
+    }
+  ]
+}

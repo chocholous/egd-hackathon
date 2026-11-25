@@ -1,0 +1,14 @@
+{
+  "profil": "lucie.dvorakova",
+  "ts": "2026-11-24T00:52:12.932Z",
+  "kroky": [
+    {
+      "krok": "výběr účtu (Pick an account) kliknut"
+    },
+    {
+      "krok": "obrazovka",
+      "url": "https://login.microsoftonline.com/972a674c-7b85-4e56-a31f-b2f95b42fd1e/reprocess",
+      "text": "lucie.dvorakova@pavelchocholousgmail.onmicrosoft.com\nNeed admin approval\negd-ca-obo-api\n\negd-ca-obo-api needs permission to access resources in your organisation that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.\n\nHave an admin account? Sign in with that account\nReturn to the application without granting consent\n\n\nTerms of use Privacy & cookies ..."
+    }
+  ]
+}

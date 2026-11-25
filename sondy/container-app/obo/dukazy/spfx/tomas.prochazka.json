@@ -1,0 +1,108 @@
+{
+  "profil": "tomas.prochazka",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ca-obo/SitePages/obo.aspx",
+  "ts": "2026-11-24T00:50:36.682Z",
+  "kroky": [
+    {
+      "popis": "whoami",
+      "wallMs": 649,
+      "vystup": {
+        "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph",
+        "http": 200,
+        "ms": 542,
+        "odpoved": {
+          "upn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+          "oid": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d",
+          "azp": "08e18876-6177-487e-b8b5-cf950c1e598c",
+          "scp": "access_as_user"
+        }
+      }
+    },
+    {
+      "popis": "pošta přes OBO",
+      "wallMs": 529,
+      "vystup": {
+        "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph",
+        "http": 200,
+        "ms": 486,
+        "odpoved": {
+          "mode": "mi",
+          "who": {
+            "upn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+            "oid": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d",
+            "azp": "08e18876-6177-487e-b8b5-cf950c1e598c",
+            "scp": "access_as_user"
+          },
+          "oboScope": "profile openid email https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/User.Read",
+          "oboMs": 285,
+          "graphMs": 104,
+          "me": "Procházka Tomáš",
+          "graphStatus": 200,
+          "zpravy": [
+            {
+              "kdy": "2026-11-24T00:43:28Z",
+              "od": "egd-report@pavelchocholousgmail.onmicrosoft.com",
+              "predmet": "Denní report kurzů ČNB 2026-11-23 (sonda napojeni)"
+            },
+            {
+              "kdy": "2026-11-23T10:24:38Z",
+              "od": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=66892ED2F1154ADC8D9E23FAACC8B84A-33507FAF-67",
+              "predmet": "Výsledky hlasování 2026-11-23"
+            },
+            {
+              "kdy": "2026-11-23T06:00:32Z",
+              "od": "egd-report@pavelchocholousgmail.onmicrosoft.com",
+              "predmet": "Denní report kurzů ČNB 2026-11-20 (sonda napojeni)"
+            },
+            {
+              "kdy": "2026-11-22T19:50:01Z",
+              "od": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=66892ED2F1154ADC8D9E23FAACC8B84A-33507FAF-67",
+              "predmet": "Denní přehled nových požadavků (Power Automate, klikací cesta)"
+            },
+            {
+              "kdy": "2026-11-22T19:38:57Z",
+              "od": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=66892ED2F1154ADC8D9E23FAACC8B84A-33507FAF-67",
+              "predmet": "Denní přehled nových požadavků (Power Automate, klikací cesta)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "popis": "pošta přímo z SPFx",
+      "wallMs": 402,
+      "vystup": {
+        "cesta": "SPFx → MSGraphClientV3 → Graph (přímo)",
+        "http": 403,
+        "ms": 358,
+        "chyba": "ErrorAccessDenied",
+        "zprava": "Access is denied. Check credentials and try again."
+      }
+    }
+  ],
+  "konzole": [
+    "[obo-sonda] {\"cesta\":\"SPFx → AadHttpClient → Container App → OBO → Graph\",\"http\":200,\"ms\":542,\"odpoved\":{\"upn\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"oid\":\"33507faf-6706-4c3b-bbb3-c1e15a7e0a6d\",\"azp\":\"08e18876-6177-487e-b8b5-cf950c1e598c\",\"scp\":\"access_as_user\"}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → AadHttpClient → Container App → OBO → Graph\",\"http\":200,\"ms\":486,\"odpoved\":{\"mode\":\"mi\",\"who\":{\"upn\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"oid\":\"33507faf-6706-4c3b-bbb3-c1e15a7e0a6d\",\"azp\":\"08e18876-6177-487e-b8b5-cf950c1e598c\",\"scp\":\"access_as_user\"},\"oboScope\":\"profile openid email https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/User.Read\",\"oboMs\":285,\"graphMs\":104,\"me\":\"Procházka Tomáš\",\"graphStatus\":200,\"zpravy\":[{\"kdy\":\"2026-11-24T00:43:28Z\",\"od\":\"egd-report@pavelchocholousgmail.onmicrosoft.com\",\"predmet\":\"Denní report kurzů ČNB 2026-11-23 (sonda napojeni)\"},{\"kdy\":\"2026-11-23T10:24:38Z\",\"od\":\"/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=66892ED2F1154ADC8D9E23FAACC8B84A-33507FAF-67\",\"predmet\":\"Výsledky hlasování 2026-11-23\"},{\"kdy\":\"2026-11-23T06:00:32Z\",\"od\":\"egd-report@pavelchocholousgmail.onmicrosoft.com\",\"predmet\":\"Denní report kurzů ČNB 2026-11-20 (sonda napojeni)\"},{\"kdy\":\"2026-11-22T19:50:01Z\",\"od\":\"/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=66892ED2F1154ADC8D9E23FAACC8B84A-33507FAF-67\",\"predmet\":\"Denní přehled nových požadavků (Power Automate, klikací cesta)\"},{\"kdy\":\"2026-11-22T19:38:57Z\",\"od\":\"/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=66892ED2F1154ADC8D9E23FAACC8B84A-33507FAF-67\",\"predmet\":\"Denní přehled nových požadavků (Power Automate, klikací cesta)\"}]}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → MSGraphClientV3 → Graph (přímo)\",\"http\":403,\"ms\":358,\"chyba\":\"ErrorAccessDenied\",\"zprava\":\"Access is denied. Check credentials and try again.\"}"
+  ],
+  "sit": [
+    {
+      "metoda": "GET",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/whoami",
+      "http": 200,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "GET",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/posta",
+      "http": 200,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "GET",
+      "url": "https://graph.microsoft.com/v1.0/me/messages",
+      "http": 403,
+      "authorization": "Bearer …"
+    }
+  ]
+}

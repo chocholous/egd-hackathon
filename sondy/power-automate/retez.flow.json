@@ -1,0 +1,204 @@
+{
+ "displayName": "EGD PA sonda: řetěz Recurrence → LLM → Word→PDF → mail (bez ČNB)",
+ "connectionReferences": {
+  "shared_sharepointonline": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-sharepointonline",
+   "source": "Embedded"
+  },
+  "shared_onedriveforbusiness": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-onedrive",
+   "source": "Embedded"
+  },
+  "shared_office365": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_office365",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-office365",
+   "source": "Embedded"
+  },
+  "shared_azureaifoundryinference": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_azureaifoundryinference",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-foundry",
+   "source": "Embedded"
+  }
+ },
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+   "$connections": {
+    "defaultValue": {},
+    "type": "Object"
+   },
+   "$authentication": {
+    "defaultValue": {},
+    "type": "SecureObject"
+   }
+  },
+  "triggers": {
+   "Recurrence": {
+    "type": "Recurrence",
+    "recurrence": {
+     "frequency": "Month",
+     "interval": 12
+    }
+   }
+  },
+  "actions": {
+   "Nacti_docx": {
+    "type": "OpenApiConnection",
+    "runAfter": {
+     "LLM": [
+      "Succeeded"
+     ]
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "connectionName": "shared_sharepointonline",
+      "operationId": "GetFileContentByPath"
+     },
+     "parameters": {
+      "dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-power-automate",
+      "path": "/Shared Documents/sablona-test.docx",
+      "inferContentType": true
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "Do_OneDrive": {
+    "type": "OpenApiConnection",
+    "runAfter": {
+     "Nacti_docx": [
+      "Succeeded"
+     ]
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness",
+      "connectionName": "shared_onedriveforbusiness",
+      "operationId": "CreateFile"
+     },
+     "parameters": {
+      "folderPath": "/",
+      "name": "retez-test.docx",
+      "body": "@body('Nacti_docx')"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "Na_PDF": {
+    "type": "OpenApiConnection",
+    "runAfter": {
+     "Do_OneDrive": [
+      "Succeeded"
+     ]
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness",
+      "connectionName": "shared_onedriveforbusiness",
+      "operationId": "ConvertFile"
+     },
+     "parameters": {
+      "id": "@body('Do_OneDrive')?['Id']",
+      "type": "PDF"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "Do_SharePointu": {
+    "type": "OpenApiConnection",
+    "runAfter": {
+     "Na_PDF": [
+      "Succeeded"
+     ]
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "connectionName": "shared_sharepointonline",
+      "operationId": "CreateFile"
+     },
+     "parameters": {
+      "dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-power-automate",
+      "folderPath": "/Shared Documents",
+      "name": "retez-test.pdf",
+      "body": "@body('Na_PDF')"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "LLM": {
+    "type": "OpenApiConnection",
+    "runAfter": {},
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_azureaifoundryinference",
+      "connectionName": "shared_azureaifoundryinference",
+      "operationId": "ChatCompletion"
+     },
+     "parameters": {
+      "body": {
+       "messages": [
+        {
+         "role": "system",
+         "content": [
+          {
+           "type": "text",
+           "text": "Odpovídej česky, jednou větou."
+          }
+         ]
+        },
+        {
+         "role": "user",
+         "content": [
+          {
+           "type": "text",
+           "text": "Shrň jednou větou: kurz EUR/CZK 24,3 (ukázková hodnota místo ČNB)."
+          }
+         ]
+        }
+       ],
+       "max_tokens": 100
+      },
+      "api-version": "2024-10-21"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "Posli": {
+    "type": "OpenApiConnection",
+    "runAfter": {
+     "Na_PDF": [
+      "Succeeded"
+     ]
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+      "connectionName": "shared_office365",
+      "operationId": "SendEmailV2"
+     },
+     "parameters": {
+      "emailMessage/To": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+      "emailMessage/Subject": "PA sonda: řetěz s PDF přílohou",
+      "emailMessage/Body": "<p>@{body('LLM')?['choices']?[0]?['message']?['content']}</p>",
+      "emailMessage/Attachments": [
+       {
+        "Name": "report.pdf",
+        "ContentBytes": "@body('Na_PDF')"
+       }
+      ]
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   }
+  },
+  "outputs": {}
+ }
+}

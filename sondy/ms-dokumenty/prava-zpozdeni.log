@@ -1,0 +1,14 @@
+# 21:11:18 karolina.mala před přidáním do Members:
+}
+
+Node.js v22.23.5
+# 21:13:24 přidání do skupiny EN Members (id 5):
+# 21:13:24 hned po přidání:
+uloženo /sites/egd-sonda-ms-dokumenty-en/Shared Documents/exporty/pozadavky.docx (9751 B)
+HOTOVO docx za 753 ms
+
+
+# Doplněno (výhrada auditu 1): co nečlen dostane při otevření stránky. Uživatel ondrej.horak (není v žádné skupině EN webu, stav jako karolina.mala před přidáním):
+21:15:41 ondrej.horak HTTP 200 url=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty-en/_layouts/15/AccessDenied.aspx?Source=https%3A%2F%2Fpavelchocholousgmail%2Esharepoint%2Eco
+titulek: 
+# Závěr: žádný 401/403 v prohlížeči; SharePoint přesměruje na _layouts/15/AccessDenied.aspx (HTTP 200), web part se nenačte, proto dokumenty-spo-klik.mjs u karolina.mala před přidáním spadl na timeoutu (useknutý výstup výše).

@@ -1,0 +1,26 @@
+{
+  "nazev": "Sonda AI: OCR, obrázky, LLM gateway",
+  "stav": "hotovo",
+  "popis": "Gateway + SPFx změřeny v labu; obrázky blokuje kvóta 0, APIM Consumption nemá llm-token-limit",
+  "vystup": "/Users/chocholous/Projects/egd-workshop/sondy/ai.md",
+  "aktualizovano": "2026-11-22T18:48:00Z",
+  "zacatek": "2026-11-22T18:28:04Z",
+  "kroky": 4,
+  "historie": [
+    {
+      "t": "2026-11-22T18:38:54Z",
+      "stav": "bezi",
+      "popis": "SPFx web part běží v labu a volá gateway (chat, OCR) pod Tomášem; zbývá cold start, Log Analytics, dokument"
+    },
+    {
+      "t": "2026-11-22T18:42:15Z",
+      "stav": "bezi",
+      "popis": "APIM Consumption: llm-token-limit odmítnuto (změřeno); čekám na cold start, pak píšu ai.md"
+    },
+    {
+      "t": "2026-11-22T18:48:00Z",
+      "stav": "hotovo",
+      "popis": "Gateway + SPFx změřeny v labu; obrázky blokuje kvóta 0, APIM Consumption nemá llm-token-limit"
+    }
+  ]
+}

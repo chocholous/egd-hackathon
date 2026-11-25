@@ -1,0 +1,20 @@
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm, katalog tohoto webu, nic tenant-wide):
+  1. nahrat prvni-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku evidence.aspx ("Evidence požadavků"), vlozit web part, prepnout na celostrankovou appku a publikovat
+[OK]      nahrano do katalogu (appId 35f4225d-be39-4ab9-9db4-f76e4e23aa4e)
+[OK]      nasazeno (deploy)
+[OK]      appka nainstalovana na web
+[OK]      stranka evidence.aspx zalozena (Article + sekce)
+[OK]      web part vlozen na stranku
+[OK]      stranka prepnuta na celostrankovou appku a publikovana
+[OK]      precteno zpet: stranka evidence.aspx, rozlozeni SingleWebPartAppPage, web part 4d0850fa-6cee-41a0-be2c-b0aac1ed61fb na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/evidence.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/evidence.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, odeslany pozadavek se objevi v Moje pozadavky.

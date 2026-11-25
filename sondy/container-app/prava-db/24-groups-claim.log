@@ -1,0 +1,19 @@
+## 2026-11-24T02:27:04Z výchozí stav aplikace
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applications(groupMembershipClaims,optionalClaims)/$entity",
+  "groupMembershipClaims": null,
+  "optionalClaims": null
+}
+## token tomas PŘED (claims)
+{"upn": null, "preferred_username": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com", "roles": ["Zadavatel"], "groups": null, "_claim_names": null, "department": null, "ver": "2.0"}
+## členství tomas v bezpečnostních skupinách (Graph)
+Default Directory	ae02df1f-86ff-4087-9a2a-1f74857e4eaa	False
+zr-zamestnanci	6f9cfe74-1ce3-4411-9dc4-92b205f1938d	True
+EGD sonda Power Automate	3129e4f9-22c2-4b73-a97d-0834bbca7908	False
+## PATCH groupMembershipClaims=SecurityGroup
+ok
+## token tomas PO (claims)
+{"upn": null, "preferred_username": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com", "roles": ["Zadavatel"], "groups": ["6f9cfe74-1ce3-4411-9dc4-92b205f1938d"], "_claim_names": null, "department": null, "ver": "2.0"}
+## 2026-11-24T02:27:37Z návrat groupMembershipClaims=null
+ok
+{"kontrola_po_navratu":{"groupMembershipClaims":null}}

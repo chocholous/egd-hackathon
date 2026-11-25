@@ -1,0 +1,11 @@
+2026-11-22T19:43:35Z
+"pavel.admin@pavelchocholousgmail.onmicrosoft.com"
+$ m365 spo app add --filePath eon-demo-kalkulacka.sppkg --appCatalogScope sitecollection --appCatalogUrl https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev --overwrite
+rc=0 id=2d31d442-1444-4f78-b64b-1bab09f5245c
+$ m365 spo app deploy --id <id> --appCatalogScope sitecollection --appCatalogUrl …
+rc=0
+{
+  "Title": "eon-demo-kalkulacka-client-side-solution",
+  "Deployed": true,
+  "AppCatalogVersion": "1.0.0.9"
+}

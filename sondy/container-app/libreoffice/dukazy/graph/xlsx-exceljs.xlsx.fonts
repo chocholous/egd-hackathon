@@ -1,0 +1,6 @@
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+BCDEEE+Calibri-Bold                  TrueType          WinAnsi          yes yes no       7  0
+BCDFEE+Calibri-Bold                  CID TrueType      Identity-H       yes yes yes     10  0
+BCDGEE+Calibri                       TrueType          WinAnsi          yes yes no      15  0
+BCDHEE+Calibri                       CID TrueType      Identity-H       yes yes yes     17  0

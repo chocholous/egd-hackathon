@@ -1,0 +1,15 @@
+#     Zařízení                          Technik                 Termín
+    1 Trafostanice Říčany – věž         Jiří Dvořák                 3. 12. 2026
+    2 Rozvaděč NN Žďár nad Sázavou      Ing. Zdeňka Čermáková      10. 12. 2026
+    3 Vedení VN č. 214 – úsek Šumperk   Ondřej Řezníček             14. 1. 2027
+    4 Stanice Ústí – ochrana ESD        Šárka Nováková              21. 1. 2027
+    5 Přípojková skříň Česká Třebová    Ťuk Ďábelský                 2. 2. 2027
+      Celkem
+Stav          Náklad (Kč)
+Naplánováno         18,500 Kč
+Probíhá             42,300 Kč
+Naplánováno        129,900 Kč
+Dokončeno            7,650 Kč
+Naplánováno          3,200 Kč
+                  201,550 Kč
+

@@ -1,0 +1,12 @@
+{
+ "displayName": "EGD ms-maily: test Recurrence Po–Pá 6:00 Praha (jen definice, vypnuto)",
+ "state": "Stopped",
+ "connectionReferences": {},
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {"$authentication": {"defaultValue": {}, "type": "SecureObject"}, "$connections": {"defaultValue": {}, "type": "Object"}},
+  "triggers": {"Recurrence": {"type": "Recurrence", "recurrence": {"frequency": "Week", "interval": 1, "timeZone": "Central Europe Standard Time", "schedule": {"weekDays": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "hours": ["6"], "minutes": [0]}}}},
+  "actions": {"Compose": {"runAfter": {}, "type": "Compose", "inputs": "@utcNow()"}}
+ }
+}

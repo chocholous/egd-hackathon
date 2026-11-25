@@ -1,0 +1,139 @@
+{
+  "totalPremiumRequestCost": 1,
+  "totalUserRequests": 1,
+  "totalNanoAiu": 387220000,
+  "aiCreditsStatus": "complete",
+  "tokenDetails": {
+    "input": {
+      "tokenCount": 24300
+    },
+    "cache_read": {
+      "tokenCount": 56320
+    },
+    "cache_write": {
+      "tokenCount": 0
+    },
+    "output": {
+      "tokenCount": 1758
+    }
+  },
+  "totalApiDurationMs": 27419,
+  "sessionStartTime": "2026-11-22T19:58:13.454Z",
+  "codeChanges": {
+    "linesAdded": 0,
+    "linesRemoved": 0,
+    "filesModifiedCount": 0,
+    "filesModified": []
+  },
+  "modelMetrics": {
+    "mai-code-2-flash": {
+      "requests": {
+        "count": 4,
+        "cost": 1
+      },
+      "usage": {
+        "inputTokens": 80620,
+        "outputTokens": 1758,
+        "cacheReadTokens": 56320,
+        "cacheWriteTokens": 0,
+        "reasoningTokens": 298
+      },
+      "cacheExpiresAt": "2026-11-22T20:28:29.550Z",
+      "totalNanoAiu": 387220000,
+      "aiCreditsStatus": "complete",
+      "tokenDetails": {
+        "input": {
+          "tokenCount": 24300
+        },
+        "cache_read": {
+          "tokenCount": 56320
+        },
+        "cache_write": {
+          "tokenCount": 0
+        },
+        "output": {
+          "tokenCount": 1758
+        }
+      }
+    }
+  },
+  "agentMetrics": {
+    "main": {
+      "totalApiDurationMs": 27419,
+      "totalNanoAiu": 387220000,
+      "modelMetrics": {
+        "mai-code-2-flash": {
+          "requests": {
+            "count": 4,
+            "cost": 1
+          },
+          "usage": {
+            "inputTokens": 80620,
+            "outputTokens": 1758,
+            "cacheReadTokens": 56320,
+            "cacheWriteTokens": 0,
+            "reasoningTokens": 298
+          },
+          "totalNanoAiu": 387220000,
+          "tokenDetails": {
+            "input": {
+              "tokenCount": 24300
+            },
+            "cache_read": {
+              "tokenCount": 56320
+            },
+            "cache_write": {
+              "tokenCount": 0
+            },
+            "output": {
+              "tokenCount": 1758
+            }
+          }
+        }
+      }
+    }
+  },
+  "providerModelMetrics": [
+    {
+      "provider": {
+        "id": "copilot",
+        "label": "GitHub Copilot",
+        "kind": "copilot"
+      },
+      "modelId": "mai-code-2-flash",
+      "metrics": {
+        "requests": {
+          "count": 4,
+          "cost": 1
+        },
+        "usage": {
+          "inputTokens": 80620,
+          "outputTokens": 1758,
+          "cacheReadTokens": 56320,
+          "cacheWriteTokens": 0,
+          "reasoningTokens": 298
+        },
+        "totalNanoAiu": 387220000,
+        "aiCreditsStatus": "complete",
+        "tokenDetails": {
+          "input": {
+            "tokenCount": 24300
+          },
+          "cache_read": {
+            "tokenCount": 56320
+          },
+          "cache_write": {
+            "tokenCount": 0
+          },
+          "output": {
+            "tokenCount": 1758
+          }
+        }
+      },
+      "modelDisplayName": "MAI Code 2 Flash"
+    }
+  ],
+  "currentModel": "mai-code-2-flash",
+  "lastCallInputTokens": 22084,
+  "lastCallOutputTokens": 851
+}

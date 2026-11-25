@@ -1,0 +1,99 @@
+{
+  "totalPremiumRequestCost": 1,
+  "totalUserRequests": 1,
+  "totalNanoAiu": 1240227000,
+  "tokenDetails": {
+    "input": {
+      "tokenCount": 42
+    },
+    "cache_read": {
+      "tokenCount": 352307
+    },
+    "cache_write": {
+      "tokenCount": 36156
+    },
+    "output": {
+      "tokenCount": 8711
+    }
+  },
+  "totalApiDurationMs": 87908,
+  "sessionStartTime": "2026-11-22T19:22:21.093Z",
+  "codeChanges": {
+    "linesAdded": 6,
+    "linesRemoved": 0,
+    "filesModifiedCount": 1,
+    "filesModified": [
+      "/private/tmp/cp-run3/home/egd-workshop/pripravenost-Test-Tri.md"
+    ]
+  },
+  "modelMetrics": {
+    "gpt-6-luna": {
+      "requests": {
+        "count": 14,
+        "cost": 1
+      },
+      "usage": {
+        "inputTokens": 388505,
+        "outputTokens": 8711,
+        "cacheReadTokens": 352307,
+        "cacheWriteTokens": 36156,
+        "reasoningTokens": 6325
+      },
+      "cacheExpiresAt": "2026-11-22T19:58:24.188Z",
+      "totalNanoAiu": 1240227000,
+      "tokenDetails": {
+        "input": {
+          "tokenCount": 42
+        },
+        "cache_read": {
+          "tokenCount": 352307
+        },
+        "cache_write": {
+          "tokenCount": 36156
+        },
+        "output": {
+          "tokenCount": 8711
+        }
+      }
+    }
+  },
+  "agentMetrics": {
+    "main": {
+      "totalApiDurationMs": 87908,
+      "totalNanoAiu": 1240227000,
+      "modelMetrics": {
+        "gpt-6-luna": {
+          "requests": {
+            "count": 14,
+            "cost": 1
+          },
+          "usage": {
+            "inputTokens": 388505,
+            "outputTokens": 8711,
+            "cacheReadTokens": 352307,
+            "cacheWriteTokens": 36156,
+            "reasoningTokens": 6325
+          },
+          "totalNanoAiu": 1240227000,
+          "tokenDetails": {
+            "input": {
+              "tokenCount": 42
+            },
+            "cache_read": {
+              "tokenCount": 352307
+            },
+            "cache_write": {
+              "tokenCount": 36156
+            },
+            "output": {
+              "tokenCount": 8711
+            }
+          }
+        }
+      }
+    }
+  },
+  "currentModel": "gpt-6-luna",
+  "lastCallInputTokens": 36159,
+  "lastCallOutputTokens": 1042
+}

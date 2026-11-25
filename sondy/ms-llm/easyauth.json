@@ -1,0 +1,12 @@
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+{
+  "aud": [
+    "api://7b59591a-0058-4799-be76-0d1f5b79ca95",
+    "7b59591a-0058-4799-be76-0d1f5b79ca95"
+  ],
+  "excl": [
+    "/healthz"
+  ],
+  "issuer": "https://login.microsoftonline.com/972a674c-7b85-4e56-a31f-b2f95b42fd1e/v2.0",
+  "unauth": "Return401"
+}

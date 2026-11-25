@@ -1,0 +1,36 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[1.1s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/ai.aspx
+[4.1s] OK wait:3000  
+[12.8s] OK rozbal  
+8 zón
+[12.8s] OK eval:[...document.querySelector('[data-sp-web-part-id="9669ff55-924e-4bae-bf73-e84f7de8cd13"]').querySelectorAll('button')].map(b=>b.id+'|'+b.innerText.replace(/\n/g,' ')).join(' ; ')  
+|1 Velmi nespokojen/a ; |2 Spíš nespokojen/a ; |3 Tak napůl ; |4 Spíš spokojen/a ; |5 Velmi spokojen/a ; ai-shrnout|Shrnout dnešek (AI) ; ai-ocr|Přečíst soubor (OCR) ; ai-kvota|Kolik AI zbývá dnes
+[12.8s] OK eval:document.querySelector('[data-sp-web-part-id="9669ff55-924e-4bae-bf73-e84f7de8cd13"]').innerText.slice(0,200)  
+Spokojenost s prostředím kanceláře dnes
+
+Jak jste dnes spokojeni s prostředím kanceláře?
+
+1
+Velmi nespokojen/a
+2
+Spíš nespokojen/a
+3
+Tak napůl
+4
+Spíš spokojen/a
+5
+Velmi spokojen/a
+
+Dnes jste dali 4. K
+[12.8s] OK eval:[...document.querySelector('[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"]').querySelectorAll('button,input,textarea')].map(b=>b.tagName+'#'+b.id+'|'+(b.innerText||b.type).replace(/\n/g,' ')).join(' ; ')  
+BUTTON#|Nový požadavek ; BUTTON#|Moje požadavky ; BUTTON#|Ke schválení (3) ; INPUT#evidence-nazev|text ; TEXTAREA#evidence-popis|textarea ; BUTTON#evidence-shrnout|Shrnout popis ; INPUT#evidence-soubor|file ; BUTTON#evidence-ocr|Přečíst soubor (OCR) ; BUTTON#|Odeslat ke schválení
+[12.8s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel

@@ -1,0 +1,26 @@
+{
+ "nahrani": {
+  "status": 200,
+  "ms": 907,
+  "telo": "ok"
+ },
+ "aplikace_v_katalogu": [
+  {
+   "id": "29e191e4-cca2-429c-8e18-deac4007b839",
+   "titulek": "prvni-appka-client-side-solution",
+   "nasazena": false,
+   "verze": "1.0.0.0",
+   "skipFeature": false
+  }
+ ],
+ "nasazeni": {
+  "status": 200,
+  "ms": 2936,
+  "telo": "ok"
+ },
+ "po_nasazeni": {
+  "nasazena": true,
+  "verze": "1.0.0.0",
+  "id": "29e191e4-cca2-429c-8e18-deac4007b839"
+ }
+}

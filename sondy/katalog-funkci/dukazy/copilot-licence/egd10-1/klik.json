@@ -1,0 +1,184 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx",
+ "start": "2026-11-24T19:45:51.991Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 1654,
+   "ok": true
+  },
+  {
+   "krok": "rozbal:4000",
+   "t": 4655,
+   "vysledek": "6 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#retr').click()",
+   "t": 12885,
+   "ok": true
+  },
+  {
+   "krok": "eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})",
+   "t": 12895,
+   "vysledek": 840,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText",
+   "t": 44400,
+   "vysledek": "{\n  \"cesta\": \"SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/retrieval\",\n  \"http\": 200,\n  \"ms\": 31430,\n  \"odpoved\": {\n    \"mode\": \"mi\",\n    \"who\": \"egd10@pavelchocholousgmail.onmicrosoft.com\",\n    \"oboScope\": \"profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read\",\n    \"oboMs\": 193,\n    \"graphStatus\": 200,\n    \"graphMs\": 3147,\n    \"requestId\": \"aa01eac2-55d7-4681-8218-aa277b9ca5ee\",\n    \"hits\": []\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').scrollIntoView({block:'center'})",
+   "t": 44405,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:retr",
+   "t": 44408,
+   "vysledek": "dukazy/copilot-licence/egd10-1/retr.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#pretr').click()",
+   "t": 44517,
+   "ok": true
+  },
+  {
+   "krok": "eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})",
+   "t": 44523,
+   "vysledek": 1797,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText",
+   "t": 47527,
+   "vysledek": "{\n  \"cesta\": \"SPFx → MSGraphClientV3 → Graph beta /copilot/retrieval (přímo)\",\n  \"http\": 200,\n  \"ms\": 2756,\n  \"odpoved\": {\n    \"retrievalHits\": [\n      {\n        \"webUrl\": \"https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.docx\",\n        \"extracts\": [\n          {\n            \"text\": \"\\r\\n# Spokojenost s prostředím kanceláře\\r\\n Den Hlasů Průměr (1–5) 2026-11-24 1 4\",\n            \"relevanceScore\": 0\n          }\n        ],\n        \"resourceType\": \"listItem\",\n        \"resourceMetadata\": {}\n      },\n      {\n        \"webUrl\": \"https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.pdf\",\n        \"extracts\": [\n          {\n            \"text\": \"\\r\\n# Spokojenost s prostředím kanceláře \\r\\nDen Hlasů Průměr (1–5) 2026-11-24 1 4 \",\n            \"relevanceScore\": 0\n          }\n        ],\n        \"resourceType\": \"listItem\",\n        \"resourceMetadata\": {}\n      },\n      {\n        \"webUrl\": \"https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost-prehled.pdf\",\n        \"extracts\": [\n          {\n            \"text\": \"Spokojenost s prostředím kanceláře – přehled po dnech 2026-11-24   hlasů: 1   průměr: 4\",\n            \"relevanceScore\": 0\n          }\n        ],\n        \"resourceType\": \"listItem\",\n        \"resourceMetadata\": {}\n      },\n      {\n        \"webUrl\": \"https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.pptx\",\n        \"extracts\": [\n          {\n            \"text\": \"PptxGenJS Presentation Spokojenost s prostředím kanceláře Den Hlasů Průměr (1–5) 2026-11-24 1 4\",\n            \"relevanceScore\": 0\n          }\n        ],\n        \"resourceType\": \"listItem\",\n        \"resourceMetadata\": {}\n      }\n    ]\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').scrollIntoView({block:'center'})",
+   "t": 47529,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:pretr",
+   "t": 47531,
+   "vysledek": "dukazy/copilot-licence/egd10-1/pretr.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#chat').click()",
+   "t": 47596,
+   "ok": true
+  },
+  {
+   "krok": "eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})",
+   "t": 47600,
+   "vysledek": 1186,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText",
+   "t": 64102,
+   "vysledek": "{\n  \"cesta\": \"SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/chat\",\n  \"http\": 200,\n  \"ms\": 16443,\n  \"odpoved\": {\n    \"mode\": \"mi\",\n    \"who\": \"egd10@pavelchocholousgmail.onmicrosoft.com\",\n    \"oboScope\": \"profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read\",\n    \"oboMs\": 142,\n    \"krok\": \"chat\",\n    \"konverzaceMs\": 3034,\n    \"graphStatus\": 200,\n    \"graphMs\": 13069,\n    \"requestId\": \"f5d1e449-3bc0-40b6-956f-19deb2860444\",\n    \"copilotOdpovedel\": true,\n    \"odpoved\": \"V dostupných interních podkladech se mi nepodařilo dohledat údaj, ze kterého by šel **průměr spokojenosti s prostředím kanceláře** spolehlivě určit.\\n\\nPokud mi pošlete výsledky průzkumu nebo jednotlivá hodnocení, průměr rovnou spočítám.\",\n    \"zdroje\": [],\n    \"zprav\": 2\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').scrollIntoView({block:'center'})",
+   "t": 64105,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:chat",
+   "t": 64106,
+   "vysledek": "dukazy/copilot-licence/egd10-1/chat.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 1507,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1758,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1765,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 8469,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(17)/CommentsDisabledScope"
+  },
+  {
+   "t": 8571,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(17)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 44321,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/retrieval"
+  },
+  {
+   "t": 47274,
+   "m": "POST",
+   "s": 200,
+   "u": "https://graph.microsoft.com/beta/copilot/retrieval"
+  },
+  {
+   "t": 64041,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/chat"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.searchbox-v2.3450547ea96dddfd3083.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.umc_mecontrol.b71a5ec55d2951d3dbb4.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.otellogging.d5b83bde08809e8d00f8.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.searchbox-v2.3450547ea96dddfd3083.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.umc_mecontrol.b71a5ec55d2951d3dbb4.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.otellogging.d5b83bde08809e8d00f8.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.searchbox-v2.3450547ea96dddfd3083.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.umc_mecontrol.b71a5ec55d2951d3dbb4.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.otellogging.d5b83bde08809e8d00f8.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+ ],
+ "konec": "2026-11-24T19:46:56.189Z"
+}

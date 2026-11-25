@@ -1,0 +1,53 @@
+{
+  "nazev": "Výdejní appka: appId a příkaz m365 login",
+  "stav": "hotovo",
+  "popis": "CLI blok nasazen a ověřen živě (desktop+mobil), regrese 16/16, účty volné",
+  "oblast": "lab",
+  "kdo": "lab-ucty",
+  "vystup": "08-ucty-ucastniku.md",
+  "aktualizovano": "2026-11-24T13:50:28Z",
+  "zacatek": "2026-11-22T18:29:24Z",
+  "kroky": 16,
+  "historie": [
+    {
+      "t": "2026-11-22T19:47:16Z",
+      "stav": "bezi",
+      "popis": "Ověřuji přihlášení egd01–10 po vyjmutí z registrační kampaně Authenticatoru"
+    },
+    {
+      "t": "2026-11-22T19:53:37Z",
+      "stav": "ceka",
+      "popis": "MFA: po vyjmutí z registrační kampaně 0/28 výzev, všech 10 účtů se přihlásí (log v lab/dukazy). ID Protection neověřeno; čeká na Pavla: Share, kořen, consent CLI; SKU od lab-trial"
+    },
+    {
+      "t": "2026-11-23T11:10:29Z",
+      "stav": "ceka",
+      "popis": "m365 přes lab-m365.sh ověřeno, licence: všech 10 má SPE_E5; čeká na SKU od lab-trial a Pavlovo ano k výdejní web appce"
+    },
+    {
+      "t": "2026-11-23T15:52:42Z",
+      "stav": "ceka",
+      "popis": "Licence: čeká na partnerskou Business Basic (Pavel); skript hlídá počet volných licencí. Výdejní web appka odložena."
+    },
+    {
+      "t": "2026-11-23T16:16:20Z",
+      "stav": "bezi",
+      "popis": "Stavím výdejní web appku (SWA Free + Table Storage, rg-egd-vydej)"
+    },
+    {
+      "t": "2026-11-23T16:31:07Z",
+      "stav": "hotovo",
+      "popis": "Výdejní web appka hotová a otestovaná (souběh, špatné heslo, anonym, mobil); licence čeká na Business Basic SKU"
+    },
+    {
+      "t": "2026-11-23T16:44:52Z",
+      "stav": "hotovo",
+      "popis": "Výdejní appka: jeden účet na prohlížeč nasazen a ověřen (16/16), všechny účty volné; licence čeká na Business Basic SKU"
+    },
+    {
+      "t": "2026-11-24T13:50:28Z",
+      "stav": "hotovo",
+      "popis": "CLI blok nasazen a ověřen živě (desktop+mobil), regrese 16/16, účty volné"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "nazev": "Skill egd-prvni-appka: režimy single/open",
+  "stav": "hotovo",
+  "popis": "single/open ověřeno ve skriptu (egd10) i v prohlížeči (egd01); SKILL/TEST/chyby doplněno; čeká na commit",
+  "oblast": "skills",
+  "kdo": "skill-prvni-appka",
+  "vystup": "skills/egd-prvni-appka/",
+  "aktualizovano": "2026-11-24T11:20:06Z",
+  "zacatek": "2026-11-24T11:20:06Z",
+  "kroky": 1,
+  "historie": [
+    {
+      "t": "2026-11-24T11:20:06Z",
+      "stav": "hotovo",
+      "popis": "single/open ověřeno ve skriptu (egd10) i v prohlížeči (egd01); SKILL/TEST/chyby doplněno; čeká na commit"
+    }
+  ]
+}

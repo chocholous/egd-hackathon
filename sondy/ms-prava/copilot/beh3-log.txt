@@ -1,0 +1,223 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● skill(egd-prava-role)
+
+Nejprve ověřím přihlášený účet a skript pro role; pak nastavím pouze seznam a nové úrovně „Nákupy“ a načtu zpět výsledná oprávnění.
+
+ SH Read tools/prava-role-cli.sh Path does not exist
+
+ $ Shell Kontrola pracovní složky 3 lines…
+   ls -la
+
+ $ Shell Ověření přihlášení M365 CLI 8 lines…
+   m365 status --output json
+
+ $ Shell Načtení nastavení seznamu 7 lines…
+   m365 spo list get --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; ]8;;
+   --title PozadavkyCopilot3 --properties
+   "Id,Title,ReadSecurity,WriteSecurity,HasUniqueRoleAssignments" --output json
+
+ $ Shell Načtení stávajících úrovní oprávnění 387 lines…
+   m365 spo roledefinition list --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --output json]8;;
+
+ $ Shell Načtení skupin webu 212 lines…
+   m365 spo group list --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;
+   --output json
+
+ $ Shell Načtení skupin a metadat webu 119 lines…
+   m365 spo web get --url ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; ]8;;
+   --withGroups --output json
+
+ $ Shell Zjištění parametrů pro nové úrovně 39 lines…
+   m365 spo roledefinition add --help
+
+ $ Shell Kontrola členů skupiny vlastníků 53 lines…
+   m365 spo group member list --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Vlastníci webu ]8;;
+   EGD sonda ms-prava" --output json
+
+ $ Shell Zjištění parametrů pro skupiny a členy 140 lines…
+   m365 spo group add --help && m365 spo group member add --help && m365 spo group member list
+   --help
+
+ $ Shell Zjištění parametrů přiřazení a seznamu 387 lines…                                        5s
+   m365 spo web roleassignment add --help && m365 spo list roleassignment add --help && m365 spo
+   list roleinheritance break --help && m365 spo list set --help
+
+Přihlášení je pod vlastníkem webu. Seznam nyní dědí přístup a má `ReadSecurity=1`, `WriteSecurity=1`; pro omezení na vlastní položky musím přerušit dědění, ponechat vlastníkům Úplné řízení a přidat jen dvě nové skupiny Nákupy. Založím úrovně bez mazání pro schvalovatele a pro zadavatele odděleně; stávajících EGD úrovní se nedotknu.
+
+ $ Shell Založení úrovní, skupin, členství a čtení webu No Content                               11s
+   m365 spo roledefinition add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --name "Nákupy Zadavatel" ]8;;
+   --description "Zadávání vlastních požadavků v aplikaci Nákupy" --rights "ViewListItems,AddListIte
+   ms,EditListItems,DeleteListItems,OpenItems,ViewVersions,DeleteVersions,ManagePersonalViews,ViewFo
+   rmPages,Open,ViewPages,CreateSSCSite,BrowseDirectories,BrowseUserInfo,AddDelPrivateWebParts,Updat
+   ePersonalWebParts,UseClientIntegration,UseRemoteAPIs,CreateAlerts,EditMyUserInfo" --output none
+   && m365 spo roledefinition add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --name "Nákupy Schvalovatel ]8;;
+   bez mazání" --description "Schvalování požadavků bez oprávnění mazat položky" --rights "ViewListI
+   tems,AddListItems,EditListItems,OpenItems,ViewVersions,DeleteVersions,CancelCheckout,ManagePerson
+   alViews,ViewFormPages,Open,ViewPages,CreateSSCSite,BrowseDirectories,BrowseUserInfo,AddDelPrivate
+   WebParts,UpdatePersonalWebParts,UseClientIntegration,UseRemoteAPIs,CreateAlerts,EditMyUserInfo"
+   --output none && m365 spo group add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --name "Nákupy Zadavatelé" ]8;;
+   --description "Zadavatelky aplikace Nákupy" --output none && m365 spo group add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --name "Nákupy ]8;;
+   Schvalovatelé" --description "Schvalovatelé aplikace Nákupy" --output none && m365 spo group
+   member add --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; ]8;;
+   --groupName "Nákupy Zadavatelé" --userNames jana.svobodova@pavelchocholousgmail.onmicrosoft.com
+   --output none && m365 spo group member add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Nákupy ]8;;
+   Schvalovatelé" --userNames tomas.prochazka@pavelchocholousgmail.onmicrosoft.com --output none &&
+   m365 spo web roleassignment add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Nákupy ]8;;
+   Zadavatelé" --roleDefinitionName "Čtení" --output none && m365 spo web roleassignment add
+   --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Nákupy]8;;
+   Schvalovatelé" --roleDefinitionName "Čtení" --output none
+
+ $ Shell Ověření členství zadavatelské skupiny 19 lines…
+   m365 spo group member list --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Nákupy ]8;;
+   Zadavatelé" --output json
+
+ $ Shell Ověření členství schvalovatelské skupiny 19 lines…
+   m365 spo group member list --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Nákupy ]8;;
+   Schvalovatelé" --output json
+
+ $ Shell Ověření nových úrovní oprávnění 52 lines…
+   m365 spo roledefinition list --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --query "[?starts_with(Name,]8;;
+   'Nákupy')].[Name,BasePermissionsValue]" --output json
+
+ $ Shell Nastavení jedinečných oprávnění seznamu 17 lines…                                     2m 0s
+   m365 spo list roleinheritance break --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --listTitle ]8;;
+   PozadavkyCopilot3 --clearExistingPermissions --force --output none && m365 spo list
+   roleassignment add --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; ]8;;
+   --listTitle PozadavkyCopilot3 --groupName "Vlastníci webu EGD sonda ms-prava"
+   --roleDefinitionName "Úplné řízení" --output none && m365 spo list roleassignment add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --listTitle ]8;;
+   PozadavkyCopilot3 --groupName "Nákupy Zadavatelé" --roleDefinitionName "Nákupy Zadavatel"
+   --output none && m365 spo list roleassignment add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Nákupy ]8;;
+   Schvalovatelé" --roleDefinitionName "Nákupy Schvalovatel bez mazání" --output none && m365 spo
+   list set --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --title ]8;;
+   PozadavkyCopilot3 --readSecurity 2 --writeSecurity 2 --output none
+
+ ● Stop shell  1 line…
+
+ $ Shell Kontrola seznamu po přerušeném pokusu 7 lines…
+   m365 spo list get --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; ]8;;
+   --title PozadavkyCopilot3 --properties
+   "Id,Title,ReadSecurity,WriteSecurity,HasUniqueRoleAssignments" --output json
+
+ $ Shell Zjištění příkazu pro kontrolu oprávnění seznamu 47 lines…
+   m365 spo list roleassignment list --help
+
+ $ Shell Zjištění syntaxe správy oprávnění seznamu 7 lines…
+   m365 spo list roleassignment --help
+
+ $ Shell Ověření vlastníků pro obnovení přístupu 53 lines…
+   m365 spo group member list --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Vlastníci webu ]8;;
+   EGD sonda ms-prava" --output json
+
+ $ Shell Zjištění syntaxe pro čtení role assignments přes REST 42 lines…
+   m365 request --help
+
+ $ Shell Načtení aktuálních přidělení seznamu 23 lines…
+   m365 request --url "]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guidhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guid/lists(guid]8;;]8;;'758c9685-041d-4127-b568-7a84d80a729f')/RoleAssignments?$expand=Member,RoleDefinitionB]8;;
+   indings&$select=Member/Id,Member/Title,RoleDefinitionBindings/Name" --output json
+
+ $ Shell Kontrola přímého přístupu vlastníka CLI 7 lines…
+   m365 request --url "]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guidhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guid/lists(guid]8;;]8;;'758c9685-041d-4127-b568-7a84d80a729f')/RoleAssignments/GetByPrincipalId(6)?$expand=Me]8;;
+   mber,RoleDefinitionBindings" --output json
+
+ $ Shell Kontrola prvního nového přidělení 7 lines…
+   m365 request --url "]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guidhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guid/lists(guid]8;;]8;;'758c9685-041d-4127-b568-7a84d80a729f')/RoleAssignments/GetByPrincipalId(33)?$expand=M]8;;
+   ember,RoleDefinitionBindings" --output json
+
+ $ Shell Kontrola role assignment vlastníků 7 lines…
+   m365 request --url "]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guidhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guid/lists(guid]8;;]8;;'758c9685-041d-4127-b568-7a84d80a729f')/RoleAssignments/GetByPrincipalId(3)?$expand=Me]8;;
+   mber,RoleDefinitionBindings" --output json
+
+ $ Shell Zjištění ID nových skupin 10 lines…
+   m365 spo group list --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;
+   --query "[?starts_with(Title, 'Nákupy')].[Id,Title]" --output json
+
+ $ Shell Dokončení role schvalovatele a omezení položek No Content
+   m365 spo list roleassignment add --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --listId ]8;;
+   758c9685-041d-4127-b568-7a84d80a729f --groupName "Nákupy Schvalovatelé" --roleDefinitionName
+   "Nákupy Schvalovatel bez mazání" --output none && m365 spo list set --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --title PozadavkyCopilot3 ]8;;
+   --readSecurity 2 --writeSecurity 2 --output none
+
+ $ Shell Ověření režimu přístupu k položkám 7 lines…
+   m365 spo list get --webUrl ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; ]8;;
+   --title PozadavkyCopilot3 --properties
+   "Id,Title,ReadSecurity,WriteSecurity,HasUniqueRoleAssignments" --output json
+
+ $ Shell Ověření úrovně schvalovatelů na seznamu 20 lines…
+   m365 request --url
+   "]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guidhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guid]8;;]8;;'758c968]8;;
+   5-041d-4127-b568-7a84d80a729f')/RoleAssignments/GetByPrincipalId(34)/RoleDefinitionBindings"
+   --output json
+
+ $ Shell Ověření úrovně zadavatelů na seznamu 20 lines…
+   m365 request --url
+   "]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guidhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guid]8;;]8;;'758c968]8;;
+   5-041d-4127-b568-7a84d80a729f')/RoleAssignments/GetByPrincipalId(33)/RoleDefinitionBindings"
+   --output json
+
+ $ Shell Ověření oprávnění skupiny vlastníků na seznamu 20 lines…
+   m365 request --url
+   "]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guidhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guid]8;;]8;;'758c968]8;;
+   5-041d-4127-b568-7a84d80a729f')/RoleAssignments/GetByPrincipalId(3)/RoleDefinitionBindings"
+   --output json
+
+ $ Shell Ověření oprávnění Nákupy na webu 113 lines…
+   m365 request --url "]8;id=md-i5lz0w;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/RoleAssignments?$expand=Member,RoleDefinitionBindingshttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-i5lz0w;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/RoleAssignments?$expand=Member,RoleDefinitionBindings/RoleAssignments?$expand=Member,RoleDefinitionBindings]8;;]8;;" --output json]8;;
+
+ $ Shell Ověření úplného seznamu přístupových přiřazení 29 lines…
+   m365 request --url "]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guidhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-2pyvj9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists(guid/lists(guid]8;;]8;;'758c9685-041d-4127-b568-7a84d80a729f')/RoleAssignments" --output json]8;;
+
+ $ Shell Ověření čtení webu pro schvalovatele 35 lines…
+   m365 request --url "]8;id=md-11c1t34;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/RoleAssignments/GetByPrincipalId(34)/RoleDefinitionBindingshttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-11c1t34;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/RoleAssignments/GetByPrincipalId(34)/RoleDefinitionBindings/RoleAssignments/GetByPrincipalId(34)/RoleDefinitionBindings]8;;]8;;" --output json]8;;
+
+ $ Shell Ověření čtení webu pro zadavatelky 35 lines…
+   m365 request --url "]8;id=md-g2l4m9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/RoleAssignments/GetByPrincipalId(33)/RoleDefinitionBindingshttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-g2l4m9;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/RoleAssignments/GetByPrincipalId(33)/RoleDefinitionBindings/RoleAssignments/GetByPrincipalId(33)/RoleDefinitionBindings]8;;]8;;" --output json]8;;
+
+ $ Shell Závěrečná kontrola členů obou skupin 9 lines…
+   m365 spo group member list --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Nákupy ]8;;
+   Zadavatelé" --output text && m365 spo group member list --webUrl
+   ]8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;; --groupName "Nákupy ]8;;
+   Schvalovatelé" --output text
+
+Nastavení pro **Nákupy** je hotové a ověřené přes M365 CLI:
+
+- Jana je ve skupině **Nákupy Zadavatelé**; ta má na webu Čtení a na seznamu novou úroveň **Nákupy Zadavatel**.
+- Tomáš je ve skupině **Nákupy Schvalovatelé**; na seznamu má **Nákupy Schvalovatel bez mazání**. Tato úroveň obsahuje `CancelCheckout`, ale ne `DeleteListItems`.
+- Seznam **PozadavkyCopilot3** má jedinečná oprávnění, `ReadSecurity=2` a `WriteSecurity=2`. Vlastníci webu mají Úplné řízení.
+
+Položky ani skupiny jsem nemazal. Změnil jsem ale seznamu zděděná oprávnění a nahradil je uvedenými přístupy; ostatní dřívější skupiny už z tohoto seznamu přístup nemají. Ověřil jsem konfiguraci, nikoli chování přihlášením jako Jana a Tomáš.
+
+Session exported to: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8ec15af4-f174-4d61-b85a-55075ed615ce/scratchpad/cop3/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 1.68 (4m 13s)
+Tokens     ↑ 642.3k (600.6k cached, 41.6k written) • ↓ 11.2k (6.9k reasoning)
+Resume     copilot --resume=63bf6377-6483-40ac-a5b9-6d41dd01cc7f

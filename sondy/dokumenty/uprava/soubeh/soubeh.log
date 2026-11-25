@@ -1,0 +1,10 @@
+03:37:40 Jakub píše do C6 (neodesláno)
+03:37:42 [e-range] 1760 ms: HOTOVO e-range (1720 ms): relace=ne PATCH 878 ms (celkem 1720 ms) | [["Položka","Cena v Kč",""],["Materiál",120000,""],["Práce",350000,""],["Doprava a montáž",60000,""],["Celkem",530000,""],["","",""]]
+03:37:42 Jakub odeslal C6
+03:37:48 [e-tabulka] 5255 ms: HOTOVO e-tabulka (5210 ms): tabulka Polozky založena na F1:G3
+03:37:49 [e-radek] 1315 ms: HOTOVO e-radek (1266 ms): POST rows 605 ms (celkem 1266 ms) | rozpocet!F1:G4 [["Položka","Částka"],["Materiál",120000],["Práce",300000],["Rezerva 3:37:48",25000]]
+03:37:50 [e-range-relace] 1146 ms: HOTOVO e-range-relace (1106 ms): relace=ano PATCH 110 ms (celkem 1106 ms) | [["Položka","Cena v Kč",""],["Materiál",125000,"API 3:37:50"],["Práce",355000,"API 3:37:50"],["Doprava a montáž",60000,""],["Celkem",540000,""],["","",""]]
+03:37:51 Jakub zapsal B2=999
+03:37:52 [e-range] 1294 ms: HOTOVO e-range (1245 ms): relace=ne PATCH 580 ms (celkem 1245 ms) | [["Položka","Cena v Kč",""],["Materiál",125000,"API 3:37:51"],["Práce",355000,"API 3:37:51"],["Doprava a montáž",60000,""],["Celkem",540000,""],["","",""]]
+03:38:04 snímek Excelu po API
+03:38:05 [e-range] 1443 ms: HOTOVO e-range (1410 ms): relace=ne PATCH 597 ms (celkem 1410 ms) | [["Položka","Cena v Kč",""],["Materiál",125000,"API 3:38:04"],["Práce",355000,"API 3:38:04"],["Doprava a montáž",60000,""],["Celkem",540000,""],["","",""]]

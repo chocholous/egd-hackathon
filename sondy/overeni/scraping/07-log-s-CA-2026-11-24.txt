@@ -1,0 +1,15 @@
+2026-11-24T01:50:30.75993  Connecting to the container 'scrape'...
+2026-11-24T01:50:30.87501  Successfully Connected to container: 'scrape' [Execution: 'job-egd-scrape-0qx68j6', Replica: 'job-egd-scrape-0qx68j6-kv4n2']
+2026-11-24T01:49:43.9982047Z stdout F {"ssl_paths": "/etc/pki/tls/cert.pem", "ca_nacteno": 23}
+2026-11-24T01:49:43.9982466Z stdout F {"url": "https://www.ote-cr.cz/cs/kratkodobe-trhy/elektrina/denni-trh", "http": 200, "bytes": 123513, "ms": 873}
+2026-11-24T01:49:43.9982718Z stdout F {"tabulek": 2, "radku": [4, 98]}
+2026-11-24T01:49:43.9982742Z stdout F {"tabulka": 0, "radek": ["Index", "EUR/MWh", "Změna (%)", "Celkové množství ČR (MWh)"]}
+2026-11-24T01:49:43.9983074Z stdout F {"tabulka": 0, "radek": ["BASE LOAD", "253,73", "5,48", "109 150,850"]}
+2026-11-24T01:49:43.9983095Z stdout F {"tabulka": 0, "radek": ["PEAK LOAD", "279,93", "5,16", "55 455,925"]}
+2026-11-24T01:49:43.9983111Z stdout F {"tabulka": 0, "radek": ["OFFPEAK LOAD", "227,53", "5,89", "53 694,925"]}
+2026-11-24T01:49:43.9983131Z stdout F {"tabulka": 1, "radek": ["Časový interval", "15min cena (EUR/MWh)", "Množství (MWh)", "Nákup 15min produkty (MWh)", "Nákup 60min produkty (MWh)", "Prodej 15min produkty (MWh)", "Prodej 60min produkty (MWh)", "Saldo DT(MWh)", "Export(MWh)", "Import(MWh)", "60min cena (EUR/MWh)"]}
+2026-11-24T01:49:43.9983168Z stdout F {"tabulka": 1, "radek": ["00:00-00:15", "208,09", "1 152,975", "397,400", "95,725", "974,500", "178,475", "659,850", "806,625", "-146,775", "202,81"]}
+2026-11-24T01:49:43.9984009Z stdout F {"tabulka": 1, "radek": ["00:15-00:30", "200,42", "1 155,975", "392,200", "95,725", "977,500", "178,475", "668,050", "836,375", "-168,325", "202,81"]}
+2026-11-24T01:49:43.9984123Z stdout F {"tabulka": 1, "radek": ["00:30-00:45", "201,40", "1 157,225", "465,475", "95,725", "978,750", "178,475", "596,025", "789,225", "-193,200", "202,81"]}
+2026-11-24T01:49:43.9984147Z stdout F {"tabulka": 1, "radek": ["00:45-01:00", "201,34", "1 162,950", "510,275", "95,725", "984,475", "178,475", "556,950", "769,700", "-212,750", "202,81"]}
+2026-11-24T01:49:43.9984165Z stdout F {"tabulka": 1, "radek": ["01:00-01:15", "202,41", "1 158,525", "562,475", "97,925", "977,950", "180,575", "498,125", "729,900", "-231,775", "202,23"]}

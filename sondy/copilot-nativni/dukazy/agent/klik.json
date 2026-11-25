@@ -1,0 +1,92 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene%20dokumenty/exporty",
+ "start": "2026-11-24T19:59:17.350Z",
+ "kroky": [
+  {
+   "krok": "wait:7000",
+   "t": 1095,
+   "ok": true
+  },
+  {
+   "krok": "click:[aria-label='Show Copilot actions for selected items']",
+   "t": 8097,
+   "ok": true
+  },
+  {
+   "krok": "wait:1500",
+   "t": 8201,
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('[role=menuitem]')].find(x=>/Create an agent/.test(x.innerText)).click()",
+   "t": 9702,
+   "ok": true
+  },
+  {
+   "krok": "wait:25000",
+   "t": 9705,
+   "ok": true
+  },
+  {
+   "krok": "shotv:create-agent2",
+   "t": 34707,
+   "vysledek": "sondy/copilot-nativni/dukazy/agent/create-agent2.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('input,textarea,button')].map(b=>(b.getAttribute('aria-label')||b.placeholder||b.innerText||'').trim()).filter(Boolean).slice(-25).join(' | ')",
+   "t": 34781,
+   "vysledek": "Show Copilot actions for this item | spokojenost.docx | More Actions | Share | Show Copilot actions for this item | spokojenost.pdf | More Actions | Share | Show Copilot actions for this item | spokojenost.pptx | More Actions | Share | Show Copilot actions for this item | spokojenost.xlsx | More Actions | Share | Show Copilot actions for this item | spokojenost-prehled.pdf | More Actions | Share | Show Copilot actions for this item | Ask a question about exporty | Copilot | Ask a question | Create an agent",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 2293,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate"
+  },
+  {
+   "t": 3875,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 8732,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserFirstRun.Experiences"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin at",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin att",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nemptyFolder, emptyFolderWithDrop, AvailableOffline16, DefenderApp, OneDriveLogo, OutlookLogoInverse, OneNoteLogoInvers",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has a"
+ ],
+ "konec": "2026-11-24T19:59:52.133Z"
+}

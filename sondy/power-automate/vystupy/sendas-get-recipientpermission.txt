@@ -1,0 +1,7 @@
+
+Trustee                                              AccessRights AccessControlType
+-------                                              ------------ -----------------
+NT AUTHORITY\SELF                                    {SendAs}     Allow
+tomas.prochazka@pavelchocholousgmail.onmicrosoft.com {SendAs}     Allow
+
+

@@ -1,0 +1,12 @@
+{"test": "bez_select_nometadata", "status": 200, "bytes": 553420, "sec": 0.489, "content_encoding": null}
+{"test": "bez_select_verbose", "status": 200, "bytes": 3609815, "sec": 0.505, "content_encoding": null}
+{"test": "select_3_sloupce_nometadata", "status": 200, "bytes": 52908, "sec": 0.255, "content_encoding": null}
+{"test": "select_3_sloupce_minimalmetadata", "status": 200, "bytes": 244963, "sec": 0.281, "content_encoding": null}
+{"test": "select_3_sloupce_verbose", "status": 200, "bytes": 306801, "sec": 0.282, "content_encoding": null}
+{"test": "select_3_sloupce_nometadata_gzip", "status": 200, "bytes": 11453, "sec": 0.198, "content_encoding": "gzip"}
+{"test": "bez_select_nometadata_gzip", "status": 200, "bytes": 84116, "sec": 0.294, "content_encoding": "gzip"}
+{"test": "hlavicky_cache", "etag": null, "cache_control": "private, max-age=0", "last_modified": "Sun, 22 Nov 2026 19:18:27 GMT", "vary": "Origin"}
+{"test": "hlavicky_polozka", "status": 200, "etag": "\"2d967e40-e446-4de8-8725-efdfd2f1de1b,2\""}
+{"test": "opakovane_volani_1", "sec": 0.217, "bytes": 52908}
+{"test": "opakovane_volani_2", "sec": 0.228, "bytes": 52908}
+{"test": "opakovane_volani_3", "sec": 0.223, "bytes": 52908}

@@ -1,0 +1,26 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/ai.aspx
+[3.9s] OK wait:3000  
+[12.6s] OK rozbal  
+8 zón
+[12.7s] OK click:[data-sp-web-part-id="9669ff55-924e-4bae-bf73-e84f7de8cd13"] #ai-shrnout  
+[22.7s] OK wait:10000  
+[22.7s] OK eval:document.querySelector('[data-sp-web-part-id="9669ff55-924e-4bae-bf73-e84f7de8cd13"]').innerText.slice(document.querySelector('[data-sp-web-part-id="9669ff55-924e-4bae-bf73-e84f7de8cd13"]').innerText.indexOf('AI pomocník'), document.querySelector('[data-sp-web-part-id="9669ff55-924e-4bae-bf73-e84f7de8cd13"]').innerText.indexOf('AI pomocník')+700)  
+AI pomocník
+Shrnout dnešek (AI)Přečíst soubor (OCR)Kolik AI zbývá dnes
+
+Návrh AI: Hodnocení spokojenosti s kanceláří dnes bylo téměř výlučně pozitivní s jedním hlasem na úrovni 4.
+[22.7s] OK eval:document.querySelector('[data-sp-web-part-id="9669ff55-924e-4bae-bf73-e84f7de8cd13"] #ai-shrnout').scrollIntoView({block:'start'})  {"interrupted":false}
+[22.9s] OK shotv:02-egd09-shrnuti  
+dukazy/karty/ai-spokojenost/shrnuti/02-egd09-shrnuti.png
+[22.9s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  POST 200 https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat

@@ -1,0 +1,9 @@
+{"krok": "jana pridava", "http": 201, "id": 1, "cas": "02:48:55"}
+{"krok": "tomas pridava svou", "http": 201, "id": 2, "cas": "02:48:56"}
+{"krok": "tomas bity", "low": "0x3c4313e7", "CancelCheckout": true, "DeleteListItems": false, "cas": "02:48:56"}
+{"krok": "tomas vidi", "http": 200, "polozky": ["Jana cizí pro mazání", "Tomas vlastní"], "cas": "02:48:56"}
+{"krok": "tomas schvaluje cizi (MERGE)", "http": 204, "chyba": null, "cas": "02:48:57"}
+{"krok": "tomas maze cizi", "http": 403, "chyba": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))", "cas": "02:48:57"}
+{"krok": "tomas maze svou", "http": 403, "chyba": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))", "cas": "02:48:57"}
+{"krok": "tomas recycle cizi", "http": 403, "chyba": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))", "cas": "02:48:57"}
+{"krok": "jana vidi", "http": 200, "polozky": ["Jana cizí - upravil schvalovatel"], "cas": "02:48:58"}

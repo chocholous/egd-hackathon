@@ -1,0 +1,298 @@
+ ● Copilot Fusion selected MAI Code 2 Flash because it was the best choice out of the models
+   available in your plan.
+
+ ● skill(egd-pripravenost)
+
+Začínám ověřením pracovního prostředí a nástrojů; jednotlivé výsledky budou přepsány do lidských stavů.
+
+ $ Shell Check readiness script commands 25 lines…
+   node /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs --help
+
+ $ Shell Create workshop folder and check tools 12 lines…                                         9s
+   mkdir -p /private/tmp/cp-run5/home/egd-workshop && cd /private/tmp/cp-run5/home/egd-workshop &&
+   node /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs nastroje
+
+ ✗ Shell Record license and orders, then start npm check Failed with exit code 1  [ZELENA] copilot-…
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zapis --klic
+   copilot-licence --stav zelena --hodnota "uzivatel potvrdil licenci GitHub Copilot" --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zapis --klic
+   objednavky --stav zluta --hodnota "DEV/TEST/PROD nejsou objednane; lab, bez E.ON objednavek" --it
+   "V labu se tato objednavka neoveruje." --tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenovest.mjs npm --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+   [ZELENA] copilot-licence: uzivatel potvrdil licenci GitHub Copilot
+   [ZLUTA]  objednavky: DEV/TEST/PROD nejsou objednane; lab, bez E.ON objednavek
+             veta pro IT: V labu se tato objednavka neoveruje.
+   node:internal/modules/cjs/loader:1433
+     throw err;
+     ^
+   
+   Error: Cannot find module 
+   '/tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenovest.mjs'
+       at Module._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+       at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+       at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+       at Module._load (node:internal/modules/cjs/loader:1216:25)
+       at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+       at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+       at node:internal/main/run_main_module:36:49 {
+     code: 'MODULE_NOT_FOUND',
+     requireStack: []
+   }
+   
+   Node.js v22.23.5
+   Failed with exit code 1
+
+Licenci jsem zapsal jako potvrzenou uživatelem; weby DEV/TEST/PROD jsou uživatelům známé jako neobjednané. Pokračuji síťovou kontrolou.
+
+ $ Shell Run npm, network and variant checks 6 lines…                                            30s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs npm --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e; node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs sit --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e --domena sharepoint.com; node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs varianty --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+ ● Read shell output Waiting up to 30 seconds for command output 10 lines…                        5s
+
+Síť i npm jsou zelené a Node je 22.23.5, takže pokračuji lokální instalací CLI přímo do pracovní složky.
+
+ $ Shell Install CLI locally in workshop folder 4 lines…                                       2m 0s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs cli-instalace
+   --tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+ ● Read shell output Waiting up to 30 seconds for command output 4 lines…
+
+CLI je nainstalované lokálně. Teď ověřím přihlášení; appId pro lab/test ale nemám zadáno, takže ho nezískávám náhodně.
+
+ ✗ Shell Record missing app registration ID Failed with exit code 1  node:internal/modules/cjs/load…
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp/run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zapis --klic appId
+   --stav cervena --hodnota "appId chybí" --it "Prosím o registrovanou testovací aplikaci nebo
+   povoleno public client flows pro CLI for Microsoft 365 v lab tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e; tato připravenost žádnou registraci sama nevytvářela."
+   --tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+   node:internal/modules/cjs/loader:1433
+     throw err;
+     ^
+   
+   Error: Cannot find module 
+   '/tmp/cp/run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs'
+       at Module._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+       at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+       at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+       at Module._load (node:internal/modules/cjs/loader:1216:25)
+       at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+       at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:171:5)
+       at node:internal/main/run_main_module:36:49 {
+     code: 'MODULE_NOT_FOUND',
+     requireStack: []
+   }
+   
+   Node.js v22.23.5
+   Failed with exit code 1
+
+ $ Shell Record app ID blocker and verify login 6 lines…                                          9s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zapis --klic appId
+   --stav cervena --hodnota "appId chybí" --it "Prosím o registrovanou testovací aplikaci nebo
+   povoleno public client flows pro CLI for Microsoft 365 v lab tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e; tato pripravenost zadnou registraci sama nevytvarela."
+   --tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs prihlaseni --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+Přihlášení je ověřené i bez ručního kroku: účet je přihlášený do správného lab tenantu. CLI má uložené appId, takže doplním stav appId a ověřím SharePoint.
+
+ $ Shell Record app ID and inspect SharePoint access 13 lines…                                   51s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zapis --klic appId
+   --stav zelena --hodnota "CLI je prihlaseno a pouziva appId 12f19539-b70a-499d-b6dc-517a32c0e904 v
+   tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e" --tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e &&
+   node /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs sharepoint --web
+   ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;]8;; --tenant ]8;;
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+SharePoint je dostupný, jsem vlastníkem webu a mohu zapisovat do vlastního katalogu aplikací. Teď ověřím plán zkušebního zápisu před samotným zápisem.
+
+ ✗ Shell Preview SharePoint trial write plan Failed with exit code 10  PLAN ZAPISU (nic se zatim ne…
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zkouska --web
+   ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;]8;; --tenant ]8;;
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+   PLAN ZAPISU (nic se zatim nezapsalo):
+     1. na webu https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest zalozit seznam 
+   "EGD-pripravenost" (jen kdyz jeste neexistuje)
+     2. pridat do nej JEDNU polozku s nazvem "Zkouska chocholous 22. 11. 2026 20:42:11"
+     3. precist ji zpatky
+   Nic se nemaze. Seznam si muzes pozdeji smazat sam v prohlizeci (Obsah webu).
+   Kdyz s tim clovek souhlasi, spust znovu s volbou --ano.
+   Failed with exit code 10
+
+Předem schválený plán je bezpečně omezený na jeden seznam a jednu položku. Nyní ho provedu s explicitním `--ano`.
+
+ $ Shell Create approved trial list item 4 lines…                                                53s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zkouska --web
+   ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;]8;; --tenant ]8;;
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e --ano
+
+Zkušební zápis se povedl: položka byla vytvořená a přečtená zpět. Ověřuji SPFx bez stahování závislostí a potom GitHub/Copilot.
+
+ $ Shell Check GitHub authentication 3 lines…
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs github --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+ $ Shell Check SPFx readiness 3 lines…                                                            8s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs spfx --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+SPFx je připravené; GitHub CLI není přihlášený, takže to je samostatný žlutý bod. Vzhledem k zelenému labu pokračuji přípravou první appky, ale nasazení bude drženo za hranicí předchozího souhlasu.
+
+ MD Read ~/.copilot/skills/egd-pripravenost/ZADANI-appka.md 46 lines read
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/appka.md 76 lines read
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/github.md 84 lines read
+
+Před nasazením nejdříve vytvořím a sestavím lokální projekt; žádný SharePoint zápis tato část nesmí provádět.
+
+ ✗ Shell Inspect app build commands Failed with exit code 2  appka.mjs - appka Spokojenost s prostr…
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/appka.mjs --help
+   appka.mjs - appka Spokojenost s prostredim kancelare (SharePoint seznam + dashboard)
+   
+   Spoustej v pracovni slozce z egd-pripravenost:  node "<cesta>/appka.mjs" <prikaz> [volby]
+   
+   Prikazy:
+     cesta                         precte .pripravenost/vysledky.json a doporuci cestu A / A2 / B
+     novy   [--slozka spokojenost-appka] zalozi projekt ze sablony (nove GUIDy) a nainstaluje 
+   balicky (npm ci)
+            [--bez-instalace]      jen zkopiruje sablonu
+     build  [--slozka spokojenost-appka] postavi .sppkg (npm run build), chyby i do build.log
+     seznam --web <url> [--seznam Spokojenost] [--ano]
+                                   zalozi seznam a sloupce Hodnoceni, DenCislo (index), Klic (index,
+    unikatni) (bez --ano jen plan)
+     nasadit --web <url> [--slozka spokojenost-appka] [--stranka spokojenost] [--nadpis "..."] 
+   [--seznam Spokojenost] [--ano]
+                                   nahraje do katalogu TOHOTO webu, deploy, install/upgrade, stranka
+                                   (Article -> sekce -> web part -> SingleWebPartAppPage), cteni 
+   zpet
+     over   --web <url> [--slozka spokojenost-appka] [--stranka spokojenost] [--seznam Spokojenost]
+                                   jen cteni: appka v katalogu, stranka s web partem, polozky 
+   seznamu
+   
+   Spolecne volby: --cli <cesta k @pnp/cli-microsoft365/dist/index.js> (jinak ./node_modules nebo
+   PRVNI_APPKA_M365_CLI / PRIPRAVENOST_M365_CLI).
+   Kody: 0 hotovo, 1 chyba, 2 spatne pouziti, 10 plan bez zapisu (neni chyba).
+   Failed with exit code 2
+
+ $ Shell Create SPFx app project and install dependencies 3 lines…                             3m 0s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/appka.mjs novy --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+ ● Read shell output Waiting up to 60 seconds for command output 3 lines…
+
+Projekt appky je založený a závislosti jsou nainstalované lokálně. Teď sestavím `.sppkg` balíček; nasazení zatím neprovádím.
+
+ $ Shell Build SPFx app package 2 lines…                                                       2m 1s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/appka.mjs build
+
+Balíček appky je sestavený. Ještě zobrazím pouze plány vytvoření seznamu a nasazení, bez zápisu, protože předchozí souhlas byl jen pro zkušební položku.
+
+ $ Shell Preview app list and deployment plans 25 lines…                                         30s
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/appka.mjs cesta --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e; node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/appka.mjs seznam --web
+   ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;]8;; --tenant ]8;;
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e; node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/appka.mjs nasadit --web
+   ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;]8;; --tenant ]8;;
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+ ✗ Read shell output Waiting up to 30 seconds for command output Failed with exit code 10  [INFO]  …
+   [INFO]    vysledky: /private/tmp/cp-run5/home/egd-workshop/.pripravenost/vysledky.json
+   [INFO]    web z kontroly: https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest
+             npm-ping: zelena (registry odpovida (PONG))
+             node-pro-spfx-1.24: zelena (Node v22.23.5; SPFx 1.24 chce 22 / 24 / 26 (22 aspon 
+   22.14). Gulp uz neni, build je Heft.)
+             prihlaseni: zelena (prihlasen pavel.admin@pavelchocholousgmail.onmicrosoft.com, appId 
+   12f19539-b70a-499d-b6dc-517a32c0e904, tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e)
+             web-cteni: zelena ("Site catalog test" 
+   (https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest))
+             site-app-catalog: zelena (web ma vlastni katalog aplikaci "Apps for SharePoint" (4 
+   balicku))
+             role-v-katalogu: zelena (muzes nahrat balicek (.sppkg) do katalogu)
+   
+   DOPORUCENA CESTA: A: SPFx web part, nasazeni skriptem (prikazy novy -> build -> seznam -> 
+   nasadit)
+   PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest:
+     - zalozit seznam "Spokojenost" (bezny seznam, v navigaci webu)
+     - pridat sloupec Hodnoceni
+     - pridat sloupec DenCislo
+     - pridat sloupec Klic
+     - sloupce DenCislo a Klic budou indexovane (limit 5000 polozek), Klic unikatni = 1 hodnoceni na
+    uzivatele a den
+   
+   Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+   [INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+   [POZOR]   seznam "Spokojenost" na webu neni - appka ho bude hlasit; zaloz ho prikazem seznam
+   
+   PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest, katalog 
+   tohoto webu, nic tenant-wide):
+     1. nahrat spokojenost-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+     2. nasadit (deploy) v katalogu webu
+     3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+     4. zalozit stranku spokojenost.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web 
+   part, prepnout na celostrankovou appku a publikovat
+   
+   Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+   Failed with exit code 10
+
+Plány appky jsou nyní hotové a bez zápisu; doporučená cesta je A. Skládám závěrečnou zprávu a zkontroluji ji před odevzdáním.
+
+ $ Shell Generate readiness report 4 lines…
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zprava --jmeno "Test
+   Pet" --tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+
+ MD Read pripravenost-Test-Pet.md 106 lines read
+
+ / Search "(?i)(ghp_|github_pat_|Bearer |token|heslo|password)" (pripravenost-Test-Pet… 1 line found
+
+Závěrečná zpráva je bez tokenů a hesel. Doplním explicitní stav GitHub CLI jako žlutý; VS Code/Copilot rozšíření už je ve zprávě označené žlutě.
+
+ $ Shell Record GitHub blocker and refresh report 10 lines…
+   cd /private/tmp/cp-run5/home/egd-workshop && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zapis --klic
+   github-test --stav zluta --hodnota "gh cli neneni prihlaseno k zadnemu GitHub hostu; firemni
+   GitHub adresa zatim neni zadana" --it "Prosím o informaci o firemnim GitHubu EG.D nebo priklad
+   EON.*.ghe.com/github.com a overeni Copilot licence." --tenant
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e && node
+   /tmp/cp-run5/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs zprava --jmeno "Test
+   Pet" --tenant 972a674c-7b85-4e6-4e56-a31f-b2f95b42fd1e
+
+ / Search "github-test|(?i)(ghp_|github_pat_|Bearer |token|heslo|password)" (priprave… 3 lines found
+
+Připravenost je **především zelená**: 30 zelených, 3 žluté, 0 červených. Doporučená cesta je A, projekt appky je vytvořený a sestavený.
+
+Zpráva: `/private/tmp/cp-run5/home/egd-workshop/pripravenost-Test-Pet.md`
+
+Zkušební položka na SharePointu byla zápisem ověřena. Nasazení appky nebylo provedeno bez samostatného souhlasu.
+
+Session exported to: /tmp/cp-run5/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 2.26 (12m 58s)
+Tokens     ↑ 800.3k (672.3k cached) • ↓ 6.1k (2.1k reasoning)
+Resume     copilot --resume=25a55606-4fcf-450b-8317-76334be560a5

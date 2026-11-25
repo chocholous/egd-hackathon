@@ -1,0 +1,42 @@
+Denní report kurzů ČNB – 2026-11-23
+Shrnutí (LLM gateway)
+Kurz koruny k euru k 23. listopadu 2026 činí 24,455 CZK za 1 EUR, což odráží stabilní hodnotu koruny vůči
+nejdůležitějšímu evropskému partnerovi. Dolar se obchoduje za 22,358 CZK, což naznačuje mírnou sílu koruny
+vůči americké měně. Britská libra stojí 29,226 CZK, což odpovídá její dlouhodobě vyšší hodnotě vzhledem k
+české koruně. Polský zlotý je kurzován na 5,487 CZK, což je běžná úroveň v rámci regionálních kurzů
+středoevropských měn. Celkově kurzová situace ukazuje na stabilitu české koruny jak vůči hlavním světovým
+měnám, tak regionálním sousedům.
+Kurzy
+ Země                Měna               Kód                 Množství                  Kurz CZK
+ Austrálie           dolar              AUD                 1                         14.794
+ Brazílie            real               BRL                 1                         3.729
+ Čína                žen-min-pi         CNY                 1                         3.355
+ Dánsko              koruna             DKK                 1                         3.272
+ EMU                 euro               EUR                 1                         24.455
+ Filipíny            peso               PHP                 100                       35.005
+ Hongkong            dolar              HKD                 1                         2.852
+ Indie               rupie              INR                 100                       24.063
+ Indonesie           rupie              IDR                 1000                      1.229
+ Island              koruna             ISK                 100                       17.824
+ Izrael              nový šekel         ILS                 1                         6.677
+ Japonsko            jen                JPY                 100                       14.054
+ Jižní Afrika        rand               ZAR                 1                         1.277
+ Kanada              dolar              CAD                 1                         15.566
+ Korejská republika won                 KRW                 100                       1.658
+ Maďarsko            forint             HUF                 100                       6.573
+ Malajsie            ringgit            MYR                 1                         5.423
+ Mexiko              peso               MXN                 1                         1.162
+ MMF                 ZPČ                XDR                 1                         30.023
+ Norsko              koruna             NOK                 1                         2.279
+ Nový Zéland         dolar              NZD                 1                         12.178
+ Polsko              zlotý              PLN                 1                         5.487
+ Rumunsko            leu                RON                 1                         4.572
+ Singapur            dolar              SGD                 1                         17.314
+ Švédsko             koruna             SEK                 1                         2.176
+ Švýcarsko           frank              CHF                 1                         26.618
+ Thajsko             baht               THB                 100                       65.691
+ Turecko             lira               TRY                 100                       44.183
+ USA                 dolar              USD                 1                         22.358
+ Velká Británie      libra              GBP                 1                         29.226
+Vygenerováno Container Apps Jobem 2026-11-24T02:11:44.409Z.
+

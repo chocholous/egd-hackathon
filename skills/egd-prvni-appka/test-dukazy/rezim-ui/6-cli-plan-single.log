@@ -1,0 +1,8 @@
+PLAN rezimu single na webu https://pavelchocholousgmail.sharepoint.com/sites/egd01-test:
+  (appku pouzije jen autor a lide, se kterymi web sdilel jednotlive)
+  - seznam MojeAppka: vratit dedeni prav z webu (zrusi zvlastni prava seznamu)
+  - web: odebrat skupinu "Vsichni krome externich uzivatelu" (ma Omezený přístup)
+  - web: vyradit "Vsichni krome externich uzivatelu" ze skupiny Návštěvníci webu Účastník 01 – TEST
+  - seznam MojeAppka: vratit vychozi upravy polozek
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.

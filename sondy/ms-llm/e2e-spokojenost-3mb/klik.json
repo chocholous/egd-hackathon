@@ -1,0 +1,113 @@
+{
+  "profil": "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/profil-tomas",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/prvni-appka.aspx?env=WebView",
+  "cas": "2026-11-22T19:57:21.951Z",
+  "sablona": "spokojenost",
+  "nacteniMs": 3725,
+  "shrnuti": {
+    "ms": 1153,
+    "vystup": "Návrh AI: Hodnocení spokojenosti s kanceláří je zatím nízké, s jedním hlasy na úrovni 4 a žádnými hlasy na ostatních úrovních."
+  },
+  "ocr": {
+    "soubor": "velky3.pdf",
+    "ms": 3506,
+    "vystup": "Text ze souboru: Částka k úhradě: 12 345,00 Kč Příliš žluťoučký kůň úpěl ďábelské ódy Dodavatel: Řezníkův závod, s.r.o. Částka k úhradě: 12 345,00 Kč Příliš žluťoučký kůň úpěl ďábelské ódy Dodavatel: Řezníkův závod, s.r.o."
+  },
+  "kvota": {
+    "ms": 163,
+    "vystup": "Dnes spotřebováno 840 z 50000 tokenů."
+  },
+  "sit": [
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat",
+      "stav": 200,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    },
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/ocr",
+      "stav": 200,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    },
+    {
+      "metoda": "GET",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/kvota",
+      "stav": 200,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    }
+  ],
+  "bundly": [
+    "200 spokojenost-web-part_7439a761a10e0fcabf89.js"
+  ]
+}

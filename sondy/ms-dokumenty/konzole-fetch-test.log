@@ -1,0 +1,15 @@
+web part (#log) nenalezen, url= https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty
+--- eval fetch('https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041').then(r => r.status)
+VYSLEDEK: 200
+--- eval fetch('https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ').then(r => r.status)
+KONZOLE error: Access to fetch at 'https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ' from origin 'https://pavelchocholousgmail.sharepoint.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+SIT FAIL https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ: net::ERR_FAILED
+KONZOLE error: Failed to load resource: net::ERR_FAILED
+VYSLEDEK: VYJIMKA TypeError: Failed to fetch
+KONZOLE warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-06.005/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+KONZOLE warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-contentrollup-webpart_en-us_4133989ad1059a9de775.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+KONZOLE warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-events-webpart_en-us_eabcc19e93108276194b.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+KONZOLE warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-flex-layout_none_100322376c07deff13b5.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+KONZOLE warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-carousel-layout_en-us_424b64683387343618fe.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.
+LOG:
+-

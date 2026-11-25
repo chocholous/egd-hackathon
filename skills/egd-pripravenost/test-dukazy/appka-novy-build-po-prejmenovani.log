@@ -1,0 +1,14 @@
+# novy+build 21:00:26, appka.mjs mtime 21:00:08
+[OK]      projekt zalozen: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/final3/spokojenost-appka (reseni spokojenost-appka, web part fdb087f9-63ee-432e-890f-84ae273fe357)
+Instaluji balicky SharePoint Frameworku (npm ci, lokalne, bez admina; stovky MB, par minut)...
+[OK]      balicky nainstalovane. Dalsi krok: build
+rc=0
+Stavim balicek (npm run build, Heft; minuta az dve)...
+[OK]      balicek: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/final3/spokojenost-appka/sharepoint/solution/spokojenost-appka.sppkg (12401 B, verze 1.0.0.0)
+rc=0
+total 32
+drwxr-xr-x@  4 chocholous  wheel    128 Nov 22 21:02 .
+drwxr-xr-x@  3 chocholous  wheel     96 Nov 22 21:02 ..
+drwxr-xr-x@ 11 chocholous  wheel    352 Nov 22 21:02 debug
+-rw-r--r--@  1 chocholous  wheel  12401 Nov 22 21:02 spokojenost-appka.sppkg
+konec

@@ -1,0 +1,61 @@
+{
+ "displayName": "EGD PA sonda: SendEmailV2 s From = sdílená schránka (Send As)",
+ "connectionReferences": {
+  "shared_office365": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_office365",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-office365",
+   "source": "Embedded"
+  }
+ },
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+   "$connections": {
+    "defaultValue": {},
+    "type": "Object"
+   },
+   "$authentication": {
+    "defaultValue": {},
+    "type": "SecureObject"
+   }
+  },
+  "triggers": {
+   "Recurrence": {
+    "type": "Recurrence",
+    "recurrence": {
+     "frequency": "Month",
+     "interval": 12
+    }
+   }
+  },
+  "actions": {
+   "Posli": {
+    "type": "OpenApiConnection",
+    "runAfter": {},
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+      "connectionName": "shared_office365",
+      "operationId": "SendEmailV2"
+     },
+     "parameters": {
+      "emailMessage/To": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+      "emailMessage/Subject": "PA sonda: SendEmailV2 s From (Send As)",
+      "emailMessage/Body": "<p>Příloha vznikla ve flow.</p>",
+      "emailMessage/Attachments": [
+       {
+        "Name": "kurzy.csv",
+        "ContentBytes": "@base64('mena;kurz\nEUR;24,3')"
+       }
+      ],
+      "emailMessage/From": "egd-report@pavelchocholousgmail.onmicrosoft.com"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   }
+  },
+  "outputs": {}
+ }
+}

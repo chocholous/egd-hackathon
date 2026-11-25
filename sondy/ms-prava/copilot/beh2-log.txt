@@ -1,0 +1,184 @@
+ ● Copilot Fusion selected MAI Code 2 Flash because it was the best choice out of the models
+   available in your plan.
+
+ ● skill(egd-prava-role)
+
+Začínám ověřením přihlášení a existujících objektů, aby se změny použily pouze na zadaný web a seznam.
+
+ ✗ Shell Verify target SharePoint web Failed with exit code 1  Error: Invalid option: 'webUrl' Run …
+   m365 spo web get --webUrl ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' ]8;;
+   --output json
+   Error: Invalid option: 'webUrl'
+   
+   Run 'm365 spo web get -h' for help.
+   Failed with exit code 1
+
+ $ Shell Check CLI login status 8 lines…
+   m365 status --output json
+
+ $ Shell Check target list and security settings 6 lines…
+   m365 spo list get --webUrl ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;']8;;
+   --title 'PozadavkyCopilot' --properties
+   'Title,HasUniqueRoleAssignments,ReadSecurity,WriteSecurity' --output json
+
+ $ Shell Check list role inheritance 47 lines…
+   m365 spo list roleinheritance get --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --listTitle ]8;;
+   'PozadavkyCopilot' --output json
+
+ $ Shell Get web and associated groups 119 lines…
+   m365 spo web get --url ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' ]8;;
+   --withGroups --output json
+
+ $ Shell List existing permission levels 316 lines…
+   m365 spo roledefinition list --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --output json]8;;
+
+ $ Shell List existing SharePoint groups 142 lines…
+   m365 spo group list --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --output json]8;;
+
+Na cílovém webu už jsou vlastní úrovně `EGD Zadavatel` i `EGD Schvalovatel bez mazání`; vytvořím jen skupiny pro aplikaci Copilot, přiřadím členství a nastavím seznam.
+
+ $ Shell Check SharePoint group creation syntax 51 lines…
+   m365 spo group add --help
+
+ $ Shell Check SharePoint group member syntax 51 lines…
+   m365 spo group member add --help
+
+ $ Shell Check list role inheritance command syntax 45 lines…
+   m365 spo list roleinheritance break --help
+
+ $ Shell Check list role assignment syntax 60 lines…
+   m365 spo list roleassignment add --help
+
+ $ Shell Check web role assignment syntax 51 lines…
+   m365 spo web roleassignment add --help
+
+ $ Shell Configure Copilot app roles and list permissions 77 lines…                               5s
+   W=']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;'; S='PozadavkyCopilot'; ]8;;
+   Z='Copilot Zadavatelé'; H='Copilot Schvalovatelé'; m365 spo group add --webUrl "$W" --name "$Z"
+   --description 'Zadavatelé aplikace Copilot' && m365 spo group add --webUrl "$W" --name "$H"
+   --description 'Schvalovatelé aplikace Copilot' && m365 spo group member add --webUrl "$W"
+   --groupName "$Z" --userNames 'jana.svobodova@pavelchocholousgmail.onmicrosoft.com' && m365 spo
+   group member add --webUrl "$W" --groupName "$H" --userNames
+   'tomas.prochazka@pavelchocholousgmail.onmicrosoft.com' && m365 spo web roleassignment add
+   --webUrl "$W" --groupName "$Z" --roleDefinitionName 'Čtení' && m365 spo web roleassignment add
+   --webUrl "$W" --groupName "$H" --roleDefinitionName 'Čtení' && m365 spo list roleinheritance
+   break --webUrl "$W" --listTitle "$S" --clearExistingPermissions --force && m365 spo list
+   roleassignment add --webUrl "$W" --listTitle "$S" --groupName 'Vlastníci webu EGD sonda ms-prava'
+   --roleDefinitionName 'Úplné řízení' && m365 spo list roleassignment add --webUrl "$W" --listTitle
+   "$S" --groupName "$Z" --roleDefinitionName 'EGD Zadavatel' && m365 spo list roleassignment add
+   --webUrl "$W" --listTitle "$S" --groupName "$H" --roleDefinitionName 'EGD Schvalovatel bez
+   mazání' && m365 spo list set --webUrl "$W" --title "$S" --readSecurity 2 --writeSecurity 2
+
+Základní nastavení je provedeno. Na závěr ověřuji členství, oprávnění webu, přiřazené úrovně na seznamu a bezpečnost Read/Write.
+
+ $ Shell Check list role assignment verification command 47 lines…
+   m365 spo list roleassignment list --help
+
+ ✗ Shell Verify approver role definition Failed with exit code 1  Error: Invalid option: 'name' Run…
+   m365 spo roledefinition get --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --name 'EGD Schvalovatel ]8;;
+   bez mazání' --output json
+   Error: Invalid option: 'name'
+   
+   Run 'm365 spo roledefinition get -h' for help.
+   Failed with exit code 1
+
+ $ Shell Verify list security settings 6 lines…
+   m365 spo list get --webUrl ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;']8;;
+   --title 'PozadavkyCopilot' --properties
+   'Title,ReadSecurity,WriteSecurity,HasUniqueRoleAssignments' --output json
+
+ $ Shell Verify requester group membership 19 lines…
+   m365 spo group member list --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --groupName 'Copilot ]8;;
+   Zadavatelé' --output json
+
+ $ Shell Verify approver group membership 19 lines…
+   m365 spo group member list --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --groupName 'Copilot ]8;;
+   Schvalovatelé' --output json
+
+ $ Shell Discover web role assignment commands 7 lines…
+   m365 spo web roleassignment --help
+
+ $ Shell Discover list role assignment commands 7 lines…
+   m365 spo list roleassignment --help
+
+ $ Shell Check role definition get syntax 33 lines…
+   m365 spo roledefinition get --help
+
+ $ Shell Verify approver role has no delete item right 27 lines…
+   m365 spo roledefinition list --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --output json | grep -A24 ]8;;
+   -B2 'EGD Schvalovatel bez mazání'
+
+Ověřuji i samotná přiřazení na seznamu přes SharePoint REST, protože v této verzi CLI není samostatný příkaz na jejich výpis.
+
+ $ Shell Verify list role assignments via REST 47 lines…
+   m365 spo request get --url
+   ']8;id=md-1owdhgc;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists/getbytitle(%27PozadavkyCopilot%27)/roleAssignments?$expand=Member,RoleDefinitionBindingshttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists/getbytitle(%]8;;
+   ]8;id=md-1owdhgc;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists/getbytitle(%27PozadavkyCopilot%27)/roleAssignments?$expand=Member,RoleDefinitionBindings27PozadavkyCopilot%27)/roleAssignments?$expand=Member,RoleDefinitionBindings]8;;]8;;' --output json]8;;
+
+ $ Shell Check generic Microsoft 365 REST request syntax 42 lines…
+   m365 request --help
+
+ $ Shell Verify list role assignment principals and levels 4 lines…
+   m365 request --url ']8;id=md-1owdhgc;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists/getbytitle(%27PozadavkyCopilot%27)/roleAssignments?$expand=Member,RoleDefinitionBindingshttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-1owdhgc;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists/getbytitle(%27PozadavkyCopilot%27)/roleAssignments?$expand=Member,RoleDefinitionBindings/lists/getbytitle(%27PozadavkyCopilot%27)/roleAssignments?$expand=Member,RoleDefinitionBindings]8;;]8;;' ]8;;
+   --resource ']8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;' --output json | jq -r '.value[] | ]8;;
+   [.Member.Title, ([.RoleDefinitionBindings[].Name] | join(", "))] | @tsv'
+
+ $ Shell Verify no-delete approver role by ID 35 lines…
+   m365 spo roledefinition get --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --id 1073741926 --output ]8;;
+   json
+
+ $ Shell Verify Copilot groups have Read on web 2 lines…
+   m365 request --url ']8;id=md-18a9j74;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/roleAssignments?$expand=Member,RoleDefinitionBindingshttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-18a9j74;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/roleAssignments?$expand=Member,RoleDefinitionBindings/roleAssignments?$expand=Member,RoleDefinitionBindings]8;;]8;;' --resource ]8;;
+   ']8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;' --output json | jq -r '.value[] | ]8;;
+   select(.Member.Title == "Copilot Zadavatelé" or .Member.Title == "Copilot Schvalovatelé") |
+   [.Member.Title, ([.RoleDefinitionBindings[].Name] | join(", "))] | @tsv'
+
+ ✗ Shell Verify no-delete approver role by ID Failed with exit code 1  Error: invalid_resource: Err…
+   m365 spo roledefinition get --webUrl
+   ']8;id=md-nm6xf4;https://pavelchocholousgmail.shareport.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.shareport.com/sites/egd-sonda-ms-prava]8;;]8;;' --id 1073741926 --output ]8;;
+   json
+   Error: invalid_resource: Error(s): 500011 - Timestamp: 2026-11-22 20:20:31Z - Description: 
+   AADSTS500011: The resource principal named https://pavelchocholousgmail.shareport.com was not 
+   found in the tenant named 972a674c-7b85-4e56-a31f-b2f95b42fd1e. This can happen if the 
+   application has not been installed by the administrator of the tenant or consented to by any user
+    in the tenant. You might have sent your authentication request to the wrong tenant. Trace ID: 
+   172593cf-cec9-4b55-922f-37ec2c732a00 Correlation ID: 0e640890-c604-408a-ba08-017d112fcb28 
+   Timestamp: 2026-11-22 20:20:31Z - Correlation ID: 0e640890-c604-408a-ba08-017d112fcb28 - Trace 
+   ID: 172593cf-cec9-4b55-922f-37ec2c732a00
+   Failed with exit code 1
+
+Dokončuji kontrolu rozdílu úrovní: zadavatel nesmí mít `CancelCheckout`, schvalovatel ho má, ale úroveň nesmí obsahovat `DeleteListItems`.
+
+ $ Shell Verify requester role lacks approver right 35 lines…
+   m365 spo roledefinition get --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --id 1073741925 --output ]8;;
+   json
+
+ $ Shell Verify final approver role rights 35 lines…
+   m365 spo roledefinition get --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --id 1073741926 --output ]8;;
+   json
+
+Nastavení bylo provedeno na seznamu `PozadavkyCopilot`.
+
+- **Zadavatelka:** jana.svobodova@… — skupina `Copilot Zadavatelé`, vidí jen své položky.
+- **Schvalovatel:** tomas.prochazka@… — skupina `Copilot Schvalovatelé`, vidí všechny položky a má právo upravovat; `DeleteListItems` nemá.
+- Ověřeno: dědičnost přerušena, `ReadSecurity=2`, `WriteSecurity=2`, `HasUniqueRoleAssignments=true`.
+
+Session exported to: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8ec15af4-f174-4d61-b85a-55075ed615ce/scratchpad/cop2/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 1.42 (1m 15s)
+Tokens     ↑ 436.3k (347.1k cached) • ↓ 3.6k (902 reasoning)
+Resume     copilot --resume=0ff6352f-4816-4841-a91a-2d756a13e19a

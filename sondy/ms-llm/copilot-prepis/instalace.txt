@@ -1,0 +1,6 @@
+nainstalovano: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/copilot-llm/home/.copilot/skills/egd-prvni-appka
+OK: Copilot skill 'egd-prvni-appka' vidi
+2:  egd-prvni-appka - Postav s uživatelem z EG.D první jednoduchou appku na SharePointu nejjednodušší cestou, která v jeho prostředí funguje - SPFx web 
+nainstalovano: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/copilot-llm/home/.copilot/skills/egd-llm-gateway
+OK: Copilot skill 'egd-llm-gateway' vidi
+2:  egd-llm-gateway - Napoj SPFx appku EG.D na AI (generování a shrnutí textu, OCR dokumentů a obrázků, popis obrázku) přes sdílenou LLM gateway - web 

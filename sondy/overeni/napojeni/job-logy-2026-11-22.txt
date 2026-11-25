@@ -1,0 +1,6 @@
+2026-11-22T18:16:50.2791224Z	job-egd-report-57fq7yz-ffzww	NEGATIVNÍ test sendMail jako alice@pavelchocholousgmail.onmicrosoft.com: HTTP 403 {"error":{"code":"ErrorAccessDenied","message":"Access is denied. Check credentials and try again.","innererror":{"mess
+2026-11-22T18:16:50.2791224Z	job-egd-report-57fq7yz-ffzww	sendMail jako egd-report@pavelchocholousgmail.onmicrosoft.com: HTTP 202 
+2026-11-22T18:16:50.2791224Z	job-egd-report-57fq7yz-ffzww	staženo 30 kurzů pro 2026-11-20; CSV 1237 B; {'EUR': 24.47, 'PLN': 5.485, 'GBP': 29.211, 'USD': 22.262}
+2026-11-22T18:20:29.304072Z	job-egd-report-29922860-dq7p6	sendMail jako egd-report@pavelchocholousgmail.onmicrosoft.com: HTTP 202 
+2026-11-22T18:20:29.304072Z	job-egd-report-29922860-dq7p6	NEGATIVNÍ test sendMail jako alice@pavelchocholousgmail.onmicrosoft.com: HTTP 403 {"error":{"code":"ErrorAccessDenied","message":"Access is denied. Check credentials and try again.","innererror":{"mess
+2026-11-22T18:20:29.304072Z	job-egd-report-29922860-dq7p6	staženo 30 kurzů pro 2026-11-20; CSV 1237 B; {'EUR': 24.47, 'PLN': 5.485, 'GBP': 29.211, 'USD': 22.262}

@@ -1,0 +1,53 @@
+{
+  "nazev": "Skill první appka",
+  "stav": "hotovo",
+  "popis": "Skill egd-prvni-appka je ověřený v labu: cesty A a A2, režimy single/open, opravy textů a důkazů podle auditu (necommitnuto).",
+  "oblast": "skilly",
+  "kdo": "skill-prvni-appka",
+  "vystup": "skills/egd-prvni-appka/TEST.md",
+  "aktualizovano": "2026-11-24T20:47:00Z",
+  "zacatek": "2026-11-22T18:22:58Z",
+  "kroky": 20,
+  "historie": [
+    {
+      "t": "2026-11-22T19:58:59Z",
+      "stav": "hotovo",
+      "popis": "nové GUIDy + stránka prvni-appka.aspx; obě appky (prvni-appka i pripravenost) ověřeny vedle sebe na /sites/egd-test-vedle-sebe, i v prohlížeči. Čeká: egd01, Copilot"
+    },
+    {
+      "t": "2026-11-22T20:00:01Z",
+      "stav": "bezi",
+      "popis": "test v GitHub Copilot CLI (copilot-run.sh) na /sites/egd-test-prvni-appka"
+    },
+    {
+      "t": "2026-11-24T08:37:00Z",
+      "stav": "bezi",
+      "popis": "díra 17: ruční nahrání .sppkg pod egd01 ✅ (24. 11.); zbývá A2 stránka+hlas pod egd01"
+    },
+    {
+      "t": "2026-11-24T09:04:49Z",
+      "stav": "bezi",
+      "popis": "A2 celá pod egd01 ✅ (seznam, Přidat appku, stránka, hlas); návod opraven"
+    },
+    {
+      "t": "2026-11-24T09:14:19Z",
+      "stav": "bezi",
+      "popis": "šablona bez kolize (MojeAppka / Moje první appka) ověřena na egd01-dev ✅"
+    },
+    {
+      "t": "2026-11-24T09:27:33Z",
+      "stav": "bezi",
+      "popis": "CLI cesta A s MojeAppka ✅ (egd01-dev s hlasem, vedle-sebe bez hlasu – vypršelé profily)"
+    },
+    {
+      "t": "2026-11-24T20:43:33Z",
+      "stav": "hotovo",
+      "popis": "Skill egd-prvni-appka je ověřený v labu: cesty A a A2, režimy single/open, opravy textů a důkazů podle auditu (necommitnuto); zákaz diakritiky v názvech čeká na Pavlovo rozhodnutí přes hlavní session."
+    },
+    {
+      "t": "2026-11-24T20:47:00Z",
+      "stav": "hotovo",
+      "popis": "Skill egd-prvni-appka je ověřený v labu: cesty A a A2, režimy single/open, opravy textů a důkazů podle auditu (necommitnuto)."
+    }
+  ]
+}

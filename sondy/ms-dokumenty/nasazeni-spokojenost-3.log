@@ -1,0 +1,31 @@
+{
+  "CheckInComment": "",
+  "CheckOutType": 2,
+  "ContentTag": "{501592B3-BA4B-456B-8AB9-C3DAA7AB4C2F},6,2",
+  "CustomizedPageStatus": 0,
+  "ETag": "\"{501592B3-BA4B-456B-8AB9-C3DAA7AB4C2F},6\"",
+  "Exists": true,
+  "ExistsAllowThrowForPolicyFailures": true,
+  "ExistsWithException": true,
+  "IrmEnabled": false,
+  "Length": "990803",
+  "Level": 1,
+  "LinkingUri": null,
+  "LinkingUrl": "",
+  "MajorVersion": 3,
+  "MinorVersion": 0,
+  "Name": "appka-spokojenost.sppkg",
+  "ServerRelativeUrl": "/sites/egd-sonda-ms-dokumenty/AppCatalog/appka-spokojenost.sppkg",
+  "TimeCreated": "2026-11-23T10:19:11Z",
+  "TimeLastModified": "2026-11-23T11:10:20Z",
+  "Title": "appka-spokojenost-client-side-solution",
+  "UIVersion": 1536,
+  "UIVersionLabel": "3.0",
+  "UniqueId": "501592b3-ba4b-456b-8ab9-c3daa7ab4c2f"
+}
+add rc=0
+deploy rc=0
+upgrade rc=0
+appka-client-side-solution 
+appka-spokojenost-client-side-solution 
+katalog: appka-spokojenost-client-side-solution 1.0.0.1 deployed=true

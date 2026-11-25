@@ -1,0 +1,70 @@
+# finalni beh 2026-11-22 20:48:09 macOS Node v22.23.5, pavel.admin, web egd09-dev; mtime skriptu: Nov 22 20:47:15 2026 / appka.mjs Nov 22 20:47:15 2026
+== github
+[ZELENA] github-hosty: ppfas.ghe.com [GHE.com], ucet chocholous; github.com [github.com], ucet chocholous
+[INFO]   git-credential-helper: osxkeychain
+== nastroje
+[INFO]   system: Darwin 27.2.0 Darwin Kernel Version 27.2.0: Wed Oct 14 23:47:07 PDT 2026; root:xnu-13432.41.4~25/RELEASE_ARM64_T8132 (arm64)
+[ZELENA] git: git version 2.54.0 (Apple Git-157)
+[ZELENA] node: v22.23.5 (/opt/homebrew/Cellar/node@22/22.23.5_1/bin/node)
+[ZELENA] npm: 10.9.9
+[ZELENA] vscode: VS Code 1.146.0
+[ZLUTA]  vscode-copilot: rozsireni GitHub Copilot Chat v seznamu neni (novejsi VS Code ho muze mit vestavene)
+          co dal: otevri ve VS Code panel Chat: kdyz tam Copilot je a jde prepnout na Agent, je to v poradku; jinak Extensions -> "GitHub Copilot Chat" (kdyz je Marketplace blokovany, IT)
+[ZELENA] copilot-cli: Copilot CLI GitHub Copilot CLI 1.0.114.
+[INFO]   gh: gh version 2.104.0 (2026-11-12)
+[ZELENA] claude-code: Claude Code 2.1.330 (Claude Code)
+[ZELENA] claude-desktop: nalezeno: /Applications/Claude.app
+[INFO]   spusteno-z: Claude Code
+== npm
+[INFO]   npm-registry: https://registry.npmjs.org/
+[INFO]   npm-proxy: proxy=null https-proxy=null strict-ssl=true cafile=null HTTPS_PROXY=ne NODE_EXTRA_CA_CERTS=ne
+[ZELENA] npm-ping: registry odpovida (PONG)
+[ZELENA] npm-stazeni-metadat: @pnp/cli-microsoft365 12.0.0 je dostupny
+== sit
+[ZELENA] entra-dosazitelne: login.microsoftonline.com odpovida, tenant egd.cz = b914a242-e718-443b-a47c-6b4c649d8c0a
+[ZELENA] sharepoint-dosazitelny: eonos.sharepoint.com odpovida (HTTP 403; 401/403 bez prihlaseni je spravne)
+== varianty
+[ZELENA] varianta-node: funguje: 1 uz je (Node 22.14+/24/26 v PATH), 3 portable archiv z nodejs.org (bez admina); nezmereno: 2 winget (jen Windows; na macOS brew nebo portable). Pouzij prvni funkcni: 1 uz je (Node 22.14+/24/26 v PATH)
+[ZELENA] varianta-cli: funguje: 1 npm lokalne v pracovni slozce (cli-instalace), 3 globalni m365 uz v PATH, 4 bez CLI: prohlizec (prikaz prohlizec); nezmereno: 2 npx (bez instalace, stahuje pri kazdem behu) (nezkouseno, jen zaloha; pozor na cizi balicek m365 na npm). Pouzij prvni funkcni: 1 npm lokalne v pracovni slozce (cli-instalace)
+[ZELENA] varianta-prihlaseni: funguje: 1 device code (--authType deviceCode), 2 prohlizec (--authType browser, redirect na localhost); nezmereno: 3 appId od IT / souhlas spravce (zatim se nikdo neprihlasil). Pouzij prvni funkcni: 1 device code (--authType deviceCode)
+[INFO]   varianta-pouzita: uz prihlaseny pres CLI: ne; spusteno z: Claude Code. Co z toho skutecne pouzijes, dopis: zapis --klic varianta-pouzita-<oblast> --stav info --hodnota "<cislo varianty>"
+== cli-instalace
+Zalozen package.json v teto slozce (jen pro lokalni instalaci nastroju).
+Instaluji @pnp/cli-microsoft365@12 do /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/final2/node_modules (bez admin prav, muze trvat par minut)...
+[ZELENA] cli-instalace: CLI for Microsoft 365 v12.0.0 lokalne v node_modules
+[ZELENA] cli-setup: CLI nastaveno pro skripty (bez interaktivnich dotazu)
+== prihlaseni
+[ZELENA] prihlaseni: prihlasen pavel.admin@pavelchocholousgmail.onmicrosoft.com, appId 12f19539-b70a-499d-b6dc-517a32c0e904, tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+== sharepoint
+[ZELENA] prihlaseni: prihlasen pavel.admin@pavelchocholousgmail.onmicrosoft.com, appId 12f19539-b70a-499d-b6dc-517a32c0e904, tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+[ZELENA] web-cteni: "Účastník 09 – DEV" (https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev)
+[ZELENA] role-na-webu: Vlastnik (Full Control) (odhad z EffectiveBasePermissions High 2147483647 / Low 4294705151; zapis polozek ano, sprava seznamu ano)
+[ZELENA] seznamy: 6 viditelnych seznamu/knihoven: Aplikace pro SharePoint (0), Dokumenty (0), Knihovna stylů (0), Stránky webu (1), Šablony formulářů (0), Události (0)
+[INFO]   tenant-app-catalog: https://pavelchocholousgmail.sharepoint.com/sites/apps (pro workshop ho nepotrebujeme; zapisujeme jen do katalogu na vlastnim webu)
+[ZELENA] site-app-catalog: web ma vlastni katalog aplikaci "Aplikace pro SharePoint" (0 balicku)
+[ZELENA] role-v-katalogu: muzes nahrat balicek (.sppkg) do katalogu
+[INFO]   licence-m365: licence: FLOW_FREE, SPE_E5
+[ZELENA] power-platform-licence: Power Apps / Power Automate v licenci: FLOW_P2_VIRAL, FLOW_O365_P3, POWERAPPS_O365_P3
+== zkouska plan
+PLAN ZAPISU (nic se zatim nezapsalo):
+  1. na webu https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev zalozit seznam "EGD-pripravenost" (jen kdyz jeste neexistuje)
+  2. pridat do nej JEDNU polozku s nazvem "Zkouska chocholous 22. 11. 2026 20:48:51"
+  3. precist ji zpatky
+Nic se nemaze. Seznam si muzes pozdeji smazat sam v prohlizeci (Obsah webu).
+Kdyz s tim clovek souhlasi, spust znovu s volbou --ano.
+rc=10
+== zkouska --ano
+[ZELENA] prihlaseni: prihlasen pavel.admin@pavelchocholousgmail.onmicrosoft.com, appId 12f19539-b70a-499d-b6dc-517a32c0e904, tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+[ZELENA] zalozeni-seznamu: seznam "EGD-pripravenost" zalozen
+[ZELENA] zapis-polozky: polozka 1 zapsana
+[ZELENA] cteni-zpet: precteno zpatky: "Zkouska Finale 22. 11. 2026 20:48:51"
+== spfx
+[ZELENA] node-pro-spfx-1.24: Node v22.23.5; SPFx 1.24 chce 22 / 24 / 26 (22 aspon 22.14). Gulp uz neni, build je Heft.
+[ZELENA] generator-dostupny: @microsoft/generator-sharepoint@1.24.1 je v registry
+Zkusebni instalaci generatoru spustis volbou --instalovat (stahne cca stovky MB do .pripravenost/spfx-test).
+== zprava
+
+Zprava ulozena: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/final2/pripravenost-Finale.md
+Nastroj: Claude Code (je nainstalovany a funguje); je i Copilot CLI (jen kdyz mas licenci Copilot)
+Cesta: A: vlastni SPFx aplikace na webu (vse potrebne funguje)
+Zelena 29 / zluta 1 / cervena 0

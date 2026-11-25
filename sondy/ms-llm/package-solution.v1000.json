@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "prvni-appka-client-side-solution",
+    "id": "fd7ded56-1262-435d-b628-851d35e6719a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "prvni-appka description"
+      },
+      "longDescription": {
+        "default": "prvni-appka description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "prvni-appka Feature",
+        "description": "The feature that activates elements of the prvni-appka solution.",
+        "id": "cb89df2b-a3f2-4416-941a-d21c473519d8",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "7b59591a-0058-4799-be76-0d1f5b79ca95",
+        "scope": "Gateway.Use"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/prvni-appka.sppkg"
+  }
+}

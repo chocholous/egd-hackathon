@@ -1,0 +1,19 @@
+node:fs:440
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open '/Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/src/webparts/spokojenost/SpokojenostWebPart.manifest.json'
+    at Object.readFileSync (node:fs:440:20)
+    at projectInfo (file:///Users/chocholous/Projects/egd-workshop/skills/egd-prvni-appka/scripts/appka.mjs:208:21)
+    at Object.cmdNasadit [as nasadit] (file:///Users/chocholous/Projects/egd-workshop/skills/egd-prvni-appka/scripts/appka.mjs:285:13)
+    at file:///Users/chocholous/Projects/egd-workshop/skills/egd-prvni-appka/scripts/appka.mjs:417:16
+    at ModuleJob.run (node:internal/modules/esm/module_job:343:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:681:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/src/webparts/spokojenost/SpokojenostWebPart.manifest.json'
+}
+
+Node.js v22.23.5

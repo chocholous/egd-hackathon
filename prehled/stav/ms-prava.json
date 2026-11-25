@@ -1,0 +1,48 @@
+{
+  "nazev": "Skill egd-prava-role",
+  "stav": "hotovo",
+  "popis": "prošel v Claude i Copilotu (3 běhy); UI bez mazání, skupina s Čtením, odebrání sebe, appka s UPN ověřeny",
+  "oblast": "skilly",
+  "kdo": "ms-prava",
+  "vystup": "skills/egd-prava-role",
+  "aktualizovano": "2026-11-23T10:12:17Z",
+  "zacatek": "2026-11-22T18:53:59Z",
+  "kroky": 7,
+  "historie": [
+    {
+      "t": "2026-11-22T18:53:59Z",
+      "stav": "bezi",
+      "popis": "čtu podklady, zakládám web"
+    },
+    {
+      "t": "2026-11-22T20:18:35Z",
+      "stav": "bezi",
+      "popis": "UI cesta, appka pod 5 účty, CLI varianta, bez mazání ✅; SKILL.md přepsán; běží test v Copilot CLI"
+    },
+    {
+      "t": "2026-11-22T20:21:25Z",
+      "stav": "ceka",
+      "popis": "SKILL.md přepsán (žebřík A–D), appka pod 5 účty ✅, CLI ✅, Copilot 2 běhy ✅; Entra skupina ❓; pozastaveno kvůli disku"
+    },
+    {
+      "t": "2026-11-22T20:26:46Z",
+      "stav": "ceka",
+      "popis": "2. kolo auditu: text opraven; čeká na disk: čerstvý CLI a Copilot běh, proklik bez mazání, UPN, Entra"
+    },
+    {
+      "t": "2026-11-22T20:48:44Z",
+      "stav": "ceka",
+      "popis": "B čerstvě ✅, Entra ✅ s prodlevou; čeká na 15 GB disku: Copilot běh 3, proklik bez mazání, UPN běh appky"
+    },
+    {
+      "t": "2026-11-23T10:04:32Z",
+      "stav": "bezi",
+      "popis": "těžké běhy: Copilot 3, proklik UI, appka s UPN"
+    },
+    {
+      "t": "2026-11-23T10:12:17Z",
+      "stav": "hotovo",
+      "popis": "prošel v Claude i Copilotu (3 běhy); UI bez mazání, skupina s Čtením, odebrání sebe, appka s UPN ověřeny"
+    }
+  ]
+}

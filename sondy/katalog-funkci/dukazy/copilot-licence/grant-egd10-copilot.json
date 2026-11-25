@@ -1,0 +1,9 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants/$entity",
+  "clientId": "7a0b43a3-e80e-431f-9722-bffe50daff3f",
+  "consentType": "Principal",
+  "id": "o0MLeg7oH0OXIr_-UNr_P6LH5Olwmj5Bv5L7mHRxcX3hKDXRRwhcRrOt4Scn7WUW",
+  "principalId": "d13528e1-0847-465c-b3ad-e12727ed6516",
+  "resourceId": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+  "scope": "User.Read Mail.ReadBasic Sites.Read.All Mail.Read People.Read.All OnlineMeetingTranscript.Read.All Chat.Read ChannelMessage.Read.All ExternalItem.Read.All Files.Read.All"
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ai-gateway-web-part": {
+      "components": [
+        { "entrypoint": "./lib/webparts/aiGateway/AiGatewayWebPart.js", "manifest": "./src/webparts/aiGateway/AiGatewayWebPart.manifest.json" }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {}
+}

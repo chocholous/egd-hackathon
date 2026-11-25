@@ -1,0 +1,6 @@
+# Recon: CLI neni prihlasene
+
+CLI neni prihlasene, recon proto nema z ceho cist. Prihlaseni dela clovek ve svem terminalu (skill egd-pripravenost, krok 5).
+Konci-li prihlaseni chybou AADSTS65001 (nebo 700016 / 7000218): aplikace CLI nema v tenantu souhlas spravce, nebo je tenant jinak omezuje.
+Zadost pro IT: Prosim o souhlas spravce (admin consent) s delegovanym opravnenim SharePointu (AllSites.Manage / AllSites.FullControl) pro aplikaci CLI for Microsoft 365 (appId od IT) a o roli Clen (Member) nebo Vlastnik na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly.
+Mezitim jde appku nasadit bez CLI: cesta A3 (REST z prohlizece) nebo A2 (rucne), viz egd-pripravenost/references/appka.md.

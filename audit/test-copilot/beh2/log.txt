@@ -1,0 +1,168 @@
+● skill(egd-pripravenost)
+
+Připravím kontrolu v pracovní složce, ale nepřihlásím tě ani nic nezapíšu do SharePointu. Zkontroluji nejprve pokyny pro macOS a GitHub a ověřím dostupné příkazy kontrolního skriptu.
+
+● Read windows.md
+  │ ~/.copilot/skills/egd-pripravenost/references/windows.md
+  └ 38 lines read
+
+● Read github.md
+  │ ~/.copilot/skills/egd-pripravenost/references/github.md
+  └ 84 lines read
+
+● Read prihlaseni.md
+  │ ~/.copilot/skills/egd-pripravenost/references/prihlaseni.md
+  └ 44 lines read
+
+● Inspect workspace and readiness commands (shell)
+  │ pwd && ls -la && node --version && test -f
+  │ "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" && node
+  │ "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" --help
+  └ 29 lines…
+
+Našel jsem Node 22 a prázdnou pracovní složku; kontrolní skript je dostupný. Teď ověřím místní nástroje, npm/síť, GitHub a požadavky SPFx — bez instalace, přihlášení či zápisu do webu.
+
+● Check GitHub authentication status (shell)                                                     30s
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" github
+  └ 3 lines…
+
+● Check Microsoft and SharePoint connectivity (shell)                                            30s
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" sit --domena
+  │ pavelchocholousgmail.onmicrosoft.com
+  └ 2 lines…
+
+● Check installed development tools (shell)                                                      30s
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" nastroje
+  └ 12 lines…
+
+● Check SPFx prerequisites (shell)                                                               30s
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" spfx
+  └ 3 lines…
+
+● Check npm connectivity (shell)                                                                 30s
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" npm
+  └ 4 lines…
+
+● Prepare Microsoft 365 login command (shell)
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs"
+  │ prihlaseni-prikaz --appId 12f19539-b70a-499d-b6dc-517a32c0e904 --tenant
+  │ pavelchocholousgmail.onmicrosoft.com
+  └ 8 lines…
+
+● Read shell output Reading command output
+  └ 5 lines…
+
+Připojení k npm, Microsoft a SharePoint doméně funguje; Node splňuje SPFx požadavky. GitHub zatím není přihlášený a přítomnost Copilota ve VS Code je neověřená; teď nainstaluji jen Microsoft 365 CLI lokálně a připravím zprávu se zbývajícími kroky.
+
+● Install Microsoft 365 CLI locally (shell)                                                    3m 0s
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" cli-instalace
+  └ 3 lines…
+
+● Read shell output Waiting up to 30 seconds for command output                                  30s
+  └ 4 lines…
+
+● Read shell output Waiting up to 30 seconds for command output
+  └ 4 lines…
+
+● Read vysledky.json
+  │ .pripravenost/vysledky.json
+  └ 40 lines read
+
+● Prepare browser-based SharePoint checks (shell)                                                 6s
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" prohlizec
+  │ --web https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest
+  └ 14 lines…
+
+✗ Check Microsoft 365 login options (shell)                                                       6s
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" m365 --help
+  │ login
+  └ {"error":"Unknown help mode login. Allowed values are options, examples, remarks, permissions,
+    response, full "}
+    Failed with exit code 1
+
+● Record provided details and pending checks (shell)
+  │ S="/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" && node "$S"
+  │ zapis --klic copilot-licence --stav zluta --hodnota "Uzivatel uvadi, ze licenci GitHub Copilot
+  │ ma; funkcni pristup zatim neni overen ve VS Code ani v prihlasenem firemnim GitHubu." && node
+  │ "$S" zapis --klic m365-prihlaseni --stav zluta --hodnota "Uzivatel se do Microsoft 365 jeste
+  │ neprihlasil; pripraven je lokalni CLI v12 a prikaz prihlasovaciho prikazu." && node "$S" zapis…
+  └ 20 lines…
+
+● Generate readiness report (shell)
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" zprava
+  │ --jmeno "Test Dva"
+  └ 4 lines…
+
+● Read pripravenost-Test-Dva.md
+  └ 52 lines read
+
+● Read vysledky.json
+  │ .pripravenost/vysledky.json
+  └ 83 lines read
+
+● Confirm exact Microsoft 365 login command (shell)
+  │ node "/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs"
+  │ prihlaseni-prikaz --appId 12f19539-b70a-499d-b6dc-517a32c0e904 --tenant
+  │ pavelchocholousgmail.onmicrosoft.com
+  └ 8 lines…
+
+● Finalize reported readiness evidence (shell)
+  │ S="/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" && node "$S"
+  │ zapis --klic copilot-licence --stav zelena --hodnota "Uzivatel uvadi, ze licenci GitHub
+  │ Copilot ma; pred workshopem je jeste treba overit firemni prihlaseni a pristup v Copilot Chatu
+  │ nebo na github.com/settings/copilot." && node "$S" zapis --klic copilot-cli --stav zelena
+  │ --hodnota "Nalezena instalace GitHub Copilot CLI 1.0.114; gh neni prihlasen k zadnemu hostu." …
+  └ 17 lines…
+
+● Read pripravenost-Test-Dva.md
+  └ 56 lines read
+
+● Edit
+  └ Edit pripravenost-Test-Dva.md
+
+● Verify readiness report and local CLI (shell)
+  │ test -s "/private/tmp/cp-run2/home/egd-workshop/pripravenost-Test-Dva.md" && grep -nE 'Nastroj
+  │ na stredu|appId|weby-dev-test-prod|zkouska|Claude Code|gh neni'
+  │ "/private/tmp/cp-run2/home/egd-workshop/pripravenost-Test-Dva.md" && if grep -Eiq
+  │ '(password|heslo|token)[[:space:]]*[:=][[:space:]]*[^[:space:]|]+'
+  │ "/private/tmp/cp-run2/home/egd-workshop/pripravenost-Test-Dva.md"; then echo 'Possible …
+  └ 12 lines…
+
+● Record tenant mismatch and refresh report (shell)
+  │ S="/tmp/cp-run2/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" && node "$S"
+  │ zapis --klic tenant-id --stav zluta --hodnota "Domenu pavelchocholousgmail.onmicrosoft.com lze
+  │ rozlisit; Microsoft vraci tenant ID 972a674c-7b85-4e56-a31f-b2f95b42fd1e, jine nez E.ON tenant
+  │ ID b914a242-e718-443b-a47c-6b4c649d8c0a. Over, zda je tento DEV web spravny pro workshop." &&
+  │ node "$S" zprava --jmeno "Test Dva"
+  └ 6 lines…
+
+● Edit
+  └ Edit pripravenost-Test-Dva.md
+
+● Verify final report contents (shell)
+  │ grep -nE 'Nastroj na stredu|tenant-id|appId|weby-dev-test-prod|zkouska'
+  │ "/private/tmp/cp-run2/home/egd-workshop/pripravenost-Test-Dva.md" && if grep -Eiq
+  │ '(password|heslo|token)[[:space:]]*[:=][[:space:]]*[^[:space:]|]+'
+  │ "/private/tmp/cp-run2/home/egd-workshop/pripravenost-Test-Dva.md"; then echo 'Possible
+  │ credential field found'; exit 1; else echo 'Credential-field check: clear'; fi
+  └ 7 lines…
+
+**Kontrola je hotová** a zpráva je uložená v `/private/tmp/cp-run2/home/egd-workshop/pripravenost-Test-Dva.md`. npm funguje, Microsoft 365 CLI v12 je nainstalované lokálně a Node splňuje požadavky SPFx. Zkušební zápis do SharePointu jsem neprovedl.
+
+Důležitý nesoulad: zadaný tenant `pavelchocholousgmail.onmicrosoft.com` odpovídá ID `972a674c-7b85-4e56-a31f-b2f95b42fd1e`, které se liší od ID E.ON uvedeného v podkladech. Přístup k webu, jeho oprávnění ani katalog aplikací jsem bez přihlášení nemohl ověřit. Firemní GitHub také není přihlášený; licenci Copilot uvádíš jako přidělenou, ale její funkčnost jsem neověřil.
+
+**Co udělat ty:** v terminálu otevřeném ve složce `/private/tmp/cp-run2/home/egd-workshop` spusť:
+
+```sh
+node node_modules/@pnp/cli-microsoft365/dist/index.js login --authType deviceCode --appId 12f19539-b70a-499d-b6dc-517a32c0e904 --tenant pavelchocholousgmail.onmicrosoft.com
+```
+
+Dokonči přihlášení na stránce Microsoftu; přihlašovací kód nikomu neposílej. Než budeš pokračovat, ověř také, že uvedený tenant je správný pro workshop. Zpráva obsahuje větu pro ITSM k objednání webů DEV/TEST/PROD. Pošli prosím soubor `/private/tmp/cp-run2/home/egd-workshop/pripravenost-Test-Dva.md` Pavlovi.
+
+Session exported to: /tmp/cp-run2/vystup/prepis.md
+
+
+Changes    +2 -2
+AI Credits 1.72 (6m 37s)
+Tokens     ↑ 635.9k (592.9k cached, 42.9k written) • ↓ 11.9k (8.4k reasoning)
+Resume     copilot --resume=7eb20f49-5ebc-463b-a80b-1d29eacebb89

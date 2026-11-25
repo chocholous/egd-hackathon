@@ -1,0 +1,11 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/role.aspx
+KROK klik:Přispívání
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/editrole.aspx?role=P%C5%99isp%C3%ADv%C3%A1n%C3%AD
+KROK css:input[value='Zkopírovat úroveň oprávnění']
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/copyrole.aspx?role=P%C5%99isp%C3%ADv%C3%A1n%C3%AD
+KROK fill:#ctl00_PlaceHolderMain_ctl00_ctl01_name=EGD Schvalovatel UI bez mazání
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/copyrole.aspx?role=P%C5%99isp%C3%ADv%C3%A1n%C3%AD
+KROK checklabel:Přepsat rezervaci a uživatelské nastavení
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/copyrole.aspx?role=P%C5%99isp%C3%ADv%C3%A1n%C3%AD
+KROK unchecklabel:Odstranit položky
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/copyrole.aspx?role=P%C5%99isp%C3%ADv%C3%A1n%C3%AD

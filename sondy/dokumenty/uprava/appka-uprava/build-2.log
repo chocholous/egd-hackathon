@@ -1,0 +1,78 @@
+
+> egd-uprava-dokumentu@0.1.0 build
+> heft build --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:clean] Deleted 0 files and 5 folders
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] No SCSS files to process.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (7.542s) ---- 
+-------------------- Finished (7.544s) --------------------
+ ---- package-solution started ---- 
+Found manifest: 06c70ffb-41d3-4ba2-8ab2-bc612a68e48c.manifest.json
+Found client-side build resource: chunk.docxtemplater_d7d9c8aee73d2c544fed.js
+Found client-side build resource: chunk.exceljs_a70db213419694e743d9.js
+Found client-side build resource: chunk.exceljs_a70db213419694e743d9.js.LICENSE.txt
+Found client-side build resource: chunk.jszip_64d27a45f2a5977f2ed6.js
+Found client-side build resource: chunk.jszip_64d27a45f2a5977f2ed6.js.LICENSE.txt
+Found client-side build resource: chunk.pizzip_981fb38fec084d9c012b.js
+Found client-side build resource: chunk.pizzip_981fb38fec084d9c012b.js.LICENSE.txt
+Found client-side build resource: uprava-web-part_0dfa4cce90dc6f2973c2.js
+Found client-side build resource: uprava-web-part_0dfa4cce90dc6f2973c2.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { Úprava dokumentů sonda }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug...
+Cleaned /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/AppManifest.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/_rels/.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/[Content_Types].xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/feature_9cbcc960-0de8-45df-83ea-41bec3e1ded0.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/_rels/feature_9cbcc960-0de8-45df-83ea-41bec3e1ded0.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/feature_9cbcc960-0de8-45df-83ea-41bec3e1ded0.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/9cbcc960-0de8-45df-83ea-41bec3e1ded0/WebPart_06c70ffb-41d3-4ba2-8ab2-bc612a68e48c.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/chunk.docxtemplater_d7d9c8aee73d2c544fed.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/chunk.exceljs_a70db213419694e743d9.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/chunk.exceljs_a70db213419694e743d9.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/chunk.jszip_64d27a45f2a5977f2ed6.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/chunk.jszip_64d27a45f2a5977f2ed6.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/chunk.pizzip_981fb38fec084d9c012b.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/chunk.pizzip_981fb38fec084d9c012b.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/uprava-web-part_0dfa4cce90dc6f2973c2.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/debug/ClientSideAssets/uprava-web-part_0dfa4cce90dc6f2973c2.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/dokumenty/uprava/appka-uprava/sharepoint/solution/egd-uprava-dokumentu.sppkg
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.273s) ---- 
+-------------------- Finished (0.275s) --------------------

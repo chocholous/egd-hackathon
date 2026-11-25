@@ -1,0 +1,24 @@
+{
+  "profil": "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/profil-tomas",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/prvni-appka.aspx?env=WebView",
+  "cas": "2026-11-22T20:03:55.590Z",
+  "sablona": "spokojenost",
+  "nacteniMs": 5297,
+  "shrnuti": {
+    "ms": 96,
+    "vystup": "Návrh AI: (Ukázka – AI zatím není napojená. Až IT dodá adresu gateway, odpoví model.)"
+  },
+  "ocr": {
+    "soubor": "ocr-cs.png",
+    "ms": 53,
+    "vystup": "Text ze souboru: (Ukázka – AI zatím není napojená. Až IT dodá adresu gateway, odpoví model.)"
+  },
+  "kvota": {
+    "ms": 35,
+    "vystup": "Dnes spotřebováno 0 z 0 tokenů."
+  },
+  "sit": [],
+  "bundly": [
+    "200 spokojenost-web-part_802463aa30f74b60058f.js"
+  ]
+}

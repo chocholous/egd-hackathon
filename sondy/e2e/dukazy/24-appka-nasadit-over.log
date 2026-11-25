@@ -1,0 +1,42 @@
+### nasadit plan 11:28:46
+[INFO]    prihlasen: egd10@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev, katalog tohoto webu, nic tenant-wide):
+  1. nahrat prvni-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku prvni-appka.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+rc=10
+### nasadit --ano 11:28:55
+[INFO]    prihlasen: egd10@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev, katalog tohoto webu, nic tenant-wide):
+  1. nahrat prvni-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku prvni-appka.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+[OK]      nahrano do katalogu (appId f710a2f3-9bdf-45ea-a4cb-2221ff92b555)
+[OK]      nasazeno (deploy)
+[OK]      appka nainstalovana na web
+[OK]      stranka prvni-appka.aspx zalozena (Article + sekce)
+[OK]      web part vlozen na stranku
+[OK]      stranka prepnuta na celostrankovou appku a publikovana
+[OK]      precteno zpet: stranka prvni-appka.aspx, rozlozeni SingleWebPartAppPage, web part 0722b210-3d22-46f6-9e43-86f8cd82078c na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev/SitePages/prvni-appka.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev/SitePages/prvni-appka.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, po kliknuti na cislo se hlas propise do dashboardu.
+rc=0
+### over 11:29:42
+[OK]      katalog webu: prvni-appka-client-side-solution verze 1.0.0.0, nasazeno true
+[OK]      stranka prvni-appka.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam MojeAppka: 0 hlasu
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev/SitePages/prvni-appka.aspx?env=WebView
+rc=0
+11:29:51

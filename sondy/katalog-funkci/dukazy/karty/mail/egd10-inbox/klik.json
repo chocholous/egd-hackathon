@@ -1,0 +1,73 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://outlook.office.com/mail/",
+ "start": "2026-11-24T18:43:58.473Z",
+ "kroky": [
+  {
+   "krok": "wait:15000",
+   "t": 451,
+   "ok": true
+  },
+  {
+   "krok": "eval:location.host+' | '+document.title",
+   "t": 15455,
+   "vysledek": "outlook.cloud.microsoft | Email - Účastník 10 - Outlook",
+   "ok": true
+  },
+  {
+   "krok": "eval:([...document.querySelectorAll('[role=option]')].slice(0,3).map(e=>e.innerText.replace(/\\n+/g,' | ').slice(0,200)).join('\\n'))",
+   "t": 15462,
+   "vysledek": "Ú0 | Účastník 09 |  | Přehled požadavků (moje-pozadavky.csv) | 19:43 | Dobrý den, v příloze je přehled mých požadavků. Žluťoučký kůň.\nMC | Microsoft Audio Conferencing | You now have Audio Conferencing for Microsoft Teams – Here is your dial-in information and PIN | Sun 19:27 | – You now have Audio Conferencing for Microsoft Teams –",
+   "ok": true
+  },
+  {
+   "krok": "shotv:03-egd10-inbox",
+   "t": 15463,
+   "vysledek": "dukazy/karty/mail/egd10-inbox/03-egd10-inbox.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 2894,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.4.2&apikey=d634483c08244c1ca09af2b2d952c92e"
+  },
+  {
+   "t": 2894,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://eu-office.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.4.2&apikey=56468f6991c348029c6bba403b444607"
+  }
+ ],
+ "konzole": [
+  "warning: An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.",
+  "warning: An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.",
+  "warning: A preload for 'https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.shared.m.7b25b306.css' is found, but is not used due to an integrity mismatch.",
+  "warning: A preload for 'https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mail.m.ae63cc33.css' is found, but is not used due to an integrity mismatch.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: A preload for 'https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.shared.m.7b25b306.css' is found, but is not used due to an integrity mismatch.",
+  "warning: A preload for 'https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mail.m.ae63cc33.css' is found, but is not used due to an integrity mismatch.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: The resource https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.shared.m.7b25b306.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/owamail/hashed-v1/scripts/owa.mail.m.ae63cc33.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+ ],
+ "konec": "2026-11-24T18:44:14.130Z"
+}

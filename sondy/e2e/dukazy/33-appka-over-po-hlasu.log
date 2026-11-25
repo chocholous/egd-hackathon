@@ -1,0 +1,8 @@
+### over po hlasu 11:30:30
+[OK]      katalog webu: prvni-appka-client-side-solution verze 1.0.0.0, nasazeno true
+[OK]      stranka prvni-appka.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam MojeAppka: 1 hlasu (posledni: 2026-11-24 -> 2)
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev/SitePages/prvni-appka.aspx?env=WebView
+rc=0

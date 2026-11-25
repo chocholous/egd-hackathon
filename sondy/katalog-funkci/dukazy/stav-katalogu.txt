@@ -1,0 +1,23 @@
+== katalog webu
+prvni-appka-client-side-solution	true	1.0.2.0	1.0.2.0
+prvni-appka-client-side-solution	true	1.0.0.0	1.0.0.0
+egd-prava-db	true	0.1.0.0	0.1.0.0
+egd-dokumenty-client-side-solution	true	1.0.0.0	1.0.0.0
+appka-client-side-solution	true	1.0.0.3	1.0.0.3
+appka-spokojenost-client-side-solution	true	1.0.0.1	1.0.0.1
+egd-ca-dokumenty	true	0.1.0.0	0.1.0.0
+prvni-appka-client-side-solution	true	1.0.0.0	1.0.0.0
+egd-ai-gateway	true	0.1.1.0	0.1.1.0
+prvni-appka-client-side-solution	true	1.0.0.4	1.0.0.4
+egd-ca-obo	true	0.2.0.0	0.2.0.0
+spokojenost-ai-client-side-solution	true	1.0.0.3	1.0.0.3
+== stránky
+ai.aspx
+cizi-api.aspx
+data.aspx
+dokumenty.aspx
+email.aspx
+graph.aspx
+Home.aspx
+katalog.aspx
+prava.aspx

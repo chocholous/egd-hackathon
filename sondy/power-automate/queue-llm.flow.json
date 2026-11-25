@@ -1,0 +1,116 @@
+{
+ "displayName": "EGD PA sonda: fronta v seznamu → LLM → výsledek zpět",
+ "connectionReferences": {
+  "shared_sharepointonline": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-sharepointonline",
+   "source": "Embedded"
+  },
+  "shared_azureaifoundryinference": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_azureaifoundryinference",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-foundry",
+   "source": "Embedded"
+  }
+ },
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+   "$connections": {
+    "defaultValue": {},
+    "type": "Object"
+   },
+   "$authentication": {
+    "defaultValue": {},
+    "type": "SecureObject"
+   }
+  },
+  "triggers": {
+   "Nova_zadost": {
+    "type": "OpenApiConnection",
+    "recurrence": {
+     "frequency": "Minute",
+     "interval": 1
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "connectionName": "shared_sharepointonline",
+      "operationId": "GetOnNewItems"
+     },
+     "parameters": {
+      "dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-power-automate",
+      "table": "de1f2641-34f4-4b2f-a908-4ed6e5528514"
+     },
+     "authentication": "@parameters('$authentication')"
+    },
+    "splitOn": "@triggerOutputs()?['body/value']"
+   }
+  },
+  "actions": {
+   "LLM": {
+    "type": "OpenApiConnection",
+    "runAfter": {},
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_azureaifoundryinference",
+      "connectionName": "shared_azureaifoundryinference",
+      "operationId": "ChatCompletion"
+     },
+     "parameters": {
+      "api-version": "2024-10-21",
+      "body": {
+       "max_tokens": 150,
+       "messages": [
+        {
+         "role": "system",
+         "content": [
+          {
+           "type": "text",
+           "text": "Odpovídej česky, stručně."
+          }
+         ]
+        },
+        {
+         "role": "user",
+         "content": [
+          {
+           "type": "text",
+           "text": "@{triggerOutputs()?['body/Title']}"
+          }
+         ]
+        }
+       ]
+      }
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "Zapis": {
+    "type": "OpenApiConnection",
+    "runAfter": {
+     "LLM": [
+      "Succeeded"
+     ]
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "connectionName": "shared_sharepointonline",
+      "operationId": "PatchItem"
+     },
+     "parameters": {
+      "dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-power-automate",
+      "table": "de1f2641-34f4-4b2f-a908-4ed6e5528514",
+      "id": "@triggerOutputs()?['body/ID']",
+      "item/Title": "@triggerOutputs()?['body/Title']", "item/Vysledek": "@{body('LLM')?['choices']?[0]?['message']?['content']}"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   }
+  },
+  "outputs": {}
+ }
+}

@@ -1,0 +1,12 @@
+seznam: Spokojenost
+list rc=0
+sloupec: Hodnoceni
+sloupec: Den
+appId=0aab80f2-f308-4694-a61a-513efc4ac5d6
+deploy rc=0
+install rc=0
+page rc=0
+section rc=0
+webpart ok (pokus 1)
+set rc=0
+stránka: SingleWebPartAppPage wp=true

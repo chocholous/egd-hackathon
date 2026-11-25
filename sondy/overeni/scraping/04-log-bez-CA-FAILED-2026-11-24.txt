@@ -1,0 +1,22 @@
+2026-11-24T01:48:28.72163  Connecting to the container 'scrape'...
+2026-11-24T01:48:28.83412  Successfully Connected to container: 'scrape' [Execution: 'job-egd-scrape-abihnsc', Replica: 'job-egd-scrape-abihnsc-6jphj']
+2026-11-24T01:47:40.2304525Z stderr F   File "<string>", line 1, in <module>
+2026-11-24T01:47:40.2304536Z stderr F   File "<string>", line 21, in <module>
+2026-11-24T01:47:40.2304867Z stderr F   File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+2026-11-24T01:47:40.2306487Z stderr F     return opener.open(url, data, timeout)
+2026-11-24T01:47:40.2306539Z stderr F            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-24T01:47:40.2306565Z stderr F   File "/usr/lib/python3.12/urllib/request.py", line 515, in open
+2026-11-24T01:47:40.2308720Z stderr F     response = self._open(req, data)
+2026-11-24T01:47:40.2308783Z stderr F                ^^^^^^^^^^^^^^^^^^^^^
+2026-11-24T01:47:40.2308810Z stderr F   File "/usr/lib/python3.12/urllib/request.py", line 532, in _open
+2026-11-24T01:47:40.2311346Z stderr F     result = self._call_chain(self.handle_open, protocol, protocol +
+2026-11-24T01:47:40.2311407Z stderr F              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-24T01:47:40.2311435Z stderr F   File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+2026-11-24T01:47:40.2313571Z stderr F     result = func(*args)
+2026-11-24T01:47:40.2313774Z stderr F              ^^^^^^^^^^^
+2026-11-24T01:47:40.2313879Z stderr F   File "/usr/lib/python3.12/urllib/request.py", line 1405, in https_open
+2026-11-24T01:47:40.2317523Z stderr F     return self.do_open(http.client.HTTPSConnection, req,
+2026-11-24T01:47:40.2317623Z stderr F            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-24T01:47:40.2317665Z stderr F   File "/usr/lib/python3.12/urllib/request.py", line 1360, in do_open
+2026-11-24T01:47:40.2321377Z stderr F     raise URLError(err)
+2026-11-24T01:47:40.2321518Z stderr F urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>

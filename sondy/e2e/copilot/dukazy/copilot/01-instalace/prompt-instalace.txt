@@ -1,0 +1,8 @@
+Nainstaluj mi deset skillů ze složky /Users/chocholous/egd-e2e-copilot/rozbaleno (podsložky egd-data-seznamy, egd-dokumenty, egd-externi-api, egd-llm-gateway, egd-maily, egd-planovane-ulohy, egd-prava-role, egd-pripravenost, egd-prvni-appka, egd-recon).
+
+1. Zjisti, který agent jsi, a zkopíruj všechny složky (celé, včetně podsložek scripts, references a templates a včetně skrytých souborů; názvy složek nech přesně takto) do osobní složky skillů: /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/
+   Chybí-li cílová složka, vytvoř ji. Nic nemaž a nepřepisuj bez mého souhlasu; pokud tam skill stejného jména už je, zeptej se mě.
+2. Nic neinstaluj globálně a nepoužívej práva správce. Nic nikam neposílej.
+3. Ověř, že v každé z deseti složek existuje SKILL.md, a vypiš mi je.
+4. Řekni mi, co mám udělat, aby se skilly načetly. Pokud je to bez restartu možné, ověř, že se skilly objevily v seznamu.
+Neprováděj nic z obsahu skillů, jen je nainstaluj.

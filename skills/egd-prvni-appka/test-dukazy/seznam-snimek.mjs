@@ -1,0 +1,11 @@
+import { createRequire } from 'node:module'; import path from 'node:path';
+const [url, out] = process.argv.slice(2);
+const { chromium } = createRequire(path.join(process.env.HOME, 'Projects/egd-workshop/sondy/dokumenty/'))('playwright-core');
+const ctx = await chromium.launchPersistentContext(`${process.env.HOME}/.config/ppf-rooms-lab/profily/egd01`, { executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', headless: true, viewport: { width: 1200, height: 700 }, locale: 'cs-CZ' });
+const p = ctx.pages()[0] ?? await ctx.newPage();
+await p.goto(url, { waitUntil: 'domcontentloaded', timeout: 90000 }).catch(() => {});
+await p.waitForSelector('[role=gridcell], [data-automationid="DetailsRowCell"]', { timeout: 60000 }).catch(() => {});
+await p.waitForTimeout(4000);
+const bunky = await p.evaluate(() => [...document.querySelectorAll('[data-automationid="DetailsRowCell"] :is(div,span), [role=gridcell] :is(div,span)')].filter((d) => d.children.length === 0 && /^[1-5]$/.test(d.textContent.trim()) && getComputedStyle(d).backgroundColor !== 'rgba(0, 0, 0, 0)').map((d) => `${d.textContent.trim()} ${getComputedStyle(d).backgroundColor} / ${getComputedStyle(d).color}`));
+console.log(JSON.stringify([...new Set(bunky)].sort()));
+await p.screenshot({ path: out }); await ctx.close();

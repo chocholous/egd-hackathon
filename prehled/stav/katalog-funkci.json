@@ -1,0 +1,53 @@
+{
+  "nazev": "Katalog funkcí EG.D (web egd-ukazky)",
+  "stav": "hotovo",
+  "popis": "Copilot přes OBO s licencí: Chat ✅ (nedeterministický), Retrieval přes OBO 0 hitů ❓ (není resourceMetadata ani zápisové scopy); licence zpět u alice, grant egd10 zpět",
+  "oblast": "lab",
+  "kdo": "katalog-funkci",
+  "vystup": "sondy/katalog-funkci/README.md",
+  "aktualizovano": "2026-11-24T20:30:40Z",
+  "zacatek": "2026-11-24T17:58:32Z",
+  "kroky": 9,
+  "historie": [
+    {
+      "t": "2026-11-24T18:01:57Z",
+      "stav": "bezi",
+      "popis": "web založen, nasazuji 11 balíčků do katalogu webu"
+    },
+    {
+      "t": "2026-11-24T18:14:49Z",
+      "stav": "bezi",
+      "popis": "12 balíčků a seznamy hotové, stavím 7 stránek + rozcestník"
+    },
+    {
+      "t": "2026-11-24T18:51:02Z",
+      "stav": "bezi",
+      "popis": "11/12 karet ✅ v prohlížeči, OBO ❌ AADSTS65001; píšu README"
+    },
+    {
+      "t": "2026-11-24T18:52:37Z",
+      "stav": "hotovo",
+      "popis": "web /sites/egd-ukazky: 11 karet ✅ pod egd09/egd10, OBO ❌ (chybí souhlas API→Graph)"
+    },
+    {
+      "t": "2026-11-24T18:55:27Z",
+      "stav": "hotovo",
+      "popis": "egd01–10 vlastníci webu, ověřeno pod egd09; 11 karet ✅, OBO ❌"
+    },
+    {
+      "t": "2026-11-24T19:05:59Z",
+      "stav": "hotovo",
+      "popis": "12 karet ✅; OBO obě varianty (egd10 se souhlasem 200, egd09 bez 403 AADSTS65001); vzhled EG.D; datum opraveno přes pásmo Praha"
+    },
+    {
+      "t": "2026-11-24T19:39:15Z",
+      "stav": "hotovo",
+      "popis": "13 karet: + Copilot přes OBO (egd09: 403 souhlas přes OBO, 403 licence přímo; úspěch jen ze sondy, Chat ❓)"
+    },
+    {
+      "t": "2026-11-24T20:30:40Z",
+      "stav": "hotovo",
+      "popis": "Copilot přes OBO s licencí: Chat ✅ (nedeterministický), Retrieval přes OBO 0 hitů ❓ (není resourceMetadata ani zápisové scopy); licence zpět u alice, grant egd10 zpět"
+    }
+  ]
+}

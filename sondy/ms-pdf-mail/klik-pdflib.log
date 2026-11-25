@@ -1,0 +1,3 @@
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 11223
+adresát vyplněn do #pdf-komu: eva.vesela@pavelchocholousgmail.onmicrosoft.com | sendMail: 202 | od kliku 1598 ms
+výsledek v UI: Odesláno: spokojenost-2026-11-24.pdf (8099 B) na eva.vesela@pavelchocholousgmail.onmicrosoft.com.

@@ -1,0 +1,10 @@
+--- klik graphpdf
+LOG po kliku: HOTOVO graphpdf
+--- klik pdf
+LOG po kliku: HOTOVO pdf
+--- eval performance.getEntriesByType('resource').map(e=>e.name).filter(n=>/spokojenost-web-part/.test(n)).join(' ')
+VYSLEDEK: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/ClientSideAssets/2d0f5a8f-5933-4d35-b711-a25cfb944f88/spokojenost-web-part_7bc9f9966253832f3e04.js
+--- eval fetch("/sites/egd-sonda-ms-dokumenty/_api/web/GetFolderByServerRelativePath(decodedurl='/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty')/Files?$select=Name,Length,TimeLastModified", {headers:{Accept:'application/json;odata=nometadata'}}).then(r=>r.json()).then(j=>j.value.filter(f=>f.Name.startsWith('spokojenost')).map(f=>f.Name+' '+f.Length+' '+f.TimeLastModified).join(' | '))
+VYSLEDEK: spokojenost-prehled.pdf 8099 2026-11-23T11:11:26Z | spokojenost.pdf 61933 2026-11-23T11:11:25Z | spokojenost.docx 16967 2026-11-23T11:11:23Z | spokojenost.pptx 61167 2026-11-23T10:21:34Z | spokojenost.xlsx 13412 2026-11-23T10:21:33Z
+LOG:
+

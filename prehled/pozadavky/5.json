@@ -1,0 +1,12 @@
+{
+  "cesta": "API s CORS (ARES, Open-Meteo) přímo ze SPFx; ostatní (ČNB, OTE, scraping) jen přes server v Container App",
+  "poznamka": "neověřeno: zápis Jobu do seznamu přes Sites.Selected (chce ano k nové identitě/grantu), PA HTTP Premium (chce trial), curl.exe na Windows, proxy/CSP E.ON",
+  "zdroj": "sondy/ms-dokumenty/README.md",
+  "skill": "ano",
+  "nazev": "Integrace externích zdrojů (API, scraping)",
+  "realne": "castecne",
+  "test": "lab",
+  "cislo": 5,
+  "aktualizovano": "2026-11-22T20:02:22Z",
+  "skill_cesta": "skills/egd-externi-api"
+}

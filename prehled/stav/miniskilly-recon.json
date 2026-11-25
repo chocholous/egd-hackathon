@@ -1,0 +1,33 @@
+{
+  "nazev": "egd-recon: TEST.md + TEST-copilot.md",
+  "stav": "hotovo",
+  "popis": "cesty bez CLI pod Jakubem: Návštěvník A3 403, A2 bez Nový; recon bez CLI → A3",
+  "oblast": "skilly",
+  "kdo": "miniskilly",
+  "vystup": "skills/egd-recon/test-dukazy/jakub-postup.md",
+  "aktualizovano": "2026-11-24T11:52:05Z",
+  "zacatek": "2026-11-24T09:38:38Z",
+  "kroky": 4,
+  "historie": [
+    {
+      "t": "2026-11-24T09:38:38Z",
+      "stav": "bezi",
+      "popis": "license doplněna; Claude (Sonnet účastník) a Copilot (3 běhy) běží"
+    },
+    {
+      "t": "2026-11-24T09:44:53Z",
+      "stav": "hotovo",
+      "popis": "license, Claude 3/3 ✅, Copilot 4/4 ✅, 5 oprav SKILL.md; ❓ větev bez práv (login jen Pavel)"
+    },
+    {
+      "t": "2026-11-24T10:12:38Z",
+      "stav": "hotovo",
+      "popis": "doměřeno pod jakubem: chybí role ✅ (Návštěvník / bez přístupu); ❓ jen chybí scope"
+    },
+    {
+      "t": "2026-11-24T11:52:05Z",
+      "stav": "hotovo",
+      "popis": "cesty bez CLI pod Jakubem: Návštěvník A3 403, A2 bez Nový; recon bez CLI → A3"
+    }
+  ]
+}

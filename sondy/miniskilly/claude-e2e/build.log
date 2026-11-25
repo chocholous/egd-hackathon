@@ -1,0 +1,74 @@
+> prvni-appka@0.0.1 build
+> heft test --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] Compiling 1 files...
+[build:sass] Finished compiling.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:lint] Using ESLint version 9.37.0
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (9.284s) ---- 
+ ---- test started ---- 
+[test:jest] Using Jest version 30.2.0
+No tests found, exiting with code 0
+[test:jest] 
+[test:jest] Run start. 0 test suites
+[test:jest] 
+[test:jest] Tests finished:
+[test:jest]   Successes: 0
+[test:jest]   Failures: 0
+[test:jest]   Total: 0
+ ---- test finished (0.865s) ---- 
+-------------------- Finished (10.154s) --------------------
+ ---- package-solution started ---- 
+Found manifest: 63aa2a5f-434d-440c-8dfc-d65efa83f63b.manifest.json
+Found client-side build resource: spokojenost-web-part_3f749c582df916d5f5ba.js
+Found client-side build resource: spokojenost-web-part_3f749c582df916d5f5ba.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { prvni-appka Feature }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug...
+Cleaned /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/AppManifest.xml
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/_rels/.rels
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/[Content_Types].xml
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/feature_4361489b-5c16-4020-aed3-a8b20ff92dea.xml
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/_rels/feature_4361489b-5c16-4020-aed3-a8b20ff92dea.xml.rels
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/feature_4361489b-5c16-4020-aed3-a8b20ff92dea.xml.config.xml
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/4361489b-5c16-4020-aed3-a8b20ff92dea/WebPart_63aa2a5f-434d-440c-8dfc-d65efa83f63b.xml
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/ClientSideAssets/spokojenost-web-part_3f749c582df916d5f5ba.js
+Created file: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/sharepoint/solution/debug/ClientSideAssets/spokojenost-web-part_3f749c582df916d5f5ba.js.LICENSE.txt
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.368s) ---- 
+-------------------- Finished (0.372s) --------------------

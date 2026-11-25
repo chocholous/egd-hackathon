@@ -1,0 +1,109 @@
+{
+ "displayName": "EGD PA sonda: práva na položku přes SharePoint HTTP request (Standard)",
+ "connectionReferences": {
+  "shared_sharepointonline": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-sharepointonline",
+   "source": "Embedded"
+  }
+ },
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+   "$connections": {
+    "defaultValue": {},
+    "type": "Object"
+   },
+   "$authentication": {
+    "defaultValue": {},
+    "type": "SecureObject"
+   }
+  },
+  "triggers": {
+   "Recurrence": {
+    "type": "Recurrence",
+    "recurrence": {
+     "frequency": "Month",
+     "interval": 12
+    }
+   }
+  },
+  "actions": {
+   "Uzivatel": {
+    "type": "OpenApiConnection",
+    "runAfter": {},
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "connectionName": "shared_sharepointonline",
+      "operationId": "HttpRequest"
+     },
+     "parameters": {
+      "dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-power-automate",
+      "parameters/method": "POST",
+      "parameters/uri": "_api/web/ensureuser",
+      "parameters/headers": {
+       "Accept": "application/json;odata=nometadata",
+       "Content-Type": "application/json;odata=nometadata"
+      },
+      "parameters/body": "{\"logonName\": \"i:0#.f|membership|eva.vesela@pavelchocholousgmail.onmicrosoft.com\"}"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "Rozdel": {
+    "type": "OpenApiConnection",
+    "runAfter": {
+     "Uzivatel": [
+      "Succeeded"
+     ]
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "connectionName": "shared_sharepointonline",
+      "operationId": "HttpRequest"
+     },
+     "parameters": {
+      "dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-power-automate",
+      "parameters/method": "POST",
+      "parameters/uri": "_api/web/lists(guid'de1f2641-34f4-4b2f-a908-4ed6e5528514')/items(1)/breakroleinheritance(copyRoleAssignments=true,clearSubscopes=true)",
+      "parameters/headers": {
+       "Accept": "application/json;odata=nometadata",
+       "Content-Type": "application/json;odata=nometadata"
+      }
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "Pridej": {
+    "type": "OpenApiConnection",
+    "runAfter": {
+     "Rozdel": [
+      "Succeeded"
+     ]
+    },
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+      "connectionName": "shared_sharepointonline",
+      "operationId": "HttpRequest"
+     },
+     "parameters": {
+      "dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-power-automate",
+      "parameters/method": "POST",
+      "parameters/uri": "_api/web/lists(guid'de1f2641-34f4-4b2f-a908-4ed6e5528514')/items(1)/roleassignments/addroleassignment(principalid=@{body('Uzivatel')?['Id']},roledefid=1073741826)",
+      "parameters/headers": {
+       "Accept": "application/json;odata=nometadata",
+       "Content-Type": "application/json;odata=nometadata"
+      }
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   }
+  },
+  "outputs": {}
+ }
+}

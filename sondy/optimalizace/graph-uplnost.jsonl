@@ -1,0 +1,7 @@
+{"test": "neindexovany_Neindexovano=N1_s_Prefer_vsechny_stranky_(skutecne_240)", "status": 200, "rows": 240, "stranek": 3, "max_id": 11878, "sec": 0.95}
+{"test": "indexovany_Castka_ge_0_vsechny_stranky_(skutecne_12000+)", "status": 200, "rows": 12002, "stranek": 13, "max_id": 12002, "sec": 6.79}
+{"test": "indexovany_Castka_ge_0_vsechny_stranky_s_Prefer", "status": 200, "rows": 12002, "stranek": 13, "max_id": 12002, "sec": 6.6}
+{"test": "neindexovany_Title='Položka 3000'_Prefer", "prvni_stranka_nalezeno": 1, "prvni_stranka_ma_nextLink": true, "po_dojeti_nextLink": {"status": 200, "rows": 1, "stranek": 3, "max_id": 2803, "sec": 0.8}}
+{"test": "neindexovany_Title='Položka 5499'_Prefer", "prvni_stranka_nalezeno": 0, "prvni_stranka_ma_nextLink": true, "po_dojeti_nextLink": {"status": 200, "rows": 1, "stranek": 3, "max_id": 5593, "sec": 0.74}}
+{"test": "neindexovany_Title='Položka 11000'_Prefer", "prvni_stranka_nalezeno": 0, "prvni_stranka_ma_nextLink": true, "po_dojeti_nextLink": {"status": 200, "rows": 1, "stranek": 3, "max_id": 10914, "sec": 0.83}}
+{"test": "neindexovany_Title='Položka NEEXISTUJE'_Prefer", "prvni_stranka_nalezeno": 0, "prvni_stranka_ma_nextLink": true, "po_dojeti_nextLink": {"status": 200, "rows": 0, "stranek": 3, "max_id": null, "sec": 0.81}}

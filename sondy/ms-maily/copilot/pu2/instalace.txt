@@ -1,0 +1,3 @@
+nainstalovano: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/ccb9eeb2-48b3-4e11-b554-86593a877872/scratchpad/cp/pu2/home/.copilot/skills/egd-planovane-ulohy
+OK: Copilot skill 'egd-planovane-ulohy' vidi
+2:  egd-planovane-ulohy - Vysvětli a postav plánovanou úlohu pro SharePoint appku EG.D (denní report, noční přepočet, pravidelné stažení dat a e-mail

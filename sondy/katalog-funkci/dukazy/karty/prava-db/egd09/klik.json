@@ -1,0 +1,165 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/prava.aspx",
+ "start": "2026-11-24T18:34:07.290Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 853,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 3854,
+   "vysledek": "6 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"e11ebff0-d972-4f4a-8401-aaf1bbf40fb9\"]').scrollIntoView()",
+   "t": 11091,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "click:Kdo jsem (API)",
+   "t": 11092,
+   "ok": true
+  },
+  {
+   "krok": "waitfor:HOTOVO",
+   "t": 11189,
+   "ok": true
+  },
+  {
+   "krok": "wait:500",
+   "t": 11377,
+   "ok": true
+  },
+  {
+   "krok": "shotv:01-egd09-kdo-jsem",
+   "t": 11884,
+   "vysledek": "dukazy/karty/prava-db/egd09/01-egd09-kdo-jsem.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"e11ebff0-d972-4f4a-8401-aaf1bbf40fb9\"]').innerText.slice(250,1200)",
+   "t": 11980,
+   "vysledek": "pod mnou)\n\nPoložka ID  komu (UPN)  role \nRead\nEdit\n Sdílet (přes API) Práva položky\nHOTOVO me HTTP 200 (132 ms)\n{\n  \"upn\": \"egd09@pavelchocholousgmail.onmicrosoft.com\",\n  \"oid\": \"299f78ab-616c-4cb0-8162-073c777fc4ec\",\n  \"roles\": [\n    \"Zadavatel\"\n  ],\n  \"ver\": \"0.3\"\n}",
+   "ok": true
+  },
+  {
+   "krok": "click:Žádosti (SQL",
+   "t": 11982,
+   "ok": true
+  },
+  {
+   "krok": "wait:20000",
+   "t": 12053,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"e11ebff0-d972-4f4a-8401-aaf1bbf40fb9\"]').scrollIntoView()",
+   "t": 32054,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:02-egd09-zadosti",
+   "t": 32057,
+   "vysledek": "dukazy/karty/prava-db/egd09/02-egd09-zadosti.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"e11ebff0-d972-4f4a-8401-aaf1bbf40fb9\"]').innerText.slice(250,1800)",
+   "t": 32186,
+   "vysledek": "pod mnou)\n\nPoložka ID  komu (UPN)  role \nRead\nEdit\n Sdílet (přes API) Práva položky\nHOTOVO zadosti HTTP 200 (5483 ms)\n[]",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 500,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 579,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 580,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2088,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 4743,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/EffectiveBasePermissions"
+  },
+  {
+   "t": 4838,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderb"
+  },
+  {
+   "t": 6767,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(4)/CommentsDisabledScope"
+  },
+  {
+   "t": 6823,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(4)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 11318,
+   "m": "GET",
+   "s": 200,
+   "u": "https://ca-egd-data-api.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/me"
+  },
+  {
+   "t": 17534,
+   "m": "GET",
+   "s": 200,
+   "u": "https://ca-egd-data-api.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/zadosti"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:34:39.477Z"
+}

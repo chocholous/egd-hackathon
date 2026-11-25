@@ -1,0 +1,13 @@
+{
+  "HasUniqueRoleAssignments": true,
+  "ReadSecurity": 2,
+  "WriteSecurity": 2
+}
+{"k":"Vlastníci webu EGD sonda ms-prava","u":["Úplné řízení"]}
+{"k":"Pavel Admin (lab)","u":["Úplné řízení"]}
+{"k":"Nákupy Zadavatelé","u":["Nákupy Zadavatel"]}
+{"k":"Nákupy Schvalovatelé","u":["Nákupy Schvalovatel bez mazání"]}
+{"Name":"Nákupy Zadavatel","Low":1011028719}
+{"Name":"Nákupy Schvalovatel bez mazání","Low":1011028967}
+{"k":"Nákupy Zadavatelé","u":["Čtení","Omezený přístup"]}
+{"k":"Nákupy Schvalovatelé","u":["Čtení","Omezený přístup"]}

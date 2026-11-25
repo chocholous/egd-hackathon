@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "egd-ca-obo",
+    "id": "876f8081-cf1b-4637-be7b-9784e2fe2f75",
+    "version": "0.2.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "EG.D sonda (lab)",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "OBO pošta (sonda)"
+      },
+      "longDescription": {
+        "default": "Web part volá Container App ca-egd-obo, která tokenem uživatele přes OBO čte jeho poštu (Mail.ReadBasic)."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "egd-ca-obo-api",
+        "scope": "access_as_user"
+      }
+    ],
+    "features": [
+      {
+        "title": "OBO pošta sonda",
+        "description": "Registruje web part.",
+        "id": "7b25e437-8e15-43e6-a2d7-ca806700aed0",
+        "version": "0.1.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/egd-ca-obo.sppkg"
+  }
+}

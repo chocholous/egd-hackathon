@@ -1,0 +1,7 @@
+{"displayName":"EGD PA sonda: Recurrence + Compose",
+ "connectionReferences":{},
+ "definition":{"$schema":"https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#","contentVersion":"1.0.0.0",
+  "parameters":{"$connections":{"defaultValue":{},"type":"Object"},"$authentication":{"defaultValue":{},"type":"SecureObject"}},
+  "triggers":{"Recurrence":{"type":"Recurrence","recurrence":{"frequency":"Month","interval":12}}},
+  "actions":{"Pozdrav":{"type":"Compose","runAfter":{},"inputs":"ahoj"}},
+  "outputs":{}}}

@@ -1,0 +1,46 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://m365.cloud.microsoft/chat",
+ "start": "2026-11-24T19:52:03.471Z",
+ "kroky": [
+  {
+   "krok": "wait:8000",
+   "t": 4658,
+   "ok": true
+  },
+  {
+   "krok": "shotv:chat",
+   "t": 12659,
+   "vysledek": "sondy/copilot-nativni/dukazy/p3/chat.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('button,[role=button],[role=menuitem],a')].map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(x=>x&&/copilot|agent|ask|summar|compare|autofill/i.test(x)).join(' | ')",
+   "t": 12760,
+   "vysledek": "Copilot, home | Tasks | Agents",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.title+' | '+location.href",
+   "t": 12762,
+   "vysledek": "Microsoft Copilot | https://copilot.cloud.microsoft/home?es=SSR&redirfrom=userTypeCookie&redirfrom=cosmicRingCookie&redirfrom=mcmToCcm",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 5571,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.6&apikey=b0c252808e614e949086e019ae1cb300"
+  },
+  {
+   "t": 7220,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://login.live.com/Me.htm?v=3"
+  }
+ ],
+ "konzole": [],
+ "konec": "2026-11-24T19:52:16.234Z"
+}

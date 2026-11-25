@@ -1,0 +1,53 @@
+{
+  "nazev": "Audit: je všechno ověřené v labu?",
+  "stav": "hotovo",
+  "popis": "uzavřeno: ❌ opravené; otevřené A2/B/open/úpravy v Copilotu, Windows, role SP admin",
+  "oblast": "podklady",
+  "kdo": "session audit-overeni",
+  "vystup": "audit/overeni.md",
+  "aktualizovano": "2026-11-24T21:09:04Z",
+  "zacatek": "2026-11-22T18:53:48Z",
+  "kroky": 29,
+  "historie": [
+    {
+      "t": "2026-11-22T20:50:37Z",
+      "stav": "bezi",
+      "popis": "2. kolo maily + planovane-ulohy hotové; nálezy autorovi"
+    },
+    {
+      "t": "2026-11-23T09:52:21Z",
+      "stav": "ceka",
+      "popis": "2. kolo: obsah uzavřen u pripravenost (+A3 ✅, recon 2× ❌ k opravě), externi-api, dokumenty, llm-gateway, prava-role, maily, planovane-ulohy; čeká prvni-appka, data-seznamy, Copilot testy"
+    },
+    {
+      "t": "2026-11-23T10:33:35Z",
+      "stav": "ceka",
+      "popis": "Uzavřeno (obsah+Claude+Copilot): pripravenost, data-seznamy, llm-gateway, maily, planovane-ulohy, prava-role; externi-api, dokumenty obsah. Čeká: prvni-appka, přepis UI approve u dokumentů a v napojeni/10"
+    },
+    {
+      "t": "2026-11-23T11:18:41Z",
+      "stav": "ceka",
+      "popis": "Uzavřeno (obsah+Claude+Copilot): pripravenost, data-seznamy, dokumenty, llm-gateway, maily, planovane-ulohy, prava-role; externi-api obsah. Čeká: prvni-appka, napojeni/10 (redaktor)"
+    },
+    {
+      "t": "2026-11-24T10:39:33Z",
+      "stav": "ceka",
+      "popis": "Uzavřeno navíc: matice vlastníka webu (site-owner). Čeká: prvni-appka, napojeni/10 (redaktor), rozhodnutí o odvolání pavel.admin"
+    },
+    {
+      "t": "2026-11-24T13:48:09Z",
+      "stav": "ceka",
+      "popis": "prvni-appka závěrečné kolo: cesta A hotová v obou agentech; 6 ❌ textů, 14 ⚠ dokladů. Čeká: redaktor (napojeni/10)"
+    },
+    {
+      "t": "2026-11-24T21:07:30Z",
+      "stav": "bezi",
+      "popis": "uzávěrka: opravy redaktora a zbylé ❌/⚠"
+    },
+    {
+      "t": "2026-11-24T21:09:04Z",
+      "stav": "hotovo",
+      "popis": "uzavřeno: ❌ opravené; otevřené A2/B/open/úpravy v Copilotu, Windows, role SP admin"
+    }
+  ]
+}

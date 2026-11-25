@@ -1,0 +1,2 @@
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 451
+adresát (podle kódu web partu), zadáno: eva.vesela@pavelchocholousgmail.onmicrosoft.com | sendMail: 202

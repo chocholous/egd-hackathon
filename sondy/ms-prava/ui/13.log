@@ -1,0 +1,53 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=12
+KROK klikobs:Nový K otevření
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=12
+--- frame https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=12
+a: Zapnout režim s vyšším usnadněním
+a: Přejít k hlavnímu obsahu
+a: Vypnout animace
+button[button]: Spouštěč aplikací
+a[link]: SharePoint
+button[button]: Nastavení
+button[button]: Nápověda
+button[button]: KM
+a: SDÍLET
+a: SLEDOVAT
+a: Umožňuje přenést hlavní pozornost na obsah.
+a: EGD sonda ms-prava
+a: UPRAVIT ODKAZY
+a[button]: Vyberte, kde se má vyhledávat.
+a[button]: Vyhledat
+a: Skupiny
+a: Členové webu EGD sonda ms-prava
+a: Návštěvníci webu EGD sonda ms-prava
+a: Vlastníci webu EGD sonda ms-prava
+a: Evidence Zadavatelé Aktuálně vybráno
+a: Evidence Schvalovatelé
+a: Evidence Správci
+a: Další...
+a: Domovská stránka
+a: Dokumenty
+a: Stránky
+a: Pozadavky
+a: Obsah webu
+a: Nový K otevření nabídky použijte kombinaci kláves SHIFT+ENTER (nové okno).
+a: Akce K otevření nabídky použijte kombinaci kláves SHIFT+ENTER (nové okno).
+a: Nastavení K otevření nabídky použijte kombinaci kláves SHIFT+ENTER (nové okno).
+a: Podrobné zobrazení K otevření nabídky použijte kombinaci kláves SHIFT+ENTER (nové okno).
+a: Seřadit podle: Přílohy
+a: Název
+a: Název pozice
+a: Oddělení
+a: Malá Karolína
+input: Vrátit fokus zpět na konec dialogového okna
+a[button]: Zavřít dialog
+input: Vrátit fokus zpět na začátek dialogového okna
+a[button]: Maximalizovat
+--- frame https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/aclinv.aspx?GroupId=12&IsDlg=1
+a: Pozvat ostatní
+a: Sdílí se s
+a: ZOBRAZIT MOŽNOSTI
+input: Sdílet
+input: Storno
+pole input #ctl00_PlaceHolderMain_peoplePicker_TopSpan_EditorInput title="Zadejte jména nebo e-mailové adresy."
+pole textarea #ctl00_PlaceHolderMain_txtEmailBody title="Textové pole textu e-mailové zprávy"

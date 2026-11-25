@@ -1,0 +1,22 @@
+# 2026-11-22T19:31:25Z gateway probe (první volání dne 19:29:40Z mělo studený start: 401 za 30,09 s, whoami 6,6 s; viz studeny-start-2026-11-22.txt)
+=== neprihlaseny 
+
+[HTTP 401, 0.182919s]
+=== whoami 
+{"who":{"oid":"4a9b2f9a-24ff-4092-800b-e71f91b307b0","upn":"pavel.chocholous@gmail.com","clientAppId":"04b07795-8ddb-461a-bbee-02f9e1bf7b46","scopes":["Gateway.Use"],"roles":[]},"appKey":"default"}
+[HTTP 200, 0.240576s]
+=== kvota 
+{"den":"2026-11-22","appKey":"default","spotreba":{"tokens":1653,"calls":7,"costUsd":0.0124492,"pages":2},"limitTokenuZaDen":200000}
+[HTTP 200, 0.207685s]
+=== chat Shrň jednou větou: SharePoint je platforma pro spolupráci.
+{"text":"SharePoint je platforma umožňující týmovou spolupráci, sdílení dokumentů a správu obsahu.","usage":{"completion_tokens":25,"completion_tokens_details":{"accepted_prediction_tokens":0,"audio_tokens":0,"reasoning_tokens":0,"rejected_prediction_tokens":0},"latency_checkpoint":{"engine_tbt_ms":5,"engine_ttft_ms":23,"engine_ttlt_ms":156,"pre_inference_ms":73,"service_tbt_ms":6,"service_ttft_ms":390,"service_ttlt_ms":533,"user_visible_ttft_ms":317},"prompt_tokens":24,"prompt_tokens_details":{"audio_tokens":0,"cached_tokens":0},"total_tokens":49},"costUsd":0.0000496,"model":"gpt-4.
+[HTTP 200, 1.110234s]
+=== vision sondy/ai/ocr-cs.png
+{"text":"Na obrázku je text, pravděpodobně část účtu nebo faktury. Text přepisuji:\n\nČástka k úhradě: 12 345,00 Kč\n\nPříliš žluťoučký kůň úpěl ďábelské ódy\n\nDodavatel: Řezníkův závod, s.r.o.","usage":{"completion_tokens":80,"completion_tokens_details":{"accepted_prediction_tokens":0,"audio_tokens":0,"reasoning_tokens":0,"rejected_prediction_tokens":0},"latency_checkpoint":{"engine_tbt_ms":6,"engine_ttft_ms":306,"engine_ttlt_ms":762,"pre_inference_ms":96,"service_tbt_ms":7,"service_ttft_ms":1695,"service_ttlt_ms":2219,"user_visible_ttft_ms":1599},"prompt_toke
+[HTTP 200, 2.720552s]
+=== ocr sondy/ai/ocr-cs.png
+{"text":"Částka k úhradě: 12 345,00 Kč Příliš žluťoučký kůň úpěl ďábelské ódy Dodavatel: Řezníkův závod, s.r.o.","pages":1,"costUsd":0.0015,"ms":1022,"kvotaDnes":{"tokens":2275,"limit":200000}}
+[HTTP 200, 1.228224s]
+=== ocr sondy/ai/ocr-test.png
+{"text":"FAKTURA c. 2026-0142\nDodavatel: Test s.r.o., ICO 12345678 Odberatel: EG.D, a.s.\nDatum splatnosti: 15. 12. 2026\nCelkem k uhrade: 12 345,00 CZK","pages":1,"costUsd":0.0015,"ms":2416,"kvotaDnes":{"tokens":2275,"limit":200000}}
+[HTTP 200, 2.672782s]

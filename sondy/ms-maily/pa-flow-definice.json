@@ -1,0 +1,257 @@
+{
+ "name": "5516544d-6bf0-7b8e-ab9f-5c077c57ec3b",
+ "id": "/providers/Microsoft.ProcessSimple/environments/Default-972a674c-7b85-4e56-a31f-b2f95b42fd1e/flows/5516544d-6bf0-7b8e-ab9f-5c077c57ec3b",
+ "type": "Microsoft.ProcessSimple/environments/flows",
+ "properties": {
+  "apiId": "/providers/Microsoft.PowerApps/apis/shared_logicflows",
+  "displayName": "EGD ms-maily: denní report (klikací cesta)",
+  "userType": "Owner",
+  "definition": {
+   "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+   "contentVersion": "undefined",
+   "parameters": {
+    "$authentication": {
+     "defaultValue": {},
+     "type": "SecureObject"
+    },
+    "$connections": {
+     "defaultValue": {},
+     "type": "Object"
+    }
+   },
+   "triggers": {
+    "Recurrence": {
+     "recurrence": {
+      "frequency": "Day",
+      "interval": "1",
+      "startTime": "2026-11-22T05:00:00.000Z",
+      "timeZone": "Central Europe Standard Time",
+      "schedule": {
+       "hours": [
+        "6"
+       ],
+       "minutes": [
+        0
+       ]
+      }
+     },
+     "evaluatedRecurrence": {
+      "frequency": "Day",
+      "interval": "1",
+      "startTime": "2026-11-22T05:00:00.000Z",
+      "timeZone": "Central Europe Standard Time",
+      "schedule": {
+       "hours": [
+        "6"
+       ],
+       "minutes": [
+        0
+       ]
+      }
+     },
+     "type": "Recurrence"
+    }
+   },
+   "actions": {
+    "Get_items": {
+     "runAfter": {},
+     "type": "OpenApiConnection",
+     "inputs": {
+      "parameters": {
+       "dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily",
+       "table": "14c6c689-7dfc-4e22-b5d4-7d4a14b28250",
+       "$filter": "Stav eq 'Nový'",
+       "$top": 1000
+      },
+      "host": {
+       "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+       "connectionName": "shared_sharepointonline",
+       "operationId": "GetItems"
+      },
+      "authentication": "@parameters('$authentication')"
+     }
+    },
+    "Create_HTML_table": {
+     "runAfter": {
+      "Get_items": [
+       "Succeeded"
+      ]
+     },
+     "type": "Table",
+     "inputs": {
+      "from": "@outputs('Get_items')?['body/value']",
+      "format": "HTML",
+      "columns": [
+       {
+        "header": "Požadavek",
+        "value": "@item()?['Title']"
+       },
+       {
+        "header": "Stav",
+        "value": "@item()?['Stav/Value']"
+       },
+       {
+        "header": "Zadal",
+        "value": "@item()?['Author/DisplayName']"
+       }
+      ]
+     }
+    },
+    "Send_an_email_(V2)": {
+     "runAfter": {
+      "Create_HTML_table": [
+       "Succeeded"
+      ]
+     },
+     "type": "OpenApiConnection",
+     "inputs": {
+      "parameters": {
+       "emailMessage/To": "eva.vesela@pavelchocholousgmail.onmicrosoft.com",
+       "emailMessage/Subject": "Denní přehled nových požadavků (Power Automate, klikací cesta)",
+       "emailMessage/Body": "<p class=\"editor-paragraph\">Dobrý den, nové požadavky ke schválení: @{body('Create_HTML_table')}</p>",
+       "emailMessage/Attachments": [
+        {
+         "Name": "prehled-pozadavku.html",
+         "ContentBytes": "@body('Create_HTML_table')"
+        }
+       ],
+       "emailMessage/Importance": "Normal"
+      },
+      "host": {
+       "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365",
+       "connectionName": "shared_office365",
+       "operationId": "SendEmailV2"
+      },
+      "authentication": "@parameters('$authentication')"
+     }
+    }
+   }
+  },
+  "state": "Started",
+  "sharingType": "CommonDataService",
+  "connectionReferences": {
+   "shared_sharepointonline": {
+    "connectionName": "shared-sharepointonl-ab987b44-87ad-4ffd-9dce-7688bde92ab0",
+    "connectionReferenceLogicalName": "new_sharedsharepointonline_325a0",
+    "source": "Embedded",
+    "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+    "displayName": "SharePoint",
+    "iconUri": "https://static.powerapps.com/resource/ppcr/2026-11-05/1.2.3961.20/sharepointonline/icon.png",
+    "brandColor": "",
+    "tier": "Standard",
+    "apiName": "sharepointonline",
+    "isProcessSimpleApiReferenceConversionAlreadyDone": false
+   },
+   "shared_office365": {
+    "connectionName": "shared-office365-63b868e3-1ee6-440f-820f-e83d65da5af5",
+    "connectionReferenceLogicalName": "new_sharedoffice365_46f7f",
+    "source": "Embedded",
+    "id": "/providers/Microsoft.PowerApps/apis/shared_office365",
+    "displayName": "Office 365 Outlook",
+    "iconUri": "https://static.powerapps.com/resource/ppcr/2026-11-05/1.2.3961.20/office365/icon.png",
+    "brandColor": "#0078D4",
+    "tier": "Standard",
+    "apiName": "office365",
+    "isProcessSimpleApiReferenceConversionAlreadyDone": false
+   }
+  },
+  "installedConnectionReferences": {
+   "shared_sharepointonline": {
+    "connectionName": "shared-sharepointonl-ab987b44-87ad-4ffd-9dce-7688bde92ab0",
+    "connectionReferenceLogicalName": "new_sharedsharepointonline_325a0",
+    "source": "Embedded",
+    "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+    "displayName": "SharePoint",
+    "iconUri": "https://static.powerapps.com/resource/ppcr/2026-11-05/1.2.3961.20/sharepointonline/icon.png",
+    "brandColor": "",
+    "tier": "Standard",
+    "apiName": "sharepointonline",
+    "isProcessSimpleApiReferenceConversionAlreadyDone": false
+   },
+   "shared_office365": {
+    "connectionName": "shared-office365-63b868e3-1ee6-440f-820f-e83d65da5af5",
+    "connectionReferenceLogicalName": "new_sharedoffice365_46f7f",
+    "source": "Embedded",
+    "id": "/providers/Microsoft.PowerApps/apis/shared_office365",
+    "displayName": "Office 365 Outlook",
+    "iconUri": "https://static.powerapps.com/resource/ppcr/2026-11-05/1.2.3961.20/office365/icon.png",
+    "brandColor": "#0078D4",
+    "tier": "Standard",
+    "apiName": "office365",
+    "isProcessSimpleApiReferenceConversionAlreadyDone": false
+   }
+  },
+  "createdTime": "2026-11-22T19:38:12.3108019Z",
+  "lastModifiedTime": "2026-11-22T19:38:13Z",
+  "flowSuspensionReason": "None",
+  "environment": {
+   "name": "Default-972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+   "type": "Microsoft.ProcessSimple/environments",
+   "id": "/providers/Microsoft.ProcessSimple/environments/Default-972a674c-7b85-4e56-a31f-b2f95b42fd1e"
+  },
+  "definitionSummary": {
+   "triggers": [
+    {
+     "type": "Recurrence"
+    }
+   ],
+   "actions": [
+    {
+     "type": "OpenApiConnection",
+     "swaggerOperationId": "GetItems"
+    },
+    {
+     "type": "Table"
+    },
+    {
+     "type": "OpenApiConnection",
+     "swaggerOperationId": "SendEmailV2"
+    }
+   ]
+  },
+  "creator": {
+   "tenantId": "972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+   "objectId": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d",
+   "userId": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d",
+   "userType": "ActiveDirectory"
+  },
+  "flowTriggerUri": "https://switzerland.api.flow.microsoft.com:443/providers/Microsoft.ProcessSimple/environments/Default-972a674c-7b85-4e56-a31f-b2f95b42fd1e/flows/5516544d-6bf0-7b8e-ab9f-5c077c57ec3b/triggers/Recurrence/run?api-version=2016-11-01",
+  "installationStatus": "Installed",
+  "provisioningMethod": "FromDefinition",
+  "flowFailureAlertSubscribed": true,
+  "workflowEntityId": "24cd873e-ace6-f111-84ea-000d3a832204",
+  "referencedResources": [
+   {
+    "service": "sharepoint",
+    "resource": {
+     "site": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily",
+     "list": "14c6c689-7dfc-4e22-b5d4-7d4a14b28250"
+    },
+    "referencers": [
+     {
+      "referenceSourceType": "Actions",
+      "operationId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline/apiOperations/GetItems"
+     },
+     {
+      "referenceSourceType": "Triggers",
+      "operationId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline/apiOperations/GetItems"
+     }
+    ]
+   },
+   {
+    "service": "sharepoint",
+    "resource": {
+     "site": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily"
+    },
+    "referencers": [
+     {
+      "referenceSourceType": "Actions",
+      "operationId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline/apiOperations/GetItems"
+     }
+    ]
+   }
+  ],
+  "isManaged": false,
+  "machineDescriptionData": {}
+ }
+}

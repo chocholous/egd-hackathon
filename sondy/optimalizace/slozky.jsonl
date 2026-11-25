@@ -1,0 +1,22 @@
+{"test": "ItemCount_seznamu_(vcetne_slozek_a_polozek_ve_slozkach)", "ItemCount": 7208}
+{"test": "Folder_S1_ItemCount", "ItemCount": 2400}
+{"test": "Folder_S2_ItemCount", "ItemCount": 2400}
+{"test": "Folder_S3_ItemCount", "ItemCount": 2400}
+{"test": "GetItems_koren_(slozky)_RowLimit_5000", "status": 200, "sec": 0.223, "rows": 7, "chyba": null}
+{"test": "GetItems_koren_(slozky)_neindexovany_filtr", "status": 200, "sec": 0.243, "rows": 0, "chyba": null}
+{"test": "GetItems_koren_(slozky)_neindexovany_filtr_+_orderby_Created", "status": 200, "sec": 0.221, "rows": 0, "chyba": null}
+{"test": "GetItems_koren_(slozky)_orderby_Created", "status": 200, "sec": 0.229, "rows": 7, "chyba": null}
+{"test": "GetItems_slozka_S1_RowLimit_5000", "status": 200, "sec": 0.641, "rows": 2400, "chyba": null}
+{"test": "GetItems_slozka_S1_neindexovany_filtr", "status": 200, "sec": 0.185, "rows": 48, "chyba": null}
+{"test": "GetItems_slozka_S1_neindexovany_filtr_+_orderby_Created", "status": 200, "sec": 0.185, "rows": 48, "chyba": null}
+{"test": "GetItems_slozka_S1_orderby_Created", "status": 200, "sec": 0.231, "rows": 100, "chyba": null}
+{"test": "GetItems_rekurzivne_Scope_RecursiveAll_RowLimit_5000", "status": 200, "sec": 0.961, "rows": 5000, "chyba": null}
+{"test": "GetItems_rekurzivne_Scope_RecursiveAll_neindexovany_filtr", "status": 500, "sec": 0.15, "rows": null, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GetItems_rekurzivne_Scope_RecursiveAll_indexovany_filtr", "status": 200, "sec": 0.272, "rows": 100, "chyba": null}
+{"test": "GetItems_rekurzivne_Scope_RecursiveAll_orderby_Created", "status": 500, "sec": 0.154, "rows": null, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GetItems_slozka_S1_Scope_RecursiveAll_neindexovany_filtr", "status": 200, "sec": 0.287, "rows": 48, "chyba": null}
+{"test": "RLDAS_slozka_S1_RowLimit_2000", "status": 200, "sec": 1.911, "rows": 2000, "chyba": null}
+{"test": "RLDAS_slozka_S1_neindexovany_filtr_+_orderby_Created", "status": 200, "sec": 1.63, "rows": 48, "chyba": null}
+{"test": "RLDAS_rekurzivne_neindexovany_filtr_+_orderby_Created", "status": 500, "sec": 0.234, "rows": null, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "REST_filter_FileDirRef_slozka_S1", "status": 500, "sec": 0.184, "rows": null, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "REST_podslozky_S1", "status": 200, "sec": 0.167}

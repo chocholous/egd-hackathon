@@ -1,0 +1,6 @@
+nainstalovano: /var/folders/l0/02qchlk94l3d7cf7x8z0p2340000gn/T/copilot-ucastnik-UEYt4W/home/.copilot/skills/egd-externi-api
+OK: Copilot skill 'egd-externi-api' vidi
+106:  egd-externi-api - Napoj SPFx appku EG.D na cizí zdroj dat - nejdřív zjisti, jestli API povoluje volání z prohlížeče (CORS); když ano, volej ho p�
+nainstalovano: /var/folders/l0/02qchlk94l3d7cf7x8z0p2340000gn/T/copilot-ucastnik-UEYt4W/home/.copilot/skills/egd-dokumenty
+OK: Copilot skill 'egd-dokumenty' vidi
+106:  egd-dokumenty - Přidej do SPFx appky EG.D tlačítko, které z dat seznamu vyrobí Word, Excel, PowerPoint nebo PDF přímo v prohlížeči, uloží ho d

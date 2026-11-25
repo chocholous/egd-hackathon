@@ -1,0 +1,175 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/ai.aspx",
+ "start": "2026-11-24T18:47:28.076Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 975,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 3980,
+   "vysledek": "8 zón",
+   "ok": true
+  },
+  {
+   "krok": "fill:[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"] #evidence-nazev=Porucha klimatizace",
+   "t": 12630,
+   "ok": true
+  },
+  {
+   "krok": "fill:[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"] #evidence-popis=V dispečinku Brno hlásí klimatizace chybu E4, teplota přes 28 °C, technik nemůže pracovat u serverů, potřebujeme opravu do pátku.",
+   "t": 12689,
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"] #evidence-shrnout",
+   "t": 12698,
+   "ok": true
+  },
+  {
+   "krok": "wait:10000",
+   "t": 12945,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"]').querySelector('#evidence-ai') ? document.querySelector('[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"]').querySelector('#evidence-ai').innerText : document.querySelector('[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"]').innerText.slice(0,800)",
+   "t": 22945,
+   "vysledek": "Návrh shrnutí: V dispečinku Brno hlásí klimatizace chybu E4 a teplota přes 28 °C, technik proto nemůže pracovat u serverů, proto potřebujeme opravu do pátku.",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"]').querySelector('#evidence-shrnout').scrollIntoView({block:'center'})",
+   "t": 22948,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:01-egd09-shrnout",
+   "t": 22949,
+   "vysledek": "dukazy/karty/ai-llm/01-egd09-shrnout.png",
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"] #evidence-shrnout",
+   "t": 23055,
+   "ok": true
+  },
+  {
+   "krok": "wait:8000",
+   "t": 23122,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"]').querySelector('#evidence-ai') ? document.querySelector('[data-sp-web-part-id=\"4d0850fa-6cee-41a0-be2c-b0aac1ed61fb\"]').querySelector('#evidence-ai').innerText : ''",
+   "t": 31124,
+   "vysledek": "Chyba AI: Dnešní limit AI pro appku je vyčerpaný. Zkuste to zítra.",
+   "ok": true
+  },
+  {
+   "krok": "shotv:02-egd09-podruhe",
+   "t": 31130,
+   "vysledek": "dukazy/karty/ai-llm/02-egd09-podruhe.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 529,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 582,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 583,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 617,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2341,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 6884,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID%20desc&$top=2000"
+  },
+  {
+   "t": 8302,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(7)/CommentsDisabledScope"
+  },
+  {
+   "t": 8314,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 8379,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderby=ID%"
+  },
+  {
+   "t": 8425,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(7)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 14349,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat"
+  },
+  {
+   "t": 23242,
+   "m": "POST",
+   "s": 429,
+   "u": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "error: Failed to load resource: the server responded with a status of 429 ()",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:47:59.319Z"
+}

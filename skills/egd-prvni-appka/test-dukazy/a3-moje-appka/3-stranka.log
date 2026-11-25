@@ -1,0 +1,8 @@
+[09:12:25] stranka: url: https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev/SitePages/Page(1).aspx
+[09:12:27] stranka: nazev stranky: "moje-appka"
+[09:12:32] stranka: vysledky hledani "Moje první appka": [{"id":"webpartsTab","popisek":null},{"id":"stockTab","popisek":null},{"id":"dde1a220-4db3-4d64-8df7-fef833a21ec6_0","popisek":"Přidat webovou část Moje první appka"}]
+[09:12:34] stranka: popis po najeti mysi: Hodnocení 1–5 jedním kliknutím a souhrn za dnešek a posledních 7 dní.
+[09:12:44] stranka: otazka ve vlozene casti: "Jak jste dnes spokojeni s prostředím kanceláře?" (nase appka = "spokojeni", egd-pripravenost = "spokojení")
+[09:12:44] stranka: hlaska v casti: Pracuje se na tom…
+[09:12:47] stranka: SitePages (koncept se uklada sam): [{"Level":2,"Name":"Page.aspx","TimeLastModified":"2026-11-24T08:50:31Z"},{"Level":1,"Name":"prvni-appka.aspx","TimeLastModified":"2026-11-24T09:02:47Z"},{"Level":1,"Name":"spokojenost.aspx","TimeLastModified":"2026-11-22T19:16:20Z"},{"Level":1,"Name":"Home.aspx","TimeLastModified":"2026-11-18T21:45:03Z"},{"Level":2,"Name":"moje-appka.aspx","TimeLastModified":"2026-11-24T09:12:36Z"}]
+stranka OK

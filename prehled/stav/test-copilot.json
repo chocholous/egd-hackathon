@@ -1,0 +1,53 @@
+{
+  "nazev": "Copilot: egd-prvni-appka dvě značky",
+  "stav": "hotovo",
+  "popis": "ptá se na značku ✅, E.ON i EG.D nasazeno; prohlížeč ❓",
+  "oblast": "skills",
+  "kdo": "test-copilot",
+  "vystup": "skills/egd-prvni-appka/TEST-copilot.md",
+  "aktualizovano": "2026-11-24T13:07:41Z",
+  "zacatek": "2026-11-22T19:01:20Z",
+  "kroky": 11,
+  "historie": [
+    {
+      "t": "2026-11-22T19:51:51Z",
+      "stav": "hotovo",
+      "popis": "hotovo, report TEST-copilot.md"
+    },
+    {
+      "t": "2026-11-22T19:58:07Z",
+      "stav": "hotovo",
+      "popis": "běh 6 nad zmraženou verzí prošel"
+    },
+    {
+      "t": "2026-11-23T09:50:57Z",
+      "stav": "bezi",
+      "popis": "běh 7 spuštěn"
+    },
+    {
+      "t": "2026-11-23T09:55:36Z",
+      "stav": "hotovo",
+      "popis": "a) b) c) ✅, zápis nezkoušen (jiný účet)"
+    },
+    {
+      "t": "2026-11-24T03:05:01Z",
+      "stav": "bezi",
+      "popis": "3 běhy připraveny (klon node_modules), spouštím"
+    },
+    {
+      "t": "2026-11-24T03:15:23Z",
+      "stav": "hotovo",
+      "popis": "3 běhy hotové, zápisy do TEST-copilot.md"
+    },
+    {
+      "t": "2026-11-24T10:20:41Z",
+      "stav": "bezi",
+      "popis": "fáze 1 (dotaz na značku) prošla u obou, běží fáze 2 (E.ON i EG.D na vlastních webech)"
+    },
+    {
+      "t": "2026-11-24T13:07:41Z",
+      "stav": "hotovo",
+      "popis": "ptá se na značku ✅, E.ON i EG.D nasazeno; prohlížeč ❓"
+    }
+  ]
+}

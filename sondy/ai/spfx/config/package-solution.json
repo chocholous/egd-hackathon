@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "egd-ai-gateway",
+    "id": "c4d1a0f2-7e3b-4c55-8a1d-2f6b9e0d7a13",
+    "version": "0.1.1.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "EG.D sonda (lab)",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "AI gateway (sonda)"
+      },
+      "longDescription": {
+        "default": "Web part volající LLM gateway v Container App tokenem uživatele."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "7b59591a-0058-4799-be76-0d1f5b79ca95",
+        "scope": "Gateway.Use"
+      }
+    ],
+    "features": [
+      {
+        "title": "AI gateway sonda",
+        "description": "Registruje web part.",
+        "id": "8e5f2b6a-1c9d-4b77-a3e0-5d4c7f1a2b90",
+        "version": "0.1.1.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/egd-ai-gateway.sppkg"
+  }
+}

@@ -1,0 +1,4 @@
+# studený start 2026-11-24T00:55:12Z, repliky před: 0
+{"ts":"2026-11-24T00:55:43Z","file":"docx-lib.docx","http":200,"wall_s":28.255933,"ttfb_s":28.235924,"convert_ms":"1137","convert_count":"1","in_bytes":10342,"out_bytes":24827,"pages":1,"veta_radku":1,"diakritika_znaku":108,"otazniku_radku":0,"fonty":"Carlito,Carlito-Bold"}
+{"ts":"2026-11-24T00:55:45Z","file":"docx-lib.docx","http":200,"wall_s":1.429218,"ttfb_s":1.380636,"convert_ms":"1226","convert_count":"2","in_bytes":10342,"out_bytes":24827,"pages":1,"veta_radku":1,"diakritika_znaku":108,"otazniku_radku":0,"fonty":"Carlito,Carlito-Bold"}
+{"ts":"2026-11-24T00:55:46Z","file":"docx-lib.docx","http":200,"wall_s":1.421046,"ttfb_s":1.379049,"convert_ms":"1216","convert_count":"3","in_bytes":10342,"out_bytes":24827,"pages":1,"veta_radku":1,"diakritika_znaku":108,"otazniku_radku":0,"fonty":"Carlito,Carlito-Bold"}

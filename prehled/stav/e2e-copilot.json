@@ -1,0 +1,23 @@
+{
+  "nazev": "E2E Copilot pod egd09",
+  "stav": "hotovo",
+  "popis": "instalace ze ZIPu, připravenost, appka EG.D single, hlas v prohlížeči ✅; značku/režim se Copilot nezeptal",
+  "oblast": "lab",
+  "kdo": "test-copilot",
+  "vystup": "sondy/e2e/copilot/README.md",
+  "aktualizovano": "2026-11-24T13:25:13Z",
+  "zacatek": "2026-11-24T13:11:44Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-24T13:11:44Z",
+      "stav": "bezi",
+      "popis": "instalace ze ZIPu ✅ shodná, běh připravenosti"
+    },
+    {
+      "t": "2026-11-24T13:25:13Z",
+      "stav": "hotovo",
+      "popis": "instalace ze ZIPu, připravenost, appka EG.D single, hlas v prohlížeči ✅; značku/režim se Copilot nezeptal"
+    }
+  ]
+}

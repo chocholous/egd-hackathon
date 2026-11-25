@@ -1,0 +1,5 @@
+ucet               stranka  role v appce   bity                                     polozek autori
+martina.cerna      200      Schvalovatel   CancelCheckout,AddListItems,EditListItem 2       Králová Zuzana, Kučera Jakub
+eva.vesela         200      Schvalovatel   CancelCheckout,AddListItems,EditListItem 2       Králová Zuzana, Kučera Jakub
+jakub.kucera       200      Zadavatel      AddListItems,EditListItems,DeleteListIte 1       Kučera Jakub
+lucie.dvorakova    200      -                                                       404     

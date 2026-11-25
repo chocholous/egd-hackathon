@@ -1,0 +1,12 @@
+editor v Excelu Online: petra.novakova, volá API z web partu: jakub.kucera
+03:44:49 editor píše do C6 (neodesláno)
+03:44:50 [e-range] 1126 ms: CHYBA e-range: Contact the workbook owner to request edit access.
+03:44:54 [e-range] 522 ms: CHYBA e-range: Contact the workbook owner to request edit access.
+03:44:54 editor odeslal C6
+03:44:54 [e-tabulka] 543 ms: HOTOVO e-tabulka (496 ms): tabulka Polozky už existuje
+03:44:55 [e-radek] 416 ms: CHYBA e-radek: Contact the workbook owner to request edit access.
+03:44:55 [e-range-relace] 429 ms: CHYBA e-range-relace: Contact the workbook owner to request edit access.
+03:44:56 editor zapsal B2=999
+03:44:56 [e-range] 401 ms: CHYBA e-range: Contact the workbook owner to request edit access.
+03:45:08 snímek Excelu po API
+03:45:09 [e-range] 436 ms: CHYBA e-range: Contact the workbook owner to request edit access.

@@ -1,0 +1,52 @@
+{
+  "value": [
+    {
+      "AppCatalogVersion": "1.0.0.9",
+      "Deployed": true,
+      "ID": "2d31d442-1444-4f78-b64b-1bab09f5245c",
+      "InstalledVersion": "",
+      "ProductId": "edfd770e-5a1b-4704-b32d-283346ec9439",
+      "Title": "eon-demo-kalkulacka-client-side-solution"
+    },
+    {
+      "AppCatalogVersion": "1.0.0.1",
+      "Deployed": true,
+      "ID": "69aac85c-0a49-4291-b351-9aaef803cdc5",
+      "InstalledVersion": "",
+      "ProductId": "e892d80c-3a03-42af-a5e6-3dd10c42f0af",
+      "Title": "spokojenost-appka-client-side-solution"
+    },
+    {
+      "AppCatalogVersion": "1.0.0.0",
+      "Deployed": true,
+      "ID": "92f450c3-2610-47d2-9b27-064b2adbb074",
+      "InstalledVersion": "",
+      "ProductId": "bf9f5ac7-cf87-47a0-a01d-ead79e74ad77",
+      "Title": "prvni-appka-client-side-solution"
+    },
+    {
+      "AppCatalogVersion": "1.0.0.0",
+      "Deployed": true,
+      "ID": "e6019125-97a3-4dfb-b6ea-392ac321c52b",
+      "InstalledVersion": "",
+      "ProductId": "f23585f0-d939-40cf-9b0e-484960f5a6a4",
+      "Title": "moje-appka-client-side-solution"
+    },
+    {
+      "AppCatalogVersion": "1.0.0.2",
+      "Deployed": true,
+      "ID": "929de3c0-0b26-4f8d-93af-4839bcf6d03b",
+      "InstalledVersion": "",
+      "ProductId": "4eea5fd4-647c-4ece-ab75-dceb8fcb335c",
+      "Title": "znacka-eon-client-side-solution"
+    },
+    {
+      "AppCatalogVersion": "1.0.0.2",
+      "Deployed": true,
+      "ID": "116df389-053c-4ba2-bde6-a20914fa50a1",
+      "InstalledVersion": "",
+      "ProductId": "e145037c-babc-4522-8512-f9eb5026041d",
+      "Title": "znacka-egd-client-side-solution"
+    }
+  ]
+}

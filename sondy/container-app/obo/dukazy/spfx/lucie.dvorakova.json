@@ -1,0 +1,81 @@
+{
+  "profil": "lucie.dvorakova",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ca-obo/SitePages/obo.aspx",
+  "ts": "2026-11-24T00:50:54.767Z",
+  "kroky": [
+    {
+      "popis": "whoami",
+      "wallMs": 531,
+      "vystup": {
+        "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph",
+        "http": 200,
+        "ms": 487,
+        "odpoved": {
+          "upn": "lucie.dvorakova@pavelchocholousgmail.onmicrosoft.com",
+          "oid": "a8590c41-c0eb-46e3-b22b-6ed52305e722",
+          "azp": "08e18876-6177-487e-b8b5-cf950c1e598c",
+          "scp": "access_as_user"
+        }
+      }
+    },
+    {
+      "popis": "pošta přes OBO",
+      "wallMs": 748,
+      "vystup": {
+        "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph",
+        "http": 403,
+        "ms": 706,
+        "odpoved": {
+          "error": "OBO výměna selhala",
+          "detail": {
+            "error": "invalid_grant",
+            "aadsts": "AADSTS65001",
+            "description": "AADSTS65001: The user or administrator has not consented to use the application with ID '9809454b-59c2-4d85-8bf6-dbd1481b1d6b' named 'egd-ca-obo-api'. Send an interactive authorization request for this user and resource. Trace ID: 52442f82-2085-4a80-8b0c-0f9639bb4000 Correlation ID: ba94fcfa-97c1-44cc-a6d9-3e807e2d0aa8 Timestamp: 2026-11-24 00:50:58Z"
+          }
+        }
+      }
+    },
+    {
+      "popis": "pošta přímo z SPFx",
+      "wallMs": 396,
+      "vystup": {
+        "cesta": "SPFx → MSGraphClientV3 → Graph (přímo)",
+        "http": 403,
+        "ms": 347,
+        "chyba": "ErrorAccessDenied",
+        "zprava": "Access is denied. Check credentials and try again."
+      }
+    }
+  ],
+  "konzole": [
+    "[obo-sonda] {\"cesta\":\"SPFx → AadHttpClient → Container App → OBO → Graph\",\"http\":200,\"ms\":487,\"odpoved\":{\"upn\":\"lucie.dvorakova@pavelchocholousgmail.onmicrosoft.com\",\"oid\":\"a8590c41-c0eb-46e3-b22b-6ed52305e722\",\"azp\":\"08e18876-6177-487e-b8b5-cf950c1e598c\",\"scp\":\"access_as_user\"}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → AadHttpClient → Container App → OBO → Graph\",\"http\":403,\"ms\":706,\"odpoved\":{\"error\":\"OBO výměna selhala\",\"detail\":{\"error\":\"invalid_grant\",\"aadsts\":\"AADSTS65001\",\"description\":\"AADSTS65001: The user or administrator has not consented to use the application with ID '9809454b-59c2-4d85-8bf6-dbd1481b1d6b' named 'egd-ca-obo-api'. Send an interactive authorization request for this user and resource. Trace ID: 52442f82-2085-4a80-8b0c-0f9639bb4000 Correlation ID: ba94fcfa-97c1-44cc-a6d9-3e807e2d0aa8 Timestamp: 2026-11-24 00:50:58Z\"}}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → MSGraphClientV3 → Graph (přímo)\",\"http\":403,\"ms\":347,\"chyba\":\"ErrorAccessDenied\",\"zprava\":\"Access is denied. Check credentials and try again.\"}"
+  ],
+  "sit": [
+    {
+      "metoda": "GET",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/whoami",
+      "http": 200,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "GET",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/posta",
+      "http": 403,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "GET",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/posta",
+      "http": 403,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "GET",
+      "url": "https://graph.microsoft.com/v1.0/me/messages",
+      "http": 403,
+      "authorization": "Bearer …"
+    }
+  ]
+}

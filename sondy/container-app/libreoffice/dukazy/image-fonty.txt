@@ -1,0 +1,6 @@
+LibreOffice 7.4.7.2 40(Build:2)
+
+20
+Carlito-Regular.ttf: "Carlito" "Regular"
+Caladea-Regular.ttf: "Caladea" "Regular"
+LiberationSans-Regular.ttf: "Liberation Sans" "Regular"

@@ -1,0 +1,32 @@
+{"cas":"2026-11-24T02:23:17.608Z","krok":"setup","k":"vlastnik","v":{"LoginName":"i:0#.f|membership|egd05@pavelchocholousgmail.onmicrosoft.com","IsSiteAdmin":true}}
+{"cas":"2026-11-24T02:23:18.373Z","krok":"setup","k":"seznam","v":201}
+{"cas":"2026-11-24T02:23:18.547Z","krok":"setup","k":"readsecurity","v":204}
+{"cas":"2026-11-24T02:23:18.630Z","krok":"setup","k":"seznam_stav","v":{"HasUniqueRoleAssignments":false,"ReadSecurity":2,"WriteSecurity":2}}
+{"cas":"2026-11-24T02:23:18.729Z","krok":"setup","k":"skupina_clenu","v":{"Id":5,"Title":"Členové webu Účastník 05 – DEV"}}
+{"cas":"2026-11-24T02:23:19.192Z","krok":"setup","k":"pridat_eva.vesela","v":201}
+{"cas":"2026-11-24T02:23:19.492Z","krok":"setup","k":"pridat_jakub.kucera","v":201}
+{"cas":"2026-11-24T02:23:19.545Z","krok":"setup","k":"web_sdileni","v":{"MembersCanShare":true,"RequestAccessEmail":""}}
+{"cas":"2026-11-24T02:23:19.746Z","krok":"setup","k":"site_sdileni","v":{"DisableCompanyWideSharingLinks":false,"ShareByEmailEnabled":false,"ShareByLinkEnabled":false}}
+{"cas":"2026-11-24T02:23:25.527Z","krok":"polozka","k":"sdili","v":{"LoginName":"i:0#.f|membership|eva.vesela@pavelchocholousgmail.onmicrosoft.com","IsSiteAdmin":false}}
+{"cas":"2026-11-24T02:23:25.817Z","krok":"polozka","k":"nova_polozka","v":{"FileSystemObjectType":0,"Id":1,"ServerRedirectedEmbedUri":null,"ServerRedirectedEmbedUrl":"","ID":1,"ContentTypeId":"0x0100109C39C92F2DD444A1CB9DB980F7F1DF","Title":"Žádost Evy 2026-11-24T02:23","Modified":"2026-11-24T02:23:26Z","Created":"2026-11-24T02:23:26Z","AuthorId":12,"EditorId":12,"OData__UIVersionString":"1.0","Attachments":false,"GUID":"762d5be1-a6a5-4ca4-af1f-08dbbbfca9fe","OData__ColorTag":null,"ComplianceAssetId":null}}
+{"cas":"2026-11-24T02:23:25.956Z","krok":"polozka","k":"vidi_eva.vesela","v":{"status":200,"polozky":[{"Id":1,"ID":1,"Title":"Žádost Evy 2026-11-24T02:23","AuthorId":12}]}}
+{"cas":"2026-11-24T02:23:31.952Z","krok":"polozka","k":"vidi_jakub.kucera","v":{"status":200,"polozky":[]}}
+{"cas":"2026-11-24T02:24:48.883Z","krok":"sdilet","k":"tlacitko_sdilet_viditelne","v":true}
+{"cas":"2026-11-24T02:24:54.963Z","krok":"sdilet","k":"dialog_frame","v":"https://pavelchocholousgmail.sharepoint.com/sites/egd05-dev/_layouts/15/sharedialog.aspx?listId=4adffa37-81cd-4255-ac0e-"}
+{"cas":"2026-11-24T02:24:59.067Z","krok":"sdilet","k":"navrh_kolegy","v":"KJKučera JakubZaměstnanec"}
+{"cas":"2026-11-24T02:25:58.098Z","krok":"sdilet","k":"tlacitko_sdilet_viditelne","v":true}
+{"cas":"2026-11-24T02:26:04.188Z","krok":"sdilet","k":"dialog_frame","v":"https://pavelchocholousgmail.sharepoint.com/sites/egd05-dev/_layouts/15/sharedialog.aspx?listId=4adffa37-81cd-4255-ac0e-"}
+{"cas":"2026-11-24T02:26:08.292Z","krok":"sdilet","k":"navrh_kolegy","v":"KJKučera JakubZaměstnanec"}
+{"cas":"2026-11-24T02:26:16.524Z","krok":"sdilet","k":"po_odeslani_text","v":"\nPozvali jste Kučera Jakub do upravit\n\"Žádost Evy...1-24T02:23\"\nKJ"}
+{"cas":"2026-11-24T02:26:58.460Z","krok":"vidi","k":"vidi_eva.vesela","v":{"status":200,"polozky":[{"Id":1,"ID":1,"Title":"Žádost Evy 2026-11-24T02:23","AuthorId":12}]}}
+{"cas":"2026-11-24T02:27:10.719Z","krok":"vidi","k":"vidi_jakub.kucera","v":{"status":200,"polozky":[]}}
+{"cas":"2026-11-24T02:27:23.708Z","krok":"prava","k":"polozka_1","v":{"Title":"Žádost Evy 2026-11-24T02:23","unikatni":true}}
+{"cas":"2026-11-24T02:27:23.820Z","krok":"prava","k":"role_1","v":[{"Member":{"LoginName":"Vlastníci webu Účastník 05 – DEV","Title":"Vlastníci webu Účastník 05 – DEV"},"RoleDefinitionBindings":[{"Name":"Úplné řízení"}]},{"Member":{"LoginName":"Návštěvníci webu Účastník 05 – DEV","Title":"Návštěvníci webu Účastník 05 – DEV"},"RoleDefinitionBindings":[{"Name":"Čtení"}]},{"Member":{"LoginName":"Členové webu Účastník 05 – DEV","Title":"Členové webu Účastník 05 – DEV"},"RoleDefinitionBindings":[{"Name":"Úpravy"}]},{"Member":{"LoginName":"i:0#.f|membership|jakub.kucera@pavelchocholousgmail.onmicrosoft.com","Title":"Kučera Jakub"},"RoleDefinitionBindings":[{"Name":"Přispívání"}]}]}
+{"cas":"2026-11-24T02:27:38.985Z","krok":"primo","k":"primo_rest_items1","v":{"status":404,"j":{"odata.error":{"code":"-2130575338, System.ArgumentException","message":{"lang":"cs-CZ","value":"Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}}}}}
+{"cas":"2026-11-24T02:27:39.167Z","krok":"primo","k":"primo_prava_polozky","v":{"odata.error":{"code":"-2147024809, System.ArgumentException","message":{"lang":"cs-CZ","value":"Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}}}}
+{"cas":"2026-11-24T02:27:39.407Z","krok":"primo","k":"primo_caml","v":{"status":200,"j":{"value":[]}}}
+{"cas":"2026-11-24T02:27:46.776Z","krok":"primo","k":"primo_dispform_text","v":"Je nám líto, ale něco se nepovedlo. V https://pavelchocholousgmail.sharepoint.com/sites/egd05-dev/Lists/SdileniTest/DispForm.aspx?ID=1 neexistuje žádná položka. Je možné, že byla odstraněna nebo přejmenována jiným uživatelem. TECHNICKÉ PODROBNOSTI ZPĚT NA WEB"}
+{"cas":"2026-11-24T02:28:05.281Z","krok":"uklid","k":"seznam_do_kose","v":500}
+{"cas":"2026-11-24T02:28:05.478Z","krok":"uklid","k":"odebrat_eva.vesela","v":200}
+{"cas":"2026-11-24T02:28:05.639Z","krok":"uklid","k":"odebrat_jakub.kucera","v":200}
+{"cas":"2026-11-24T02:28:05.726Z","krok":"uklid","k":"clenove_po","v":[]}

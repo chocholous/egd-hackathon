@@ -1,0 +1,38 @@
+# 2026-11-22T19:39:15Z curl preflight s Origin SharePointu
+=== OPTIONS https://api.cnb.cz/cnbapi/exrates/daily?lang=EN
+HTTP/1.1 403 Forbidden
+Server: Apache
+--- GET
+HTTP/1.1 200 200
+=== OPTIONS https://www.cnb.cz/cs/financni_trhy/devizovy_trh/kurzy_devizoveho_trhu/denni_kurz.txt
+HTTP/1.1 200 OK
+--- GET
+HTTP/1.1 200 200
+Access-Control-Allow-Origin: apl.cnb.cz
+=== OPTIONS https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/27082440
+HTTP/2 200 
+vary: Access-Control-Request-Method
+vary: Access-Control-Request-Headers
+access-control-allow-methods: GET,HEAD,POST
+access-control-allow-headers: authorization
+access-control-max-age: 1800
+access-control-allow-origin: *
+--- GET
+HTTP/2 200 
+access-control-allow-origin: *
+=== OPTIONS https://api.open-meteo.com/v1/forecast?latitude=50&longitude=14&current=temperature_2m
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-headers: accept, authorization, content-type, origin, x-requested-with, user-agent, access-control-allow-origin, range, if-match, if-unmodified-since
+access-control-allow-methods: GET, POST, OPTIONS
+access-control-expose-headers: x-ratelimit-cost, x-ratelimit-limit, x-ratelimit-remaining, x-ratelimit-reset, x-ratelimit-window, retry-after
+access-control-max-age: 600
+--- GET
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-headers: accept, authorization, content-type, origin, x-requested-with, user-agent, access-control-allow-origin, range, if-match, if-unmodified-since
+access-control-allow-methods: GET, POST, OPTIONS
+=== OPTIONS https://www.ote-cr.cz/cs/kratkodobe-trhy/elektrina/denni-trh
+HTTP/1.1 404 Not Found
+--- GET
+HTTP/1.1 200 OK

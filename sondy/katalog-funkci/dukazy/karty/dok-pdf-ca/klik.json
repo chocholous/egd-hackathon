@@ -1,0 +1,179 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/dokumenty.aspx",
+ "start": "2026-11-24T18:42:23.066Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 1256,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 4259,
+   "vysledek": "8 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"874880f3-cc01-4935-a0ad-393df1499f29\"]').scrollIntoView()",
+   "t": 12898,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"874880f3-cc01-4935-a0ad-393df1499f29\"] #me",
+   "t": 12901,
+   "ok": true
+  },
+  {
+   "krok": "waitfor:status",
+   "t": 13015,
+   "ok": true
+  },
+  {
+   "krok": "wait:1000",
+   "t": 13198,
+   "ok": true
+  },
+  {
+   "krok": "shotv:01-egd09-kdo-jsem",
+   "t": 14200,
+   "vysledek": "dukazy/karty/dok-pdf-ca/01-egd09-kdo-jsem.png",
+   "ok": true
+  },
+  {
+   "krok": "file:[data-sp-web-part-id=\"874880f3-cc01-4935-a0ad-393df1499f29\"] input[type=file]=/Users/chocholous/Projects/egd-workshop/sondy/dokumenty/out/sablona.docx",
+   "t": 14399,
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"874880f3-cc01-4935-a0ad-393df1499f29\"] #go",
+   "t": 14489,
+   "ok": true
+  },
+  {
+   "krok": "waitfor:Stáhnout",
+   "t": 14579,
+   "ok": true
+  },
+  {
+   "krok": "wait:1000",
+   "t": 15891,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"874880f3-cc01-4935-a0ad-393df1499f29\"]').scrollIntoView()",
+   "t": 16893,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:02-egd09-pdf",
+   "t": 16894,
+   "vysledek": "dukazy/karty/dok-pdf-ca/02-egd09-pdf.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"874880f3-cc01-4935-a0ad-393df1499f29\"]').innerText.slice(0,1500)",
+   "t": 16973,
+   "vysledek": "Převod do PDF (LibreOffice v Container App)\nKdo jsem (token)  Převést do PDF\nStáhnout sablona.pdf\n{\n  \"status\": 200,\n  \"ms\": 1252,\n  \"serverConvertMs\": \"1126\",\n  \"pdfBytes\": 17912,\n  \"contentType\": \"application/pdf\",\n  \"magic\": \"%PDF-\"\n}",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 652,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 726,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(5)/CommentsDisabledScope"
+  },
+  {
+   "t": 742,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 743,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 743,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 814,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Revize')/items?$select=Id,Title,Technik,Termin,Stav,Naklad&$orderby=Id"
+  },
+  {
+   "t": 864,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Dokumenty')/rootFolder?$select=ServerRelativeUrl"
+  },
+  {
+   "t": 1212,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(5)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 2350,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 4379,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID%20desc&$top=2000"
+  },
+  {
+   "t": 13105,
+   "m": "GET",
+   "s": 200,
+   "u": "https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/me"
+  },
+  {
+   "t": 15825,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/pdf?ext=docx"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:42:40.041Z"
+}

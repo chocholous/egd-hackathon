@@ -1,0 +1,9 @@
+# 2026-11-24T00:58:52Z okrajové případy
+(pozn.: v 00:56 běh s 3,4 MB náhodných bajtů jako docx skončil {"error":"převod vypršel"} http=500 t=120.75 s — soubor byl kvůli plnému disku useknutý ze zamýšlených 27 MB; soffice nad nesmyslem visel do timeoutu)
+27 MB nad limit 25 MB (stream z /dev/urandom, nic na disk):
+upstream connect error or disconnect/reset before headers. reset reason: connection termination http=503 t=3.282641
+neznámá přípona:
+{"error":"neznámá přípona (?ext=docx|xlsx|pptx…)"} http=400
+textový soubor s příponou docx:
+ http=200 t=2.532208
+PDF document, version 1.6, 1 pages (zip deflate encoded)

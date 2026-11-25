@@ -1,0 +1,171 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/prava.aspx",
+ "start": "2026-11-24T18:32:23.782Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 1143,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 4145,
+   "vysledek": "6 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"35d2a567-3b96-4d18-907d-16f486e50e79\"]').scrollIntoView()",
+   "t": 11384,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "wait:1000",
+   "t": 11385,
+   "ok": true
+  },
+  {
+   "krok": "shotv:01-egd09-role",
+   "t": 12388,
+   "vysledek": "dukazy/karty/prava-role/egd09/01-egd09-role.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"35d2a567-3b96-4d18-907d-16f486e50e79\"]').innerText.slice(0,300)",
+   "t": 12491,
+   "vysledek": "Evidence s rolemi\nZadavatel\nNový požadavek\nMoje požadavky\nCo potřebujete (krátce)\nPopis\nOdeslat ke schválení",
+   "ok": true
+  },
+  {
+   "krok": "fill:#evidence-nazev=Katalog práva: požadavek egd09 1932",
+   "t": 12493,
+   "ok": true
+  },
+  {
+   "krok": "fill:#evidence-popis=Vidí jen zadavatel a schvalovatel.",
+   "t": 12530,
+   "ok": true
+  },
+  {
+   "krok": "click:Odeslat ke schválení",
+   "t": 12541,
+   "ok": true
+  },
+  {
+   "krok": "waitfor:Požadavek je odeslaný",
+   "t": 12646,
+   "ok": true
+  },
+  {
+   "krok": "click:Moje požadavky",
+   "t": 13435,
+   "ok": true
+  },
+  {
+   "krok": "wait:2000",
+   "t": 13493,
+   "ok": true
+  },
+  {
+   "krok": "shotv:02-egd09-moje",
+   "t": 15495,
+   "vysledek": "dukazy/karty/prava-role/egd09/02-egd09-moje.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"35d2a567-3b96-4d18-907d-16f486e50e79\"]').innerText.slice(0,500)",
+   "t": 15592,
+   "vysledek": "Evidence s rolemi\nZadavatel\nNový požadavek\nMoje požadavky\nPožadavek\tZadal\tKdy\tStav\tKomentář\nKatalog práva: požadavek egd09 1932\nVidí jen zadavatel a schvalovatel.\n\tÚčastník 09\t24. 11. 2026\tNový\t",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 589,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 765,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 766,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2689,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 5182,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/EffectiveBasePermissions"
+  },
+  {
+   "t": 5287,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderb"
+  },
+  {
+   "t": 7070,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(4)/CommentsDisabledScope"
+  },
+  {
+   "t": 7159,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(4)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 12869,
+   "m": "POST",
+   "s": 201,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items"
+  },
+  {
+   "t": 12924,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/EffectiveBasePermissions"
+  },
+  {
+   "t": 13012,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderb"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:32:39.376Z"
+}

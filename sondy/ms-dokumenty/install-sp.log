@@ -1,0 +1,15 @@
+npm warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated lodash.isequal@4.5.0: This package is deprecated. Use require('node:util').isDeepStrictEqual instead.
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/node_modules/@fast-csv/parse/node_modules/@types/node/dns.d.ts'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/node_modules/archiver/CHANGELOG.md'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/node_modules/docx/dist/bibliography.umd.cjs'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, write
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/node_modules/crc32-stream/node_modules/readable-stream/lib/internal/streams/async_iterator.js'
+npm warn tar TAR_ENTRY_ERROR ENOSPC: no space left on device, open '/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/node_modules/zip-stream/node_modules/readable-stream/lib/internal/streams/async_iterator.js'
+npm error A complete log of this run can be found in: /Users/chocholous/.npm/_logs/2026-11-22T20_04_41_217Z-debug-0.log

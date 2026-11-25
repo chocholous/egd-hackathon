@@ -1,0 +1,5 @@
+{"t":"14.9","kdo":"jakub.kucera","krok":"otevřeno, žádost vidí","radek":"ETag test 1.3 souběžné rozhodnutí dvou schvalovatelů Pavel Admin (lab) 24. 11. 2026 Nový Schválit Zamítnout"}
+{"t":"18.1","kdo":"karolina.mala","krok":"otevřeno, žádost vidí","radek":"ETag test 1.3 souběžné rozhodnutí dvou schvalovatelů Pavel Admin (lab) 24. 11. 2026 Nový Schválit Zamítnout"}
+{"t":"20.4","kdo":"jakub.kucera","krok":"Schválit","hlaska":"\"ETag test 1.3\": Schváleno."}
+{"t":"23.6","kdo":"karolina.mala","krok":"Zamítnout (starý stav)","hlaska":"Mezitím položku změnil někdo jiný. Načetl jsem aktuální stav, zkontrolujte ho a rozhodněte znovu.","radek_po":0}
+{"krok": "stav na serveru po testu", "status": 200, "Stav": "Schváleno", "Komentar": null, "naposledy": "Kučera Jakub", "etag": "\"2\""}

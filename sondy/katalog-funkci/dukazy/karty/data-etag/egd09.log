@@ -1,0 +1,47 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/data.aspx
+[4.9s] OK wait:4000  
+[4.9s] OK eval:[...document.querySelectorAll(".ControlZone")].at(-1).scrollIntoView()  {"interrupted":false}
+[9.9s] OK wait:5000  
+[10.0s] OK click:Ke schválení  
+[13.0s] OK wait:3000  
+[13.1s] OK clickn:0:Schválit  
+[17.1s] OK wait:4000  
+[17.2s] OK shotv:06-egd09-schvaleno  
+dukazy/karty/data-etag/egd09/06-egd09-schvaleno.png
+[17.2s] OK eval:[...document.querySelectorAll(".ControlZone")].at(-1).innerText.slice(0,500)  
+Evidence požadavků
+Zadavatel a schvalovatel
+Nový požadavek
+Moje požadavky
+Ke schválení (3)
+
+"Katalog: test souběhu 1927": Schváleno.
+
+Požadavek	Zadal	Kdy	Stav	Rozhodnutí
+Oprava klimatizace v dispečinku
+Klimatizace v dispečinku Brno hlásí chybu E4, v místnosti je přes 28 °C.
+	Pavel Admin (lab)	24. 11. 2026	Nový	
+Schválit
+Zamítnout
+
+Školení BOZP pro nové kolegy
+Tři noví kolegové nastupují 1. 12., potřebují vstupní školení BOZP a práce ve výškách před prvním výjezdem.
+	Pavel Admin (lab)	24. 11. 202
+[17.2s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://graph.microsoft.com/apc/trans.gif?123fe91e9c3e5c87f8da5231c1bd9fe8
+  GET 200 https://graph.microsoft.com/apc/trans.gif?b303c680b25e4058b5db7a570a5dcc63
+  GET 200 https://upload.fp.measure.office.com/r.gif?MonitorID=O365se&rid=2ccfefa3d5cc7a7100014ddf640ae0d0&w3c=true&prot
+  POST 204 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items(4)
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel

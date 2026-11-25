@@ -1,0 +1,19 @@
+# 23. 11. 2026 obsah exportů Spokojenost staženích m365 spo file get (verze 1.0.0.0, hlas 4 od petra.novakova)
+spokojenost.pdf 8098 B 2026-11-23T10:21:32Z Nováková Petra
+spokojenost.docx 16973 B 2026-11-23T10:21:28Z Nováková Petra
+spokojenost.pptx 61167 B 2026-11-23T10:21:34Z Nováková Petra
+spokojenost.xlsx 13412 B 2026-11-23T10:21:33Z Nováková Petra
+## docx
+ Spokojenost s prostředím kanceláře Den Hlasů Průměr (1–5) 2026-11-23 1 4 
+## xlsx
+ 
+ Den Hodnocení 2026-11-23  
+ 0 1 2 4 
+## pptx slide2
+ 
+ Den Hlasů Průměr (1–5) 2026-11-23 1 4 
+## pdf (pdf-lib, přepsal Graph PDF téhož názvu)
+Spokojenost s prostředím kanceláře – přehled po dnech
+2026-11-23 hlasů: 1 průměr: 4
+
+Producer:        pdf-lib (https://github.com/Hopding/pdf-lib)

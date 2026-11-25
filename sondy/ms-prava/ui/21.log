@@ -1,0 +1,58 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK klik:Udělit oprávnění
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK wait:2000
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK klikobs:ZOBRAZIT MOŽNOSTI
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+--- frame https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904
+a: Zapnout režim s vyšším usnadněním
+a: Přeskočit příkazy pásu karet
+a: Přejít k hlavnímu obsahu
+a: Vypnout animace
+button[button]: Spouštěč aplikací
+a[link]: SharePoint
+button[button]: Nastavení
+button[button]: Nápověda
+button[button]: KM
+li[tab]: PROCHÁZENÍ Karta 1 z 2
+a: PROCHÁZENÍ Karta 1 z 2
+li[tab]: OPRÁVNĚNÍ Skupina Nástroje pro oprávnění, karta 2 z 2
+a: OPRÁVNĚNÍ Skupina Nástroje pro oprávnění, karta 2 z 2
+a: SDÍLET
+a: SLEDOVAT
+a: Umožňuje přenést hlavní pozornost na obsah.
+a[button]: Odstranit jedinečná oprávnění
+a[button]: Udělit oprávnění
+a[button]: Upravit uživatelská oprávnění
+a[button]: Odebrat uživatelská oprávnění
+a[button]: Zkontrolovat oprávnění
+a: Domovská stránka
+a: Dokumenty
+a: Stránky
+a: Pozadavky
+a: Obsah webu
+a: UPRAVIT ODKAZY
+a: Jméno
+a: Typ
+a: Úrovně oprávnění
+a: Vlastníci webu EGD sonda ms-prava
+input: Vrátit fokus zpět na konec dialogového okna
+a[button]: Zavřít dialog
+a: Pavel Admin (lab)
+a: Nováková Petra
+li[tab]: Pozvat ostatní
+a: Pozvat ostatní
+li[tab]: Sdílí se s
+a: Sdílí se s
+a: SKRÝT MOŽNOSTI
+label: Poslat pozvánku e-mailem
+input: Sdílet
+input: Storno
+input: Vrátit fokus zpět na začátek dialogového okna
+pole input[checkbox] #idSelectAll title="Vybrat vše" aria="" label=""
+pole input[checkbox] # title="Vlastníci webu EGD sonda ms-prava" aria="" label=""
+pole input[text] #peoplePicker_TopSpan_EditorInput title="Zadejte jména nebo e-mailové adresy..." aria="" label=""
+pole textarea[textarea] #TxtEmailBody title="Textové pole textu e-mailové zprávy" aria="" label=""
+pole input[checkbox] #chkSendEmailv15 title="" aria="" label="Poslat pozvánku e-mailem"
+pole select[select-one] #DdlGroup title="" aria="" label=""

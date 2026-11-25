@@ -1,0 +1,171 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx",
+ "start": "2026-11-24T19:43:14.762Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 10308,
+   "ok": true
+  },
+  {
+   "krok": "rozbal:3000",
+   "t": 13310,
+   "vysledek": "6 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\").length",
+   "t": 20544,
+   "vysledek": 2,
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\"p\")].filter(p=>p.innerText.startsWith(\"Na tomto webu\")).map(p=>p.innerText.slice(0,260))[1]",
+   "t": 20546,
+   "vysledek": "Na tomto webu: účastníci nemají licenci Copilot ani souhlas se scopy Copilota (egd10 má souhlas jen na poštu). Retrieval přes OBO proto skončí 403 AADSTS65001 už při výměně tokenu. Co je změřené v sondě: se souhlasem OBO výměna i volání projdou a rozhoduje lic",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\"p\")].filter(p=>p.innerText.startsWith(\"Na tomto webu\"))[1].scrollIntoView({block:\"center\"})",
+   "t": 20547,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:03-text-karty",
+   "t": 20549,
+   "vysledek": "dukazy/karty/obo-copilot-egd09/03-text-karty.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 734,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 954,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 955,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1575,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://loki.delve.office.com/api/v1/search/configuration?siteCollectionId=07479B6A-2384-4297-AD2A-EE7775CBC894&ConvertGetPost=true"
+  },
+  {
+   "t": 1575,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.2.1&apikey=d634483c08244c1ca09af2b2d952c92e-a"
+  },
+  {
+   "t": 1575,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.15&apikey=5c65bbc4edbf480d9637ace04d62bd98-"
+  },
+  {
+   "t": 1575,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://eu-office.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.15&apikey=b0c82c6598ad49f3848b1d3dc0d8dd2"
+  },
+  {
+   "t": 1575,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream"
+  },
+  {
+   "t": 1575,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=89bee1f7-5e6e-4d8a-9f3d-ecd601259da7&scope=https%3A%2F%2Fwebshell.suite.office.com%2F.default%20openid%20profile%20offli"
+  },
+  {
+   "t": 1576,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://substrate.office.com/search/api/v2/init?cvid=15979c58-09f4-469a-a1b5-71b8a852d408&scenario=CommSiteSearch&userContextUrl=https%3A%2F%2Fpavelchocholousgmail.sharepoint.com%2Fsites%2Fegd-ukazky&"
+  },
+  {
+   "t": 2561,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 5347,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 5853,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 11219,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 17431,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(17)/CommentsDisabledScope"
+  },
+  {
+   "t": 19678,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(17)/likedByInformation?$expand=likedby&$top=10"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Options20Regular, Drafts20Regular",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nGlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More, Settings, Mail, Filter (+ 1756 more)"
+ ],
+ "konec": "2026-11-24T19:43:35.440Z"
+}

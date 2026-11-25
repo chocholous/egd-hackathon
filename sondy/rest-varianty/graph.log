@@ -1,0 +1,5 @@
+site id: pavelchocholousgmail.sharepoint.com,a7fe6a4c-de1d-4e29-8100-5ca7677ca766,0073c481-9b23-45c9-9b98-38a40d8f3607
+  DenCislo: indexed=True unique=False
+  Klic: indexed=True unique=True
+knihovna katalogu: Aplikace pro SharePoint
+Deploy / Install balicku: v Graphu endpoint neexistuje, kontrola pres SharePoint REST nize

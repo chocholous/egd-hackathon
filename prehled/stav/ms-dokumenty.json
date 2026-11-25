@@ -1,0 +1,53 @@
+{
+  "nazev": "Ověření egd-dokumenty + egd-externi-api",
+  "stav": "hotovo",
+  "popis": "obě skilly ověřené v Claude i Copilot, 1.0.0.1 nasazena",
+  "oblast": "miniskilly",
+  "kdo": "ms-dokumenty",
+  "vystup": "skills/egd-dokumenty/TEST-copilot.md",
+  "aktualizovano": "2026-11-23T11:18:16Z",
+  "zacatek": "2026-11-22T18:53:56Z",
+  "kroky": 9,
+  "historie": [
+    {
+      "t": "2026-11-22T19:50:09Z",
+      "stav": "bezi",
+      "popis": "lab hotový (2 weby, 9 tlačítek), přepisuji skilly"
+    },
+    {
+      "t": "2026-11-22T19:53:05Z",
+      "stav": "hotovo",
+      "popis": "oba skilly ověřené v labu, Neověřeno doplněno"
+    },
+    {
+      "t": "2026-11-22T20:02:22Z",
+      "stav": "hotovo",
+      "popis": "Claude i Copilot ✅, žebřík variant, Neověřeno doplněno"
+    },
+    {
+      "t": "2026-11-22T20:14:46Z",
+      "stav": "ceka",
+      "popis": "2. kolo auditu opraveno; sladění na šablonu Spokojenost čeká na místo na disku (build odložen)"
+    },
+    {
+      "t": "2026-11-23T10:16:09Z",
+      "stav": "bezi",
+      "popis": "build a proklik šablony Spokojenost"
+    },
+    {
+      "t": "2026-11-23T10:33:13Z",
+      "stav": "ceka",
+      "popis": "Spokojenost: build, nasazení, 6 tlačítek ✅; oprava názvu PDF 1.0.0.1 čeká na přihlášení lab CLI"
+    },
+    {
+      "t": "2026-11-23T11:12:18Z",
+      "stav": "bezi",
+      "popis": "1.0.0.1 nasazena ✅ (obě PDF); běží Copilot nad Spokojeností"
+    },
+    {
+      "t": "2026-11-23T11:18:16Z",
+      "stav": "hotovo",
+      "popis": "obě skilly ověřené v Claude i Copilot, 1.0.0.1 nasazena"
+    }
+  ]
+}

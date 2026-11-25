@@ -1,0 +1,141 @@
+{
+  "totalPremiumRequestCost": 3,
+  "totalUserRequests": 3,
+  "totalNanoAiu": 4121440500,
+  "aiCreditsStatus": "complete",
+  "tokenDetails": {
+    "input": {
+      "tokenCount": 108
+    },
+    "cache_read": {
+      "tokenCount": 1816248
+    },
+    "cache_write": {
+      "tokenCount": 111937
+    },
+    "output": {
+      "tokenCount": 18098
+    }
+  },
+  "totalApiDurationMs": 207974,
+  "sessionStartTime": "2026-11-24T13:16:49.312Z",
+  "codeChanges": {
+    "linesAdded": 12,
+    "linesRemoved": 11,
+    "filesModifiedCount": 0,
+    "filesModified": [
+      "/Users/chocholous/egd-e2e-copilot/sandbox/home/egd-workshop/pripravenost-e2e-copilot.md"
+    ]
+  },
+  "modelMetrics": {
+    "gpt-6-luna": {
+      "requests": {
+        "count": 36,
+        "cost": 3
+      },
+      "usage": {
+        "inputTokens": 1928293,
+        "outputTokens": 18098,
+        "cacheReadTokens": 1816248,
+        "cacheWriteTokens": 111937,
+        "reasoningTokens": 10960
+      },
+      "cacheExpiresAt": "2026-11-24T13:53:27.823Z",
+      "totalNanoAiu": 4121440500,
+      "aiCreditsStatus": "complete",
+      "tokenDetails": {
+        "input": {
+          "tokenCount": 108
+        },
+        "cache_read": {
+          "tokenCount": 1816248
+        },
+        "cache_write": {
+          "tokenCount": 111937
+        },
+        "output": {
+          "tokenCount": 18098
+        }
+      }
+    }
+  },
+  "agentMetrics": {
+    "main": {
+      "totalApiDurationMs": 207974,
+      "totalNanoAiu": 4121440500,
+      "modelMetrics": {
+        "gpt-6-luna": {
+          "requests": {
+            "count": 36,
+            "cost": 3
+          },
+          "usage": {
+            "inputTokens": 1928293,
+            "outputTokens": 18098,
+            "cacheReadTokens": 1816248,
+            "cacheWriteTokens": 111937,
+            "reasoningTokens": 10960
+          },
+          "totalNanoAiu": 4121440500,
+          "tokenDetails": {
+            "input": {
+              "tokenCount": 108
+            },
+            "cache_read": {
+              "tokenCount": 1816248
+            },
+            "cache_write": {
+              "tokenCount": 111937
+            },
+            "output": {
+              "tokenCount": 18098
+            }
+          }
+        }
+      }
+    }
+  },
+  "providerModelMetrics": [
+    {
+      "provider": {
+        "id": "copilot",
+        "label": "GitHub Copilot",
+        "kind": "copilot"
+      },
+      "modelId": "gpt-6-luna",
+      "metrics": {
+        "requests": {
+          "count": 36,
+          "cost": 3
+        },
+        "usage": {
+          "inputTokens": 1928293,
+          "outputTokens": 18098,
+          "cacheReadTokens": 1816248,
+          "cacheWriteTokens": 111937,
+          "reasoningTokens": 10960
+        },
+        "totalNanoAiu": 4121440500,
+        "aiCreditsStatus": "complete",
+        "tokenDetails": {
+          "input": {
+            "tokenCount": 108
+          },
+          "cache_read": {
+            "tokenCount": 1816248
+          },
+          "cache_write": {
+            "tokenCount": 111937
+          },
+          "output": {
+            "tokenCount": 18098
+          }
+        }
+      },
+      "modelDisplayName": "GPT-6 Luna"
+    }
+  ],
+  "currentModel": "gpt-6-luna",
+  "lastCallInputTokens": 79489,
+  "lastCallOutputTokens": 313
+}

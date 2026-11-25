@@ -1,0 +1,7 @@
+SharePoint admin center → Advanced → API access (…-admin.sharepoint.com/_layouts/15/online/AdminHome.aspx#/webApiPermissionManagement)
+Přečteno ve vestavěném prohlížeči jako pavel.chocholous@gmail.com (Global Admin labu), 22. 11. 2026 ~20:45 SEČ, jen čtení.
+Menu: … | Advanced | API access | Script sources | …
+Pending requests (4): egd-ai-gateway Gateway.Use; egd-overeni-apiaccess Test.Read; prvni-appka-client-side-solution (Microsoft Graph) Notes.Read; egd-overeni-apiaccess-objid Test.Read
+→ appka-client-side-solution (sonda ms-dokumenty, site catalog egd-sonda-ms-dokumenty i -en, webApiPermissionRequests Microsoft Graph Files.Read.All) mezi čekajícími NENÍ.
+Approved requests (61), mj. Microsoft Graph Files.Read, Files.Read.All, Files.ReadWrite.All, Sites.Read.All (Organization-wide).
+CLI: HOME=~/.m365-osobni m365 spo serviceprincipal permissionrequest list → "Error: Request failed with status code 403" (pavel.admin, appka m365-cli-spfx-lab).

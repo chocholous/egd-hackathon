@@ -1,0 +1,7 @@
+# GET /v1.0/users/tomas.prochazka@…/licenseDetails?$select=skuPartNumber, 2026-11-24 08:45:20Z (výstup přepsán z terminálu session ca-obo)
+FLOW_FREE
+SPE_E5
+# Copilot SKU mu ms-llm odebrala 08:36:50Z (sondy/ms-llm/copilot-graph/licence-presun.log)
+# znovu 2026-11-24T19:29:14Z
+FLOW_FREE
+SPE_E5

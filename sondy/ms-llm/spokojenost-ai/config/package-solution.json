@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spokojenost-ai-client-side-solution",
+    "id": "14c361cf-c003-4830-844a-1195338f5818",
+    "version": "1.0.0.3",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spokojenost-ai description"
+      },
+      "longDescription": {
+        "default": "spokojenost-ai description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spokojenost-ai Feature",
+        "description": "The feature that activates elements of the spokojenost-ai solution.",
+        "id": "a6f88bf6-0f63-4dfc-a5a8-59392d4c3d9b",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "7b59591a-0058-4799-be76-0d1f5b79ca95",
+        "scope": "Gateway.Use"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spokojenost-ai.sppkg"
+  }
+}

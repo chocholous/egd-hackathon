@@ -1,0 +1,62 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● skill(egd-prava-role)
+
+ {} Read sondy/ms-prava/kontrola-list-get.json Path does not exist
+
+ TS Read sondy/ms-prava/prvni-appka/src/webparts/evidence/EvidenceWebPart.ts Path does not exist
+
+ $ Shell Read SharePoint list security settings 5 lines…
+   if command -v m365 >/dev/null 2>&1; then m365 spo list get --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --title 'Pozadavky' ]8;;
+   --properties 'ReadSecurity,WriteSecurity,HasUniqueRoleAssignments' --output json; else echo 'm365
+   CLI unavailable'; fi
+
+ $ Shell Inspect current workspace location 1 line…
+   pwd; git status --short --branch 2>/dev/null || true; ls
+
+ $ Shell Check list role-assignment read command 47 lines…
+   m365 spo list roleassignment list --help
+
+ $ Shell Check permission-level read command 30 lines…
+   m365 spo roledefinition list --help
+
+ ✗ Shell Find SharePoint permission inspection commands  Failed with exit code 1
+   m365 spo --help | grep -i -E 'roleassignment|role assignment|permission'
+
+ $ Shell Check authenticated SharePoint REST request options 42 lines…
+   m365 request --help
+
+ $ Shell Read site permission levels 316 lines…
+   m365 spo roledefinition list --webUrl
+   ']8;id=md-evw4cv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-pravahttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava]8;;]8;;' --output json]8;;
+
+ $ Shell Read list role assignments 93 lines…
+   m365 request --url ']8;id=md-wvse3g;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists/getbytitle(%27Pozadavky%27)/roleassignments?$select=Member/Title,Member/PrincipalType,RoleDefinitionBindings/Name&$expand=Member,RoleDefinitionBindingshttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-wvse3g;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists/getbytitle(%27Pozadavky%27)/roleassignments?$select=Member/Title,Member/PrincipalType,RoleDefinitionBindings/Name&$expand=Member,RoleDefinitionBindings/lists/getbytitle(%27Pozadavky%27)/roleassignments?$select=Member/Title,Member/PrincipalType,Role]8;;
+   ]8;id=md-wvse3g;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/lists/getbytitle(%27Pozadavky%27)/roleassignments?$select=Member/Title,Member/PrincipalType,RoleDefinitionBindings/Name&$expand=Member,RoleDefinitionBindingsDefinitionBindings/Name&$expand=Member,RoleDefinitionBindings]8;;]8;;' --method get --output json]8;;
+
+ $ Shell Read site role assignments 261 lines…
+   m365 request --url ']8;id=md-1h5oy5m;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/roleassignments?$select=Member/Title,Member/PrincipalType,RoleDefinitionBindings/Name&$expand=Member,RoleDefinitionBindingshttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web]8;;
+   ]8;id=md-1h5oy5m;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/roleassignments?$select=Member/Title,Member/PrincipalType,RoleDefinitionBindings/Name&$expand=Member,RoleDefinitionBindings/roleassignments?$select=Member/Title,Member/PrincipalType,RoleDefinitionBindings/Name&$expand=Me]8;;
+   ]8;id=md-1h5oy5m;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_api/web/roleassignments?$select=Member/Title,Member/PrincipalType,RoleDefinitionBindings/Name&$expand=Member,RoleDefinitionBindingsmber,RoleDefinitionBindings]8;;]8;;' --method get --output json]8;;
+
+**Ano — seznam `Pozadavky` je podle živého nastavení připravený správně** pro zadavatele „jen své“ a schvalovatele „všechny“. Ověřil jsem pouze čtením: `ReadSecurity=2`, `WriteSecurity=2`, `HasUniqueRoleAssignments=true`. Na seznamu jsou skupiny `Evidence Zadavatelé` s úrovní `EGD Zadavatel`, `Evidence Schvalovatelé` s `EGD Schvalovatel` a `Evidence Správci` s úplným řízením. Obě skupiny už mají na webu také Čtení.
+
+V appce načti **efektivní oprávnění k seznamu** a rozpoznej schvalovatele podle `CancelCheckout` (`0x100`), ne podle názvu skupiny ani `ApproveItems`:
+
+```ts
+const prava = await this._cti<{ Low: string }>("/EffectiveBasePermissions");
+const jeSchvalovatel = (Number(prava.Low) & 0x100) !== 0;
+```
+
+Oprávnění v SharePointu skutečně vynucují přístup; schování tlačítka v appce je jen úprava rozhraní. Neověřoval jsem členství konkrétních lidí ve skupinách ani chování pod dvěma různými účty. Poznámka: současná úroveň `EGD Schvalovatel` zahrnuje i mazání položek. Nic jsem neměnil.
+
+Session exported to: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8ec15af4-f174-4d61-b85a-55075ed615ce/scratchpad/cop1/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 0.58 (36s)
+Tokens     ↑ 135.2k (113.8k cached, 21.4k written) • ↓ 4.0k (2.9k reasoning)
+Resume     copilot --resume=e438ad4f-da3d-4b15-9902-9731a56d52b4

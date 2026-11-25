@@ -1,0 +1,4 @@
+LIST Vlastníci webu EGD sonda ms-prava ['Úplné řízení']
+LIST Pavel Admin (lab) ['Úplné řízení']
+LIST Copilot Zadavatelé ['EGD Zadavatel']
+LIST Copilot Schvalovatelé ['EGD Schvalovatel bez mazání']

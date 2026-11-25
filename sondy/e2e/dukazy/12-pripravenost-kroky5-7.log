@@ -1,0 +1,22 @@
+### prihlaseni --tenant pavelchocholousgmail.onmicrosoft.com 11:27:07
+[ZELENA] prihlaseni: prihlasen egd10@pavelchocholousgmail.onmicrosoft.com, appId 12f19539-b70a-499d-b6dc-517a32c0e904, tenant pavelchocholousgmail.onmicrosoft.com
+rc=0
+### sharepoint --web https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev --tenant pavelchocholousgmail.onmicrosoft.com 11:27:11
+[ZELENA] prihlaseni: prihlasen egd10@pavelchocholousgmail.onmicrosoft.com, appId 12f19539-b70a-499d-b6dc-517a32c0e904, tenant pavelchocholousgmail.onmicrosoft.com
+[ZELENA] web-cteni: "Účastník 10 – DEV" (https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev)
+[ZELENA] role-na-webu: Vlastnik (Full Control) (odhad z EffectiveBasePermissions High 2147483647 / Low 4294705151; zapis polozek ano, sprava seznamu ano)
+[ZELENA] seznamy: 6 viditelnych seznamu/knihoven: Aplikace pro SharePoint (0), Dokumenty (0), Knihovna stylů (0), Stránky webu (1), Šablony formulářů (0), Události (0)
+[INFO]   tenant-app-catalog: https://pavelchocholousgmail.sharepoint.com/sites/apps (pro workshop ho nepotrebujeme; zapisujeme jen do katalogu na vlastnim webu)
+[ZELENA] site-app-catalog: web ma vlastni katalog aplikaci "Aplikace pro SharePoint" (0 balicku)
+[ZELENA] role-v-katalogu: muzes nahrat balicek (.sppkg) do katalogu
+[INFO]   licence-m365: licence: SPE_E5
+[ZELENA] power-platform-licence: Power Apps / Power Automate v licenci: FLOW_O365_P3, POWERAPPS_O365_P3
+rc=0
+### zkouska --web https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev --tenant pavelchocholousgmail.onmicrosoft.com 11:27:26
+PLAN ZAPISU (nic se zatim nezapsalo):
+  1. na webu https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev zalozit seznam "EGD-pripravenost" (jen kdyz jeste neexistuje)
+  2. pridat do nej JEDNU polozku s nazvem "Zkouska chocholous 24. 11. 2026 11:27:26"
+  3. precist ji zpatky
+Nic se nemaze. Seznam si muzes pozdeji smazat sam v prohlizeci (Obsah webu).
+Kdyz s tim clovek souhlasi, spust znovu s volbou --ano.
+rc=10

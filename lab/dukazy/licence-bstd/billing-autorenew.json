@@ -1,0 +1,166 @@
+{
+  "totalCount": 5,
+  "value": [
+    {
+      "id": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingSubscriptions/e9f1689f-9081-4e2c-cad3-ac59182c1c47",
+      "name": "e9f1689f-9081-4e2c-cad3-ac59182c1c47",
+      "properties": {
+        "autoRenew": "Off",
+        "billingFrequency": null,
+        "billingProfileDisplayName": "Xx",
+        "billingProfileId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB",
+        "billingProfileName": "VSNT-6AEB-BG7-PGB",
+        "invoiceSectionDisplayName": "Default Directory",
+        "invoiceSectionId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB/invoiceSections/dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "invoiceSectionName": "dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "operationStatus": "None",
+        "productCategory": "SeatBased",
+        "productType": "Microsoft 365 E5",
+        "productTypeId": "CFQ7TTC0LFLZ",
+        "provisioningTenantId": "972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+        "purchaseDate": "2026-10-27T03:03:58.0150546Z",
+        "quantity": 25,
+        "skuDescription": "Microsoft 365 E5",
+        "skuId": "000D",
+        "status": "Active",
+        "systemOverrides": {
+          "cancellationAllowedEndDate": "9999-12-31T23:59:59.0000000Z"
+        },
+        "termDuration": "P1M",
+        "termEndDate": "2026-11-26T00:00:00.0000000Z",
+        "termStartDate": "2026-10-27T00:00:00.0000000Z"
+      },
+      "type": "Microsoft.Billing/billingAccounts/billingSubscriptions"
+    },
+    {
+      "id": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingSubscriptions/e1f76444-b527-4705-c8da-cf3173506164",
+      "name": "e1f76444-b527-4705-c8da-cf3173506164",
+      "properties": {
+        "autoRenew": "Off",
+        "billingFrequency": null,
+        "billingProfileDisplayName": "Xx",
+        "billingProfileId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB",
+        "billingProfileName": "VSNT-6AEB-BG7-PGB",
+        "invoiceSectionDisplayName": "Default Directory",
+        "invoiceSectionId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB/invoiceSections/dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "invoiceSectionName": "dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "operationStatus": "None",
+        "productCategory": "SeatBased",
+        "productType": "Microsoft 365 Business Premium",
+        "productTypeId": "CFQ7TTC0LCHC",
+        "provisioningTenantId": "972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+        "purchaseDate": "2026-10-27T08:31:24.2849637Z",
+        "quantity": 1,
+        "skuDescription": "Microsoft 365 Business Premium with Copilot",
+        "skuId": "0028",
+        "status": "Active",
+        "systemOverrides": {
+          "cancellationAllowedEndDate": "9999-12-31T23:59:59.0000000Z"
+        },
+        "termDuration": "P1M",
+        "termEndDate": "2026-11-26T00:00:00.0000000Z",
+        "termStartDate": "2026-10-27T00:00:00.0000000Z"
+      },
+      "type": "Microsoft.Billing/billingAccounts/billingSubscriptions"
+    },
+    {
+      "id": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingSubscriptions/67dd07f9-b658-4103-dde3-ab8c1cfed158",
+      "name": "67dd07f9-b658-4103-dde3-ab8c1cfed158",
+      "properties": {
+        "autoRenew": "Off",
+        "billingFrequency": null,
+        "billingProfileDisplayName": "Xx",
+        "billingProfileId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB",
+        "billingProfileName": "VSNT-6AEB-BG7-PGB",
+        "invoiceSectionDisplayName": "Default Directory",
+        "invoiceSectionId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB/invoiceSections/dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "invoiceSectionName": "dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "operationStatus": "None",
+        "productCategory": "SeatBased",
+        "productType": "Agent 365",
+        "productTypeId": "CFQ7TTBZZR6G",
+        "provisioningTenantId": "972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+        "purchaseDate": "2026-10-27T10:37:03.8479339Z",
+        "quantity": 25,
+        "skuDescription": "Agent 365",
+        "skuId": "0001",
+        "status": "Active",
+        "systemOverrides": {
+          "cancellationAllowedEndDate": "9999-12-31T23:59:59.0000000Z"
+        },
+        "termDuration": "P1M",
+        "termEndDate": "2026-11-26T00:00:00.0000000Z",
+        "termStartDate": "2026-10-27T00:00:00.0000000Z"
+      },
+      "type": "Microsoft.Billing/billingAccounts/billingSubscriptions"
+    },
+    {
+      "id": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingSubscriptions/d145f107-bc17-4afb-d85f-7fdf35bc9b0a",
+      "name": "d145f107-bc17-4afb-d85f-7fdf35bc9b0a",
+      "properties": {
+        "autoRenew": "Off",
+        "billingFrequency": null,
+        "billingProfileDisplayName": "Xx",
+        "billingProfileId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB",
+        "billingProfileName": "VSNT-6AEB-BG7-PGB",
+        "invoiceSectionDisplayName": "Default Directory",
+        "invoiceSectionId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB/invoiceSections/dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "invoiceSectionName": "dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "operationStatus": "None",
+        "productCategory": "SeatBased",
+        "productType": "Power Automate Premium",
+        "productTypeId": "CFQ7TTC0LSGZ",
+        "provisioningTenantId": "972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+        "purchaseDate": "2026-11-24T08:59:26.2636984Z",
+        "quantity": 25,
+        "skuDescription": "Power Automate Premium",
+        "skuId": "0002",
+        "status": "Active",
+        "systemOverrides": {
+          "cancellationAllowedEndDate": "9999-12-31T23:59:59.0000000Z"
+        },
+        "termDuration": "P1M",
+        "termEndDate": "2026-12-23T00:00:00.0000000Z",
+        "termStartDate": "2026-11-24T00:00:00.0000000Z"
+      },
+      "type": "Microsoft.Billing/billingAccounts/billingSubscriptions"
+    },
+    {
+      "id": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingSubscriptions/7dfeaf39-eecd-4756-dc80-6a58b06127f5",
+      "name": "7dfeaf39-eecd-4756-dc80-6a58b06127f5",
+      "properties": {
+        "autoRenew": "On",
+        "billingFrequency": null,
+        "billingProfileDisplayName": "Xx",
+        "billingProfileId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB",
+        "billingProfileName": "VSNT-6AEB-BG7-PGB",
+        "invoiceSectionDisplayName": "Default Directory",
+        "invoiceSectionId": "/providers/Microsoft.Billing/billingAccounts/8e557a7e-af15-5c87-84ae-0c0c7ee7911d:6ffc29db-83a4-464e-ba8b-cf3be5ebff2f_2019-05-31/billingProfiles/VSNT-6AEB-BG7-PGB/invoiceSections/dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "invoiceSectionName": "dce70d51-0c85-472a-ad5d-15a21a6f3cb7",
+        "operationStatus": "None",
+        "productCategory": "SeatBased",
+        "productType": "Microsoft 365 Business Standard",
+        "productTypeId": "CFQ7TTC0LDPB",
+        "provisioningTenantId": "972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+        "purchaseDate": "2026-11-24T17:18:34.2825662Z",
+        "quantity": 25,
+        "renewalTermDetails": {
+          "productId": "CFQ7TTC0LDPB",
+          "quantity": 1,
+          "skuId": "000F",
+          "termDuration": "P1M"
+        },
+        "skuDescription": "Microsoft 365 Business Standard EEA (no Teams)",
+        "skuId": "000G",
+        "status": "Active",
+        "systemOverrides": {
+          "cancellationAllowedEndDate": "9999-12-31T23:59:59.0000000Z"
+        },
+        "termDuration": "P1M",
+        "termEndDate": "2026-12-23T00:00:00.0000000Z",
+        "termStartDate": "2026-11-24T00:00:00.0000000Z"
+      },
+      "type": "Microsoft.Billing/billingAccounts/billingSubscriptions"
+    }
+  ]
+}

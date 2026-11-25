@@ -1,0 +1,28 @@
+{
+  "nazev": "Ověření 2.1 Gateway.App",
+  "stav": "hotovo",
+  "popis": "2.1 i atomicita kvóty změřeny (❌ není atomická), vision z prohlížeče + limit těla ✅",
+  "oblast": "sondy",
+  "kdo": "role Ověřovatel",
+  "vystup": "sondy/overeni/gateway-app/README.md",
+  "aktualizovano": "2026-11-24T07:53:06Z",
+  "zacatek": "2026-11-24T07:41:33Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-24T07:41:33Z",
+      "stav": "bezi",
+      "popis": "čtu server.mjs"
+    },
+    {
+      "t": "2026-11-24T07:44:35Z",
+      "stav": "bezi",
+      "popis": "2.1 hotovo, čeká atomicita kvóty (07:52)"
+    },
+    {
+      "t": "2026-11-24T07:53:06Z",
+      "stav": "hotovo",
+      "popis": "2.1 i atomicita kvóty změřeny (❌ není atomická), vision z prohlížeče + limit těla ✅"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+--- pred (document.querySelector('#iid').value='6', document.querySelector('#komu').value='jakub.kucera@pavelchocholousgmail.onmicrosoft.com', 'vyplneno')
+VYSLEDEK: vyplneno
+--- klik me
+KONZOLE warning: An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+KONZOLE warning: An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+LOG po kliku: HOTOVO me HTTP 200 (1884 ms)
+{
+  "upn": "jakub.kucera@pavelchocholousgmail.onmicrosoft.com",
+  "oid": "22514a8d-8108-401d-bdf8-a3b6398fee75",
+  "roles": [
+    "Zadavatel"
+  ],
+  "ver": "0.2"
+}
+--- klik polozky
+LOG po kliku: HOTOVO polozky HTTP 200 (166 ms)
+{
+  "value": [
+    {
+      "Author": {
+        "Title": "Kučera Jakub"
+      },
+      "Id": 5,
+      "ID": 5,
+      "Title": "prava-db 015133 (C)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 4,
+      "ID": 4,
+      "Title": "prava-db 015133 (A)"
+    },
+    {
+      "Author": {
+        "Title": "Kučera Jakub"
+      },
+      "Id": 3,
+      "ID": 3,
+      "Title": "prava-db 015114 (C)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 2,
+      "ID": 2,
+      "Title": "prava-db 015114 (A)"
+    }
+  ]
+}
+--- eval (document.querySelector('button[data-k="sdilet"]').click(), new Promise(r=>setTimeout(()=>r(document.querySelector('#log').textContent),12000)))
+KONZOLE error: Failed to load resource: the server responded with a status of 403 ()
+KONZOLE error: Failed to load resource: the server responded with a status of 403 ()
+VYSLEDEK: CHYBA sdilet HTTP 403 (621 ms)
+{
+  "error": "sdílet smí jen vlastník položky nebo Spravce",
+  "ja": "jakub.kucera@pavelchocholousgmail.onmicrosoft.com",
+  "vlastnik": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com"
+}
+LOG:
+CHYBA sdilet HTTP 403 (621 ms)
+{
+  "error": "sdílet smí jen vlastník položky nebo Spravce",
+  "ja": "jakub.kucera@pavelchocholousgmail.onmicrosoft.com",
+  "vlastnik": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com"
+}

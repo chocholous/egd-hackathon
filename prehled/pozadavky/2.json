@@ -1,0 +1,12 @@
+{
+  "cesta": "SPFx → AadHttpClient → gateway v Container App → Azure OpenAI + Document Intelligence přes managed identity; kvóta na uživatele a appku, log ceny",
+  "poznamka": "Prošlo v Claude (sondy/ms-llm) i Copilot CLI (skills/egd-llm-gateway/TEST-copilot.md). Neověřeno: schválení v UI admin centra, proxy E.ON, AI Builder; generování obrázků ❌ (kvóta 0); OCR F0 do ~4 MB",
+  "zdroj": "sondy/ms-llm/README.md",
+  "skill": "ano",
+  "nazev": "LLM přes API gateway na aplikační klíč (OCR, obrázky, generování)",
+  "realne": "castecne",
+  "test": "lab",
+  "cislo": 2,
+  "aktualizovano": "2026-11-24T20:43:38Z",
+  "skill_cesta": "skills/egd-llm-gateway"
+}

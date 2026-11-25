@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spokojenost-appka-client-side-solution",
+    "id": "ef7a3151-dda2-463e-8d7c-90fd8180633a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spokojenost-appka description"
+      },
+      "longDescription": {
+        "default": "spokojenost-appka description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spokojenost-appka Feature",
+        "description": "The feature that activates elements of the spokojenost-appka solution.",
+        "id": "c24d1d2f-9c6d-4dd7-a58a-66b89358a7cd",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spokojenost-appka.sppkg"
+  }
+}

@@ -1,0 +1,6 @@
+# 2026-11-24T09:33:33Z appka.mjs novy --bez-instalace (Node v22.23.5)
+[OK]      projekt zalozen: /Users/chocholous/Projects/egd-workshop/sondy/overeni/node24/prvni-appka (reseni prvni-appka, web part 32ce02dd-c6e0-45f4-83da-6060158cd19d)
+[INFO]    instalaci balicku jsi vynechal (--bez-instalace).
+real 0.08
+user 0.05
+sys 0.01

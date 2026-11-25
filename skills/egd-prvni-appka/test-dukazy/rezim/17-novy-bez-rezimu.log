@@ -1,0 +1,6 @@
+[CHYBA]   chybi --rezim
+          co dal: zeptej se uzivatele, kdo ma appku pouzivat: jen on sam (single) nebo vsichni v organizaci, kdo maji odkaz (open); pak spust znovu s --rezim single nebo --rezim open
+[OK]      projekt zalozen: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8d3c6e51-bb57-4e00-b8c2-1af463aca4ab/scratchpad/d1/rezim-test (reseni rezim-test, web part f01f0a08-f671-40cc-bb46-7645186d2b5a)
+[OK]      rezim open zapsan do config/appka.json (prava na webu nastavi krok nasadit, prepnout jde kdykoli prikazem rezim)
+[OK]      znacka EG.D zapsana do src/webparts/spokojenost/_znacka.scss
+[INFO]    instalaci balicku jsi vynechal (--bez-instalace).

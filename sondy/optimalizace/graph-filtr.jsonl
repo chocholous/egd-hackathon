@@ -1,0 +1,22 @@
+{"test": "bez_Prefer_filtr_indexovany_600", "status": 200, "sec": 0.616, "rows": 600, "nextLink": false, "ukazka": {"@odata.etag": "\"bd593141-2136-4cb0-8144-ff46d3f28152,1\"", "Kategorie": "K01", "Castka": 407.0}}
+{"test": "bez_Prefer_filtr_indexovany_vic_nez_5000_(Castka ge 0)", "status": 200, "sec": 0.478, "rows": 100, "nextLink": true, "ukazka": {"@odata.etag": "\"6e49f718-444a-420d-8221-02343840a4c7,1\"", "Castka": 700.0}}
+{"test": "bez_Prefer_filtr_neindexovany", "status": 400, "sec": 0.195, "chyba": "Field 'Neindexovano' cannot be referenced in filter or orderby as it is not indexed. Provide the 'Prefer: HonorNonIndexedQueriesWarningMayFailRandomly' header to allow th"}
+{"test": "bez_Prefer_filtr_indexovany_+_neindexovany", "status": 400, "sec": 0.28, "chyba": "Field 'Neindexovano' cannot be referenced in filter or orderby as it is not indexed. Provide the 'Prefer: HonorNonIndexedQueriesWarningMayFailRandomly' header to allow th"}
+{"test": "bez_Prefer_filtr_Created_neindexovany", "status": 400, "sec": 0.192, "chyba": "Invalid request"}
+{"test": "bez_Prefer_filtr_Stav_indexovany", "status": 200, "sec": 1.501, "rows": 602, "nextLink": false, "ukazka": {"@odata.etag": "\"6e49f718-444a-420d-8221-02343840a4c7,1\"", "Stav": "Nový"}}
+{"test": "s_Prefer_filtr_indexovany_600", "status": 200, "sec": 0.541, "rows": 600, "nextLink": false, "ukazka": {"@odata.etag": "\"bd593141-2136-4cb0-8144-ff46d3f28152,1\"", "Kategorie": "K01", "Castka": 407.0}}
+{"test": "s_Prefer_filtr_indexovany_vic_nez_5000_(Castka ge 0)", "status": 200, "sec": 0.307, "rows": 100, "nextLink": true, "ukazka": {"@odata.etag": "\"6e49f718-444a-420d-8221-02343840a4c7,1\"", "Castka": 700.0}}
+{"test": "s_Prefer_filtr_neindexovany", "status": 200, "sec": 0.471, "rows": 100, "nextLink": true, "ukazka": {"@odata.etag": "\"bd593141-2136-4cb0-8144-ff46d3f28152,1\"", "Neindexovano": "N1"}}
+{"test": "s_Prefer_filtr_indexovany_+_neindexovany", "status": 200, "sec": 0.5, "rows": 100, "nextLink": true, "ukazka": {"@odata.etag": "\"bd593141-2136-4cb0-8144-ff46d3f28152,1\"", "Kategorie": "K01", "Neindexovano": "N1"}}
+{"test": "s_Prefer_filtr_Created_neindexovany", "status": 400, "sec": 0.241, "chyba": "Invalid request"}
+{"test": "s_Prefer_filtr_Stav_indexovany", "status": 200, "sec": 0.595, "rows": 602, "nextLink": false, "ukazka": {"@odata.etag": "\"6e49f718-444a-420d-8221-02343840a4c7,1\"", "Stav": "Nový"}}
+{"test": "top999_s_fields", "status": 200, "sec": 0.964, "rows": 999, "nextLink": true, "ukazka": {"@odata.etag": "\"6e49f718-444a-420d-8221-02343840a4c7,1\"", "Kategorie": "K00", "Castka": 700.0}}
+{"test": "top5000", "status": 200, "sec": 2.487, "rows": 5000, "nextLink": true, "ukazka": {"@odata.etag": "\"6e49f718-444a-420d-8221-02343840a4c7,1\"", "Kategorie": "K00"}}
+{"test": "orderby_fields_Castka_(indexovany)", "status": 200, "sec": 1.123, "rows": 10, "nextLink": true, "ukazka": {"@odata.etag": "\"268744b4-eb66-4a74-bc55-8639799c9bf3,1\"", "Castka": 0.0}}
+{"test": "orderby_createdDateTime", "status": 422, "sec": 0.2, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "orderby_lastModifiedDateTime_(s_Prefer)", "status": 200, "sec": 0.355, "rows": 10, "nextLink": true, "ukazka": {"@odata.etag": "\"48edafce-28b3-461e-ab5b-2f1f05758977,2\"", "Castka": 1.0}}
+{"test": "$count=true", "status": 400, "sec": 0.155, "chyba": "$count is not supported on this API. Only URLs returned by the API can be used to page."}
+{"test": "bez_expand_top999", "status": 200, "sec": 0.721, "rows": 999, "nextLink": true, "ukazka": null}
+{"test": "select_id_jen", "status": 200, "sec": 0.491, "rows": 999, "nextLink": true, "ukazka": null}
+{"test": "orderby_createdDateTime_s_Prefer", "status": 422, "sec": 0.264, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "count_s_ConsistencyLevel", "status": 400, "sec": 0.22, "chyba": "$count is not supported on this API. Only URLs returned by the API can be used to page."}

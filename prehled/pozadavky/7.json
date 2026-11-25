@@ -1,0 +1,12 @@
+{
+  "cesta": "Power Automate Scheduled cloud flow, standardní konektory (klikací cesta ověřena)",
+  "poznamka": "Prošlo v Claude i Copilot CLI. B chce licenci Power Automate a Environment Maker; seznam nad 5000 jen s filtrem a stránkováním (strop 5000).",
+  "zdroj": "sondy/ms-maily/README.md",
+  "skill": "ano",
+  "nazev": "Plánované úlohy (denní report → dokument → e-mail)",
+  "realne": "ano",
+  "test": "lab",
+  "cislo": 7,
+  "aktualizovano": "2026-11-23T10:32:52Z",
+  "skill_cesta": "skills/egd-planovane-ulohy"
+}

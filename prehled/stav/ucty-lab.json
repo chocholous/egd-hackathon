@@ -1,0 +1,17 @@
+{
+  "nazev": "Rozhodnout účty účastníků v labu",
+  "stav": "hotovo",
+  "popis": "Rozhodnuto: 10 účtů, 30 webů, výdejní stránka; dělá session lab-ucty",
+  "oblast": "lab",
+  "kdo": "Pavel",
+  "aktualizovano": "2026-11-22T18:34:47Z",
+  "zacatek": "2026-11-22T18:15:54Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-22T18:34:47Z",
+      "stav": "hotovo",
+      "popis": "Rozhodnuto: 10 účtů, 30 webů, výdejní stránka; dělá session lab-ucty"
+    }
+  ]
+}

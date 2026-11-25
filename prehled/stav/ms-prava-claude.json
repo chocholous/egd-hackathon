@@ -1,0 +1,28 @@
+{
+  "nazev": "Test egd-prava-role v Claude",
+  "stav": "hotovo",
+  "popis": "prošel: agent Sonnet nastavil role, ověřeno REST i v prohlížeči pod jakub/eva; skill doplněn o 4 připomínky",
+  "oblast": "skilly",
+  "kdo": "ms-prava",
+  "vystup": "skills/egd-prava-role/TEST.md",
+  "aktualizovano": "2026-11-24T01:57:04Z",
+  "zacatek": "2026-11-24T01:46:34Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-24T01:46:34Z",
+      "stav": "bezi",
+      "popis": "kontrola přihlášení a vzoru"
+    },
+    {
+      "t": "2026-11-24T01:47:17Z",
+      "stav": "bezi",
+      "popis": "agent účastníka (Sonnet) nastavuje role na PozadavkyClaude"
+    },
+    {
+      "t": "2026-11-24T01:57:04Z",
+      "stav": "hotovo",
+      "popis": "prošel: agent Sonnet nastavil role, ověřeno REST i v prohlížeči pod jakub/eva; skill doplněn o 4 připomínky"
+    }
+  ]
+}

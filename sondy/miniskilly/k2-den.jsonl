@@ -1,0 +1,8 @@
+{"krok": "index Den", "indexed": true}
+{"krok": "ItemCount", "n": 6001}
+{"krok": "Den ge", "dni": 7, "od": "2026-11-16", "status": 200, "n": 601, "stranky": 1, "sec": 0.36, "err": ""}
+{"krok": "Den ge", "dni": 30, "od": "2026-10-24", "status": 200, "n": 2901, "stranky": 3, "sec": 2.32, "err": ""}
+{"krok": "Den ge", "dni": 49, "od": "2026-10-05", "status": 200, "n": 4801, "stranky": 5, "sec": 3.03, "err": ""}
+{"krok": "Den ge", "dni": 50, "od": "2026-10-04", "status": 200, "n": 4901, "stranky": 5, "sec": 3.11, "err": ""}
+{"krok": "Den ge", "dni": 51, "od": "2026-10-03", "status": 500, "n": 0, "stranky": 0, "sec": 0.17, "err": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"krok": "Den ge", "dni": 55, "od": "2026-09-29", "status": 500, "n": 0, "stranky": 0, "sec": 1.5, "err": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}

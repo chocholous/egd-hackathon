@@ -1,0 +1,53 @@
+{
+  "nazev": "Test prereq skillu jako účastník",
+  "stav": "hotovo",
+  "popis": "2. kolo oprav auditu hotové, finální běh uložen",
+  "oblast": "pripravenost",
+  "kdo": "test-pripravenost",
+  "vystup": "skills/egd-pripravenost/TEST.md",
+  "aktualizovano": "2026-11-22T19:53:56Z",
+  "zacatek": "2026-11-22T18:28:27Z",
+  "kroky": 9,
+  "historie": [
+    {
+      "t": "2026-11-22T18:33:59Z",
+      "stav": "hotovo",
+      "popis": "hotovo, TEST.md napsán, opravy ve skillu"
+    },
+    {
+      "t": "2026-11-22T18:35:46Z",
+      "stav": "hotovo",
+      "popis": "hotovo: TEST.md, opravy a GitHub návod (references/github.md, příkaz github)"
+    },
+    {
+      "t": "2026-11-22T19:06:51Z",
+      "stav": "bezi",
+      "popis": "nový úkol: ZADANI-appka + krok postav appku, ověření pod egd01"
+    },
+    {
+      "t": "2026-11-22T19:07:28Z",
+      "stav": "bezi",
+      "popis": "stavím šablonu appky Spokojenost (SPFx) do egd-pripravenost/templates"
+    },
+    {
+      "t": "2026-11-22T19:22:56Z",
+      "stav": "hotovo",
+      "popis": "ZADANI-appka + krok postav appku hotovo, ověřeno v labu CLI (UI pod egd01 neověřeno)"
+    },
+    {
+      "t": "2026-11-22T19:23:16Z",
+      "stav": "bezi",
+      "popis": "opravy po auditu (16 bodů)"
+    },
+    {
+      "t": "2026-11-22T19:40:14Z",
+      "stav": "hotovo",
+      "popis": "opravy po auditu hotové, žebřík variant, finální běh uložen"
+    },
+    {
+      "t": "2026-11-22T19:53:56Z",
+      "stav": "hotovo",
+      "popis": "2. kolo oprav auditu hotové, finální běh uložen"
+    }
+  ]
+}

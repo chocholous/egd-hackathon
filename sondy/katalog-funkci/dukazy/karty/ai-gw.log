@@ -1,0 +1,112 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[1.0s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/ai.aspx
+[4.0s] OK wait:3000  
+[12.7s] OK rozbal  
+8 zón
+[12.7s] OK eval:document.querySelector('[data-sp-web-part-id="5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24"]').scrollIntoView()  {"interrupted":false}
+[12.8s] OK click:[data-sp-web-part-id="5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24"] #who  
+[44.5s] OK waitfor:status  
+[45.5s] OK wait:1000  
+[45.6s] OK eval:document.querySelector('[data-sp-web-part-id="5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24"]').innerText.slice(0,1200)  
+AI gateway (sonda)
+
+whoami Chat  OCR souboru
+{
+  "status": 200,
+  "ms": 31221,
+  "json": {
+    "who": {
+      "oid": "299f78ab-616c-4cb0-8162-073c777fc4ec",
+      "upn": "egd09@pavelchocholousgmail.onmicrosoft.com",
+      "clientAppId": "08e18876-6177-487e-b8b5-cf950c1e598c",
+      "scopes": [
+        "Gateway.Use"
+      ],
+      "roles": []
+    },
+    "appKey": "demo"
+  }
+}
+[45.6s] OK click:[data-sp-web-part-id="5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24"] #chat  
+[57.6s] OK wait:12000  
+[57.6s] OK eval:document.querySelector('[data-sp-web-part-id="5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24"]').innerText.slice(0,1500)  
+AI gateway (sonda)
+
+whoami Chat  OCR souboru
+{
+  "status": 200,
+  "ms": 1289,
+  "json": {
+    "text": "SharePoint je platforma od Microsoftu pro správu dokumentů a týmovou spolupráci umožňující vytváření, sdílení a organizaci informací v rámci organizace.",
+    "usage": {
+      "completion_tokens": 39,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0
+      },
+      "latency_checkpoint": {
+        "engine_tbt_ms": 7,
+        "engine_ttft_ms": 29,
+        "engine_ttlt_ms": 318,
+        "pre_inference_ms": 65,
+        "service_tbt_ms": 7,
+        "service_ttft_ms": 396,
+        "service_ttlt_ms": 675,
+        "user_visible_ttft_ms": 331
+      },
+      "prompt_tokens": 19,
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      },
+      "total_tokens": 58
+    },
+    "costUsd": 0.00007,
+    "model": "gpt-4.1-mini-2025-04-14",
+    "ms": 1188,
+    "kvotaDnes": {
+      "tokens": 58,
+      "limit": 50000
+    }
+  }
+}
+[57.7s] OK shotv:01-egd09-chat  
+dukazy/karty/ai-gateway/01-egd09-chat.png
+[57.8s] OK file:[data-sp-web-part-id="5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24"] #f=/Users/chocholous/Projects/egd-workshop/sondy/ai/ocr-cs.png  
+[57.8s] OK click:[data-sp-web-part-id="5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24"] #ocr  
+[72.8s] OK wait:15000  
+[72.9s] OK eval:document.querySelector('[data-sp-web-part-id="5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24"]').innerText.slice(0,1500)  
+AI gateway (sonda)
+
+whoami Chat  OCR souboru
+{
+  "status": 200,
+  "ms": 1283,
+  "json": {
+    "text": "Částka k úhradě: 12 345,00 Kč Příliš žluťoučký kůň úpěl ďábelské ódy Dodavatel: Řezníkův závod, s.r.o.",
+    "pages": 1,
+    "costUsd": 0.0015,
+    "ms": 1189,
+    "kvotaDnes": {
+      "tokens": 58,
+      "limit": 50000
+    }
+  }
+}
+[73.0s] OK shotv:02-egd09-ocr  
+dukazy/karty/ai-gateway/02-egd09-ocr.png
+[73.0s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/whoami
+  POST 200 https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat
+  POST 200 https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/ocr

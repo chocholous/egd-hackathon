@@ -1,0 +1,4 @@
+8ed759fae6964b21899505018116982497d71986db23a4bb818a0b6d7610fc1d  /Users/chocholous/egd-e2e-copilot/egd-skills.zip
+08cb33063142b60cc83b9c63a2c08424709421e1e1e6a7b385cff231de482bd6  dist/egd-skills.zip
+      10
+  1909097                     98 files

@@ -1,0 +1,4 @@
+2c4b8608-4f56-480e-ba0e-473f1e13119b
+2c4b8608-4f56-480e-ba0e-473f1e13119b
+{"Id": "/Guid(a58056ee-5c89-4c7f-9728-3f6283aec907)/", "Resource": "4a212388-1e08-4d67-83a8-0fa6eca855a7", "ResourceId": "4a212388-1e08-4d67-83a8-0fa6eca855a7", "Scope": "Test.Read", "PackageName": "egd-overeni-apiaccess", "Status
+{"Id": "/Guid(09e54204-f9d3-46b1-b737-bc7c57e6afc0)/", "Resource": "egd-overeni-api", "ResourceId": "egd-overeni-api", "Scope": "Test.Read", "PackageName": "egd-overeni-apiaccess-nazev", "Status": null}

@@ -1,0 +1,45 @@
+{"zapis": "nova", "status": 201, "id": 2, "token": "lagAada09d5f09"}
+{"scenar": "nova", "token": "lagAada09d5f09", "sec_od_zapisu": 2, "status": 200, "nalezeno": 0, "search_sec": 1.77, "velky_v_indexu": 200}
+{"scenar": "nova", "token": "lagAada09d5f09", "sec_od_zapisu": 34, "status": 200, "nalezeno": 0, "search_sec": 0.685, "velky_v_indexu": 200}
+{"scenar": "nova", "token": "lagAada09d5f09", "sec_od_zapisu": 64, "status": 200, "nalezeno": 0, "search_sec": 0.439, "velky_v_indexu": 200}
+{"scenar": "nova", "token": "lagAada09d5f09", "sec_od_zapisu": 96, "status": 200, "nalezeno": 1, "search_sec": 0.57, "velky_v_indexu": 200}
+{"vysledek": "nova", "sec": 96}
+{"zapis": "uprava", "status": 204, "token": "lagB67a8a358ca"}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 1, "status": 200, "nalezeno": 0, "search_sec": 1.018, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 34, "status": 200, "nalezeno": 0, "search_sec": 1.785, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 66, "status": 200, "nalezeno": 0, "search_sec": 0.463, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 100, "status": 200, "nalezeno": 0, "search_sec": 3.528, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 131, "status": 200, "nalezeno": 0, "search_sec": 0.393, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 162, "status": 200, "nalezeno": 0, "search_sec": 0.427, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 194, "status": 200, "nalezeno": 0, "search_sec": 0.438, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 225, "status": 200, "nalezeno": 0, "search_sec": 0.424, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 256, "status": 200, "nalezeno": 0, "search_sec": 0.434, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 287, "status": 200, "nalezeno": 0, "search_sec": 0.412, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 318, "status": 200, "nalezeno": 0, "search_sec": 0.406, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 349, "status": 200, "nalezeno": 0, "search_sec": 0.406, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 380, "status": 200, "nalezeno": 0, "search_sec": 0.514, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 412, "status": 200, "nalezeno": 0, "search_sec": 0.479, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 442, "status": 200, "nalezeno": 0, "search_sec": 0.442, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 474, "status": 200, "nalezeno": 0, "search_sec": 0.443, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 505, "status": 200, "nalezeno": 0, "search_sec": 0.588, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 536, "status": 200, "nalezeno": 0, "search_sec": 0.511, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 567, "status": 200, "nalezeno": 0, "search_sec": 0.463, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 598, "status": 200, "nalezeno": 0, "search_sec": 0.416, "velky_v_indexu": 200}
+{"scenar": "uprava", "token": "lagB67a8a358ca", "sec_od_zapisu": 630, "status": 200, "nalezeno": 1, "search_sec": 0.604, "velky_v_indexu": 200}
+{"vysledek": "uprava", "sec": 630}
+{"zapis": "nova2", "status": 201, "token": "lagC7ea7cda56f"}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 1, "status": 200, "nalezeno": 0, "search_sec": 0.532, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 32, "status": 200, "nalezeno": 0, "search_sec": 0.413, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 63, "status": 200, "nalezeno": 0, "search_sec": 0.578, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 95, "status": 200, "nalezeno": 0, "search_sec": 1.66, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 126, "status": 200, "nalezeno": 0, "search_sec": 0.409, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 157, "status": 200, "nalezeno": 0, "search_sec": 0.384, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 190, "status": 200, "nalezeno": 0, "search_sec": 0.909, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 222, "status": 200, "nalezeno": 0, "search_sec": 1.439, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 253, "status": 200, "nalezeno": 0, "search_sec": 0.446, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 284, "status": 200, "nalezeno": 0, "search_sec": 0.504, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 315, "status": 200, "nalezeno": 0, "search_sec": 0.435, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 347, "status": 200, "nalezeno": 0, "search_sec": 0.408, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 378, "status": 200, "nalezeno": 0, "search_sec": 0.42, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 409, "status": 200, "nalezeno": 0, "search_sec": 0.435, "velky_v_indexu": 200}
+{"scenar": "nova2", "token": "lagC7ea7cda56f", "sec_od_zapisu": 441, "status": 200, "nalezeno": 0, "search_sec": 1.261, "velky_v_indexu": 200}

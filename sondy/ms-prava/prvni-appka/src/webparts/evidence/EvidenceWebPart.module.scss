@@ -1,0 +1,95 @@
+// Vzhled EG.D: indigo #1200E0 (tlacitka, odkazy), inkoust #261B62 (text, nadpisy),
+// chladne modroseda plocha #F0F1F5, pill tlacitka.
+$indigo: #1200E0;
+$inkoust: #261B62;
+$plocha: #F0F1F5;
+$okraj: #D5D7E3;
+
+.appka {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: $inkoust;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  box-sizing: border-box;
+}
+
+.hlavicka {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 16px; }
+}
+
+.role { font-size: 13px; background: $plocha; border-radius: 12px; padding: 4px 12px; }
+
+.zalozky {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  button {
+    border: 1px solid $okraj;
+    background: #fff;
+    color: $inkoust;
+    border-radius: 23px;
+    padding: 8px 18px;
+    font-size: 14px;
+    cursor: pointer;
+    &:hover { background: $plocha; }
+  }
+  .aktivni { background: $inkoust; border-color: $inkoust; color: #fff; &:hover { background: $inkoust; } }
+}
+
+.formular {
+  display: grid;
+  gap: 8px;
+  max-width: 640px;
+  label { font-weight: 600; font-size: 14px; margin-top: 8px; }
+  input, textarea {
+    font: inherit;
+    border: 1px solid $okraj;
+    border-radius: 8px;
+    padding: 10px 12px;
+    &:focus { outline: 2px solid $indigo; outline-offset: 1px; }
+  }
+  .primarni { justify-self: start; margin-top: 12px; }
+}
+
+.primarni, .sekundarni {
+  border-radius: 23px;
+  padding: 8px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid $indigo;
+}
+.primarni { background: $indigo; color: #fff; &:disabled { opacity: 0.5; cursor: default; } }
+.sekundarni { background: #fff; color: $indigo; }
+
+.tabulka {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  th { text-align: left; font-weight: 600; border-bottom: 2px solid $okraj; padding: 8px; }
+  td { border-bottom: 1px solid $okraj; padding: 10px 8px; vertical-align: top; }
+}
+
+.popis { color: #5a5480; margin-top: 4px; white-space: pre-wrap; }
+
+.stav { border-radius: 12px; padding: 2px 10px; font-size: 13px; white-space: nowrap; }
+.novy { background: $plocha; }
+.schvaleno { background: #DDF4E4; color: #0B5A2A; }
+.zamitnuto { background: #FBE1E0; color: #8A1C14; }
+
+.akce {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  input { font: inherit; border: 1px solid $okraj; border-radius: 8px; padding: 6px 10px; min-width: 160px; }
+}
+
+.chyba { background: #FBE1E0; color: #8A1C14; border-radius: 8px; padding: 10px 14px; }
+.zprava { background: #DDF4E4; color: #0B5A2A; border-radius: 8px; padding: 10px 14px; }
+.prazdno { color: #5a5480; }

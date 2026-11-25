@@ -1,0 +1,2 @@
+URL: https://witty-pond-0f3afad0f.4.azurestaticapps.net  SKU: Free  lokace: East US 2
+rezervace (3): egd03=Test Mobil, egd04=Test Alice, egd06=Test Bob

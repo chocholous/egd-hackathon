@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "prvni-appka-copilot-client-side-solution",
+    "id": "57f46aa6-fa0f-4dbe-9ade-df4108b43550",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "prvni-appka description"
+      },
+      "longDescription": {
+        "default": "prvni-appka description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "prvni-appka Feature",
+        "description": "The feature that activates elements of the prvni-appka solution.",
+        "id": "d0a4d7f6-a8cf-4374-9049-82eb3226bef5",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "7b59591a-0058-4799-be76-0d1f5b79ca95",
+        "scope": "Gateway.Use"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/prvni-appka-copilot.sppkg"
+  }
+}

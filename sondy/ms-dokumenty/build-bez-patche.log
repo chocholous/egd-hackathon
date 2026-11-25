@@ -1,0 +1,72 @@
+
+> appka@0.0.1 build
+> heft test --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:clean] Deleted 0 files and 6 folders
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] Compiling 1 files...
+[build:sass] Finished compiling.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:lint] Using ESLint version 9.37.0
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+[build:webpack] Error: node:fs - Module build failed: UnhandledSchemeError: Reading from "node:fs" is not handled by plugins (Unhandled scheme).
+[build:webpack] Webpack supports "data:" and "file:" URIs by default.
+[build:webpack] You may need an additional plugin to handle "node:" URIs.
+[build:webpack]     at /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1064:13
+[build:webpack]     at Hook.eval [as callAsync] (eval at create (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/node_modules/tapable/lib/HookCodeFactory.js:102:10), <anonymous>:6:1)
+[build:webpack]     at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/node_modules/tapable/lib/Hook.js:155:14)
+[build:webpack]     at /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1058:10
+[build:webpack]     at new Promise (<anonymous>)
+[build:webpack]     at readResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1055:14)
+[build:webpack]     at Object.processResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1077:28)
+[build:webpack]     at processResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:295:10)
+[build:webpack]     at iteratePitchingLoaders (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:358:9)
+[build:webpack]     at runLoaders (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:525:2)
+[build:webpack] Error: node:https - Module build failed: UnhandledSchemeError: Reading from "node:https" is not handled by plugins (Unhandled scheme).
+[build:webpack] Webpack supports "data:" and "file:" URIs by default.
+[build:webpack] You may need an additional plugin to handle "node:" URIs.
+[build:webpack]     at /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1064:13
+[build:webpack]     at Hook.eval [as callAsync] (eval at create (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/node_modules/tapable/lib/HookCodeFactory.js:102:10), <anonymous>:6:1)
+[build:webpack]     at /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1058:10
+[build:webpack]     at new Promise (<anonymous>)
+[build:webpack]     at readResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1055:14)
+[build:webpack]     at Object.processResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1077:28)
+[build:webpack]     at processResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:295:10)
+[build:webpack]     at iteratePitchingLoaders (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:358:9)
+[build:webpack]     at runLoaders (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:525:2)
+[build:webpack]     at NormalModule._doBuild (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1040:3)
+-------------------- Failed (139.456s) --------------------
+Encountered 2 errors
+  [build:webpack] node:fs - Module build failed: UnhandledSchemeError: Reading from "node:fs" is not handled by plugins (Unhandled scheme).
+Webpack supports "data:" and "file:" URIs by default.
+You may need an additional plugin to handle "node:" URIs.
+    at /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1064:13
+    at Hook.eval [as callAsync] (eval at create (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/node_modules/tapable/lib/HookCodeFactory.js:102:10), <anonymous>:6:1)
+    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/node_modules/tapable/lib/Hook.js:155:14)
+    at /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1058:10
+    at new Promise (<anonymous>)
+    at readResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1055:14)
+    at Object.processResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1077:28)
+    at processResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:295:10)
+    at iteratePitchingLoaders (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:358:9)
+    at runLoaders (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:525:2)
+  [build:webpack] node:https - Module build failed: UnhandledSchemeError: Reading from "node:https" is not handled by plugins (Unhandled scheme).
+Webpack supports "data:" and "file:" URIs by default.
+You may need an additional plugin to handle "node:" URIs.
+    at /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1064:13
+    at Hook.eval [as callAsync] (eval at create (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/node_modules/tapable/lib/HookCodeFactory.js:102:10), <anonymous>:6:1)
+    at /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1058:10
+    at new Promise (<anonymous>)
+    at readResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1055:14)
+    at Object.processResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1077:28)
+    at processResource (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:295:10)
+    at iteratePitchingLoaders (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:358:9)
+    at runLoaders (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/loader-runner/lib/LoaderRunner.js:525:2)
+    at NormalModule._doBuild (/Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka/node_modules/webpack/lib/NormalModule.js:1040:3)
+rc=1

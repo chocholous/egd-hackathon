@@ -1,0 +1,8 @@
+--- eval fetch('/sites/egd-sonda-ms-dokumenty/_api/web/defaultDocumentLibrary/items?$select=Id&$top=1', {headers:{Accept:'application/json;odata=nometadata'}}).then(r=>r.text()).then(t=>'nometadata: '+t.slice(0,300))
+VYSLEDEK: nometadata: {"odata.nextLink":"https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/_api/web/defaultDocumentLibrary/items?%24skiptoken=Paged%3dTRUE%26p_SortBehavior%3d1%26p_ID%3d2&%24select=Id&%24top=1","value":[{"Id":2,"ID":2}]}
+--- eval fetch('/sites/egd-sonda-ms-dokumenty/_api/web/defaultDocumentLibrary/items?$select=Id&$top=1', {headers:{Accept:'application/json;odata=nometadata','OData-Version':'4.0'}}).then(r=>r.text()).then(t=>'nometadata+v4: '+t.slice(0,300))
+VYSLEDEK: nometadata+v4: {"@odata.context":"https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/_api/$metadata#SP.ListData.Sdilene_x0020_dokumentyItems","@odata.nextLink":"https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/_api/web/defaultDocumentLibrary/items?%24skiptoken=Paged%3d
+--- eval fetch('/sites/egd-sonda-ms-dokumenty/_api/web/defaultDocumentLibrary/items?$select=Id&$top=1', {headers:{Accept:'application/json','OData-Version':'4.0'}}).then(r=>r.text()).then(t=>'json+v4: '+t.slice(0,300))
+VYSLEDEK: json+v4: {"@odata.context":"https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/_api/$metadata#SP.ListData.Sdilene_x0020_dokumentyItems","@odata.nextLink":"https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/_api/web/defaultDocumentLibrary/items?%24skiptoken=Paged%3d
+LOG:
+

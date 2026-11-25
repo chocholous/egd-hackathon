@@ -1,0 +1,4 @@
+## deploy
+## permissionrequest list (CLI)
+{"error":"Request failed with status code 403"}
+## CSOM přímo (Přes az token na admin URL nejde; použijeme m365 request)

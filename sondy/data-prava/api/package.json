@@ -1,0 +1,3 @@
+{ "name": "egd-sonda-data-api", "version": "0.3.0", "private": true, "type": "module",
+  "scripts": { "start": "node server.mjs" },
+  "dependencies": { "jose": "5.9.6", "mssql": "11.0.1" } }

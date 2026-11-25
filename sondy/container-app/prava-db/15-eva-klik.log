@@ -1,0 +1,99 @@
+--- klik me
+LOG po kliku: HOTOVO me HTTP 200 (485 ms)
+{
+  "upn": "eva.vesela@pavelchocholousgmail.onmicrosoft.com",
+  "oid": "fda469d6-be68-402d-9a40-f1040be2ec31",
+  "roles": [
+    "Schvalovatel"
+  ],
+  "ver": "0.2"
+}
+--- eval (document.querySelector('button[data-k="polozky"]').click(), new Promise(r=>setTimeout(()=>r(document.querySelector('#log').textContent.slice(0,600)),8000)))
+VYSLEDEK: HOTOVO polozky HTTP 200 (90 ms)
+{
+  "value": [
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 6,
+      "ID": 6,
+      "Title": "prava-db prohlížeč (Tomáš)"
+    },
+    {
+      "Author": {
+        "Title": "Kučera Jakub"
+      },
+      "Id": 5,
+      "ID": 5,
+      "Title": "prava-db 015133 (C)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 4,
+      "ID": 4,
+      "Title": "prava-db 015133 (A)"
+    },
+    {
+      "Author": {
+        "Title": "Kučera Jakub"
+      },
+      "Id": 3,
+      "ID": 3,
+      "Title": "prava-db 015
+LOG:
+HOTOVO polozky HTTP 200 (90 ms)
+{
+  "value": [
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 6,
+      "ID": 6,
+      "Title": "prava-db prohlížeč (Tomáš)"
+    },
+    {
+      "Author": {
+        "Title": "Kučera Jakub"
+      },
+      "Id": 5,
+      "ID": 5,
+      "Title": "prava-db 015133 (C)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 4,
+      "ID": 4,
+      "Title": "prava-db 015133 (A)"
+    },
+    {
+      "Author": {
+        "Title": "Kučera Jakub"
+      },
+      "Id": 3,
+      "ID": 3,
+      "Title": "prava-db 015114 (C)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 2,
+      "ID": 2,
+      "Title": "prava-db 015114 (A)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 1,
+      "ID": 1,
+      "Title": "prava-db 015053 (A)"
+    }
+  ]
+}

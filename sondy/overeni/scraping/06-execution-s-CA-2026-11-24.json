@@ -1,0 +1,33 @@
+{
+ "endTime": "2026-11-24T01:49:50+00:00",
+ "startTime": "2026-11-24T01:49:23+00:00",
+ "status": "Succeeded",
+ "template": {
+  "containers": [
+   {
+    "args": [
+     "-c",
+     "import os,base64;exec(base64.b64decode(os.environ['S']))"
+    ],
+    "command": [
+     "python3"
+    ],
+    "env": [
+     {
+      "name": "SCRAPE_URL",
+      "value": "https://www.ote-cr.cz/cs/kratkodobe-trhy/elektrina/denni-trh"
+     }
+    ],
+    "image": "mcr.microsoft.com/azurelinux/base/python:3.12",
+    "imageType": "ContainerImage",
+    "name": "scrape",
+    "resources": {
+     "cpu": 0.25,
+     "ephemeralStorage": "",
+     "memory": "0.5Gi"
+    }
+   }
+  ],
+  "initContainers": []
+ }
+}

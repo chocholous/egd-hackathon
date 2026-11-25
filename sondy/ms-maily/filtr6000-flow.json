@@ -1,0 +1,26 @@
+{
+ "displayName": "EGD ms-maily: test Get items nad 6000 (filtr, 5000, stránkování)",
+ "state": "Started",
+ "connectionReferences": {
+  "shared_sharepointonline": {
+   "connectionName": "shared-sharepointonl-ab987b44-87ad-4ffd-9dce-7688bde92ab0",
+   "source": "Embedded",
+   "id": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+   "tier": "NotSpecified"
+  }
+ },
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {"$authentication": {"defaultValue": {}, "type": "SecureObject"}, "$connections": {"defaultValue": {}, "type": "Object"}},
+  "triggers": {"Recurrence": {"type": "Recurrence", "recurrence": {"frequency": "Minute", "interval": 1}}},
+  "actions": {
+   "A_Stav_Novy_top5000": {"runAfter": {}, "type": "OpenApiConnection", "inputs": {"host": {"apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline", "connectionName": "shared_sharepointonline", "operationId": "GetItems"}, "parameters": {"dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily", "table": "f1b68849-e3ea-4418-a410-22d5f231a27b", "$filter": "Stav eq 'Nový'", "$top": 5000}, "authentication": "@parameters('$authentication')"}},
+   "B_bez_filtru_top5000": {"runAfter": {}, "type": "OpenApiConnection", "inputs": {"host": {"apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline", "connectionName": "shared_sharepointonline", "operationId": "GetItems"}, "parameters": {"dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily", "table": "f1b68849-e3ea-4418-a410-22d5f231a27b", "$top": 5000}, "authentication": "@parameters('$authentication')"}},
+   "C_bez_filtru_vychozi": {"runAfter": {}, "type": "OpenApiConnection", "inputs": {"host": {"apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline", "connectionName": "shared_sharepointonline", "operationId": "GetItems"}, "parameters": {"dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily", "table": "f1b68849-e3ea-4418-a410-22d5f231a27b"}, "authentication": "@parameters('$authentication')"}},
+   "D_bez_filtru_strankovani5000": {"runAfter": {}, "type": "OpenApiConnection", "inputs": {"host": {"apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline", "connectionName": "shared_sharepointonline", "operationId": "GetItems"}, "parameters": {"dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily", "table": "f1b68849-e3ea-4418-a410-22d5f231a27b"}, "authentication": "@parameters('$authentication')"}, "runtimeConfiguration": {"paginationPolicy": {"minimumItemCount": 5000}}},
+   "E_Stav_Novy_strankovani5000": {"runAfter": {}, "type": "OpenApiConnection", "inputs": {"host": {"apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline", "connectionName": "shared_sharepointonline", "operationId": "GetItems"}, "parameters": {"dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily", "table": "f1b68849-e3ea-4418-a410-22d5f231a27b", "$filter": "Stav eq 'Nový'"}, "authentication": "@parameters('$authentication')"}, "runtimeConfiguration": {"paginationPolicy": {"minimumItemCount": 5000}}},
+   "F_Created_24h_top5000": {"runAfter": {}, "type": "OpenApiConnection", "inputs": {"host": {"apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline", "connectionName": "shared_sharepointonline", "operationId": "GetItems"}, "parameters": {"dataset": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily", "table": "f1b68849-e3ea-4418-a410-22d5f231a27b", "$filter": "Created ge '@{addDays(utcNow(),-1)}'", "$top": 5000}, "authentication": "@parameters('$authentication')"}}
+  }
+ }
+}

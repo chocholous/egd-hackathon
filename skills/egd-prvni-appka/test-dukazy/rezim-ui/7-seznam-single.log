@@ -1,0 +1,7 @@
+seznam id: 982bd7b0-696e-4ea7-8eb6-a70aab0e57a9
+klik Oprávnění pro: Seznam: true
+dialog: Chystáte se zdědit oprávnění z nadřazeného webu. Všechna vlastní oprávnění budou ztracena. -> OK
+klik Odstranit jedinečná oprávnění: true
+volba vsechny polozky: 1
+stav: {"web":["Omezený přístup"],"seznamVlastni":false,"writeSecurity":1,"seznam":["Omezený přístup"]}
+ZAPSANO

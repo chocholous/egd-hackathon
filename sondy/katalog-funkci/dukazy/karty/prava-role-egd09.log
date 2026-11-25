@@ -1,0 +1,45 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[1.1s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/prava.aspx
+[4.1s] OK wait:3000  
+[11.4s] OK rozbal  
+6 zón
+[11.4s] OK eval:document.querySelector('[data-sp-web-part-id="35d2a567-3b96-4d18-907d-16f486e50e79"]').scrollIntoView()  {"interrupted":false}
+[12.4s] OK wait:1000  
+[12.5s] OK shotv:01-egd09-role  
+dukazy/karty/prava-role/egd09/01-egd09-role.png
+[12.5s] OK eval:document.querySelector('[data-sp-web-part-id="35d2a567-3b96-4d18-907d-16f486e50e79"]').innerText.slice(0,300)  
+Evidence s rolemi
+Zadavatel
+Nový požadavek
+Moje požadavky
+Co potřebujete (krátce)
+Popis
+Odeslat ke schválení
+[12.5s] OK fill:#evidence-nazev=Katalog práva: požadavek egd09 1932  
+[12.5s] OK fill:#evidence-popis=Vidí jen zadavatel a schvalovatel.  
+[12.6s] OK click:Odeslat ke schválení  
+[13.4s] OK waitfor:Požadavek je odeslaný  
+[13.5s] OK click:Moje požadavky  
+[15.5s] OK wait:2000  
+[15.6s] OK shotv:02-egd09-moje  
+dukazy/karty/prava-role/egd09/02-egd09-moje.png
+[15.6s] OK eval:document.querySelector('[data-sp-web-part-id="35d2a567-3b96-4d18-907d-16f486e50e79"]').innerText.slice(0,500)  
+Evidence s rolemi
+Zadavatel
+Nový požadavek
+Moje požadavky
+Požadavek	Zadal	Kdy	Stav	Komentář
+Katalog práva: požadavek egd09 1932
+Vidí jen zadavatel a schvalovatel.
+	Účastník 09	24. 11. 2026	Nový	
+[15.6s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/Effec
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  POST 201 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/Effec
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items

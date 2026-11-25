@@ -1,0 +1,47 @@
+21a22
+>   '@odata.etag': string;
+34a36
+> const CHYBA_SOUCASNE_ZMENY = 'Mezitím položku změnil někdo jiný.';
+82c84,85
+<   private async _zapis(cesta: string, telo: object, merge = false): Promise<void> {
+---
+>   private async _zapis(cesta: string, telo: object, etag?: string): Promise<void> {
+>     if (cesta.startsWith('/items(') && !etag) throw new Error('Změnu nelze bezpečně uložit bez verze položky. Obnovte stránku a zkuste to znovu.');
+84c87
+<     if (merge) { headers['IF-MATCH'] = '*'; headers['X-HTTP-Method'] = 'MERGE'; }
+---
+>     if (etag) { headers['IF-MATCH'] = etag; headers['X-HTTP-Method'] = 'MERGE'; }
+91a95
+>     if (r.status === 412) return CHYBA_SOUCASNE_ZMENY;
+99c103
+<   private async _nacti(): Promise<void> {
+---
+>   private async _nacti(): Promise<boolean> {
+108a113
+>       return true;
+110a116
+>       return false;
+187c193
+<       this._zapis(`/items(${p.Id})`, { Stav: stav, Komentar: komentar.value.trim() }, true)
+---
+>       this._zapis(`/items(${p.Id})`, { Stav: stav, Komentar: komentar.value.trim() }, p['@odata.etag'])
+189c195,211
+<         .catch((e: Error) => { this._chyba = e.message; this.render(); });
+---
+>         .catch(async (e: Error) => {
+>           if (e.message === CHYBA_SOUCASNE_ZMENY) {
+>             const obnoveno = await this._nacti();
+>             const chybaObnovy = this._chyba;
+>             if (!obnoveno) this._keSchvaleni = [];
+>             try {
+>               const aktualni = await this._cti<{ Title: string; Stav?: string }>(`/items(${p.Id})?$select=Title,Stav`);
+>               this._chyba = `Požadavek "${aktualni.Title}" mezitím změnil někdo jiný. Aktuální stav: ${aktualni.Stav || STAV_NOVY}. Seznam ke schválení byl aktualizován.`;
+>               if (!obnoveno) this._chyba += ` Obnovení seznamu selhalo: ${chybaObnovy}`;
+>             } catch (chybaStavu) {
+>               this._chyba = `${CHYBA_SOUCASNE_ZMENY} Aktuální stav se nepodařilo načíst: ${(chybaStavu as Error).message}`;
+>             }
+>           } else {
+>             this._chyba = e.message;
+>           }
+>           this.render();
+>         });

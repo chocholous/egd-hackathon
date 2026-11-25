@@ -1,0 +1,8 @@
+# 2026-11-24T10:31:45Z převod položky nahrané klientem 42df (sablona.docx) tokeny s užšími scopy, egd01
+## klient 953de580-40df-4b86-97d9-bd118be6a282 () site=nalezenpavelchocholousgmail.sharepoint.com,3b17928e-96ce-4c0f-b88c-461fc5040abc,0073c481-9b23-45c9-9b98-38a40d8f3607
+  convert docx: http=200 size=56937
+  convert přes /drives bez site: http=400
+## klient ac1ff591-098c-43fa-b451-1117430d9bd9 (Files.Read) site=403 NENALEZEN
+  convert přes /drives bez site: http=400
+## Files.Read (klient ac1ff591) s přímo zadaným site id
+  convert docx: http=403

@@ -1,0 +1,57 @@
+2026-11-22T20:00:11.593Z [INFO] Shell completions: no writable completion directory found for zsh, skipping
+2026-11-22T20:00:11.593Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] device MDM: no policy present on this device
+2026-11-22T20:00:11.593Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] server policy fetch skipped: no authenticated GitHub host available
+2026-11-22T20:00:11.593Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] effective policy resolved: source=none, bypassDisabled=false, serverFetchFailed=false, policyHelperConfigured=false, policyHelperAuthority=none, policyHelperFailed=false, policyHelperFailClosed=false, policyHelperContributedSandbox=false
+2026-11-22T20:00:11.915Z [WARNING] [rust:rt_network::tls_certs] Ignoring distrusted emSign ECC Root CA - G3 trust anchor
+2026-11-22T20:00:13.085Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] device MDM: no policy present on this device
+2026-11-22T20:00:13.085Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] server policy: none for this account (404: no configured policy) from https://github.com
+2026-11-22T20:00:13.085Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] effective policy resolved: source=none, bypassDisabled=false, serverFetchFailed=false, policyHelperConfigured=false, policyHelperAuthority=none, policyHelperFailed=false, policyHelperFailClosed=false, policyHelperContributedSandbox=false
+2026-11-22T20:00:13.089Z [INFO] [rust:copilot_sdk] hosting copilot runtime in-process (FFI)
+2026-11-22T20:00:13.089Z [INFO] [rust:copilot_sdk] copilot CLI client ready {"pid":"None"}
+2026-11-22T20:00:13.091Z [INFO] Session indexing debug: SESSION_INDEXING=true, repository=undefined
+2026-11-22T20:00:13.117Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] device MDM: no policy present on this device
+2026-11-22T20:00:13.117Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] effective policy resolved: source=none, bypassDisabled=false, serverFetchFailed=false, policyHelperConfigured=false, policyHelperAuthority=none, policyHelperFailed=false, policyHelperFailClosed=false, policyHelperContributedSandbox=false
+2026-11-22T20:00:13.144Z [INFO] [rust:permission_configuration_runtime::implementation] [managedSettings] applied: no bypass restriction in force (managed policy absent)
+2026-11-22T20:00:13.146Z [INFO] [rust:permission_configuration_runtime::implementation] [managedSettings] applied: no bypass restriction in force (managed policy absent)
+2026-11-22T20:00:13.146Z [WARNING] [rust:copilot_runtime::session::api_session_options_update] Failed to reload managed hooks after enabling managed settings {"error":"no hook session for session id 2a90094a-4cb7-497a-8995-4e30c2195b0c"}
+2026-11-22T20:00:13.146Z [INFO] [rust:native_managed_settings::implementation] [managedSettings] self-fetch starting for account (device)
+2026-11-22T20:00:13.147Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] device MDM: no policy present on this device
+2026-11-22T20:00:13.147Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] server policy fetch skipped: no authenticated GitHub host available
+2026-11-22T20:00:13.147Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] effective policy resolved: source=none, bypassDisabled=false, serverFetchFailed=false, policyHelperConfigured=false, policyHelperAuthority=none, policyHelperFailed=false, policyHelperFailClosed=false, policyHelperContributedSandbox=false
+2026-11-22T20:00:13.147Z [INFO] [rust:permission_configuration_runtime::implementation] [managedSettings] applied: no bypass restriction in force (managed policy absent)
+2026-11-22T20:00:13.148Z [INFO] [rust:native_managed_settings::implementation] [managedSettings] self-fetch complete for (device): bypassDisabled=false, serverFetchFailed=false, serverResolution=Live, serverRetryableFailure=false, deviceLoadFailed=false
+2026-11-22T20:00:13.148Z [WARNING] [rust:events_engine::host_delivery] event was not delivered to its registered session host {"error":"GenericFailure, no session host is registered for session 2a90094a-4cb7-497a-8995-4e30c2195b0c"}
+2026-11-22T20:00:13.148Z [INFO] [rust:rt_tgrep] tgrep status changed {"status":"server-not-running"}
+2026-11-22T20:00:13.172Z [INFO] [rust:copilot_sdk] hosting copilot runtime in-process (FFI)
+2026-11-22T20:00:13.172Z [INFO] [rust:copilot_sdk] copilot CLI client ready {"pid":"None"}
+2026-11-22T20:00:13.189Z [INFO] [rust:rt_tgrep] tgrep status changed {"status":"server-not-running"}
+2026-11-22T20:00:13.194Z [INFO] [rust:permission_configuration_runtime::implementation] [managedSettings] applied: no bypass restriction in force (managed policy absent)
+2026-11-22T20:00:13.196Z [INFO] [rust:native_managed_settings::implementation] [managedSettings] self-fetch starting for account https://github.com/chocholous
+2026-11-22T20:00:13.200Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] device MDM: no policy present on this device
+2026-11-22T20:00:13.200Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] confirmed no policy served from fresh cache (age 113ms) from https://github.com
+2026-11-22T20:00:13.200Z [INFO] [rust:rt_managed_settings_ingest] [managedSettings] effective policy resolved: source=none, bypassDisabled=false, serverFetchFailed=false, policyHelperConfigured=false, policyHelperAuthority=none, policyHelperFailed=false, policyHelperFailClosed=false, policyHelperContributedSandbox=false
+2026-11-22T20:00:13.200Z [INFO] [rust:permission_configuration_runtime::implementation] [managedSettings] applied: no bypass restriction in force (managed policy absent)
+2026-11-22T20:00:13.200Z [INFO] [rust:otel] OTel session policy applied
+2026-11-22T20:00:13.200Z [INFO] [rust:native_managed_settings::implementation] [managedSettings] self-fetch complete for https://github.com/chocholous: bypassDisabled=false, serverFetchFailed=false, serverResolution=FreshCache, serverRetryableFailure=false, deviceLoadFailed=false
+2026-11-22T20:00:13.210Z [INFO] Workspace initialized: 2a90094a-4cb7-497a-8995-4e30c2195b0c (checkpoints: 0)
+2026-11-22T20:00:13.227Z [INFO] [rust:cafe_metrics::client] CAFE metrics are paused because no supported endpoint is available
+2026-11-22T20:00:13.228Z [INFO] Starting Copilot CLI: 1.0.114
+2026-11-22T20:00:13.228Z [INFO] Node.js version: v24.22.1
+2026-11-22T20:00:13.228Z [INFO] [rust:cafe_metrics::client] CAFE metrics endpoint became available
+2026-11-22T20:00:14.682Z [INFO] No update needed, current version is 1.0.114, fetched latest release is v1.0.114
+2026-11-22T20:00:15.264Z [WARNING] [rust:copilot_runtime::session::native_message_turn] turn model is in neither the picker nor the unfiltered catalog, nor the session's excluded-model capture; falling back to default capabilities and the chat-completions wire {"model":"auto","latest_model_list_fetch_succeeded":true,"picker_models":0,"unfiltered_models":21,"catalog_only_models":4}
+2026-11-22T20:00:15.948Z [WARNING] [rust:copilot_runtime::session::native_message_turn] turn model is in neither the picker nor the unfiltered catalog, nor the session's excluded-model capture; falling back to default capabilities and the chat-completions wire {"model":"auto","latest_model_list_fetch_succeeded":true,"picker_models":0,"unfiltered_models":21,"catalog_only_models":4}
+2026-11-22T20:00:16.025Z [WARNING] [rust:copilot_runtime::session::native_message_turn] turn model is in neither the picker nor the unfiltered catalog, nor the session's excluded-model capture; falling back to default capabilities and the chat-completions wire {"model":"auto","latest_model_list_fetch_succeeded":true,"picker_models":0,"unfiltered_models":21,"catalog_only_models":4}
+2026-11-22T20:00:26.448Z [INFO] [rust:rt_login_shell_env] login_shell_env_outcome {"outcome":"captured","shell":"/bin/bash","elapsed_ms":35,"names_added":0,"names_changed":0,"path_entries_before":24,"path_entries_after":24,"path_entries_added":0,"path_front_changed":false,"path_front_before":"/Users/chocholous/.opencode/bin","path_front_after":"/Users/chocholous/.opencode/bin"}
+2026-11-22T20:04:31.692Z [INFO] [rust:copilot_runtime::session::registry] Closed interrupted sub-agent records on resume {"closed":0,"dangling":0}
+2026-11-22T20:04:31.702Z [WARNING] [rust:copilot_sdk::jsonrpc] received response for unknown request id {"request_id":"16"}
+2026-11-22T20:04:31.723Z [ERROR] Failed to dispatch task transition: Error: The original session binding is no longer active
+2026-11-22T20:04:31.776Z [INFO] [rust:copilot_sdk] stopping CLI process {"pid":"None"}
+2026-11-22T20:04:31.783Z [INFO] [rust:copilot_sdk] CLI process stopped {"pid":"None","errors":0}
+2026-11-22T20:04:31.785Z [INFO] Closing session 2a90094a-4cb7-497a-8995-4e30c2195b0c
+2026-11-22T20:04:32.509Z [INFO] [rust:copilot_sdk] stopping CLI process {"pid":"None"}
+2026-11-22T20:04:32.509Z [INFO] [rust:copilot_sdk] CLI process stopped {"pid":"None","errors":0}
+2026-11-22T20:04:32.509Z [INFO] [rust:copilot_sdk] stopping CLI process {"pid":"None"}
+2026-11-22T20:04:32.509Z [INFO] [rust:copilot_sdk] CLI process stopped {"pid":"None","errors":0}
+2026-11-22T20:04:32.509Z [INFO] [rust:copilot_sdk] stopping CLI process {"pid":"None"}
+2026-11-22T20:04:32.509Z [INFO] [rust:copilot_sdk] CLI process stopped {"pid":"None","errors":0}

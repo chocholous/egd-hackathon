@@ -1,0 +1,66 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK klik:Udělit oprávnění
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK wait:2000
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK type:#peoplePicker_TopSpan_EditorInput=Evidence Zadavatelé
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK wait:3000
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK key:Enter
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK wait:1500
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK klikobs:ZOBRAZIT MOŽNOSTI
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK unchecklabel:Poslat pozvánku e-mailem
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK select:#DdlGroup=EGD Zadavatel
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK css:input[value='Sdílet']
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK wait:4000
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+TEXT:
+Zapnout režim s vyšším usnadněním
+Přeskočit příkazy pásu karet
+Přejít k hlavnímu obsahu
+Vypnout animace
+SharePoint
+KM
+K procházení pásu karet lze použít standardní navigační klávesy prohlížeče. Pro přecházení mezi skupinami použijte kombinaci kláves Ctrl+Šipka doleva nebo Ctrl+Šipka doprava. Chcete-li přejít na první kartu pásu karet, použijte kombinaci kláves Ctrl+[. Chcete-li přejít na poslední vybraný příkaz, použijte kombinaci kláves Ctrl+]. K aktivaci příkazu použijte klávesu Enter.
+PROCHÁZENÍ
+Karta 1 z 2
+Nástroje pro oprávnění
+OPRÁVNĚNÍ
+Skupina Nástroje pro oprávnění, karta 2 z 2
+SDÍLET 
+SLEDOVAT 
+Odstranit jedinečná
+oprávnění
+Dědičnost
+Udělit
+oprávnění
+Udělit
+Upravit uživatelská
+oprávnění
+Odebrat uživatelská
+oprávnění
+Změnit
+Zkontrolovat
+oprávnění
+Zkontrolovat
+Domovská stránka
+Dokumenty
+Stránky
+Nejnovější
+Pozadavky
+Obsah webu
+UPRAVIT ODKAZY
+Důležité Stav
+Pro tento seznam jsou nastavena jedinečná oprávnění.
+	Jméno	Typ	Úrovně oprávnění
+	
+ Vlastníci webu EGD sonda ms-prava
+	Skupina služby SharePoint	Úplné řízení
+

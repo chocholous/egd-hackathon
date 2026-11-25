@@ -1,0 +1,71 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● skill(egd-prvni-appka)
+
+Postupuji podle hotové kontroly připravenosti: nejdřív ověřím doporučenou cestu a místní přihlášení/nástroje, potom ukážu konkrétní plán zápisů na uvedený web a — s vaším předchozím „ano“ — provedu je pouze tam.
+
+ $ Shell Locate readiness result 7 lines…
+   pwd && ls -la && find . -maxdepth 3 -type f \( -name 'vysledky.json' -o -name 'pripravenost-*.md'
+   \) -print
+
+ $ Shell Read readiness recommendation 10 lines…
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" cesta
+
+ {} Read .pripravenost/vysledky.json 263 lines read
+
+ ✗ Shell Check deployment command options Failed with exit code 2  appka.mjs - prvni appka EG.D (Sp…
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" --help
+   appka.mjs - prvni appka EG.D (Spokojenost s prostredim kancelare dnes, 1-5 + dashboard)
+   
+   Spoustej v pracovni slozce z egd-pripravenost:  node "<cesta>/appka.mjs" <prikaz> [volby]
+   
+   Prikazy:
+     cesta                         precte .pripravenost/vysledky.json a doporuci cestu A / A2 / B
+     novy   --znacka eon|egd [--slozka prvni-appka]
+                                   zalozi projekt ze sablony (nove GUIDy), zapise znacku do 
+   _znacka.scss
+                                   a nainstaluje balicky (npm ci). Znacku VZDY zjisti od uzivatele.
+            [--bez-instalace]      jen zkopiruje sablonu (a zapise znacku)
+     build  [--slozka prvni-appka] postavi .sppkg (npm run build), chyby i do build.log
+     seznam --web <url> [--seznam MojeAppka] [--znacka eon|egd | --slozka prvni-appka] [--ano]
+                                   zalozi seznam MojeAppka a sloupce Hodnoceni, Den (bez --ano jen 
+   plan);
+                                   barvy Hodnoceni podle znacky (bez --znacka se cte z projektu)
+     nasadit --web <url> [--slozka prvni-appka] [--stranka prvni-appka] [--nadpis "..."] [--seznam 
+   MojeAppka] [--ano]
+                                   nahraje do katalogu TOHOTO webu, deploy, install/upgrade, stranka
+                                   (Article -> sekce -> web part -> SingleWebPartAppPage), cteni 
+   zpet
+     over   --web <url> [--slozka prvni-appka] [--stranka prvni-appka] [--seznam MojeAppka]
+                                   jen cteni: appka v katalogu, stranka s web partem, polozky 
+   seznamu
+   
+   Spolecne volby: --cli <cesta k @pnp/cli-microsoft365/dist/index.js> (jinak ./node_modules nebo
+   PRVNI_APPKA_M365_CLI / PRIPRAVENOST_M365_CLI).
+   Kody: 0 hotovo, 1 chyba, 2 spatne pouziti, 10 plan bez zapisu (neni chyba).
+   Failed with exit code 2
+
+**Plán:** připravím v této pracovní složce zdrojáky ve variantě **EG.D** (z „lab, ne E.ON“), sestavím balíček, založím seznam `MojeAppka` a nasadím appku i její stránku výhradně na `https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon`. Připravenost potvrzuje Node, přihlášení, roli vlastníka a katalog tohoto webu; nic nemažu ani nezapisuji na jiný web. Vaše „ano“ beru jako schválení tohoto plánu a pokračuji.
+
+
+Exiting…
+ ✗ Shell Create and build SPFx project Operation aborted by user                                 50s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" novy
+   --slozka prvni-appka --znacka egd && node
+   "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c6295599
+   c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" build --slozka
+   prvni-appka
+
+ ● Operation cancelled by user
+
+Session exported to: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c6295599c8c7/scratchpad/pa/sb-eon/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 0.43 (1m 18s)
+Tokens     ↑ 91.0k (72.0k cached, 19.0k written) • ↓ 2.3k (1.5k reasoning)
+Resume     copilot --resume=e5e1ee8c-8a58-4a31-98cb-7229bcbc68f9

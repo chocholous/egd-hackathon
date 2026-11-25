@@ -1,0 +1,46 @@
+== data-etag: sondy/miniskilly/etag-appka/sharepoint/solution/prvni-appka.sppkg (solution e88c2adb-c213-4cda-9de9-7bf09c1fc429) → data-etag-prvni-appka.sppkg
+   app 7ad294ae-782b-4b8e-847a-6b2b73060ede nasazena a nainstalována
+== prava-role: sondy/ms-prava/prvni-appka/sharepoint/solution/prvni-appka.sppkg (solution d824b10f-3d53-4a8f-bc48-304d03b40781) → prava-role-prvni-appka.sppkg
+   app f746aa8d-0469-4d48-8d35-bf9273b4fd7e nasazena a nainstalována
+== prava-db: sondy/container-app/prava-db/spfx/sharepoint/solution/egd-prava-db.sppkg (solution 8f4c71ec-8550-4514-ae08-328a5352864b) → prava-db-egd-prava-db.sppkg
+   app 6d7cb1be-a18c-40b7-a512-e59e27a8bf19 nasazena a nainstalována
+== dok-generator: sondy/dokumenty/spfx/egd-dokumenty/sharepoint/solution/egd-dokumenty.sppkg (solution 08b811fe-2538-4d6b-b981-9cfc6f1b3b4b) → dok-generator-egd-dokumenty.sppkg
+   app 3020f4a3-e620-4aec-a0a3-ff780f495d59 nasazena a nainstalována
+== dok-evidence: sondy/ms-dokumenty/appka/sharepoint/solution/appka.sppkg (solution af0391ac-55ec-4c26-9a04-19b7d43abaae) → dok-evidence-appka.sppkg
+   app ede9723f-a3d0-49ad-89a6-1a03fce083f2 nasazena a nainstalována
+== dok-spokojenost: sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/appka-spokojenost.sppkg (solution 2d0f5a8f-5933-4d35-b711-a25cfb944f88) → dok-spokojenost-appka-spokojenost.sppkg
+   app 76407063-9c14-4ca4-90a8-b9bbace41b9e nasazena a nainstalována
+== dok-pdf-ca: sondy/container-app/libreoffice/spfx/sharepoint/solution/egd-ca-dokumenty.sppkg (solution f6acc582-8350-43ad-911f-be2bfab007bc) → dok-pdf-ca-egd-ca-dokumenty.sppkg
+   app 3b43a6f4-864a-4d9d-943c-b9805b81cb58 nasazena a nainstalována
+== mail: sondy/ms-maily/prvni-appka/sharepoint/solution/prvni-appka.sppkg (solution 1e08a931-b93d-42a6-8cc2-9d7248947bfe) → mail-prvni-appka.sppkg
+   app ffbf328c-6c55-4b22-a35d-9b9b1372f722 nasazena a nainstalována
+== ai-gateway: sondy/ai/spfx/sharepoint/solution/egd-ai-gateway.sppkg (solution c4d1a0f2-7e3b-4c55-8a1d-2f6b9e0d7a13) → ai-gateway-egd-ai-gateway.sppkg
+   app b398aa40-a599-4a75-8291-1a55b68ed9d2 nasazena a nainstalována
+== ai-llm: sondy/ms-llm/prvni-appka/sharepoint/solution/prvni-appka.sppkg (solution fd7ded56-1262-435d-b628-851d35e6719a) → ai-llm-prvni-appka.sppkg
+   app c8824100-d0cb-405b-8636-e6674190e447 nasazena a nainstalována
+== obo: sondy/container-app/obo/spfx/sharepoint/solution/egd-ca-obo.sppkg (solution 876f8081-cf1b-4637-be7b-9784e2fe2f75) → obo-egd-ca-obo.sppkg
+   app 1367c5e3-93f0-45af-8ba0-aefec7f90066 nasazena a nainstalována
+== data-etag: sondy/miniskilly/etag-appka/sharepoint/solution/prvni-appka.sppkg (solution e88c2adb-c213-4cda-9de9-7bf09c1fc429) → data-etag-prvni-appka.sppkg
+   app 7ad294ae-782b-4b8e-847a-6b2b73060ede nasazena a nainstalována
+== prava-role: sondy/ms-prava/prvni-appka/sharepoint/solution/prvni-appka.sppkg (solution d824b10f-3d53-4a8f-bc48-304d03b40781) → prava-role-prvni-appka.sppkg
+   app f746aa8d-0469-4d48-8d35-bf9273b4fd7e nasazena a nainstalována
+== prava-db: sondy/container-app/prava-db/spfx/sharepoint/solution/egd-prava-db.sppkg (solution 8f4c71ec-8550-4514-ae08-328a5352864b) → prava-db-egd-prava-db.sppkg
+   app 6d7cb1be-a18c-40b7-a512-e59e27a8bf19 nasazena a nainstalována
+== dok-generator: sondy/dokumenty/spfx/egd-dokumenty/sharepoint/solution/egd-dokumenty.sppkg (solution 08b811fe-2538-4d6b-b981-9cfc6f1b3b4b) → dok-generator-egd-dokumenty.sppkg
+   app 3020f4a3-e620-4aec-a0a3-ff780f495d59 nasazena a nainstalována
+== dok-evidence: sondy/ms-dokumenty/appka/sharepoint/solution/appka.sppkg (solution af0391ac-55ec-4c26-9a04-19b7d43abaae) → dok-evidence-appka.sppkg
+   app ede9723f-a3d0-49ad-89a6-1a03fce083f2 nasazena a nainstalována
+== dok-spokojenost: sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/appka-spokojenost.sppkg (solution 2d0f5a8f-5933-4d35-b711-a25cfb944f88) → dok-spokojenost-appka-spokojenost.sppkg
+   app 76407063-9c14-4ca4-90a8-b9bbace41b9e nasazena a nainstalována
+== dok-pdf-ca: sondy/container-app/libreoffice/spfx/sharepoint/solution/egd-ca-dokumenty.sppkg (solution f6acc582-8350-43ad-911f-be2bfab007bc) → dok-pdf-ca-egd-ca-dokumenty.sppkg
+   app 3b43a6f4-864a-4d9d-943c-b9805b81cb58 nasazena a nainstalována
+== mail: sondy/ms-maily/prvni-appka/sharepoint/solution/prvni-appka.sppkg (solution 1e08a931-b93d-42a6-8cc2-9d7248947bfe) → mail-prvni-appka.sppkg
+   app ffbf328c-6c55-4b22-a35d-9b9b1372f722 nasazena a nainstalována
+== ai-gateway: sondy/ai/spfx/sharepoint/solution/egd-ai-gateway.sppkg (solution c4d1a0f2-7e3b-4c55-8a1d-2f6b9e0d7a13) → ai-gateway-egd-ai-gateway.sppkg
+   app b398aa40-a599-4a75-8291-1a55b68ed9d2 nasazena a nainstalována
+== ai-llm: sondy/ms-llm/prvni-appka/sharepoint/solution/prvni-appka.sppkg (solution fd7ded56-1262-435d-b628-851d35e6719a) → ai-llm-prvni-appka.sppkg
+   app c8824100-d0cb-405b-8636-e6674190e447 nasazena a nainstalována
+== obo: sondy/container-app/obo/spfx/sharepoint/solution/egd-ca-obo.sppkg (solution 876f8081-cf1b-4637-be7b-9784e2fe2f75) → obo-egd-ca-obo.sppkg
+   app 1367c5e3-93f0-45af-8ba0-aefec7f90066 nasazena a nainstalována
+== ai-spokojenost: sondy/ms-llm/spokojenost-ai/sharepoint/solution/spokojenost-ai.sppkg (solution 14c361cf-c003-4830-844a-1195338f5818) → ai-spokojenost-spokojenost-ai.sppkg
+   app 2a72b0ea-578e-44cb-81a2-48523c9b279f nasazena a nainstalována

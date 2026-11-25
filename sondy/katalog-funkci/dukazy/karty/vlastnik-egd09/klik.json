@@ -1,0 +1,157 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky",
+ "start": "2026-11-24T18:54:13.354Z",
+ "kroky": [
+  {
+   "krok": "wait:6000",
+   "t": 2648,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.title",
+   "t": 8650,
+   "vysledek": "Katalog funkcí EG.D",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('.ControlZone')].at(-1).scrollIntoView()",
+   "t": 8653,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "wait:1500",
+   "t": 8655,
+   "ok": true
+  },
+  {
+   "krok": "shotv:01-rozcestnik-karty",
+   "t": 10157,
+   "vysledek": "dukazy/karty/vlastnik-egd09/01-rozcestnik-karty.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:fetch(_spPageContextInfo.webAbsoluteUrl+'/_api/web/effectivebasepermissions',{headers:{accept:'application/json;odata=nometadata'}}).then(r=>r.json()).then(j=>'web High='+j.High+' Low='+j.Low+' ManageWeb='+((j.Low & 0x40000)!==0))",
+   "t": 10293,
+   "ok": false,
+   "chyba": "page.evaluate: ReferenceError: _spPageContextInfo is not defined"
+  }
+ ],
+ "sit": [
+  {
+   "t": 609,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 834,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 961,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1436,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/sitepages/pages(12)?$select=IsTemplate"
+  },
+  {
+   "t": 1436,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.2.1&apikey=d634483c08244c1ca09af2b2d952c92e-a"
+  },
+  {
+   "t": 1437,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.15&apikey=5c65bbc4edbf480d9637ace04d62bd98-"
+  },
+  {
+   "t": 1437,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://eu-office.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.15&apikey=b0c82c6598ad49f3848b1d3dc0d8dd2"
+  },
+  {
+   "t": 1437,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://config.fp.measure.office.com/conf/v2/o365se/fpconfig.min.json?monitorId=O365se"
+  },
+  {
+   "t": 2236,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2414,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2419,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 3061,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 8879,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(12)/CommentsDisabledScope"
+  },
+  {
+   "t": 8959,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(12)/likedByInformation?$expand=likedby&$top=10"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More "
+ ],
+ "konec": "2026-11-24T18:54:23.651Z"
+}

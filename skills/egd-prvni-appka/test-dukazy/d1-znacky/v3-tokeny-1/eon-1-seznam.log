@@ -1,0 +1,7 @@
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev:
+  - seznam "MojeAppkaEon" uz existuje
+  - sloupec Hodnoceni naformatovat jako barevny stitek (E.ON: cervena skala + cislo)
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "MojeAppkaEon" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev/Lists/MojeAppkaEon

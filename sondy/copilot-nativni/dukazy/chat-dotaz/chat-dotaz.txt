@@ -1,0 +1,194 @@
+## https://copilot.cloud.microsoft/chat/conversation/26f2d0d4-7269-430a-8325-c835419c817b?red
+Skip to main content
+Home
+Code
+New
+Search
+Library
+Automations
+Plugins
+Agents
+Workspaces
+Projects
+Add project here
+Recent
+Shrnutí souboru spokojenost.docx
+Ú1
+Work
+Účastník
+M365 Copilot (Premium) 
+Work IQ
+Auto
+Credits not in use
+You said:
+Najdi na SharePointu v knihovně exporty soubor spokojenost.docx a shrň ho ve dvou větách česky.
+Copilot said:
+Reasoned for 1s
+
+V souboru spokojenost je zaznamenána spokojenost s prostředím kanceláře za 24. 11. 2026: hlasoval 1 člověk a průměrné hodnocení bylo 4 z 5. Celkově tedy výsledek ukazuje vysokou spokojenost, ale vzhledem k jedinému hlasu zatím není reprezentativní.
+
+spokojenost
+Účastník 09 modified 1 hour ago
+Sources
+Rozveď hlavní zjištění ze souboru
+Uveď přesná data a omezení výsledků
+Porovnej tento výsledek s dalšími průzkumy
+
+
+
+
+Message Copilot
+AI-generated content may be incorrect
+
+## https://login.microsoftonline.com/savedusers?wreply=https%3A%2F%2Fcopilot.cloud.microsoft&
+
+    
+        function getPerformanceObjectData(object)
+        {
+            var result = {};
+
+            if (!object)
+            {
+                return result;
+            }
+
+            // In some browsers, some of the PerformanceTiming objects have a native toJSON method
+            // that returns a JS object with all of the properties of the PerformanceTiming object.
+            if (object.toJSON)
+            {
+                return object.toJSON();
+            }
+
+            // PerformanceTiming objects are not regular JS objects. Calling Object.hasOwnProperty
+            // on them does not work.
+            // eslint-disable-next-line guard-for-in
+            for (var property in object)
+            {
+                result[property] = object[property];
+            }
+
+            return result;
+        }
+
+        function getPerformance()
+        {
+            if (!window.performance)
+            {
+                return null;
+            }
+
+            var timingData = getPerformanceObjectData(window.performance.timing);
+
+            var entriesData = [];
+
+            if (window.performance.getEntries)
+            {
+                var entries = window.performance.getEntries();
+
+                if (entries)
+                {
+                    for (var i = 0; i < entries.length; i++)
+                    {
+                        entriesData[i] = getPerformanceObjectData(entries[i]);
+                    }
+                }
+            }
+
+            var performance = {
+                idp: "aad",
+                timing: timingData,
+                entries: entriesData,
+                ssoReload: false
+            };
+
+            return performance;
+        }
+
+        function constructResponse()
+        {
+            var response = { userList: [] }, idp,
+                user, error;
+
+            response.idp = 'aad';
+
+                    
+                        user = {
+                            'idp': 'aad',
+                            'firstName': '',
+                            'lastName': '',
+                            'displayName': '&#218;častn&#237;k 10',
+                            'memberName': 'egd10@pavelchocholousgmail.onmicrosoft.com',
+                            'sessionId': '00ab8a2a-54c7-89c7-d846-cb9760514d84',
+                            'smallTileUrl': '',
+                            'largeTileUrl': '',
+                            'authenticatedState': '1',
+                            'orgName': 'Default Directory',
+                            'orgLogoUrl': '',
+                            'isWindowsSso': false,
+                            'extraIdpClaims': ''
+                        };
+                    
+                    
+                        response.userList.push(user);
+                    
+
+            var performance = getPerformance();
+            if (performance)
+            {
+                response.performance = performance;
+            }
+
+            if (typeof JSON !== "undefined")
+            {
+                return JSON.stringify(response);
+            }
+            else
+            {
+                return "";
+            }
+        }
+
+             
+                function handleIdpResponse(e) {
+
+                    if (e.origin == "https://login.live.com") {
+                        postResponse(e.data)
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                (function addEvent(evnt) {
+                    if (window.attachEvent)
+                        return window.attachEvent('on' + evnt, handleIdpResponse);
+                    else
+                        return window.addEventListener(evnt, handleIdpResponse, false);
+                })('message');
+            
+         
+             
+                function postResponse(message)
+                {
+                    if (window === window.parent) {
+                        return;
+                    }
+                    var destination = 'https://copilot.cloud.microsoft/';
+                    window.parent.postMessage(message, destination);
+                }
+
+                window.setTimeout(function ()
+                {
+                    var message = constructResponse();
+                    postResponse(message);
+                }, 0);
+             
+    
+    
+             
+    
+
+
+
+
+## https://login.live.com/Me.srf?wa=wsignin1.0&idpflag=indirect&id=12&wreply=https%3a%2f%2flo

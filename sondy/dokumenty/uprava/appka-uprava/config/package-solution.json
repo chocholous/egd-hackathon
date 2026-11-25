@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "egd-uprava-dokumentu",
+    "id": "a1d94786-4e70-43d6-9f17-47fadd2b8925",
+    "version": "1.0.0.3",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "EG.D sonda (lab)",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Úprava dokumentů (sonda)"
+      },
+      "longDescription": {
+        "default": "Úpravy existujících docx, xlsx, pptx a vyplnění šablony v prohlížeči."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Úprava dokumentů sonda",
+        "description": "Registruje web part.",
+        "id": "9cbcc960-0de8-45df-83ea-41bec3e1ded0",
+        "version": "1.0.0.3"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/egd-uprava-dokumentu.sppkg"
+  }
+}

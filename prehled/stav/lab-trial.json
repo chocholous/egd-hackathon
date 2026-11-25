@@ -1,0 +1,53 @@
+{
+  "nazev": "Lab: přežití konce M365 trialu",
+  "stav": "hotovo",
+  "popis": "Náhrada E5 vyřešena: Business Standard EEA (11/25, do 23. 12.), egd09 bez E5 ověřen; autoRenew Off u všech 5 trialů",
+  "oblast": "lab",
+  "kdo": "session lab-trial",
+  "vystup": "07-lab-trial-plan.md",
+  "aktualizovano": "2026-11-24T17:52:55Z",
+  "zacatek": "2026-11-22T18:33:00Z",
+  "kroky": 11,
+  "historie": [
+    {
+      "t": "2026-11-22T19:39:57Z",
+      "stav": "ceka",
+      "popis": "audit 07 kolo 2 zapracován; host bez licence dnes 200 na kořen; čeká na Pavla (varianta, admin centrum)"
+    },
+    {
+      "t": "2026-11-22T19:45:04Z",
+      "stav": "ceka",
+      "popis": "Pavel zvolil variantu 2 (nový trial); čeká na jeho spuštění trialu v admin centru"
+    },
+    {
+      "t": "2026-11-23T10:19:30Z",
+      "stav": "ceka",
+      "popis": "Extend E5 nejde, E3 trial není; čeká na Pavlovo spuštění Business Premium (Trial), pak pilot egd01 po jeho ano"
+    },
+    {
+      "t": "2026-11-23T15:52:08Z",
+      "stav": "ceka",
+      "popis": "Pavel: partnerská licence Business Basic místo trialu; čekám na SKU v tenantu, pak lab-ucty + pilot egd01"
+    },
+    {
+      "t": "2026-11-24T09:23:55Z",
+      "stav": "ceka",
+      "popis": "Auto-renewal zkontrolován: zapnutý jen u Power Automate Premium (→ 15,60 €/měs. od 24. 12.); čeká na Pavlovo ano k vypnutí"
+    },
+    {
+      "t": "2026-11-24T09:32:06Z",
+      "stav": "ceka",
+      "popis": "Auto-renewal PA Premium vypnut a ověřen (P11); žádné předplatné teď nemá opakované účtování. Čekám na partnerskou licenci Business Basic"
+    },
+    {
+      "t": "2026-11-24T17:40:52Z",
+      "stav": "bezi",
+      "popis": "07: doplněn řádek Business Standard EEA (autoRenew Off, 11/25); čeká na partnerské SKU / pilot egd01"
+    },
+    {
+      "t": "2026-11-24T17:52:55Z",
+      "stav": "hotovo",
+      "popis": "Náhrada E5 vyřešena: Business Standard EEA (11/25, do 23. 12.), egd09 bez E5 ověřen; autoRenew Off u všech 5 trialů"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+PLAN rezimu open na webu https://pavelchocholousgmail.sharepoint.com/sites/egd10-test:
+  (appku otevre a hlasovat muze kazdy v organizaci, kdo ma odkaz; cizi hlasy nikdo nezmeni)
+  - web: skupine "Vsichni krome externich uzivatelu" dat roli Čtení (otevre stranku s appkou)
+  - seznam MojeAppka: zrusit dedeni prav z webu (stavajici prava se zkopiruji)
+  - seznam MojeAppka: skupine "Vsichni krome externich uzivatelu" dat roli Přispívání (muze hlasovat)
+  - seznam MojeAppka: upravovat a mazat jen vlastni polozky (cizi hlas nikdo nezmeni)
+[OK]      web: Vsichni krome externich uzivatelu -> Čtení
+[OK]      seznam MojeAppka: vlastni prava (kopie z webu)
+[OK]      seznam MojeAppka: Vsichni krome externich uzivatelu -> Přispívání
+[OK]      seznam MojeAppka: upravy jen vlastnich polozek
+[OK]      precteno zpet: rezim open (web Vsichni: Čtení, Omezený přístup, seznam vlastni prava, WriteSecurity 2)

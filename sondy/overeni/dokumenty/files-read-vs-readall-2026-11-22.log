@@ -1,0 +1,10 @@
+# 2026-11-22T19:41:44Z GET /drives/{drive}/items/{id}/content?format=pdf pod jana.svobodova, t≈ôi klienti (jen scope se li≈°√≠)
+scopes v tokenu (Files.ReadWrite.All+Sites.ReadWrite.All): Files.ReadWrite.All Sites.ReadWrite.All profile openid email
+  http=200 size=221765
+%PDF-1.7 %µµµµ 1 0 obj <</Type/Catalog/Pages 2 0 R/Lang(en) /StructTreeRoot 24 0 R/Outlines 22 0 R/MarkInfo<</Marked true>>/Metadata 138 0 R/ViewerPreferences 139 0 R>> endobj 2 0 obj <</Type/Pa
+scopes v tokenu (Files.Read): Files.Read profile openid email
+  http=403 size=59
+{"error":{"code":"accessDenied","message":"Access denied"}}
+scopes v tokenu (Files.Read.All): Files.Read.All profile openid email
+  http=200 size=221765
+%PDF-1.7 %µµµµ 1 0 obj <</Type/Catalog/Pages 2 0 R/Lang(en) /StructTreeRoot 24 0 R/Outlines 22 0 R/MarkInfo<</Marked true>>/Metadata 138 0 R/ViewerPreferences 139 0 R>> endobj 2 0 obj <</Type/Pa

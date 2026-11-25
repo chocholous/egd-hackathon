@@ -1,0 +1,144 @@
+{
+  "totalPremiumRequestCost": 1,
+  "totalUserRequests": 1,
+  "totalNanoAiu": 3032720000,
+  "aiCreditsStatus": "complete",
+  "tokenDetails": {
+    "input": {
+      "tokenCount": 93
+    },
+    "cache_read": {
+      "tokenCount": 1461715
+    },
+    "cache_write": {
+      "tokenCount": 55846
+    },
+    "output": {
+      "tokenCount": 17440
+    }
+  },
+  "totalApiDurationMs": 162370,
+  "sessionStartTime": "2026-11-23T10:10:56.114Z",
+  "codeChanges": {
+    "linesAdded": 117,
+    "linesRemoved": 3,
+    "filesModifiedCount": 4,
+    "filesModified": [
+      "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/copilot-llm/home/egd-workshop/prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts",
+      "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/copilot-llm/home/egd-workshop/prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.module.scss",
+      "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/copilot-llm/home/egd-workshop/prvni-appka/config/package-solution.json",
+      "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/copilot-llm/home/egd-workshop/prvni-appka/README.md"
+    ]
+  },
+  "modelMetrics": {
+    "gpt-6-luna": {
+      "requests": {
+        "count": 31,
+        "cost": 1
+      },
+      "usage": {
+        "inputTokens": 1517654,
+        "outputTokens": 17440,
+        "cacheReadTokens": 1461715,
+        "cacheWriteTokens": 55846,
+        "reasoningTokens": 10405
+      },
+      "cacheExpiresAt": "2026-11-23T10:45:52.431Z",
+      "totalNanoAiu": 3032720000,
+      "aiCreditsStatus": "complete",
+      "tokenDetails": {
+        "input": {
+          "tokenCount": 93
+        },
+        "cache_read": {
+          "tokenCount": 1461715
+        },
+        "cache_write": {
+          "tokenCount": 55846
+        },
+        "output": {
+          "tokenCount": 17440
+        }
+      }
+    }
+  },
+  "agentMetrics": {
+    "main": {
+      "totalApiDurationMs": 162370,
+      "totalNanoAiu": 3032720000,
+      "modelMetrics": {
+        "gpt-6-luna": {
+          "requests": {
+            "count": 31,
+            "cost": 1
+          },
+          "usage": {
+            "inputTokens": 1517654,
+            "outputTokens": 17440,
+            "cacheReadTokens": 1461715,
+            "cacheWriteTokens": 55846,
+            "reasoningTokens": 10405
+          },
+          "totalNanoAiu": 3032720000,
+          "tokenDetails": {
+            "input": {
+              "tokenCount": 93
+            },
+            "cache_read": {
+              "tokenCount": 1461715
+            },
+            "cache_write": {
+              "tokenCount": 55846
+            },
+            "output": {
+              "tokenCount": 17440
+            }
+          }
+        }
+      }
+    }
+  },
+  "providerModelMetrics": [
+    {
+      "provider": {
+        "id": "copilot",
+        "label": "GitHub Copilot",
+        "kind": "copilot"
+      },
+      "modelId": "gpt-6-luna",
+      "metrics": {
+        "requests": {
+          "count": 31,
+          "cost": 1
+        },
+        "usage": {
+          "inputTokens": 1517654,
+          "outputTokens": 17440,
+          "cacheReadTokens": 1461715,
+          "cacheWriteTokens": 55846,
+          "reasoningTokens": 10405
+        },
+        "totalNanoAiu": 3032720000,
+        "aiCreditsStatus": "complete",
+        "tokenDetails": {
+          "input": {
+            "tokenCount": 93
+          },
+          "cache_read": {
+            "tokenCount": 1461715
+          },
+          "cache_write": {
+            "tokenCount": 55846
+          },
+          "output": {
+            "tokenCount": 17440
+          }
+        }
+      },
+      "modelDisplayName": "GPT-6 Luna"
+    }
+  ],
+  "currentModel": "gpt-6-luna",
+  "lastCallInputTokens": 65736,
+  "lastCallOutputTokens": 2237
+}

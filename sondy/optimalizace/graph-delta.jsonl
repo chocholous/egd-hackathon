@@ -1,0 +1,2 @@
+{"test": "delta_token=latest", "status": 200, "sec": 0.866, "rows": 0, "ma_deltaLink": true}
+{"test": "delta_po_zmene_pokus_1", "status": 200, "sec": 0.287, "rows": 2, "ids": [["40", "Položka 9"], ["12003", "delta-nova"]]}

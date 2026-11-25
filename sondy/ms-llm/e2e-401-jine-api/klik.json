@@ -1,0 +1,81 @@
+{
+  "profil": "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/profil-tomas",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/evidence.aspx?env=WebView",
+  "cas": "2026-11-22T19:33:56.021Z",
+  "nacteniMs": 37526,
+  "shrnuti": {
+    "ms": 858,
+    "vystup": "Chyba AI: AI gateway vrátila 401"
+  },
+  "ocr": {
+    "soubor": "ocr-cs.png",
+    "ms": 166,
+    "vystup": "Chyba AI: AI gateway vrátila 401",
+    "popisPoOcr": "Na chodbě ve 2. patře budovy B nesvítí od pondělí tři zářivky, je tam tma a lidé zakopávají o schod u výtahu. Prosím o výměnu zářivek a kontrolu, jestli není vadný vypínač."
+  },
+  "sit": [
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat",
+      "stav": 401,
+      "authorization": "Bearer eyJ0eX…(1877 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    },
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/ocr",
+      "stav": 401,
+      "authorization": "Bearer eyJ0eX…(1877 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    }
+  ],
+  "bundly": [
+    "200 evidence-web-part_e73c7a48ee5e2cba50c4.js"
+  ]
+}

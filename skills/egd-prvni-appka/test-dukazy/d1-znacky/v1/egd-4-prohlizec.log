@@ -1,0 +1,110 @@
+1 mereni: {
+ "h1": {
+  "text": "Spokojenost s prostředím kanceláře dnes",
+  "pismo": "\"Segoe UI\", system-ui, sans-serif",
+  "transform": "none",
+  "eonHeadNacteno": true,
+  "fonty": []
+ },
+ "karta": {
+  "pozadi": "rgb(240, 241, 245)",
+  "roh": "28px",
+  "stin": "none"
+ },
+ "texty": [
+  {
+   "nazev": "nadpis",
+   "barva": "rgb(38, 27, 98)",
+   "pozadi": "rgb(255,255,255)",
+   "kontrast": 14.84,
+   "velikost": "28px",
+   "tucnost": "600"
+  },
+  {
+   "nazev": "otázka na kartě",
+   "barva": "rgb(38, 27, 98)",
+   "pozadi": "rgb(240,241,245)",
+   "kontrast": 13.14,
+   "velikost": "18px",
+   "tucnost": "400"
+  },
+  {
+   "nazev": "poznámka na kartě (vedlejší text)",
+   "barva": "rgb(90, 84, 128)",
+   "pozadi": "rgb(240,241,245)",
+   "kontrast": 6.17,
+   "velikost": "13px",
+   "tucnost": "400"
+  },
+  {
+   "nazev": "popis dlaždice",
+   "barva": "rgb(90, 84, 128)",
+   "pozadi": "rgb(255,255,255)",
+   "kontrast": 6.97,
+   "velikost": "13px",
+   "tucnost": "400"
+  },
+  {
+   "nazev": "nevybrané tlačítko",
+   "barva": "rgb(38, 27, 98)",
+   "pozadi": "rgb(255,255,255)",
+   "kontrast": 14.84,
+   "velikost": "14px",
+   "tucnost": "400"
+  }
+ ],
+ "ramecky": [
+  {
+   "nazev": "rámeček tlačítka",
+   "okraj": "rgb(213, 215, 227)",
+   "pozadi": "rgb(240,241,245)",
+   "kontrast": 1.27,
+   "roh": "20px"
+  },
+  {
+   "nazev": "rámeček panelu",
+   "okraj": "rgb(213, 215, 227)",
+   "pozadi": "rgb(255,255,255)",
+   "kontrast": 1.43,
+   "roh": "20px"
+  }
+ ],
+ "vybrany": null
+}
+2 fokus po 4 Tab: true {"prvek":"4 – Spíš spokojen/a","outline":"solid 2px rgb(18, 0, 224)","offset":"2px","focusVisible":true}
+3 po Enter: ["Zapsáno: 4. Díky!"]
+4 mereni po hlasu: {
+ "vybrany": {
+  "pozadi": "rgb(18, 0, 224)",
+  "text": "4Spíš spokojen/a"
+ },
+ "texty": [
+  {
+   "nazev": "nevybrané tlačítko",
+   "barva": "rgb(38, 27, 98)",
+   "pozadi": "rgb(255,255,255)",
+   "kontrast": 14.84,
+   "velikost": "14px",
+   "tucnost": "400"
+  },
+  {
+   "nazev": "vybrané tlačítko",
+   "barva": "rgb(255, 255, 255)",
+   "pozadi": "rgb(18,0,224)",
+   "kontrast": 9.99,
+   "velikost": "14px",
+   "tucnost": "400"
+  },
+  {
+   "nazev": "popisek vybraného (12 px)",
+   "barva": "rgb(255, 255, 255)",
+   "pozadi": "rgb(18,0,224)",
+   "kontrast": 9.99,
+   "velikost": "12px",
+   "tucnost": "400"
+  }
+ ]
+}
+5 Shift+Tab na null a mezerník: ["Zapsáno: 4. Díky!"]
+6 kontrast vse >= WCAG AA: false | klavesnice: OK
+egd rc=0

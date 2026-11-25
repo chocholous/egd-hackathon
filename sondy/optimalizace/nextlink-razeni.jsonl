@@ -1,0 +1,7 @@
+{"test": "nextLink_orderby_Castka_(indexovany)_top1000", "status": 200, "rows": 12009, "unikatnich_ID": 12009, "stranek": 13, "sec": 7.65}
+{"test": "nextLink_orderby_Datum_(indexovany)_top1000", "status": 200, "rows": 12009, "unikatnich_ID": 12009, "stranek": 13, "sec": 3.04}
+{"test": "nextLink_orderby_Modified_top1000", "status": 200, "rows": 12009, "unikatnich_ID": 12009, "stranek": 13, "sec": 2.95}
+{"test": "nextLink_orderby_Created_top1000", "status": 500, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "rows_do_chyby": 0, "stranek": 0}
+{"test": "nextLink_filtr_Castka_lt_500_top1000_(vic_nez_5000_shod)", "status": 500, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "rows_do_chyby": 0, "stranek": 0}
+{"test": "nextLink_filtr_Kategorie_K01_orderby_Created_top100", "status": 200, "rows": 598, "unikatnich_ID": 598, "stranek": 6, "sec": 1.08}
+{"test": "SP_REST_neindexovany_s_hlavickou_Prefer", "status": 500, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení sezna"}

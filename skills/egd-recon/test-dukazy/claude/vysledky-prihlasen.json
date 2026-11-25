@@ -1,0 +1,11 @@
+{
+  "vysledky": {
+    "recon": {
+      "oblast": "Rucne overeno",
+      "stav": "zluta",
+      "hodnota": "mcplabdocs: web nema katalog aplikaci",
+      "it": "Prosim o zalozeni katalogu aplikaci pro kolekci webu (site collection app catalog) na webu https://pavelchocholousgmail.sharepoint.com/sites/mcplabdocs (E-mail sharepoint@eon.com).",
+      "kdy": "2026-11-24T09:39:53.163Z"
+    }
+  }
+}

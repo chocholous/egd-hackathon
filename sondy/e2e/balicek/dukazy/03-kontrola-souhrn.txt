@@ -1,0 +1,12 @@
+
+SOUHRN
+  egd-data-seznamy: {'cesta-mimo-balicek': 14, 'odkaz-neexistuje': 8}
+  egd-dokumenty: {'odkaz-neexistuje': 3, 'cesta-mimo-balicek': 47}
+  egd-externi-api: {'odkaz-neexistuje': 1, 'cesta-mimo-balicek': 19}
+  egd-llm-gateway: {'cesta-mimo-balicek': 29, 'odkaz-neexistuje': 3}
+  egd-maily: {'odkaz-neexistuje': 5, 'cesta-mimo-balicek': 17}
+  egd-planovane-ulohy: {'odkaz-neexistuje': 2, 'cesta-mimo-balicek': 24}
+  egd-prava-role: {'cesta-mimo-balicek': 47}
+  egd-pripravenost: {'cesta-mimo-balicek': 1}
+  egd-prvni-appka: {'odkaz-neexistuje': 9, 'cesta-mimo-balicek': 1}
+  egd-recon: {'odkaz-neexistuje': 7, 'cesta-mimo-balicek': 1}

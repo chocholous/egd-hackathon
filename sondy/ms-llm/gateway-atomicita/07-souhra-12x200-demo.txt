@@ -1,0 +1,8 @@
+N=12 appKey=demo 2026-11-24T08:47:09Z
+kvóta před:
+{"den":"2026-11-24","appKey":"demo","spotreba":{"tokens":0,"calls":0,"costUsd":0,"pages":0},"limitTokenuZaDen":50000}
+výsledky:
+  12 200
+součet tokenů v odpovědích 200: 213
+kvóta po:
+{"den":"2026-11-24","appKey":"demo","spotreba":{"tokens":213,"calls":12,"costUsd":0.0001392,"pages":0},"limitTokenuZaDen":50000}

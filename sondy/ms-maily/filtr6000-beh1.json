@@ -1,0 +1,76 @@
+{
+ "flow": "9bd91b66-5690-37c9-ba8b-c3dfe7c76004",
+ "run": "08584061777780269848225053434CU09",
+ "status": "Succeeded",
+ "startTime": "2026-11-23T10:18:27.4523489Z",
+ "akce": {
+  "A_Stav_Novy_top5000": {
+   "status": "Succeeded",
+   "code": "OK",
+   "statusCode": 200,
+   "pocet": 251,
+   "stavy": {
+    "Nový": 251
+   },
+   "nextLink": true
+  },
+  "B_bez_filtru_top5000": {
+   "status": "Succeeded",
+   "code": "OK",
+   "statusCode": 200,
+   "pocet": 5000,
+   "stavy": {
+    "Nový": 251,
+    "Schváleno": 4071,
+    "Zamítnuto": 678
+   },
+   "nextLink": true
+  },
+  "C_bez_filtru_vychozi": {
+   "status": "Succeeded",
+   "code": "OK",
+   "statusCode": 200,
+   "pocet": 100,
+   "stavy": {
+    "Nový": 8,
+    "Schváleno": 78,
+    "Zamítnuto": 14
+   },
+   "nextLink": true
+  },
+  "D_bez_filtru_strankovani5000": {
+   "status": "Succeeded",
+   "code": "OK",
+   "statusCode": null,
+   "pocet": 5000,
+   "stavy": {
+    "Nový": 251,
+    "Schváleno": 4071,
+    "Zamítnuto": 678
+   },
+   "nextLink": false
+  },
+  "E_Stav_Novy_strankovani5000": {
+   "status": "Succeeded",
+   "code": "OK",
+   "statusCode": null,
+   "pocet": 300,
+   "stavy": {
+    "Nový": 300
+   },
+   "nextLink": false
+  },
+  "F_Created_24h_top5000": {
+   "status": "Succeeded",
+   "code": "OK",
+   "statusCode": 200,
+   "pocet": 5000,
+   "stavy": {
+    "Nový": 251,
+    "Schváleno": 4071,
+    "Zamítnuto": 678
+   },
+   "nextLink": true
+  }
+ }
+}

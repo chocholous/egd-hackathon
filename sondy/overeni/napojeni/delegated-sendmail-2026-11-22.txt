@@ -1,0 +1,6 @@
+# 2026-11-22T19:40:55Z
+## send eva -> eva (delegovaný Mail.Send)
+202 
+## inbox
+2026-11-22T19:40:58Z | od: eva.vesela@pavelchocholousgmail.onmicrosoft.com | odesílatel: eva.vesela@pavelchocholousgmail.onmicrosoft.com | Sonda napojeni: delegovaný sendMail | příloha: False
+2026-11-22T19:40:57Z | od: /O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=E5AB37C6BEA841E88CAF04CB8CBE99B1-FDA469D6-BE | odesílatel: /O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENT

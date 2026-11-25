@@ -1,0 +1,12 @@
+
+SOUHRN
+  egd-data-seznamy: {'cesta-mimo-balicek': 22}
+  egd-dokumenty: {'cesta-mimo-balicek': 47}
+  egd-externi-api: {'cesta-mimo-balicek': 19}
+  egd-llm-gateway: {'cesta-mimo-balicek': 32}
+  egd-maily: {'cesta-mimo-balicek': 22}
+  egd-planovane-ulohy: {'cesta-mimo-balicek': 30}
+  egd-prava-role: {'cesta-mimo-balicek': 47}
+  egd-pripravenost: {'cesta-mimo-balicek': 1}
+  egd-prvni-appka: {'cesta-mimo-balicek': 10}
+  egd-recon: {'cesta-mimo-balicek': 8}

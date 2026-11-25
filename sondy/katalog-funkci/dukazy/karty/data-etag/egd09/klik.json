@@ -1,0 +1,179 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/data.aspx",
+ "start": "2026-11-24T18:28:16.209Z",
+ "kroky": [
+  {
+   "krok": "wait:4000",
+   "t": 912,
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\".ControlZone\")].at(-1).scrollIntoView()",
+   "t": 4914,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "wait:5000",
+   "t": 4921,
+   "ok": true
+  },
+  {
+   "krok": "click:Ke schválení",
+   "t": 9923,
+   "ok": true
+  },
+  {
+   "krok": "wait:3000",
+   "t": 10022,
+   "ok": true
+  },
+  {
+   "krok": "clickn:0:Schválit",
+   "t": 13025,
+   "ok": true
+  },
+  {
+   "krok": "wait:4000",
+   "t": 13067,
+   "ok": true
+  },
+  {
+   "krok": "shotv:06-egd09-schvaleno",
+   "t": 17069,
+   "vysledek": "dukazy/karty/data-etag/egd09/06-egd09-schvaleno.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\".ControlZone\")].at(-1).innerText.slice(0,500)",
+   "t": 17196,
+   "vysledek": "Evidence požadavků\nZadavatel a schvalovatel\nNový požadavek\nMoje požadavky\nKe schválení (3)\n\n\"Katalog: test souběhu 1927\": Schváleno.\n\nPožadavek\tZadal\tKdy\tStav\tRozhodnutí\nOprava klimatizace v dispečinku\nKlimatizace v dispečinku Brno hlásí chybu E4, v místnosti je přes 28 °C.\n\tPavel Admin (lab)\t24. 11. 2026\tNový\t\nSchválit\nZamítnout\n\nŠkolení BOZP pro nové kolegy\nTři noví kolegové nastupují 1. 12., potřebují vstupní školení BOZP a práce ve výškách před prvním výjezdem.\n\tPavel Admin (lab)\t24. 11. 202",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 535,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 614,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2170,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 5010,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(3)/CommentsDisabledScope"
+  },
+  {
+   "t": 5027,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 5086,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(3)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 5093,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id&$top=1&$orderby=ID%20desc"
+  },
+  {
+   "t": 5191,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$top=1000&$o"
+  },
+  {
+   "t": 5286,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$top=1000&$o"
+  },
+  {
+   "t": 11258,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/apc/trans.gif?123fe91e9c3e5c87f8da5231c1bd9fe8"
+  },
+  {
+   "t": 11270,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/apc/trans.gif?b303c680b25e4058b5db7a570a5dcc63"
+  },
+  {
+   "t": 11283,
+   "m": "GET",
+   "s": 200,
+   "u": "https://upload.fp.measure.office.com/r.gif?MonitorID=O365se&rid=2ccfefa3d5cc7a7100014ddf640ae0d0&w3c=true&prot=https:&v=20190214&tag=[{%22TenantId%22:%22972a674c-7b85-4e56-a31f-b2f95b42fd1e%22,%22AppI"
+  },
+  {
+   "t": 13344,
+   "m": "POST",
+   "s": 204,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items(4)"
+  },
+  {
+   "t": 13396,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 13469,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id&$top=1&$orderby=ID%20desc"
+  },
+  {
+   "t": 13547,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$top=1000&$o"
+  },
+  {
+   "t": 13674,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$top=1000&$o"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:28:33.407Z"
+}

@@ -1,0 +1,40 @@
+// Značka appky: jediné místo, kde se přepíná vzhled. Hodnoty: egd | eon.
+// Nastavuje ji `appka.mjs novy --znacka eon|egd` (agent se na značku vždy zeptá uživatele).
+$znacka: egd;
+
+// ---- EG.D: indigo, oblé tvary (vizuál egd.cz) ----
+$egd-akce: #1200E0;        // hlavní akce, vybraný stav
+$egd-inkoust: #261B62;     // text
+$egd-plocha: #F0F1F5;      // karty, stopy grafů
+$egd-okraj: #7D7A99;       // rámeček tlačítek a dlaždic, kontrast >= 3:1 (dřív #D5D7E3 = 1,3)
+$egd-tlumeny: #5a5480;     // vedlejší text
+$egd-fokus: #1200E0;
+$egd-roh-karta: 28px;
+$egd-roh-prvek: 20px;
+$egd-roh-maly: 6px;
+
+// ---- E.ON: červená jen na hlavní akci a vybraném stavu, rohy 0, bez stínů, mřížka 4 px ----
+// Zdroj hodnot: E.ON brand tokens, EPL export 10. 11. (přepsáno ručně). Kontrasty změřené v TEST.md.
+$eon-akce: #EA1B0A;        // Red 500 (E.ON Red), bílý text 4,51 : 1
+$eon-inkoust: #262626;     // Gray 900, text
+$eon-plocha: #F8F5F2;      // Gray 100, karty a stopy grafů
+$eon-okraj: #767676;       // Gray 600, rámeček prvků (4,18 na Gray 100, 4,54 na bílé)
+$eon-tlumeny: #5C5C5C;     // Gray 700, vedlejší text
+$eon-fokus: #0075C2;       // Blue 700
+$eon-roh-karta: 0;
+$eon-roh-prvek: 0;
+$eon-roh-maly: 0;
+
+// ---- vybraná sada ($graf = výplň pruhů v rozložení: EG.D indigo, E.ON barva textu - červená jen na akci) ----
+$akce: $egd-akce; $inkoust: $egd-inkoust; $plocha: $egd-plocha; $okraj: $egd-okraj; $tlumeny: $egd-tlumeny;
+$graf: $egd-akce; $fokus: $egd-fokus; $roh-karta: $egd-roh-karta; $roh-prvek: $egd-roh-prvek; $roh-maly: $egd-roh-maly;
+// Písmo: E.ON Head jen na nadpis appky (licence E.ON, jen pro projekty skupiny E.ON).
+// Brix Sans nemáme; když ho má uživatel nainstalovaný, použije se.
+$pismo-text: ('Segoe UI', system-ui, sans-serif);
+$pismo-nadpis: $pismo-text;
+@if $znacka == eon {
+  $akce: $eon-akce; $inkoust: $eon-inkoust; $plocha: $eon-plocha; $okraj: $eon-okraj; $tlumeny: $eon-tlumeny;
+  $graf: $eon-inkoust; $fokus: $eon-fokus; $roh-karta: $eon-roh-karta; $roh-prvek: $eon-roh-prvek; $roh-maly: $eon-roh-maly;
+  $pismo-text: ('E.ON Brix Sans', 'Segoe UI', system-ui, sans-serif);
+  $pismo-nadpis: ('E.ON Head', 'E.ON Brix Sans', 'Segoe UI', system-ui, sans-serif);
+}

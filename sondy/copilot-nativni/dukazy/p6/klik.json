@@ -1,0 +1,147 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene%20dokumenty/Forms/AllItems.aspx",
+ "start": "2026-11-24T19:52:50.409Z",
+ "kroky": [
+  {
+   "krok": "wait:7000",
+   "t": 773,
+   "ok": true
+  },
+  {
+   "krok": "click:[aria-label='Copilot']",
+   "t": 7774,
+   "ok": true
+  },
+  {
+   "krok": "wait:6000",
+   "t": 7955,
+   "ok": true
+  },
+  {
+   "krok": "shotv:knihovna-copilot",
+   "t": 13962,
+   "vysledek": "sondy/copilot-nativni/dukazy/p6/knihovna-copilot.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('button,[role=menuitem],[role=option],a')].map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(Boolean).slice(0,120).join(' | ')",
+   "t": 14340,
+   "vysledek": "Skip to main content | Discover, 1 of 4 | Publish, 2 of 4 | Build, 3 of 4 | OneDrive, 4 of 4 | Katalog funkcí EG.D home | Katalog funkcí EG.D | Home | Documents | Pages | Site contents | Edit site navigation | Not following, Add to favorites | \nSite access | Home | Documents | Pages | Site contents | Edit | Documents | Copilot | Show Copilot actions for selected items | Add shortcut to OneDrive | Forms | More | Create or upload | All Documents | Add view | More filters | Word | Excel | PowerPoint | PDF | Hide applied filters | Options | Collapse navigation | Details pane | More Actions | Share | Show Copilot actions for this item | Add shortcut to OneDrive | More Actions | Share | Show Copilot actions for this item | Add shortcut to OneDrive | More Actions | Share | Show Copilot actions for this item | Add shortcut to OneDrive | Close | Copilot",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 2720,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserFirstRun.Experiences"
+  },
+  {
+   "t": 3485,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate"
+  },
+  {
+   "t": 8145,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserFirstRun.SetExperiences"
+  },
+  {
+   "t": 8441,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.Directory.DirectorySession/me?$select=mySite"
+  },
+  {
+   "t": 8997,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.OAuth.Token/Acquire()"
+  },
+  {
+   "t": 11282,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail-my.sharepoint.com:/personal/egd10_pavelchocholousgmail_onmicrosoft_com:/lists?$filter=displayName%20eq%20%27KARuntime%27&$select=id"
+  },
+  {
+   "t": 11483,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com:/sites/egd-ukazky?$select=id"
+  },
+  {
+   "t": 11846,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc894,c4885c9f-ebc2-4ace-9beb-c7e9f9cc20f5/lists/a6a412df-f521-4911-bf1f-fbfe70bc27af?$select="
+  },
+  {
+   "t": 12163,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc894,c4885c9f-ebc2-4ace-9beb-c7e9f9cc20f5/lists/a6a412df-f521-4911-bf1f-fbfe70bc27af/columns"
+  },
+  {
+   "t": 12633,
+   "m": "POST",
+   "s": 201,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail-my.sharepoint.com:/personal/egd10_pavelchocholousgmail_onmicrosoft_com:/lists"
+  },
+  {
+   "t": 12894,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail-my.sharepoint.com:/personal/egd10_pavelchocholousgmail_onmicrosoft_com?$select=id"
+  },
+  {
+   "t": 13447,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail-my.sharepoint.com,3fb2389c-af7f-421b-a87f-0954d699b7dd,cf1b1964-137e-41db-897a-e62a3b8052b0/lists/56bc2006-a380-41ba-a8b5-395eb79157c6/drive"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin at",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin att",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nemptyFolder, emptyFolderWithDrop, AvailableOffline16",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nDefenderApp, OneDriveLogo, OutlookLogoInverse, OneNoteLogoInverse, ExcelLogoInverse, WordLogoInverse, PowerPointLogoIn",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin at",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin att",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.search.4c0c366b579411552bfb.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.plus.f4b745d9d976df13973b.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.searchbox-v2.3450547ea96dddfd3083.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.umc_mecontrol.b71a5ec55d2951d3dbb4.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has a",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.responsive.68447ce171b932049c56.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.ecsclient.6560ebb7b61b412568cc.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.otellogging.d5b83bde08809e8d00f8.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.core.b5070dc6067c9ace6a36.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/shellux/suiteux.shell.mast.ad176325a98aeed62d33.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+ ],
+ "konec": "2026-11-24T19:53:04.776Z"
+}

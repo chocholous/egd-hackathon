@@ -1,0 +1,63 @@
+
+> egd-prava-db-spfx@0.1.0 build
+> heft build --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] No SCSS files to process.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (2.251s) ---- 
+-------------------- Finished (2.253s) --------------------
+ ---- package-solution started ---- 
+Found manifest: e11ebff0-d972-4f4a-8401-aaf1bbf40fb9.manifest.json
+Found client-side build resource: prava-db-web-part_b679444bd4c25ef10551.js
+Found client-side build resource: prava-db-web-part_b679444bd4c25ef10551.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { Prava DB sonda }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug...
+Cleaned /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/AppManifest.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/_rels/.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/[Content_Types].xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/feature_d78b805b-e130-4e4f-ba5f-2a84094edce9.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/_rels/feature_d78b805b-e130-4e4f-ba5f-2a84094edce9.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/feature_d78b805b-e130-4e4f-ba5f-2a84094edce9.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/d78b805b-e130-4e4f-ba5f-2a84094edce9/WebPart_e11ebff0-d972-4f4a-8401-aaf1bbf40fb9.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/ClientSideAssets/prava-db-web-part_b679444bd4c25ef10551.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/debug/ClientSideAssets/prava-db-web-part_b679444bd4c25ef10551.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/prava-db/spfx/sharepoint/solution/egd-prava-db.sppkg
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.168s) ---- 
+-------------------- Finished (0.17s) --------------------

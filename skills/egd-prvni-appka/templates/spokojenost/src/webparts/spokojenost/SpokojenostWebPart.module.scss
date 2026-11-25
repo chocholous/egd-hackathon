@@ -1,0 +1,82 @@
+// Vzhled appky. Barvy, rohy a písma podle značky v _znacka.scss ($znacka: egd | eon).
+// Všechna pravidla jsou zanořená pod .appka, aby neprosakovala do SharePointu. Rozměry po 4 px.
+@import './znacka';
+
+@if $znacka == eon {
+  // E.ON Head jen pro nadpis appky; soubor se přibalí do .sppkg (ClientSideAssets).
+  @font-face {
+    font-family: 'E.ON Head';
+    src: local('E.ON Head');
+    font-weight: 400 900;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+.appka {
+  font-family: $pismo-text;
+  color: $inkoust;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  h1 { font-family: $pismo-nadpis; font-size: 28px; font-weight: 600; margin: 0 0 16px; text-transform: none; }
+  h2 { font-size: 16px; font-weight: 600; margin: 0 0 12px; text-transform: none; }
+
+  .karta { background: $plocha; border-radius: $roh-karta; padding: 20px 24px; box-shadow: none; }
+  .otazka { font-size: 18px; margin: 0 0 16px; }
+  .poznamka { font-size: 13px; color: $tlumeny; margin: 12px 0 0; }
+
+  .tlacitka { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+  .stupen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 8px;
+    border: 1px solid $okraj;
+    border-radius: $roh-prvek;
+    background: #fff;
+    color: $inkoust;
+    cursor: pointer;
+    font: inherit;
+    &:hover { border-color: $akce; }
+    &:focus-visible { outline: 2px solid $fokus; outline-offset: 2px; }
+    &:disabled { opacity: 0.6; cursor: default; }
+  }
+  .vybrany { background: $akce; border-color: $akce; color: #fff; }
+  .cislo { font-size: 28px; font-weight: 600; line-height: 1; }
+  .popisek { font-size: 12px; text-align: center; }
+
+  .dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .dlazdice { border: 1px solid $okraj; border-radius: $roh-prvek; padding: 16px 20px; }
+  .hodnota { font-size: 36px; font-weight: 600; line-height: 1.1; }
+  .nazev { font-size: 13px; color: $tlumeny; }
+  .panel { border: 1px solid $okraj; border-radius: $roh-prvek; padding: 16px 20px; }
+
+  .pruh { display: grid; grid-template-columns: 16px 1fr 28px; align-items: center; gap: 8px; margin: 8px 0; font-size: 13px; }
+  .pruhCislo { font-weight: 600; }
+  .pruhStopa { background: $plocha; border-radius: $roh-maly; height: 12px; overflow: hidden; }
+  .pruhVypln { background: $graf; height: 100%; border-radius: $roh-maly; }
+  .pruhPocet { text-align: right; color: $tlumeny; }
+
+  .dny { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; align-items: end; }
+  .den { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 12px; }
+  .denHodnota { font-weight: 600; }
+  .denStopa { width: 100%; max-width: 28px; height: 88px; background: $plocha; border-radius: $roh-maly; display: flex; align-items: flex-end; overflow: hidden; }
+  .denVypln { width: 100%; background: $inkoust; border-radius: $roh-maly; }
+  .denNazev { color: $tlumeny; white-space: nowrap; font-size: 12px; }
+
+  .chyba { background: #FBE1E0; color: #8A1C14; border-radius: $roh-maly; padding: 12px 16px; }
+  .zprava { background: #DDF4E4; color: #0B5A2A; border-radius: $roh-maly; padding: 12px 16px; }
+
+  @media (max-width: 600px) {
+    .dashboard { grid-template-columns: 1fr; }
+    .popisek { display: none; }
+  }
+}

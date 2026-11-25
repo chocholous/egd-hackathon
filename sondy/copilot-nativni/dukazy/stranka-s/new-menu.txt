@@ -1,0 +1,128 @@
+## https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/Forms/ByAuthor.aspx
+Skip to main content
+SharePoint
+
+
+Ú1
+Discover
+Publish
+Build
+OneDrive
+Katalog funkcí EG.D
+HomeDocumentsPagesSite contents
+Edit navigation
+
+Not following
+
+Site access
+Site Pages
+Copilot
+Edit in grid view
+Scheduling
+File types
+Automate
+Integrate
+Create or upload
+All Pages
+By Author
+By Editor
+Created By Me
+Add view
+Details
+Name
+Modified By
+Modified
+Created
+Add column
+Created By: Pavel Admin (lab)
+(8)
+data.aspx
+Pavel Admin (lab)
+About an hour ago
+About an hour ago
+prava.aspx
+Pavel Admin (lab)
+About an hour ago
+About an hour ago
+dokumenty.aspx
+Pavel Admin (lab)
+About an hour ago
+About an hour ago
+email.aspx
+Pavel Admin (lab)
+About an hour ago
+About an hour ago
+ai.aspx
+Pavel Admin (lab)
+About an hour ago
+About an hour ago
+cizi-api.aspx
+Pavel Admin (lab)
+About an hour ago
+About an hour ago
+katalog.aspx
+Pavel Admin (lab)
+About an hour ago
+About an hour ago
+graph.aspx
+Pavel Admin (lab)
+5 minutes ago
+6 minutes ago
+Created By: Systémový účet
+(1)
+Home.aspx
+Systémový účet
+2 days ago
+2 days ago
+Site Page
+
+Link
+Upload HTML page
+Upload HTML folder
+Add HTML pages to your site
+Upload HTML files to publish them as pages. If you upload a folder, supporting files like images and scripts are stored in Site Assets.
+Got it
+
+## https://webshell.suite.office.com/iframe/TokenFactoryIframe?origin=https%3A%2F%2Fpavelchoc
+
+    
+        
+                var requestExecutorSettings = {
+                    originAuthorityValidator: O365SuiteServiceProxy.ServiceHandlers.validateOrigin,
+                    trustedOriginAuthorities: [],
+                    allowedEndpoints: [{host: "^wcss\\.wwprod\\.officeshell\\.svc\\.cloud\\.microsoft$",paths: ["^api/(.*?)"]},{host: "^wwdb\\.wcss\\.wwprod\\.officeshell\\.svc\\.cloud\\.microsoft$",paths: ["^api/(.*?)"]},{host: "^eudb\\.wcss\\.wwprod\\.officeshell\\.svc\\.cloud\\.microsoft$",paths: ["^api/(.*?)"]},{host: "^webshell\\.suite\\.office\\.com$",paths: ["^api/(.*?)"]},{host: "^wwdb\\.webshell\\.suite\\.office\\.com$",paths: ["^api/(.*?)"]},{host: "^eudb\\.webshell\\.suite\\.office\\.com$",paths: ["^api/(.*?)"]},{host: "^ocws\\.officeapps\\.live\\.com$",paths: ["^ocs/(.*?)"]},{host: "^graph\\.microsoft\\.com$",paths: ["^v1\\.0/(.*?)"]},{host: "^management\\.azure\\.com$",paths: ["^providers/Microsoft.BusinessAppDiscovery/(.*?)"]},{host: "^outlook\\.office\\.com$",paths: ["^/calendar/opxdeeplink/myday$"]},{host: "^outlook\\.office\\.com$",paths: ["^/calendar/opxdeeplink/myday$"]},{host: "^outlook\\.office\\.com$",paths: ["^/calendar/opxdeeplink/myday$"]},{host: "^clients\\.config\\.office\\.net$",paths: ["^user/v1\\.0/(.*?)"]},    {"host": "^fd\\.api\\.iris\\.microsoft\\.com$","paths": ["^v3/Delivery/GetCreative(?:\\?.*)?$","^v3/Delivery/Events/Impression(?:\\?.*)?$","^v4/api/selection(?:\\?.*)?$"]},{"host": "^arc\\.msn\\.com$","paths": ["^v3/Delivery/GetCreative(?:\\?.*)?$","^v3/Delivery/Events/Impression(?:\\?.*)?$","^v4/api/selection(?:\\?.*)?$"]},{"host": "^arc-emea\\.msn\\.com$","paths": ["^v3/Delivery/GetCreative(?:\\?.*)?$","^v3/Delivery/Events/Impression(?:\\?.*)?$","^v4/api/selection(?:\\?.*)?$"]},{"host": "^ris\\.api\\.iris\\.microsoft\\.com$","paths": ["^v1/a/[A-Za-z0-9_-]+(?:\\?.*)?$"]},{"host": "^eudb\\.ris\\.api\\.iris\\.microsoft\\.com$","paths": ["^v1/a/[A-Za-z0-9_-]+(?:\\?.*)?$"]}],
+                    allowedResources: [{resource: "api.office.net",hosts: ["ocws.officeapps.live.com"]},{resource: "graph.microsoft.com",hosts: ["graph.microsoft.com"]},{resource: "wcss.wwprod.officeshell.svc.cloud.microsoft",hosts: ["wcss.wwprod.officeshell.svc.cloud.microsoft", "eudb.wcss.wwprod.officeshell.svc.cloud.microsoft", "wwdb.wcss.wwprod.officeshell.svc.cloud.microsoft"]},{resource: "webshell.suite.office.com",hosts: ["webshell.suite.office.com", "eudb.webshell.suite.office.com", "wwdb.webshell.suite.office.com"]},{resource: "management.azure.com",hosts: ["management.azure.com"]},{resource: "outlook.office.com",hosts: ["outlook.office.com"]},{resource: "clients.config.office.net",hosts: ["clients.config.office.net"]},{"resource": "arc.msn.com/v4","hosts": ["arc.msn.com","arc-emea.msn.com","ris.api.iris.microsoft.com", "eudb.ris.api.iris.microsoft.com","fd.api.iris.microsoft.com"]}],
+                    shouldAttachOauthTokens: true,
+                    trustedOriginAuthoritiesSetFromServer: false
+                };
+
+                O365SuiteServiceProxy.RequestExecutorMessageProcessor.init(requestExecutorSettings);
+
+                var tokenFactorySettings = {
+                    clientId: "89bee1f7-5e6e-4d8a-9f3d-ecd601259da7",
+                    authority: "https\u003A//login.microsoftonline.com/organizations",
+                    cacheLocation: "sessionStorage",
+                    parentPageOrigin: "https\u003A//pavelchocholousgmail.sharepoint.com",
+                    upn: "egd10\u0040pavelchocholousgmail.onmicrosoft.com"
+                };
+
+                O365MSALTokenFactoryIframe.TokenFactoryInsideIframe.init(tokenFactorySettings);
+    
+
+
+
+## https://webshell.suite.office.com/iframe/TokenFactoryIframe
+
+    
+        
+                var tokenFactorySettings = {
+                    clientId: "89bee1f7-5e6e-4d8a-9f3d-ecd601259da7",
+                    authority: "https\u003A//login.microsoftonline.com/organizations",
+                    cacheLocation: "sessionStorage",
+                    parentPageOrigin: null,
+                    upn: null
+                };
+
+                O365MSALTokenFactoryIframe.TokenFactoryInsideIframe.init(tokenFactorySettings);
+    
+

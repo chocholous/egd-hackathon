@@ -1,0 +1,17 @@
+# 2026-11-24T00:48:39Z auth testy
+bez tokenu:
+{"error":"chybí token"} http=401
+nesmyslný token:
+{"error":"neplatný token","detail":"ERR_JWS_INVALID"} http=401
+platný token Graphu (jiné aud):
+{"error":"neplatný token","detail":"ERR_JWS_SIGNATURE_VERIFICATION_FAILED"} http=401
+healthz:
+{"ok":true,"uptimeMs":22191} http=200
+CORS preflight ze SharePointu:
+HTTP/2 204 
+access-control-allow-origin: https://pavelchocholousgmail.sharepoint.com
+access-control-allow-headers: authorization,content-type,x-filename
+access-control-allow-methods: POST,GET,OPTIONS
+access-control-expose-headers: x-convert-ms,x-process-uptime-ms,x-convert-count
+CORS cizí origin:
+HTTP/2 204 

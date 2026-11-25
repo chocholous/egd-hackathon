@@ -1,0 +1,6 @@
+## 2026-11-24T00:43:11Z az identity create
+{
+  "clientId": "ee4fc785-219b-4c3e-b346-72891ada0b52",
+  "id": "/subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourcegroups/rg-egd-sonda-data-prava/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-egd-data-sp",
+  "principalId": "8eb625a2-5d93-40cf-8b81-648ca551c86e"
+}

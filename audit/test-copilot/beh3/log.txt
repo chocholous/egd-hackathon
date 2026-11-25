@@ -1,0 +1,105 @@
+● skill(egd-pripravenost)
+
+● Read windows.md
+  │ ~/.copilot/skills/egd-pripravenost/references/windows.md
+  └ 38 lines read
+
+● Read prihlaseni.md
+  │ ~/.copilot/skills/egd-pripravenost/references/prihlaseni.md
+  └ 44 lines read
+
+● Read github.md
+  │ ~/.copilot/skills/egd-pripravenost/references/github.md
+  └ 84 lines read
+
+● Verify workspace and readiness-check commands (shell)
+  │ pwd && node --version && test -f
+  │ "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" && node
+  │ "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" --help
+  └ 26 lines…
+
+● Check installed tools, npm connectivity, and Microsoft endpoints (shell)                       55s
+  │ node "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" nastroje;
+  │ node "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" npm; node
+  │ "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" sit
+  └ 18 lines…
+
+● Install Microsoft 365 CLI locally in workshop folder (shell)                                 3m 0s
+  │ node "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" cli-instalace
+  └ 3 lines…
+
+● Read shell output Waiting up to 30 seconds for command output                                  28s
+  └ 4 lines…
+
+● Check GitHub access, SPFx requirements, and lab SharePoint browser endpoints (shell)           10s
+  │ node "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" github; node
+  │ "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" spfx; node
+  │ "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" prohlizec --web
+  │ "https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest"
+  └ 20 lines…
+
+✗ Generate the read-only plan for the requested SharePoint test write (shell)
+  │ node "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" zkouska --web
+  │ "https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest"
+  └ PLAN ZAPISU (nic se zatim nezapsalo):
+    1. na webu https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest zalozit seznam
+    "EGD-pripravenost" (jen kdyz jeste neexistuje)
+    2. pridat do nej JEDNU polozku s nazvem "Zkouska chocholous 22. 11. 2026 20:27:39"
+    3. precist ji zpatky
+    Nic se nemaze. Seznam si muzes pozdeji smazat sam v prohlizeci (Obsah webu).
+    Kdyz s tim clovek souhlasi, spust znovu s volbou --ano.
+    Failed with exit code 10
+
+● Check connectivity to the supplied lab SharePoint site and tenant sign-in endpoint (shell)
+  │ curl -sS -o /dev/null -w 'SharePoint lab HTTP %{http_code}\n' --max-time 20
+  │ "https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest"; curl -sS -o /dev/null -w
+  │ 'Tenant sign-in metadata HTTP %{http_code}\n' --max-time 20 "https://login.microsoftonline.com/p
+  │ avelchocholousgmail.onmicrosoft.com/v2.0/.well-known/openid-configuration"
+  └ 2 lines…
+
+● Record user-provided readiness details and unverified items (shell)
+  │ S="/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs"; node "$S"
+  │ zapis --klic copilot-licence --stav zluta --hodnota "Uživatel uvádí přidělenou licenci;
+  │ přihlášení a přístup do firemního GitHubu nebylo ověřeno."; node "$S" zapis --klic
+  │ weby-dev-test-prod --stav zluta --hodnota "DEV/TEST/PROD zatím neobjednány." --it "Prosím o
+  │ objednání tří webů DEV/TEST/PROD v ITSM přes SharePoint Online | New Site Creation; přidejte …
+  └ 18 lines…
+
+● Generate readiness report for Test Tri (shell)
+  │ node "/tmp/cp-run3/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" zprava
+  │ --jmeno "Test Tri"
+  └ 4 lines…
+
+● Read pripravenost-Test-Tri.md
+  └ 84 lines read
+
+● Edit
+  └ Edit pripravenost-Test-Tri.md
+
+● Read pripravenost-Test-Tri.md
+  └ L1:60 (59 lines read)
+
+**Kontrola hotová.** Node 22, npm, síť k npm a lokální CLI for Microsoft 365 jsou připravené; Node vyhovuje i SPFx 1.24. Copilot licenci uvádíte, ale její přístup se nepodařilo ověřit. `gh` není přihlášeno a firemní GitHub není ověřen. DEV/TEST/PROD weby zatím nejsou objednané.
+
+Váš web je lab, ne E.ON. Jeho adresa bez přihlášení vrátila HTTP 403, což ověřuje jen dosažitelnost — ne přístup ani oprávnění. Přihlášení do M365 uvádíte, ale CLI přihlášení ani práva k webu ověřena nebyla. Síťové kontroly E.ON v přiloženém reportu nejsou ověřením tohoto labu. Nic jsem na SharePointu nezapisoval.
+
+**Plán zkušebního zápisu — zatím bez zápisu:**
+```text
+PLAN ZAPISU (nic se zatim nezapsalo):
+  1. na webu https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest zalozit seznam "EGD-pripravenost" (jen kdyz jeste neexistuje)
+  2. pridat do nej JEDNU polozku s nazvem "Zkouska chocholous 22. 11. 2026 20:27:39"
+  3. precist ji zpatky
+Nic se nemaze. Seznam si muzes pozdeji smazat sam v prohlizeci (Obsah webu).
+Kdyz s tim clovek souhlasi, spust znovu s volbou --ano.
+```
+Zápis jsem neprovedl, protože jsem od vás neobdržel požadované výslovné „ano, zapiš“.
+
+Report je uložen v `/private/tmp/cp-run3/home/egd-workshop/pripravenost-Test-Tri.md`. Obsahuje také doporučené žádosti do ITSM. Pošli prosím soubor Pavlovi.
+
+Session exported to: /tmp/cp-run3/vystup/prepis.md
+
+
+Changes    +6 -0
+AI Credits 1.24 (6m 12s)
+Tokens     ↑ 388.5k (352.3k cached, 36.2k written) • ↓ 8.7k (6.3k reasoning)
+Resume     copilot --resume=7be3134e-79ca-4549-8f2c-45c155c4b162

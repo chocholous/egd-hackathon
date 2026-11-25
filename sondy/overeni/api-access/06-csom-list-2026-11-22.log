@@ -1,0 +1,12 @@
+{"Id": "/Guid(853ca148-93be-4320-91a0-6292c5228f8f)/", "Resource": "Microsoft Graph", "ResourceId": "Microsoft Graph", "Scope": "User.Read", "PackageName": "ppf-rooms-zasedacky", "Status": null}
+{"Id": "/Guid(274677cc-8ee4-4fd3-97ba-ab3f6cd1f10c)/", "Resource": "Microsoft Graph", "ResourceId": "Microsoft Graph", "Scope": "Place.Read.All", "PackageName": "ppf-rooms-zasedacky", "Status": null}
+{"Id": "/Guid(4467fd1b-175b-42b0-842d-1a00f740cd69)/", "Resource": "Microsoft Graph", "ResourceId": "Microsoft Graph", "Scope": "Calendars.ReadBasic", "PackageName": "ppf-rooms-zasedacky", "Status": null}
+{"Id": "/Guid(4f55f9e1-a390-4cb6-9467-52083fc7cbe5)/", "Resource": "Microsoft Graph", "ResourceId": "Microsoft Graph", "Scope": "Calendars.Read.Shared", "PackageName": "ppf-rooms-zasedacky", "Status": null}
+{"Id": "/Guid(d8bbd729-bf13-42dd-8937-1ba95d6762bc)/", "Resource": "Microsoft Graph", "ResourceId": "Microsoft Graph", "Scope": "Calendars.ReadWrite.Shared", "PackageName": "ppf-rooms-zasedacky", "Status": null}
+{"Id": "/Guid(76da9016-f36e-44df-8837-e2ac3ca528a6)/", "Resource": "Microsoft Graph", "ResourceId": "Microsoft Graph", "Scope": "Calendars.ReadWrite", "PackageName": "ppf-rooms-zasedacky", "Status": null}
+{"Id": "/Guid(066ef802-dc76-48fe-b9ef-5194dab8a85c)/", "Resource": "PPF Rooms \u2013 p\u0159esuny recepce", "ResourceId": "PPF Rooms \u2013 p\u0159esuny recepce", "Scope": "Presuny.Manage", "PackageName": "ppf-rooms-zasedacky", "Status": null}
+{"Id": "/Guid(8f88cf7e-d4f2-4cc7-acd2-70f4ff501444)/", "Resource": "Microsoft Graph", "ResourceId": "Microsoft Graph", "Scope": "Files.Read.All", "PackageName": "egd-dokumenty-client-side-solution", "Status": null}
+{"Id": "/Guid(654024b2-dc21-4fce-8511-42ccf335f87a)/", "Resource": "EGD sonda AI gateway", "ResourceId": "EGD sonda AI gateway", "Scope": "Gateway.Use", "PackageName": "egd-ai-gateway", "Status": null}
+{"Id": "/Guid(3db3a0bd-7953-49d3-ae9b-44fda6ddc7de)/", "Resource": "7b59591a-0058-4799-be76-0d1f5b79ca95", "ResourceId": "7b59591a-0058-4799-be76-0d1f5b79ca95", "Scope": "Gateway.Use", "PackageName": "egd-ai-gateway", "Status": null}
+{"Id": "/Guid(11308e16-b190-406a-83c7-9cdffaa2c16b)/", "Resource": "Microsoft Graph", "ResourceId": "Microsoft Graph", "Scope": "Mail.Send", "PackageName": "prvni-appka-client-side-solution", "Status": null}
+{"Id": "/Guid(a58056ee-5c89-4c7f-9728-3f6283aec907)/", "Resource": "4a212388-1e08-4d67-83a8-0fa6eca855a7", "ResourceId": "4a212388-1e08-4d67-83a8-0fa6eca855a7", "Scope": "Test.Read", "PackageName": "egd-overeni-apiaccess", "Status": null}

@@ -1,0 +1,17 @@
+{
+  "nazev": "Vyzkoušet prereq skill jako účastník EG.D",
+  "stav": "hotovo",
+  "popis": "Převzato kartou „Test prereq skillu jako účastník“ (session test-pripravenost)",
+  "oblast": "skills",
+  "kdo": "agent Sonnet",
+  "aktualizovano": "2026-11-22T18:34:47Z",
+  "zacatek": "2026-11-22T18:15:53Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-22T18:34:47Z",
+      "stav": "hotovo",
+      "popis": "Převzato kartou „Test prereq skillu jako účastník“ (session test-pripravenost)"
+    }
+  ]
+}

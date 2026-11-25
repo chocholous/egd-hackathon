@@ -1,0 +1,11 @@
+přiřazeno Gateway.App (7b59591a-0058-4799-be76-0d1f5b79ca95)
+přiřazeno Dokumenty.App (54c0b31d-b482-4d3f-900c-3e6c0e5fe870)
+service principal v Exchange: job-egd-retez
+přiřazeno Application Mail.Send -> egd-sonda: odesilani egd-report
+
+Schranka                                        RoleName              InScope
+--------                                        --------              -------
+egd-report@pavelchocholousgmail.onmicrosoft.com Application Mail.Send True
+
+
+identita: id-job-egd-retez clientId=92fbf658-7633-41be-a331-6fb2cc1df74d principalId=b67b9a49-7673-4b30-be76-f5b3e51c5c20

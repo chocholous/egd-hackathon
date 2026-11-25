@@ -1,0 +1,57 @@
+WARNING: Note: The token in both the accessToken and refreshToken fields is an ACR Refresh Token, not an ACR Access Token. This ACR Refresh Token cannot be used directly to authenticate with registry APIs such as pushing/pulling images and listing repositories/tags. This ACR Refresh Token must be subsequently exchanged for an ACR Access.Please see https://aka.ms/acr/auth/oauth
+WARNING: You can perform manual login using the provided refresh token below, for example: 'docker login loginServer -u 00000000-0000-0000-0000-000000000000 -p refreshToken'
+Login Succeeded
+#0 building with "orbstack" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 185B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/4] FROM docker.io/library/node:22-alpine@sha256:1314fb30ec37592d5845e5a160d522c0e680972aa534549940b8d73bde88481a
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 13.38kB done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /app
+#6 CACHED
+
+#7 [3/4] COPY package.json ./
+#7 DONE 0.0s
+
+#8 [4/4] COPY server.mjs ./
+#8 DONE 0.1s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 writing image sha256:deabc2a456a78b58e4980b0c414d59b1ac657e2ec87011b744b2ebd9ed826e9b done
+#9 naming to acregdsondaai.azurecr.io/egd-llm-gateway:v3 done
+#9 DONE 0.1s
+
+#10 pushing acregdsondaai.azurecr.io/egd-llm-gateway:v3 with docker
+#10 pushing layer 004232125324
+#10 pushing layer 882943a763c0
+#10 pushing layer b1a43e70fe8e
+#10 pushing layer f06a70e4735f
+#10 pushing layer acb510a1dd0f
+#10 pushing layer 313a78c90b21
+#10 pushing layer 75f1d9657d88
+#10 pushing layer 004232125324 15.36kB / 13.18kB 0.3s
+#10 pushing layer 882943a763c0 2.56kB / 116B 0.3s
+#10 pushing layer 004232125324 0.6s done
+#10 pushing layer 882943a763c0 0.7s done
+#10 pushing layer b1a43e70fe8e 1.7s done
+#10 pushing layer f06a70e4735f 1.7s done
+#10 pushing layer acb510a1dd0f 1.7s done
+#10 pushing layer 313a78c90b21 1.7s done
+#10 pushing layer 75f1d9657d88 1.7s done
+#10 DONE 1.8s
+acregdsondaai.azurecr.io/egd-llm-gateway:v3

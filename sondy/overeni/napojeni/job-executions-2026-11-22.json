@@ -1,0 +1,22 @@
+# 2026-11-22T19:37:06Z
+[
+  {
+    "end": "2026-11-22T18:20:35+00:00",
+    "name": "job-egd-report-29922860",
+    "start": "2026-11-22T18:20:00+00:00",
+    "status": "Succeeded"
+  },
+  {
+    "end": "2026-11-22T18:16:59+00:00",
+    "name": "job-egd-report-57fq7yz",
+    "start": "2026-11-22T18:16:22+00:00",
+    "status": "Succeeded"
+  }
+]
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+{
+  "cron": "0 6 * * 1",
+  "env": "/subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourceGroups/rg-ppf-rooms-lab/providers/Microsoft.App/managedEnvironments/ca-ppf-rooms-env",
+  "retry": 0,
+  "trigger": "Schedule"
+}

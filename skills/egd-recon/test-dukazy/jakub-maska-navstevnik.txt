@@ -1,0 +1,2 @@
+Role (odhad): Ctenar (Read)
+Prava: ViewListItems, OpenItems, ViewVersions, ViewFormPages, Open, ViewPages, CreateSSCSite, BrowseUserInfo, UseClientIntegration, UseRemoteAPIs, CreateAlerts

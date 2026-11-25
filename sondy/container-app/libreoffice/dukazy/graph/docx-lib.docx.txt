@@ -1,0 +1,14 @@
+Přehled revizí rozvaděčů – příští čtvrtletí
+Příliš žluťoučký kůň úpěl ďábelské ódy. PŘÍLIŠ ŽLUŤOUČKÝ KŮŇ ÚPĚL ĎÁBELSKÉ ÓDY.
+ # Zařízení                          Technik              Termín      Stav          Náklad
+ 1 Trafostanice Říčany – věž         Jiří Dvořák          3. 12. 2026 Naplánováno   18 500 Kč
+ 2 Rozvaděč NN Žďár nad              Ing. Zdeňka          10. 12.     Probíhá       42 300 Kč
+      Sázavou                        Čermáková            2026
+ 3 Vedení VN č. 214 – úsek           Ondřej Řezníček      14. 1. 2027 Naplánováno    129 900
+      Šumperk                                                                              Kč
+ 4 Stanice Ústí – ochrana ESD        Šárka Nováková       21. 1. 2027 Dokončeno      7 650 Kč
+ 5 Přípojková skříň Česká            Ťuk Ďábelský         2. 2. 2027  Naplánováno    3 200 Kč
+      Třebová
+      Celkem                                                                          201 550
+                                                                                           Kč
+

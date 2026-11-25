@@ -1,0 +1,36 @@
+{
+  "A_rezervace_egd07": "egd07",
+  "A_seznam_skryty_beru_viditelnych": {
+    "seznam_skryty": true,
+    "beru": 0
+  },
+  "A_druha_karta_ukaze_muj": {
+    "ucet": "egd07",
+    "beru": 0
+  },
+  "A_api_beru_s_tokenem": {
+    "status": 409,
+    "chyba": "Už máte účet egd07, nejdřív ho vraťte.",
+    "mam": "egd07"
+  },
+  "A_stara_karta_klik_odmitnut_ukaze_muj": "egd07",
+  "A_reload_ukaze_muj": "egd07",
+  "B_jine_okno_rezervace_egd06": "egd06",
+  "A_po_vracim_token_smazan": true,
+  "A_po_vracim_nova_rezervace_egd05": "egd05",
+  "admin_uvolnil_egd05": 200,
+  "A_po_admin_token_smazan": true,
+  "A_po_admin_nova_rezervace_egd04": "egd04",
+  "M_rezervace_egd03": "egd03",
+  "M_api_beru_s_tokenem": {
+    "status": 409,
+    "chyba": "Už máte účet egd03, nejdřív ho vraťte.",
+    "mam": "egd03"
+  },
+  "M_reload_ukaze_muj": {
+    "ucet": "egd03",
+    "beru": 0,
+    "bez_posunu": true
+  },
+  "Z_bez_localStorage_rezervace_egd02": "egd02"
+}

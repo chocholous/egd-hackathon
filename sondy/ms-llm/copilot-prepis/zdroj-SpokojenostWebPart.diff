@@ -1,0 +1,112 @@
+--- /Users/chocholous/Projects/egd-workshop/skills/egd-prvni-appka/templates/spokojenost/src/webparts/spokojenost/SpokojenostWebPart.ts	2026-11-22 20:10:58
++++ /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/copilot-llm/home/egd-workshop/prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts	2026-11-23 11:12:05
+@@ -6,7 +6,7 @@
+ import { Version } from '@microsoft/sp-core-library';
+ import { type IPropertyPaneConfiguration, PropertyPaneTextField } from '@microsoft/sp-property-pane';
+ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
+-import { SPHttpClient, type SPHttpClientResponse } from '@microsoft/sp-http';
++import { AadHttpClient, SPHttpClient, type SPHttpClientResponse } from '@microsoft/sp-http';
+ 
+ import styles from './SpokojenostWebPart.module.scss';
+ 
+@@ -28,6 +28,10 @@
+ const DNU_V_PREHLEDU = 7;
+ // Radi se podle ID: je vzdy indexovane, takze dotaz projde i nad 5000 polozkami (Created by spadl na throttling).
+ const MAX_HLASU = 2000;
++const GATEWAY_URL = 'https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io';
++const API_APP_ID = '7b59591a-0058-4799-be76-0d1f5b79ca95';
++const APP_KEY = 'demo';
++const MAX_OCR_BYTES = 3 * 1024 * 1024;
+ 
+ const JSON_HLAVICKY = {
+   Accept: 'application/json;odata=nometadata',
+@@ -132,9 +136,89 @@
+     if (this._zprava) koren.appendChild(el('p', { class: styles.zprava, role: 'status' }, [this._zprava]));
+ 
+     koren.appendChild(this._dashboard(dnes));
++    koren.appendChild(this._aiPomocnik(dnes));
+     this.domElement.replaceChildren(koren);
++  }
++
++  private _aiPomocnik(dnes: string): HTMLElement {
++    const dnesni = this._hlasy.filter((h) => h.Den === dnes && h.Hodnoceni);
++    const prumer = dnesni.length
++      ? (dnesni.reduce((s, h) => s + (h.Hodnoceni || 0), 0) / dnesni.length).toLocaleString('cs-CZ', { minimumFractionDigits: 1, maximumFractionDigits: 1 })
++      : 'bez hodnocení';
++    const rozlozeni = STUPNE.map(([n]) => `${n}: ${dnesni.filter((h) => h.Hodnoceni === n).length}`).join(', ');
++    const vstup = el('input', { type: 'file', accept: '.pdf,image/*', 'aria-label': 'Vyberte PDF nebo obrázek' }) as HTMLInputElement;
++    const shrnout = el('button', { type: 'button', class: styles.aiTlacitko }, ['Shrnout dnešek (AI)']) as HTMLButtonElement;
++    const precist = el('button', { type: 'button', class: styles.aiTlacitko }, ['Přečíst soubor (OCR)']) as HTMLButtonElement;
++    const vystup = el('p', { class: styles.aiVystup, role: 'status', 'aria-live': 'polite' });
++    const karta = el('div', { class: styles.aiKarta }, [
++      el('h2', {}, ['AI pomocník']),
++      el('p', { class: styles.aiPoznamka }, ['Shrnutí pracuje jen s anonymními souhrnnými čísly. Výsledek je návrh k ověření. OCR podporuje soubory do 3 MB.']),
++      el('div', { class: styles.aiAkce }, [shrnout]),
++      el('div', { class: styles.aiAkce }, [vstup, precist]),
++      vystup
++    ]);
++
++    shrnout.addEventListener('click', () => {
++      shrnout.disabled = true;
++      vystup.textContent = 'Přemýšlím…';
++      this._shrn(`Dnešní anonymní hodnocení spokojenosti: ${dnesni.length} hlasů, průměr ${prumer} z 5. Počty hodnocení: ${rozlozeni}. Shrň výsledek jednou větou česky a nevymýšlej si údaje.`)
++        .then((text) => { vystup.textContent = `Návrh AI: ${text}`; })
++        .catch((e: Error) => { vystup.textContent = `Chyba AI: ${e.message}`; })
++        .then(() => { shrnout.disabled = false; }, () => { shrnout.disabled = false; });
++    });
++
++    precist.addEventListener('click', () => {
++      const soubor = vstup.files && vstup.files[0];
++      if (!soubor) {
++        vystup.textContent = 'Nejprve vyberte PDF nebo obrázek.';
++        return;
++      }
++      if (soubor.size > MAX_OCR_BYTES) {
++        vystup.textContent = 'Soubor je větší než 3 MB. Zmenšete ho a zkuste to znovu.';
++        return;
++      }
++      precist.disabled = true;
++      vystup.textContent = 'Čtu soubor…';
++      this._ocr(soubor)
++        .then((text) => { vystup.textContent = text || 'V souboru se nepodařilo rozpoznat text.'; })
++        .catch((e: Error) => { vystup.textContent = `Chyba OCR: ${e.message}`; })
++        .then(() => { precist.disabled = false; }, () => { precist.disabled = false; });
++    });
++    return karta;
+   }
+ 
++  private async _ai<T>(cesta: string, telo: object): Promise<T> {
++    const klient = await this.context.aadHttpClientFactory.getClient(API_APP_ID);
++    const odpoved = await klient.post(`${GATEWAY_URL}${cesta}`, AadHttpClient.configurations.v1, {
++      headers: { 'Content-Type': 'application/json', 'X-App-Id': APP_KEY },
++      body: JSON.stringify(telo)
++    });
++    if (odpoved.status === 429) throw new Error('Dnešní limit AI pro appku je vyčerpaný. Zkuste to zítra.');
++    if (odpoved.status === 401) throw new Error('Gateway odmítla přihlášení. Ověřte API oprávnění Gateway.Use.');
++    if (odpoved.status === 403) throw new Error('Gateway nezná appku „demo“. Ověřte její registraci u IT.');
++    if (odpoved.status === 502) throw new Error('Gateway soubor nezpracovala. Zkuste menší PDF nebo obrázek (do 3 MB).');
++    if (odpoved.status === 503) throw new Error('AI gateway se právě spouští. Zkuste to za chvíli znovu.');
++    if (!odpoved.ok) throw new Error(`AI gateway vrátila ${odpoved.status}.`);
++    return (await odpoved.json()) as T;
++  }
++
++  private async _shrn(text: string): Promise<string> {
++    const odpoved = await this._ai<{ text: string }>('/api/chat', { prompt: `Shrň jednou větou česky:\n${text}`, max_tokens: 200 });
++    return odpoved.text;
++  }
++
++  private async _ocr(soubor: File): Promise<string> {
++    const pripona = soubor.name.toLowerCase().split('.').pop();
++    if (soubor.type !== 'application/pdf' && !soubor.type.startsWith('image/') && pripona !== 'pdf') {
++      throw new Error('Vyberte PDF nebo obrázek.');
++    }
++    const bajty = new Uint8Array(await soubor.arrayBuffer());
++    let binarni = '';
++    for (let i = 0; i < bajty.length; i++) binarni += String.fromCharCode(bajty[i]);
++    const odpoved = await this._ai<{ text: string }>('/api/ocr', { base64: btoa(binarni), model: 'prebuilt-read' });
++    return odpoved.text;
++  }
++
+   private _dashboard(dnes: string): HTMLElement {
+     const dnesni = this._hlasy.filter((h) => h.Den === dnes && h.Hodnoceni);
+     const prumer = (xs: IHlas[]): number => xs.reduce((s, h) => s + (h.Hodnoceni || 0), 0) / (xs.length || 1);

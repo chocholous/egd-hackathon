@@ -1,0 +1,15 @@
+[
+  {
+    "sku": "SPE_E5",
+    "sharepoint": [
+      {
+        "n": "SHAREPOINTWAC",
+        "s": "Success"
+      },
+      {
+        "n": "SHAREPOINTENTERPRISE",
+        "s": "Success"
+      }
+    ]
+  }
+]

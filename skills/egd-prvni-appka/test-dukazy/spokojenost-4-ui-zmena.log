@@ -1,0 +1,15 @@
+[eva.vesela] dotaz: $orderby=ID desc&$top=2000
+[eva.vesela] url=https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView appka=true
+[eva.vesela] dotaz: $orderby=ID desc&$top=2000
+[eva.vesela] klik 5: potvrzeno=true zprava="Změněno na 5. Díky!" vybrany="5 Velmi spokojen/a"
+[eva.vesela] dashboard: ! 2 hlasů dnes 3,5 průměr dnes (1–5) Rozložení dnes 1 0 2 1 3 0 4 0 5 1 Posledních 7 dní (průměr) – po 16. 11. – út 17. 11. – st 18. 11. – čt 19
+[eva.vesela] chyby konzole: 0 
+[jakub.kucera] dotaz: $orderby=ID desc&$top=2000
+[jakub.kucera] url=https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView appka=true
+[jakub.kucera] dotaz: $orderby=ID desc&$top=2000
+[jakub.kucera] klik 1: potvrzeno=true zprava="Změněno na 1. Díky!" vybrany="1 Velmi nespokojen/a"
+[jakub.kucera] dashboard: ! 2 hlasů dnes 3,0 průměr dnes (1–5) Rozložení dnes 1 1 2 0 3 0 4 0 5 1 Posledních 7 dní (průměr) – po 16. 11. – út 17. 11. – st 18. 11. – čt 19
+[jakub.kucera] chyby konzole: 0 
+VSE OK
+{"Id":1,"Den":"2026-11-22","Hodnoceni":5,"a":"Veselá Eva"}
+{"Id":2,"Den":"2026-11-22","Hodnoceni":1,"a":"Kučera Jakub"}

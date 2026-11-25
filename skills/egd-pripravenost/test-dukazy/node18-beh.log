@@ -1,0 +1,43 @@
+# beh na Node 18 20:52:11
+v18.20.8
+== nastroje
+[INFO]   system: Darwin 27.2.0 Darwin Kernel Version 27.2.0: Wed Oct 14 23:47:07 PDT 2026; root:xnu-13432.41.4~25/RELEASE_ARM64_T8132 (arm64)
+[ZELENA] git: git version 2.54.0 (Apple Git-157)
+[ZLUTA]  node: v18.20.8 (/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/node18/node-v18.20.8-darwin-arm64/bin/node)
+          co dal: pro SPFx 1.24 je potreba Node 22 / 24 / 26 (22 aspon 22.14). Portable zip z nodejs.org jde bez admin prav; staci ho rozbalit a dat na zacatek PATH
+[ZELENA] npm: 10.8.2
+[ZLUTA]  vscode: prikaz "code" nenalezen (VS Code chybi nebo neni v PATH)
+[INFO]   copilot-cli: neni (nepovinne)
+[INFO]   gh: neni (nepovinne)
+[INFO]   claude-code: neni
+[ZELENA] claude-desktop: nalezeno: /Applications/Claude.app
+[INFO]   spusteno-z: Claude Code
+== npm
+[INFO]   npm-registry: https://registry.npmjs.org/
+[INFO]   npm-proxy: proxy=null https-proxy=null strict-ssl=true cafile=null HTTPS_PROXY=ne NODE_EXTRA_CA_CERTS=ne
+[ZELENA] npm-ping: registry odpovida (PONG)
+[ZELENA] npm-stazeni-metadat: @pnp/cli-microsoft365 12.0.0 je dostupny
+== sit
+[ZELENA] entra-dosazitelne: login.microsoftonline.com odpovida, tenant egd.cz = b914a242-e718-443b-a47c-6b4c649d8c0a
+[ZELENA] sharepoint-dosazitelny: eonos.sharepoint.com odpovida (HTTP 403; 401/403 bez prihlaseni je spravne)
+== varianty
+[ZELENA] varianta-node: funguje: 3 portable archiv z nodejs.org (bez admina); nefunguje: 1 uz je (Node 22.14+/24/26 v PATH) (je v18.20.8); nezmereno: 2 winget (jen Windows; na macOS brew nebo portable). Pouzij prvni funkcni: 3 portable archiv z nodejs.org (bez admina)
+[ZELENA] varianta-cli: funguje: 4 bez CLI: prohlizec (prikaz prohlizec); nefunguje: 1 npm lokalne v pracovni slozce (cli-instalace) (Node v18.20.8 je pod 20), 2 npx (bez instalace, stahuje pri kazdem behu) (nezkouseno, jen zaloha; pozor na cizi balicek m365 na npm), 3 globalni m365 uz v PATH (m365 v PATH neni). Pouzij prvni funkcni: 4 bez CLI: prohlizec (prikaz prohlizec)
+[ZELENA] varianta-prihlaseni: funguje: 1 device code (--authType deviceCode), 2 prohlizec (--authType browser, redirect na localhost); nezmereno: 3 appId od IT / souhlas spravce (zatim se nikdo neprihlasil). Pouzij prvni funkcni: 1 device code (--authType deviceCode)
+[INFO]   varianta-pouzita: uz prihlaseny pres CLI: ne; spusteno z: Claude Code. Co z toho skutecne pouzijes, dopis: zapis --klic varianta-pouzita-<oblast> --stav info --hodnota "<cislo varianty>"
+== cli-instalace
+[CERVENA] cli-instalace: Node v18.20.8 je moc stary: CLI for Microsoft 365 (verze 11 i 12) chce Node 20+; instalaci jsem nespoustel
+          co dal: nejdriv portable Node 22 (zip z nodejs.org, bez admina, viz references/windows.md), dat ho na zacatek PATH, zavrit a znovu otevrit terminal, a pak cli-instalace; --verze 11 na Node 18 NEPOMUZE
+          veta pro IT: Prosim o povoleni portable Node.js 22 LTS (zip z nodejs.org, bez admin prav), nebo o jeho instalaci - CLI for Microsoft 365 i SharePoint Framework 1.24 nefunguji na Node 18.
+== spfx
+[CERVENA] node-pro-spfx-1.24: Node v18.20.8; SPFx 1.24 chce 22 / 24 / 26 (22 aspon 22.14). Gulp uz neni, build je Heft.
+          co dal: stahni portable Node 22 (aspon 22.14), 24 nebo 26 LTS (zip z nodejs.org, bez admina), rozbal a dej na zacatek PATH; Node 18 uz SPFx 1.24 nepostavi
+          veta pro IT: Prosim o instalaci Node.js 22 LTS (nebo novejsi LTS) nebo povoleni portable verze - SharePoint Framework 1.24 Node 18 nepodporuje.
+[ZELENA] generator-dostupny: @microsoft/generator-sharepoint@1.24.1 je v registry
+Zkusebni instalaci generatoru spustis volbou --instalovat (stahne cca stovky MB do .pripravenost/spfx-test).
+== zprava
+
+Zprava ulozena: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/n18final/pripravenost-Node18.md
+Nastroj: Claude Desktop (kod v zalozce Code)
+Cesta: zatim zadna - chybi web nebo pristup k nemu (viz Objednavky predem)
+Zelena 11 / zluta 2 / cervena 2

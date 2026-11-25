@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "egd-prava-db",
+    "id": "8f4c71ec-8550-4514-ae08-328a5352864b",
+    "version": "0.1.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "EG.D sonda (lab)",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "DB API a sdílení položek (sonda)"
+      },
+      "longDescription": {
+        "default": "Web part volá ca-egd-data-api přes AadHttpClient: whoami, žádosti z SQL, sdílení položky SharePointu."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "fec3e01a-6ce4-4f9e-9dff-a61b354151fb",
+        "scope": "access_as_user"
+      }
+    ],
+    "features": [
+      {
+        "title": "Prava DB sonda",
+        "description": "Registruje web part.",
+        "id": "d78b805b-e130-4e4f-ba5f-2a84094edce9",
+        "version": "0.1.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/egd-prava-db.sppkg"
+  }
+}

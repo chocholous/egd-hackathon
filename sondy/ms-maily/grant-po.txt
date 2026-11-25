@@ -1,0 +1,11 @@
+2026-11-22T20:51:28Z
+GET oauth2PermissionGrants/3lM8… (stav po PATCH)
+{
+  "clientId": "183c53de-4106-4613-952c-a9cfd34857b0",
+  "consentType": "AllPrincipals",
+  "maMailSend": true,
+  "resourceId": "e9e4c7a2-9a70-413e-bf92-fb987471717d"
+}
+2026-11-22T20:51:49Z
+PATCH oauth2PermissionGrants/3lM8GAZBE0aVLKnP00hXsKLH5Olwmj5Bv5L7mHRxcX0 se stávajícím scope (obsahuje Mail.Send, idempotentní opakování kroku ze skillu)
+HTTP 204

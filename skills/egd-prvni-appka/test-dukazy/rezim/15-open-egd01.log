@@ -1,0 +1,26 @@
+{
+ "profil": "egd01",
+ "web": "https://pavelchocholousgmail.sharepoint.com/sites/egd10-test",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd10-test/SitePages/moje-appka.aspx",
+ "appka": true,
+ "restCteni": {
+  "status": 200,
+  "pocet": 2
+ },
+ "ja": 200,
+ "zprava": [
+  "Změněno na 4. Díky!"
+ ],
+ "restPoHlasu": {
+  "status": 200,
+  "pocet": 2
+ },
+ "ciziUprava": {
+  "status": 403,
+  "chyba": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))"
+ },
+ "ciziSmazani": {
+  "status": 403,
+  "chyba": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))"
+ }
+}

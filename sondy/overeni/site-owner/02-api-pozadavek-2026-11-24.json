@@ -1,0 +1,45 @@
+{
+ "nahrani": {
+  "status": 200,
+  "telo": "ok"
+ },
+ "nasazeni": {
+  "status": 200,
+  "telo": "ok"
+ },
+ "aplikace": {
+  "AadAppId": null,
+  "AadPermissions": "4a212388-1e08-4d67-83a8-0fa6eca855a7, Test.Probe",
+  "AppCatalogVersion": "0.1.1.0",
+  "CanUpgrade": false,
+  "CDNLocation": "SharePoint Online",
+  "ContainsTenantWideExtension": false,
+  "CurrentVersionDeployed": true,
+  "Deployed": true,
+  "ErrorMessage": "No errors.",
+  "ID": "f1b7d897-22f9-43dc-9c35-a41d3849f067",
+  "InstalledVersion": "",
+  "IsClientSideSolution": true,
+  "IsEnabled": true,
+  "IsPackageDefaultSkipFeatureDeployment": false,
+  "IsValidAppPackage": true,
+  "ProductId": "89e389a4-0993-4e32-8a97-b415fd4de20e",
+  "ShortDescription": "AI gateway (sonda)",
+  "SkipDeploymentFeature": false,
+  "StoreAssetId": "",
+  "SupportsTeamsTabs": false,
+  "ThumbnailUrl": "",
+  "Title": "egd-overeni-siteowner-probe"
+ },
+ "permissionrequests_na_webu": {
+  "s": 400,
+  "b": "{\"odata.error\":{\"code\":\"-1, Microsoft.SharePoint.Client.InvalidClientQueryException\",\"message\":{\"lang\":\"en-US\",\"value\":\"The query string \\\"key\\\" is missing or invalid.\"}}}"
+ },
+ "tenant_admin_api": {
+  "s": 403,
+  "b": "{\"odata.error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":{\"lang\":\"en-US\",\"value\":\"Attempted to perform an unauthorized operation.\"}}}"
+ },
+ "tenant_admin_stranka": {
+  "chyba": "TypeError: Failed to fetch"
+ }
+}

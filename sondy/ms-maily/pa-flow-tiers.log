@@ -1,0 +1,22 @@
+{
+ "connectionReferences": {
+  "shared_sharepointonline": "Standard",
+  "shared_office365": "Standard"
+ },
+ "apiOperations_summary": [
+  {
+   "type": "OpenApiConnection",
+   "swaggerOperationId": "GetItems"
+  },
+  {
+   "type": "Table"
+  },
+  {
+   "type": "OpenApiConnection",
+   "swaggerOperationId": "SendEmailV2"
+  }
+ ],
+ "triggers": {
+  "Recurrence": "Recurrence"
+ }
+}

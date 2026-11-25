@@ -1,0 +1,58 @@
+{
+ "seznam_vytvoreni": {
+  "s": 201,
+  "id": "ae9cf4b5-4c07-445a-87ef-42697fbff9f9"
+ },
+ "sloupec": 201,
+ "polozka": {
+  "s": 201,
+  "id": 1
+ },
+ "stranka_vytvoreni": {
+  "s": 201,
+  "id": 2
+ },
+ "stranka_publikace": {
+  "s": 200
+ },
+ "stranka_cteni": {
+  "AbsoluteUrl": "https://pavelchocholousgmail.sharepoint.com/sites/egd01-test/SitePages/overeni-site-owner.aspx",
+  "Title": "overeni-site-owner"
+ },
+ "role_pred": {
+  "unikatni": false,
+  "prirazeni": [
+   "Vlastníci webu Účastník 01 – TEST: Full Control",
+   "Návštěvníci webu Účastník 01 – TEST: Read",
+   "Členové webu Účastník 01 – TEST: Edit"
+  ]
+ },
+ "rozbiti_dedicnosti": 200,
+ "role_definice": [
+  "Full Control",
+  "Design",
+  "Edit",
+  "Contribute",
+  "Read",
+  "Limited Access"
+ ],
+ "pridani_skupiny_navstevniku_contribute": 200,
+ "role_po_pridani": {
+  "unikatni": false,
+  "prirazeni": [
+   "Vlastníci webu Účastník 01 – TEST: Full Control",
+   "Návštěvníci webu Účastník 01 – TEST: Contribute,Read",
+   "Členové webu Účastník 01 – TEST: Edit"
+  ]
+ },
+ "odebrani_skupiny": 200,
+ "obnoveni_dedicnosti": 200,
+ "role_po_obnoveni": {
+  "unikatni": false,
+  "prirazeni": [
+   "Vlastníci webu Účastník 01 – TEST: Full Control",
+   "Návštěvníci webu Účastník 01 – TEST: Read,Limited Access",
+   "Členové webu Účastník 01 – TEST: Edit"
+  ]
+ }
+}

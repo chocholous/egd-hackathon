@@ -1,0 +1,10 @@
+OK  polozka stranky: HTTP 200
+pred: id=2 layout=Article
+OK  checkoutpage: HTTP 200
+OK  ValidateUpdateListItem PageLayoutType: HTTP 200
+ERR savepage: HTTP 409 {"odata.error":{"code":"102, Microsoft.SharePoint.Client.ClientServiceException","message":{"lang":"en-US","value":"We cannot save your changes because a site member has ended your editing session. Re
+OK  publish: HTTP 200
+OK  polozka po: HTTP 200
+po: layout=SingleWebPartAppPage
+RENDER: Skip to main content Spokojenost s prostředím kanceláře dnes pondělí 23. listopadu 2026 Jak jste dnes spokojení s prostředím kanceláře? 1 2 3 4 5 1 = velmi nesp
+rám SharePointu (Skip to main content / titulek stranky): false

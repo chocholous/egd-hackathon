@@ -1,0 +1,14 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[1.5s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/cizi-api.aspx
+[4.5s] OK wait:3000  
+[10.3s] OK rozbal  
+4 zón
+[10.3s] OK eval:[...document.querySelector('[data-sp-web-part-id="229a4c9b-2eb7-4ecb-8bc1-27a8879e38db"]').querySelectorAll('button')].map(b=>(b.dataset.k||b.id)+'|'+b.innerText.replace(/\n/g,' ')).join(' ; ')  
+|Nový požadavek ; |Moje požadavky ; |Ke schválení (3) ; |Odeslat ke schválení ; docx|Word ; graphpdf|Word → PDF (Graph) ; pdf|PDF (pdf-lib) ; pptx|PowerPoint ; xlsx|Excel ; ares|ARES ; aressp|ARES přes spHttpClient ; meteo|Počasí ; cnb|ČNB kurzy
+[10.4s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21

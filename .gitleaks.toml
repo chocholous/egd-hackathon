@@ -1,0 +1,14 @@
+# Výchozí pravidla gitleaks + tokeny, které výchozí sada propustila (23. 11.: refresh token
+# z Entra ve form body síťového záznamu nebyl nalezen).
+[extend]
+useDefault = true
+
+[[rules]]
+id = "entra-refresh-token"
+description = "Refresh token Entra ID (OAuth form body nebo JSON)"
+regex = '''refresh_token.{1,5}[A-Za-z0-9._-]{20,}'''
+
+[[rules]]
+id = "jwt"
+description = "JWT (access / id token)"
+regex = '''eyJ[A-Za-z0-9_\-]{10,}\.eyJ[A-Za-z0-9_\-]{10,}\.[A-Za-z0-9_\-]{10,}'''

@@ -1,0 +1,15 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=35
+KROK check:#spUserSelCb_111
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=35
+KROK klikobs:Akce
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=35
+KROK wait:1000
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=35
+KROK klikobs:Odebrat uživatele
+DIALOG: Chystáte se odebrat ze skupiny následující členy:
+    Malá Karolína
+Chcete tyto členy odebrat?
+    
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=35
+KROK wait:3000
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=35

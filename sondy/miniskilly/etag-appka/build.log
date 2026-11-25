@@ -1,0 +1,74 @@
+> prvni-appka@0.0.1 build
+> heft test --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] Compiling 1 files...
+[build:sass] Finished compiling.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:lint] Using ESLint version 9.37.0
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (4.887s) ---- 
+ ---- test started ---- 
+[test:jest] Using Jest version 30.2.0
+No tests found, exiting with code 0
+[test:jest] 
+[test:jest] Run start. 0 test suites
+[test:jest] 
+[test:jest] Tests finished:
+[test:jest]   Successes: 0
+[test:jest]   Failures: 0
+[test:jest]   Total: 0
+ ---- test finished (0.643s) ---- 
+-------------------- Finished (5.534s) --------------------
+ ---- package-solution started ---- 
+Found manifest: 3d81fe5e-92a0-428a-b960-5fcf470daf24.manifest.json
+Found client-side build resource: evidence-web-part_3cb07dffc358b8b87ae5.js
+Found client-side build resource: evidence-web-part_3cb07dffc358b8b87ae5.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { prvni-appka Feature }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug...
+Cleaned /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/AppManifest.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/_rels/.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/[Content_Types].xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/feature_86b6859c-fcd1-4e1d-9901-631d2f0811e4.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/_rels/feature_86b6859c-fcd1-4e1d-9901-631d2f0811e4.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/feature_86b6859c-fcd1-4e1d-9901-631d2f0811e4.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/86b6859c-fcd1-4e1d-9901-631d2f0811e4/WebPart_3d81fe5e-92a0-428a-b960-5fcf470daf24.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/ClientSideAssets/evidence-web-part_3cb07dffc358b8b87ae5.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/miniskilly/etag-appka/sharepoint/solution/debug/ClientSideAssets/evidence-web-part_3cb07dffc358b8b87ae5.js.LICENSE.txt
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.285s) ---- 
+-------------------- Finished (0.287s) --------------------

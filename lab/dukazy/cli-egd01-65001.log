@@ -1,0 +1,4 @@
+2026-11-22T19:43:22Z
+$ HOME=<izolovaný> m365 login --authType password --userName egd01@… --password *** --appId 12f19539-… --tenant 972a674c-…
+Error: invalid_grant: AADSTS65001: The user or administrator has not consented to use the application with ID '12f19539-b70a-499d-b6dc-517a32c0e904' named 'm365-cli-spfx-lab'. Send an interactive authorization request for this user and resource. Trace ID: c3ea9c5e-b6ed-44e9-8cee-5596578d0400 Correlation ID: bd4d0de5-da6d-4de4-84fd-d0d83ceadc85 Timestamp: 2026-11-22 19:43:35Z
+rc=1

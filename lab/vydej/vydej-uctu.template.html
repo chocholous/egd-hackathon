@@ -1,0 +1,235 @@
+<title>Výdej lab účtů EG.D</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap">
+<style id="css">
+/* Layout: jedna úzká pracovní kolona; nahoře stav výdeje, pod ním mřížka 10 karet účtů (rozvodnice s jističi). */
+:root {
+  --bg: #f3f5f6; --panel: #ffffff; --ink: #15212b; --muted: #5a6873; --line: #d5dde2;
+  --accent: #0b6e8a; --accent-ink: #ffffff; --volt: #f2b705; --ok: #1f7a4d; --taken: #8a4b0b; --err: #b42318;
+  --ok-bg: #e5f3eb; --taken-bg: #f8eedf; --code-bg: #eef2f4;
+  --f-display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f171d; --panel: #16222b; --ink: #e4ecf0; --muted: #93a3ad; --line: #2a3a45;
+  --accent: #4fb8d6; --accent-ink: #06222b; --volt: #f2c94c; --ok: #5cc48d; --taken: #e3a35c; --err: #f97066;
+  --ok-bg: #143224; --taken-bg: #33261a; --code-bg: #0c1318; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f171d; --panel: #16222b; --ink: #e4ecf0; --muted: #93a3ad; --line: #2a3a45;
+  --accent: #4fb8d6; --accent-ink: #06222b; --volt: #f2c94c; --ok: #5cc48d; --taken: #e3a35c; --err: #f97066;
+  --ok-bg: #143224; --taken-bg: #33261a; --code-bg: #0c1318; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--f-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 24px 48px }
+.wrap { max-width: 980px; margin: 0 auto; display: grid; gap: 24px }
+header { display: grid; gap: 8px }
+.eyebrow { font: 600 12px/1 var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: flex; gap: 10px; align-items: center; flex-wrap: wrap }
+.eyebrow .volt { display: inline-block; width: 10px; height: 16px; background: var(--volt); clip-path: polygon(55% 0, 0 58%, 42% 58%, 30% 100%, 100% 38%, 58% 38%) }
+h1 { font: 700 clamp(28px, 5vw, 40px)/1.05 var(--f-display); margin: 0; text-wrap: balance; letter-spacing: -.01em }
+.lead { margin: 0; max-width: 62ch; color: var(--muted) }
+.meter { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; font: 500 14px var(--f-body) }
+.bar { flex: 1 1 220px; height: 10px; border-radius: 5px; background: var(--line); overflow: hidden; display: flex }
+.bar i { display: block; height: 100%; background: var(--taken) }
+.num { font-variant-numeric: tabular-nums; font-family: var(--f-mono) }
+.admin-note { border: 1px dashed var(--accent); border-radius: 8px; padding: 12px 14px; font-size: 14px; display: grid; gap: 4px }
+.admin-note b { font-family: var(--f-display); letter-spacing: .02em }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: 12px }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; gap: 10px; align-content: start; min-width: 0 }
+.card.mine { border-color: var(--accent); box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 30%, transparent) }
+.row { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap }
+.slot { font: 700 30px/1 var(--f-display); font-variant-numeric: tabular-nums }
+.who { font-size: 13px; color: var(--muted); font-family: var(--f-mono); overflow-wrap: anywhere }
+.pill { font: 600 12px/1 var(--f-mono); letter-spacing: .05em; text-transform: uppercase; padding: 6px 8px; border-radius: 999px }
+.pill.free { background: var(--ok-bg); color: var(--ok) }
+.pill.taken { background: var(--taken-bg); color: var(--taken) }
+button { font: 600 14px var(--f-body); border-radius: 8px; padding: 9px 14px; cursor: pointer; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink) }
+button.ghost { background: transparent; color: var(--accent) }
+button.small { padding: 5px 10px; font-size: 13px }
+button:disabled { opacity: .5; cursor: progress }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 3px solid var(--volt); outline-offset: 2px }
+label { font-size: 13px; color: var(--muted); display: grid; gap: 4px }
+input { font: 500 16px var(--f-mono); padding: 8px 10px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); width: 100%; min-width: 0 }
+form { display: grid; gap: 8px }
+.hint { font-size: 13px; color: var(--muted); margin: 0 }
+.err { color: var(--err); font-size: 13px; margin: 0 }
+.cred { display: grid; gap: 6px }
+.field { display: grid; grid-template-columns: 1fr auto; gap: 6px; align-items: center; background: var(--code-bg); border-radius: 8px; padding: 6px 6px 6px 10px; min-width: 0 }
+.field code { font: 500 14px var(--f-mono); overflow-wrap: anywhere; min-width: 0 }
+.field small { grid-column: 1 / -1; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em }
+.sites { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none }
+.sites a { color: var(--accent); font: 500 14px var(--f-mono); overflow-wrap: anywhere }
+.sites span { display: inline-block; width: 46px; font: 600 11px var(--f-mono); color: var(--muted) }
+ol.steps { margin: 0; padding-left: 20px; display: grid; gap: 4px; font-size: 14px }
+.admin { border-top: 1px dashed var(--line); padding-top: 10px; display: grid; gap: 8px }
+.admin .kod { font: 600 18px var(--f-mono); letter-spacing: .08em }
+.toast { position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(16px + env(safe-area-inset-bottom, 0px)); background: var(--ink); color: var(--bg); padding: 10px 14px; border-radius: 8px; font-size: 14px }
+footer { font-size: 13px; color: var(--muted); display: grid; gap: 4px; max-width: 70ch }
+@media (prefers-reduced-motion: no-preference) { .card { transition: border-color .2s } }
+</style>
+<div class="wrap" id="app">
+  <header>
+    <div class="eyebrow"><span class="volt" aria-hidden="true"></span>Vibecoding hackathon EG.D · lab tenant · st 25. 11. 2026</div>
+    <h1>Výdej lab účtů</h1>
+    <p class="lead">Vyber si volný účet, řekni Pavlovi jeho číslo a od něj dostaneš osmiznakový výdejní kód. Kód zadej sem a zobrazí se ti přihlášení, heslo a tvoje tři weby DEV, TEST a PROD.</p>
+    <div class="meter" id="meter"><span>Načítám stav…</span></div>
+  </header>
+  <div id="adminbox" hidden></div>
+  <section class="grid" id="grid" aria-label="Účty účastníků"></section>
+  <footer>
+    <span>Heslo je v této stránce zašifrované. Bez výdejního kódu ho nikdo nepřečte, ani ostatní účastníci se stejným odkazem.</span>
+    <span>Účty platí jen na workshop a jen pro vlastní tři weby. Po workshopu se přihlášení zablokuje.</span>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script type="application/json" id="stav">__STAV__</script>
+<script id="kod">
+(() => {
+  const STAV = JSON.parse(document.getElementById("stav").textContent);
+  const $ = (s, el = document) => el.querySelector(s);
+  const h = (tag, attrs = {}, ...kids) => {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "on") for (const [e, f] of Object.entries(v)) el.addEventListener(e, f);
+      else if (k === "text") el.textContent = v;
+      else if (v !== false && v != null) el.setAttribute(k, v === true ? "" : v);
+    }
+    for (const k of kids.flat()) if (k != null) el.append(k);
+    return el;
+  };
+  const ui = { open: null, odemceno: {}, chyba: {}, admin: false, kody: {}, ukladam: false };
+  try { ui.mujAlias = localStorage.getItem("egd-muj-ucet") || null; } catch { ui.mujAlias = null; }
+
+  const toast = (t) => { const el = $("#toast"); el.textContent = t; el.hidden = false; clearTimeout(toast.t); toast.t = setTimeout(() => el.hidden = true, 2600); };
+  const normKod = (k) => k.toUpperCase().replace(/[\s-]/g, "").replace(/O/g, "0").replace(/[IL]/g, "1");
+  const unb64 = (s) => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+
+  async function odemkni(u, kod) {
+    const base = await crypto.subtle.importKey("raw", new TextEncoder().encode(normKod(kod)), "PBKDF2", false, ["deriveKey"]);
+    const key = await crypto.subtle.deriveKey({ name: "PBKDF2", hash: "SHA-256", salt: unb64(u.sifra.s), iterations: STAV.iterace },
+      base, { name: "AES-GCM", length: 256 }, false, ["decrypt"]);
+    const pt = await crypto.subtle.decrypt({ name: "AES-GCM", iv: unb64(u.sifra.i), additionalData: new TextEncoder().encode(u.alias) }, key, unb64(u.sifra.c));
+    return JSON.parse(new TextDecoder().decode(pt));
+  }
+
+  function copyBtn(text, label) {
+    return h("button", { class: "ghost small", type: "button", "aria-label": "Zkopírovat " + label, on: { click: async (e) => {
+      try { await navigator.clipboard.writeText(text); toast("Zkopírováno: " + label); }
+      catch { const r = document.createRange(); r.selectNodeContents(e.target.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast("Označeno, zkopíruj Cmd/Ctrl+C"); }
+    } } }, "Kopírovat");
+  }
+  const field = (label, value) => h("div", { class: "field" }, h("small", { text: label }), h("code", { text: value }), copyBtn(value, label));
+
+  function pristup(u, tajne) {
+    const dev = u.weby.dev;
+    return h("div", { class: "cred" },
+      field("Přihlašovací jméno", u.upn),
+      field("Heslo", tajne.heslo),
+      h("ul", { class: "sites" }, ["dev", "test", "prod"].map(e => h("li", {}, h("span", { text: e.toUpperCase() }), h("a", { href: u.weby[e], target: "_blank", rel: "noopener", text: u.weby[e].replace(/^https:\/\//, "") })))),
+      h("ol", { class: "steps" },
+        h("li", { text: "Otevři DEV web v anonymním okně prohlížeče a přihlas se tímhle účtem (ne svým firemním)." }),
+        h("li", { text: "Otevři app catalog DEV webu: " + dev + "/AppCatalog. Přetáhni tam svůj .sppkg a v dialogu klikni Nasadit (Deploy)." }),
+        h("li", { text: "Na stránce DEV webu klikni Upravit, přidej svůj web part a stránku publikuj. TEST a PROD fungují stejně." })));
+  }
+
+  function karta(u) {
+    const muj = ui.mujAlias === u.alias;
+    const taken = !!u.vydano;
+    const open = ui.open === u.alias;
+    const card = h("article", { class: "card" + (muj ? " mine" : ""), "aria-label": "Účet " + u.cislo });
+    card.append(h("div", { class: "row" },
+      h("div", {}, h("div", { class: "slot", text: u.cislo }), h("div", { class: "who", text: u.alias })),
+      h("span", { class: "pill " + (taken ? "taken" : "free"), text: taken ? "Vydaný" : "Volný" })));
+    if (taken) card.append(h("div", { class: "who", text: "Má ho: " + (u.vydano.komu || "účastník") }));
+
+    if (ui.odemceno[u.alias]) {
+      card.append(pristup(u, ui.odemceno[u.alias]));
+    } else if (open || muj) {
+      const inp = h("input", { id: "kod-" + u.alias, name: "kod", autocomplete: "off", autocapitalize: "characters", spellcheck: "false", placeholder: "XXXX-XXXX", maxlength: "12", required: true });
+      const btn = h("button", { type: "submit" }, "Zobrazit přístup");
+      const form = h("form", { on: { submit: async (e) => {
+        e.preventDefault(); btn.disabled = true; btn.textContent = "Ověřuji…";
+        try {
+          ui.odemceno[u.alias] = await odemkni(u, inp.value); ui.chyba[u.alias] = null; ui.mujAlias = u.alias;
+          try { localStorage.setItem("egd-muj-ucet", u.alias); } catch {}
+        } catch { ui.chyba[u.alias] = "Kód nesedí. Zkontroluj ho s Pavlem; na velikosti písmen ani pomlčce nezáleží."; ui.zadano = inp.value; }
+        render();
+      } } },
+        h("p", { class: "hint", text: taken && !muj ? "Účet už je vydaný. Pokud je tvůj, zadej svůj kód." : "Řekni Pavlovi číslo " + u.cislo + " a zadej kód, který ti dá." }),
+        h("label", { for: "kod-" + u.alias }, "Výdejní kód", inp),
+        ui.chyba[u.alias] ? h("p", { class: "err", text: ui.chyba[u.alias] }) : null,
+        h("div", { class: "row" }, btn, h("button", { type: "button", class: "ghost", on: { click: () => { ui.open = null; if (muj) { ui.mujAlias = null; try { localStorage.removeItem("egd-muj-ucet"); } catch {} } render(); } } }, "Zpět")));
+      card.append(form);
+      if (ui.chyba[u.alias] && ui.zadano) { inp.value = ui.zadano; ui.zadano = ""; }
+      if (open) setTimeout(() => inp.focus(), 0);
+    } else if (!taken) {
+      card.append(h("button", { type: "button", on: { click: () => { ui.open = u.alias; render(); } } }, "Beru si tenhle"));
+    } else {
+      card.append(h("button", { type: "button", class: "ghost", on: { click: () => { ui.open = u.alias; render(); } } }, "Je můj, mám kód"));
+    }
+    if (ui.admin) card.append(adminPanel(u));
+    return card;
+  }
+
+  function adminPanel(u) {
+    const kod = ui.kody[u.alias];
+    const box = h("div", { class: "admin" }, h("div", { class: "row" }, h("span", { class: "hint", text: "Výdejní kód" }), h("span", { class: "kod", text: kod || "—" })));
+    if (u.vydano) {
+      box.append(h("div", { class: "row" }, h("span", { class: "hint", text: "vydáno " + new Date(u.vydano.kdy).toLocaleString("cs-CZ") }),
+        h("button", { type: "button", class: "ghost small", disabled: ui.ukladam, on: { click: () => uloz(u.alias, null) } }, "Uvolnit")));
+    } else {
+      const inp = h("input", { id: "komu-" + u.alias, placeholder: "Komu (jméno)", maxlength: "60" });
+      box.append(h("form", { on: { submit: (e) => { e.preventDefault(); uloz(u.alias, { komu: inp.value.trim() || "účastník", kdy: new Date().toISOString() }); } } },
+        h("label", { for: "komu-" + u.alias }, "Vydat účet", inp), h("button", { type: "submit", class: "small", disabled: ui.ukladam }, "Označit jako vydaný")));
+    }
+    return box;
+  }
+
+  function render() {
+    const n = STAV.ucty.length, v = STAV.ucty.filter(u => u.vydano).length;
+    const meter = $("#meter"); meter.replaceChildren(
+      h("span", {}, h("b", { class: "num", text: String(n - v) }), " volných z ", h("span", { class: "num", text: String(n) })),
+      h("div", { class: "bar", role: "img", "aria-label": v + " vydaných z " + n }, h("i", { style: "width:" + (100 * v / n) + "%" })));
+    $("#grid").replaceChildren(...STAV.ucty.map(karta));
+  }
+
+  // --- správce: kódy z db (čte jen vlastník), vydání a uvolnění = nová verze stránky ---
+  const SKELETON_HEAD = __SKELETON_HEAD__;
+  const TOP = __TOP__;
+  const BODY_SRC = document.getElementById("app").outerHTML + document.getElementById("toast").outerHTML;
+  function dokument() {
+    const css = document.getElementById("css").textContent;
+    const js = document.getElementById("kod").textContent;
+    const stav = JSON.stringify(STAV).replace(/</g, "\\u003c");
+    return SKELETON_HEAD + TOP + "<style id=\"css\">" + css + "</style>" + BODY_SRC +
+      "<script type=\"application/json\" id=\"stav\">" + stav + "<\/script><script id=\"kod\">" + js + "<\/script></body></html>";
+  }
+  async function uloz(alias, vydano) {
+    const art = await window.claude?.use?.("artifact");
+    if (!art) { toast("Ukládání tady nejde (stránka není otevřená jako artefakt)."); return; }
+    const u = STAV.ucty.find(x => x.alias === alias);
+    const predtim = u.vydano; u.vydano = vydano; ui.ukladam = true; render();
+    try { await art.publish(dokument()); toast(vydano ? "Účet " + u.cislo + " vydán" : "Účet " + u.cislo + " uvolněn"); }
+    catch (e) { u.vydano = predtim; ui.ukladam = false; render(); toast(e?.code === "conflict" ? "Mezitím to změnil někdo jiný, stránka se načte znovu." : "Uložení se nepovedlo: " + (e?.code || e?.message || e)); }
+  }
+  async function initAdmin() {
+    const user = await window.claude?.use?.("user");
+    if (!user || !(await user.isOwner())) return;
+    const db = await window.claude.use("db");
+    ui.admin = true;
+    const box = $("#adminbox"); box.hidden = false;
+    box.replaceChildren(h("div", { class: "admin-note" }, h("b", { text: "Správcovský pohled" }),
+      h("span", { text: "Kódy vidíš jen ty (db, čte jen vlastník). „Označit jako vydaný“ a „Uvolnit“ uloží novou verzi stránky; ostatní ji uvidí po obnovení. Při předání účtu jinému člověku nejdřív přegeneruj heslo (tools/lab-ucty-reset.py)." })));
+    if (db) {
+      const t = setTimeout(() => toast("Kódy se nenačetly do 10 s."), 10000);
+      db.collection("kody").onSnapshot((snap) => {
+        clearTimeout(t); ui.kody = {}; for (const d of snap.docs) ui.kody[d.id] = d.data().kod; render();
+      }, () => { clearTimeout(t); toast("Kódy z db nejdou načíst."); });
+    }
+    render();
+  }
+  render();
+  initAdmin();
+})();
+</script>

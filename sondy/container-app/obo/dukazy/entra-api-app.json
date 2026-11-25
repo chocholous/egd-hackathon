@@ -1,0 +1,35 @@
+{
+  "api": [
+    "access_as_user"
+  ],
+  "appId": "9809454b-59c2-4d85-8bf6-dbd1481b1d6b",
+  "identifierUris": [
+    "api://9809454b-59c2-4d85-8bf6-dbd1481b1d6b"
+  ],
+  "pwd": [
+    {
+      "end": "2026-12-31T00:00:00Z",
+      "hint": "x5B",
+      "n": "ca-egd-obo kv varianta"
+    }
+  ],
+  "rra": [
+    {
+      "resourceAccess": [
+        {
+          "id": "a4b8392a-d8d1-4954-a029-8e668a39a170",
+          "type": "Scope"
+        },
+        {
+          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+          "type": "Scope"
+        }
+      ],
+      "resourceAppId": "00000003-0000-0000-c000-000000000000"
+    }
+  ],
+  "tokenV": 2,
+  "web": [
+    "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/souhlas"
+  ]
+}

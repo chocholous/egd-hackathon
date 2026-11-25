@@ -1,0 +1,20 @@
+{"krok": "zalozen seznam", "status": 201, "err": ""}
+{"krok": "sloupec", "pole": "Popis", "status": 201, "err": ""}
+{"krok": "sloupec", "pole": "Stav", "status": 201, "err": ""}
+{"scen": "IF-MATCH *", "krok": "nova polozka", "status": 201, "id": 1, "err": ""}
+{"scen": "IF-MATCH *", "krok": "nacteni", "A": 200, "etagA": "\"1\"", "B": 200, "etagB": "\"1\""}
+{"scen": "IF-MATCH *", "krok": "A uklada Stav=Schvaleno", "ifmatch": "\"1\"", "status": 204, "err": ""}
+{"scen": "IF-MATCH *", "krok": "B uklada Popis + starý Stav", "ifmatch": "*", "status": 204, "err": ""}
+{"scen": "IF-MATCH *", "krok": "vysledek", "Popis": "doplneno B", "Stav": "Nova", "naposledy": "Malá Karolína", "etag": "\"3\"", "zmena_A_prezila": false}
+{"scen": "ETag", "krok": "nova polozka", "status": 201, "id": 2, "err": ""}
+{"scen": "ETag", "krok": "nacteni", "A": 200, "etagA": "\"1\"", "B": 200, "etagB": "\"1\""}
+{"scen": "ETag", "krok": "A uklada Stav=Schvaleno", "ifmatch": "\"1\"", "status": 204, "err": ""}
+{"scen": "ETag", "krok": "B uklada Popis + starý Stav", "ifmatch": "\"1\"", "status": 412, "err": "-1, Microsoft.SharePoint.Client.ClientServiceException Hodnota ETag požadavku \"1\" neodpovídá hodnotě ETag objektu \"b306a3db-297c-4f42-89d9-d3c74ea543fa,2\"."}
+{"scen": "ETag", "krok": "B nacita znovu", "status": 200, "etag": "\"2\"", "Stav": "Schvaleno"}
+{"scen": "ETag", "krok": "B uklada znovu s novym ETagem", "status": 204, "err": ""}
+{"scen": "ETag", "krok": "vysledek", "Popis": "doplneno B", "Stav": "Schvaleno", "naposledy": "Malá Karolína", "etag": "\"3\"", "zmena_A_prezila": true}
+{"scen": "IF-MATCH * jen zmenene pole", "krok": "nova polozka", "status": 201, "id": 3, "err": ""}
+{"scen": "IF-MATCH * jen zmenene pole", "krok": "nacteni", "A": 200, "etagA": "\"1\"", "B": 200, "etagB": "\"1\""}
+{"scen": "IF-MATCH * jen zmenene pole", "krok": "A uklada Stav=Schvaleno", "ifmatch": "\"1\"", "status": 204, "err": ""}
+{"scen": "IF-MATCH * jen zmenene pole", "krok": "B uklada Popis + starý Stav", "ifmatch": "*", "status": 204, "err": ""}
+{"scen": "IF-MATCH * jen zmenene pole", "krok": "vysledek", "Popis": "doplneno B", "Stav": "Schvaleno", "naposledy": "Malá Karolína", "etag": "\"3\"", "zmena_A_prezila": true}

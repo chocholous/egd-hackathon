@@ -1,0 +1,3 @@
+## approve přes CSOM přímo (stejné volání jako UI) – SP bez tagu
+[{"SchemaVersion":"15.0.0.0","LibraryVersion":"16.0.27911.12005","ErrorInfo":{"ErrorMessage":"The service principal for permssion request egd-overeni-apiaccess could not be found.","ErrorValue":null,"TraceCorrelationId":"0d6e51a2-a084-0001-0635-00e6f446fd17","ErrorCode":-1,"ErrorTypeName":"System.InvalidOperationException"},"TraceCorrelationId":"0d6e51a2-a084-0001-0635-00e6f446fd17"}]
+

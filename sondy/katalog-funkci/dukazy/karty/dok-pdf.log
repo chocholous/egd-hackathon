@@ -1,0 +1,42 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[1.3s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/dokumenty.aspx
+[4.3s] OK wait:3000  
+[12.9s] OK rozbal  
+8 zón
+[12.9s] OK eval:document.querySelector('[data-sp-web-part-id="874880f3-cc01-4935-a0ad-393df1499f29"]').scrollIntoView()  {"interrupted":false}
+[13.0s] OK click:[data-sp-web-part-id="874880f3-cc01-4935-a0ad-393df1499f29"] #me  
+[13.2s] OK waitfor:status  
+[14.2s] OK wait:1000  
+[14.4s] OK shotv:01-egd09-kdo-jsem  
+dukazy/karty/dok-pdf-ca/01-egd09-kdo-jsem.png
+[14.5s] OK file:[data-sp-web-part-id="874880f3-cc01-4935-a0ad-393df1499f29"] input[type=file]=/Users/chocholous/Projects/egd-workshop/sondy/dokumenty/out/sablona.docx  
+[14.6s] OK click:[data-sp-web-part-id="874880f3-cc01-4935-a0ad-393df1499f29"] #go  
+[15.9s] OK waitfor:Stáhnout  
+[16.9s] OK wait:1000  
+[16.9s] OK eval:document.querySelector('[data-sp-web-part-id="874880f3-cc01-4935-a0ad-393df1499f29"]').scrollIntoView()  {"interrupted":false}
+[17.0s] OK shotv:02-egd09-pdf  
+dukazy/karty/dok-pdf-ca/02-egd09-pdf.png
+[17.0s] OK eval:document.querySelector('[data-sp-web-part-id="874880f3-cc01-4935-a0ad-393df1499f29"]').innerText.slice(0,1500)  
+Převod do PDF (LibreOffice v Container App)
+Kdo jsem (token)  Převést do PDF
+Stáhnout sablona.pdf
+{
+  "status": 200,
+  "ms": 1252,
+  "serverConvertMs": "1126",
+  "pdfBytes": 17912,
+  "contentType": "application/pdf",
+  "magic": "%PDF-"
+}
+[17.0s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Revize')/items?$select
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Dokumenty')/rootFolder
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 200 https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/me
+  POST 200 https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/pdf?ext=docx

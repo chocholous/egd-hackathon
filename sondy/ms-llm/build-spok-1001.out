@@ -1,0 +1,77 @@
+
+> spokojenost-ai@0.0.1 build
+> heft test --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:clean] Deleted 0 files and 6 folders
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] Compiling 1 files...
+[build:sass] Finished compiling.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:lint] Using ESLint version 9.37.0
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (18.648s) ---- 
+ ---- test started ---- 
+[test:clean] Deleted 11 files and 3 folders
+[test:jest] Using Jest version 30.2.0
+No tests found, exiting with code 0
+[test:jest] 
+[test:jest] Run start. 0 test suites
+[test:jest] 
+[test:jest] Tests finished:
+[test:jest]   Successes: 0
+[test:jest]   Failures: 0
+[test:jest]   Total: 0
+ ---- test finished (1.422s) ---- 
+-------------------- Finished (20.077s) --------------------
+ ---- package-solution started ---- 
+Found manifest: 9669ff55-924e-4bae-bf73-e84f7de8cd13.manifest.json
+Found client-side build resource: spokojenost-web-part_7439a761a10e0fcabf89.js
+Found client-side build resource: spokojenost-web-part_7439a761a10e0fcabf89.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { spokojenost-ai Feature }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug...
+Cleaned /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/AppManifest.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/_rels/.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/[Content_Types].xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/feature_a6f88bf6-0f63-4dfc-a5a8-59392d4c3d9b.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/_rels/feature_a6f88bf6-0f63-4dfc-a5a8-59392d4c3d9b.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/feature_a6f88bf6-0f63-4dfc-a5a8-59392d4c3d9b.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/a6f88bf6-0f63-4dfc-a5a8-59392d4c3d9b/WebPart_9669ff55-924e-4bae-bf73-e84f7de8cd13.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/ClientSideAssets/spokojenost-web-part_7439a761a10e0fcabf89.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/spokojenost-ai/sharepoint/solution/debug/ClientSideAssets/spokojenost-web-part_7439a761a10e0fcabf89.js.LICENSE.txt
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.940s) ---- 
+-------------------- Finished (0.945s) --------------------

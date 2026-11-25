@@ -1,0 +1,24 @@
+{
+  "cas": "2026-11-24T08:33:06.199Z",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/prvni-appka.aspx",
+  "tokenZdroj": "moduleLoaderPromise.context._aadTokenFactory",
+  "token": {
+    "upn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+    "appid": "08e18876-6177-487e-b8b5-cf950c1e598c",
+    "app_displayname": "SharePoint Online Web Client Extensibility",
+    "scp": "AllProfiles.Manage AppCatalog.Read.All AppCatalog.Submit Calendars.Read Calendars.Read.Shared Calendars.ReadBasic Calendars.ReadWrite Calendars.ReadWrite.Shared Channel.Create Channel.ReadBasic.All ChatMember.Read EduAssignments.ReadBasic EduRoster.ReadBasic Files.Read Files.Read.All Files.ReadWrite.All FileStorageContainer.Selected Group.Read.All Group-Conversation.ReadWrite.All GroupMember.Read.All InformationProtectionPolicy.Read M365BillingPlatform.Read.All Mail.Send People.Read People.Read.All Place.Read.All Presence.Read.All PrinterShare.ReadBasic.All PrintJob.Create PrintJob.ReadBasic SensitivityLabel.Read Sites.FullControl.All Sites.Read.All Sites.ReadWrite.All Tasks.ReadWrite Team.ReadBasic.All TeamsAppInstallation.ReadWriteForTeam TeamsAppInstallation.ReadWriteSelfForTeam TeamsTab.Create TermStore.ReadWrite.All User.Read User.ReadBasic.All profile openid email"
+  },
+  "retrieval": {
+    "stav": 200,
+    "ms": 3555,
+    "odpoved": "{\"retrievalHits\":[]}"
+  },
+  "konverzace": {
+    "stav": 403,
+    "ms": 272,
+    "odpoved": "{\"error\":{\"code\":\"unauthorized\",\"message\":\" Required scopes = [Sites.Read.All, Mail.Read, People.Read.All, OnlineMeetingTranscript.Read.All, Chat.Read, ChannelMessage.Read.All, ExternalItem.Read.All].\",\"innerError\":{\"date\":\"2026-11-24T08:33:10\",\"request-id\":\"6abca09b-dedf-48ce-a1a7-c359c79b3c49\",\"client-request-id\":\"6abca09b-dedf-48ce-a1a7-c359c79b3c49\"}}}"
+  },
+  "profil": "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/prof-tomas",
+  "web": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm",
+  "dotaz": "Shrň jednou větou, o čem jsou dokumenty na tomto webu."
+}

@@ -1,0 +1,119 @@
+připojeno k běžícímu Chrome e2e-egd10 (port 50385), nový panel
+[1.7s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx
+[4.7s] OK wait:3000  
+[12.9s] OK rozbal:4000  
+6 zón
+[12.9s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#retr').click()  
+[44.4s] OK eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})  840
+[44.4s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').innerText  
+{
+  "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/retrieval",
+  "http": 200,
+  "ms": 31430,
+  "odpoved": {
+    "mode": "mi",
+    "who": "egd10@pavelchocholousgmail.onmicrosoft.com",
+    "oboScope": "profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read",
+    "oboMs": 193,
+    "graphStatus": 200,
+    "graphMs": 3147,
+    "requestId": "aa01eac2-55d7-4681-8218-aa277b9ca5ee",
+    "hits": []
+  }
+}
+[44.4s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').scrollIntoView({block:'center'})  {"interrupted":false}
+[44.5s] OK shotv:retr  
+dukazy/copilot-licence/egd10-1/retr.png
+[44.5s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#pretr').click()  
+[47.5s] OK eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})  1797
+[47.5s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').innerText  
+{
+  "cesta": "SPFx → MSGraphClientV3 → Graph beta /copilot/retrieval (přímo)",
+  "http": 200,
+  "ms": 2756,
+  "odpoved": {
+    "retrievalHits": [
+      {
+        "webUrl": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.docx",
+        "extracts": [
+          {
+            "text": "\r\n# Spokojenost s prostředím kanceláře\r\n Den Hlasů Průměr (1–5) 2026-11-24 1 4",
+            "relevanceScore": 0
+          }
+        ],
+        "resourceType": "listItem",
+        "resourceMetadata": {}
+      },
+      {
+        "webUrl": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.pdf",
+        "extracts": [
+          {
+            "text": "\r\n# Spokojenost s prostředím kanceláře \r\nDen Hlasů Průměr (1–5) 2026-11-24 1 4 ",
+            "relevanceScore": 0
+          }
+        ],
+        "resourceType": "listItem",
+        "resourceMetadata": {}
+      },
+      {
+        "webUrl": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost-prehled.pdf",
+        "extracts": [
+          {
+            "text": "Spokojenost s prostředím kanceláře – přehled po dnech 2026-11-24   hlasů: 1   průměr: 4",
+            "relevanceScore": 0
+          }
+        ],
+        "resourceType": "listItem",
+        "resourceMetadata": {}
+      },
+      {
+        "webUrl": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.pptx",
+        "extracts": [
+          {
+            "text": "PptxGenJS Presentation Spokojenost s prostředím kanceláře Den Hlasů Průměr (1–5) 2026-11-24 1 4",
+            "relevanceScore": 0
+          }
+        ],
+        "resourceType": "listItem",
+        "resourceMetadata": {}
+      }
+    ]
+  }
+}
+[47.5s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').scrollIntoView({block:'center'})  {"interrupted":false}
+[47.6s] OK shotv:pretr  
+dukazy/copilot-licence/egd10-1/pretr.png
+[47.6s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#chat').click()  
+[64.1s] OK eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})  1186
+[64.1s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').innerText  
+{
+  "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/chat",
+  "http": 200,
+  "ms": 16443,
+  "odpoved": {
+    "mode": "mi",
+    "who": "egd10@pavelchocholousgmail.onmicrosoft.com",
+    "oboScope": "profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read",
+    "oboMs": 142,
+    "krok": "chat",
+    "konverzaceMs": 3034,
+    "graphStatus": 200,
+    "graphMs": 13069,
+    "requestId": "f5d1e449-3bc0-40b6-956f-19deb2860444",
+    "copilotOdpovedel": true,
+    "odpoved": "V dostupných interních podkladech se mi nepodařilo dohledat údaj, ze kterého by šel **průměr spokojenosti s prostředím kanceláře** spolehlivě určit.\n\nPokud mi pošlete výsledky průzkumu nebo jednotlivá hodnocení, průměr rovnou spočítám.",
+    "zdroje": [],
+    "zprav": 2
+  }
+}
+[64.1s] OK eval:document.querySelectorAll("[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"]")[1].querySelector('#o').scrollIntoView({block:'center'})  {"interrupted":false}
+[64.2s] OK shotv:chat  
+dukazy/copilot-licence/egd10-1/chat.png
+[64.2s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  POST 200 https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/retrieval
+  POST 200 https://graph.microsoft.com/beta/copilot/retrieval
+  POST 200 https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/chat

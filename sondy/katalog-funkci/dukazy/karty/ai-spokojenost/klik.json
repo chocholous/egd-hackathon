@@ -1,0 +1,152 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/ai.aspx",
+ "start": "2026-11-24T18:46:21.338Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 921,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 3924,
+   "vysledek": "8 zón",
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"] #ai-shrnout",
+   "t": 12577,
+   "ok": true
+  },
+  {
+   "krok": "wait:12000",
+   "t": 12679,
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"] #ai-kvota",
+   "t": 24684,
+   "ok": true
+  },
+  {
+   "krok": "wait:6000",
+   "t": 24762,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"]').innerText.slice(document.querySelector('[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"]').innerText.indexOf('Shrnout dnešek')-50, document.querySelector('[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"]').innerText.indexOf('Shrnout dnešek')+900)",
+   "t": 30765,
+   "vysledek": "e 22. 11.\n–\npo 23. 11.\n4,0\nút 24. 11.\nAI pomocník\nShrnout dnešek (AI)Přečíst soubor (OCR)Kolik AI zbývá dnes\n\nDnes spotřebováno 185 z 50000 tokenů.",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"] #ai-shrnout').scrollIntoView({block:'start'})",
+   "t": 30769,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:01-egd09-ai-shrnuti",
+   "t": 30772,
+   "vysledek": "dukazy/karty/ai-spokojenost/01-egd09-ai-shrnuti.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 515,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 645,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 646,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 647,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1992,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 6827,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID%20desc&$top=2000"
+  },
+  {
+   "t": 8256,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(7)/CommentsDisabledScope"
+  },
+  {
+   "t": 8260,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 8332,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderby=ID%"
+  },
+  {
+   "t": 8332,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(7)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 13888,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat"
+  },
+  {
+   "t": 24890,
+   "m": "GET",
+   "s": 200,
+   "u": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/kvota"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:46:52.276Z"
+}

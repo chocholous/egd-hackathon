@@ -1,0 +1,4 @@
+/_api/web/lists/getbytitle('SpokojenostA2')/items?$select=ID,Hodnoceni,Den,Created,Modified,Author/Title&$expand=Author
+{"status":200,"telo":{"value":[{"Author":{"Title":"Účastník 01"},"Id":1,"Hodnoceni":4,"Den":"2026-11-24","ID":1,"Modified":"2026-11-24T09:03:26Z","Created":"2026-11-24T09:03:12Z"}]}}
+/_api/web/lists/getbytitle('Spokojenost')?$select=ItemCount,LastItemModifiedDate
+{"status":200,"telo":{"ItemCount":2,"LastItemModifiedDate":"2026-11-22T19:23:41Z"}}

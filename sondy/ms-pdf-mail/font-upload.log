@@ -1,0 +1,18 @@
+{
+  "Exists": true,
+  "ExistsAllowThrowForPolicyFailures": true,
+  "ExistsWithException": true,
+  "IsWOPIEnabled": false,
+  "ItemCount": 0,
+  "Name": "assets",
+  "ProgID": null,
+  "ServerRelativeUrl": "/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets",
+  "TimeCreated": "2026-11-24T01:55:08Z",
+  "TimeLastModified": "2026-11-24T01:55:08Z",
+  "UniqueId": "f2e927c3-d362-4e64-a47b-2a170f2ddd71",
+  "WelcomePage": ""
+}
+folder rc=0
+In the next major version, the --overwrite option will default to false. To avoid this warning, please set the --overwrite option explicitly to true or false.
+{"Name":"Roboto-Regular.ttf","Length":"157216","ServerRelativeUrl":"/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets/Roboto-Regular.ttf"}
+file rc=0

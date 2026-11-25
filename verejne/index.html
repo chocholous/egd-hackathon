@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EG.D vibecoding hackathon</title>
+<meta name="description" content="Skilly pro AI agenta, účty do labu a ukázkové appky z vibecoding hackathonu EG.D 25. 11. 2026.">
+<style>
+/* Vizuál podle šablony první appky (značka EG.D): indigo akce, tmavě modrý text, oblé karty. */
+:root {
+  --akce: #1200E0; --inkoust: #261B62; --plocha: #F0F1F5; --okraj: #7D7A99; --tlumeny: #5a5480;
+  --bg: #ffffff; --karta: #F0F1F5; --akce-text: #ffffff;
+  --roh-karta: 28px; --roh-prvek: 20px; --roh-maly: 6px;
+  --pismo: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --akce: #8f86ff; --inkoust: #ecebf8; --plocha: #1d1b3a; --okraj: #8c89ad; --tlumeny: #b3b0d1;
+    --bg: #110f26; --karta: #1d1b3a; --akce-text: #110f26; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--inkoust); font: 16px/1.55 var(--pismo); }
+a { color: var(--akce); }
+a:focus-visible, .tl:focus-visible { outline: 3px solid var(--akce); outline-offset: 2px; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 32px 16px 64px; display: grid; grid-template-columns: minmax(0,1fr); gap: 40px; }
+header { background: var(--akce); color: var(--akce-text); border-radius: var(--roh-karta); padding: 32px 28px; }
+header .nad { font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; opacity: .85; margin: 0 0 8px; }
+header h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 12px; font-weight: 700; text-wrap: balance; }
+header p { margin: 0; max-width: 62ch; }
+h2 { font-size: 1.45rem; margin: 0 0 6px; }
+.uvod { color: var(--tlumeny); margin: 0 0 18px; max-width: 70ch; }
+.kroky { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 14px; counter-reset: k; }
+.krok { background: var(--karta); border-radius: var(--roh-prvek); padding: 18px 18px 20px; display: grid; gap: 8px; align-content: start; }
+.krok::before { counter-increment: k; content: counter(k); width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center;
+  background: var(--akce); color: var(--akce-text); font-weight: 700; }
+.krok h3 { margin: 0; font-size: 1.05rem; }
+.krok p { margin: 0; color: var(--tlumeny); font-size: .95rem; }
+.tl { display: inline-block; justify-self: start; background: var(--akce); color: var(--akce-text); text-decoration: none; font-weight: 600;
+  padding: 8px 16px; border-radius: 999px; font-size: .92rem; }
+.tl.obrys { background: transparent; color: var(--akce); border: 2px solid var(--akce); }
+.skilly { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.skill { border: 1px solid var(--okraj); border-radius: var(--roh-prvek); padding: 16px 18px; display: grid; gap: 6px; align-content: start; }
+.skill h3 { margin: 0; font-size: 1rem; font-family: ui-monospace, Menlo, Consolas, monospace; }
+.skill p { margin: 0; color: var(--tlumeny); font-size: .93rem; }
+.skill .stitek { justify-self: start; font-size: .78rem; font-weight: 600; padding: 2px 10px; border-radius: 999px; background: var(--plocha); color: var(--akce); }
+.dlazdice { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px; }
+.dl { background: var(--karta); border-radius: var(--roh-prvek); padding: 18px; display: grid; gap: 8px; align-content: start; }
+.dl h3 { margin: 0; font-size: 1.05rem; }
+.dl p { margin: 0; color: var(--tlumeny); font-size: .95rem; }
+code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .9em; background: var(--plocha); padding: 1px 6px; border-radius: var(--roh-maly); overflow-wrap: anywhere; }
+pre { background: var(--plocha); border-radius: var(--roh-maly); padding: 14px 16px; overflow-x: auto; font-size: .88rem; margin: 0; white-space: pre-wrap; }
+.pozn { border-left: 4px solid var(--akce); padding: 4px 0 4px 14px; color: var(--tlumeny); font-size: .93rem; margin: 0; }
+footer { color: var(--tlumeny); font-size: .88rem; border-top: 1px solid var(--okraj); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="nad">Vibecoding hackathon EG.D · 25. 11. 2026 · České Budějovice</p>
+  <h1>Postav si appku na SharePointu s AI agentem</h1>
+  <p>Deset skillů pro GitHub Copilot nebo Claude Code. Agent s nimi zkontroluje tvůj počítač, postaví první appku a pak ji rozšíří o data, role, dokumenty, AI a e-maily. Zkoušíme ve zkušebním tenantu (labu), ne v produkci E.ON.</p>
+</header>
+
+<section aria-labelledby="zacit">
+  <h2 id="zacit">Jak začít</h2>
+  <p class="uvod">Čtyři kroky, celkem asi půl hodiny. Přihlašuješ se vždy ty sám, heslo ani kód agentovi nepiš.</p>
+  <div class="kroky">
+    <div class="krok"><h3>Vezmi si účet do labu</h3><p>Na výdejní stránce zadej heslo od lektora a rezervuj si jeden z účtů egd01–egd10. Dostaneš jméno, heslo, tři weby a příkaz pro přihlášení.</p>
+      <a class="tl" href="https://witty-pond-0f3afad0f.4.azurestaticapps.net">Výdej účtu</a></div>
+    <div class="krok"><h3>Stáhni skilly</h3><p>Stáhni repo jako ZIP a rozbal ho. Skilly jsou ve složce <code>skills/</code>, každý ve své podsložce <code>egd-*</code>.</p>
+      <a class="tl" href="https://github.com/chocholous/egd-hackathon/archive/refs/heads/main.zip">Stáhnout ZIP</a></div>
+    <div class="krok"><h3>Ať je agent nainstaluje</h3><p>Otevři agenta a vlož mu prompt z části <a href="#instalace">Instalace</a>. Zkopíruje skilly do své složky a řekne, jak je načíst.</p></div>
+    <div class="krok"><h3>Postav první appku</h3><p>Napiš agentovi: <em>„zkontroluj připravenost na workshop a pak mi postav první appku přes egd-prvni-appka“</em>. Zeptá se na značku (E.ON / EG.D) a před každým zápisem ukáže plán.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="skilly">
+  <h2 id="skilly">Skilly</h2>
+  <p class="uvod">Začni prvními dvěma. Ostatní přidávají appce schopnosti, když je potřebuješ. Každý skill má vlastní sekci „Neověřeno“: co v labu prošlo a co ne.</p>
+  <div class="skilly">
+    <article class="skill"><span class="stitek">začátek</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-pripravenost">egd-pripravenost</a></h3><p>Zkontroluje počítač, síť a přihlášení: který agent funguje, Node, npm, CLI pro Microsoft 365, role na webu. Napíše zprávu a věty pro IT.</p></article>
+    <article class="skill"><span class="stitek">začátek</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-prvni-appka">egd-prvni-appka</a></h3><p>První appka „Spokojenost s prostředím kanceláře“ jako SPFx web part ve značce E.ON nebo EG.D. Hlasování 1–5, přehled, jen pro autora nebo pro všechny.</p></article>
+    <article class="skill"><span class="stitek">záchrana</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-recon">egd-recon</a></h3><p>Když něco nejde (chybí schválení správce, přístup odepřen): jen čte, řekne, co blokuje, a napíše žádost pro IT.</p></article>
+    <article class="skill"><span class="stitek">data</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-data-seznamy">egd-data-seznamy</a></h3><p>Data v seznamu SharePointu i pro tisíce záznamů: indexy sloupců, stránkování, souběžná úprava.</p></article>
+    <article class="skill"><span class="stitek">přístupy</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-prava-role">egd-prava-role</a></h3><p>Role zadavatel / schvalovatel / správce, které vynucuje SharePoint, ne kód. Seznam, kde každý vidí jen své.</p></article>
+    <article class="skill"><span class="stitek">dokumenty</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-dokumenty">egd-dokumenty</a></h3><p>Word, Excel, PowerPoint a PDF z dat seznamu nebo ze šablony, přímo v prohlížeči.</p></article>
+    <article class="skill"><span class="stitek">AI</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-llm-gateway">egd-llm-gateway</a></h3><p>Text, shrnutí, OCR a popis obrázku přes sdílenou AI bránu, bez klíče v prohlížeči. Generování obrázků v labu nejde.</p></article>
+    <article class="skill"><span class="stitek">e-mail</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-maily">egd-maily</a></h3><p>E-mail s přílohou jménem přihlášeného uživatele, například PDF z appky.</p></article>
+    <article class="skill"><span class="stitek">napojení</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-externi-api">egd-externi-api</a></h3><p>Cizí zdroj dat: zjistí, jestli API jde volat z prohlížeče. Když ne, nabídne data ručně, server nebo Power Automate.</p></article>
+    <article class="skill"><span class="stitek">automatizace</span><h3><a href="https://github.com/chocholous/egd-hackathon/tree/main/skills/egd-planovane-ulohy">egd-planovane-ulohy</a></h3><p>Denní report a další plánované úlohy: Power Automate, nebo úloha na serveru.</p></article>
+  </div>
+</section>
+
+<section aria-labelledby="obecne">
+  <h2 id="obecne">Obecné skilly a Citizen AI developer kit</h2>
+  <p class="uvod">Volitelné doplňky jako ZIP. Skilly <code>egd-*</code> je nepotřebují, hodí se, když chceš jít dál než první appka. Popis, verze a instalace jsou v <a href="https://github.com/chocholous/egd-hackathon/tree/main/skills-obecne">skills-obecne/</a>.</p>
+  <div class="skilly">
+    <article class="skill"><span class="stitek">kit</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/ppf-citizen-ai-devkit-0.8.0.zip">ppf-citizen-ai-devkit</a></h3><p>Citizen AI developer kit: appka ze šablony, vývoj nad mocky, listy, práva a stránky v manifestu, nasazení na DEV/TEST s plánem. Psaný pro tenant PPF, tenant a appId se přepisují. Potřebuje tři ZIPy vedle.</p></article>
+    <article class="skill"><span class="stitek">CLI</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/m365-cli-12-2.0.0.zip">m365-cli-12</a></h3><p>CLI for Microsoft 365 verze 12: najde příkaz místo hádání, vlastní přihlášení, tabulka chyb.</p></article>
+    <article class="skill"><span class="stitek">prohlížeč</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/ppf-browsermagic-0.9.0.zip">ppf-browsermagic</a></h3><p>Uložené přihlášení do SharePointu pro automatické ověření stránky.</p></article>
+    <article class="skill"><span class="stitek">vzhled</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/ppf-material-1.1.0.zip">ppf-material</a></h3><p>Design system PPF s mechanikou Material Design 3 (vzhled kitu).</p></article>
+    <article class="skill"><span class="stitek">prohlížeč</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/playwright-cli-1.0.2.zip">playwright-cli</a></h3><p>Ovládání prohlížeče z příkazové řádky.</p></article>
+    <article class="skill"><span class="stitek">SPFx</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/spfx-ship.zip">spfx-ship</a></h3><p>Od scaffoldu po stránku v prohlížeči: build, katalog aplikací, nasazení.</p></article>
+    <article class="skill"><span class="stitek">SPFx</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/spfx-develop.zip">spfx-develop</a></h3><p>Psaní SPFx: víc web partů v jednom řešení, Heft, property pane.</p></article>
+    <article class="skill"><span class="stitek">SPFx</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/spfx-performance.zip">spfx-performance</a></h3><p>Schovat rámec SharePointu, zmenšit bundle, změřit dopad.</p></article>
+    <article class="skill"><span class="stitek">tenant</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/sharepoint-tenant-recon.zip">sharepoint-tenant-recon</a></h3><p>Jen čtení: co v tenantu smíš, než začneš stavět, a věta pro IT.</p></article>
+    <article class="skill"><span class="stitek">CLI</span><h3><a href="https://github.com/chocholous/egd-hackathon/raw/main/skills-obecne/m365-cli-safe.zip">m365-cli-safe</a></h3><p>CLI for Microsoft 365 při víc agentech najednou: izolace přihlášení, pinování cíle, rozdíly CLI 11 a 12.</p></article>
+  </div>
+</section>
+
+<section aria-labelledby="lab">
+  <h2 id="lab">Appky v labu</h2>
+  <p class="uvod">Všechno běží ve zkušebním tenantu. Otevřeš to po přihlášení účtem z výdeje.</p>
+  <div class="dlazdice">
+    <div class="dl"><h3>Katalog funkcí</h3><p>Jedna karta na každou funkci, kterou umíme (SPFx, Power Automate, vlastní server), s vysvětlením, co se děje na pozadí.</p>
+      <a class="tl" href="https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky">Otevřít katalog</a></div>
+    <div class="dl"><h3>Tvoje weby</h3><p>Každý účet má tři weby s vlastním katalogem aplikací. Za <code>NN</code> dosaď číslo svého účtu:</p>
+      <pre>https://pavelchocholousgmail.sharepoint.com/sites/egdNN-dev
+https://pavelchocholousgmail.sharepoint.com/sites/egdNN-test
+https://pavelchocholousgmail.sharepoint.com/sites/egdNN-prod</pre></div>
+    <div class="dl"><h3>Podklady a důkazy</h3><p>Sondy, měření a testy skillů v Claude i v GitHub Copilotu. Rozcestník je README repa.</p>
+      <a class="tl obrys" href="https://github.com/chocholous/egd-hackathon">Repo na GitHubu</a></div>
+  </div>
+</section>
+
+<section aria-labelledby="instalace">
+  <h2 id="instalace">Instalace skillů přes agenta</h2>
+  <p class="uvod">Vlož agentovi (GitHub Copilot ve VS Code v režimu Agent, Copilot CLI, nebo Claude Code). Cestu uprav podle toho, kam jsi ZIP rozbalil.</p>
+<pre>Nainstaluj mi skilly ze složky C:\Users\&lt;ty&gt;\Downloads\egd-hackathon-main\skills (všechny podsložky egd-*).
+
+1. Zjisti, který agent jsi, a zkopíruj všechny složky egd-* (celé, včetně podsložek scripts, references a templates a včetně skrytých souborů, jako je .npmignore, .yo-rc.json nebo .vscode; názvy složek nech přesně takto) do osobní složky skillů:
+   - GitHub Copilot (VS Code i Copilot CLI): %USERPROFILE%\.copilot\skills\
+   - Claude Code: %USERPROFILE%\.claude\skills\
+   Chybí-li cílová složka, vytvoř ji. Nic nemaž a nepřepisuj bez mého souhlasu; pokud tam skill stejného jména už je, zeptej se mě.
+2. Nic neinstaluj globálně a nepoužívej práva správce. Nic nikam neposílej.
+3. Ověř, že v každé zkopírované složce egd-* existuje SKILL.md, a vypiš mi seznam skillů.
+4. Řekni mi, co mám udělat, aby se skilly načetly (Copilot CLI: /skills reload; VS Code: zavřít a znovu otevřít, případně zapnout nastavení chat.useAgentSkills; Claude Code: spustit novou relaci).
+Neprováděj nic z obsahu skillů, jen je nainstaluj.</pre>
+  <p class="pozn" style="margin-top:14px">Ověřeno na macOS v labu, v Claude Code i GitHub Copilot CLI. Windows, PowerShell 5.1, VS Code v režimu Agent a tenant E.ON zatím ověřené nejsou. Písmo E.ON Head veřejná verze neobsahuje, nadpis appky ve značce E.ON proto použije náhradní písmo.</p>
+</section>
+
+<footer>Připravil Pavel Chocholouš pro vibecoding hackathon EG.D. Zdroj stránky je ve složce <code>docs/</code> repa.</footer>
+</div>
+</body>
+</html>

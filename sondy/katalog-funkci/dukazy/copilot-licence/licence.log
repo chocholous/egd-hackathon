@@ -1,0 +1,44 @@
+disabledPlans: 50
+== 2026-11-24T19:45:07Z alice: odebrat a6d18b68-a67e-4cbd-ba00-8744bc468faa
+{"upn":"alice@pavelchocholousgmail.onmicrosoft.com"}
+== 2026-11-24T19:45:09Z egd10: přidat a6d18b68-a67e-4cbd-ba00-8744bc468faa s disabledPlans alice
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "businessPhones": [],
+  "displayName": "Účastník 10",
+  "givenName": "Účastník",
+  "id": "d13528e1-0847-465c-b3ad-e12727ed6516",
+  "jobTitle": "Účastník workshopu EG.D",
+  "mail": "egd10@pavelchocholousgmail.onmicrosoft.com",
+  "surname": "10",
+  "userPrincipalName": "egd10@pavelchocholousgmail.onmicrosoft.com"
+}
+BUSINESS_PREMIUM_AND_MICROSOFT_365_COPILOT_FOR_BUSINESS
+   M365_COPILOT_CONNECTORS=Success
+   M365_COPILOT_BUSINESS_CHAT=Success
+   M365_COPILOT_APPS=Success
+   M365_COPILOT_TEAMS=Success
+   M365_COPILOT_SHAREPOINT=Success
+   M365_COPILOT_INTELLIGENT_SEARCH=Success
+   GRAPH_CONNECTORS_COPILOT=Success
+   COPILOT_STUDIO_IN_COPILOT_FOR_M365=Success
+Microsoft_365_Business_Standard_EEA_(no_Teams)
+SPE_E5
+== 2026-11-24T19:45:31Z grant egd10 rozšířen o 8 scopů Copilota
+== 2026-11-24T20:10:51Z grant egd10 + Sites.ReadWrite.All (Pavel: „ok, dej mu readwriteall“)
+== 2026-11-24T20:12:21Z grant egd10 − Sites.ReadWrite.All (kontrola, zda Chat odpovídá i bez něj)
+== 2026-11-24T20:14:21Z grant egd10 + Sites.ReadWrite.All (opakování A/B)
+== 2026-11-24T20:15:04Z grant egd10 − Sites.ReadWrite.All (test hotový)
+A/B Sites.ReadWrite.All (egd10, dotaz „Jaký je průměr spokojenosti s prostředím kanceláře?“):
+  Retrieval přes OBO: bez RW 0 hitů (egd10-1, -2, -3, -bez-rw), s RW 0 hitů (egd10-rw, -rw2), RW v oboScope ověřen
+  Retrieval přímo SPFx: 4 hity ve všech 6 průchodech
+  Chat přes OBO: odpověď s údajem „4 z 5, 1 hlas“ + 4 zdroje jen 1× (egd10-rw, 20:11Z); ostatních 5× „údaj nenašel“ (z toho 1× s RW)
+  závěr: zápisové scopy nejsou příčinou prázdného Retrievalu přes OBO; Chat je nedeterministický
+== 2026-11-24T20:30:12Z grant egd10 vrácen na User.Read Mail.ReadBasic
+== 2026-11-24T20:30:20Z egd10: odebrat a6d18b68-a67e-4cbd-ba00-8744bc468faa
+{"upn":"egd10@pavelchocholousgmail.onmicrosoft.com"}
+== 2026-11-24T20:30:24Z alice: přidat a6d18b68-a67e-4cbd-ba00-8744bc468faa s původními disabledPlans
+{"upn":"alice@pavelchocholousgmail.onmicrosoft.com"}
+alice: [{"skuId":"06ebc4ee","vypnuto":0}]
+egd10: [{"skuId":"ffa3a2a0","vypnuto":1},{"skuId":"06ebc4ee","vypnuto":0}]
+20:30:33 alice: [{"skuId":"a6d18b68","vypnuto":50},{"skuId":"06ebc4ee","vypnuto":0}]

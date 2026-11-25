@@ -1,0 +1,93 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(id,displayName)",
+  "value": [
+    {
+      "displayName": "Copilot Community",
+      "id": "0854ca1f-9ca3-4271-85e3-4fb5544ebc08"
+    },
+    {
+      "displayName": "PPF Rooms – asistentky",
+      "id": "14cd359c-07c0-40fd-9b58-5ad69494008a"
+    },
+    {
+      "displayName": "zr-vip-asistentky",
+      "id": "1c8caac2-ba31-4497-b8fe-e259b899c23a"
+    },
+    {
+      "displayName": "mcp-users-costcenter",
+      "id": "20d5e3f2-8e9e-432f-8159-e49c65841cc3"
+    },
+    {
+      "displayName": "MCP Lab Dokumenty",
+      "id": "27e21088-737e-4917-beea-4431ebafffbc"
+    },
+    {
+      "displayName": "EGD sonda Power Automate",
+      "id": "3129e4f9-22c2-4b73-a97d-0834bbca7908"
+    },
+    {
+      "displayName": "mcp-users-classic",
+      "id": "49336923-12b9-442a-ad84-10a2f3ed8762"
+    },
+    {
+      "displayName": "EGD workshop účastníci",
+      "id": "4f80b979-22ca-493e-a0c4-a5eeccbe4cc5"
+    },
+    {
+      "displayName": "Group for Answers in Viva Engage – DO NOT DELETE 89986097153",
+      "id": "6c80d612-8c59-4165-bbb2-22e902b6b166"
+    },
+    {
+      "displayName": "zr-zamestnanci",
+      "id": "6f9cfe74-1ce3-4411-9dc4-92b205f1938d"
+    },
+    {
+      "displayName": "zr-hoste",
+      "id": "7552ec64-51b2-40c8-82ea-2c7dc17a7d41"
+    },
+    {
+      "displayName": "mcp-users-softeria",
+      "id": "8ccf9825-29a2-4c07-8d31-1773169cf254"
+    },
+    {
+      "displayName": "mcp-users-o2",
+      "id": "97c5894f-69b4-45f7-bd22-52efc58cb68a"
+    },
+    {
+      "displayName": "mcp-users-aether-a",
+      "id": "996a95a8-7c84-4c15-8776-f4c73b83c13b"
+    },
+    {
+      "displayName": "zr-vip-recepce",
+      "id": "a8b1d432-62ad-44c9-b1d1-f727044b1bef"
+    },
+    {
+      "displayName": "Default Directory",
+      "id": "ae02df1f-86ff-4087-9a2a-1f74857e4eaa"
+    },
+    {
+      "displayName": "mcp-users-aether-b",
+      "id": "cde65f21-087a-4732-83ef-232ad92b1b88"
+    },
+    {
+      "displayName": "PPF Rooms – recepce",
+      "id": "ce3f2708-c1ab-4436-97cc-71116d7ae410"
+    },
+    {
+      "displayName": "zr-asistentky",
+      "id": "e6166a6e-0021-4f7b-be56-76dbea0d8d78"
+    },
+    {
+      "displayName": "All Company",
+      "id": "e6b3319b-237a-4f91-9c63-2e728f106f6b"
+    },
+    {
+      "displayName": "mcp-pilot",
+      "id": "f1cc4e01-0618-4ed5-90ca-df1b5a68220b"
+    },
+    {
+      "displayName": "zr-recepce",
+      "id": "f6c97cbe-1237-4141-8d34-3fee1971c10d"
+    }
+  ]
+}

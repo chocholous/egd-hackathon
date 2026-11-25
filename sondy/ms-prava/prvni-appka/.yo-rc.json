@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "prvni-appka",
+    "environment": "spo",
+    "packageManager": "npm",
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "none",
+    "componentName": "Evidence",
+    "componentDescription": "Evidence pozadavku",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.23.5",
+    "sdksVersions": {},
+    "version": "1.24.1",
+    "libraryName": "prvni-appka",
+    "libraryId": "d824b10f-3d53-4a8f-bc48-304d03b40781",
+    "solutionShortDescription": "prvni-appka description",
+    "skipFeatureDeployment": true
+  }
+}

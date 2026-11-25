@@ -1,0 +1,40 @@
+připojeno k běžícímu Chrome e2e-egd10 (port 50385), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/prava.aspx
+[3.9s] OK wait:3000  
+[11.1s] OK rozbal  
+6 zón
+[11.1s] OK eval:document.querySelector('[data-sp-web-part-id="35d2a567-3b96-4d18-907d-16f486e50e79"]').scrollIntoView()  {"interrupted":false}
+[12.1s] OK wait:1000  
+[12.1s] OK eval:document.querySelector('[data-sp-web-part-id="35d2a567-3b96-4d18-907d-16f486e50e79"]').innerText.slice(0,120)  
+Evidence s rolemi
+Schvalovatel
+Nový požadavek
+Moje požadavky
+Ke schválení (1)
+Co potřebujete (krátce)
+Popis
+Odeslat ke s
+[12.2s] OK click:Ke schválení  
+[14.7s] OK wait:2500  
+[14.8s] OK shotv:03-egd10-ke-schvaleni  
+dukazy/karty/prava-role/egd10/03-egd10-ke-schvaleni.png
+[14.8s] OK eval:document.querySelector('[data-sp-web-part-id="35d2a567-3b96-4d18-907d-16f486e50e79"]').innerText.slice(0,500)  
+Evidence s rolemi
+Schvalovatel
+Nový požadavek
+Moje požadavky
+Ke schválení (1)
+Požadavek	Zadal	Kdy	Stav	Rozhodnutí
+Katalog práva: požadavek egd09 1932
+Vidí jen zadavatel a schvalovatel.
+	Účastník 09	24. 11. 2026	Nový	
+Schválit
+Zamítnout
+[14.9s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/Effec
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21

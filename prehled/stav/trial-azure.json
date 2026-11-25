@@ -1,0 +1,18 @@
+{
+  "nazev": "Trial Azure",
+  "stav": "hotovo",
+  "popis": "Kredit vydrží do 26. 11. 03:08, po workshopu; nic dalšího se nedělá",
+  "oblast": "lab",
+  "kdo": "Pavel",
+  "vystup": "06-azure-inventar.md",
+  "aktualizovano": "2026-11-24T20:43:38Z",
+  "zacatek": "2026-11-22T18:17:14Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-24T20:43:38Z",
+      "stav": "hotovo",
+      "popis": "Kredit vydrží do 26. 11. 03:08, po workshopu; nic dalšího se nedělá"
+    }
+  ]
+}

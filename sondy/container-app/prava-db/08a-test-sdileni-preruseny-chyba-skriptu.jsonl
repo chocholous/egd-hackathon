@@ -1,0 +1,57 @@
+{"krok": "0-teplo", "kdo": "-", "volani": "API GET /healthz", "http": 200, "sec": 0.17, "ocekavano": 200, "sedi": true, "telo": {"ok": true}}
+{"krok": "0-me", "kdo": "tomas.prochazka", "volani": "API GET /api/me", "http": 200, "sec": 0.24, "ocekavano": 200, "sedi": true, "telo": {"upn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com", "oid": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d", "roles": ["Zadavatel"], "ver": "0.2"}}
+{"krok": "1-A-zaklada", "kdo": "tomas.prochazka", "volani": "SP POST /_api/web/lists/getbytitle('Sdileni')/items", "http": 201, "sec": 0.46, "ocekavano": 201, "sedi": true, "telo": {"FileSystemObjectType": 0, "Id": 1, "ServerRedirectedEmbedUri": null, "ServerRedirectedEmbedUrl": "", "ID": 1, "ContentTypeId": "0x010069FDCAFC75467C49A9A98BD0D40FEAC0", "Title": "prava-db 015053 (A)", "Modified": "2026-11-24T00:50:55Z", "Created": "2026-11-24T00:50:55Z", "AuthorId": 14, "EditorId": 14, "OData__UIVersionString": "1.0", "Attachments": false, "GUID": "cfba3ac9-2d7a-42a7-b544-1efd3e64f995", "OData__ColorTag": null, "ComplianceAssetId": null}}
+{"krok": "1-B-vidi-pred", "kdo": "eva.vesela", "volani": "SP GET /_api/web/lists/getbytitle('Sdileni')/items(1)?$select=Id,Title", "http": 200, "sec": 0.2, "ocekavano": 200, "sedi": true, "telo": {"Id": 1, "ID": 1, "Title": "prava-db 015053 (A)"}}
+{"krok": "1-C-vidi-pred", "kdo": "jakub.kucera", "volani": "SP GET /_api/web/lists/getbytitle('Sdileni')/items(1)?$select=Id,Title", "http": 200, "sec": 0.17, "ocekavano": 200, "sedi": true, "telo": {"Id": 1, "ID": 1, "Title": "prava-db 015053 (A)"}}
+{"krok": "2-bez-tokenu", "kdo": "-", "volani": "API POST /api/sp/polozky/1/sdilet", "http": 401, "sec": 0.19, "ocekavano": 401, "sedi": true, "telo": {"error": "chybí token"}}
+{"krok": "2-bez-role", "kdo": "lucie.dvorakova", "volani": "API POST /api/sp/polozky/1/sdilet", "http": 403, "sec": 0.24, "ocekavano": 403, "sedi": true, "telo": {"error": "bez aplikační role", "upn": "lucie.dvorakova@pavelchocholousgmail.onmicrosoft.com"}}
+{"krok": "2-C-sdili-cizi", "kdo": "jakub.kucera", "volani": "API POST /api/sp/polozky/1/sdilet", "http": 403, "sec": 3.63, "ocekavano": 403, "sedi": true, "telo": {"error": "sdílet smí jen vlastník položky nebo Spravce", "ja": "jakub.kucera@pavelchocholousgmail.onmicrosoft.com", "vlastnik": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com"}}
+{"krok": "2-B-sdili-cizi", "kdo": "eva.vesela", "volani": "API POST /api/sp/polozky/1/sdilet", "http": 403, "sec": 0.37, "ocekavano": 403, "sedi": true, "telo": {"error": "sdílet smí jen vlastník položky nebo Spravce", "ja": "eva.vesela@pavelchocholousgmail.onmicrosoft.com", "vlastnik": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com"}}
+{"krok": "3-A-sdili-B", "kdo": "tomas.prochazka", "volani": "API POST /api/sp/polozky/1/sdilet", "http": 200, "sec": 0.95, "ocekavano": 200, "sedi": true, "telo": {"ok": true, "id": 1, "sdilel": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com", "jako": "vlastnik", "kroky": [{"krok": "breakroleinheritance", "http": 200}, {"krok": "autor-Contribute", "kdo": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com", "http": 200}, {"krok": "addroleassignment", "kdo": "eva.vesela@pavelchocholousgmail.onmicrosoft.com", "role": "Čtení", "http": 200}]}}
+{"krok": "3-A-prava", "kdo": "tomas.prochazka", "volani": "API GET /api/sp/polozky/1/prava", "http": 200, "sec": 0.35, "ocekavano": 200, "sedi": true, "telo": {"id": 1, "unikatni": true, "prava": [{"kdo": "i:0#.f|membership|tomas.prochazka@pavelchocholousgmail.onmicrosoft.com", "role": ["Přispívání"]}, {"kdo": "i:0#.f|membership|eva.vesela@pavelchocholousgmail.onmicrosoft.com", "role": ["Čtení"]}]}}
+{"krok": "4-A-vidi", "kdo": "tomas.prochazka", "volani": "SP GET /_api/web/lists/getbytitle('Sdileni')/items(1)?$select=Id,Title", "http": 200, "sec": 0.17, "ocekavano": 200, "sedi": true, "telo": {"Id": 1, "ID": 1, "Title": "prava-db 015053 (A)"}}
+{"krok": "4-B-vidi", "kdo": "eva.vesela", "volani": "SP GET /_api/web/lists/getbytitle('Sdileni')/items(1)?$select=Id,Title", "http": 200, "sec": 0.17, "ocekavano": 200, "sedi": true, "telo": {"Id": 1, "ID": 1, "Title": "prava-db 015053 (A)"}}
+{"krok": "4-C-nevidi", "kdo": "jakub.kucera", "volani": "SP GET /_api/web/lists/getbytitle('Sdileni')/items(1)?$select=Id,Title", "http": 404, "sec": 0.23, "ocekavano": 404, "sedi": true, "telo": {"odata.error": {"code": "-2130575338, System.ArgumentException", "message": {"lang": "cs-CZ", "value": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}}}}
+Traceback (most recent call last):
+  File "/Users/chocholous/Projects/egd-workshop/tools/prava-db-test.py", line 118, in <module>
+    sp("4-C-seznam", C, "GET", f"{L()}/items?$select=Id&$filter=Id eq {iid}", exp=200)
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chocholous/Projects/egd-workshop/tools/prava-db-test.py", line 74, in sp
+    code, j, s = http(method, path if path.startswith("http") else a.web + "/_api/" + path, tok(who, "sp"), body)
+                 ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/chocholous/Projects/egd-workshop/tools/prava-db-test.py", line 55, in http
+    with urllib.request.urlopen(urllib.request.Request(url, data, h, method=method), timeout=120) as r: code, txt = r.status, r.read().decode()
+         ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 489, in open
+    response = self._open(req, data)
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 506, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 466, in _call_chain
+    result = func(*args)
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 1383, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        context=self._context)
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/urllib/request.py", line 1335, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/client.py", line 1398, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/client.py", line 1409, in _send_request
+    self.putrequest(method, url, **skips)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/client.py", line 1243, in putrequest
+    self._validate_path(url)
+    ~~~~~~~~~~~~~~~~~~~^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.2/Frameworks/Python.framework/Versions/3.15/lib/python3.15/http/client.py", line 1343, in _validate_path
+    raise InvalidURL(f"URL can't contain control characters. {url!r} "
+                     f"(found at least {match.group()!r})")
+http.client.InvalidURL: URL can't contain control characters. "/sites/egd-sonda-data-prava/_api/web/lists/getbytitle('Sdileni')/items?$select=Id&$filter=Id eq 1" (found at least ' ')

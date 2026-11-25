@@ -1,0 +1,29 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#oauth2PermissionGrants",
+  "value": [
+    {
+      "clientId": "7a0b43a3-e80e-431f-9722-bffe50daff3f",
+      "consentType": "Principal",
+      "id": "o0MLeg7oH0OXIr_-UNr_P6LH5Olwmj5Bv5L7mHRxcX0JEJh7DDG3QZCGqNV_cvF_",
+      "principalId": "7b981009-310c-41b7-9086-a8d57f72f17f",
+      "resourceId": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+      "scope": "User.Read Mail.ReadBasic"
+    },
+    {
+      "clientId": "7a0b43a3-e80e-431f-9722-bffe50daff3f",
+      "consentType": "Principal",
+      "id": "o0MLeg7oH0OXIr_-UNr_P6LH5Olwmj5Bv5L7mHRxcX2vf1AzBmc7TLuzweFafgpt",
+      "principalId": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d",
+      "resourceId": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+      "scope": "User.Read Mail.ReadBasic"
+    },
+    {
+      "clientId": "7a0b43a3-e80e-431f-9722-bffe50daff3f",
+      "consentType": "Principal",
+      "id": "o0MLeg7oH0OXIr_-UNr_P6LH5Olwmj5Bv5L7mHRxcX3hKDXRRwhcRrOt4Scn7WUW",
+      "principalId": "d13528e1-0847-465c-b3ad-e12727ed6516",
+      "resourceId": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+      "scope": "User.Read Mail.ReadBasic"
+    }
+  ]
+}

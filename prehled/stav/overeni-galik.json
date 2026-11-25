@@ -1,0 +1,28 @@
+{
+  "nazev": "Ověření: vision fotka + scraping Job",
+  "stav": "hotovo",
+  "popis": "vision (foto elektroměru) i scraping OTE změřeny, 2.1 Gateway.App nezměřeno",
+  "oblast": "sondy",
+  "kdo": "role Ověřovatel",
+  "vystup": "sondy/overeni/vision/README.md, sondy/overeni/scraping/README.md",
+  "aktualizovano": "2026-11-24T07:39:21Z",
+  "zacatek": "2026-11-24T01:46:18Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-24T01:46:18Z",
+      "stav": "bezi",
+      "popis": "start"
+    },
+    {
+      "t": "2026-11-24T01:51:09Z",
+      "stav": "ceka",
+      "popis": "scraping hotov (README), vision na reálné fotce čeká na souhlas se zdrojem fotky"
+    },
+    {
+      "t": "2026-11-24T07:39:21Z",
+      "stav": "hotovo",
+      "popis": "vision (foto elektroměru) i scraping OTE změřeny, 2.1 Gateway.App nezměřeno"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# 2026-11-24T07:42:44Z doplnění: whoami a kvota (default) s aplikačním tokenem
+## GET /api/whoami
+{"who":{"oid":"14acac9a-683d-47bb-85a1-98d5841b79c3","clientAppId":"bdb62127-e0ba-4fc6-9a2c-c3706e76940d","scopes":[],"roles":["Gateway.App"]},"appKey":"default"}
+[HTTP 200, 0.258629s]
+## GET /api/kvota
+{"den":"2026-11-24","appKey":"default","spotreba":{"tokens":18,"calls":1,"costUsd":0.000012,"pages":0},"limitTokenuZaDen":200000}
+[HTTP 200, 0.163031s]
+## POST /api/ocr (ocr-test.png)
+{"text":"FAKTURA c. 2026-0142\nDodavatel: Test s.r.o., ICO 12345678 Odberatel: EG.D, a.s.\nDatum splatnosti: 15. 12. 2026\nCelkem k uhrade: 12 345,00 CZK","pages":1,"costUsd":0.0015,"ms":1033,"kvotaDnes":{"tokens":18,"limit":200000}}
+[HTTP 200, 1.229895s]

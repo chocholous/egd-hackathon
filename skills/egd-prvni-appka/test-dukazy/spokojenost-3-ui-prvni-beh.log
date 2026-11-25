@@ -1,0 +1,28 @@
+[eva.vesela] dotaz: $orderby=ID desc&$top=2000
+[eva.vesela] url=https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView appka=true
+[eva.vesela] dotaz: $orderby=ID desc&$top=2000
+[eva.vesela] klik 4: potvrzeno=false zprava="Zapsáno: 4. Díky!" vybrany="4 Spíš spokojen/a"
+[eva.vesela] dashboard: ! 1 hlasů dnes 4,0 průměr dnes (1–5) Rozložení dnes 1 0 2 0 3 0 4 1 5 0 Posledních 7 dní (průměr) – po 16. 11. – út 17. 11. – st 18. 11. – čt 19
+[eva.vesela] chyby konzole: 0 
+[jakub.kucera] dotaz: $orderby=ID desc&$top=2000
+[jakub.kucera] url=https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView appka=true
+[jakub.kucera] dotaz: $orderby=ID desc&$top=2000
+[jakub.kucera] klik 2: potvrzeno=false zprava="Zapsáno: 2. Díky!" vybrany="2 Spíš nespokojen/a"
+[jakub.kucera] dashboard: ! 2 hlasů dnes 3,0 průměr dnes (1–5) Rozložení dnes 1 0 2 1 3 0 4 1 5 0 Posledních 7 dní (průměr) – po 16. 11. – út 17. 11. – st 18. 11. – čt 19
+[jakub.kucera] chyby konzole: 0 
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.goto: Timeout 30000ms exceeded.
+Call log:
+  - navigating to "https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView", waiting until "domcontentloaded"
+
+    at /Users/chocholous/Projects/egd-workshop/skills/egd-prvni-appka/test-dukazy/ui-test.mjs:23:11 {
+  log: [
+    '  - navigating to "https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView", waiting until "domcontentloaded"'
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.5

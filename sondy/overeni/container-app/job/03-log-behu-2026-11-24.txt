@@ -1,0 +1,5 @@
+2026-11-24T00:44:15.71401  Connecting to the container 'report'...
+2026-11-24T00:44:15.78016  Successfully Connected to container: 'report' [Execution: 'job-egd-report-r83t40z', Replica: 'job-egd-report-r83t40z-rztfm']
+2026-11-24T00:43:24.8867333Z stdout F staženo 30 kurzů pro 2026-11-23; CSV 1239 B; {'EUR': 24.455, 'PLN': 5.487, 'GBP': 29.226, 'USD': 22.358}
+2026-11-24T00:43:24.8867908Z stdout F sendMail jako egd-report@pavelchocholousgmail.onmicrosoft.com: HTTP 202 
+2026-11-24T00:43:24.8868123Z stdout F NEGATIVNÍ test sendMail jako alice@pavelchocholousgmail.onmicrosoft.com: HTTP 403 {"error":{"code":"ErrorAccessDenied","message":"Access is denied. Check credentials and try again.","innererror":{"message":"Access is denied. Check credentials and try again.","type":"Microsoft.Exchange.Services.OData.ODataAuthorizationException","internalexception":{"message":"Access to this API r

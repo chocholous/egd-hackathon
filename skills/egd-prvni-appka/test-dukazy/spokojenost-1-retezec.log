@@ -1,0 +1,66 @@
+[OK]      projekt zalozen: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8d3c6e51-bb57-4e00-b8c2-1af463aca4ab/scratchpad/vibecoder/spokojenost (reseni spokojenost, web part 681ca72d-0a69-4cfb-aae5-caa4fc07f5e4)
+Instaluji balicky SharePoint Frameworku (npm ci, lokalne, bez admina; stovky MB, par minut)...
+[OK]      balicky nainstalovane. Dalsi krok: build
+rc=0
+Stavim balicek (npm run build, Heft; minuta az dve)...
+[OK]      balicek: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8d3c6e51-bb57-4e00-b8c2-1af463aca4ab/scratchpad/vibecoder/spokojenost/sharepoint/solution/spokojenost.sppkg (12041 B, verze 1.0.0.0)
+rc=0
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka:
+  - zalozit seznam "Spokojenost" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+rc=10
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka:
+  - zalozit seznam "Spokojenost" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek
+[OK]      seznam "Spokojenost" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec Den
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "Spokojenost" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/Lists/Spokojenost
+rc=0
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka, katalog tohoto webu, nic tenant-wide):
+  1. nahrat spokojenost.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku spokojenost.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+rc=10
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka, katalog tohoto webu, nic tenant-wide):
+  1. nahrat spokojenost.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku spokojenost.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+[OK]      nahrano do katalogu (appId d3a7f1b3-c5b1-4a29-8ce5-31d4ac941bd0)
+[OK]      nasazeno (deploy)
+[OK]      appka nainstalovana na web
+[OK]      stranka spokojenost.aspx zalozena (Article + sekce)
+[OK]      web part vlozen na stranku
+[OK]      stranka prepnuta na celostrankovou appku a publikovana
+[OK]      precteno zpet: stranka spokojenost.aspx, rozlozeni SingleWebPartAppPage, web part 681ca72d-0a69-4cfb-aae5-caa4fc07f5e4 na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, po kliknuti na cislo se hlas propise do dashboardu.
+rc=0
+[OK]      katalog webu: spokojenost-client-side-solution verze 1.0.0.0, nasazeno true
+[OK]      stranka spokojenost.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam Spokojenost: 0 hlasu
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView
+rc=0

@@ -1,0 +1,53 @@
+{
+  "nazev": "Sonda: Power Automate alternativy",
+  "stav": "hotovo",
+  "popis": "díry 3.2 ✅, 4.3 ✅ (HTTP request), 6.1 ✅ (From), 15 jen tier",
+  "oblast": "sondy",
+  "kdo": "session sonda-power-automate",
+  "vystup": "sondy/power-automate.md",
+  "aktualizovano": "2026-11-24T02:35:16Z",
+  "zacatek": "2026-11-22T18:41:16Z",
+  "kroky": 13,
+  "historie": [
+    {
+      "t": "2026-11-22T18:52:52Z",
+      "stav": "ceka",
+      "popis": "doc sondy/power-automate.md hotový, čeká na Pavla (připojení + trial)"
+    },
+    {
+      "t": "2026-11-22T19:14:05Z",
+      "stav": "ceka",
+      "popis": "audit opraven: 403 MissingAdequateQuotaPolicy = licence ✅, RSS ✅, výstupy uloženy; čeká na Pavla"
+    },
+    {
+      "t": "2026-11-22T19:19:08Z",
+      "stav": "ceka",
+      "popis": "audit 2. kolo opraven, vision přes Foundry ✅; čeká na Pavla"
+    },
+    {
+      "t": "2026-11-23T16:25:51Z",
+      "stav": "bezi",
+      "popis": "připojení přihlášena; ✅ convert-pdf a queue-llm (43 s); ❌ mail-shared (404) a grant (role); čeká trial Premium"
+    },
+    {
+      "t": "2026-11-24T01:47:31Z",
+      "stav": "bezi",
+      "popis": "měřím PA variantu ke každé položce galik-otazky (Premium: 403 → ⛔)"
+    },
+    {
+      "t": "2026-11-24T01:50:12Z",
+      "stav": "hotovo",
+      "popis": "tabulka položek Galíka zapsána; Premium ⛔ (403), Standard ✅ řetěz LLM→PDF→mail"
+    },
+    {
+      "t": "2026-11-24T02:20:37Z",
+      "stav": "bezi",
+      "popis": "dodatečné díry: Excel Update a row, Grant access role, sdílená schránka FullAccess, Copilot Studio"
+    },
+    {
+      "t": "2026-11-24T02:35:16Z",
+      "stav": "hotovo",
+      "popis": "díry 3.2 ✅, 4.3 ✅ (HTTP request), 6.1 ✅ (From), 15 jen tier"
+    }
+  ]
+}

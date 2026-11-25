@@ -1,0 +1,40 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/cizi-api.aspx
+[3.9s] OK wait:3000  
+[9.7s] OK rozbal  
+4 zón
+[10.0s] OK click:[data-sp-web-part-id="229a4c9b-2eb7-4ecb-8bc1-27a8879e38db"] [data-k=ares]  
+[16.0s] OK wait:6000  
+[16.1s] OK click:[data-sp-web-part-id="229a4c9b-2eb7-4ecb-8bc1-27a8879e38db"] [data-k=aressp]  
+[22.1s] OK wait:6000  
+[22.1s] OK click:[data-sp-web-part-id="229a4c9b-2eb7-4ecb-8bc1-27a8879e38db"] [data-k=meteo]  
+[28.1s] OK wait:6000  
+[28.2s] OK click:[data-sp-web-part-id="229a4c9b-2eb7-4ecb-8bc1-27a8879e38db"] [data-k=cnb]  
+[36.2s] OK wait:8000  
+[36.3s] OK click:[data-sp-web-part-id="229a4c9b-2eb7-4ecb-8bc1-27a8879e38db"] [data-k=docx]  
+[44.3s] OK wait:8000  
+[44.3s] OK eval:document.querySelector('[data-sp-web-part-id="229a4c9b-2eb7-4ecb-8bc1-27a8879e38db"]').querySelector('#log').innerText  
+ARES: Škoda Auto a.s., tř. Václava Klementa 869, Mladá Boleslav II, 29301 Mladá Boleslav
+HOTOVO ares za 105 ms
+ARES přes spHttpClient: status 200
+HOTOVO aressp za 81 ms
+Brno teď: 0.9 °C
+HOTOVO meteo za 125 ms
+CHYBA cnb: Error: ČNB nejde volat z prohlížeče (CORS). Původní chyba: TypeError: Failed to fetch
+uloženo /sites/egd-ukazky/Sdilene dokumenty/exporty/pozadavky.docx (9851 B)
+HOTOVO docx za 644 ms
+
+[44.3s] OK eval:document.querySelector('[data-sp-web-part-id="229a4c9b-2eb7-4ecb-8bc1-27a8879e38db"]').querySelector('#log').scrollIntoView({block:'center'})  {"interrupted":false}
+[44.4s] OK shotv:01-egd09-cizi-api  
+dukazy/karty/cizi-api/01-egd09-cizi-api.png
+[44.4s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041
+  GET 200 https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041
+  GET 200 https://api.open-meteo.com/v1/forecast?latitude=49.19&longitude=16.61&current=temperature_2m
+  GET FAILED net::ERR_FAILED https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ

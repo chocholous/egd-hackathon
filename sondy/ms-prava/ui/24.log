@@ -1,0 +1,11 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/listedit.aspx?List=%7B8f4c76bc-ec53-4904-b9a5-4c32ca593d49%7D
+KROK klik:Upřesnit nastavení
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/advsetng.aspx?List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK check:#ctl00_PlaceHolderMain_ItemLevelSecuritySection_ctl09_RadReadSecurityOwn
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/advsetng.aspx?List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK check:#ctl00_PlaceHolderMain_ItemLevelSecuritySection_ctl10_RadWriteSecurityOwn
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/advsetng.aspx?List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+KROK css:input[value='OK']
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/listedit.aspx?List={8F4C76BC-EC53-4904-B9A5-4C32CA593D49}
+KROK wait:3000
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/listedit.aspx?List={8F4C76BC-EC53-4904-B9A5-4C32CA593D49}

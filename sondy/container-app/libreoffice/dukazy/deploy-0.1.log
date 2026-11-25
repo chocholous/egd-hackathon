@@ -1,0 +1,12 @@
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+WARNING: option '--subscription' will be ignored due to use of '--ids'.
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+AcrPull přidělen, čekám 60 s na propagaci
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+WARNING: User identity /subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourcegroups/rg-egd-ca-dokumenty/providers/microsoft.managedidentity/userassignedidentities/id-ca-egd-dokumenty-pull is already assigned to containerapp
+/ Running ..| Running ..\ Running ..- Running ../ Running ..| Running ..[KWARNING: 
+Container app created. Access your app at https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/
+
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+deploy: https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io  (API appId 54c0b31d-b482-4d3f-900c-3e6c0e5fe870)
+tools/ca-dokumenty-deploy.sh deploy  3.82s user 1.66s system 4% cpu 1:58.14 total

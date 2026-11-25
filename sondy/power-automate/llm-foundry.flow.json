@@ -1,0 +1,84 @@
+{
+ "displayName": "EGD PA sonda: LLM přes Foundry Inference (Standard)",
+ "connectionReferences": {
+  "shared_azureaifoundryinference": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_azureaifoundryinference",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-foundry",
+   "source": "Embedded"
+  }
+ },
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+   "$connections": {
+    "defaultValue": {},
+    "type": "Object"
+   },
+   "$authentication": {
+    "defaultValue": {},
+    "type": "SecureObject"
+   }
+  },
+  "triggers": {
+   "Recurrence": {
+    "type": "Recurrence",
+    "recurrence": {
+     "frequency": "Month",
+     "interval": 12
+    }
+   }
+  },
+  "actions": {
+   "Zeptej_se_LLM": {
+    "type": "OpenApiConnection",
+    "runAfter": {},
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_azureaifoundryinference",
+      "connectionName": "shared_azureaifoundryinference",
+      "operationId": "ChatCompletion"
+     },
+     "parameters": {
+      "body": {
+       "messages": [
+        {
+         "role": "system",
+         "content": [
+          {
+           "type": "text",
+           "text": "Odpovídej česky, jednou větou."
+          }
+         ]
+        },
+        {
+         "role": "user",
+         "content": [
+          {
+           "type": "text",
+           "text": "Co je Power Automate?"
+          }
+         ]
+        }
+       ],
+       "max_tokens": 100
+      },
+      "api-version": "2024-10-21"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   },
+   "Vysledek": {
+    "type": "Compose",
+    "runAfter": {
+     "Zeptej_se_LLM": [
+      "Succeeded"
+     ]
+    },
+    "inputs": "@body('Zeptej_se_LLM')?['choices']?[0]?['message']?['content']"
+   }
+  },
+  "outputs": {}
+ }
+}

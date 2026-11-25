@@ -1,0 +1,85 @@
+## SP související s SharePoint extensibility
+[
+  {
+    "appId": "08e18876-6177-487e-b8b5-cf950c1e598c",
+    "id": "183c53de-4106-4613-952c-a9cfd34857b0",
+    "n": "SharePoint Online Web Client Extensibility",
+    "tags": [
+      "disableAcceptingTenantedPassthroughTokens",
+      "disableRequestingTenantedPassthroughTokens"
+    ]
+  }
+]
+## grants klienta 08e18876 (SPFx principal)
+[
+  {
+    "client": "377f1a85-bc04-439f-81b8-9c53a0ebf7f6",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Calendars.Read Calendars.Read.Shared Calendars.ReadWrite CallTranscripts.Read.All Channel.Create Channel.Delete.All Channel.ReadBasic.All ChannelMessage.Read.All ChannelMessage.ReadWrite ChannelMessage.Send ChannelSettings.Read.All ChannelSettings.ReadWrite.All Chat.Create Chat.ReadWrite ChatMember.Read ChatMessage.Send Contacts.ReadWrite Directory.Read.All Files.Read Files.Read.All Files.ReadWrite Files.ReadWrite.All Group.Read.All Group.ReadWrite.All GroupMember.Read.All GroupMember.ReadWrite.All Mail.Read Mail.Read.Shared Mail.ReadWrite Mail.ReadWrite.Shared Mail.Send Mail.Send.Shared MailboxSettings.Read MailboxSettings.ReadWrite Notes.Create Notes.Read Notes.ReadWrite OnlineMeetingArtifact.Read.All OnlineMeetingRecording.Read.All OnlineMeetingTranscript.Read.All OnlineMeetings.Read OnlineMeetings.ReadWrite People.Read Place.Read.All Place.ReadWrite.All Presence.Read Presence.Read.All Presence.ReadWrite SensitivityLabel.Read Sites.Manage.All Sites.Read.All Sites.ReadWrite.All Tasks.ReadWrite Team.ReadBasic.All TeamMember.Read.All TeamMember.ReadWrite.All TeamsActivity.Send TeamsAppInstallation.ReadForUser TeamsTab.Create TeamsTab.Read.All TeamworkCustomEmoji.Create TeamworkCustomEmoji.Read User.Read User.Read.All User.ReadBasic.All User.ReadWrite VirtualEvent.Read offline_access openid profile"
+  },
+  {
+    "client": "183c53de-4106-4613-952c-a9cfd34857b0",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "AppCatalog.Read.All AppCatalog.Submit Calendars.Read Calendars.Read.Shared Calendars.ReadBasic Calendars.ReadWrite Calendars.ReadWrite.Shared Channel.Create Channel.ReadBasic.All ChatMember.Read EduAssignments.ReadBasic EduRoster.ReadBasic FileStorageContainer.Selected Files.Read Files.Read.All Files.ReadWrite.All Group-Conversation.ReadWrite.All Group.Read.All GroupMember.Read.All InformationProtectionPolicy.Read People.Read People.Read.All Place.Read.All Presence.Read.All PrintJob.Create PrintJob.ReadBasic PrinterShare.ReadBasic.All SensitivityLabel.Read Sites.Read.All Tasks.ReadWrite Team.ReadBasic.All TeamsAppInstallation.ReadWriteForTeam TeamsAppInstallation.ReadWriteSelfForTeam TeamsTab.Create User.Read User.ReadBasic.All Mail.Send"
+  },
+  {
+    "client": "183c53de-4106-4613-952c-a9cfd34857b0",
+    "res": "b553da66-7ce7-410e-a8c9-b0b169a666e2",
+    "scope": "Files.ReadWrite.All TermStore.ReadWrite.All Sites.ReadWrite.All Sites.FullControl.All M365BillingPlatform.Read.All AllProfiles.Manage"
+  },
+  {
+    "client": "183c53de-4106-4613-952c-a9cfd34857b0",
+    "res": "4b368df2-9977-460f-8688-ce84efa250b9",
+    "scope": "Gateway.Use"
+  },
+  {
+    "client": "79990fc8-de98-41c1-a2f8-4f94dbaa8a98",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Calendars.Read Calendars.Read.Shared Calendars.ReadWrite CallTranscripts.Read.All Channel.Create Channel.Delete.All Channel.ReadBasic.All ChannelMessage.Read.All ChannelMessage.ReadWrite ChannelMessage.Send ChannelSettings.Read.All ChannelSettings.ReadWrite.All Chat.Create Chat.ReadWrite ChatMember.Read ChatMessage.Send Contacts.ReadWrite Directory.Read.All Files.Read Files.Read.All Files.ReadWrite Files.ReadWrite.All Group.Read.All Group.ReadWrite.All GroupMember.Read.All GroupMember.ReadWrite.All Mail.Read Mail.Read.Shared Mail.ReadWrite Mail.ReadWrite.Shared Mail.Send Mail.Send.Shared MailboxSettings.Read MailboxSettings.ReadWrite Notes.Create Notes.Read Notes.ReadWrite OnlineMeetingArtifact.Read.All OnlineMeetingRecording.Read.All OnlineMeetingTranscript.Read.All OnlineMeetings.Read OnlineMeetings.ReadWrite People.Read Place.Read.All Place.ReadWrite.All Presence.Read Presence.Read.All Presence.ReadWrite SensitivityLabel.Read Sites.Manage.All Sites.Read.All Sites.ReadWrite.All Tasks.ReadWrite Team.ReadBasic.All TeamMember.Read.All TeamMember.ReadWrite.All TeamsActivity.Send TeamsAppInstallation.ReadForUser TeamsTab.Create TeamsTab.Read.All TeamworkCustomEmoji.Create TeamworkCustomEmoji.Read User.Read User.Read.All User.ReadBasic.All User.ReadWrite VirtualEvent.Read offline_access openid profile"
+  },
+  {
+    "client": "1b669f5b-8db6-485e-b6c2-f6ed0e34eabb",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Calendars.Read Calendars.ReadWrite Calendars.ReadWrite.Shared Channel.ReadBasic.All ChannelMessage.Read.All ChannelMessage.ReadWrite ChannelMessage.Send Chat.Read Chat.ReadWrite ChatMessage.Send Files.Read.All Files.ReadWrite.All Mail.Read Mail.Read.Shared Mail.ReadWrite Mail.Send Notes.Read Notes.ReadWrite OnlineMeetingTranscript.Read.All OnlineMeetings.Read OnlineMeetings.ReadWrite Place.Read.All Sites.Read.All Sites.ReadWrite.All Tasks.Read Tasks.ReadWrite Team.ReadBasic.All TeamMember.Read.All User.Read User.ReadBasic.All offline_access openid profile"
+  },
+  {
+    "client": "96a93da9-21ee-489d-a371-ec25fa63cf23",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Calendars.Read CallTranscripts.Read.All Channel.ReadBasic.All ChannelMessage.Read.All ChannelSettings.Read.All Chat.Read ChatMember.Read Contacts.Read Directory.Read.All Files.Read Files.Read.All Group.Read.All GroupMember.Read.All Mail.Read Mail.Read.Shared MailboxSettings.Read Notes.Read OnlineMeetingArtifact.Read.All OnlineMeetingRecording.Read.All OnlineMeetingTranscript.Read.All OnlineMeetings.Read People.Read Place.Read.All Presence.Read Presence.Read.All SensitivityLabel.Read Sites.Read.All Tasks.Read Team.ReadBasic.All TeamMember.Read.All TeamsAppInstallation.ReadForUser TeamsTab.Read.All TeamworkCustomEmoji.Read User.Read User.Read.All User.ReadBasic.All VirtualEvent.Read offline_access openid profile Calendars.Read.Shared"
+  },
+  {
+    "client": "e004fd2e-d18c-40cb-ba4b-f1dab6eb6b95",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Calendars.Read Calendars.Read.Shared Calendars.ReadWrite CallTranscripts.Read.All Channel.Create Channel.Delete.All Channel.ReadBasic.All ChannelMessage.Read.All ChannelMessage.ReadWrite ChannelMessage.Send ChannelSettings.Read.All ChannelSettings.ReadWrite.All Chat.Create Chat.ReadWrite ChatMember.Read ChatMessage.Send Contacts.ReadWrite Directory.Read.All Files.Read Files.Read.All Files.ReadWrite Files.ReadWrite.All Group.Read.All Group.ReadWrite.All GroupMember.Read.All GroupMember.ReadWrite.All Mail.Read Mail.Read.Shared Mail.ReadWrite Mail.ReadWrite.Shared Mail.Send Mail.Send.Shared MailboxSettings.Read MailboxSettings.ReadWrite Notes.Create Notes.Read Notes.ReadWrite OnlineMeetingArtifact.Read.All OnlineMeetingRecording.Read.All OnlineMeetingTranscript.Read.All OnlineMeetings.Read OnlineMeetings.ReadWrite People.Read Place.Read.All Place.ReadWrite.All Presence.Read Presence.Read.All Presence.ReadWrite SensitivityLabel.Read Sites.Manage.All Sites.Read.All Sites.ReadWrite.All Tasks.ReadWrite Team.ReadBasic.All TeamMember.Read.All TeamMember.ReadWrite.All TeamsActivity.Send TeamsAppInstallation.ReadForUser TeamsTab.Create TeamsTab.Read.All TeamworkCustomEmoji.Create TeamworkCustomEmoji.Read User.Read User.Read.All User.ReadBasic.All User.ReadWrite VirtualEvent.Read offline_access openid profile"
+  },
+  {
+    "client": "2af29855-3828-4acd-919a-7ba7274e2399",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Calendars.Read Calendars.Read.Shared Calendars.ReadWrite CallTranscripts.Read.All Channel.Create Channel.Delete.All Channel.ReadBasic.All ChannelMessage.Read.All ChannelMessage.ReadWrite ChannelMessage.Send ChannelSettings.Read.All ChannelSettings.ReadWrite.All Chat.Create Chat.ReadWrite ChatMember.Read ChatMessage.Send Contacts.ReadWrite Directory.Read.All Files.Read Files.Read.All Files.ReadWrite Files.ReadWrite.All Group.Read.All Group.ReadWrite.All GroupMember.Read.All GroupMember.ReadWrite.All Mail.Read Mail.Read.Shared Mail.ReadWrite Mail.ReadWrite.Shared Mail.Send Mail.Send.Shared MailboxSettings.Read MailboxSettings.ReadWrite Notes.Create Notes.Read Notes.ReadWrite OnlineMeetingArtifact.Read.All OnlineMeetingRecording.Read.All OnlineMeetingTranscript.Read.All OnlineMeetings.Read OnlineMeetings.ReadWrite People.Read Place.Read.All Place.ReadWrite.All Presence.Read Presence.Read.All Presence.ReadWrite SensitivityLabel.Read Sites.Manage.All Sites.Read.All Sites.ReadWrite.All Tasks.ReadWrite Team.ReadBasic.All TeamMember.Read.All TeamMember.ReadWrite.All TeamsActivity.Send TeamsAppInstallation.ReadForUser TeamsTab.Create TeamsTab.Read.All TeamworkCustomEmoji.Create TeamworkCustomEmoji.Read User.Read User.Read.All User.ReadBasic.All User.ReadWrite VirtualEvent.Read offline_access openid profile"
+  },
+  {
+    "client": "f18c9d7f-b3ab-4d3b-97a8-4d4afcbc1736",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Calendars.Read.Shared Calendars.ReadBasic Calendars.ReadWrite Calendars.ReadWrite.Shared Mail.Send.Shared User.Read offline_access openid profile"
+  },
+  {
+    "client": "f9191322-a778-4b6a-bf46-1ebd2ae37ecd",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Files.ReadWrite.All Sites.ReadWrite.All"
+  },
+  {
+    "client": "23f137df-fffc-4bef-8485-b4445b07d3a8",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Files.Read.All"
+  },
+  {
+    "client": "b441d768-3843-4537-927f-de28aa809d18",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Files.Read"
+  },
+  {
+    "client": "aa80b8f9-9d52-44dc-9ec8-33cfb1416b11",
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "Mail.Send Mail.Read"
+  }
+]

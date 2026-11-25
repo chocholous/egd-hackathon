@@ -1,0 +1,25 @@
+{"step": "ItemCount", "n": 6000}
+{"step": "top=100 bez filtru", "who": "admin(vlastnik webu)", "status": 200, "n": 100, "sec": 0.3, "err": ""}
+{"step": "top=5000 bez filtru", "who": "admin(vlastnik webu)", "status": 200, "n": 5000, "sec": 0.48, "err": ""}
+{"step": "top=5001 bez filtru", "who": "admin(vlastnik webu)", "status": 500, "n": null, "sec": 0.16, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "filtr indexovany Kategorie eq K3 (300 vysl.)", "who": "admin(vlastnik webu)", "status": 200, "n": 300, "sec": 0.22, "err": ""}
+{"step": "filtr indexovany Castka lt 100", "who": "admin(vlastnik webu)", "status": 200, "n": 200, "sec": 0.19, "err": ""}
+{"step": "filtr NEindexovany eq N3", "who": "admin(vlastnik webu)", "status": 500, "n": null, "sec": 0.17, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "filtr NEindexovany + top=10", "who": "admin(vlastnik webu)", "status": 500, "n": null, "sec": 0.24, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "orderby neindexovany", "who": "admin(vlastnik webu)", "status": 500, "n": null, "sec": 0.17, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "orderby indexovany Castka", "who": "admin(vlastnik webu)", "status": 200, "n": 10, "sec": 0.28, "err": ""}
+{"step": "filtr indexovany Kategorie + orderby neindexovany", "who": "admin(vlastnik webu)", "status": 200, "n": 10, "sec": 0.22, "err": ""}
+{"step": "filtr indexovany Kategorie eq K3 + neindexovany Neindexovano eq N3", "who": "admin(vlastnik webu)", "status": 200, "n": 300, "sec": 0.3, "err": ""}
+{"step": "stránkování všeho po 1000", "who": "admin", "n": 6000, "pages": 6, "sec": 1.58}
+{"step": "top=100 bez filtru", "who": "zadavatel1", "status": 200, "n": 100, "sec": 0.73, "err": ""}
+{"step": "top=5000 bez filtru", "who": "zadavatel1", "status": 200, "n": 5000, "sec": 0.59, "err": ""}
+{"step": "top=5001 bez filtru", "who": "zadavatel1", "status": 500, "n": null, "sec": 0.46, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "filtr indexovany Kategorie eq K3 (300 vysl.)", "who": "zadavatel1", "status": 200, "n": 300, "sec": 0.39, "err": ""}
+{"step": "filtr indexovany Castka lt 100", "who": "zadavatel1", "status": 200, "n": 200, "sec": 0.21, "err": ""}
+{"step": "filtr NEindexovany eq N3", "who": "zadavatel1", "status": 500, "n": null, "sec": 0.48, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "filtr NEindexovany + top=10", "who": "zadavatel1", "status": 500, "n": null, "sec": 0.36, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "orderby neindexovany", "who": "zadavatel1", "status": 500, "n": null, "sec": 0.16, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "orderby indexovany Castka", "who": "zadavatel1", "status": 200, "n": 10, "sec": 0.59, "err": ""}
+{"step": "filtr indexovany Kategorie + orderby neindexovany", "who": "zadavatel1", "status": 200, "n": 10, "sec": 0.38, "err": ""}
+{"step": "filtr indexovany Kategorie eq K3 + neindexovany Neindexovano eq N3", "who": "zadavatel1", "status": 200, "n": 300, "sec": 0.38, "err": ""}
+{"step": "stránkování všeho po 1000", "who": "zadavatel1", "n": 6000, "pages": 6, "sec": 1.79}

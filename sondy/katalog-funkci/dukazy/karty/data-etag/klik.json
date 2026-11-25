@@ -1,0 +1,179 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/data.aspx",
+ "start": "2026-11-24T18:27:27.589Z",
+ "kroky": [
+  {
+   "krok": "wait:4000",
+   "t": 872,
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\".ControlZone\")].at(-1).scrollIntoView()",
+   "t": 4874,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "wait:5000",
+   "t": 4882,
+   "ok": true
+  },
+  {
+   "krok": "fill:#evidence-nazev=Katalog: test souběhu 1927",
+   "t": 9883,
+   "ok": true
+  },
+  {
+   "krok": "fill:#evidence-popis=Dva schvalovatelé otevřou stejný požadavek, druhý dostane upozornění.",
+   "t": 9917,
+   "ok": true
+  },
+  {
+   "krok": "shotv:03-egd09-formular",
+   "t": 9924,
+   "vysledek": "dukazy/karty/data-etag/03-egd09-formular.png",
+   "ok": true
+  },
+  {
+   "krok": "click:Odeslat ke schválení",
+   "t": 10076,
+   "ok": true
+  },
+  {
+   "krok": "waitfor:Požadavek je odeslaný",
+   "t": 10175,
+   "ok": true
+  },
+  {
+   "krok": "wait:1500",
+   "t": 10967,
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\".ControlZone\")].at(-1).scrollIntoView()",
+   "t": 12469,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:04-egd09-odeslano",
+   "t": 12472,
+   "vysledek": "dukazy/karty/data-etag/04-egd09-odeslano.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\".ControlZone\")].at(-1).innerText.slice(0,400)",
+   "t": 12543,
+   "vysledek": "Evidence požadavků\nZadavatel a schvalovatel\nNový požadavek\nMoje požadavky\nKe schválení (4)\n\nPožadavek je odeslaný.\n\nPožadavek\tZadal\tKdy\tStav\tKomentář\nKatalog: test souběhu 1927\nDva schvalovatelé otevřou stejný požadavek, druhý dostane upozornění.\n\tÚčastník 09\t24. 11. 2026\tNový\t",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 546,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 617,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1757,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 4979,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(3)/CommentsDisabledScope"
+  },
+  {
+   "t": 4979,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 5026,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(3)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 5053,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id&$top=1&$orderby=ID%20desc"
+  },
+  {
+   "t": 5118,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$top=1000&$o"
+  },
+  {
+   "t": 5217,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$top=1000&$o"
+  },
+  {
+   "t": 10374,
+   "m": "POST",
+   "s": 201,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items"
+  },
+  {
+   "t": 10421,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 10487,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id&$top=1&$orderby=ID%20desc"
+  },
+  {
+   "t": 10552,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$top=1000&$o"
+  },
+  {
+   "t": 10632,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$top=1000&$o"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular"
+ ],
+ "konec": "2026-11-24T18:27:40.133Z"
+}

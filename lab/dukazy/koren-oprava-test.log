@@ -1,0 +1,17 @@
+2026-11-22T19:32:04Z
+web: https://pavelchocholousgmail.sharepoint.com/sites/egd10-prod (lab web, účet egd10 zatím nevydán); test pod egd01
+Everyone except external users id=10
+== A: Everyone v Členech (stav jako kořen)
+  "prihlaseni": "OK",
+  "prava_extra": {
+    "prava": "MŮŽE zapisovat"
+== B: Everyone přesunut do Návštěvníků (navržená oprava)
+  "prihlaseni": "OK",
+  "prava_extra": {
+    "prava": "jen čtení"
+== C: vráceno (Everyone odebrán z Návštěvníků)
+  "prihlaseni": "OK",
+  "prava_extra": {
+    "prava": "bez přístupu"
+
+

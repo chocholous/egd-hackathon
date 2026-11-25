@@ -1,0 +1,6 @@
+[OK]      katalog webu: moje-appka-client-side-solution verze 1.0.0.0, nasazeno true
+[OK]      stranka moje-appka.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam MojeAppka: 0 hlasu
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/moje-appka.aspx?env=WebView

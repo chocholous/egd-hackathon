@@ -1,0 +1,26 @@
+{
+  "ucet": "egd09",
+  "sppkg": "eon-demo-kalkulacka.sppkg",
+  "prihlaseni": "OK",
+  "nahrani": 200,
+  "aplikaci_v_katalogu": 4,
+  "nasazeni": 200,
+  "aplikace": {
+    "titulek": "spokojenost-appka-client-side-solution",
+    "nasazena": true,
+    "verze": "1.0.0.0"
+  },
+  "cizi_web": 403,
+  "tenant_app_catalog": 200,
+  "koren_webu": 200,
+  "prava_tenant_app_catalog": "jen čtení",
+  "prava_koren": "MŮŽE zapisovat",
+  "prava_vlastni_dev": "MŮŽE zapisovat",
+  "prava_vlastni_test": "MŮŽE zapisovat",
+  "prava_vlastni_prod": "MŮŽE zapisovat",
+  "cizi_test_prod": [
+    403,
+    403
+  ],
+  "hledani_cizi_vysledku": 0
+}

@@ -1,0 +1,3 @@
+app id 4ed829af-7e06-4387-af59-0979c59e8d1a nainstalována na https://pavelchocholousgmail.sharepoint.com/sites/egd-ca-dokumenty (po instalaci počkej ~1 min na propagaci web partů)
+stránka https://pavelchocholousgmail.sharepoint.com/sites/egd-ca-dokumenty/SitePages/pdf.aspx
+tools/ai-spfx-deploy.sh  $W 874880f3-cc01-4935-a0ad-393df1499f29 pdf.aspx   1.38s user 0.72s system 16% cpu 13.075 total

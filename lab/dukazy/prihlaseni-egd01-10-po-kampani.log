@@ -1,0 +1,33 @@
+2026-11-22T19:47:21Z
+egd01–egd10, každý 2×, tools/lab-ucty-overeni.mjs --jen-prihlaseni, po vyjmutí skupiny z Registration campaign
+kolo 1 egd03 { "ucet": "egd03", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 1 egd05 { "ucet": "egd05", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 1 egd02 { "ucet": "egd02", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 1 egd01 { "ucet": "egd01", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 1 egd07 { "ucet": "egd07", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 1 egd10 { "ucet": "egd10", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 1 egd09 { "ucet": "egd09", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 1 egd06 { "ucet": "egd06", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "SELHALO: login.microsoftonline.com", "text_stranky": "Sign in Enter a valid email address, phone number, or Skype name. Can’t access your account? Sign-in options Terms of use Privacy & cookies ..."}
+kolo 1 egd04 { "ucet": "egd04", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "SELHALO: login.microsoftonline.com", "text_stranky": "Sign in Can’t access your account? Sign-in options Terms of use Privacy & cookies ..."}
+kolo 1 egd08 { "ucet": "egd08", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "SELHALO: login.microsoftonline.com", "text_stranky": "Sign in Can’t access your account? Sign-in options Terms of use Privacy & cookies ..."}
+kolo 2 egd01 { "ucet": "egd01", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 2 egd02 { "ucet": "egd02", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 2 egd04 { "ucet": "egd04", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 2 egd07 { "ucet": "egd07", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 2 egd03 { "ucet": "egd03", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 2 egd09 { "ucet": "egd09", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 2 egd10 { "ucet": "egd10", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+kolo 2 egd08 { "ucet": "egd08", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "SELHALO: login.microsoftonline.com", "text_stranky": "Sign in Can’t access your account? Sign-in options Terms of use Privacy & cookies ..."}
+kolo 2 egd05 { "ucet": "egd05", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "SELHALO: login.microsoftonline.com", "text_stranky": "Sign in Can’t access your account? Sign-in options Terms of use Privacy & cookies ..."}
+kolo 2 egd06 { "ucet": "egd06", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "SELHALO: login.microsoftonline.com", "text_stranky": "Sign in Can’t access your account? Sign-in options Terms of use Privacy & cookies ..."}
+2026-11-22T19:50:51Z
+--- opakování neúspěšných postupně (bez paralelní zátěže)
+seq1 egd04 { "ucet": "egd04", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+seq2 egd04 { "ucet": "egd04", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+seq1 egd05 { "ucet": "egd05", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+seq2 egd05 { "ucet": "egd05", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+seq1 egd06 { "ucet": "egd06", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+seq2 egd06 { "ucet": "egd06", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+seq1 egd08 { "ucet": "egd08", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+seq2 egd08 { "ucet": "egd08", "sppkg": "eon-demo-kalkulacka.sppkg", "prihlaseni": "OK"}
+2026-11-22T19:53:19Z

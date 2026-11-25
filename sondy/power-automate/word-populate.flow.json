@@ -1,0 +1,54 @@
+{
+ "displayName": "EGD PA sonda: Word Online Populate template (Premium test)",
+ "connectionReferences": {
+  "shared_wordonlinebusiness": {
+   "id": "/providers/Microsoft.PowerApps/apis/shared_wordonlinebusiness",
+   "tier": "NotSpecified",
+   "connectionName": "egd-sonda-wordonline",
+   "source": "Embedded"
+  }
+ },
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+   "$connections": {
+    "defaultValue": {},
+    "type": "Object"
+   },
+   "$authentication": {
+    "defaultValue": {},
+    "type": "SecureObject"
+   }
+  },
+  "triggers": {
+   "Recurrence": {
+    "type": "Recurrence",
+    "recurrence": {
+     "frequency": "Month",
+     "interval": 12
+    }
+   }
+  },
+  "actions": {
+   "W": {
+    "type": "OpenApiConnection",
+    "runAfter": {},
+    "inputs": {
+     "host": {
+      "apiId": "/providers/Microsoft.PowerApps/apis/shared_wordonlinebusiness",
+      "connectionName": "shared_wordonlinebusiness",
+      "operationId": "PopulateTemplate"
+     },
+     "parameters": {
+      "source": "me",
+      "drive": "me",
+      "file": "/sablona-test.docx"
+     },
+     "authentication": "@parameters('$authentication')"
+    }
+   }
+  },
+  "outputs": {}
+ }
+}

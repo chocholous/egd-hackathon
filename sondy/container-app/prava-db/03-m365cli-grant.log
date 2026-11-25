@@ -1,0 +1,8 @@
+## 2026-11-24T00:44:45Z rozšíření grantu m365-cli-spfx-lab → Graph o Sites.FullControl.All (pro POST /sites/{id}/permissions)
+{"id":"qgKbx8KDz06V2fX2amWhcqLH5Olwmj5Bv5L7mHRxcX3AXQk7QlXRTI_yXRykHHzK","consentType":"Principal","principalId":"3b095dc0-5542-4cd1-8ff2-5d1ca41c7cca","scope":"User.Read"}
+PATCH ok
+{
+  "scope": "User.Read Sites.FullControl.All"
+}
+## util accesstoken get --new (graph)
+[výstup tokenu vynechán – šlo jen o ověření, že --new vrátí token]

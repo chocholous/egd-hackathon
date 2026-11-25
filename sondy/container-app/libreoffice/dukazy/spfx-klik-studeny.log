@@ -1,0 +1,24 @@
+2026-11-24T01:10:59.222Z url https://pavelchocholousgmail.sharepoint.com/sites/egd-ca-dokumenty/SitePages/pdf.aspx
+2026-11-24T01:11:24.949Z net GET 200 https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/me
+2026-11-24T01:11:24.956Z kdo jsem 25702 ms
+{
+  "status": 200,
+  "ms": 25591,
+  "body": {
+    "upn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+    "oid": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d",
+    "scp": "access_as_user"
+  }
+}
+2026-11-24T01:11:26.366Z net POST 200 https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/pdf?ext=xlsx
+2026-11-24T01:11:26.437Z převod 1471 ms
+{
+  "status": 200,
+  "ms": 1362,
+  "serverConvertMs": "1239",
+  "pdfBytes": 23414,
+  "contentType": "application/pdf",
+  "magic": "%PDF-"
+}
+2026-11-24T01:11:26.510Z stažené PDF dukazy/spfx-klik-studeny/z-prohlizece-xlsx-exceljs.pdf 23414 B
+2026-11-24T01:11:26.535Z screenshot dukazy/spfx-klik-studeny/webpart.png

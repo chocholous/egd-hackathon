@@ -1,0 +1,3 @@
+před: Žádosti čekající na vyřízení(5) | Schválené žádosti(61)
+po kliku (9 s): Žádosti čekající na vyřízení(4) | Schválené žádosti(62)
+po reloadu: Žádosti čekající na vyřízení(4) | Schválené žádosti(62)

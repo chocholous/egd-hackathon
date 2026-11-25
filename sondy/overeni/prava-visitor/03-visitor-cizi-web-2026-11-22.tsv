@@ -1,0 +1,7 @@
+# uživatel=tomas.prochazka web=https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev 2026-11-22T19:16:28Z
+web-title (čtení webu)	403	{"odata.error":{"code":"-2147024891, System.UnauthorizedAccessException","message":{"lang":"cs-CZ","value":"Attempted to perform an unauthorized operation."}}}
+effective-perms (EffectiveBasePermissions web)	403	{"odata.error":{"code":"-2147024891, System.UnauthorizedAccessException","message":{"lang":"cs-CZ","value":"Attempted to perform an unauthorized operation."}}}
+lists (čtení seznamů)	403	{"odata.error":{"code":"-2147024891, System.UnauthorizedAccessException","message":{"lang":"cs-CZ","value":"Attempted to perform an unauthorized operation."}}}
+knihovna-polozky (čtení knihovny Apps for SharePoint)	403	{"odata.error":{"code":"-2147024891, System.UnauthorizedAccessException","message":{"lang":"cs-CZ","value":"Attempted to perform an unauthorized operation."}}}
+!! digest se nezískal (zápisové testy nejsou průkazné)
+zalozit-seznam (POST lists)	403	{"odata.error":{"code":"-2147024891, System.UnauthorizedAccessException","message":{"lang":"cs-CZ","value":"Attempted to perform an unauthorized operation."}}}

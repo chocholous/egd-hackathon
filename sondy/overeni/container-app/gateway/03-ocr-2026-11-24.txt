@@ -1,0 +1,7 @@
+# 2026-11-24T00:42:01Z ocr ocr-cs.png (prebuilt-read), ocr-test.png
+## ocr-cs
+{"text":"Částka k úhradě: 12 345,00 Kč Příliš žluťoučký kůň úpěl ďábelské ódy Dodavatel: Řezníkův závod, s.r.o.","pages":1,"costUsd":0.0015,"ms":993,"kvotaDnes":{"tokens":140,"limit":200000}}
+[HTTP 200, 1.214477s]
+## ocr-test
+{"text":"FAKTURA c. 2026-0142\nDodavatel: Test s.r.o., ICO 12345678 Odberatel: EG.D, a.s.\nDatum splatnosti: 15. 12. 2026\nCelkem k uhrade: 12 345,00 CZK","pages":1,"costUsd":0.0015,"ms":814,"kvotaDnes":{"tokens":140,"limit":200000}}
+[HTTP 200, 1.034995s]

@@ -1,0 +1,6 @@
+# Nahrání fontu do knihovny (session ms-dokumenty, 22. 11. 2026 ~20:12, příkazy proběhly s výstupem níže)
+$ HOME=~/.m365-osobni m365 spo folder add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty --parentFolderUrl "/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty" --name assets
+(založeno, výstup: vlastnosti složky)
+$ HOME=~/.m365-osobni m365 spo file add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty --folder "Sdilene dokumenty/assets" --path Roboto-Regular.ttf
+Name                             : Roboto-Regular.ttf
+# ověření teď (2026-11-22 20:13 UTC): /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/assets/Roboto-Regular.ttf 157216 B

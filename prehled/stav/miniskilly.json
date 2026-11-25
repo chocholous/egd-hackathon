@@ -1,0 +1,53 @@
+{
+  "nazev": "Miniskilly k požadavkům",
+  "stav": "hotovo",
+  "popis": "egd-data-seznamy: audit uzavřen (obsah ✅, Claude ✅, Copilot ✅); ms-* sessions dobíhají své Copilot testy",
+  "oblast": "skills",
+  "kdo": "session miniskilly",
+  "vystup": "skills/egd-data-seznamy",
+  "aktualizovano": "2026-11-23T10:14:53Z",
+  "zacatek": "2026-11-22T18:39:03Z",
+  "kroky": 8,
+  "historie": [
+    {
+      "t": "2026-11-22T18:39:03Z",
+      "stav": "bezi",
+      "popis": "čtu sondy, píšu egd-data-seznamy"
+    },
+    {
+      "t": "2026-11-22T18:42:53Z",
+      "stav": "bezi",
+      "popis": "6 miniskillů napsáno, e2e test egd-data-seznamy v labu"
+    },
+    {
+      "t": "2026-11-22T18:49:41Z",
+      "stav": "bezi",
+      "popis": "7 miniskillů napsáno; čekám na e2e test egd-data-seznamy"
+    },
+    {
+      "t": "2026-11-22T19:31:40Z",
+      "stav": "bezi",
+      "popis": "egd-data-seznamy ověřen (indexy, e2e); ostatní ověřují sessions ms-*"
+    },
+    {
+      "t": "2026-11-22T19:52:16Z",
+      "stav": "bezi",
+      "popis": "data-seznamy přepsán na šablonu Spokojenost; běží e2e v Copilot CLI, pak Claude"
+    },
+    {
+      "t": "2026-11-22T20:47:17Z",
+      "stav": "ceka",
+      "popis": "egd-data-seznamy: Copilot e2e ✅ (TEST-copilot.md), 2. kolo auditu přeměřeno; e2e v Claude čeká na místo na disku (>15 GB)"
+    },
+    {
+      "t": "2026-11-23T10:12:17Z",
+      "stav": "hotovo",
+      "popis": "egd-data-seznamy: e2e ✅ Claude i Copilot; čeká se na audit; ms-* sessions dobíhají své Copilot testy"
+    },
+    {
+      "t": "2026-11-23T10:14:53Z",
+      "stav": "hotovo",
+      "popis": "egd-data-seznamy: audit uzavřen (obsah ✅, Claude ✅, Copilot ✅); ms-* sessions dobíhají své Copilot testy"
+    }
+  ]
+}

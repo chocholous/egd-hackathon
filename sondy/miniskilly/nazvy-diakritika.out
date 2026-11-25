@@ -1,0 +1,34 @@
+
+## A: seznam 'Test Žádosti o volno', sloupec DisplayName 'Komentář schvalovatele'
+{"Title":"Test Žádosti o volno","Id":"88ef4bd0-cf7d-4767-828c-79fea0789a42"}
+{"Title":"Test Žádosti o volno","url":"/sites/egd-sonda-miniskilly/Lists/Test dosti o volno"}
+{"Title":"Komentář schvalovatele","InternalName":"Koment_x00e1__x0159__x0020_schva","StaticName":"Koment_x00e1__x0159__x0020_schva"}
+REST $select=Komentar:
+{"error":"Request failed with status code 400"}
+
+
+## B: seznam 'TestZadosti', sloupec DisplayName 'Komentar', pak Title 'Komentář schvalovatele'
+{"Title":"TestZadosti","Id":"3b3f23a7-01aa-4939-ba39-e2213eecbf38"}
+{"Title":"TestZadosti","url":"/sites/egd-sonda-miniskilly/Lists/TestZadosti"}
+{"Title":"Komentar","InternalName":"Komentar"}
+{"Title":"Komentář schvalovatele","InternalName":"Komentar"}
+{"Id":1}
+REST $select=Komentar:
+{
+  "odata.metadata": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly/_api/$metadata#SP.ListData.TestZadostiListItems&$select=Title,Komentar",
+  "value": [
+    {
+      "odata.type": "SP.Data.TestZadostiListItem",
+      "odata.id": "bbf6aa2a-e3bb-450c-a94f-9c334bee69e8",
+     
+
+## Úklid: oba seznamy do koše webu
+A v koši
+{"error":"Seznam nejde odstranit, když je blokovaný nebo se pro něj uplatňuje zásada uchovávání informací."}
+## C (24. 11.): AddFieldInternalNameHint, seznam TestZadosti
+$ spo field add --xml '<Field Type="Number" Name="Hodnoceni" DisplayName="Hodnocení" />' --options AddFieldInternalNameHint
+{"Title":"Hodnocení","InternalName":"Hodnoceni"}
+$ totéž bez --options (Name="Hodnoceni2" DisplayName="Hodnocení 2")
+{"Title":"Hodnocení 2","InternalName":"Hodnocen_x00ed__x0020_2"}
+REST $select=Hodnoceni:
+[{"odata.type":"SP.Data.TestZadostiListItem","odata.id":"02873756-746b-4781-b5dd-6574714e26d1","odata.etag":"\"1\"","odata.editLink":"Web/Lists(guid'3b3f23a7-01aa-4939-ba39-e2213eecbf38')/Items(1)","T

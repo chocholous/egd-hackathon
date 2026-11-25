@@ -1,0 +1,12 @@
+{
+  "cesta": "SPFx MSGraphClientV3 /me/sendMail po schválení Mail.Send (ověřeno 202, doručeno, limit 30 MB)",
+  "poznamka": "Prošlo v Claude i Copilot CLI (TEST-copilot.md). V E.ON chce schválení Mail.Send od IT (tenant-wide pro všechny SPFx appky).",
+  "zdroj": "sondy/ms-maily/README.md",
+  "skill": "ano",
+  "nazev": "Posílání e-mailů s přílohami",
+  "realne": "ano",
+  "test": "lab",
+  "cislo": 6,
+  "aktualizovano": "2026-11-23T10:32:52Z",
+  "skill_cesta": "skills/egd-maily"
+}

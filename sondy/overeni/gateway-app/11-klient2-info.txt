@@ -1,0 +1,1 @@
+klient2 appId=eda29ad1-73c7-4f12-bb23-97bf9a24fa03 sp=f92f8e98-4845-4bd4-b6dc-8eb7494f7bae endDate=2026-11-26T08:49:35Z

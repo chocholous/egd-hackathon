@@ -1,0 +1,32 @@
+{"step": "attach add", "status": 200, "err": ""}
+{"step": "attach read (REST)", "who": "zadavatel1", "status": 200, "body": "tajny obsah"}
+{"step": "attach list", "who": "zadavatel1", "status": 200, "files": ["tajne.txt"]}
+{"step": "attach read (REST)", "who": "zadavatel2", "status": 400, "body": "Položka neexistuje. Je možné, "}
+{"step": "attach list", "who": "zadavatel2", "status": 400, "files": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}
+{"step": "attach read (REST)", "who": "schvalovatel", "status": 200, "body": "tajny obsah"}
+{"step": "attach list", "who": "schvalovatel", "status": 200, "files": ["tajne.txt"]}
+{"step": "attach read (REST)", "who": "cizi", "status": 403, "body": "Attempted to perform an unauth"}
+{"step": "attach list", "who": "cizi", "status": 403, "files": "Attempted to perform an unauthorized operation."}
+{"step": "attach read (REST)", "who": "spravce", "status": 200, "body": "tajny obsah"}
+{"step": "attach list", "who": "spravce", "status": 200, "files": ["tajne.txt"]}
+{"step": "attach direct URL", "who": "zadavatel2", "status": 401}
+{"step": "attach direct URL", "who": "schvalovatel", "status": 401}
+{"step": "attach direct URL", "who": "cizi", "status": 401}
+{"step": "versions of tomas item", "who": "zadavatel1", "status": 200, "n": 3}
+{"step": "versions of tomas item", "who": "zadavatel2", "status": 400, "n": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}
+{"step": "versions of tomas item", "who": "schvalovatel", "status": 200, "n": 3}
+{"step": "versions of tomas item", "who": "cizi", "status": 403, "n": "Attempted to perform an unauthorized operation."}
+{"step": "item EffectiveBasePermissions", "who": "zadavatel1", "item": "own", "status": 200, "perms": ["ViewListItems", "EditListItems", "DeleteListItems"]}
+{"step": "item EffectiveBasePermissions", "who": "zadavatel1", "item": "foreign", "status": 400, "perms": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}
+{"step": "item EffectiveBasePermissions", "who": "zadavatel2", "item": "own", "status": 400, "perms": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}
+{"step": "item EffectiveBasePermissions", "who": "zadavatel2", "item": "foreign", "status": 200, "perms": ["ViewListItems", "EditListItems", "DeleteListItems"]}
+{"step": "item EffectiveBasePermissions", "who": "schvalovatel", "item": "own", "status": 200, "perms": ["ViewListItems", "EditListItems", "DeleteListItems", "CancelCheckout"]}
+{"step": "item EffectiveBasePermissions", "who": "schvalovatel", "item": "foreign", "status": 200, "perms": ["ViewListItems", "EditListItems", "DeleteListItems", "CancelCheckout"]}
+{"step": "item EffectiveBasePermissions", "who": "schvalovatel_edit", "item": "own", "status": 400, "perms": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}
+{"step": "item EffectiveBasePermissions", "who": "schvalovatel_edit", "item": "foreign", "status": 400, "perms": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}
+{"step": "zadavatel1 break inheritance na vlastni polozce", "status": 403, "err": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))"}
+{"step": "spravce break inheritance", "status": 200, "err": ""}
+{"step": "share item s jakub (Read)", "status": 200, "err": ""}
+{"step": "jakub cte sdilenou polozku", "status": 404, "title": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel."}
+{"step": "jakub vidi ted pocet", "n": 4}
+{"step": "30 polozek + break inheritance", "sec": 19.9, "ok": 30}

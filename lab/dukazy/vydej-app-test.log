@@ -1,0 +1,15 @@
+spatne_heslo_chyba                 "Špatné heslo."
+spatne_heslo_seznam_skryty         true
+soubeh_ui_alice                    {"vyhral":true,"ucet":"egd10","heslo_sedi":true}
+soubeh_ui_bob                      {"vyhral":false,"chyba":"Tenhle účet si právě vzal někdo jiný. Vyberte jiný."}
+soubeh_ui_prave_jeden_vitez        true
+porazeny_vidi_rezervaci            "rezervováno: Test Alice"
+soubeh_api_10x_egd09               {"200":1,"409":9,"jine":[]}
+vitez_po_reloadu_vidi_ucet         "egd10"
+anonym_okno_hesla_v_html           0
+anonym_okno_egd10                  "rezervováno: Test Alice"
+mobil_bez_vodorovneho_posunu       true
+mobil_rezervace                    "egd08"
+mobil_bez_vodorovneho_posunu_ucet  true
+mobil_nic_nepretika_kartu          true
+mobil_vraceno_egd08_volne          true

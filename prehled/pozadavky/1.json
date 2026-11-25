@@ -1,0 +1,12 @@
+{
+  "cesta": "SharePoint seznamy (kapacita až 30 mil. položek); appka dotazuje přes indexované sloupce a stránkuje po 1000; relační data: Azure SQL + API",
+  "poznamka": "E2E ✅ v Claude (TEST.md) i Copilotu (TEST-copilot.md)",
+  "zdroj": "sondy/data-prava.md",
+  "skill": "ano",
+  "nazev": "Databáze včetně editace dat",
+  "realne": "ano",
+  "test": "lab",
+  "cislo": 1,
+  "aktualizovano": "2026-11-23T10:12:17Z",
+  "skill_cesta": "skills/egd-data-seznamy"
+}

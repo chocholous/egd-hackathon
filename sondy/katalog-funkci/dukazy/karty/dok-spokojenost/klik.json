@@ -1,0 +1,204 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/dokumenty.aspx",
+ "start": "2026-11-24T18:36:40.591Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 896,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 3898,
+   "vysledek": "8 zón",
+   "ok": true
+  },
+  {
+   "krok": "click:Word",
+   "t": 12554,
+   "ok": true
+  },
+  {
+   "krok": "wait:9000",
+   "t": 12683,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"f8fbbd7b-5022-4888-9121-d544eb74d96a\"]').querySelector('#log').innerText",
+   "t": 21739,
+   "vysledek": "HOTOVO docx",
+   "ok": true
+  },
+  {
+   "krok": "click:PDF (z Wordu)",
+   "t": 21744,
+   "ok": true
+  },
+  {
+   "krok": "wait:12000",
+   "t": 21856,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"f8fbbd7b-5022-4888-9121-d544eb74d96a\"]').querySelector('#log').innerText",
+   "t": 33861,
+   "vysledek": "HOTOVO graphpdf",
+   "ok": true
+  },
+  {
+   "krok": "click:PDF (pdf-lib)",
+   "t": 33866,
+   "ok": true
+  },
+  {
+   "krok": "wait:8000",
+   "t": 33948,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"f8fbbd7b-5022-4888-9121-d544eb74d96a\"]').querySelector('#log').innerText",
+   "t": 41950,
+   "vysledek": "HOTOVO pdf",
+   "ok": true
+  },
+  {
+   "krok": "click:Excel",
+   "t": 41953,
+   "ok": true
+  },
+  {
+   "krok": "wait:8000",
+   "t": 42036,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"f8fbbd7b-5022-4888-9121-d544eb74d96a\"]').querySelector('#log').innerText",
+   "t": 50039,
+   "vysledek": "HOTOVO xlsx",
+   "ok": true
+  },
+  {
+   "krok": "click:PowerPoint",
+   "t": 50042,
+   "ok": true
+  },
+  {
+   "krok": "wait:8000",
+   "t": 50121,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"f8fbbd7b-5022-4888-9121-d544eb74d96a\"]').querySelector('#log').innerText",
+   "t": 58122,
+   "vysledek": "HOTOVO pptx",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"f8fbbd7b-5022-4888-9121-d544eb74d96a\"]').querySelector('#log').scrollIntoView({block:'center'})",
+   "t": 58124,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:02-egd09-export-log",
+   "t": 58125,
+   "vysledek": "dukazy/karty/dok-spokojenost/02-egd09-export-log.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 560,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 582,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 591,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 591,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1757,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 4001,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID%20desc&$top=2000"
+  },
+  {
+   "t": 6809,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Revize')/items?$select=Id,Title,Technik,Termin,Stav,Naklad&$orderby=Id"
+  },
+  {
+   "t": 6935,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Dokumenty')/rootFolder?$select=ServerRelativeUrl"
+  },
+  {
+   "t": 8209,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(5)/CommentsDisabledScope"
+  },
+  {
+   "t": 8283,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(5)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 22327,
+   "m": "GET",
+   "s": 302,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc894,c4885c9f-ebc2-4ace-9beb-c7e9f9cc20f5/drive/root:/exporty/spokojenost.docx:/content?forma"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:37:38.827Z"
+}

@@ -1,0 +1,46 @@
+{"test": "GetItems_RowLimit_1000", "status": 200, "sec": 0.322, "rows": 1000, "id_prvni_posledni": [1, 1000], "nextLink_pozice": false}
+{"test": "GetItems_RowLimit_5000", "status": 200, "sec": 0.848, "rows": 5000, "id_prvni_posledni": [1, 5000], "nextLink_pozice": false}
+{"test": "GetItems_RowLimit_5001", "status": 500, "sec": 0.17, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GetItems_RowLimit_6000_Paged", "status": 500, "sec": 0.224, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GetItems_Where_neindexovany", "status": 500, "sec": 0.905, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GetItems_Where_indexovany", "status": 200, "sec": 0.341, "rows": 600, "id_prvni_posledni": [5, 11970], "nextLink_pozice": false}
+{"test": "GetItems_Where_indexovany_+_OrderBy_neindexovany", "status": 200, "sec": 0.346, "rows": 10, "id_prvni_posledni": [5, 805], "nextLink_pozice": false}
+{"test": "GetItems_OrderBy_ID_desc", "status": 200, "sec": 0.176, "rows": 10, "id_prvni_posledni": [12002, 11993], "nextLink_pozice": false}
+{"test": "GetItems_OrderBy_Created", "status": 500, "sec": 0.171, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GetItems_QueryThrottleMode_Override_RowLimit_6000", "status": 500, "sec": 0.279, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GetItems_QueryThrottleMode_Override_neindexovany", "status": 500, "sec": 0.174, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GetItems_Scope_RecursiveAll_RowLimit_5000", "status": 200, "sec": 0.925, "rows": 5000, "id_prvni_posledni": [1, 5000], "nextLink_pozice": false}
+{"test": "GetItems_stranky_po_1000_PagingInfo_p_ID", "status": 200, "rows": 12002, "stranek": 13, "sec": 5.78}
+{"test": "RenderListDataAsStream_RowLimit_1000", "status": 200, "sec": 2.061, "rows": 1000, "id_prvni_posledni": ["1", "1000"], "NextHref": "", "RowCount": 1000}
+{"test": "RenderListDataAsStream_RowLimit_5000", "status": 200, "sec": 4.203, "rows": 5000, "id_prvni_posledni": ["1", "5000"], "NextHref": "", "RowCount": 5000}
+{"test": "RenderListDataAsStream_RowLimit_5001", "status": 500, "sec": 0.336, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "RenderListDataAsStream_Where_neindexovany", "status": 200, "sec": 0.237, "rows": 10, "id_prvni_posledni": ["5", "405"], "NextHref": "", "RowCount": 10}
+{"test": "RenderListDataAsStream_Where_indexovany", "status": 200, "sec": 0.917, "rows": 600, "id_prvni_posledni": ["5", "11970"], "NextHref": "", "RowCount": 600}
+{"test": "RenderListDataAsStream_OrderBy_Created", "status": 500, "sec": 0.261, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "RenderListDataAsStream_RowLimit_Paged_1000", "status": 200, "sec": 1.133, "rows": 1000, "id_prvni_posledni": ["1", "1000"], "NextHref": "?Paged=TRUE&p_ID=1000&PageFirstRow=1001&View=00000000-0000-0", "RowCount": 1000}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 1, "status": 200, "nalezeno": 1, "sec": 0.271}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 1, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.169}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 2803, "status": 200, "nalezeno": 1, "sec": 0.314}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 2803, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.164}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 4802, "status": 200, "nalezeno": 1, "sec": 0.228}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 4802, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.174}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 4990, "status": 200, "nalezeno": 1, "sec": 0.349}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 4990, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.163}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 5000, "status": 200, "nalezeno": 1, "sec": 0.325}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 5000, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.185}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 5001, "status": 200, "nalezeno": 0, "sec": 0.378}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 5001, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.189}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 5010, "status": 200, "nalezeno": 0, "sec": 1.518}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 5010, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.246}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 5100, "status": 200, "nalezeno": 0, "sec": 0.228}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 5100, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.207}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 5200, "status": 200, "nalezeno": 0, "sec": 0.256}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 5200, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.174}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 5400, "status": 200, "nalezeno": 0, "sec": 0.23}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 5400, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.273}
+{"test": "RenderListDataAsStream_neindexovany_Title_hledam_ID", "hledane_ID": 10914, "status": 200, "nalezeno": 0, "sec": 0.435}
+{"test": "GetItems_neindexovany_Title_hledam_ID", "hledane_ID": 10914, "status": 500, "nalezeno": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "sec": 0.173}
+{"test": "RenderListDataAsStream_Paged_NextHref_neindexovany_Title='Položka 3000'", "nalezeno": ["2803"], "stranek": 3, "sec": 1.01}
+{"test": "RenderListDataAsStream_Paged_NextHref_neindexovany_Title='Položka 5499'", "nalezeno": ["5593"], "stranek": 3, "sec": 1.1}
+{"test": "RenderListDataAsStream_Paged_NextHref_neindexovany_Title='Položka 11000'", "nalezeno": ["10914"], "stranek": 3, "sec": 1.22}
+{"test": "RenderListDataAsStream_Paged_NextHref_neindexovany_Title='Položka NEEXISTUJE'", "nalezeno": [], "stranek": 3, "sec": 0.86}

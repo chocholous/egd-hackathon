@@ -1,0 +1,7 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/newgrp.aspx
+KROK fill:#ctl00_PlaceHolderMain_ctl00_ctl01_txtGrpName=UI Test Čtení
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/newgrp.aspx
+KROK checklabel:Čtení - Umožňuje
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/newgrp.aspx
+KROK css:input[value='Vytvořit']
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/people.aspx?MembershipGroupId=35

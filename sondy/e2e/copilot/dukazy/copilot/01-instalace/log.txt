@@ -1,0 +1,79 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● Remote index: queued chocholous/egd-workshop for indexing
+
+ ● Checking my documentation "How do personal skills in ~/.copilot/skills get discovered and loaded…
+
+ $ Shell Check skill sources and destination collisions 39 lines…
+   printf 'Agent: GitHub Copilot CLI\n'; printf '\nSource directory:\n'; ls -la
+   /Users/chocholous/egd-e2e-copilot/rozbaleno; printf '\nDestination directory:\n'; if [ -e
+   /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills ]; then ls
+   -la /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills; else
+   echo '(does not exist)'; fi; printf '\nPer-skill source/target checks:\n'; for name in
+   egd-data-seznamy egd-dokumenty egd-externi-api egd-llm-gateway egd-maily egd-planovane-ulohy
+   egd-prava-role egd-pripravenost egd-prvni-appka egd-recon; do
+   src="/Users/chocholous/egd-e2e-copilot/rozbaleno/$name"; dst="/Users/chocholous/Projects/egd-work
+   shop/sondy/e2e/copilot/sandbox/home/.copilot/skills/$name"; if [ -d "$src" ]; then printf '%s:
+   source=present, SKILL.md=' "$name"; [ -f "$src/SKILL.md" ] && printf 'present' || printf
+   'MISSING'; else printf '%s: source=MISSING' "$name"; fi; [ -e "$dst" ] && printf ',
+   target=EXISTS\n' || printf ', target=absent\n'; done
+
+ $ Shell List currently discovered Copilot skills 4 lines…
+   copilot skill list
+
+V cíli žádný z těchto skillů není. Kopíruji všech deset složek beze změny; poté porovnám jejich obsah a ověřím seznam Copilot skillů.
+
+ $ Shell Copy and verify all ten personal skills 23 lines…
+   set -eu
+   srcroot=/Users/chocholous/egd-e2e-copilot/rozbaleno
+   dstroot=/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills
+   names='egd-data-seznamy egd-dokumenty egd-externi-api egd-llm-gateway egd-maily
+   egd-planovane-ulohy egd-prava-role egd-pripravenost egd-prvni-appka egd-recon'
+   for name in $names; do
+     [ -d "$srcroot/$name" ] || { echo "Missing source directory: $name" >&2; exit 1; }
+     [ -f "$srcroot/$name/SKILL.md" ] || { echo "Missing source SKILL.md: $name" >&2; exit 1; }
+     [ ! -e "$dstroot/$name" ] || { echo "Refusing to overwrite: $dstroot/$name" >&2; exit 1; }
+   done
+   mkdir -p "$dstroot"
+   for name in $names; do cp -a "$srcroot/$name" "$dstroot/"; done
+   for name in $names; do diff -qr "$srcroot/$name" "$dstroot/$name" >/dev/null || { echo "Copy
+   verification failed: $name" >&2; exit 1; }; done
+   printf 'Copied and verified all ten folders. SKILL.md files:\n'
+   for name in $names; do printf '%s\n' "$dstroot/$name/SKILL.md"; done
+
+ $ Shell Confirm target folder names and SKILL.md files 12 lines…
+   for name in egd-data-seznamy egd-dokumenty egd-externi-api egd-llm-gateway egd-maily
+   egd-planovane-ulohy egd-prava-role egd-pripravenost egd-prvni-appka egd-recon; do test -f "/Users
+   /chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/$name/SKILL.md"
+   || exit 1; done; printf 'Verified: SKILL.md exists in all 10 target folders.\n'; find
+   /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills -mindepth
+   1 -maxdepth 1 -type d -print | sort
+
+ $ Shell Verify newly installed skills are discoverable 17 lines…
+   printf 'HOME=%s\n' "$HOME"; copilot skill list
+
+Jsem **GitHub Copilot CLI**. Zkopíroval jsem všech deset složek do osobní složky skillů, včetně skrytých souborů a podsložek. Cíle byly prázdné; obsah všech složek jsem porovnal se zdrojem. `copilot skill list` je už našel, takže restart není potřeba, aby se objevily v seznamu.
+
+V každé složce je `SKILL.md`:
+
+- `egd-data-seznamy/SKILL.md`
+- `egd-dokumenty/SKILL.md`
+- `egd-externi-api/SKILL.md`
+- `egd-llm-gateway/SKILL.md`
+- `egd-maily/SKILL.md`
+- `egd-planovane-ulohy/SKILL.md`
+- `egd-prava-role/SKILL.md`
+- `egd-pripravenost/SKILL.md`
+- `egd-prvni-appka/SKILL.md`
+- `egd-recon/SKILL.md`
+
+V otevřené Copilot CLI relaci je načti příkazem `/skills reload` a ověř přes `/skills list`.
+
+Session exported to: /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 0.45 (48s)
+Tokens     ↑ 108.9k (92.7k cached, 16.2k written) • ↓ 3.1k (1.7k reasoning)
+Resume     copilot --resume=54d60e01-6a44-4e20-976e-f73083fa661c

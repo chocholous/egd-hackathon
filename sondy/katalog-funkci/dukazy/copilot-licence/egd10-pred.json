@@ -1,0 +1,15 @@
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(assignedLicenses)/$entity",
+  "assignedLicenses": [
+    {
+      "disabledPlans": [
+        "094e7854-93fc-4d55-b2c0-3ab5369ebdc1"
+      ],
+      "skuId": "ffa3a2a0-3820-462a-aa81-8a4d741f0cba"
+    },
+    {
+      "disabledPlans": [],
+      "skuId": "06ebc4ee-1bb5-47dd-8120-11324bc54e06"
+    }
+  ]
+}

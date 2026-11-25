@@ -1,0 +1,18 @@
+--- klik docx
+LOG po kliku: HOTOVO docx (530 ms): 4 náhrad → /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vystup/smlouva-upravena.docx | Smlouva o dílo č. 2026/118 ¶ Objednatel: EG.D, a.s., Lidická 1873/36, Brno ¶ Zhotovitel: Elektro Vysočina s.r.o. ¶ Cena díla činí 512 000 Kč bez DPH. Termín dokončení je 30. 4. 2027. ¶ Za Elektro Vysočina podepisuje jednatel.
+--- klik xlsx-exceljs
+LOG po kliku: HOTOVO xlsx-exceljs (593 ms): → /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vystup/rozpocet-exceljs.xlsx | B3=350000 A4=Doprava a montáž B5 vzorec=SUM(B2:B4) uložený výsledek=480000
+--- klik xlsx-xml
+LOG po kliku: HOTOVO xlsx-xml (407 ms): → /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vystup/rozpocet-xml.xlsx | B3,A4 přepsány v xl/worksheets/sheet1.xml, fullCalcOnLoad=1
+--- klik xlsx-graph
+LOG po kliku: HOTOVO xlsx-graph (2281 ms): → /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vystup/rozpocet-graph.xlsx | B5 vzorec=[["=SUM(B2:B4)"]] hodnota po přepočtu=[[530000]]
+--- klik pptx
+LOG po kliku: HOTOVO pptx (401 ms): 3 náhrad → /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vystup/prezentace-upravena.pptx | Stav projektu Rozvodna Jih ¶ Hotovo: 4 z 5 milníků ¶ Odpovídá: Petra Nováková
+--- klik sablona-naivne
+LOG po kliku: HOTOVO sablona-naivne (375 ms): → /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vystup/sablona-naivne.docx | zbylo zástupných textů: {{utvar}}, {{datum}} | Potvrzení o účasti na workshopu ¶ Jméno účastníka: Nováková Petra ¶ Útvar: {{utvar}} ¶ Datum: {{datum}} ¶ Hodnocení: 5 z 5 ¶ Děkujeme, tým EG.D
+--- klik sablona-odstavce
+LOG po kliku: HOTOVO sablona-odstavce (448 ms): 4 náhrad → /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vystup/sablona-odstavce.docx | zbylo: žádný | Potvrzení o účasti na workshopu ¶ Jméno účastníka: Nováková Petra ¶ Útvar: Distribuce Brno ¶ Datum: 24. 11. 2026 ¶ Hodnocení: 5 z 5 ¶ Děkujeme, tým EG.D
+--- klik sablona-docxtemplater
+LOG po kliku: HOTOVO sablona-docxtemplater (440 ms): → /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vystup/sablona-docxtemplater.docx | zbylo: žádný | Potvrzení o účasti na workshopu ¶ Jméno účastníka: Nováková Petra ¶ Útvar: Distribuce Brno ¶ Datum: 24. 11. 2026 ¶ Hodnocení: 5 z 5 ¶ Děkujeme, tým EG.D
+LOG:
+

@@ -1,0 +1,37 @@
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 1398533
+--- mb=1 wall 1040 ms
+OK odesláno test-1MB.bin 1048576 B za 980 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 3495689
+--- mb=2.5 wall 786 ms
+OK odesláno test-2.5MB.bin 2621440 B za 740 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 4054929
+--- mb=2.9 wall 1046 ms
+OK odesláno test-2.9MB.bin 3040870 B za 976 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 4194733
+--- mb=3 wall 5511 ms
+OK odesláno test-3MB.bin 3145728 B za 5392 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 4893789
+--- mb=3.5 wall 1233 ms
+OK odesláno test-3.5MB.bin 3670016 B za 1165 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 5592837
+--- mb=4 wall 1134 ms
+OK odesláno test-4MB.bin 4194304 B za 1056 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 8389037
+--- mb=6 wall 1646 ms
+OK odesláno test-6MB.bin 6291456 B za 1564 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 13981447
+--- mb=10 wall 2838 ms
+OK odesláno test-10MB.bin 10485760 B za 2746 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 27962459
+--- mb=20 wall 6894 ms
+OK odesláno test-20MB.bin 20971520 B za 6759 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 34952967
+--- mb=25 wall 9045 ms
+OK odesláno test-25MB.bin 26214400 B za 8875 ms
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 41943471
+--- mb=30 wall 20458 ms
+OK odesláno test-30MB.bin 31457280 B za 20264 ms
+[graph] 400 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 55924487
+[console.error] Failed to load resource: the server responded with a status of 400 ()
+--- mb=40 wall 12693 ms
+CHYBA 400 ErrorMessageSizeExceeded The message exceeds the maximum supported size., Cannot save changes made to an item to store.

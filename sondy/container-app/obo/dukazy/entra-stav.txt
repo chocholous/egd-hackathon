@@ -1,0 +1,22 @@
+{
+  "apiAppId": "9809454b-59c2-4d85-8bf6-dbd1481b1d6b",
+  "apiSp": "7a0b43a3-e80e-431f-9722-bffe50daff3f",
+  "clientAppId": "efe82d2b-aa4f-4bf8-b721-9050b053537c",
+  "graphSp": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+  "miId": "/subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourcegroups/rg-egd-ca-obo/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-egd-ca-obo",
+  "miClientId": "edd78bb4-bb55-4381-97d9-acbcf05779d8",
+  "miObjectId": "3edde599-c27e-440f-82ea-0c3433df9590",
+  "rg": "rg-egd-ca-obo",
+  "fqdn": "ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io",
+  "mode": "secret",
+  "image": "acrppfroomsca3lbgs.azurecr.io/egd-ca-obo:0.1",
+  "kv": "kv-egd-ca-obo-bbc29a",
+  "kvSecretUri": "https://kv-egd-ca-obo-bbc29a.vault.azure.net/secrets/obo-client-secret"
+}
+Typ        Principal                             Scope
+---------  ------------------------------------  ------------------------
+Principal  7b981009-310c-41b7-9086-a8d57f72f17f  User.Read Mail.ReadBasic
+Principal  33507faf-6706-4c3b-bbb3-c1e15a7e0a6d  User.Read Mail.ReadBasic
+N              S                                     A
+-------------  ------------------------------------  --------------------------
+ca-egd-obo-mi  3edde599-c27e-440f-82ea-0c3433df9590  api://AzureADTokenExchange

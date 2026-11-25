@@ -1,0 +1,13 @@
+# karta	cesta k .sppkg (beze změny, kopie se jen přejmenuje na <karta>-<soubor>)
+data-etag	sondy/miniskilly/etag-appka/sharepoint/solution/prvni-appka.sppkg
+prava-role	sondy/ms-prava/prvni-appka/sharepoint/solution/prvni-appka.sppkg
+prava-db	sondy/container-app/prava-db/spfx/sharepoint/solution/egd-prava-db.sppkg
+dok-generator	sondy/dokumenty/spfx/egd-dokumenty/sharepoint/solution/egd-dokumenty.sppkg
+dok-evidence	sondy/ms-dokumenty/appka/sharepoint/solution/appka.sppkg
+dok-spokojenost	sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/appka-spokojenost.sppkg
+dok-pdf-ca	sondy/container-app/libreoffice/spfx/sharepoint/solution/egd-ca-dokumenty.sppkg
+mail	sondy/ms-maily/prvni-appka/sharepoint/solution/prvni-appka.sppkg
+ai-gateway	sondy/ai/spfx/sharepoint/solution/egd-ai-gateway.sppkg
+ai-llm	sondy/ms-llm/prvni-appka/sharepoint/solution/prvni-appka.sppkg
+obo	sondy/container-app/obo/spfx/sharepoint/solution/egd-ca-obo.sppkg
+ai-spokojenost	sondy/ms-llm/spokojenost-ai/sharepoint/solution/spokojenost-ai.sppkg

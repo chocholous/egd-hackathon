@@ -1,0 +1,28 @@
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+/ Running ..| Running ..\ Running ..- Running ../ Running ..[K{
+  "img": "acrppfroomsca3lbgs.azurecr.io/egd-sonda-data-api:0.2",
+  "min": 0,
+  "rev": "ca-egd-data-api--0000001"
+}
+/ Running ..| Running ..\ Running ..- Running ../ Running ..[K{
+  "allowCredentials": false,
+  "allowedHeaders": [
+    "authorization",
+    "content-type"
+  ],
+  "allowedMethods": [
+    "GET",
+    "POST",
+    "DELETE",
+    "OPTIONS"
+  ],
+  "allowedOrigins": [
+    "https://pavelchocholousgmail.sharepoint.com"
+  ],
+  "exposeHeaders": null,
+  "maxAge": 600
+}
+Rev                       Img                                                   Stav               Traffic
+------------------------  ----------------------------------------------------  -----------------  ---------
+ca-egd-data-api--we8pun0  acrppfroomsca3lbgs.azurecr.io/egd-sonda-data-api:0.1  Deprovisioning     0
+ca-egd-data-api--0000001  acrppfroomsca3lbgs.azurecr.io/egd-sonda-data-api:0.2  RunningAtMaxScale  100

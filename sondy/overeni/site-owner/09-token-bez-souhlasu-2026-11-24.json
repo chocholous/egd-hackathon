@@ -1,0 +1,18 @@
+{
+ "token_api_test_probe": {
+  "s": 403,
+  "telo": "{\"odata.error\":{\"code\":\"-2130575251, Microsoft.SharePoint.SPException\",\"message\":{\"lang\":\"en-US\",\"value\":\"The security validation for this page is invalid and might be corrupted. Please use your web browser's Back button to try your operation again.\"}}}"
+ },
+ "token_api_test_read": {
+  "s": 403,
+  "telo": "{\"odata.error\":{\"code\":\"-2130575251, Microsoft.SharePoint.SPException\",\"message\":{\"lang\":\"en-US\",\"value\":\"The security validation for this page is invalid and might be corrupted. Please use your web browser's Back button to try your operation again.\"}}}"
+ },
+ "katalog_pred": [
+  "prvni-appka-client-side-solution:true",
+  "egd-overeni-siteowner-probe:true"
+ ],
+ "katalog_po": [
+  "prvni-appka-client-side-solution:true",
+  "egd-overeni-siteowner-probe:true"
+ ]
+}

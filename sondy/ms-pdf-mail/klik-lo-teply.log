@@ -1,0 +1,12 @@
+repliky pred klikem: 1
+2026-11-24T02:05:07Z
+--- teply klik 1
+[console] [c1] prevod 1575 ms (server 1092 ms), 18297 B
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 24822
+adresát vyplněn do #pdf-komu: eva.vesela@pavelchocholousgmail.onmicrosoft.com | sendMail: 202 | od kliku 2036 ms
+výsledek v UI: Odesláno: spokojenost-lo-2026-11-24.pdf (18297 B) na eva.vesela@pavelchocholousgmail.onmicrosoft.com.
+--- teply klik 2
+[console] [c1] prevod 1547 ms (server 1070 ms), 18297 B
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 24822
+adresát vyplněn do #pdf-komu: eva.vesela@pavelchocholousgmail.onmicrosoft.com | sendMail: 202 | od kliku 1989 ms
+výsledek v UI: Odesláno: spokojenost-lo-2026-11-24.pdf (18297 B) na eva.vesela@pavelchocholousgmail.onmicrosoft.com.

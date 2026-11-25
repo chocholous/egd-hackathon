@@ -1,0 +1,9 @@
+# 2026-11-24T00:42:26Z kvóta 429: appka tiny (limit 60 tokenů/den), pokračování po 06-chyby
+{"text":"Praha je hlavní město České republiky a významné kulturní centrum. Leží na řece Vltavě a je známá svým historickým centrem, které je zapsané na seznamu světového dědictví UNESCO. Mezi nejvýznamnější památky patří Pražský hrad, Karlův most a Staroměstské nám
+[HTTP 200, 1.515895s]
+{"error":"Denní kvóta tokenů vyčerpána (151/60)"}
+[HTTP 429, 0.212957s]
+{"error":"Denní kvóta tokenů vyčerpána (151/60)"}
+[HTTP 429, 0.172890s]
+{"den":"2026-11-24","appKey":"tiny","spotreba":{"tokens":151,"calls":4,"costUsd":0.0001696,"pages":0},"limitTokenuZaDen":60}
+[HTTP 200, 0.207061s]

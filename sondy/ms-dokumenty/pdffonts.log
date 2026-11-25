@@ -1,0 +1,9 @@
+$ pdffonts out-2/pozadavky.pdf
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+Roboto-Regular-9742                  CID TrueType      Identity-H       yes no  yes      4  0
+
+$ pdftotext out-2/pozadavky.pdf -
+Přehled revizí – čeština ěščřžýáíéúůďťň
+
+

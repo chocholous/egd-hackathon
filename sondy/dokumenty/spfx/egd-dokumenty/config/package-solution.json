@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "egd-dokumenty-client-side-solution",
+    "id": "08b811fe-2538-4d6b-b981-9cfc6f1b3b4b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "egd-dokumenty description"
+      },
+      "longDescription": {
+        "default": "egd-dokumenty description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "egd-dokumenty Feature",
+        "description": "The feature that activates elements of the egd-dokumenty solution.",
+        "id": "6fa98894-fec2-4ba1-afbb-02b27e2599a9",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.Read.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/egd-dokumenty.sppkg"
+  }
+}

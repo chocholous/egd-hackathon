@@ -1,0 +1,18 @@
+Sun Nov 22 20:52:24 CET 2026
+== GET https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041
+HTTP/2 200 
+access-control-allow-origin: *
+== GET https://api.open-meteo.com/v1/forecast?latitude=49.19&longitude=16.61&current=temperature_2m
+HTTP/1.1 200 OK
+access-control-allow-origin: *
+access-control-allow-headers: accept, authorization, content-type, origin, x-requested-with, user-agent, access-control-allow-origin, range, if-match, if-unmodified-since
+== GET https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ
+HTTP/1.1 200 200
+== GET https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt
+HTTP/1.1 200 200
+Access-Control-Allow-Origin: apl.cnb.cz
+== OPTIONS ARES (authorization)
+HTTP/2 200 
+access-control-allow-methods: GET,HEAD,POST
+access-control-allow-headers: authorization
+access-control-allow-origin: *

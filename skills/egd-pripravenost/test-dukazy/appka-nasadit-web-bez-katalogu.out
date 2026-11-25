@@ -1,0 +1,6 @@
+# appka.mjs nasadit (plan, bez --ano) na webu BEZ katalogu 20:59:34, appka.mjs mtime 20:57:54
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+[CHYBA]   web nema vlastni katalog aplikaci
+          co dal: bez nej SPFx nenasadis; mezitim cesta B (bez kodu)
+          veta pro IT: Prosim o zalozeni katalogu aplikaci pro kolekci webu (site collection app catalog) na webu https://pavelchocholousgmail.sharepoint.com/sites/mcplabdocs a o roli Clen (Member) nebo Vlastnik na tomto webu.
+rc=1

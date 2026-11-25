@@ -1,0 +1,8 @@
+2026-11-22T19:22:43Z | od: egd-report@pavelchocholousgmail.onmicrosoft.com | odesílatel: egd-report@pavelchocholousgmail.onmicrosoft.com | Test Send As z me | příloha: False
+2026-11-22T19:58:44Z
+tomas.prochazka /me/sendMail from=eva.vesela (bez Send As) → HTTP 403
+{"error":{"code":"ErrorSendAsDenied","message":"The user account which was used to submit this request does not have the right to send mail on behalf of the specified sending account., Cannot submit message.","innererror":{"message":"\"Exchange service returned error ErrorSendAsDenied: The user acco
+2026-11-22T20:51:20Z
+tomas.prochazka POST /users/egd-report@…/sendMail (delegovaný token, scp: Mail.Send Mail.Read)
+{"error":{"code":"ErrorAccessDenied","message":"Access is denied. Check credentials and try again.","innererror":{"message":"Access is denied. Check credentials and try again.","type":"Microsoft.Exchange.Services.OData.ODataAuthorizationException","internalexception":{"message":"Delegate access to this API requires the following permissions: 'Mail.Send.All,Mail.Send.Shared'. However, the applicati
+HTTP 403

@@ -1,0 +1,33 @@
+{
+  "nazev": "LLM bez Azure: Graph /copilot",
+  "stav": "hotovo",
+  "popis": "Retrieval ze SPFx s licencí ✅ 200 (jen úryvky, ne LLM); Chat ❌ 403 7 scopů i s licencí; licence vrácena alici",
+  "oblast": "ms-llm",
+  "kdo": "ms-llm",
+  "vystup": "sondy/ms-llm/copilot-graph.md",
+  "aktualizovano": "2026-11-24T08:37:24Z",
+  "zacatek": "2026-11-24T02:20:36Z",
+  "kroky": 4,
+  "historie": [
+    {
+      "t": "2026-11-24T02:20:36Z",
+      "stav": "bezi",
+      "popis": "zjišťuji licenci a přihlášení"
+    },
+    {
+      "t": "2026-11-24T02:25:32Z",
+      "stav": "ceka",
+      "popis": "bez licence změřeno (Retrieval 403 licence, Chat 403 scopy); čeká na ano k přesunu licence Copilot alice→tomas"
+    },
+    {
+      "t": "2026-11-24T07:45:44Z",
+      "stav": "ceka",
+      "popis": "licence přesunuta na tomas.prochazka; všechny profily prohlížeče odhlášené → čeká na Pavlovo přihlášení profilu tomas.prochazka"
+    },
+    {
+      "t": "2026-11-24T08:37:24Z",
+      "stav": "hotovo",
+      "popis": "Retrieval ze SPFx s licencí ✅ 200 (jen úryvky, ne LLM); Chat ❌ 403 7 scopů i s licencí; licence vrácena alici"
+    }
+  ]
+}

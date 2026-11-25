@@ -1,0 +1,1 @@
+{"step": "bulk", "items": 5800, "per_batch": 100, "parallel": 4, "sec": 161.0, "per_sec": 36.0, "created": 5800, "statuses": [200], "sample_error": ""}

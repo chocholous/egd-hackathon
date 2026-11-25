@@ -1,0 +1,23 @@
+INFO: Položek: 3
+stazeno pozadavky.docx
+stazeno pozadavky.pdf
+stazeno pozadavky.pdf
+stazeno pozadavky.pptx
+stazeno pozadavky.xlsx
+LOG:
+uloženo /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty/pozadavky.docx (9844 B)
+HOTOVO docx za 731 ms
+uloženo /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty/pozadavky.pdf (68048 B)
+HOTOVO graphpdf za 1756 ms
+uloženo /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty/pozadavky.pdf (7134 B)
+HOTOVO pdf za 1215 ms
+uloženo /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty/pozadavky.pptx (57539 B)
+HOTOVO pptx za 759 ms
+uloženo /sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty/pozadavky.xlsx (6835 B)
+HOTOVO xlsx za 884 ms
+ARES: Škoda Auto a.s., tř. Václava Klementa 869, Mladá Boleslav II, 29301 Mladá Boleslav
+HOTOVO ares za 185 ms
+Brno teď: 3.3 °C
+HOTOVO meteo za 1029 ms
+CHYBA cnb: Error: ČNB nejde volat z prohlížeče (CORS). Původní chyba: TypeError: Failed to fetch
+

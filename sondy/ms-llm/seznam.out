@@ -1,0 +1,15 @@
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm:
+  - zalozit seznam "Pozadavky" (bezny seznam, v navigaci webu)
+  - pridat sloupec Popis
+  - pridat sloupec Stav
+  - pridat sloupec Komentar
+  - prejmenovat sloupec Title na "Pozadavek", sloupec Stav naformatovat jako barevny stitek
+[OK]      seznam "Pozadavky" zalozen
+[OK]      sloupec Popis
+[OK]      sloupec Stav
+[OK]      sloupec Komentar
+[OK]      sloupec Title -> "Pozadavek"
+[OK]      sloupec Stav naformatovan
+[OK]      precteno zpet: seznam "Pozadavky" ma sloupce Popis, Stav, Komentar
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/Lists/Pozadavky

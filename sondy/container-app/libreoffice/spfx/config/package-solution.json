@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "egd-ca-dokumenty",
+    "id": "f6acc582-8350-43ad-911f-be2bfab007bc",
+    "version": "0.1.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": false,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "EG.D sonda (lab)",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.23.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Převod do PDF (sonda)"
+      },
+      "longDescription": {
+        "default": "Web part volající Container App s LibreOffice tokenem uživatele."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "egd-ca-dokumenty",
+        "scope": "access_as_user"
+      }
+    ],
+    "features": [
+      {
+        "title": "Převod do PDF sonda",
+        "description": "Registruje web part.",
+        "id": "219789ea-5ff4-4072-9b17-da47df6aaa8c",
+        "version": "0.1.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/egd-ca-dokumenty.sppkg"
+  }
+}

@@ -1,0 +1,20 @@
+### client=42df0072-be8f-47a4-88b2-84f8b6ada0c6 (docx) 2026-11-22T19:41:19Z
+uploaded docx-lib.docx id=01PCVZP6LG6NN3SQBC6ZDYR4F3RPP6FJK6
+convert: http=200 redirects=1 size=221765 time=1.263175s
+sondy/overeni/dokumenty/pdf/docx.pdf: PDF document, version 1.7, 1 pages
+### client=42df0072-be8f-47a4-88b2-84f8b6ada0c6 (xlsx) 2026-11-22T19:41:22Z
+uploaded xlsx-exceljs.xlsx id=01PCVZP6IWYGIEGX2GYVDKNEHQQFIJXR6R
+convert: http=200 redirects=1 size=218187 time=1.588928s
+sondy/overeni/dokumenty/pdf/xlsx.pdf: PDF document, version 1.7, 2 pages
+### client=42df0072-be8f-47a4-88b2-84f8b6ada0c6 (pptx) 2026-11-22T19:41:25Z
+uploaded pptx-pptxgenjs.pptx id=01PCVZP6ODSXKL5QSQAZBKNVCH6ZXIJIAG
+convert: http=200 redirects=1 size=263209 time=0.923736s
+sondy/overeni/dokumenty/pdf/pptx.pdf: PDF document, version 1.7, 3 pages
+### client=ac1ff591-098c-43fa-b451-1117430d9bd9 (filesread) 2026-11-22T19:41:28Z
+uploaded docx-lib.docx id=null
+convert: http=400 redirects=0 size=117 time=0.170589s
+sondy/overeni/dokumenty/pdf/filesread.pdf: JSON data
+### client=953de580-40df-4b86-97d9-bd118be6a282 (filesreadall) 2026-11-22T19:41:29Z
+uploaded docx-lib.docx id=null
+convert: http=404 redirects=0 size=60 time=0.229677s
+sondy/overeni/dokumenty/pdf/filesreadall.pdf: JSON data

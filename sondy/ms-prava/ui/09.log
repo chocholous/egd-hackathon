@@ -1,0 +1,137 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx
+KROK klik:Vytvořit skupinu
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/newgrp.aspx?Source=https%3A%2F%2Fpavelchocholousgmail%2Esharepoint%2Ecom%2Fsites%2Fegd%2Dsonda%2Dms%2Dprava%2F%5Flayouts%2F15%2Fuser%2Easpx
+--- frame https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/newgrp.aspx?Source=https%3A%2F%2Fpavelc
+a: Zapnout režim s vyšším usnadněním
+a: Přejít k hlavnímu obsahu
+a: Vypnout animace
+button[button]: Spouštěč aplikací
+a[link]: SharePoint
+button[button]: Nastavení
+button[button]: Nápověda
+button[button]: KM
+a: SDÍLET
+a: SLEDOVAT
+a: Umožňuje přenést hlavní pozornost na obsah.
+a: EGD sonda ms-prava
+a: UPRAVIT ODKAZY
+a: Osoby a skupiny
+a: Domovská stránka
+a: Dokumenty
+a: Stránky
+a: Pozadavky
+a: Obsah webu
+a: Kliknutím získáte nápovědu k přidávání formátování HTML.
+a[button]: x
+label: Členové skupiny
+label: Všichni
+label: Vlastník skupiny
+label: Ano
+label: Ne
+a: Zobrazit přiřazení oprávnění k webu
+label: Úplné řízení - Umožňuje úplné řízení.
+label: Návrh - Umožňuje zobrazit, přidat, aktualizovat, odstranit, schválit a upravit položky.
+label: Úpravy - Umožňuje přidávat, upravovat a odstraňovat seznamy. Taky umožňuje zobrazovat, při
+label: Přispívání - Umožňuje zobrazit, přidat, aktualizovat či odstranit položky seznamu a dokume
+label: Čtení - Umožňuje zobrazit stránky a položky seznamu a stáhnout dokumenty.
+label: EGD Schvalovatel -
+label: EGD Zadavatel -
+input: Vytvořit
+input: Storno
+pole input #ctl00_PlaceHolderMain_ctl00_ctl01_txtGrpName title="Název skupiny"
+pole textarea #ctl00_PlaceHolderMain_ctl00_ctl02_txtGrpDescription title="Popis skupiny"
+pole input #ctl00_PlaceHolderMain_ctl01_ctl01_peoplePicker_TopSpan_EditorInput title="Zadejte jméno nebo e-mailovou adresu..."
+pole input #ctl00_PlaceHolderMain_ctl03_ctl03_TxtRequestEmail title="E-mail"
+TEXT:
+Zapnout režim s vyšším usnadněním
+Přejít k hlavnímu obsahu
+Vypnout animace
+SharePoint
+KM
+SDÍLET 
+SLEDOVAT 
+UPRAVIT ODKAZY
+Osoby a skupiny 
+ Vytvořit skupinu  
+Umožňuje vytvořit novou skupinu služby SharePoint. Daná skupina bude k dispozici prostřednictvím této kolekce webů.
+	
+	
+Domovská stránka
+Dokumenty
+Stránky
+Nejnovější
+Pozadavky
+Obsah webu
+UPRAVIT ODKAZY
+Název a popis O sobě
+Zadejte název a popis skupiny.	
+	
+		
+	
+Název:
+	
+O mně:
+	 
+Kliknutím získáte nápovědu k přidávání formátování HTML. 
+	
+		
+Vlastník
+Vlastník může provést libovolnou změnu skupiny, může například přidat nebo odebrat členy nebo odstranit skupinu. Vlastníkem může být pouze jeden uživatel nebo skupina.	
+	
+		
+	
+Vlastník skupiny:
+	
+Malá Karolínax
+	
+		
+Nastavení skupiny
+Zadejte, kdo má oprávnění k zobrazení seznamu členů skupiny a kdo má oprávnění přidávat a odebírat členy skupiny.	
+	
+		
+	
+Kdo může zobrazit členství v této skupině?
+	
+Členové skupiny	Všichni
+Kdo může upravovat členství v této skupině?
+	
+Vlastník skupiny	Členové skupiny
+	
+		
+Žádosti o členství
+Zadejte, zda má být uživatelům povoleno žádat o členství v této skupině a o opuštění této skupiny. Všechny žádosti budou odeslány na zadanou e-mailovou adresu. Je-li povoleno automatické přijímání, uživatelé budou po odeslání žádosti automaticky přidáni nebo odebráni.
+           
+Upozornění: Pokud u možnosti Automaticky přijímat žádosti vyberete nastavení Ano, bude libovolný uživatel, který žádá o přístup k této skupině, automaticky přidána jako člen této skupiny a získá úroveň oprávnění, která je k této skupině přidružena.
+    	
+	
+		
+	
+Chcete povolit žádosti o připojení k této skupině či o opuštění této skupiny?
+	
+Ano	Ne
+Automaticky přijímat žádosti?
+	
+Ano	Ne
+Odeslat žádosti o členství na následující e-mailovou adresu:
+	
+	
+		
+Poskytnout skupině oprávnění k tomuto webu
+Určete úroveň oprávnění, která mají mít členové této skupiny služby SharePoint na tomto webu. Pokud nechcete členům skupiny udělit přístup k tomuto webu, zajistěte, aby žádné z políček nebylo zaškrtnuto.
+Zobrazit přiřazení oprávnění k webu	
+	
+		
+	
+Zvolte úroveň oprávnění, kterou členové skupiny získají na tomto webu: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava
+	
+	Úplné řízení - Umožňuje úplné řízení.
+	Návrh - Umožňuje zobrazit, přidat, aktualizovat, odstranit, schválit a upravit položky.
+	Úpravy - Umožňuje přidávat, upravovat a odstraňovat seznamy. Taky umožňuje zobrazovat, přidávat, aktualizovat a odstraňovat položky seznamů a dokumenty.
+	Přispívání - Umožňuje zobrazit, přidat, aktualizovat či odstranit položky seznamu a dokumenty.
+	Čtení - Umožňuje zobrazit stránky a položky seznamu a stáhnout dokumenty.
+	EGD Schvalovatel -
+	EGD Zadavatel -
+	
+		
+ 	 
+

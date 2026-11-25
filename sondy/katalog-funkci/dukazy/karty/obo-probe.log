@@ -1,0 +1,14 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[1.4s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx
+[4.4s] OK wait:3000  
+[10.3s] OK rozbal  
+4 zón
+[10.3s] OK eval:[...document.querySelector('[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"]').querySelectorAll('button')].map(b=>b.id+'|'+b.innerText.replace(/\n/g,' ')).join(' ; ')  
+who|whoami (API) ; posta|Pošta přes OBO ; primo|Pošta přímo z SPFx ; retr|Retrieval přes OBO ; chat|Copilot Chat přes OBO ; odp|Retrieval + gateway LLM přes OBO ; pretr|Retrieval přímo z SPFx ; pchat|Chat přímo z SPFx
+[10.3s] OK eval:document.querySelector('[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"]').innerHTML.match(/id="[^"]+"/g).join(' ')  
+id="who" id="posta" id="primo" id="q" id="retr" id="chat" id="odp" id="pretr" id="pchat" id="o"
+[10.3s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21

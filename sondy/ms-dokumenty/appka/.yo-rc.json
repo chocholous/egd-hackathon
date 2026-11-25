@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "appka",
+    "environment": "spo",
+    "packageManager": "npm",
+    "useGulp": false,
+    "componentType": "webpart",
+    "template": "none",
+    "componentName": "Evidence",
+    "componentDescription": "Evidence pozadavku",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "22.23.5",
+    "sdksVersions": {},
+    "version": "1.24.1",
+    "libraryName": "appka",
+    "libraryId": "af0391ac-55ec-4c26-9a04-19b7d43abaae",
+    "solutionShortDescription": "appka description",
+    "skipFeatureDeployment": true
+  }
+}

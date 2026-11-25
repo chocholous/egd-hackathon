@@ -1,0 +1,23 @@
+{
+  "nazev": "Business Standard EEA pro účastníky",
+  "stav": "hotovo",
+  "popis": "egd01–10 + pavel.admin přiděleno; egd09 bez E5: SharePoint, katalog, .sppkg OK; autoRenew vypnut (Billing API), všech 5 trialů Off",
+  "oblast": "lab",
+  "kdo": "hlavní session",
+  "vystup": "lab/dukazy/licence-bstd/",
+  "aktualizovano": "2026-11-24T17:52:55Z",
+  "zacatek": "2026-11-24T17:29:50Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-24T17:29:50Z",
+      "stav": "hotovo",
+      "popis": "egd01–10 + pavel.admin přiděleno (OFFICE_BUSINESS vypnuto kvůli kolizi s E5); egd09 bez E5: SharePoint, katalog a nasazení .sppkg OK"
+    },
+    {
+      "t": "2026-11-24T17:52:55Z",
+      "stav": "hotovo",
+      "popis": "egd01–10 + pavel.admin přiděleno; egd09 bez E5: SharePoint, katalog, .sppkg OK; autoRenew vypnut (Billing API), všech 5 trialů Off"
+    }
+  ]
+}

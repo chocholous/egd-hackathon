@@ -1,0 +1,82 @@
+--- /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/SpokojenostWebPart.ts.orig	2026-11-23 11:08:20
++++ /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts	2026-11-23 11:08:24
+@@ -25,9 +25,9 @@
+ const STUPNE: [number, string][] = [
+   [1, 'Velmi nespokojen/a'], [2, 'Spíš nespokojen/a'], [3, 'Tak napůl'], [4, 'Spíš spokojen/a'], [5, 'Velmi spokojen/a']
+ ];
+-const DNU_V_PREHLEDU = 7;
+-// Radi se podle ID: je vzdy indexovane, takze dotaz projde i nad 5000 polozkami (Created by spadl na throttling).
+-const MAX_HLASU = 2000;
++const DNU_V_PREHLEDU = 30;
++// Hlasy se ctou na serveru filtrem na sloupec Den (musi byt indexovany) po strankach po 1000.
++// Obdobi filtru nesmi mit vic nez 5000 hlasu (limit SharePointu), pri 30 dnech a ~100 hlasech za den je to v poradku.
+ 
+ const JSON_HLAVICKY = {
+   Accept: 'application/json;odata=nometadata',
+@@ -58,17 +58,34 @@
+     if (r.status === 403) return 'Hlasovat nemůžete: na seznamu nemáte právo přidávat položky. Požádejte vlastníka webu o roli Člen (Member).';
+     let text = '';
+     try { text = (await r.text()).slice(0, 300); } catch { /* nic */ }
++    if (r.status === 500 && /SPQueryThrottledException|mezn|threshold/i.test(text))
++      return 'Seznam je moc velký pro tenhle dotaz. Sloupec ve filtru nebo řazení musí být indexovaný (Nastavení seznamu → Indexované sloupce).';
+     return `SharePoint vrátil chybu ${r.status}. ${text}`;
+   }
+ 
++  // Precte vsechny polozky, ktere projdou filtrem, po strankach po 1000.
++  // filtr: OData vyraz; PRVNI podminka musi byt indexovany sloupec s vysledkem pod 5000 radku.
++  private async _ctiVse<T>(select: string, filtr = '', razeni = 'ID desc'): Promise<T[]> {
++    const vysledek: T[] = [];
++    let url: string | undefined = this._url(
++      `/items?$select=${select}&$top=1000&$orderby=${encodeURIComponent(razeni)}` +
++      (filtr ? `&$filter=${encodeURIComponent(filtr)}` : ''));
++    while (url) {
++      const r: SPHttpClientResponse = await this.context.spHttpClient.get(url, SPHttpClient.configurations.v1, { headers: JSON_HLAVICKY });
++      if (!r.ok) throw new Error(await this._popisChyby(r));
++      const j = (await r.json()) as { value: T[]; '@odata.nextLink'?: string; 'odata.nextLink'?: string };
++      vysledek.push(...j.value);
++      // configurations.v1 posila OData-Version: 4.0 -> klic je '@odata.nextLink' (bez te hlavicky 'odata.nextLink')
++      url = j['@odata.nextLink'] ?? j['odata.nextLink'];
++    }
++    return vysledek;
++  }
++
+   private async _nacti(): Promise<void> {
+     this._chyba = '';
+     try {
+-      const r = await this.context.spHttpClient.get(
+-        this._url(`/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID desc&$top=${MAX_HLASU}`),
+-        SPHttpClient.configurations.v1, { headers: JSON_HLAVICKY });
+-      if (!r.ok) throw new Error(await this._popisChyby(r));
+-      this._hlasy = ((await r.json()) as { value: IHlas[] }).value;
++      const od = new Date(); od.setDate(od.getDate() - (DNU_V_PREHLEDU - 1));
++      this._hlasy = await this._ctiVse<IHlas>('Id,Hodnoceni,Den,AuthorId', `Den ge '${den(od)}'`);
+     } catch (e) {
+       this._chyba = (e as Error).message;
+     }
+@@ -177,7 +194,7 @@
+       dny.appendChild(el('div', { class: styles.den, title: `${klic}: ${hlasy.length} hlasů` }, [
+         el('span', { class: styles.denHodnota }, [hlasy.length ? fmt(p) : '–']),
+         el('div', { class: styles.denStopa }, [sloupec]),
+-        el('span', { class: styles.denNazev }, [d.toLocaleDateString('cs-CZ', { weekday: 'short', day: 'numeric', month: 'numeric' })])
++        el('span', { class: styles.denNazev }, [String(d.getDate())])
+       ]));
+     }
+     tyden.appendChild(dny);
+--- /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/scss.orig	2026-11-23 11:08:20
++++ /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/claude-e2e2/prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.module.scss	2026-11-23 11:08:24
+@@ -58,12 +58,12 @@
+ .pruhVypln { background: $indigo; height: 100%; border-radius: 6px; }
+ .pruhPocet { text-align: right; color: $tlumeny; }
+ 
+-.dny { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; align-items: end; }
++.dny { display: grid; grid-template-columns: repeat(30, 1fr); gap: 2px; align-items: end; }
+ .den { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 12px; }
+-.denHodnota { font-weight: 600; }
++.denHodnota { font-weight: 600; font-size: 9px; }
+ .denStopa { width: 100%; max-width: 28px; height: 90px; background: $plocha; border-radius: 6px; display: flex; align-items: flex-end; overflow: hidden; }
+ .denVypln { width: 100%; background: $inkoust; border-radius: 6px; }
+-.denNazev { color: $tlumeny; white-space: nowrap; font-size: 11px; }
++.denNazev { color: $tlumeny; white-space: nowrap; font-size: 9px; }
+ 
+ .chyba { background: #FBE1E0; color: #8A1C14; border-radius: 8px; padding: 10px 14px; }
+ .zprava { background: #DDF4E4; color: #0B5A2A; border-radius: 8px; padding: 10px 14px; }

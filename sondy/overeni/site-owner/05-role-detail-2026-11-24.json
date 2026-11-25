@@ -1,0 +1,44 @@
+{
+ "web_role": [
+  "Vlastníci webu Účastník 01 – TEST: Full Control",
+  "Návštěvníci webu Účastník 01 – TEST: Read,Limited Access",
+  "Členové webu Účastník 01 – TEST: Edit"
+ ],
+ "v0": {
+  "krok": "stav na začátku",
+  "unikatni": false,
+  "prirazeni": [
+   "Vlastníci webu Účastník 01 – TEST: Full Control",
+   "Návštěvníci webu Účastník 01 – TEST: Read,Limited Access",
+   "Členové webu Účastník 01 – TEST: Edit"
+  ]
+ },
+ "break": 200,
+ "v1": {
+  "krok": "po breakroleinheritance(copy=false)",
+  "unikatni": false,
+  "prirazeni": [
+   "Účastník 01: Full Control"
+  ]
+ },
+ "add_read": 200,
+ "v2": {
+  "krok": "po přidání skupiny Návštěvníci jako Read",
+  "unikatni": false,
+  "prirazeni": [
+   "Návštěvníci webu Účastník 01 – TEST: Read",
+   "Účastník 01: Full Control"
+  ]
+ },
+ "reset": 200,
+ "v3": {
+  "krok": "po resetroleinheritance",
+  "unikatni": false,
+  "prirazeni": [
+   "Vlastníci webu Účastník 01 – TEST: Full Control",
+   "Návštěvníci webu Účastník 01 – TEST: Read,Limited Access",
+   "Členové webu Účastník 01 – TEST: Edit",
+   "Účastník 01: Limited Access"
+  ]
+ }
+}

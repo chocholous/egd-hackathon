@@ -1,0 +1,9 @@
+PLAN rezimu single na webu https://pavelchocholousgmail.sharepoint.com/sites/egd10-test:
+  (appku pouzije jen autor a lide, se kterymi web sdilel jednotlive)
+  - web: odebrat skupinu "Vsichni krome externich uzivatelu" (ma Čtení, Omezený přístup)
+  - seznam MojeAppka: vratit dedeni prav z webu (zrusi zvlastni prava seznamu)
+  - seznam MojeAppka: vratit vychozi upravy polozek
+[OK]      web: Vsichni krome externich uzivatelu odebrani
+[OK]      seznam MojeAppka: prava zase z webu
+[OK]      seznam MojeAppka: vychozi upravy polozek
+[OK]      precteno zpet: rezim single (web bez skupiny Vsichni, seznam dedi z webu, WriteSecurity 1)

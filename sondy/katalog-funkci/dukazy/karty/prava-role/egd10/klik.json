@@ -1,0 +1,126 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/prava.aspx",
+ "start": "2026-11-24T18:32:45.455Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 885,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 3887,
+   "vysledek": "6 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"35d2a567-3b96-4d18-907d-16f486e50e79\"]').scrollIntoView()",
+   "t": 11127,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "wait:1000",
+   "t": 11130,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"35d2a567-3b96-4d18-907d-16f486e50e79\"]').innerText.slice(0,120)",
+   "t": 12132,
+   "vysledek": "Evidence s rolemi\nSchvalovatel\nNový požadavek\nMoje požadavky\nKe schválení (1)\nCo potřebujete (krátce)\nPopis\nOdeslat ke s",
+   "ok": true
+  },
+  {
+   "krok": "click:Ke schválení",
+   "t": 12135,
+   "ok": true
+  },
+  {
+   "krok": "wait:2500",
+   "t": 12241,
+   "ok": true
+  },
+  {
+   "krok": "shotv:03-egd10-ke-schvaleni",
+   "t": 14743,
+   "vysledek": "dukazy/karty/prava-role/egd10/03-egd10-ke-schvaleni.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"35d2a567-3b96-4d18-907d-16f486e50e79\"]').innerText.slice(0,500)",
+   "t": 14846,
+   "vysledek": "Evidence s rolemi\nSchvalovatel\nNový požadavek\nMoje požadavky\nKe schválení (1)\nPožadavek\tZadal\tKdy\tStav\tRozhodnutí\nKatalog práva: požadavek egd09 1932\nVidí jen zadavatel a schvalovatel.\n\tÚčastník 09\t24. 11. 2026\tNový\t\nSchválit\nZamítnout",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 1258,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1602,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1603,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2981,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 4872,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/EffectiveBasePermissions"
+  },
+  {
+   "t": 4991,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('PozadavkyPrava')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderb"
+  },
+  {
+   "t": 6796,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(4)/CommentsDisabledScope"
+  },
+  {
+   "t": 6867,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(4)/likedByInformation?$expand=likedby&$top=10"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Options20Regular, Drafts20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More "
+ ],
+ "konec": "2026-11-24T18:33:00.304Z"
+}

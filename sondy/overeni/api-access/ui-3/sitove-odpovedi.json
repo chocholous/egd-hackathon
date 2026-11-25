@@ -1,0 +1,986 @@
+[
+ {
+  "t": "2026-11-23T10:04:53.413Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_layouts/15/online/handlers/SpoSuiteLinks.ashx",
+  "status": 200,
+  "request": "",
+  "response": "{\n \"SPSuiteVersion\":2,\n \"SPIsMobile\":false,\n \"CssUrl\":\"https://res-1.cdn.office.net/shellux/suiteux.shell.shared.384aace5f98a8622f421cf599357b68d.css\",\n \"JsUrl\":\"https://res-1.cdn.office.net/shellux/suiteux.shell.bootstrapper.c15a97fab3f8fa4fd74e.js\",\n \"NavBarData\":{\"AboutMeLink\":null,\"AdminLink\":{\"BackgroundColor\":\"#58595B\",\"BrandBarText\":null,\"FontIconCss\":\"ms-Icon ms-Icon--AdminNewLogo\",\"Id\":\"ShellAdmin\",\"MenuName\":null,\"ServiceId\":null,\"SubLinks\":null,\"TargetWindow\":null,\"Text\":\"Admin\",\"Title\":\"Go to the Office 365 admin center\",\"Url\":\"https://admin.microsoft.com/?login_hint=pavel.chocholous_gmail.com%23EXT%23%40pavelchocholousgmail.onmicrosoft.com&source=applauncher\"},\"AppsImage\":null,\"AppsLinks\":[],\"ClientData\":\"{\\\"AADDisambiguationEnabled\\\":true,\\\"AADForgetUrl\\\":\\\"https://login.microsoftonline.com/forgetuser\\\",\\\"AADRememberedAccountsUrl\\\":\\\"https://login.microsoftonline.com/savedusers?wreply={0}&appid={1}\\\",\\\"AADSignOutAndForgetUrl\\\":\\\"https://login.microsoftonline.com/uxlogout?shouldForgetUser=true&wreply={0}&appid={1}\\\",\\\"AADSignOutUrl\\\":\\\"https://login.microsoftonline.com/uxlogout?shouldForgetUser=false&wreply={0}&appid={1}\\\",\\\"AccountSwitchingEnabled\\\":true,\\\"ActiveExperiences\\\":\\\"Admin,IW\\\",\\\"AppDataCache\\\":[],\\\"AppGalleryUrl\\\":\\\"https://m365.cloud.microsoft/apps?auth=2&home=1&username=pavel.chocholous_gmail.com#EXT#@pavelchocholousgmail.onmicrosoft.com&login_hint=pavel.chocholous_gmail.com#EXT#@pavelchocholousgmail.onmicrosoft.com\\\",\\\"AppHeaderLinkText\\\":null,\\\"A"
+ },
+ {
+  "t": "2026-11-23T10:04:53.414Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactText\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-text-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-text-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-text-bundle_none_3e961c3225e8fb36.js\\\",\\\"integrity\\\":\\\"sha256-eT65g6tfPhiPnV0Kmsxouym9phITsn2dA4QW15srygk=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"failoverPath\\\":null,\\\"fallbackVersi"
+ },
+ {
+  "t": "2026-11-23T10:04:53.415Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"389acdd9-7fe2-4938-9343-d2ea32ad0e01\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"389acdd9-7fe2-4938-9343-d2ea32ad0e01\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactImage\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-image-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-image-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-image-bundle_none_6a74fb1ee7848056.js\\\",\\\"integrity\\\":\\\"sha256-fLi1qfT0HpAwJAcHp+3LcbT0TEg+UYISW9BAy3N2mGo=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"failoverPath\\\":null,\\\"fallbackV"
+ },
+ {
+  "t": "2026-11-23T10:04:53.415Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Manifest\":\"{\\\"manifestVersion\\\":2,\\\"id\\\":\\\"160df197-bba5-4acb-a0d0-af19700406fa\\\",\\\"alias\\\":\\\"FluentUIV9ReactLink\\\",\\\"componentType\\\":\\\"Library\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-link-bundle\\\",\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-link-bundle_none_986a2401131144e8.js\\\",\\\"integrity\\\":\\\"sha256-sqhR3Uz/NHk509Y4S8bz3OHuLQncutmTGzNMbkk44Mc=\\\"}},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\"},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"conditionalOverrides\\\":[{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}],\\\"fallbackVersion\\\":{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"0ec74f52-"
+ },
+ {
+  "t": "2026-11-23T10:04:53.415Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"Manifest\":\"{\\\"manifestVersion\\\":2,\\\"id\\\":\\\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\\\",\\\"alias\\\":\\\"FluentUIV9ReactText\\\",\\\"componentType\\\":\\\"Library\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-text-bundle\\\",\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-text-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-text-bundle_none_3e961c3225e8fb36.js\\\",\\\"integrity\\\":\\\"sha256-eT65g6tfPhiPnV0Kmsxouym9phITsn2dA4QW15srygk=\\\"}},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\"},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"conditionalOverrides\\\":[{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}],\\\"fallbackVersion\\\":{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"0ec74f52-"
+ },
+ {
+  "t": "2026-11-23T10:04:53.415Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"3bbab303-6375-447d-a919-a6d5363d0942\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"3bbab303-6375-447d-a919-a6d5363d0942\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactDrawer\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-drawer-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-drawer-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-drawer-bundle_none_a8cda9a92f785234.js\\\",\\\"integrity\\\":\\\"sha256-MAlAGbxK+DWSaD3/xcVSireDyXLry9Yb1ElCC7Q7Sl8=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-dialog-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"c4016abc-9cc8-4869-ac2f-278195db557b\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-motion-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0c471b33-6e5e-4e4b-9c3b-af2b125beb72\\\",\\\"versio"
+ },
+ {
+  "t": "2026-11-23T10:04:53.416Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"version\":\"0.2.6\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Manifest\":\"{\\\"version\\\":\\\"0.2.6\\\",\\\"manifestVersion\\\":2,\\\"id\\\":\\\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\\\",\\\"alias\\\":\\\"office-browser-feedback\\\",\\\"componentType\\\":\\\"Library\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"office-browser-feedback\\\",\\\"scriptResources\\\":{\\\"office-browser-feedback\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"office-browser-feedback_none_8353782b6f2d6c38.js\\\",\\\"integrity\\\":\\\"sha256-gtHF9RVLHIJDkFM3gKY8V0kSsukwsSzL8LkHkPH5Hqo=\\\"}},\\\"@microsoft/sp-core-library\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"7263c7d0-1d6a-45ec-8d85-d4d1d234171b\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"@microsoft/sp-diagnostics\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"78359e4b-07c2-43c6-8d0b-d060b4d577e8\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"@microsoft/sp-loader\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"1c6c9123-7aac-41f3-a376-3caea41ed83f\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"tslib\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"01c4df03-e775-48cb-aa14-171ee5199a15\\\",\\\"version\\\":\\\"2.3.1\\\"}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"7263c7d0-"
+ },
+ {
+  "t": "2026-11-23T10:04:53.418Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"version\":\"0.2.6\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Manifest\":\"{\\\"version\\\":\\\"0.2.6\\\",\\\"manifestVersion\\\":2,\\\"id\\\":\\\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\\\",\\\"alias\\\":\\\"office-browser-feedback\\\",\\\"componentType\\\":\\\"Library\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"office-browser-feedback\\\",\\\"scriptResources\\\":{\\\"office-browser-feedback\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"office-browser-feedback_none_8353782b6f2d6c38.js\\\",\\\"integrity\\\":\\\"sha256-gtHF9RVLHIJDkFM3gKY8V0kSsukwsSzL8LkHkPH5Hqo=\\\"}},\\\"@microsoft/sp-core-library\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"7263c7d0-1d6a-45ec-8d85-d4d1d234171b\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"@microsoft/sp-diagnostics\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"78359e4b-07c2-43c6-8d0b-d060b4d577e8\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"@microsoft/sp-loader\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"1c6c9123-7aac-41f3-a376-3caea41ed83f\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"tslib\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"01c4df03-e775-48cb-aa14-171ee5199a15\\\",\\\"version\\\":\\\"2.3.1\\\"}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"7263c7d0-"
+ },
+ {
+  "t": "2026-11-23T10:04:53.418Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"a1cb867b-abbe-4db4-a16c-510bd4b07844\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"a1cb867b-abbe-4db4-a16c-510bd4b07844\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactMessageBar\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-message-bar-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-message-bar-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-message-bar-bundle_none_288735f8ac0fba43.js\\\",\\\"integrity\\\":\\\"sha256-fC1nZS7GBKT/YfS5uSjF6tlYGQrfbkFJ4B2RImOBqWI=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-button-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"72ec0651-8a26-441c-87f2-77ec66884ca3\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"160df197-bba5-4acb-a0d0-af1970"
+ },
+ {
+  "t": "2026-11-23T10:04:53.423Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"version\":\"0.2.6\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Manifest\":\"{\\\"version\\\":\\\"0.2.6\\\",\\\"alias\\\":\\\"office-browser-feedback\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"office-browser-feedback\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"office-browser-feedback\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"office-browser-feedback_none_8353782b6f2d6c38.js\\\",\\\"integrity\\\":\\\"sha256-gtHF9RVLHIJDkFM3gKY8V0kSsukwsSzL8LkHkPH5Hqo=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-core-library\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"7263c7d0-1d6a-45ec-8d85-d4d1d234171b\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-diagnostics\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"78359e4b-07c2-43c6-8d0b-d060b4d577e8\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null"
+ },
+ {
+  "t": "2026-11-23T10:04:53.424Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"bae3a2de-5b32-48c0-83f2-2227ce17a408\",\"version\":\"5.6.2\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"bae3a2de-5b32-48c0-83f2-2227ce17a408\",\"Manifest\":\"{\\\"version\\\":\\\"5.6.2\\\",\\\"alias\\\":\\\"SPMsalBrowser\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-msal-browser\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-msal-browser\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-msal-browser_none_1e74ddf792bd5160.js\\\",\\\"integrity\\\":\\\"sha256-rb8LLVD6HRUgGvHE91r7dREXeL5oqX6dt2a4ejQlPAU=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null}}},\\\"isolatedDomain\\\":null,\\\"experimentalData\\\":null,\\\"manifestVersion\\\":2,\\\"id\\\":\\\"bae3a2de-5b32-48c0-83f2-2227ce17a408\\\",\\\"componentType\\\":\\\"Library\\\",\\\"storeAppId\\\":null,\\\"mpnId\\\":null,\\\"clientComponentDeveloper\\\":null}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"bae3a2de-5b32-48c0-83f2-2227ce17a408\",\"Status\":0}]}"
+ },
+ {
+  "t": "2026-11-23T10:04:53.428Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"a1cb867b-abbe-4db4-a16c-510bd4b07844\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"a1cb867b-abbe-4db4-a16c-510bd4b07844\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactMessageBar\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-message-bar-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-message-bar-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-message-bar-bundle_none_288735f8ac0fba43.js\\\",\\\"integrity\\\":\\\"sha256-fC1nZS7GBKT/YfS5uSjF6tlYGQrfbkFJ4B2RImOBqWI=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-button-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"72ec0651-8a26-441c-87f2-77ec66884ca3\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"160df197-bba5-4acb-a0d0-af1970"
+ },
+ {
+  "t": "2026-11-23T10:04:53.428Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"deedf534-44db-4a94-95b6-ade81a49ed20\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"deedf534-44db-4a94-95b6-ade81a49ed20\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentMigrationUtilities\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"fluent-migration-utilities-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"fluent-migration-utilities-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"fluent-migration-utilities-bundle_none_af6254f4760b78c1.js\\\",\\\"integrity\\\":\\\"sha256-F9+6ibKBAAchqC5hieTvaXyRiiK4JgiEjxpqT/4m+XA=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/odsp-core-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"2e09fb9b-13bb-48f2-859f-97d6fff71176\\\",\\\"version\\\":\\\"1.5.263\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sharepoint-ui-tokens-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"c6e9b8a2-5f7d-4e0b-8b9b-1e3c7a9d3f4f\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failove"
+ },
+ {
+  "t": "2026-11-23T10:04:53.430Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"version\":\"0.2.6\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Manifest\":\"{\\\"version\\\":\\\"0.2.6\\\",\\\"alias\\\":\\\"office-browser-feedback\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"office-browser-feedback\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"office-browser-feedback\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"office-browser-feedback_none_8353782b6f2d6c38.js\\\",\\\"integrity\\\":\\\"sha256-gtHF9RVLHIJDkFM3gKY8V0kSsukwsSzL8LkHkPH5Hqo=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-core-library\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"7263c7d0-1d6a-45ec-8d85-d4d1d234171b\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-diagnostics\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"78359e4b-07c2-43c6-8d0b-d060b4d577e8\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null"
+ },
+ {
+  "t": "2026-11-23T10:04:53.474Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/GetFilteredSPListItems",
+  "status": 200,
+  "request": "{\"columnName\":\"PUID_KEY\",\"columnValue\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:HasVisitedAdvancedManagementPage\",\"columnType\":\"Text\",\"listName\":\"DO_NOT_DELETE_SPLIST_TENANTADMIN_USERSTORAGE\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#ListItems\",\"value\":[{\"@odata.type\":\"#SP.Data.DO_x005f_NOT_x005f_DELETE_x005f_SPLIST_x005f_TENANTADMIN_x005f_USERSTORAGEListItem\",\"@odata.id\":\"9c8531dc-26e1-453e-95a2-6653d1b7f730\",\"@odata.etag\":\"\\\"1\\\"\",\"@odata.editLink\":\"Web/Lists(guid'c30100c7-516d-48f5-a4c8-bf1a31d0d5fe')/Items(4)\",\"FileSystemObjectType\":0,\"Id\":4,\"ServerRedirectedEmbedUri\":null,\"ServerRedirectedEmbedUrl\":\"\",\"ContentTypeId\":\"0x010068A3C237EB437446AD9ABC3A221D92F8\",\"Title\":null,\"OData__ColorTag\":null,\"ComplianceAssetId\":null,\"PUID_KEY\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:HasVisitedAdvancedManagementPage\",\"PUID\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com\",\"Key\":\"HasVisitedAdvancedManagementPage\",\"Value\":\"{\\\"v\\\":\\\"20200306\\\",\\\"data\\\":true}\",\"ID\":4,\"Modified\":\"2026-11-22T19:48:57Z\",\"Created\":\"2026-11-22T19:48:57Z\",\"AuthorId\":15,\"EditorId\":15,\"OData__UIVersionString\":\"1.0\",\"Attachments\":false,\"GUID\":\"9675b9a5-db00-436f-963a-10c8bdd247e9\"}]}"
+ },
+ {
+  "t": "2026-11-23T10:04:53.479Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/GetFilteredSPListItems",
+  "status": 200,
+  "request": "{\"columnName\":\"PUID_KEY\",\"columnValue\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPONewAdminCenterVisited\",\"columnType\":\"Text\",\"listName\":\"DO_NOT_DELETE_SPLIST_TENANTADMIN_USERSTORAGE\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#ListItems\",\"value\":[{\"@odata.type\":\"#SP.Data.DO_x005f_NOT_x005f_DELETE_x005f_SPLIST_x005f_TENANTADMIN_x005f_USERSTORAGEListItem\",\"@odata.id\":\"9cb6df9b-061d-4932-80fe-985c9e4076b4\",\"@odata.etag\":\"\\\"2\\\"\",\"@odata.editLink\":\"Web/Lists(guid'c30100c7-516d-48f5-a4c8-bf1a31d0d5fe')/Items(3)\",\"FileSystemObjectType\":0,\"Id\":3,\"ServerRedirectedEmbedUri\":null,\"ServerRedirectedEmbedUrl\":\"\",\"ContentTypeId\":\"0x010068A3C237EB437446AD9ABC3A221D92F8\",\"Title\":null,\"OData__ColorTag\":null,\"ComplianceAssetId\":null,\"PUID_KEY\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPONewAdminCenterVisited\",\"PUID\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com\",\"Key\":\"SPONewAdminCenterVisited\",\"Value\":\"{\\\"v\\\":\\\"20200306\\\",\\\"data\\\":[{\\\"key\\\":\\\"SPONewAdminCenterVisited\\\",\\\"date\\\":\\\"2026-11-23T08:48:14.907Z\\\"}]}\",\"ID\":3,\"Modified\":\"2026-11-23T08:48:15Z\",\"Created\":\"2026-11-22T19:48:56Z\",\"AuthorId\":15,\"EditorId\":15,\"OData__UIVersionString\":\"2.0\",\"Attachments\":false,\"GUID\":\"39fef3cd-58cb-49a2-92d7-f6c080dc9fbe\"}]}"
+ },
+ {
+  "t": "2026-11-23T10:04:53.669Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"32b9363b-09ff-4959-929a-cab2663fb223\",\"version\":\"3.0.2\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"32b9363b-09ff-4959-929a-cab2663fb223\",\"Manifest\":\"{\\\"version\\\":\\\"3.0.2\\\",\\\"alias\\\":\\\"MicrosoftGraphClient\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"ms-graph-v3-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"ms-graph-v3-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"ms-graph-v3-bundle_none_b9b85465f9c7bad3.js\\\",\\\"integrity\\\":\\\"sha256-q/ytHtFA8IhDR4ncmq000fzj9TpQ2ypobWOYrCUvrhI=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"tslib\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"01c4df03-e775-48cb-aa14-171ee5199a15\\\",\\\"version\\\":\\\"2.3.1\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null}}},\\\"isolatedDomain\\\":null,\\\"experimentalData\\\":null,\\\"manifestVersion\\\":2,\\\"id\\\":\\\"32b9363b-09ff-4959-929a-cab2663fb223\\\",\\\"componentType\\\":\\\"Library\\\",\\\"storeAppId\\\":null,\\\"mpnId\\\":null,\\\"clientComponentDeveloper\\\":null}\",\"ManifestActivatedTime\":n"
+ },
+ {
+  "t": "2026-11-23T10:04:53.785Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/UpdateJobsWorkItems",
+  "status": 204,
+  "request": "{\"jobIds\":[\"4836ed63-ad9e-43eb-993c-c5a6654e4bce\",\"542e66ec-1e70-4915-851c-71fafb3b0548\",\"e704fda2-bcc2-431d-ba8b-bed0c9799533\",\"b6aea009-970c-4b19-8c53-b88c9c0c1ce7\"]}",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:54.045Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactLink\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-link-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-link-bundle_none_986a2401131144e8.js\\\",\\\"integrity\\\":\\\"sha256-sqhR3Uz/NHk509Y4S8bz3OHuLQncutmTGzNMbkk44Mc=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"failoverPath\\\":null,\\\"fallbackVersi"
+ },
+ {
+  "t": "2026-11-23T10:04:54.056Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactText\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-text-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-text-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-text-bundle_none_3e961c3225e8fb36.js\\\",\\\"integrity\\\":\\\"sha256-eT65g6tfPhiPnV0Kmsxouym9phITsn2dA4QW15srygk=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"failoverPath\\\":null,\\\"fallbackVersi"
+ },
+ {
+  "t": "2026-11-23T10:04:54.056Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/GetIsolatedAppDomainsByAppId",
+  "status": 200,
+  "request": "{\"appIds\":[]}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(SP.KeyValue)\",\"value\":[]}"
+ },
+ {
+  "t": "2026-11-23T10:04:54.109Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactLink\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-link-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-link-bundle_none_986a2401131144e8.js\\\",\\\"integrity\\\":\\\"sha256-sqhR3Uz/NHk509Y4S8bz3OHuLQncutmTGzNMbkk44Mc=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"failoverPath\\\":null,\\\"fallbackVersi"
+ },
+ {
+  "t": "2026-11-23T10:04:54.170Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"3bbab303-6375-447d-a919-a6d5363d0942\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"3bbab303-6375-447d-a919-a6d5363d0942\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactDrawer\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-drawer-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-drawer-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-drawer-bundle_none_a8cda9a92f785234.js\\\",\\\"integrity\\\":\\\"sha256-MAlAGbxK+DWSaD3/xcVSireDyXLry9Yb1ElCC7Q7Sl8=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-dialog-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"c4016abc-9cc8-4869-ac2f-278195db557b\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-motion-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0c471b33-6e5e-4e4b-9c3b-af2b125beb72\\\",\\\"versio"
+ },
+ {
+  "t": "2026-11-23T10:04:54.403Z",
+  "method": "POST",
+  "url": "https://graph.microsoft.com/beta/$batch",
+  "status": 200,
+  "request": "{\"requests\":[{\"id\":\"0\",\"method\":\"GET\",\"url\":\"oAuth2Permissiongrants/?$filter=clientId eq '183c53de-4106-4613-952c-a9cfd34857b0' and consentType eq 'AllPrincipals'\"}]}",
+  "response": "{\"responses\": [{\"id\":\"0\",\"status\":200,\"headers\":{\"Cache-Control\":\"no-cache\",\"x-ms-resource-unit\":\"2\",\"OData-Version\":\"4.0\",\"Content-Type\":\"application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8\"},\"body\":{\"@odata.context\":\"https://graph.microsoft.com/beta/$metadata#oauth2PermissionGrants\",\"value\":[{\"clientId\":\"183c53de-4106-4613-952c-a9cfd34857b0\",\"consentType\":\"AllPrincipals\",\"expiryTime\":\"9999-12-31T23:59:59.9999999Z\",\"id\":\"3lM8GAZBE0aVLKnP00hXsKLH5Olwmj5Bv5L7mHRxcX0\",\"principalId\":null,\"resourceId\":\"e9e4c7a2-9a70-413e-bf92-fb987471717d\",\"scope\":\"AppCatalog.Read.All AppCatalog.Submit Calendars.Read Calendars.Read.Shared Calendars.ReadBasic Calendars.ReadWrite Calendars.ReadWrite.Shared Channel.Create Channel.ReadBasic.All ChatMember.Read EduAssignments.ReadBasic EduRoster.ReadBasic FileStorageContainer.Selected Files.Read Files.Read.All Files.ReadWrite.All Group-Conversation.ReadWrite.All Group.Read.All GroupMember.Read.All InformationProtectionPolicy.Read People.Read People.Read.All Place.Read.All Presence.Read.All PrintJob.Create PrintJob.ReadBasic PrinterShare.ReadBasic.All SensitivityLabel.Read Sites.Read.All Tasks.ReadWrite Team.ReadBasic.All TeamsAppInstallation.ReadWriteForTeam TeamsAppInstallation.ReadWriteSelfForTeam TeamsTab.Create User.Read User.ReadBasic.All Mail.Send\",\"startTime\":\"0001-01-01T00:00:00Z\"},{\"clientId\":\"183c53de-4106-4613-952c-a9cfd34857b0\",\"consentType\":\"AllPrincipals\",\"expiryTime\":\"9999-12-31T23:59:59.99"
+ },
+ {
+  "t": "2026-11-23T10:04:54.438Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/GetFilteredSPListItems",
+  "status": 200,
+  "request": "{\"columnName\":\"PUID_KEY\",\"columnValue\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPOTenantAdmin_SplashScreenVersion\",\"columnType\":\"Text\",\"listName\":\"DO_NOT_DELETE_SPLIST_TENANTADMIN_USERSTORAGE\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#ListItems\",\"value\":[{\"@odata.type\":\"#SP.Data.DO_x005f_NOT_x005f_DELETE_x005f_SPLIST_x005f_TENANTADMIN_x005f_USERSTORAGEListItem\",\"@odata.id\":\"6bbfe52a-9126-4592-a8e0-bc6da133c1f9\",\"@odata.etag\":\"\\\"1\\\"\",\"@odata.editLink\":\"Web/Lists(guid'c30100c7-516d-48f5-a4c8-bf1a31d0d5fe')/Items(5)\",\"FileSystemObjectType\":0,\"Id\":5,\"ServerRedirectedEmbedUri\":null,\"ServerRedirectedEmbedUrl\":\"\",\"ContentTypeId\":\"0x010068A3C237EB437446AD9ABC3A221D92F8\",\"Title\":null,\"OData__ColorTag\":null,\"ComplianceAssetId\":null,\"PUID_KEY\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPOTenantAdmin_SplashScreenVersion\",\"PUID\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com\",\"Key\":\"SPOTenantAdmin_SplashScreenVersion\",\"Value\":\"{\\\"v\\\":\\\"20200306\\\",\\\"data\\\":[{\\\"key\\\":\\\"SPOTenantAdmin_SplashScreenVersion\\\",\\\"version\\\":\\\"5\\\"}]}\",\"ID\":5,\"Modified\":\"2026-11-23T08:43:21Z\",\"Created\":\"2026-11-23T08:43:21Z\",\"AuthorId\":15,\"EditorId\":15,\"OData__UIVersionString\":\"1.0\",\"Attachments\":false,\"GUID\":\"6536e65e-77bc-498b-bcb6-8c5302579f56\"}]}"
+ },
+ {
+  "t": "2026-11-23T10:04:54.573Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/GetFilteredSPListItems",
+  "status": 200,
+  "request": "{\"columnName\":\"PUID_KEY\",\"columnValue\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPOTenantAdmin_DismissedAdvancedManagementContentAssessmentNavLinkTeachingBubble\",\"columnType\":\"Text\",\"listName\":\"DO_NOT_DELETE_SPLIST_TENANTADMIN_USERSTORAGE\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#ListItems\",\"value\":[]}"
+ },
+ {
+  "t": "2026-11-23T10:04:54.635Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"6da60671-741f-47c5-b35b-5078edaf312f\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"6da60671-741f-47c5-b35b-5078edaf312f\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FirstRunExperience\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-coachmark-utility\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-coachmark-utility\\\":{\\\"type\\\":\\\"localizedPath\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":{\\\"path\\\":\\\"sp-coachmark-utility_default_a658a96c7dfc6d99.js\\\",\\\"integrity\\\":\\\"sha256-OhHb6v/r9jIallVZIcImKJDTaC8pDAl31M5GrWWGUDk=\\\"},\\\"paths\\\":{\\\"ar-SA\\\":{\\\"path\\\":\\\"sp-coachmark-utility_ar-sa_2a124a51cb103540.js\\\",\\\"integrity\\\":\\\"sha256-2ToZELxQoKcYCgy+ThECbWM5Sb1aokZ+6feLD73a5nM=\\\"},\\\"az-Latn-AZ\\\":{\\\"path\\\":\\\"sp-coachmark-utility_az-latn-az_be473a12a890e40b.js\\\",\\\"integrity\\\":\\\"sha256-2QMONGLEjXT9qEMQBXskNvnF2tqr7fXsURg4wkZWHlY=\\\"},\\\"bg-BG\\\":{\\\"path\\\":\\\"sp-coachmark-utility_bg-bg_ee4103e8345514e3.js\\\",\\\"integrity\\\":\\\"sha256-/e9MdQ6Na27XQyv+tKBRNgFYdOct7kw3yHw4Zmc386Y=\\\"},\\\"bs-Latn-BA\\\":{\\\"path\\\":\\\"sp-coachmark-utility_bs-latn-ba_7809361d20cda6e0.js\\\",\\\"integrity\\\":\\\"sha2"
+ },
+ {
+  "t": "2026-11-23T10:04:54.635Z",
+  "method": "POST",
+  "url": "https://portal.office.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":508372,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"uxVersion Data is provided thru parameter\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"data\\\":\\\"{\\\\\\\"dashboard\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/2026.11.16.7_dashboard.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"dataaccessgovernance\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/2026.11.16.7_dataaccessgovernance.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"migration-manager\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/2026.11.16.7_migration-manager.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"unified-collaboration-panel\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/unified-collaboration-panel/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/unified-collaboration-panel/20",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:55.096Z",
+  "method": "POST",
+  "url": "https://graph.microsoft.com/beta/$batch",
+  "status": 200,
+  "request": "{\"requests\":[{\"id\":\"0\",\"method\":\"GET\",\"url\":\"servicePrincipals/?$filter=id eq 'e9e4c7a2-9a70-413e-bf92-fb987471717d' or id eq '183c53de-4106-4613-952c-a9cfd34857b0' or id eq 'a36195c1-6ab6-4e80-9985-f46a49b69f40' or id eq 'b553da66-7ce7-410e-a8c9-b0b169a666e2' or id eq '93494e5c-1d54-468b-9c41-f7d6e5c8cfda' or id eq 'a8392cf6-809b-41e1-b3b0-c49a4f6a3b86' or id eq '8340b547-1b7d-4c72-90a5-afd0f4e0d0c9' or id eq '8a1ac519-f08c-4f1b-889c-317a9645208a' or id eq 'f18c9d7f-b3ab-4d3b-97a8-4d4afcbc1736' or id eq '4b368df2-9977-460f-8688-ce84efa250b9' or id eq '6cd0dea2-9b86-4e92-9d67-b6ad47545b36'\"}]}",
+  "response": "{\"responses\": [{\"id\":\"0\",\"status\":200,\"headers\":{\"Deprecation\":\"Mon, 18 Apr 2022 23:59:59 GMT\",\"Sunset\":\"Thu, 18 Apr 2024 23:59:59 GMT\",\"Cache-Control\":\"no-cache\",\"x-ms-resource-unit\":\"1\",\"OData-Version\":\"4.0\",\"Content-Type\":\"application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8\"},\"body\":{\"@odata.context\":\"https://graph.microsoft.com/beta/$metadata#servicePrincipals\",\"value\":[{\"id\":\"8a1ac519-f08c-4f1b-889c-317a9645208a\",\"deletedDateTime\":null,\"accountEnabled\":true,\"alternativeNames\":[],\"createdByAppId\":null,\"createdDateTime\":\"2026-10-27T03:04:34Z\",\"deviceManagementAppType\":null,\"appDescription\":null,\"appDisplayName\":\"Microsoft Forms\",\"appId\":\"c9a559d2-7aab-4f13-a6ed-e7e9c52aec87\",\"applicationTemplateId\":null,\"appOwnerOrganizationId\":\"f8cdef31-a31e-4b4a-93e4-5f571e91255a\",\"appRoleAssignmentRequired\":false,\"assignmentRequiredForPrincipalTypes\":null,\"description\":null,\"disabledByMicrosoftStatus\":null,\"displayName\":\"Microsoft Forms\",\"errorUrl\":null,\"homepage\":null,\"isAuthorizationServiceEnabled\":false,\"isDisabled\":null,\"isHardDeleteProtectionEnabled\":null,\"isManagementRestricted\":null,\"loginUrl\":null,\"logoutUrl\":\"https://forms.office.com/auth/expirecookie\",\"notes\":null,\"notificationEmailAddresses\":[],\"preferredSingleSignOnMode\":null,\"preferredTokenSigningKeyEndDateTime\":null,\"preferredTokenSigningKeyThumbprint\":null,\"publisherName\":\"Microsoft Services\",\"replyUrls\":[\"https://forms.office.com/landing\",\"https://forms.microsoft.com/landing"
+ },
+ {
+  "t": "2026-11-23T10:04:55.181Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":538284,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: canDisplayUserFeedback() invoked\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"data\\\":{\\\"clientFeedbackId\\\":null,\\\"timestamp\\\":1795428293653}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538286,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: getCloudPolicyServicePolicies() invoked\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{\\\"data\\\":{\\\"tenantCloudType\\\":\\\"Worldwide\\\",\\\"timestamp\\\":1795428293654}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538287,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: Returning cached policies\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"3\",\"Adhoc2\":\"{\\\"data\\\":{\\\"tenantCloudType\\\":\\\"Worldwide\\\",\\\"nextCheckTime\\\":1795509798825,\\\"timestamp\\\":1795428293668}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":532444,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: Centro Runtime Initialization and preloadFeature Completed.\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"4\",\"Adhoc2\":\"{\\\"data\\\":{\\\"clientFeedbackId\\\":null,\\\"isPrefetched\\\":true,\\\"timestamp\\\":1795428293699}}\",\"Adhoc5\":\"\",\"PageName\":\"\"}]",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://portal.office.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":520642,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Use hvc-loader version: 2 or older\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":522022,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"UX platform availability ForeignFeatureInitializeRuntime\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{\\\"data\\\":{}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"}]",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":539805,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"uxVersion Data is provided thru API\",\"Adhoc0\":\"b0446500-e13b-4f2c-b362-0663fd83e495\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"data\\\":\\\"{\\\\\\\"dashboard\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/2026.11.18.0_dashboard.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.18.0\\\\\\\",\\\\\\\"enableIncrementalBuild\\\\\\\":true,\\\\\\\"bundleName\\\\\\\":\\\\\\\"dashboard.en.bundle.js\\\\\\\",\\\\\\\"fallbackVersion\\\\\\\":\\\\\\\"2026.11.16.6\\\\\\\"},\\\\\\\"dataaccessgovernance\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/2026.11.18.0_dataaccessgovernance.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.18.0\\\\\\\",\\\\\\\"enableIncrementalBuild\\\\\\\":true,\\\\\\\"bundleName\\\\\\\":\\\\\\\"dataaccessgovernance.en.bundle.js\\\\\\\",\\\\\\\"fallbackVersion\\\\\\\":\\\\\\\"2026.11.16.6\\\\\\\"},\\\\\\\"migration-manager\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/2026.11.16.7_migration-manager.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\",\\\\\\\"enableIncrementalBui",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('09e54204-f9d3-46b1-b737-bc7c57e6afc0')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('274677cc-8ee4-4fd3-97ba-ab3f6cd1f10c')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('d8bbd729-bf13-42dd-8937-1ba95d6762bc')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('76da9016-f36e-44df-8837-e2ac3ca528a6')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('4467fd1b-175b-42b0-842d-1a00f740cd69')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('11308e16-b190-406a-83c7-9cdffaa2c16b')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('654024b2-dc21-4fce-8511-42ccf335f87a')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('853ca148-93be-4320-91a0-6292c5228f8f')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.183Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('8f88cf7e-d4f2-4cc7-acd2-70f4ff501444')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.188Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('4f55f9e1-a390-4cb6-9467-52083fc7cbe5')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.188Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('066ef802-dc76-48fe-b9ef-5194dab8a85c')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:04:55.485Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/Collector/3.0/",
+  "status": 200,
+  "request": "m\t\u000b\u0001J91ac5773078c41d39089fbf88f44d93f-4538b5c2-455a-479b-bade-d30e50c3ca9b-6801\n\u0001I\u0012act_default_source�$e570a115-a9c0-48ff-9684-8c343cab4f42�\u0006����h�\b\n\u0001)$f5be239a-b6f4-4c88-b394-3d44a2025a57q�����h�\u0006custom�\u0006\u001dspotenantadmin_adminhome_load�\r\t\t\u000f\bTenantId$972a674c-7b85-4e56-a31f-b2f95b42fd1e\u0006UserId+i:0h.f|membership|100320065da63a13@live.com\u0010AppInfo.Language\u0005en-US\u0011UserInfo.Language\u0005cs-CZ\u0011UserInfo.TimeZone\u0006+01:00\u0016DeviceInfo.BrowserName\u0006Chrome\u0019DeviceInfo.BrowserVersion\t157.0.0.0\u0011DeviceInfo.OsName\bMac OS X\u0014DeviceInfo.OsVersion\u000210\rDeviceInfo.Id$b809f0c7-e112-4521-bb99-17c8b5dd5afc\u0010EventInfo.InitId$897f0181-a6d6-4b10-8a00-21af65c908bb\u0012EventInfo.Sequence\u00011\u0014EventInfo.SdkVersion\u0010AWT-Web-JS-1.0.0\u000eEventInfo.Name\u001dspotenantadmin_adminhome_load\u000eEventInfo.Time\u00182026-11-23T10:04:53.218Z\u0000\u0000\u0000",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:55.869Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"ev_engagement\",\"time\":\"2026-11-23T10:04:53.388Z\",\"ver\":\"4.0\",\"iKey\":\"o:28f004ff2be44e8997a6f113043d583d\",\"ext\":{\"sdk\":{\"ver\":\"1DS-Web-JS-3.2.15\",\"seq\":1,\"installId\":\"e345dd42-bb58-4c40-be40-fe2c1fc3dbf8\",\"epoch\":\"1443065908\"},\"app\":{\"ver\":\"odsp-web-prod_2026-11-13.006\",\"locale\":\"en-US\",\"env\":\"prod\",\"sesId\":\"PC9vJIbJe/waxNYyDwJ7ST\"},\"user\":{\"locale\":\"cs-CZ\",\"localId\":\"i:0h.f|membership|100320065da63a13@live.com\"},\"web\":{\"domain\":\"pavelchocholousgmail-admin.sharepoint.com\",\"browser\":\"Chrome\",\"browserVer\":\"157\",\"screenRes\":\"1400X1000\",\"userConsent\":false},\"os\":{\"name\":\"Mac OS X\",\"ver\":\"10\"},\"intweb\":{},\"utc\":{\"popSample\":100,\"eventFlags\":4194304},\"loc\":{\"tz\":\"+01:00\"},\"device\":{\"localId\":\"c:b809f0c7-e112-4521-bb99-17c8b5dd5afc\"}},\"data\":{\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15;SystemPropertiesCollector=3.2.15;SamplingPlugin=1.0;StringifyProperties=1.0;StrictCustomProperties=1.0;DataScrubber=1.0\"}},\"CorrelationVector\":\"00000000-0000-0000-0000-000000000000#abdb9b42-4b04-49b8-9de6-45b50ba79ae7#8643b0db-4edf-4901-ada4-5389d50ca6ff\",\"WebLog_FullName\":\"Engagement,\",\"WebLog_EventType\":\"Single\",\"WebLog_Type_Engagement\":\"1\",\"SPFx\":{\"TelemetrySource\":\"SPFx\"},\"Debug\":{\"EventSource\":\"Global-OneDS-sp-client-aria-main\"},\"PrivacyClassification\":\"optionalDiagnostic\",\"Name\":\"SPOTenantAdmin.PageLoad.AdminPageContext.DelayLoad\",\"SiteId\":\"67f0f40a-10d8-42e3-b708-a0a3155f9432\",\"WebId\":\"c0c22d82-67cb-4199-9509-774d2754d21e\",\"Engagement_extraData_isHub\":\"false\",\"Engagement_ext",
+  "response": "{\"acc\":45,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:04:56.807Z",
+  "method": "POST",
+  "url": "https://portal.office.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":512107,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"window.m365_admin_features.initialize !== undefined\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"9\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":508418,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"preloadFeatures() step has succeeded\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"10\",\"Adhoc2\":\"{\\\"data\\\":{\\\"hvc\\\":\\\"centro-copilot-sydney\\\",\\\"uxdata\\\":\\\"{\\\\\\\"dashboard\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/2026.11.16.7_dashboard.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"dataaccessgovernance\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/2026.11.16.7_dataaccessgovernance.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"migration-manager\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/2026.11.16.7_migration-manager.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"unified-collaboration-",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:56.808Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/supportlog/PostLogBatch",
+  "status": 204,
+  "request": "[{\"TagId\":502869,\"LogLevel\":1,\"Message\":\"SupportCentralBootstraper.SupportCentral: Init started\",\"Adhoc0\":\"SPO\",\"Adhoc1\":\"Mon, 23 Nov 2026 10:04:53 GMT\",\"Adhoc2\":\"{\\\"appName\\\":\\\"SPO\\\",\\\"auth\\\":{\\\"endpointUrl\\\":\\\"https://admin.microsoft.com\\\"},\\\"styles\\\":{\\\"minStateStyle\\\":{\\\"position\\\":\\\"fixed\\\",\\\"display\\\":\\\"unset\\\",\\\"right\\\":\\\"17px\\\",\\\"bottom\\\":\\\"103px\\\",\\\"zIndex\\\":1,\\\"overflow\\\":\\\"hidden\\\",\\\"width\\\":\\\"40px\\\",\\\"transition\\\":\\\"width 0.3s\\\"},\\\"maxStateStyle\\\":{\\\"height\\\":\\\"95%\\\",\\\"position\\\":\\\"absolute\\\",\\\"width\\\":\\\"500px\\\",\\\"zIndex\\\":14}},\\\"settings\\\":{\\\"disableMinimization\\\":false,\\\"maximizeByDefault\\\":false,\\\"userQuery\\\":\\\"\\\",\\\"requestId\\\":\\\"\\\",\\\"locale\\\":\\\"en-US\\\"},\\\"clientContext\\\":\\\"\\\",\\\"parentDiv\\\":\\\"FeedbackArea\\\"}\"},{\"TagId\":539891,\"LogLevel\":2,\"Message\":\"Endpoint Url provided: https://admin.microsoft.com\",\"Adhoc0\":\"SPO\"},{\"TagId\":502873,\"LogLevel\":1,\"Message\":\"SupportCentral: loadConciergeConfiguration started\",\"Adhoc0\":\"SPO\",\"Adhoc1\":\"https://admin.microsoft.com/api/concierge/GetConciergeConfig?appName=SPO&culture=en-US\"},{\"TagId\":502874,\"LogLevel\":1,\"Message\":\"SupportCentral: loadConciergeConfiguration onreadystatechange\",\"Adhoc0\":\"SPO\",\"Adhoc1\":1},{\"TagId\":502874,\"LogLevel\":1,\"Message\":\"SupportCentral: loadConciergeConfiguration onreadystatechange\",\"Adhoc0\":\"SPO\",\"Adhoc1\":2},{\"TagId\":502874,\"LogLevel\":1,\"Message\":\"SupportCentral: loadConciergeConfiguration onreadystatechange\",\"Adhoc0\":\"SPO\",\"Adhoc1\":3},{\"TagId\":502874,\"LogLevel\":1,\"Message\":\"SupportCentral: loadC",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:57.077Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":538284,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: canDisplayUserFeedback() invoked\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"5\",\"Adhoc2\":\"{\\\"data\\\":{\\\"clientFeedbackId\\\":null,\\\"timestamp\\\":1795428295887}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538286,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: getCloudPolicyServicePolicies() invoked\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"6\",\"Adhoc2\":\"{\\\"data\\\":{\\\"tenantCloudType\\\":\\\"Worldwide\\\",\\\"timestamp\\\":1795428295887}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538287,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: Returning cached policies\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"7\",\"Adhoc2\":\"{\\\"data\\\":{\\\"tenantCloudType\\\":\\\"Worldwide\\\",\\\"nextCheckTime\\\":1795509798825,\\\"timestamp\\\":1795428295887}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538284,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: canDisplayUserFeedback() invoked\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"8\",\"Adhoc2\":\"{\\\"data\\\":{\\\"clientFeedbackId\\\":null,\\\"timestamp\\\":1795428295888}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538286,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: getCloudPolicyServicePolicies() invoked\",\"Adhoc0\":\"28825348-2232-401d-a1e2-fd927f60ba04\",\"Adhoc1\":\"9\",\"Adhoc2\":\"{\\\"data\\\":{\\\"tenantCloudType\\\":\\\"Worldwide\\\",\\\"timestamp\\\":1795428295888}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagI",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:57.103Z",
+  "method": "POST",
+  "url": "https://portal.office.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":520642,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Use hvc-loader version: 2 or older\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":522022,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"UX platform availability ForeignFeatureInitializeRuntime\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{\\\"data\\\":{}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":509826,\"LogLevel\":1,\"LogCategory\":\"ClientAvailability\",\"Message\":\"Hvc Load initiated\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"3\",\"Adhoc2\":\"{\\\"data\\\":{\\\"hvc\\\":\\\"centro-copilot-sydney\\\",\\\"hvcVersion\\\":\\\"2026.11.16.7\\\",\\\"reactVersionMajor\\\":18,\\\"timestamp\\\":1795428295933}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":501057,\"LogLevel\":1,\"LogCategory\":\"ClientPerformance\",\"Message\":\"UI Performance Start Event\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"4\",\"Adhoc2\":\"{\\\"data\\\":{\\\"eventName\\\":\\\"navstart\\\",\\\"epoch\\\":1795428295933}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":531304,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Attempting to load deferred module\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"5\",\"Adhoc2\":\"{\\\"data\\\":{\\\"component\\\":\\\"deferred(CentroCopilot)\\\"}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":509270,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"makeReactBootstrapper step has su",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:57.268Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":513924,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"setBaseCDNUrl, CDNContentURL is missing in window.m365config.hostingAppUrls\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"/\"},{\"TagId\":500781,\"LogLevel\":4,\"LogCategory\":\"ClientError\",\"Message\":\"UI Exception: setBaseCDNUrl, CDNContentURL is missing in window.m365config.hostingAppUrls\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"version\\\":\\\"host-support-central_2026.11.16.7\\\",\\\"stack\\\":\\\"Error: setBaseCDNUrl, CDNContentURL is missing in window.m365config.hostingAppUrls\\\\n    at S (https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.bundle.js:51:71513)\\\\n    at https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.893.chunk.js:10:18766\\\\n    at https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.893.chunk.js:10:430335\\\\n    at 39900 (https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.893.chunk.js:10:20637)\\\\n    at s (https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.bundle.js:51:137646)\\\"}\",\"Adhoc3\":\"513924\",\"Adhoc5\":\"\",\"PageName\":\"/\"},{\"TagId\":522021,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"UX platform availability InitializeRuntime\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{\\\"data\\\":{}}\",\"Adhoc5\":\"\",\"PageName\":\"/\"},{\"TagId\":531304,\"LogLevel\":1,",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:57.576Z",
+  "method": "POST",
+  "url": "https://browser.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"Office.Identity.WebAuthMast.Load\",\"time\":\"2026-11-23T10:04:53.644Z\",\"ver\":\"4.0\",\"iKey\":\"o:5c65bbc4edbf480d9637ace04d62bd98\",\"ext\":{\"sdk\":{\"seq\":1,\"ver\":\"1DS-Web-JS-3.2.15\"},\"metadata\":{\"f\":{\"Event.Time\":{\"t\":9},\"Event.Sequence\":{\"t\":4}}}},\"data\":{\"baseType\":\"custom\",\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15\"}},\"Event.Name\":\"Office.Identity.WebAuthMast.Load\",\"Event.Source\":\"OTelJS\",\"Event.Time\":\"2026-11-23T10:04:53.644Z\",\"Event.Sequence\":1,\"Event.Id\":\"28f91bcd-de08-43d3-ab13-4e7c4527d761.1\",\"App.Name\":\"WebAuthMast\",\"App.Platform\":\"Web\",\"App.Version\":\"3.0.17\",\"User.IsAnonymous\":true,\"Session.Id\":\"9e6e6bbc-81b1-4d18-9112-98adf0f81b1c\",\"Release.AudienceGroup\":\"Production\",\"Data.OTelJS.Version\":\"4.25.27\",\"Data.AppName\":\"SharePoint admin center\",\"Data.BrowserName\":\"Chrome\"}}",
+  "response": "{\"acc\":1,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:04:57.935Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"ev_engagement\",\"time\":\"2026-11-23T10:04:55.887Z\",\"ver\":\"4.0\",\"iKey\":\"o:28f004ff2be44e8997a6f113043d583d\",\"ext\":{\"sdk\":{\"ver\":\"1DS-Web-JS-3.2.15\",\"seq\":277,\"installId\":\"e345dd42-bb58-4c40-be40-fe2c1fc3dbf8\",\"epoch\":\"1443065908\"},\"app\":{\"ver\":\"odsp-web-prod_2026-11-13.006\",\"locale\":\"en-US\",\"env\":\"prod\",\"sesId\":\"PC9vJIbJe/waxNYyDwJ7ST\"},\"user\":{\"locale\":\"cs-CZ\",\"localId\":\"i:0h.f|membership|100320065da63a13@live.com\"},\"web\":{\"domain\":\"pavelchocholousgmail-admin.sharepoint.com\",\"browser\":\"Chrome\",\"browserVer\":\"157\",\"screenRes\":\"1400X1000\",\"userConsent\":false},\"os\":{\"name\":\"Mac OS X\",\"ver\":\"10\"},\"intweb\":{},\"utc\":{\"popSample\":100,\"eventFlags\":4194304},\"loc\":{\"tz\":\"+01:00\"},\"device\":{\"localId\":\"c:b809f0c7-e112-4521-bb99-17c8b5dd5afc\"}},\"data\":{\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15;SystemPropertiesCollector=3.2.15;SamplingPlugin=1.0;StringifyProperties=1.0;StrictCustomProperties=1.0;DataScrubber=1.0\"}},\"CorrelationVector\":\"00000000-0000-0000-0000-000000000000#abdb9b42-4b04-49b8-9de6-45b50ba79ae7#195e73b8-92b0-4ca5-a59e-a833feba8baa\",\"WebLog_FullName\":\"Engagement,\",\"WebLog_EventType\":\"Single\",\"WebLog_Type_Engagement\":\"1\",\"SPFx\":{\"TelemetrySource\":\"SPFx\"},\"Debug\":{\"EventSource\":\"Global-OneDS-sp-client-aria-main\"},\"PrivacyClassification\":\"optionalDiagnostic\",\"Name\":\"SPOTenantAdmin.InappFeedback.CopilotFeedback.Smile.CanDisplayFeedback.True\",\"SiteId\":\"67f0f40a-10d8-42e3-b708-a0a3155f9432\",\"WebId\":\"c0c22d82-67cb-4199-9509-774d2754d21e\",\"Engagement_extraData_isHu",
+  "response": "{\"acc\":4,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:04:58.267Z",
+  "method": "POST",
+  "url": "https://portal.office.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":527980,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"BRS Settings loaded - EnableSupportVolumeInsights: true, EnableKnowMeEntitlements: true\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"7\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":545615,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Failed to initialize data boundary\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"8\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":500781,\"LogLevel\":4,\"LogCategory\":\"ClientError\",\"Message\":\"UI Exception: dataSource 'centro.DataBoundary' was not set yet\",\"Adhoc0\":\"a6a051a2-80a2-0001-45dd-d20f2e88b533\",\"Adhoc1\":\"8\",\"Adhoc2\":\"{\\\"version\\\":\\\"centro-copilot-sydney_2026.11.16.7\\\",\\\"stack\\\":\\\"Error: dataSource 'centro.DataBoundary' was not set yet\\\\n    at l (https://res.cdn.office.net/admincenter/admin-main/centro-copilot-sydney/2026.11.16.7_centro-copilot-sydney.en.bundle.js:61:152649)\\\\n    at i (https://res.cdn.office.net/admincenter/admin-main/centro-copilot-sydney/2026.11.16.7_centro-copilot-sydney.en.bundle.js:64:19441)\\\\n    at $O (https://res.cdn.office.net/admincenter/admin-main/centro-copilot-sydney/centro-copilot-sydney.en.13e25c3d8b48bbfc.chunk.js:330:16094)\\\\n    at async KV.initializeBrsDependentStateInternal (https://res.cdn.office.net/admincenter/admin-main/centro-copilot-sydney/centro-copilot-sydney.en.13e25c3d8b48bbfc.chunk.js:330:87080)\\\\n    at async KV.initializeBrsDepende",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:58.692Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":539805,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"uxVersion Data is provided thru API\",\"Adhoc0\":\"d3f7f430-4d4c-42cd-88bb-96783bf78eda\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"data\\\":\\\"{\\\\\\\"floodgate\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/floodgate/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/floodgate/2026.11.16.7_floodgate.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\",\\\\\\\"enableIncrementalBuild\\\\\\\":true,\\\\\\\"bundleName\\\\\\\":\\\\\\\"floodgate.en.bundle.js\\\\\\\",\\\\\\\"fallbackVersion\\\\\\\":\\\\\\\"2026.11.16.6\\\\\\\"},\\\\\\\"__hostApp_config\\\\\\\":{\\\\\\\"ariaLoggerId\\\\\\\":\\\\\\\"ea84b6a3285140258eaeb7caaab5884a-9d3ca75b-b3ee-42b8-a22c-ab0759ad4d38-7330\\\\\\\",\\\\\\\"euAriaLoggerId\\\\\\\":\\\\\\\"f91919df501a4bed8d67ea87a5bff68e-3e08c802-d8fb-4e8a-a976-4a5f89078bfc-7473\\\\\\\",\\\\\\\"hostingAppUrls\\\\\\\":\\\\\\\"{\\\\\\\\\\\\\\\"M365AdminPortal\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://admin.microsoft.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"EXOAdminPortal\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://admin.exchange.microsoft.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"SPOAdminPortal\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://admin.microsoft.com/sharepoint\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"TeamsAdminPortal\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://admin-int.teams.microsoft.net/\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"MSGraphEndPoint\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://graph.microsoft.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"CDNContentURL\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://res.cdn.office.net/admincenter/admin-content\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"AriaLoggerGlobalCollectorEndpoint\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://mobile.events.data.microsoft",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:04:59.718Z",
+  "method": "POST",
+  "url": "https://browser.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"Office.Feedback.SDK\",\"time\":\"2026-11-23T10:04:57.500Z\",\"ver\":\"4.0\",\"iKey\":\"o:d79e824386c4441cb8c1d4ae15690526\",\"ext\":{\"sdk\":{\"seq\":1,\"ver\":\"1DS-Web-JS-3.2.18\"},\"metadata\":{\"f\":{\"Event.Time\":{\"t\":9},\"Event.Sequence\":{\"t\":4},\"Data.Event.Sequence\":{\"t\":6},\"Data.Event.SampleRate\":{\"t\":6}}}},\"data\":{\"baseType\":\"custom\",\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.18\"}},\"Event.Name\":\"Office.Feedback.SDK\",\"Event.Source\":\"OTelJS\",\"Event.Time\":\"2026-11-23T10:04:57.500Z\",\"Event.Sequence\":1,\"Event.Id\":\"af2642ed-9e6a-4215-9596-2cad0455ea52.1\",\"User.PrimaryIdentityHash\":\"p:100320065DA63A13\",\"User.PrimaryIdentitySpace\":\"OrgIdPuid\",\"User.TenantId\":\"972a674c-7b85-4e56-a31f-b2f95b42fd1e\",\"User.IsAnonymous\":false,\"App.Name\":\"Admin\",\"Data.App.Name\":\"OfficeFeedbackSDK\",\"Data.App.Platform\":\"Web\",\"Data.App.Version\":\"3.0.2\",\"Data.Host.Id\":\"2148\",\"Data.Host.Locale\":\"en-US\",\"Data.Host.SessionId2\":\"00000000-0000-0000-0000-000000000000\",\"Data.Host.Version\":\"0.0.0.0\",\"Data.OTelJS.Version\":\"4.20.30\",\"Data.PromptAutoDismiss\":\"4\",\"Data.IsEmailPolicyEnabled\":true,\"Data.CentroData\":\"{\\\"type\\\":\\\"Performance\\\",\\\"start\\\":null,\\\"epoch\\\":1795428297499}\",\"Data.EventId\":\"Set_Request_Provided_By_Centro_Started\",\"Data.IsDynamicUXEnabled\":true,\"Data.IsDynamicCampaignEnabled\":true,\"Data.Session.Id\":\"ffc927c6-019e-4c5d-dafd-744980cce8cf\",\"Data.Event.Sequence\":1,\"Data.Event.SampleRate\":1}}\n{\"name\":\"Office.Feedback.SDK\",\"time\":\"2026-11-23T10:04:57.500Z\",\"ver\":\"4.0\",\"iKey\":\"o:d79e824386c4441cb8c1d4ae156905",
+  "response": "{\"acc\":9,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:01.209Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/tenantauthorization/TenantInfoModel\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierge/GetLazyLodingConfig\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"3\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierge/IsInfrequentUser\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"4\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierge/DefaultMinimizeSupportWidget\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"5\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierge/IsMCBubbleEnable\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"da48c88b-8b9e-49e9-868d-48fd76bcf41a\",\"Adhoc1\":\"6\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/conc",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:01.315Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/supportlog/PostLogBatch",
+  "status": 204,
+  "request": "[{\"TagId\":504237,\"LogLevel\":2,\"Message\":\"Support Central Load App Config\",\"Adhoc2\":\"{\\\"EnableSCOptimization\\\":false,\\\"TenantSeatCount\\\":10000,\\\"CDNRootUrl\\\":\\\"https://res.cdn.office.net/14.0/en\\\",\\\"IsEnvironmentProd\\\":true,\\\"IsPurviewFoundryEnabled\\\":false,\\\"AlchemyEnabledSecurity\\\":true,\\\"FloatingFooterEnabled\\\":true,\\\"ScFlight\\\":\\\"EnableMcsCopilot;CopilotDefaultOn\\\",\\\"AlchemyEnabled\\\":true,\\\"IncludeAimIdAsDistinctId\\\":true,\\\"EnableSessionIDHeaderForExternalHosting\\\":true,\\\"EnableNonUnifiedPremierSeverity\\\":true,\\\"MaxActiveTicketsAllowedForTrialTenant\\\":2,\\\"EnableOmniChannelChatGetTranscriptInSC\\\":true,\\\"AutoSuggestSearchApiKey\\\":\\\"FFBCA3E94A2364E405C19FE132CA3121\\\",\\\"EnableDiagnosticInformation\\\":true,\\\"PDSEnabled\\\":true,\\\"PDSEnabledSecurity\\\":true,\\\"IsSecurityFoundryEnabled\\\":false,\\\"LargeAttachmentUploadTokenRefreshDelay\\\":60000,\\\"IsFoundryExpEnabled\\\":false,\\\"EnableNonurgentNotice\\\":false,\\\"EnableTheming\\\":true,\\\"AllowedExtensionsForAttachments\\\":[\\\"avi\\\",\\\"cab\\\",\\\"cap\\\",\\\"csv\\\",\\\"doc\\\",\\\"docx\\\",\\\"dotx\\\",\\\"eml\\\",\\\"err\\\",\\\"evt\\\",\\\"gif\\\",\\\"gz\\\",\\\"htm\\\",\\\"html\\\",\\\"jpg\\\",\\\"log\\\",\\\"mht\\\",\\\"mkv\\\",\\\"mov\\\",\\\"mp3\\\",\\\"mp4\\\",\\\"mpeg\\\",\\\"mpg\\\",\\\"msg\\\",\\\"nfo\\\",\\\"pcap\\\",\\\"pdf\\\",\\\"png\\\",\\\"potx\\\",\\\"ppt\\\",\\\"pptx\\\",\\\"psf\\\",\\\"pst\\\",\\\"pub\\\",\\\"rar\\\",\\\"rtf\\\",\\\"saz\\\",\\\"stp\\\",\\\"tif\\\",\\\"txt\\\",\\\"uccapilog\\\",\\\"uccp\\\",\\\"vcf\\\",\\\"vsd\\\",\\\"wdb\\\",\\\"webm\\\",\\\"wks\\\",\\\"wps\\\",\\\"wpt\\\",\\\"xlr\\\",\\\"xls\\\",\\\"xlsx\\\",\\\"xlt\\\",\\\"xltx\\\",\\\"xml\\\",\\\"xps\\\",\\\"zip\\\",\\\"bmp\\\",\\\"uccplog\\\"],\\\"TenantsToShowSupportVolumeInsights\\\":[",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:01.328Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/supportlog/PostLogBatch",
+  "status": 204,
+  "request": "[{\"TagId\":504237,\"LogLevel\":2,\"Message\":\"Support Central Load App Config\",\"Adhoc2\":\"{\\\"EnableSCOptimization\\\":false,\\\"TenantSeatCount\\\":10000,\\\"CDNRootUrl\\\":\\\"https://res.cdn.office.net/14.0/en\\\",\\\"IsEnvironmentProd\\\":true,\\\"IsPurviewFoundryEnabled\\\":false,\\\"AlchemyEnabledSecurity\\\":true,\\\"FloatingFooterEnabled\\\":true,\\\"ScFlight\\\":\\\"EnableMcsCopilot;CopilotDefaultOn\\\",\\\"AlchemyEnabled\\\":true,\\\"IncludeAimIdAsDistinctId\\\":true,\\\"EnableSessionIDHeaderForExternalHosting\\\":true,\\\"EnableNonUnifiedPremierSeverity\\\":true,\\\"MaxActiveTicketsAllowedForTrialTenant\\\":2,\\\"EnableOmniChannelChatGetTranscriptInSC\\\":true,\\\"AutoSuggestSearchApiKey\\\":\\\"FFBCA3E94A2364E405C19FE132CA3121\\\",\\\"EnableDiagnosticInformation\\\":true,\\\"PDSEnabled\\\":true,\\\"PDSEnabledSecurity\\\":true,\\\"IsSecurityFoundryEnabled\\\":false,\\\"LargeAttachmentUploadTokenRefreshDelay\\\":60000,\\\"IsFoundryExpEnabled\\\":false,\\\"EnableNonurgentNotice\\\":false,\\\"EnableTheming\\\":true,\\\"AllowedExtensionsForAttachments\\\":[\\\"avi\\\",\\\"cab\\\",\\\"cap\\\",\\\"csv\\\",\\\"doc\\\",\\\"docx\\\",\\\"dotx\\\",\\\"eml\\\",\\\"err\\\",\\\"evt\\\",\\\"gif\\\",\\\"gz\\\",\\\"htm\\\",\\\"html\\\",\\\"jpg\\\",\\\"log\\\",\\\"mht\\\",\\\"mkv\\\",\\\"mov\\\",\\\"mp3\\\",\\\"mp4\\\",\\\"mpeg\\\",\\\"mpg\\\",\\\"msg\\\",\\\"nfo\\\",\\\"pcap\\\",\\\"pdf\\\",\\\"png\\\",\\\"potx\\\",\\\"ppt\\\",\\\"pptx\\\",\\\"psf\\\",\\\"pst\\\",\\\"pub\\\",\\\"rar\\\",\\\"rtf\\\",\\\"saz\\\",\\\"stp\\\",\\\"tif\\\",\\\"txt\\\",\\\"uccapilog\\\",\\\"uccp\\\",\\\"vcf\\\",\\\"vsd\\\",\\\"wdb\\\",\\\"webm\\\",\\\"wks\\\",\\\"wps\\\",\\\"wpt\\\",\\\"xlr\\\",\\\"xls\\\",\\\"xlsx\\\",\\\"xlt\\\",\\\"xltx\\\",\\\"xml\\\",\\\"xps\\\",\\\"zip\\\",\\\"bmp\\\",\\\"uccplog\\\"],\\\"TenantsToShowSupportVolumeInsights\\\":[",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:01.424Z",
+  "method": "POST",
+  "url": "https://eu-office.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"Office.Taos.Shell.Monitoring\",\"time\":\"2026-11-23T10:04:58.361Z\",\"ver\":\"4.0\",\"iKey\":\"o:b0c82c6598ad49f3848b1d3dc0d8dd25\",\"ext\":{\"sdk\":{\"seq\":1,\"ver\":\"1DS-Web-JS-3.2.15\"},\"metadata\":{\"f\":{\"Event.Time\":{\"t\":9},\"Event.Sequence\":{\"t\":4}}}},\"data\":{\"baseType\":\"custom\",\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15\"}},\"Event.Name\":\"Office.Taos.Shell.Monitoring\",\"Event.Source\":\"OTelJS\",\"Event.Time\":\"2026-11-23T10:04:58.361Z\",\"Event.Sequence\":1,\"Event.Id\":\"e5546e5b-45ad-4a44-a2c9-791654b9ebe6.1\",\"App.Name\":\"OfficeTaosShell\",\"App.Platform\":\"Web\",\"App.Version\":\"1.20261116.4.0\",\"Session.Id\":\"006d7fb6-15b3-455f-b5cf-164becc75df6\",\"Release.AudienceGroup\":\"Production\",\"User.PrimaryIdentityHash\":\"100320065DA63A13\",\"User.PrimaryIdentitySpace\":\"OrgIdPUID\",\"User.TenantId\":\"972a674c-7b85-4e56-a31f-b2f95b42fd1e\",\"User.TenantGroup\":\"Commercial\",\"User.IsAnonymous\":false,\"Context_Env\":\"nszprod\",\"Context_Site\":\"Sharepoint\",\"Context_WorkloadAppId\":\"SharePoint\",\"Context_PID\":\"1795428298359_0.48732587810293915\",\"Context_UID\":\"4a9b2f9a-24ff-4092-800b-e71f91b307b0\",\"Context_Language\":\"en-US\",\"Context_Flights\":\"AdminLoginHint,EnableClientECSFetch,EnableWaffleRefresh,ShowMonarchColorThemes,ShowVivaGlint,WriteLicenseDataToCosmosDBFromOP,UseLicenseNotificationData,UseNewLicenseRefreshTime,LicenseTime1h,LicenseTime1d,UseLicenseCollectionV2,MyAccountEnabledInGuestMode,NotifyMos3OfLicensingChange,UseLicenseCollectionV3,AllowAlwaysEnabledServicePlans,CheckTenantIdFromLicenseCosmosDb,ShowProjectA",
+  "response": "{\"acc\":50,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:03.792Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/api/instrument/logclient",
+  "status": 404,
+  "request": "[{\"TagId\":\"535539\",\"LogLevel\":\"Info\",\"Message\":\"sr:se:Su:We:Su:Co:ex:supportCentralBootstrap.ts&2c3b48dcl&load-event;sr:se:Su:We:Su:Co:ex:supportCentralBootstrap.ts&2c3b48dcm&init\"}]",
+  "response": "404 NOT FOUND"
+ },
+ {
+  "t": "2026-11-23T10:05:10.404Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"ev_engagement\",\"time\":\"2026-11-23T10:05:08.299Z\",\"ver\":\"4.0\",\"iKey\":\"o:28f004ff2be44e8997a6f113043d583d\",\"ext\":{\"sdk\":{\"ver\":\"1DS-Web-JS-3.2.15\",\"seq\":298,\"installId\":\"e345dd42-bb58-4c40-be40-fe2c1fc3dbf8\",\"epoch\":\"1443065908\"},\"app\":{\"ver\":\"odsp-web-prod_2026-11-13.006\",\"locale\":\"en-US\",\"env\":\"prod\",\"sesId\":\"PC9vJIbJe/waxNYyDwJ7ST\"},\"user\":{\"locale\":\"cs-CZ\",\"localId\":\"i:0h.f|membership|100320065da63a13@live.com\"},\"web\":{\"domain\":\"pavelchocholousgmail-admin.sharepoint.com\",\"browser\":\"Chrome\",\"browserVer\":\"157\",\"screenRes\":\"1400X1000\",\"userConsent\":false},\"os\":{\"name\":\"Mac OS X\",\"ver\":\"10\"},\"intweb\":{},\"utc\":{\"popSample\":100,\"eventFlags\":4194304},\"loc\":{\"tz\":\"+01:00\"},\"device\":{\"localId\":\"c:b809f0c7-e112-4521-bb99-17c8b5dd5afc\"}},\"data\":{\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15;SystemPropertiesCollector=3.2.15;SamplingPlugin=1.0;StringifyProperties=1.0;StrictCustomProperties=1.0;DataScrubber=1.0\"}},\"CorrelationVector\":\"00000000-0000-0000-0000-000000000000#abdb9b42-4b04-49b8-9de6-45b50ba79ae7#043ae303-152b-4a08-a381-7c5b7b3925ab\",\"WebLog_FullName\":\"Engagement,\",\"WebLog_EventType\":\"Single\",\"WebLog_Type_Engagement\":\"1\",\"Debug\":{\"EventSource\":\"Global-OneDS-sp-client-aria-main\"},\"PrivacyClassification\":\"optionalDiagnostic\",\"Name\":\"SuiteNav.Theme\",\"Engagement_extraData_color\":\"#484644\",\"Engagement_extraData_themeKey\":\"#FFFFFF\",\"Engagement_extraData_Background\":\"NONE\",\"Engagement_extraData_category\":\"93\",\"Engagement_extraData_value\":\"false\",\"AppInfo\":{\"Session",
+  "response": "{\"acc\":2,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:13.210Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/contextinfo",
+  "status": 200,
+  "request": "",
+  "response": "{\"odata.metadata\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#SP.ContextWebInformation\",\"FormDigestTimeoutSeconds\":1800,\"FormDigestValue\":\"0xF0A998BF3FF02B09EF2EAA0C1380E68FEAB97AB095CC57BC0FDA8DF16CC7515CFB70B6B68E8442CDD9FB6354EDDD6AEED025B2F43FABFBD1668ABBCFF303F19F,23 Nov 2026 10:05:13 -0000\",\"LibraryVersion\":\"16.0.27911.12005\",\"SiteFullUrl\":\"https://pavelchocholousgmail-admin.sharepoint.com\",\"SupportedSchemaVersions\":[\"14.0.0.0\",\"15.0.0.0\"],\"WebFullUrl\":\"https://pavelchocholousgmail-admin.sharepoint.com\"}"
+ },
+ {
+  "t": "2026-11-23T10:05:13.453Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('a58056ee-5c89-4c7f-9728-3f6283aec907')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:14.857Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"ev_engagement\",\"time\":\"2026-11-23T10:05:12.800Z\",\"ver\":\"4.0\",\"iKey\":\"o:28f004ff2be44e8997a6f113043d583d\",\"ext\":{\"sdk\":{\"ver\":\"1DS-Web-JS-3.2.15\",\"seq\":300,\"installId\":\"e345dd42-bb58-4c40-be40-fe2c1fc3dbf8\",\"epoch\":\"1443065908\"},\"app\":{\"ver\":\"odsp-web-prod_2026-11-13.006\",\"locale\":\"en-US\",\"env\":\"prod\",\"sesId\":\"PC9vJIbJe/waxNYyDwJ7ST\"},\"user\":{\"locale\":\"cs-CZ\",\"localId\":\"i:0h.f|membership|100320065da63a13@live.com\"},\"web\":{\"domain\":\"pavelchocholousgmail-admin.sharepoint.com\",\"browser\":\"Chrome\",\"browserVer\":\"157\",\"screenRes\":\"1400X1000\",\"userConsent\":false},\"os\":{\"name\":\"Mac OS X\",\"ver\":\"10\"},\"intweb\":{},\"utc\":{\"popSample\":100,\"eventFlags\":4194304},\"loc\":{\"tz\":\"+01:00\"},\"device\":{\"localId\":\"c:b809f0c7-e112-4521-bb99-17c8b5dd5afc\"}},\"data\":{\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15;SystemPropertiesCollector=3.2.15;SamplingPlugin=1.0;StringifyProperties=1.0;StrictCustomProperties=1.0;DataScrubber=1.0\"}},\"CorrelationVector\":\"00000000-0000-0000-0000-000000000000#abdb9b42-4b04-49b8-9de6-45b50ba79ae7#6df6066f-c9c3-4f02-b4f6-9947814d23c3\",\"WebLog_FullName\":\"Engagement,\",\"WebLog_EventType\":\"Single\",\"WebLog_Type_Engagement\":\"1\",\"SPFx\":{\"TelemetrySource\":\"SPFx\"},\"Debug\":{\"EventSource\":\"Global-OneDS-sp-client-aria-main\"},\"PrivacyClassification\":\"optionalDiagnostic\",\"Name\":\"ApiManagementPage.WebApiPermissionPanel.ApproveButton.click\",\"SiteId\":\"67f0f40a-10d8-42e3-b708-a0a3155f9432\",\"WebId\":\"c0c22d82-67cb-4199-9509-774d2754d21e\",\"Engagement_extraData_isHub\":\"false\",\"Eng",
+  "response": "{\"acc\":4,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:23.192Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 204,
+  "request": "{\"name\":\"ev_rumonedataupload\",\"time\":\"2026-11-23T10:05:22.104Z\",\"ver\":\"4.0\",\"iKey\":\"o:28f004ff2be44e8997a6f113043d583d\",\"ext\":{\"sdk\":{\"ver\":\"1DS-Web-JS-3.2.15\",\"seq\":332,\"installId\":\"e345dd42-bb58-4c40-be40-fe2c1fc3dbf8\",\"epoch\":\"1443065908\"},\"app\":{\"ver\":\"odsp-web-prod_2026-11-13.006\",\"locale\":\"en-US\",\"env\":\"prod\",\"sesId\":\"PC9vJIbJe/waxNYyDwJ7ST\"},\"user\":{\"locale\":\"cs-CZ\",\"localId\":\"i:0h.f|membership|100320065da63a13@live.com\"},\"web\":{\"domain\":\"pavelchocholousgmail-admin.sharepoint.com\",\"browser\":\"Chrome\",\"browserVer\":\"157\",\"screenRes\":\"1400X1000\",\"userConsent\":false},\"os\":{\"name\":\"Mac OS X\",\"ver\":\"10\"},\"intweb\":{},\"utc\":{\"popSample\":100,\"eventFlags\":4194304},\"loc\":{\"tz\":\"+01:00\"},\"device\":{\"localId\":\"c:b809f0c7-e112-4521-bb99-17c8b5dd5afc\"}},\"data\":{\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15;SystemPropertiesCollector=3.2.15;SamplingPlugin=1.0;StringifyProperties=1.0;StrictCustomProperties=1.0;DataScrubber=1.0\"}},\"CorrelationVector\":\"00000000-0000-0000-0000-000000000000#abdb9b42-4b04-49b8-9de6-45b50ba79ae7#e56d8dcc-5155-4b94-8e49-feccfad5053c\",\"WebLog_FullName\":\"RUMOneDataUpload,\",\"WebLog_EventType\":\"Single\",\"WebLog_Type_RUMOneDataUpload\":\"1\",\"Debug\":{\"EventSource\":\"Global-OneDS-sp-client-aria-main\"},\"PrivacyClassification\":\"requiredService\",\"RUMOneDataUpload_streamName\":\"RUMOne\",\"RUMOneDataUpload_dictionary_spLoaderStart\":\"3882\",\"RUMOneDataUpload_dictionary_crossAppNavigationStart\":\"3889\",\"RUMOneDataUpload_dictionary_appStart\":\"3889\",\"RUMOneDataUpload_dictionar",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:23.192Z",
+  "method": "POST",
+  "url": "https://eu-office.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 204,
+  "request": "{\"name\":\"Office.Taos.Shell.Performance\",\"time\":\"2026-11-23T10:05:22.113Z\",\"ver\":\"4.0\",\"iKey\":\"o:b0c82c6598ad49f3848b1d3dc0d8dd25\",\"ext\":{\"sdk\":{\"seq\":51,\"ver\":\"1DS-Web-JS-3.2.15\"},\"metadata\":{\"f\":{\"Event.Time\":{\"t\":9},\"Event.Sequence\":{\"t\":4},\"Data.shell_core_executioncomplete\":{\"t\":6},\"Data.BeginningOfTime\":{\"t\":6},\"Data.SuiteAndTenantBranding\":{\"t\":6},\"Data.SettingsTimeToInteractive\":{\"t\":6},\"Data.HelpTimeToInteractive\":{\"t\":6},\"Data.PrefetchOAuthAccessTokenStarted\":{\"t\":6},\"Data.TokenFactoryIframeLoadStarted\":{\"t\":6},\"Data.PlusRenderComplete\":{\"t\":6},\"Data.shell_plus_executioncomplete\":{\"t\":6},\"Data.shell_mecontrolProfilePic_start\":{\"t\":6},\"Data.SearchSetProviderConfigUpdaters\":{\"t\":6},\"Data.TokenFactoryIframeLoadCompleted\":{\"t\":6},\"Data.shell_mecontrolProfilePic_download_end\":{\"t\":6},\"Data.NavigationAway\":{\"t\":6},\"Data.BootStrapperLoadingStarted\":{\"t\":6},\"Data.BootStrapperLoadingComplete\":{\"t\":6},\"Data.HeaderLoadingStarted\":{\"t\":6},\"Data.HeaderLoadingComplete\":{\"t\":6},\"Data.LegacyHeaderLoadingStarted\":{\"t\":6},\"Data.LegacyHeaderLoadingComplete\":{\"t\":6},\"Data.ResponsiveLoadingStarted\":{\"t\":6},\"Data.ResponsiveLoadingComplete\":{\"t\":6},\"Data.shell_string_download_started\":{\"t\":6},\"Data.shell_string_download_ended\":{\"t\":6},\"Data.SearchLoadingStarted\":{\"t\":6},\"Data.SearchLoadingComplete\":{\"t\":6},\"Data.CoreLoadingStarted\":{\"t\":6},\"Data.CoreLoadingComplete\":{\"t\":6},\"Data.PlusLoadingStarted\":{\"t\":6},\"Data.PlusLoadingComplete\":{\"t\":6},\"Data.shell_bootinfo_request_start\":{\"t\":6},\"Dat",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:23.814Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_layouts/15/online/handlers/SpoSuiteLinks.ashx",
+  "status": 200,
+  "request": "",
+  "response": "{\n \"SPSuiteVersion\":2,\n \"SPIsMobile\":false,\n \"CssUrl\":\"https://res-1.cdn.office.net/shellux/suiteux.shell.shared.384aace5f98a8622f421cf599357b68d.css\",\n \"JsUrl\":\"https://res-1.cdn.office.net/shellux/suiteux.shell.bootstrapper.c15a97fab3f8fa4fd74e.js\",\n \"NavBarData\":{\"AboutMeLink\":null,\"AdminLink\":{\"BackgroundColor\":\"#58595B\",\"BrandBarText\":null,\"FontIconCss\":\"ms-Icon ms-Icon--AdminNewLogo\",\"Id\":\"ShellAdmin\",\"MenuName\":null,\"ServiceId\":null,\"SubLinks\":null,\"TargetWindow\":null,\"Text\":\"Admin\",\"Title\":\"Go to the Office 365 admin center\",\"Url\":\"https://admin.microsoft.com/?login_hint=pavel.chocholous_gmail.com%23EXT%23%40pavelchocholousgmail.onmicrosoft.com&source=applauncher\"},\"AppsImage\":null,\"AppsLinks\":[],\"ClientData\":\"{\\\"AADDisambiguationEnabled\\\":true,\\\"AADForgetUrl\\\":\\\"https://login.microsoftonline.com/forgetuser\\\",\\\"AADRememberedAccountsUrl\\\":\\\"https://login.microsoftonline.com/savedusers?wreply={0}&appid={1}\\\",\\\"AADSignOutAndForgetUrl\\\":\\\"https://login.microsoftonline.com/uxlogout?shouldForgetUser=true&wreply={0}&appid={1}\\\",\\\"AADSignOutUrl\\\":\\\"https://login.microsoftonline.com/uxlogout?shouldForgetUser=false&wreply={0}&appid={1}\\\",\\\"AccountSwitchingEnabled\\\":true,\\\"ActiveExperiences\\\":\\\"Admin,IW\\\",\\\"AppDataCache\\\":[],\\\"AppGalleryUrl\\\":\\\"https://m365.cloud.microsoft/apps?auth=2&home=1&username=pavel.chocholous_gmail.com#EXT#@pavelchocholousgmail.onmicrosoft.com&login_hint=pavel.chocholous_gmail.com#EXT#@pavelchocholousgmail.onmicrosoft.com\\\",\\\"AppHeaderLinkText\\\":null,\\\"A"
+ },
+ {
+  "t": "2026-11-23T10:05:23.815Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Manifest\":\"{\\\"manifestVersion\\\":2,\\\"id\\\":\\\"160df197-bba5-4acb-a0d0-af19700406fa\\\",\\\"alias\\\":\\\"FluentUIV9ReactLink\\\",\\\"componentType\\\":\\\"Library\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-link-bundle\\\",\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-link-bundle_none_986a2401131144e8.js\\\",\\\"integrity\\\":\\\"sha256-sqhR3Uz/NHk509Y4S8bz3OHuLQncutmTGzNMbkk44Mc=\\\"}},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\"},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"conditionalOverrides\\\":[{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}],\\\"fallbackVersion\\\":{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"0ec74f52-"
+ },
+ {
+  "t": "2026-11-23T10:05:23.815Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"389acdd9-7fe2-4938-9343-d2ea32ad0e01\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"389acdd9-7fe2-4938-9343-d2ea32ad0e01\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactImage\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-image-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-image-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-image-bundle_none_6a74fb1ee7848056.js\\\",\\\"integrity\\\":\\\"sha256-fLi1qfT0HpAwJAcHp+3LcbT0TEg+UYISW9BAy3N2mGo=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"failoverPath\\\":null,\\\"fallbackV"
+ },
+ {
+  "t": "2026-11-23T10:05:23.844Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"version\":\"0.2.6\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Manifest\":\"{\\\"version\\\":\\\"0.2.6\\\",\\\"alias\\\":\\\"office-browser-feedback\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"office-browser-feedback\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"office-browser-feedback\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"office-browser-feedback_none_8353782b6f2d6c38.js\\\",\\\"integrity\\\":\\\"sha256-gtHF9RVLHIJDkFM3gKY8V0kSsukwsSzL8LkHkPH5Hqo=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-core-library\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"7263c7d0-1d6a-45ec-8d85-d4d1d234171b\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-diagnostics\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"78359e4b-07c2-43c6-8d0b-d060b4d577e8\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null"
+ },
+ {
+  "t": "2026-11-23T10:05:23.844Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"a1cb867b-abbe-4db4-a16c-510bd4b07844\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"a1cb867b-abbe-4db4-a16c-510bd4b07844\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactMessageBar\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-message-bar-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-message-bar-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-message-bar-bundle_none_288735f8ac0fba43.js\\\",\\\"integrity\\\":\\\"sha256-fC1nZS7GBKT/YfS5uSjF6tlYGQrfbkFJ4B2RImOBqWI=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-button-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"72ec0651-8a26-441c-87f2-77ec66884ca3\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"160df197-bba5-4acb-a0d0-af1970"
+ },
+ {
+  "t": "2026-11-23T10:05:23.844Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"deedf534-44db-4a94-95b6-ade81a49ed20\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"deedf534-44db-4a94-95b6-ade81a49ed20\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentMigrationUtilities\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"fluent-migration-utilities-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"fluent-migration-utilities-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"fluent-migration-utilities-bundle_none_af6254f4760b78c1.js\\\",\\\"integrity\\\":\\\"sha256-F9+6ibKBAAchqC5hieTvaXyRiiK4JgiEjxpqT/4m+XA=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/odsp-core-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"2e09fb9b-13bb-48f2-859f-97d6fff71176\\\",\\\"version\\\":\\\"1.5.263\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sharepoint-ui-tokens-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"c6e9b8a2-5f7d-4e0b-8b9b-1e3c7a9d3f4f\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failove"
+ },
+ {
+  "t": "2026-11-23T10:05:23.845Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Manifest\":\"{\\\"manifestVersion\\\":2,\\\"id\\\":\\\"160df197-bba5-4acb-a0d0-af19700406fa\\\",\\\"alias\\\":\\\"FluentUIV9ReactLink\\\",\\\"componentType\\\":\\\"Library\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-link-bundle\\\",\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-link-bundle_none_986a2401131144e8.js\\\",\\\"integrity\\\":\\\"sha256-sqhR3Uz/NHk509Y4S8bz3OHuLQncutmTGzNMbkk44Mc=\\\"}},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\"},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"conditionalOverrides\\\":[{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}],\\\"fallbackVersion\\\":{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"0ec74f52-"
+ },
+ {
+  "t": "2026-11-23T10:05:23.848Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"Manifest\":\"{\\\"manifestVersion\\\":2,\\\"id\\\":\\\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\\\",\\\"alias\\\":\\\"FluentUIV9ReactText\\\",\\\"componentType\\\":\\\"Library\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-text-bundle\\\",\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-text-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-text-bundle_none_3e961c3225e8fb36.js\\\",\\\"integrity\\\":\\\"sha256-eT65g6tfPhiPnV0Kmsxouym9phITsn2dA4QW15srygk=\\\"}},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\"},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"conditionalOverrides\\\":[{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}],\\\"fallbackVersion\\\":{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"0ec74f52-"
+ },
+ {
+  "t": "2026-11-23T10:05:23.848Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactText\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-text-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-text-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-text-bundle_none_3e961c3225e8fb36.js\\\",\\\"integrity\\\":\\\"sha256-eT65g6tfPhiPnV0Kmsxouym9phITsn2dA4QW15srygk=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"failoverPath\\\":null,\\\"fallbackVersi"
+ },
+ {
+  "t": "2026-11-23T10:05:23.848Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"3bbab303-6375-447d-a919-a6d5363d0942\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"3bbab303-6375-447d-a919-a6d5363d0942\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactDrawer\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-drawer-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-drawer-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-drawer-bundle_none_a8cda9a92f785234.js\\\",\\\"integrity\\\":\\\"sha256-MAlAGbxK+DWSaD3/xcVSireDyXLry9Yb1ElCC7Q7Sl8=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-dialog-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"c4016abc-9cc8-4869-ac2f-278195db557b\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-motion-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0c471b33-6e5e-4e4b-9c3b-af2b125beb72\\\",\\\"versio"
+ },
+ {
+  "t": "2026-11-23T10:05:23.850Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"a1cb867b-abbe-4db4-a16c-510bd4b07844\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"a1cb867b-abbe-4db4-a16c-510bd4b07844\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactMessageBar\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-message-bar-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-message-bar-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-message-bar-bundle_none_288735f8ac0fba43.js\\\",\\\"integrity\\\":\\\"sha256-fC1nZS7GBKT/YfS5uSjF6tlYGQrfbkFJ4B2RImOBqWI=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-button-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"72ec0651-8a26-441c-87f2-77ec66884ca3\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"160df197-bba5-4acb-a0d0-af1970"
+ },
+ {
+  "t": "2026-11-23T10:05:23.850Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"bae3a2de-5b32-48c0-83f2-2227ce17a408\",\"version\":\"5.6.2\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"bae3a2de-5b32-48c0-83f2-2227ce17a408\",\"Manifest\":\"{\\\"manifestVersion\\\":2,\\\"id\\\":\\\"bae3a2de-5b32-48c0-83f2-2227ce17a408\\\",\\\"alias\\\":\\\"SPMsalBrowser\\\",\\\"componentType\\\":\\\"Library\\\",\\\"version\\\":\\\"5.6.2\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-msal-browser\\\",\\\"scriptResources\\\":{\\\"sp-msal-browser\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"sp-msal-browser_none_1e74ddf792bd5160.js\\\",\\\"integrity\\\":\\\"sha256-rb8LLVD6HRUgGvHE91r7dREXeL5oqX6dt2a4ejQlPAU=\\\"}}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"bae3a2de-5b32-48c0-83f2-2227ce17a408\",\"Status\":0}]}"
+ },
+ {
+  "t": "2026-11-23T10:05:23.850Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Manifest\":\"{\\\"manifestVersion\\\":2,\\\"id\\\":\\\"160df197-bba5-4acb-a0d0-af19700406fa\\\",\\\"alias\\\":\\\"FluentUIV9ReactLink\\\",\\\"componentType\\\":\\\"Library\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-link-bundle\\\",\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-link-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-link-bundle_none_986a2401131144e8.js\\\",\\\"integrity\\\":\\\"sha256-sqhR3Uz/NHk509Y4S8bz3OHuLQncutmTGzNMbkk44Mc=\\\"}},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\"},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"conditionalOverrides\\\":[{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}],\\\"fallbackVersion\\\":{\\\"version\\\":\\\"18.3.1\\\",\\\"condition\\\":{\\\"switchType\\\":\\\"flight\\\",\\\"id\\\":63184}}}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"160df197-bba5-4acb-a0d0-af19700406fa\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"0ec74f52-"
+ },
+ {
+  "t": "2026-11-23T10:05:23.854Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"version\":\"0.2.6\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Manifest\":\"{\\\"version\\\":\\\"0.2.6\\\",\\\"manifestVersion\\\":2,\\\"id\\\":\\\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\\\",\\\"alias\\\":\\\"office-browser-feedback\\\",\\\"componentType\\\":\\\"Library\\\",\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"office-browser-feedback\\\",\\\"scriptResources\\\":{\\\"office-browser-feedback\\\":{\\\"type\\\":\\\"path\\\",\\\"path\\\":{\\\"path\\\":\\\"office-browser-feedback_none_8353782b6f2d6c38.js\\\",\\\"integrity\\\":\\\"sha256-gtHF9RVLHIJDkFM3gKY8V0kSsukwsSzL8LkHkPH5Hqo=\\\"}},\\\"@microsoft/sp-core-library\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"7263c7d0-1d6a-45ec-8d85-d4d1d234171b\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"@microsoft/sp-diagnostics\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"78359e4b-07c2-43c6-8d0b-d060b4d577e8\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"@microsoft/sp-loader\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"1c6c9123-7aac-41f3-a376-3caea41ed83f\\\",\\\"version\\\":\\\"1.25.0\\\"},\\\"tslib\\\":{\\\"type\\\":\\\"component\\\",\\\"id\\\":\\\"01c4df03-e775-48cb-aa14-171ee5199a15\\\",\\\"version\\\":\\\"2.3.1\\\"}}},\\\"isInternal\\\":true}\",\"ManifestActivatedTime\":null,\"ManifestType\":1,\"Name\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Status\":0},{\"ComponentType\":3,\"Id\":\"7263c7d0-"
+ },
+ {
+  "t": "2026-11-23T10:05:23.857Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"version\":\"0.2.6\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Manifest\":\"{\\\"version\\\":\\\"0.2.6\\\",\\\"alias\\\":\\\"office-browser-feedback\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"office-browser-feedback\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"office-browser-feedback\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"office-browser-feedback_none_8353782b6f2d6c38.js\\\",\\\"integrity\\\":\\\"sha256-gtHF9RVLHIJDkFM3gKY8V0kSsukwsSzL8LkHkPH5Hqo=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-core-library\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"7263c7d0-1d6a-45ec-8d85-d4d1d234171b\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-diagnostics\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"78359e4b-07c2-43c6-8d0b-d060b4d577e8\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null"
+ },
+ {
+  "t": "2026-11-23T10:05:23.886Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"2dbdb4b7-484e-4598-b8fe-ad84ff2ee080\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactText\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-text-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-text-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-text-bundle_none_3e961c3225e8fb36.js\\\",\\\"integrity\\\":\\\"sha256-eT65g6tfPhiPnV0Kmsxouym9phITsn2dA4QW15srygk=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-utilities-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0ec74f52-38bc-4a51-ab82-7c91a2b399a2\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"react\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0d910c1c-13b9-4e1c-9aa4-b008c5e42d7d\\\",\\\"version\\\":\\\"17.0.1\\\",\\\"failoverPath\\\":null,\\\"fallbackVersi"
+ },
+ {
+  "t": "2026-11-23T10:05:23.902Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/GetFilteredSPListItems",
+  "status": 200,
+  "request": "{\"columnName\":\"PUID_KEY\",\"columnValue\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:HasVisitedAdvancedManagementPage\",\"columnType\":\"Text\",\"listName\":\"DO_NOT_DELETE_SPLIST_TENANTADMIN_USERSTORAGE\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#ListItems\",\"value\":[{\"@odata.type\":\"#SP.Data.DO_x005f_NOT_x005f_DELETE_x005f_SPLIST_x005f_TENANTADMIN_x005f_USERSTORAGEListItem\",\"@odata.id\":\"88173d99-fb66-4a18-b9c0-2edfe5e7fe1a\",\"@odata.etag\":\"\\\"1\\\"\",\"@odata.editLink\":\"Web/Lists(guid'c30100c7-516d-48f5-a4c8-bf1a31d0d5fe')/Items(4)\",\"FileSystemObjectType\":0,\"Id\":4,\"ServerRedirectedEmbedUri\":null,\"ServerRedirectedEmbedUrl\":\"\",\"ContentTypeId\":\"0x010068A3C237EB437446AD9ABC3A221D92F8\",\"Title\":null,\"OData__ColorTag\":null,\"ComplianceAssetId\":null,\"PUID_KEY\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:HasVisitedAdvancedManagementPage\",\"PUID\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com\",\"Key\":\"HasVisitedAdvancedManagementPage\",\"Value\":\"{\\\"v\\\":\\\"20200306\\\",\\\"data\\\":true}\",\"ID\":4,\"Modified\":\"2026-11-22T19:48:57Z\",\"Created\":\"2026-11-22T19:48:57Z\",\"AuthorId\":15,\"EditorId\":15,\"OData__UIVersionString\":\"1.0\",\"Attachments\":false,\"GUID\":\"9675b9a5-db00-436f-963a-10c8bdd247e9\"}]}"
+ },
+ {
+  "t": "2026-11-23T10:05:23.908Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/GetFilteredSPListItems",
+  "status": 200,
+  "request": "{\"columnName\":\"PUID_KEY\",\"columnValue\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPONewAdminCenterVisited\",\"columnType\":\"Text\",\"listName\":\"DO_NOT_DELETE_SPLIST_TENANTADMIN_USERSTORAGE\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#ListItems\",\"value\":[{\"@odata.type\":\"#SP.Data.DO_x005f_NOT_x005f_DELETE_x005f_SPLIST_x005f_TENANTADMIN_x005f_USERSTORAGEListItem\",\"@odata.id\":\"694abe88-6d0a-45b8-ab5a-d542db9efc17\",\"@odata.etag\":\"\\\"2\\\"\",\"@odata.editLink\":\"Web/Lists(guid'c30100c7-516d-48f5-a4c8-bf1a31d0d5fe')/Items(3)\",\"FileSystemObjectType\":0,\"Id\":3,\"ServerRedirectedEmbedUri\":null,\"ServerRedirectedEmbedUrl\":\"\",\"ContentTypeId\":\"0x010068A3C237EB437446AD9ABC3A221D92F8\",\"Title\":null,\"OData__ColorTag\":null,\"ComplianceAssetId\":null,\"PUID_KEY\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPONewAdminCenterVisited\",\"PUID\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com\",\"Key\":\"SPONewAdminCenterVisited\",\"Value\":\"{\\\"v\\\":\\\"20200306\\\",\\\"data\\\":[{\\\"key\\\":\\\"SPONewAdminCenterVisited\\\",\\\"date\\\":\\\"2026-11-23T08:48:14.907Z\\\"}]}\",\"ID\":3,\"Modified\":\"2026-11-23T08:48:15Z\",\"Created\":\"2026-11-22T19:48:56Z\",\"AuthorId\":15,\"EditorId\":15,\"OData__UIVersionString\":\"2.0\",\"Attachments\":false,\"GUID\":\"39fef3cd-58cb-49a2-92d7-f6c080dc9fbe\"}]}"
+ },
+ {
+  "t": "2026-11-23T10:05:24.156Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"32b9363b-09ff-4959-929a-cab2663fb223\",\"version\":\"3.0.2\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"32b9363b-09ff-4959-929a-cab2663fb223\",\"Manifest\":\"{\\\"version\\\":\\\"3.0.2\\\",\\\"alias\\\":\\\"MicrosoftGraphClient\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"ms-graph-v3-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"ms-graph-v3-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"ms-graph-v3-bundle_none_b9b85465f9c7bad3.js\\\",\\\"integrity\\\":\\\"sha256-q/ytHtFA8IhDR4ncmq000fzj9TpQ2ypobWOYrCUvrhI=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"tslib\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"01c4df03-e775-48cb-aa14-171ee5199a15\\\",\\\"version\\\":\\\"2.3.1\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null}}},\\\"isolatedDomain\\\":null,\\\"experimentalData\\\":null,\\\"manifestVersion\\\":2,\\\"id\\\":\\\"32b9363b-09ff-4959-929a-cab2663fb223\\\",\\\"componentType\\\":\\\"Library\\\",\\\"storeAppId\\\":null,\\\"mpnId\\\":null,\\\"clientComponentDeveloper\\\":null}\",\"ManifestActivatedTime\":n"
+ },
+ {
+  "t": "2026-11-23T10:05:24.228Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/UpdateJobsWorkItems",
+  "status": 204,
+  "request": "{\"jobIds\":[\"4836ed63-ad9e-43eb-993c-c5a6654e4bce\",\"542e66ec-1e70-4915-851c-71fafb3b0548\",\"e704fda2-bcc2-431d-ba8b-bed0c9799533\",\"b6aea009-970c-4b19-8c53-b88c9c0c1ce7\"]}",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:24.255Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/GetFilteredSPListItems",
+  "status": 200,
+  "request": "{\"columnName\":\"PUID_KEY\",\"columnValue\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPOTenantAdmin_SplashScreenVersion\",\"columnType\":\"Text\",\"listName\":\"DO_NOT_DELETE_SPLIST_TENANTADMIN_USERSTORAGE\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#ListItems\",\"value\":[{\"@odata.type\":\"#SP.Data.DO_x005f_NOT_x005f_DELETE_x005f_SPLIST_x005f_TENANTADMIN_x005f_USERSTORAGEListItem\",\"@odata.id\":\"02a72ed4-6ea6-447a-8b0a-2dbafceb8d6e\",\"@odata.etag\":\"\\\"1\\\"\",\"@odata.editLink\":\"Web/Lists(guid'c30100c7-516d-48f5-a4c8-bf1a31d0d5fe')/Items(5)\",\"FileSystemObjectType\":0,\"Id\":5,\"ServerRedirectedEmbedUri\":null,\"ServerRedirectedEmbedUrl\":\"\",\"ContentTypeId\":\"0x010068A3C237EB437446AD9ABC3A221D92F8\",\"Title\":null,\"OData__ColorTag\":null,\"ComplianceAssetId\":null,\"PUID_KEY\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPOTenantAdmin_SplashScreenVersion\",\"PUID\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com\",\"Key\":\"SPOTenantAdmin_SplashScreenVersion\",\"Value\":\"{\\\"v\\\":\\\"20200306\\\",\\\"data\\\":[{\\\"key\\\":\\\"SPOTenantAdmin_SplashScreenVersion\\\",\\\"version\\\":\\\"5\\\"}]}\",\"ID\":5,\"Modified\":\"2026-11-23T08:43:21Z\",\"Created\":\"2026-11-23T08:43:21Z\",\"AuthorId\":15,\"EditorId\":15,\"OData__UIVersionString\":\"1.0\",\"Attachments\":false,\"GUID\":\"6536e65e-77bc-498b-bcb6-8c5302579f56\"}]}"
+ },
+ {
+  "t": "2026-11-23T10:05:24.356Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/GetIsolatedAppDomainsByAppId",
+  "status": 200,
+  "request": "{\"appIds\":[]}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(SP.KeyValue)\",\"value\":[]}"
+ },
+ {
+  "t": "2026-11-23T10:05:24.422Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"3bbab303-6375-447d-a919-a6d5363d0942\",\"version\":\"0.1.0\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"3bbab303-6375-447d-a919-a6d5363d0942\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FluentUIV9ReactDrawer\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-fluentui-v9-react-drawer-bundle\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-fluentui-v9-react-drawer-bundle\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"sp-fluentui-v9-react-drawer-bundle_none_a8cda9a92f785234.js\\\",\\\"integrity\\\":\\\"sha256-MAlAGbxK+DWSaD3/xcVSireDyXLry9Yb1ElCC7Q7Sl8=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-dialog-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"c4016abc-9cc8-4869-ac2f-278195db557b\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@msinternal/sp-fluentui-v9-react-motion-bundle\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"0c471b33-6e5e-4e4b-9c3b-af2b125beb72\\\",\\\"versio"
+ },
+ {
+  "t": "2026-11-23T10:05:24.440Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPO.Tenant/GetFilteredSPListItems",
+  "status": 200,
+  "request": "{\"columnName\":\"PUID_KEY\",\"columnValue\":\"pavel.chocholous_gmail.com#ext#@pavelchocholousgmail.onmicrosoft.com:SPOTenantAdmin_DismissedAdvancedManagementContentAssessmentNavLinkTeachingBubble\",\"columnType\":\"Text\",\"listName\":\"DO_NOT_DELETE_SPLIST_TENANTADMIN_USERSTORAGE\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#ListItems\",\"value\":[]}"
+ },
+ {
+  "t": "2026-11-23T10:05:24.447Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"version\":\"0.2.6\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"069100e9-5e61-4cba-9e4b-7f8a3c22f869\",\"Manifest\":\"{\\\"version\\\":\\\"0.2.6\\\",\\\"alias\\\":\\\"office-browser-feedback\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"office-browser-feedback\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"office-browser-feedback\\\":{\\\"type\\\":\\\"path\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":{\\\"path\\\":\\\"office-browser-feedback_none_8353782b6f2d6c38.js\\\",\\\"integrity\\\":\\\"sha256-gtHF9RVLHIJDkFM3gKY8V0kSsukwsSzL8LkHkPH5Hqo=\\\"},\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-core-library\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"7263c7d0-1d6a-45ec-8d85-d4d1d234171b\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null,\\\"paths\\\":null,\\\"globalName\\\":null,\\\"globalDependencies\\\":null},\\\"@microsoft/sp-diagnostics\\\":{\\\"type\\\":\\\"component\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":\\\"78359e4b-07c2-43c6-8d0b-d060b4d577e8\\\",\\\"version\\\":\\\"1.25.0\\\",\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":null"
+ },
+ {
+  "t": "2026-11-23T10:05:24.501Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/web/GetClientSideComponents",
+  "status": 200,
+  "request": "{\"components\":[{\"id\":\"6da60671-741f-47c5-b35b-5078edaf312f\"}],\"project\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\"}",
+  "response": "{\"@odata.context\":\"https://pavelchocholousgmail-admin.sharepoint.com/_api/$metadata#Collection(Microsoft.SharePoint.ClientSideComponent.SPClientSideComponentQueryResult)\",\"value\":[{\"ComponentType\":3,\"Id\":\"6da60671-741f-47c5-b35b-5078edaf312f\",\"Manifest\":\"{\\\"version\\\":\\\"0.1.0\\\",\\\"alias\\\":\\\"FirstRunExperience\\\",\\\"preloadComponents\\\":null,\\\"loadLegacyFabricCss\\\":false,\\\"isInternal\\\":true,\\\"loaderConfig\\\":{\\\"internalModuleBaseUrls\\\":[\\\"https://res.public.onecdn.static.microsoft:443/files/sp-client/\\\",\\\"https://res-1.public.onecdn.static.microsoft:443/files/sp-client/\\\"],\\\"entryModuleId\\\":\\\"sp-coachmark-utility\\\",\\\"exportName\\\":null,\\\"scriptResources\\\":{\\\"sp-coachmark-utility\\\":{\\\"type\\\":\\\"localizedPath\\\",\\\"shouldNotPreload\\\":false,\\\"id\\\":null,\\\"version\\\":null,\\\"failoverPath\\\":null,\\\"path\\\":null,\\\"defaultPath\\\":{\\\"path\\\":\\\"sp-coachmark-utility_default_a658a96c7dfc6d99.js\\\",\\\"integrity\\\":\\\"sha256-OhHb6v/r9jIallVZIcImKJDTaC8pDAl31M5GrWWGUDk=\\\"},\\\"paths\\\":{\\\"ar-SA\\\":{\\\"path\\\":\\\"sp-coachmark-utility_ar-sa_2a124a51cb103540.js\\\",\\\"integrity\\\":\\\"sha256-2ToZELxQoKcYCgy+ThECbWM5Sb1aokZ+6feLD73a5nM=\\\"},\\\"az-Latn-AZ\\\":{\\\"path\\\":\\\"sp-coachmark-utility_az-latn-az_be473a12a890e40b.js\\\",\\\"integrity\\\":\\\"sha256-2QMONGLEjXT9qEMQBXskNvnF2tqr7fXsURg4wkZWHlY=\\\"},\\\"bg-BG\\\":{\\\"path\\\":\\\"sp-coachmark-utility_bg-bg_ee4103e8345514e3.js\\\",\\\"integrity\\\":\\\"sha256-/e9MdQ6Na27XQyv+tKBRNgFYdOct7kw3yHw4Zmc386Y=\\\"},\\\"bs-Latn-BA\\\":{\\\"path\\\":\\\"sp-coachmark-utility_bs-latn-ba_7809361d20cda6e0.js\\\",\\\"integrity\\\":\\\"sha2"
+ },
+ {
+  "t": "2026-11-23T10:05:24.625Z",
+  "method": "POST",
+  "url": "https://graph.microsoft.com/beta/$batch",
+  "status": 200,
+  "request": "{\"requests\":[{\"id\":\"0\",\"method\":\"GET\",\"url\":\"oAuth2Permissiongrants/?$filter=clientId eq '183c53de-4106-4613-952c-a9cfd34857b0' and consentType eq 'AllPrincipals'\"}]}",
+  "response": "{\"responses\": [{\"id\":\"0\",\"status\":200,\"headers\":{\"Cache-Control\":\"no-cache\",\"x-ms-resource-unit\":\"2\",\"OData-Version\":\"4.0\",\"Content-Type\":\"application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8\"},\"body\":{\"@odata.context\":\"https://graph.microsoft.com/beta/$metadata#oauth2PermissionGrants\",\"value\":[{\"clientId\":\"183c53de-4106-4613-952c-a9cfd34857b0\",\"consentType\":\"AllPrincipals\",\"expiryTime\":\"9999-12-31T23:59:59.9999999Z\",\"id\":\"3lM8GAZBE0aVLKnP00hXsKLH5Olwmj5Bv5L7mHRxcX0\",\"principalId\":null,\"resourceId\":\"e9e4c7a2-9a70-413e-bf92-fb987471717d\",\"scope\":\"AppCatalog.Read.All AppCatalog.Submit Calendars.Read Calendars.Read.Shared Calendars.ReadBasic Calendars.ReadWrite Calendars.ReadWrite.Shared Channel.Create Channel.ReadBasic.All ChatMember.Read EduAssignments.ReadBasic EduRoster.ReadBasic FileStorageContainer.Selected Files.Read Files.Read.All Files.ReadWrite.All Group-Conversation.ReadWrite.All Group.Read.All GroupMember.Read.All InformationProtectionPolicy.Read People.Read People.Read.All Place.Read.All Presence.Read.All PrintJob.Create PrintJob.ReadBasic PrinterShare.ReadBasic.All SensitivityLabel.Read Sites.Read.All Tasks.ReadWrite Team.ReadBasic.All TeamsAppInstallation.ReadWriteForTeam TeamsAppInstallation.ReadWriteSelfForTeam TeamsTab.Create User.Read User.ReadBasic.All Mail.Send\",\"startTime\":\"0001-01-01T00:00:00Z\"},{\"clientId\":\"183c53de-4106-4613-952c-a9cfd34857b0\",\"consentType\":\"AllPrincipals\",\"expiryTime\":\"9999-12-31T23:59:59.99"
+ },
+ {
+  "t": "2026-11-23T10:05:24.921Z",
+  "method": "POST",
+  "url": "https://portal.office.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":520642,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Use hvc-loader version: 2 or older\",\"Adhoc0\":\"aea051a2-4036-0001-45dd-d9210cf38861\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":522022,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"UX platform availability ForeignFeatureInitializeRuntime\",\"Adhoc0\":\"aea051a2-4036-0001-45dd-d9210cf38861\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{\\\"data\\\":{}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"}]",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:25.022Z",
+  "method": "POST",
+  "url": "https://portal.office.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":508372,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"uxVersion Data is provided thru parameter\",\"Adhoc0\":\"aea051a2-4036-0001-45dd-d9210cf38861\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"data\\\":\\\"{\\\\\\\"dashboard\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/2026.11.16.7_dashboard.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"dataaccessgovernance\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/2026.11.16.7_dataaccessgovernance.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"migration-manager\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/2026.11.16.7_migration-manager.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\"},\\\\\\\"unified-collaboration-panel\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/unified-collaboration-panel/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/unified-collaboration-panel/20",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:25.274Z",
+  "method": "POST",
+  "url": "https://graph.microsoft.com/beta/$batch",
+  "status": 200,
+  "request": "{\"requests\":[{\"id\":\"0\",\"method\":\"GET\",\"url\":\"servicePrincipals/?$filter=id eq 'e9e4c7a2-9a70-413e-bf92-fb987471717d' or id eq '183c53de-4106-4613-952c-a9cfd34857b0' or id eq 'a36195c1-6ab6-4e80-9985-f46a49b69f40' or id eq 'b553da66-7ce7-410e-a8c9-b0b169a666e2' or id eq '93494e5c-1d54-468b-9c41-f7d6e5c8cfda' or id eq 'a8392cf6-809b-41e1-b3b0-c49a4f6a3b86' or id eq '8340b547-1b7d-4c72-90a5-afd0f4e0d0c9' or id eq '8a1ac519-f08c-4f1b-889c-317a9645208a' or id eq 'f18c9d7f-b3ab-4d3b-97a8-4d4afcbc1736' or id eq '4b368df2-9977-460f-8688-ce84efa250b9' or id eq '6cd0dea2-9b86-4e92-9d67-b6ad47545b36'\"}]}",
+  "response": "{\"responses\": [{\"id\":\"0\",\"status\":200,\"headers\":{\"Deprecation\":\"Mon, 18 Apr 2022 23:59:59 GMT\",\"Sunset\":\"Thu, 18 Apr 2024 23:59:59 GMT\",\"Cache-Control\":\"no-cache\",\"x-ms-resource-unit\":\"1\",\"OData-Version\":\"4.0\",\"Content-Type\":\"application/json;odata.metadata=minimal;odata.streaming=true;IEEE754Compatible=false;charset=utf-8\"},\"body\":{\"@odata.context\":\"https://graph.microsoft.com/beta/$metadata#servicePrincipals\",\"value\":[{\"id\":\"8a1ac519-f08c-4f1b-889c-317a9645208a\",\"deletedDateTime\":null,\"accountEnabled\":true,\"alternativeNames\":[],\"createdByAppId\":null,\"createdDateTime\":\"2026-10-27T03:04:34Z\",\"deviceManagementAppType\":null,\"appDescription\":null,\"appDisplayName\":\"Microsoft Forms\",\"appId\":\"c9a559d2-7aab-4f13-a6ed-e7e9c52aec87\",\"applicationTemplateId\":null,\"appOwnerOrganizationId\":\"f8cdef31-a31e-4b4a-93e4-5f571e91255a\",\"appRoleAssignmentRequired\":false,\"assignmentRequiredForPrincipalTypes\":null,\"description\":null,\"disabledByMicrosoftStatus\":null,\"displayName\":\"Microsoft Forms\",\"errorUrl\":null,\"homepage\":null,\"isAuthorizationServiceEnabled\":false,\"isDisabled\":null,\"isHardDeleteProtectionEnabled\":null,\"isManagementRestricted\":null,\"loginUrl\":null,\"logoutUrl\":\"https://forms.office.com/auth/expirecookie\",\"notes\":null,\"notificationEmailAddresses\":[],\"preferredSingleSignOnMode\":null,\"preferredTokenSigningKeyEndDateTime\":null,\"preferredTokenSigningKeyThumbprint\":null,\"publisherName\":\"Microsoft Services\",\"replyUrls\":[\"https://forms.office.com/landing\",\"https://forms.microsoft.com/landing"
+ },
+ {
+  "t": "2026-11-23T10:05:25.276Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":538284,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: canDisplayUserFeedback() invoked\",\"Adhoc0\":\"6ce6797a-96ab-48e2-8f94-d25171c518fa\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"data\\\":{\\\"clientFeedbackId\\\":null,\\\"timestamp\\\":1795428324096}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538286,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: getCloudPolicyServicePolicies() invoked\",\"Adhoc0\":\"6ce6797a-96ab-48e2-8f94-d25171c518fa\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{\\\"data\\\":{\\\"tenantCloudType\\\":\\\"Worldwide\\\",\\\"timestamp\\\":1795428324096}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":532444,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: Centro Runtime Initialization and preloadFeature Completed.\",\"Adhoc0\":\"6ce6797a-96ab-48e2-8f94-d25171c518fa\",\"Adhoc1\":\"3\",\"Adhoc2\":\"{\\\"data\\\":{\\\"clientFeedbackId\\\":null,\\\"isPrefetched\\\":true,\\\"timestamp\\\":1795428324138}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538287,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: Returning cached policies\",\"Adhoc0\":\"6ce6797a-96ab-48e2-8f94-d25171c518fa\",\"Adhoc1\":\"4\",\"Adhoc2\":\"{\\\"data\\\":{\\\"tenantCloudType\\\":\\\"Worldwide\\\",\\\"nextCheckTime\\\":1795509798825,\\\"timestamp\\\":1795428324139}}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":538284,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"InAppFeedback HVC: canDisplayUserFeedback() invoked\",\"Adhoc0\":\"6ce6797a-96ab-48e2-8f94-d25171c518fa\",\"Adhoc1\":\"5\",\"Adhoc2\":\"{\\\"data\\\":{\\\"clientFeedbackId\\\":null,\\\"timestamp\\\":1795428324627}}\"",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:25.339Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":539805,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"uxVersion Data is provided thru API\",\"Adhoc0\":\"53fe6dd1-ff4c-472e-9765-f00999576ed6\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"data\\\":\\\"{\\\\\\\"dashboard\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dashboard/2026.11.18.0_dashboard.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.18.0\\\\\\\",\\\\\\\"enableIncrementalBuild\\\\\\\":true,\\\\\\\"bundleName\\\\\\\":\\\\\\\"dashboard.en.bundle.js\\\\\\\",\\\\\\\"fallbackVersion\\\\\\\":\\\\\\\"2026.11.16.6\\\\\\\"},\\\\\\\"dataaccessgovernance\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/dataaccessgovernance/2026.11.18.0_dataaccessgovernance.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.18.0\\\\\\\",\\\\\\\"enableIncrementalBuild\\\\\\\":true,\\\\\\\"bundleName\\\\\\\":\\\\\\\"dataaccessgovernance.en.bundle.js\\\\\\\",\\\\\\\"fallbackVersion\\\\\\\":\\\\\\\"2026.11.16.6\\\\\\\"},\\\\\\\"migration-manager\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/migration-manager/2026.11.16.7_migration-manager.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\",\\\\\\\"enableIncrementalBui",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:25.365Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('d8bbd729-bf13-42dd-8937-1ba95d6762bc')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.365Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('4f55f9e1-a390-4cb6-9467-52083fc7cbe5')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.365Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('76da9016-f36e-44df-8837-e2ac3ca528a6')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.416Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('09e54204-f9d3-46b1-b737-bc7c57e6afc0')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.417Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('11308e16-b190-406a-83c7-9cdffaa2c16b')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.417Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('274677cc-8ee4-4fd3-97ba-ab3f6cd1f10c')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.417Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('654024b2-dc21-4fce-8511-42ccf335f87a')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.459Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('853ca148-93be-4320-91a0-6292c5228f8f')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.472Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('8f88cf7e-d4f2-4cc7-acd2-70f4ff501444')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.536Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('4467fd1b-175b-42b0-842d-1a00f740cd69')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.671Z",
+  "method": "POST",
+  "url": "https://portal.office.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":520642,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Use hvc-loader version: 2 or older\",\"Adhoc0\":\"aea051a2-4036-0001-45dd-d9210cf38861\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"\"},{\"TagId\":522022,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"UX platform availability ForeignFeatureInitializeRuntime\",\"Adhoc0\":\"aea051a2-4036-0001-45dd-d9210cf38861\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{\\\"data\\\":{}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":509826,\"LogLevel\":1,\"LogCategory\":\"ClientAvailability\",\"Message\":\"Hvc Load initiated\",\"Adhoc0\":\"aea051a2-4036-0001-45dd-d9210cf38861\",\"Adhoc1\":\"3\",\"Adhoc2\":\"{\\\"data\\\":{\\\"hvc\\\":\\\"centro-copilot-sydney\\\",\\\"hvcVersion\\\":\\\"2026.11.16.7\\\",\\\"reactVersionMajor\\\":18,\\\"timestamp\\\":1795428324638}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":501057,\"LogLevel\":1,\"LogCategory\":\"ClientPerformance\",\"Message\":\"UI Performance Start Event\",\"Adhoc0\":\"aea051a2-4036-0001-45dd-d9210cf38861\",\"Adhoc1\":\"4\",\"Adhoc2\":\"{\\\"data\\\":{\\\"eventName\\\":\\\"navstart\\\",\\\"epoch\\\":1795428324638}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":531304,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Attempting to load deferred module\",\"Adhoc0\":\"aea051a2-4036-0001-45dd-d9210cf38861\",\"Adhoc1\":\"5\",\"Adhoc2\":\"{\\\"data\\\":{\\\"component\\\":\\\"deferred(CentroCopilot)\\\"}}\",\"Adhoc5\":\"\",\"PageName\":\"/webApiPermissionManagement\"},{\"TagId\":509270,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"makeReactBootstrapper step has su",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:25.697Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/Collector/3.0/",
+  "status": 200,
+  "request": "m\t\u000b\u0001J91ac5773078c41d39089fbf88f44d93f-4538b5c2-455a-479b-bade-d30e50c3ca9b-6801\n\u0001I\u0012act_default_source�$621570fd-70f3-4a95-a8d1-e40745ff9810�\u0006�����h�\b\n\u0001)$862d7344-cb49-42cf-a65d-1b1b47d9036fq�����h�\u0006custom�\u0006\u001dspotenantadmin_adminhome_load�\r\t\t\u000f\bTenantId$972a674c-7b85-4e56-a31f-b2f95b42fd1e\u0006UserId+i:0h.f|membership|100320065da63a13@live.com\u0010AppInfo.Language\u0005en-US\u0011UserInfo.Language\u0005cs-CZ\u0011UserInfo.TimeZone\u0006+01:00\u0016DeviceInfo.BrowserName\u0006Chrome\u0019DeviceInfo.BrowserVersion\t157.0.0.0\u0011DeviceInfo.OsName\bMac OS X\u0014DeviceInfo.OsVersion\u000210\rDeviceInfo.Id$b809f0c7-e112-4521-bb99-17c8b5dd5afc\u0010EventInfo.InitId$0976eb4f-b42e-4526-8a28-f0d04d642287\u0012EventInfo.Sequence\u00011\u0014EventInfo.SdkVersion\u0010AWT-Web-JS-1.0.0\u000eEventInfo.Name\u001dspotenantadmin_adminhome_load\u000eEventInfo.Time\u00182026-11-23T10:05:23.604Z\u0000\u0000\u0000",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:25.845Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"ev_engagement\",\"time\":\"2026-11-23T10:05:23.713Z\",\"ver\":\"4.0\",\"iKey\":\"o:28f004ff2be44e8997a6f113043d583d\",\"ext\":{\"sdk\":{\"ver\":\"1DS-Web-JS-3.2.15\",\"seq\":1,\"installId\":\"9759ea9c-30ce-4009-9c06-8bb4398854ca\",\"epoch\":\"180491313\"},\"app\":{\"ver\":\"odsp-web-prod_2026-11-13.006\",\"locale\":\"en-US\",\"env\":\"prod\",\"sesId\":\"GJdmt4Tpnb8Dp339bBknwk\"},\"user\":{\"locale\":\"cs-CZ\",\"localId\":\"i:0h.f|membership|100320065da63a13@live.com\"},\"web\":{\"domain\":\"pavelchocholousgmail-admin.sharepoint.com\",\"browser\":\"Chrome\",\"browserVer\":\"157\",\"screenRes\":\"1400X1000\",\"userConsent\":false},\"os\":{\"name\":\"Mac OS X\",\"ver\":\"10\"},\"intweb\":{},\"utc\":{\"popSample\":100,\"eventFlags\":4194304},\"loc\":{\"tz\":\"+01:00\"},\"device\":{\"localId\":\"c:b809f0c7-e112-4521-bb99-17c8b5dd5afc\"}},\"data\":{\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15;SystemPropertiesCollector=3.2.15;SamplingPlugin=1.0;StringifyProperties=1.0;StrictCustomProperties=1.0;DataScrubber=1.0\"}},\"CorrelationVector\":\"00000000-0000-0000-0000-000000000000#351fe792-7184-4614-aff6-8ba316c8ee9e#b9ac53f0-8424-4407-8d88-84d11c68f5b1\",\"WebLog_FullName\":\"Engagement,\",\"WebLog_EventType\":\"Single\",\"WebLog_Type_Engagement\":\"1\",\"SPFx\":{\"TelemetrySource\":\"SPFx\"},\"Debug\":{\"EventSource\":\"Global-OneDS-sp-client-aria-main\"},\"PrivacyClassification\":\"optionalDiagnostic\",\"Name\":\"SPOTenantAdmin.PageLoad.AdminPageContext.DelayLoad\",\"SiteId\":\"67f0f40a-10d8-42e3-b708-a0a3155f9432\",\"WebId\":\"c0c22d82-67cb-4199-9509-774d2754d21e\",\"Engagement_extraData_isHub\":\"false\",\"Engagement_extr",
+  "response": "{\"acc\":47,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:25.918Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":513924,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"setBaseCDNUrl, CDNContentURL is missing in window.m365config.hostingAppUrls\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{}\",\"Adhoc5\":\"\",\"PageName\":\"/\"},{\"TagId\":500781,\"LogLevel\":4,\"LogCategory\":\"ClientError\",\"Message\":\"UI Exception: setBaseCDNUrl, CDNContentURL is missing in window.m365config.hostingAppUrls\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"version\\\":\\\"host-support-central_2026.11.16.7\\\",\\\"stack\\\":\\\"Error: setBaseCDNUrl, CDNContentURL is missing in window.m365config.hostingAppUrls\\\\n    at S (https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.bundle.js:51:71513)\\\\n    at https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.893.chunk.js:10:18766\\\\n    at https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.893.chunk.js:10:430335\\\\n    at 39900 (https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.893.chunk.js:10:20637)\\\\n    at s (https://res.cdn.office.net/admincenter/admin-main/2026.11.16.7/supportCentral.en.bundle.js:51:137646)\\\"}\",\"Adhoc3\":\"513924\",\"Adhoc5\":\"\",\"PageName\":\"/\"},{\"TagId\":522021,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"UX platform availability InitializeRuntime\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{\\\"data\\\":{}}\",\"Adhoc5\":\"\",\"PageName\":\"/\"},{\"TagId\":531304,\"LogLevel\":1,",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:26.038Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/SPOInternalUseOnly.SPOWebAppServicePrincipal/PermissionRequests('066ef802-dc76-48fe-b9ef-5194dab8a85c')/Deny",
+  "status": 403,
+  "request": "",
+  "response": "{\"error\":{\"code\":\"-2147024891, System.UnauthorizedAccessException\",\"message\":\"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))\"}}"
+ },
+ {
+  "t": "2026-11-23T10:05:26.181Z",
+  "method": "POST",
+  "url": "https://browser.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"Office.Identity.WebAuthMast.Load\",\"time\":\"2026-11-23T10:05:23.855Z\",\"ver\":\"4.0\",\"iKey\":\"o:5c65bbc4edbf480d9637ace04d62bd98\",\"ext\":{\"sdk\":{\"seq\":1,\"ver\":\"1DS-Web-JS-3.2.15\"},\"metadata\":{\"f\":{\"Event.Time\":{\"t\":9},\"Event.Sequence\":{\"t\":4}}}},\"data\":{\"baseType\":\"custom\",\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15\"}},\"Event.Name\":\"Office.Identity.WebAuthMast.Load\",\"Event.Source\":\"OTelJS\",\"Event.Time\":\"2026-11-23T10:05:23.855Z\",\"Event.Sequence\":1,\"Event.Id\":\"e39cd4d4-639e-40ba-b097-55090bb77c51.1\",\"App.Name\":\"WebAuthMast\",\"App.Platform\":\"Web\",\"App.Version\":\"3.0.17\",\"User.IsAnonymous\":true,\"Session.Id\":\"d6737a9b-cd09-4cf2-a794-f535294923ce\",\"Release.AudienceGroup\":\"Production\",\"Data.OTelJS.Version\":\"4.25.27\",\"Data.AppName\":\"SharePoint admin center\",\"Data.BrowserName\":\"Chrome\"}}",
+  "response": "{\"acc\":1,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:26.621Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":539805,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"uxVersion Data is provided thru API\",\"Adhoc0\":\"9f9f793a-1193-425e-bea0-c295e9ee44a9\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{\\\"data\\\":\\\"{\\\\\\\"floodgate\\\\\\\":{\\\\\\\"cdnUrl\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/floodgate/\\\\\\\",\\\\\\\"loaderSpec\\\\\\\":{\\\\\\\"type\\\\\\\":\\\\\\\"scriptUrl\\\\\\\",\\\\\\\"content\\\\\\\":\\\\\\\"https://res.cdn.office.net/admincenter/admin-main/floodgate/2026.11.16.7_floodgate.en.bundle.js\\\\\\\"},\\\\\\\"version\\\\\\\":\\\\\\\"2026.11.16.7\\\\\\\",\\\\\\\"enableIncrementalBuild\\\\\\\":true,\\\\\\\"bundleName\\\\\\\":\\\\\\\"floodgate.en.bundle.js\\\\\\\",\\\\\\\"fallbackVersion\\\\\\\":\\\\\\\"2026.11.16.6\\\\\\\"},\\\\\\\"__hostApp_config\\\\\\\":{\\\\\\\"ariaLoggerId\\\\\\\":\\\\\\\"ea84b6a3285140258eaeb7caaab5884a-9d3ca75b-b3ee-42b8-a22c-ab0759ad4d38-7330\\\\\\\",\\\\\\\"euAriaLoggerId\\\\\\\":\\\\\\\"f91919df501a4bed8d67ea87a5bff68e-3e08c802-d8fb-4e8a-a976-4a5f89078bfc-7473\\\\\\\",\\\\\\\"hostingAppUrls\\\\\\\":\\\\\\\"{\\\\\\\\\\\\\\\"M365AdminPortal\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://admin.microsoft.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"EXOAdminPortal\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://admin.exchange.microsoft.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"SPOAdminPortal\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://admin.microsoft.com/sharepoint\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"TeamsAdminPortal\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://admin-int.teams.microsoft.net/\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"MSGraphEndPoint\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://graph.microsoft.com\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"CDNContentURL\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://res.cdn.office.net/admincenter/admin-content\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"AriaLoggerGlobalCollectorEndpoint\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"https://mobile.events.data.microsoft",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:27.476Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/supportlog/PostLogBatch",
+  "status": 204,
+  "request": "[{\"TagId\":502869,\"LogLevel\":1,\"Message\":\"SupportCentralBootstraper.SupportCentral: Init started\",\"Adhoc0\":\"SPO\",\"Adhoc1\":\"Mon, 23 Nov 2026 10:05:24 GMT\",\"Adhoc2\":\"{\\\"appName\\\":\\\"SPO\\\",\\\"auth\\\":{\\\"endpointUrl\\\":\\\"https://admin.microsoft.com\\\"},\\\"styles\\\":{\\\"minStateStyle\\\":{\\\"position\\\":\\\"fixed\\\",\\\"display\\\":\\\"unset\\\",\\\"right\\\":\\\"17px\\\",\\\"bottom\\\":\\\"103px\\\",\\\"zIndex\\\":1,\\\"overflow\\\":\\\"hidden\\\",\\\"width\\\":\\\"40px\\\",\\\"transition\\\":\\\"width 0.3s\\\"},\\\"maxStateStyle\\\":{\\\"height\\\":\\\"95%\\\",\\\"position\\\":\\\"absolute\\\",\\\"width\\\":\\\"500px\\\",\\\"zIndex\\\":14}},\\\"settings\\\":{\\\"disableMinimization\\\":false,\\\"maximizeByDefault\\\":false,\\\"userQuery\\\":\\\"\\\",\\\"requestId\\\":\\\"\\\",\\\"locale\\\":\\\"en-US\\\"},\\\"clientContext\\\":\\\"\\\",\\\"parentDiv\\\":\\\"FeedbackArea\\\"}\"},{\"TagId\":539891,\"LogLevel\":2,\"Message\":\"Endpoint Url provided: https://admin.microsoft.com\",\"Adhoc0\":\"SPO\"},{\"TagId\":502873,\"LogLevel\":1,\"Message\":\"SupportCentral: loadConciergeConfiguration started\",\"Adhoc0\":\"SPO\",\"Adhoc1\":\"https://admin.microsoft.com/api/concierge/GetConciergeConfig?appName=SPO&culture=en-US\"},{\"TagId\":502874,\"LogLevel\":1,\"Message\":\"SupportCentral: loadConciergeConfiguration onreadystatechange\",\"Adhoc0\":\"SPO\",\"Adhoc1\":1},{\"TagId\":502874,\"LogLevel\":1,\"Message\":\"SupportCentral: loadConciergeConfiguration onreadystatechange\",\"Adhoc0\":\"SPO\",\"Adhoc1\":2},{\"TagId\":502874,\"LogLevel\":1,\"Message\":\"SupportCentral: loadConciergeConfiguration onreadystatechange\",\"Adhoc0\":\"SPO\",\"Adhoc1\":3},{\"TagId\":502874,\"LogLevel\":1,\"Message\":\"SupportCentral: loadC",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:27.804Z",
+  "method": "POST",
+  "url": "https://browser.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"Office.Feedback.SDK\",\"time\":\"2026-11-23T10:05:25.593Z\",\"ver\":\"4.0\",\"iKey\":\"o:d79e824386c4441cb8c1d4ae15690526\",\"ext\":{\"sdk\":{\"seq\":1,\"ver\":\"1DS-Web-JS-3.2.18\"},\"metadata\":{\"f\":{\"Event.Time\":{\"t\":9},\"Event.Sequence\":{\"t\":4},\"Data.Event.Sequence\":{\"t\":6},\"Data.Event.SampleRate\":{\"t\":6}}}},\"data\":{\"baseType\":\"custom\",\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.18\"}},\"Event.Name\":\"Office.Feedback.SDK\",\"Event.Source\":\"OTelJS\",\"Event.Time\":\"2026-11-23T10:05:25.593Z\",\"Event.Sequence\":1,\"Event.Id\":\"6bfae413-ffaa-47ba-936e-95eac70b63af.1\",\"User.PrimaryIdentityHash\":\"p:100320065DA63A13\",\"User.PrimaryIdentitySpace\":\"OrgIdPuid\",\"User.TenantId\":\"972a674c-7b85-4e56-a31f-b2f95b42fd1e\",\"User.IsAnonymous\":false,\"App.Name\":\"Admin\",\"Data.App.Name\":\"OfficeFeedbackSDK\",\"Data.App.Platform\":\"Web\",\"Data.App.Version\":\"3.0.2\",\"Data.Host.Id\":\"2148\",\"Data.Host.Locale\":\"en-US\",\"Data.Host.SessionId2\":\"00000000-0000-0000-0000-000000000000\",\"Data.Host.Version\":\"0.0.0.0\",\"Data.OTelJS.Version\":\"4.20.30\",\"Data.PromptAutoDismiss\":\"4\",\"Data.IsEmailPolicyEnabled\":true,\"Data.CentroData\":\"{\\\"type\\\":\\\"Performance\\\",\\\"start\\\":null,\\\"epoch\\\":1795428325592}\",\"Data.EventId\":\"Set_Request_Provided_By_Centro_Started\",\"Data.IsDynamicUXEnabled\":true,\"Data.IsDynamicCampaignEnabled\":true,\"Data.Session.Id\":\"6646ef8b-1b7a-452f-5e99-8543c32da681\",\"Data.Event.Sequence\":1,\"Data.Event.SampleRate\":1}}\n{\"name\":\"Office.Feedback.SDK\",\"time\":\"2026-11-23T10:05:25.593Z\",\"ver\":\"4.0\",\"iKey\":\"o:d79e824386c4441cb8c1d4ae156905",
+  "response": "{\"acc\":9,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:28.034Z",
+  "method": "POST",
+  "url": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"ev_qos\",\"time\":\"2026-11-23T10:05:25.986Z\",\"ver\":\"4.0\",\"iKey\":\"o:28f004ff2be44e8997a6f113043d583d\",\"ext\":{\"sdk\":{\"ver\":\"1DS-Web-JS-3.2.15\",\"seq\":296,\"installId\":\"9759ea9c-30ce-4009-9c06-8bb4398854ca\",\"epoch\":\"180491313\"},\"app\":{\"ver\":\"odsp-web-prod_2026-11-13.006\",\"locale\":\"en-US\",\"env\":\"prod\",\"sesId\":\"GJdmt4Tpnb8Dp339bBknwk\"},\"user\":{\"locale\":\"cs-CZ\",\"localId\":\"i:0h.f|membership|100320065da63a13@live.com\"},\"web\":{\"domain\":\"pavelchocholousgmail-admin.sharepoint.com\",\"browser\":\"Chrome\",\"browserVer\":\"157\",\"screenRes\":\"1400X1000\",\"userConsent\":false},\"os\":{\"name\":\"Mac OS X\",\"ver\":\"10\"},\"intweb\":{},\"utc\":{\"popSample\":100,\"eventFlags\":4194304},\"loc\":{\"tz\":\"+01:00\"},\"device\":{\"localId\":\"c:b809f0c7-e112-4521-bb99-17c8b5dd5afc\"}},\"data\":{\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15;SystemPropertiesCollector=3.2.15;SamplingPlugin=1.0;StringifyProperties=1.0;StrictCustomProperties=1.0;DataScrubber=1.0\"}},\"CorrelationVector\":\"00000000-0000-0000-0000-000000000000#351fe792-7184-4614-aff6-8ba316c8ee9e#0dfe7cc9-cbd7-4eaa-9c16-12d68ad3fc65\",\"WebLog_FullName\":\"Qos,\",\"WebLog_EventType\":\"End\",\"WebLog_Type_Qos\":\"1\",\"SPFx\":{\"TelemetrySource\":\"SPFx\"},\"Debug\":{\"EventSource\":\"Global-OneDS-sp-client-aria-main\"},\"PrivacyClassification\":\"requiredService\",\"Name\":\"_HttpClientHelper.Fetch\",\"Duration\":\"0\",\"ResultCode\":\"ClientError\",\"ResultType\":\"ExpectedFailure\",\"Qos_extraData_alias\":\"TenantAdmin\",\"Qos_extraData_componentId\":\"6e1c1298-7b8e-4a08-a24f-769aafae45c5\",\"Qos_extraData_source\":\"",
+  "response": "{\"acc\":2,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:29.798Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/instrument/logclient",
+  "status": 204,
+  "request": "[{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"1\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierge/GetLazyLodingConfig\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"2\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierge/IsInfrequentUser\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"3\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/tenantauthorization/TenantInfoModel\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"4\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierge/ShowGuidedSupportJourney\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"5\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierge/IsMCBubbleEnable\"},{\"TagId\":537458,\"LogLevel\":1,\"LogCategory\":\"ClientInfo\",\"Message\":\"Axios response: 200, appname: SPO, hasClaimChallenge : false\",\"Adhoc0\":\"d1cdccc5-25d8-447e-81fa-83712122d137\",\"Adhoc1\":\"6\",\"Adhoc2\":\"{}\",\"PageName\":\"/api/concierg",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:29.990Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/supportlog/PostLogBatch",
+  "status": 204,
+  "request": "[{\"TagId\":504237,\"LogLevel\":2,\"Message\":\"Support Central Load App Config\",\"Adhoc2\":\"{\\\"EnableSCOptimization\\\":false,\\\"TenantSeatCount\\\":10000,\\\"CDNRootUrl\\\":\\\"https://res.cdn.office.net/14.0/en\\\",\\\"IsEnvironmentProd\\\":true,\\\"IsPurviewFoundryEnabled\\\":false,\\\"AlchemyEnabledSecurity\\\":true,\\\"FloatingFooterEnabled\\\":true,\\\"ScFlight\\\":\\\"EnableMcsCopilot;CopilotDefaultOn\\\",\\\"AlchemyEnabled\\\":true,\\\"IncludeAimIdAsDistinctId\\\":true,\\\"EnableSessionIDHeaderForExternalHosting\\\":true,\\\"EnableNonUnifiedPremierSeverity\\\":true,\\\"MaxActiveTicketsAllowedForTrialTenant\\\":2,\\\"EnableOmniChannelChatGetTranscriptInSC\\\":true,\\\"AutoSuggestSearchApiKey\\\":\\\"FFBCA3E94A2364E405C19FE132CA3121\\\",\\\"EnableDiagnosticInformation\\\":true,\\\"PDSEnabled\\\":true,\\\"PDSEnabledSecurity\\\":true,\\\"IsSecurityFoundryEnabled\\\":false,\\\"LargeAttachmentUploadTokenRefreshDelay\\\":60000,\\\"IsFoundryExpEnabled\\\":false,\\\"EnableNonurgentNotice\\\":false,\\\"EnableTheming\\\":true,\\\"AllowedExtensionsForAttachments\\\":[\\\"avi\\\",\\\"cab\\\",\\\"cap\\\",\\\"csv\\\",\\\"doc\\\",\\\"docx\\\",\\\"dotx\\\",\\\"eml\\\",\\\"err\\\",\\\"evt\\\",\\\"gif\\\",\\\"gz\\\",\\\"htm\\\",\\\"html\\\",\\\"jpg\\\",\\\"log\\\",\\\"mht\\\",\\\"mkv\\\",\\\"mov\\\",\\\"mp3\\\",\\\"mp4\\\",\\\"mpeg\\\",\\\"mpg\\\",\\\"msg\\\",\\\"nfo\\\",\\\"pcap\\\",\\\"pdf\\\",\\\"png\\\",\\\"potx\\\",\\\"ppt\\\",\\\"pptx\\\",\\\"psf\\\",\\\"pst\\\",\\\"pub\\\",\\\"rar\\\",\\\"rtf\\\",\\\"saz\\\",\\\"stp\\\",\\\"tif\\\",\\\"txt\\\",\\\"uccapilog\\\",\\\"uccp\\\",\\\"vcf\\\",\\\"vsd\\\",\\\"wdb\\\",\\\"webm\\\",\\\"wks\\\",\\\"wps\\\",\\\"wpt\\\",\\\"xlr\\\",\\\"xls\\\",\\\"xlsx\\\",\\\"xlt\\\",\\\"xltx\\\",\\\"xml\\\",\\\"xps\\\",\\\"zip\\\",\\\"bmp\\\",\\\"uccplog\\\"],\\\"TenantsToShowSupportVolumeInsights\\\":[",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:30.091Z",
+  "method": "POST",
+  "url": "https://admin.microsoft.com/api/supportlog/PostLogBatch",
+  "status": 204,
+  "request": "[{\"TagId\":504237,\"LogLevel\":2,\"Message\":\"Support Central Load App Config\",\"Adhoc2\":\"{\\\"EnablePerformanceEnhancerGetTenantInfo\\\":false,\\\"EnablePostLogFullLengthCheck\\\":false,\\\"EnableOmnichannelChatHvcUse\\\":false}\",\"scrub\":false},{\"TagId\":503370,\"LogLevel\":2,\"Message\":\"Support Central Config: \",\"Adhoc0\":\"{}\",\"scrub\":false}]",
+  "response": ""
+ },
+ {
+  "t": "2026-11-23T10:05:30.958Z",
+  "method": "POST",
+  "url": "https://eu-office.events.data.microsoft.com/OneCollector/1.0/",
+  "status": 200,
+  "request": "{\"name\":\"Office.Taos.Shell.Monitoring\",\"time\":\"2026-11-23T10:05:28.830Z\",\"ver\":\"4.0\",\"iKey\":\"o:b0c82c6598ad49f3848b1d3dc0d8dd25\",\"ext\":{\"sdk\":{\"seq\":1,\"ver\":\"1DS-Web-JS-3.2.15\"},\"metadata\":{\"f\":{\"Event.Time\":{\"t\":9},\"Event.Sequence\":{\"t\":4}}}},\"data\":{\"baseType\":\"custom\",\"baseData\":{\"properties\":{\"version\":\"PostChannel=3.2.15\"}},\"Event.Name\":\"Office.Taos.Shell.Monitoring\",\"Event.Source\":\"OTelJS\",\"Event.Time\":\"2026-11-23T10:05:28.830Z\",\"Event.Sequence\":1,\"Event.Id\":\"8511d10a-43f6-4823-8639-fa59d5121719.1\",\"App.Name\":\"OfficeTaosShell\",\"App.Platform\":\"Web\",\"App.Version\":\"1.20261116.4.0\",\"Session.Id\":\"b0e12625-cc2c-41da-8240-6a6cfe6756fe\",\"Release.AudienceGroup\":\"Production\",\"User.PrimaryIdentityHash\":\"100320065DA63A13\",\"User.PrimaryIdentitySpace\":\"OrgIdPUID\",\"User.TenantId\":\"972a674c-7b85-4e56-a31f-b2f95b42fd1e\",\"User.TenantGroup\":\"Commercial\",\"User.IsAnonymous\":false,\"Context_Env\":\"nszprod\",\"Context_Site\":\"Sharepoint\",\"Context_WorkloadAppId\":\"SharePoint\",\"Context_PID\":\"1795428328829_0.3416846525877981\",\"Context_UID\":\"4a9b2f9a-24ff-4092-800b-e71f91b307b0\",\"Context_Language\":\"en-US\",\"Context_Flights\":\"AdminLoginHint,EnableClientECSFetch,EnableWaffleRefresh,ShowMonarchColorThemes,ShowVivaGlint,WriteLicenseDataToCosmosDBFromOP,UseLicenseNotificationData,UseNewLicenseRefreshTime,LicenseTime1h,LicenseTime1d,UseLicenseCollectionV2,MyAccountEnabledInGuestMode,NotifyMos3OfLicensingChange,UseLicenseCollectionV3,AllowAlwaysEnabledServicePlans,CheckTenantIdFromLicenseCosmosDb,ShowProjectAp",
+  "response": "{\"acc\":50,\"webResult\":{}}"
+ },
+ {
+  "t": "2026-11-23T10:05:34.182Z",
+  "method": "POST",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/api/instrument/logclient",
+  "status": 404,
+  "request": "[{\"TagId\":\"535539\",\"LogLevel\":\"Info\",\"Message\":\"sr:se:Su:We:Su:Co:ex:supportCentralBootstrap.ts&2c3b48dcl&load-event;sr:se:Su:We:Su:Co:ex:supportCentralBootstrap.ts&2c3b48dcm&init\"}]",
+  "response": "404 NOT FOUND"
+ }
+]

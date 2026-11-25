@@ -1,0 +1,19 @@
+[
+  {
+    "Id": 23,
+    "IsHiddenInUI": false,
+    "LoginName": "i:0#.f|membership|tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+    "Title": "Procházka Tomáš",
+    "PrincipalType": 1,
+    "Email": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+    "Expiration": "",
+    "IsEmailAuthenticationGuestUser": false,
+    "IsShareByEmailGuestUser": false,
+    "IsSiteAdmin": false,
+    "UserId": {
+      "NameId": "1003200667226d60",
+      "NameIdIssuer": "urn:federation:microsoftonline"
+    },
+    "UserPrincipalName": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com"
+  }
+]

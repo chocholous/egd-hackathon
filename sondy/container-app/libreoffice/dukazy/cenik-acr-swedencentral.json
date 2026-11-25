@@ -1,0 +1,107 @@
+[
+  {
+    "sku": "Premium",
+    "meter": "Data Stored",
+    "price": 0.1,
+    "unit": "1 GB/Month",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Standard",
+    "meter": "Task vCPU Duration",
+    "price": 0.0,
+    "unit": "1 Second",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Standard",
+    "meter": "Task vCPU Duration",
+    "price": 0.0001,
+    "unit": "1 Second",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Premium",
+    "meter": "Premium Connected registry",
+    "price": 0.33333,
+    "unit": "1/Day",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Premium",
+    "meter": "Task vCPU Duration",
+    "price": 0.0,
+    "unit": "1 Second",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Premium",
+    "meter": "Task vCPU Duration",
+    "price": 0.0001,
+    "unit": "1 Second",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Standard",
+    "meter": "Data Stored",
+    "price": 0.1,
+    "unit": "1 GB/Month",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Basic",
+    "meter": "Basic Registry Unit",
+    "price": 0.1666,
+    "unit": "1/Day",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Premium",
+    "meter": "Premium GB Registry Replication Data Stored",
+    "price": 0.1,
+    "unit": "1 GB/Month",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Basic",
+    "meter": "Task vCPU Duration",
+    "price": 0.0,
+    "unit": "1 Second",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Basic",
+    "meter": "Task vCPU Duration",
+    "price": 0.0001,
+    "unit": "1 Second",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Premium",
+    "meter": "Premium Registry Replication Unit",
+    "price": 1.6666,
+    "unit": "1/Day",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Standard",
+    "meter": "Standard Registry Unit",
+    "price": 0.6666,
+    "unit": "1/Day",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Basic",
+    "meter": "Data Stored",
+    "price": 0.1,
+    "unit": "1 GB/Month",
+    "type": "Consumption"
+  },
+  {
+    "sku": "Premium",
+    "meter": "Premium Registry Unit",
+    "price": 1.6666,
+    "unit": "1/Day",
+    "type": "Consumption"
+  }
+]

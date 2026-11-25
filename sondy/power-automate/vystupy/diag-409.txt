@@ -1,0 +1,18 @@
+# Diagnostika blokace zapnutí flow (2026-11-22, pa-flow.py create/start/get)
+# A) create diag Request Http trigger + Compose (id fbe0eb18-a8e6-f111-84ea-000d3a832204, bez akce HTTP):
+201 fbe0eb18-a8e6-f111-84ea-000d3a832204 Suspended
+# B) create diag Button + HTTP akce (id 04cafff2-7d7c-1592-ccd7-f32473f896ca):
+201 04cafff2-7d7c-1592-ccd7-f32473f896ca Started
+# C) list po 12 s:
+04cafff2-7d7c-1592-ccd7-f32473f896ca Started EGD PA sonda: diag Button + HTTP akce
+fbe0eb18-a8e6-f111-84ea-000d3a832204 Stopped EGD PA sonda: diag Request Http trigger + Compose
+# D) start 04cafff2 (Button + HTTP akce) -> licence:
+403 {'error': {'code': 'MissingAdequateQuotaPolicy', 'message': "Flow could not be activated because you need a [Power Automate Premium license](https://go.microsoft.com/fwlink/?linkid=2297915) or other license that includes premium connectors to save this flow with connection: 'Http'", 'extendedData': {'userId': '33507faf-6706-4c3b-bbb3-c1e15a7e0a6d', 'connectionName': 'Http'}}}
+# E) start fbe0eb18 (Request Http trigger + Compose) -> příčina neznámá:
+409 {'error': {'code': 'CannotStartUnpublishedSolutionFlow', 'message': 'An unpublished solution flow cannot be activated. Please authenticate the flow connections and save the flow to enable activation.'}}
+# F) get + start 04cafff2 znovu -> licence:
+EGD PA sonda: diag Button + HTTP akce Started None None
+403 {'error': {'code': 'MissingAdequateQuotaPolicy', 'message': "Flow could not be activated because you need a [Power Automate Premium license](https://go.microsoft.com/fwlink/?linkid=2297915) or other license that includes premium connectors to save this flo
+# G) get + start 27d47779-a4e6-f111-84ea-000d3a832204 (Recurrence + HTTP ČNB) -> příčina neznámá:
+EGD PA sonda: Recurrence + HTTP ČNB Stopped None None
+409 {'error': {'code': 'CannotStartUnpublishedSolutionFlow', 'message': 'An unpublished solution flow cannot be activated. Please authenticate the flow connections and save the flow to enable activation.'}}

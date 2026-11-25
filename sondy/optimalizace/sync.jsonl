@@ -1,0 +1,4 @@
+{"krok": "prvni_nacteni", "polozek": 12009, "sec": 2.58, "bytes_cache": 1653293}
+{"krok": "demo_zmeny", "nove": 3, "upravene": 5}
+{"krok": "inkrementalni_nacteni", "zmen_zaznamu": 8, "volani_GetChanges": 1, "sec_GetChanges": 0.46, "sec_celkem": 0.76, "polozek_v_cache": 12012}
+{"krok": "overeni", "server": 12012, "cache": 12012, "neshod": 0, "sec": 1.52}

@@ -1,0 +1,53 @@
+{
+  "nazev": "E2E účastník: přeověření balíčku",
+  "stav": "hotovo",
+  "popis": "ZIP 9e7f7098 ✅ 12 min; agent starou appku nepoužil; 2 drobnosti poslány prereq; egd10 uvolněn",
+  "oblast": "lab",
+  "kdo": "e2e-ucastnik",
+  "vystup": "sondy/e2e/balicek/README.md",
+  "aktualizovano": "2026-11-24T12:21:54Z",
+  "zacatek": "2026-11-24T10:08:22Z",
+  "kroky": 8,
+  "historie": [
+    {
+      "t": "2026-11-24T10:08:22Z",
+      "stav": "bezi",
+      "popis": "čtu podklady, rezervuji účet"
+    },
+    {
+      "t": "2026-11-24T10:13:25Z",
+      "stav": "bezi",
+      "popis": "egd10 rezervován a přihlášen, běží egd-pripravenost"
+    },
+    {
+      "t": "2026-11-24T10:24:41Z",
+      "stav": "ceka",
+      "popis": "čeká na Pavlův login m365 CLI (egd10); kroky 1–4 částečně hotové"
+    },
+    {
+      "t": "2026-11-24T10:32:57Z",
+      "stav": "hotovo",
+      "popis": "egd10: výdej → připravenost (cesta A) → appka nasazena, hlas a čtení zpět ✅; spolužák bez přístupu (Z5); účet vrácen; Copilot běh domlouván"
+    },
+    {
+      "t": "2026-11-24T10:49:36Z",
+      "stav": "hotovo",
+      "popis": "egd10 celé ✅; Z5/Z6 po opravě ověřeny (spolužák egd01 s rolí Read appku vidí); nový nález Z9 (Send email výchozí zaškrtnuté); Copilot běh má brief"
+    },
+    {
+      "t": "2026-11-24T11:43:46Z",
+      "stav": "hotovo",
+      "popis": "test balíčku ZIP 166fc7fd ✅ (E.ON+open na egd10-prod, spolužák hlasoval); nálezy B1–B4 předány; egd10 uvolněn"
+    },
+    {
+      "t": "2026-11-24T11:51:25Z",
+      "stav": "bezi",
+      "popis": "ZIP 9e7f7098…, instalace agentem"
+    },
+    {
+      "t": "2026-11-24T12:21:54Z",
+      "stav": "hotovo",
+      "popis": "ZIP 9e7f7098 ✅ 12 min; agent starou appku nepoužil; 2 drobnosti poslány prereq; egd10 uvolněn"
+    }
+  ]
+}

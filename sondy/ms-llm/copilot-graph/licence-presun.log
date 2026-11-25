@@ -1,0 +1,14 @@
+== odebrat alice 2026-11-24T07:39:55Z
+{"userPrincipalName":"alice@pavelchocholousgmail.onmicrosoft.com","assignedLicenses":null}
+== přidat tomas 2026-11-24T07:39:58Z
+{"userPrincipalName":null,"assignedLicenses":null,"error":{"code":"Request_BadRequest","message":"License assignment failed because service plans 43de0ff5-c92c-492b-9116-175376d08c38,094e7854-93fc-4d55-b2c0-3ab5369ebdc1 are mutually exclusive","innerError":{"properties":null,"date":"2026-11-24T07:40:00","request-id":"da1468bc-1b7d-4392-bd34-77ce0209871b","client-request-id":"da1468bc-1b7d-4392-bd34-77ce0209871b"}}}
+== přidat tomas (disabledPlans jako alice) 2026-11-24T07:40:18Z
+{"userPrincipalName":"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com","lic":[],"error":null}
+BUSINESS_PREMIUM_AND_MICROSOFT_365_COPILOT_FOR_BUSINESS: Bing_Chat_Enterprise=Success M365_COPILOT_CONNECTORS=Success Nucleus=Success INTUNE_O365=PendingActivation WORKPLACE_ANALYTICS_INSIGHTS_BACKEND=Success MICROSOFT_SEARCH=Success ATP_ENTERPRISE=Success M365_COPILOT_BUSINESS_CHAT=Success M365_LIGHTHOUSE_PARTNER_PLAN1=Success M365_LIGHTHOUSE_CUSTOMER_PLAN1=Success M365_COPILOT_APPS=Success M365_COPILOT_TEAMS=Success M365_COPILOT_SHAREPOINT=Success M365_COPILOT_INTELLIGENT_SEARCH=Success INSIGHTS_BY_MYANALYTICS=Success GRAPH_CONNECTORS_SEARCH_INDEX=Success GRAPH_CONNECTORS_COPILOT=Success EXCHANGE_S_FOUNDATION=Success COPILOT_STUDIO_IN_COPILOT_FOR_M365=Success
+== vrácení: odebrat tomas 2026-11-24T08:36:50Z
+{"userPrincipalName":"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com","error":null}
+== vrácení: přidat alice 2026-11-24T08:36:52Z
+{"userPrincipalName":"alice@pavelchocholousgmail.onmicrosoft.com","error":null}
+alice: [{"skuId":"06ebc4ee-1bb5-47dd-8120-11324bc54e06","vypnuto":0}]
+tomas.prochazka: [{"skuId":"f30db892-07e9-47e9-837c-80727f46fd3d","vypnuto":0},{"skuId":"06ebc4ee-1bb5-47dd-8120-11324bc54e06","vypnuto":0}]
+alice 2026-11-24T08:37:02Z: [{"skuId":"a6d18b68-a67e-4cbd-ba00-8744bc468faa","vypnuto":50},{"skuId":"06ebc4ee-1bb5-47dd-8120-11324bc54e06","vypnuto":0}]

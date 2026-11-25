@@ -1,0 +1,30 @@
+{"test": "top1000", "status": 200, "sec": 0.296, "rows": 1000, "id_prvni_posledni": [1, 1000], "nextLink": true}
+{"test": "top5000_bez_filtru", "status": 200, "sec": 0.406, "rows": 5000, "id_prvni_posledni": [1, 5000], "nextLink": true}
+{"test": "top5001_bez_filtru", "status": 500, "sec": 0.167, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "filtr_indexovany_600", "status": 200, "sec": 0.203, "rows": 600, "id_prvni_posledni": [5, 11970]}
+{"test": "filtr_indexovany_vic_nez_5000_(Castka ge 0)", "status": 500, "sec": 0.172, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "filtr_indexovany_vic_nez_5000_(Castka lt 500)", "status": 500, "sec": 0.16, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "filtr_neindexovany_top10", "status": 500, "sec": 0.261, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "filtr_indexovany_+_neindexovany", "status": 200, "sec": 0.222, "rows": 100, "id_prvni_posledni": [5, 9640], "nextLink": true}
+{"test": "filtr_neindexovany_+_indexovany_(opacne_poradi)", "status": 200, "sec": 0.199, "rows": 100, "id_prvni_posledni": [5, 9640], "nextLink": true}
+{"test": "orderby_neindexovany", "status": 500, "sec": 0.152, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "orderby_Created_desc", "status": 500, "sec": 0.159, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "orderby_Modified_desc", "status": 200, "sec": 0.727, "rows": 10, "id_prvni_posledni": [12000, 11991], "nextLink": true}
+{"test": "orderby_ID_desc", "status": 200, "sec": 0.268, "rows": 10, "id_prvni_posledni": [12000, 11991], "nextLink": true}
+{"test": "orderby_Datum_indexovany", "status": 200, "sec": 0.343, "rows": 10, "id_prvni_posledni": [11963, 5619], "nextLink": true}
+{"test": "orderby_Castka_indexovany", "status": 200, "sec": 0.192, "rows": 10, "id_prvni_posledni": [11849, 3031], "nextLink": true}
+{"test": "filtr_indexovany_+_orderby_neindexovany", "status": 200, "sec": 0.436, "rows": 10, "id_prvni_posledni": [5, 852], "nextLink": true}
+{"test": "filtr_indexovany_+_orderby_Created", "status": 200, "sec": 0.337, "rows": 10, "id_prvni_posledni": [11970, 11779], "nextLink": true}
+{"test": "filtr_ID_rozsah_1000", "status": 200, "sec": 0.247, "rows": 1000, "id_prvni_posledni": [5001, 6000]}
+{"test": "filtr_ID_gt_0_top100", "status": 200, "sec": 0.273, "rows": 100, "id_prvni_posledni": [1, 100], "nextLink": true}
+{"test": "filtr_ID_gt_10000_top5000", "status": 200, "sec": 0.317, "rows": 2000, "id_prvni_posledni": [10001, 12000]}
+{"test": "Kategorie_ne_K01 (>5000 shod)", "status": 500, "sec": 0.207, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "startswith(Kategorie,'K01')", "status": 200, "sec": 0.148, "rows": 100, "id_prvni_posledni": [5, 1954], "nextLink": true}
+{"test": "substringof('01',Kategorie)", "status": 200, "sec": 0.197, "rows": 100, "id_prvni_posledni": [5, 1954], "nextLink": true}
+{"test": "or_dvou_indexovanych", "status": 500, "sec": 0.181, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "or_indexovany_a_neindexovany", "status": 500, "sec": 0.166, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "filtr_Datum_rozsah_indexovany", "status": 200, "sec": 0.198, "rows": 126, "id_prvni_posledni": [243, 11926]}
+{"test": "filtr_Created_neindexovany", "status": 500, "sec": 0.239, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "skip_5000", "status": 200, "sec": 0.182, "rows": 100, "id_prvni_posledni": [1, 100], "nextLink": true}
+{"test": "skiptoken_rucne_p_ID=5000", "status": 200, "sec": 0.172, "rows": 100, "id_prvni_posledni": [5001, 5100], "nextLink": true}
+{"test": "skiptoken_rucne_p_ID=11000", "status": 200, "sec": 1.453, "rows": 100, "id_prvni_posledni": [11001, 11100], "nextLink": true}

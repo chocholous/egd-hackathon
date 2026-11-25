@@ -1,0 +1,181 @@
+{
+  "profil": "tomas.prochazka",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ca-obo/SitePages/obo.aspx",
+  "ts": "2026-11-24T08:49:24.223Z",
+  "kroky": [
+    {
+      "popis": "whoami",
+      "wallMs": 1421,
+      "vystup": {
+        "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph",
+        "http": 200,
+        "ms": 1370,
+        "odpoved": {
+          "upn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+          "oid": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d",
+          "azp": "08e18876-6177-487e-b8b5-cf950c1e598c",
+          "scp": "access_as_user"
+        }
+      }
+    },
+    {
+      "popis": "Copilot Retrieval přes OBO",
+      "wallMs": 5182,
+      "vystup": {
+        "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/retrieval",
+        "http": 200,
+        "ms": 5132,
+        "odpoved": {
+          "mode": "mi",
+          "who": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+          "oboScope": "profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read",
+          "oboMs": 261,
+          "graphStatus": 200,
+          "graphMs": 1243,
+          "requestId": "3bff6dc1-13a4-42f1-bc4d-87d17fb85ff8",
+          "hits": []
+        }
+      }
+    },
+    {
+      "popis": "Copilot Chat přes OBO",
+      "wallMs": 4629,
+      "vystup": {
+        "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/chat",
+        "http": 200,
+        "ms": 4589,
+        "odpoved": {
+          "mode": "mi",
+          "who": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+          "oboScope": "profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read",
+          "oboMs": 177,
+          "krok": "chat",
+          "konverzaceMs": 2596,
+          "graphStatus": 200,
+          "graphMs": 1613,
+          "requestId": "b72fa9df-4ec4-478e-a327-882168dd1542",
+          "copilotOdpovedel": false,
+          "odpoved": "Jaký je průměr spokojenosti s prostředím kanceláře?",
+          "zdroje": [],
+          "zprav": 1
+        }
+      }
+    },
+    {
+      "popis": "Retrieval + gateway LLM přes OBO",
+      "wallMs": 2665,
+      "vystup": {
+        "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/odpoved",
+        "http": 200,
+        "ms": 2603,
+        "odpoved": {
+          "mode": "mi",
+          "who": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+          "oboScope": "profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read",
+          "oboMs": 305,
+          "retrievalMs": 793,
+          "gatewayOboMs": 272,
+          "gatewayStatus": 200,
+          "gatewayMs": 1132,
+          "zdroje": [],
+          "odpoved": "V dodaných úryvcích nejsou žádné informace o průměru spokojenosti s prostředím kanceláře.  \nŽádné zdroje.",
+          "model": "gpt-4.1-mini-2025-04-14",
+          "usage": {
+            "completion_tokens": 36,
+            "completion_tokens_details": {
+              "accepted_prediction_tokens": 0,
+              "audio_tokens": 0,
+              "reasoning_tokens": 0,
+              "rejected_prediction_tokens": 0
+            },
+            "latency_checkpoint": {
+              "engine_tbt_ms": 7,
+              "engine_ttft_ms": 25,
+              "engine_ttlt_ms": 301,
+              "pre_inference_ms": 125,
+              "service_tbt_ms": 8,
+              "service_ttft_ms": 479,
+              "service_ttlt_ms": 751,
+              "user_visible_ttft_ms": 354
+            },
+            "prompt_tokens": 100,
+            "prompt_tokens_details": {
+              "audio_tokens": 0,
+              "cached_tokens": 0
+            },
+            "total_tokens": 136
+          }
+        }
+      }
+    },
+    {
+      "popis": "Copilot Retrieval přímo z SPFx",
+      "wallMs": 3350,
+      "vystup": {
+        "cesta": "SPFx → MSGraphClientV3 → Graph beta /copilot/retrieval (přímo)",
+        "http": 200,
+        "ms": 3298,
+        "odpoved": {
+          "retrievalHits": []
+        }
+      }
+    },
+    {
+      "popis": "Copilot Chat přímo z SPFx",
+      "wallMs": 176,
+      "vystup": {
+        "cesta": "SPFx → MSGraphClientV3 → Graph beta /copilot/conversations (přímo)",
+        "http": 403,
+        "ms": 138,
+        "chyba": "unauthorized",
+        "zprava": " Required scopes = [Sites.Read.All, Mail.Read, People.Read.All, OnlineMeetingTranscript.Read.All, Chat.Read, ChannelMessage.Read.All, ExternalItem.Read.All]."
+      }
+    }
+  ],
+  "konzole": [
+    "[obo-sonda] {\"cesta\":\"SPFx → AadHttpClient → Container App → OBO → Graph\",\"http\":200,\"ms\":1370,\"odpoved\":{\"upn\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"oid\":\"33507faf-6706-4c3b-bbb3-c1e15a7e0a6d\",\"azp\":\"08e18876-6177-487e-b8b5-cf950c1e598c\",\"scp\":\"access_as_user\"}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/retrieval\",\"http\":200,\"ms\":5132,\"odpoved\":{\"mode\":\"mi\",\"who\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"oboScope\":\"profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read\",\"oboMs\":261,\"graphStatus\":200,\"graphMs\":1243,\"requestId\":\"3bff6dc1-13a4-42f1-bc4d-87d17fb85ff8\",\"hits\":[]}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/chat\",\"http\":200,\"ms\":4589,\"odpoved\":{\"mode\":\"mi\",\"who\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"oboScope\":\"profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read\",\"oboMs\":177,\"krok\":\"chat\",\"konverzaceMs\":2596,\"graphStatus\":200,\"graphMs\":1613,\"requestId\":\"b72fa9df-4ec4-478e-a327-882168dd1542\",\"copilotOdpovedel\":false,\"odpoved\":\"Jaký je průměr spokojenosti s prostředím kanceláře?\",\"zdroje\":[],\"zprav\":1}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/odpoved\",\"http\":200,\"ms\":2603,\"odpoved\":{\"mode\":\"mi\",\"who\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"oboScope\":\"profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read\",\"oboMs\":305,\"retrievalMs\":793,\"gatewayOboMs\":272,\"gatewayStatus\":200,\"gatewayMs\":1132,\"zdroje\":[],\"odpoved\":\"V dodaných úryvcích nejsou žádné informace o průměru spokojenosti s prostředím kanceláře.  \\nŽádné zdroje.\",\"model\":\"gpt-4.1-mini-2025-04-14\",\"usage\":{\"completion_tokens\":36,\"completion_tokens_details\":{\"accepted_prediction_tokens\":0,\"audio_tokens\":0,\"reasoning_tokens\":0,\"rejected_prediction_tokens\":0},\"latency_checkpoint\":{\"engine_tbt_ms\":7,\"engine_ttft_ms\":25,\"engine_ttlt_ms\":301,\"pre_inference_ms\":125,\"service_tbt_ms\":8,\"service_ttft_ms\":479,\"service_ttlt_ms\":751,\"user_visible_ttft_ms\":354},\"prompt_tokens\":100,\"prompt_tokens_details\":{\"audio_tokens\":0,\"cached_tokens\":0},\"total_tokens\":136}}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → MSGraphClientV3 → Graph beta /copilot/retrieval (přímo)\",\"http\":200,\"ms\":3298,\"odpoved\":{\"retrievalHits\":[]}}",
+    "[obo-sonda] {\"cesta\":\"SPFx → MSGraphClientV3 → Graph beta /copilot/conversations (přímo)\",\"http\":403,\"ms\":138,\"chyba\":\"unauthorized\",\"zprava\":\" Required scopes = [Sites.Read.All, Mail.Read, People.Read.All, OnlineMeetingTranscript.Read.All, Chat.Read, ChannelMessage.Read.All, ExternalItem.Read.All].\"}"
+  ],
+  "sit": [
+    {
+      "metoda": "GET",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/whoami",
+      "http": 200,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/retrieval",
+      "http": 200,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/chat",
+      "http": 200,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/odpoved",
+      "http": 200,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "POST",
+      "url": "https://graph.microsoft.com/beta/copilot/retrieval",
+      "http": 200,
+      "authorization": "Bearer …"
+    },
+    {
+      "metoda": "POST",
+      "url": "https://graph.microsoft.com/beta/copilot/conversations",
+      "http": 403,
+      "authorization": "Bearer …"
+    }
+  ]
+}

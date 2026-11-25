@@ -1,0 +1,14 @@
+[
+ {
+  "url": "https://www.ote-cr.cz/cs/kratkodobe-trhy/elektrina/denni-trh",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": false,
+   "err": "Failed to fetch"
+  },
+  "withAuthHeader": {
+   "ok": false,
+   "err": "Failed to fetch"
+  }
+ }
+]

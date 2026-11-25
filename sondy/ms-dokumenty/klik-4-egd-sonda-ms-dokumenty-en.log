@@ -1,0 +1,16 @@
+INFO: Položek: 1
+stazeno pozadavky.docx
+stazeno pozadavky.pdf
+stazeno pozadavky.pptx
+stazeno pozadavky.xlsx
+LOG:
+uloženo /sites/egd-sonda-ms-dokumenty-en/Shared Documents/exporty/pozadavky.docx (9752 B)
+HOTOVO docx za 877 ms
+uloženo /sites/egd-sonda-ms-dokumenty-en/Shared Documents/exporty/pozadavky.pdf (64140 B)
+HOTOVO graphpdf za 1649 ms
+uloženo /sites/egd-sonda-ms-dokumenty-en/Shared Documents/exporty/pozadavky.pptx (53668 B)
+HOTOVO pptx za 473 ms
+uloženo /sites/egd-sonda-ms-dokumenty-en/Shared Documents/exporty/pozadavky.xlsx (6714 B)
+HOTOVO xlsx za 492 ms
+CHYBA pdf: Error: Soubor assets/Roboto-Regular.ttf: 404
+

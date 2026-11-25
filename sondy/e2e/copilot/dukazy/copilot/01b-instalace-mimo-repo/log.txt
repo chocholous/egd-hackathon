@@ -1,0 +1,60 @@
+ $ Shell Check destination and name collisions 1 line…
+   dest='/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills'; if [ -d "$dest" ]; then
+   printf 'DEST_EXISTS\n'; for d in egd-data-seznamy egd-dokumenty egd-externi-api egd-llm-gateway
+   egd-maily egd-planovane-ulohy egd-prava-role egd-pripravenost egd-prvni-appka egd-recon; do if [
+   -e "$dest/$d" ]; then printf 'COLLISION %s\n' "$d"; fi; done; else printf 'DEST_MISSING\n'; fi
+
+ $ Shell Check source skill folders and manifests 20 lines…
+   for d in egd-data-seznamy egd-dokumenty egd-externi-api egd-llm-gateway egd-maily
+   egd-planovane-ulohy egd-prava-role egd-pripravenost egd-prvni-appka egd-recon; do
+   p="/Users/chocholous/egd-e2e-copilot/rozbaleno/$d"; if [ -d "$p" ]; then printf 'SOURCE_OK %s\n'
+   "$d"; if [ -f "$p/SKILL.md" ]; then printf 'SKILL_OK %s\n' "$d"; else printf 'SKILL_MISSING %s\n'
+   "$d"; fi; else printf 'SOURCE_MISSING %s\n' "$d"; fi; done
+
+ ● Checking my documentation "How do I list or reload custom skills after installing them in ~/.cop…
+
+ ● Checking my documentation command:/skills, topic:skills#where-copilot-finds-skills, cli:copilot …
+
+ $ Shell Copy and verify ten personal skills 19 lines…
+   src='/Users/chocholous/egd-e2e-copilot/rozbaleno';
+   dest='/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills'; mkdir -p "$dest" || exit
+   1; for d in egd-data-seznamy egd-dokumenty egd-externi-api egd-llm-gateway egd-maily
+   egd-planovane-ulohy egd-prava-role egd-pripravenost egd-prvni-appka egd-recon; do if [ -e
+   "$dest/$d" ]; then printf 'COLLISION %s; stopping without overwrite\n' "$d"; exit 2; fi; cp -R
+   "$src/$d" "$dest/" || exit 1; done; printf 'COPIED\n'; for d in egd-data-seznamy egd-dokumenty
+   egd-externi-api egd-llm-gateway egd-maily egd-planovane-ulohy egd-prava-role egd-pripravenost
+   egd-prvni-appka egd-recon; do if [ -f "$dest/$d/SKILL.md" ]; then printf '%s/SKILL.md\n' "$d";
+   else printf 'MISSING %s/SKILL.md\n' "$d"; fi; done; for d in egd-data-seznamy egd-dokumenty
+   egd-externi-api egd-llm-gateway egd-maily egd-planovane-ulohy egd-prava-role egd-pripravenost
+   egd-prvni-appka egd-recon; do diff -qr "$src/$d" "$dest/$d" >/dev/null || { printf 'DIFF %s\n'
+   "$d"; exit 3; }; done; printf 'ALL_COPIES_MATCH\n'
+
+ $ Shell Check current Copilot skill discovery 18 lines…
+   printf 'HOME=%s\nCOPILOT_HOME=%s\n' "$HOME" "${COPILOT_HOME-}"; if command -v copilot >/dev/null
+   2>&1; then copilot skill list; else printf 'COPILOT_COMMAND_UNAVAILABLE\n'; fi
+
+Jsem **GitHub Copilot CLI**. Zkopíroval jsem všech 10 složek do `/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/`, včetně skrytých souborů a podsložek. Nic jsem nepřepisoval; ověřil jsem, že kopie odpovídají zdrojům a že v každé je `SKILL.md`.
+
+Ověřené soubory:
+```text
+egd-data-seznamy/SKILL.md
+egd-dokumenty/SKILL.md
+egd-externi-api/SKILL.md
+egd-llm-gateway/SKILL.md
+egd-maily/SKILL.md
+egd-planovane-ulohy/SKILL.md
+egd-prava-role/SKILL.md
+egd-pripravenost/SKILL.md
+egd-prvni-appka/SKILL.md
+egd-recon/SKILL.md
+```
+
+`copilot skill list` je už zobrazil v seznamu osobních skillů. Pro načtení v této interaktivní relaci spusťte `/skills reload` a ověřte přes `/skills list`; pokud se tam neobjeví, spusťte novou relaci.
+
+Session exported to: /Users/chocholous/egd-e2e-copilot/sandbox/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 0.38 (37s)
+Tokens     ↑ 107.8k (95.9k cached, 11.8k written) • ↓ 2.7k (1.5k reasoning)
+Resume     copilot --resume=6c99877b-e361-4064-9c10-8c57c2abe26e

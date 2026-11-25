@@ -1,0 +1,24 @@
+připojeno k běžícímu Chrome e2e-egd10 (port 50385), nový panel
+[2.1s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene%20dokumenty/Forms/AllItems.aspx?FolderCTID=0x0120003984BADAE45F464E8CA9E5ED9C22201E&id=%2Fsites%2Fegd%2Dukazky%2FSdilene%20dokumenty%2Fexporty
+[9.1s] OK wait:7000  
+[9.2s] OK click:[aria-label='Show Copilot actions for selected items']  
+[10.7s] OK wait:1500  
+[10.8s] OK click:Create an agent  
+[30.8s] OK wait:20000  
+[30.8s] OK shotv:create-agent  
+sondy/copilot-nativni/dukazy/agent/create-agent.png
+[30.9s] OK eval:document.body.innerText.slice(0,100)  
+Skip to main content
+SharePoint
+
+
+Ú1
+Discover
+Publish
+Build
+OneDrive
+Katalog funkcí EG.D
+HomeDocum
+[30.9s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserFirstRun.Experiences

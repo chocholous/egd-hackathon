@@ -1,0 +1,4 @@
+## approve přes CSOM – žádost s Resource = displayName (SP má tag)
+[{"SchemaVersion":"15.0.0.0","LibraryVersion":"16.0.27911.12005","ErrorInfo":{"ErrorMessage":"The service principal for permssion request egd-overeni-apiaccess-nazev could not be found.","ErrorValue":null,"TraceCorrelationId":"5e6e51a2-30dc-0001-45dd-d898ba256f03","ErrorCode":-1,"ErrorTypeName":"System.InvalidOperationException"},"TraceCorrelationId":"5e6e51a2-30dc-0001-45dd-d898ba256f03"}]
+
+[]

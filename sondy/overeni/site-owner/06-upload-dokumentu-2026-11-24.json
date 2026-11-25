@@ -1,0 +1,37 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+browserType.launchPersistentContext: Failed to create a ProcessSingleton for your profile directory. This usually means that the profile is already in use by another instance of Chromium.
+Call log:
+  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/Users/chocholous/.config/ppf-rooms-lab/profily/egd01 --remote-debugging-pipe about:blank
+  - <launched> pid=37809
+  - [pid=37809][err] [37809:16508670:1124/113117.093076:ERROR:chrome/browser/process_singleton_posix.cc:349] Failed to create /Users/chocholous/.config/ppf-rooms-lab/profily/egd01/SingletonLock: File exists (17)
+  - [pid=37809][err] [37809:16508670:1124/113117.094756:ERROR:chrome/app/chrome_main_delegate.cc:635] Failed to create a ProcessSingleton for your profile directory. This means that running multiple instances would start multiple browser processes rather than opening a new window in the existing process. Aborting now to avoid profile corruption.
+  - [pid=37809] <gracefully close start>
+  - [pid=37809] <kill>
+  - [pid=37809] <will force kill>
+  - [pid=37809] exception while trying to kill process: Error: kill EPERM
+  - [pid=37809] <process did exit: exitCode=21, signal=null>
+  - [pid=37809] starting temporary directories cleanup
+  - [pid=37809] finished temporary directories cleanup
+  - [pid=37809] <gracefully close end>
+
+    at /Users/chocholous/Projects/egd-workshop/tools/overeni-site-owner.mjs:14:28 {
+  log: [
+    '  - <launching> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,HttpsUpgrades,HttpsFirstBalancedModeAutoEnable,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,AvoidCorsURLLoaderRestartOnRedirect,TcpPortRandomizationWin,OptimizationHints,NetworkTimeServiceQuerying,AimEnabled,PreconnectToSearch,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface,SkipListAccountsWithoutGaiaCookies --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --enable-unsafe-swiftshader --edge-skip-compat-layer-relaunch --disable-stack-profiler --disable-infobars --disable-sync --do-not-de-elevate --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=/Users/chocholous/.config/ppf-rooms-lab/profily/egd01 --remote-debugging-pipe about:blank',
+    '  - <launched> pid=37809',
+    '  - [pid=37809][err] [37809:16508670:1124/113117.093076:ERROR:chrome/browser/process_singleton_posix.cc:349] Failed to create /Users/chocholous/.config/ppf-rooms-lab/profily/egd01/SingletonLock: File exists (17)',
+    '  - [pid=37809][err] [37809:16508670:1124/113117.094756:ERROR:chrome/app/chrome_main_delegate.cc:635] Failed to create a ProcessSingleton for your profile directory. This means that running multiple instances would start multiple browser processes rather than opening a new window in the existing process. Aborting now to avoid profile corruption.',
+    '  - [pid=37809] <gracefully close start>',
+    '  - [pid=37809] <kill>',
+    '  - [pid=37809] <will force kill>',
+    '  - [pid=37809] exception while trying to kill process: Error: kill EPERM',
+    '  - [pid=37809] <process did exit: exitCode=21, signal=null>',
+    '  - [pid=37809] starting temporary directories cleanup',
+    '  - [pid=37809] finished temporary directories cleanup',
+    '  - [pid=37809] <gracefully close end>'
+  ]
+}
+
+Node.js v22.23.5

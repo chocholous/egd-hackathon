@@ -1,0 +1,313 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● skill(egd-dokumenty)
+
+ ● skill(egd-prvni-appka)
+
+**Plán:** upravím existující SPFx appku v `prvni-appka`, přidám čtyři tlačítka pracující v prohlížeči s původními soubory v `Dokumenty/uprava/vstup` a výstupy uloží do `Dokumenty/uprava/copilot`; potom zvýším verzi, postavím balíček a přes `--cli` nasadím jej i novou stránku jen na vámi určený web. Nebudu žádat ani zapisovat oprávnění tenant-wide. Teď ověřím projekt, jeho závislosti a CLI stav a podle toho provedu kroky.
+
+ $ Shell Inspect app project and required CLI 22 lines…
+   pwd && ls -la && ls -la prvni-appka 2>/dev/null && node --version && test -f
+   "/tmp/cp-run10/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" && echo
+   "skill-script-present" && test -f
+   "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" && echo "m365-cli-present"
+
+ JS Read /private/tmp/cp-run10/home/.copilot/skills/egd-prvni-appka/scripts/ap L1:200 (200 lines r…
+         pka.mjs
+
+ {} Read prvni-appka/package.json 44 lines read
+
+ SS Read prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.module.scss 74 lines read
+
+ {} Read prvni-appka/config/package-solution.json 39 lines read
+
+ TS Read prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts 224 lines read
+
+ ✗ Shell Read deployment helper options Failed with exit code 2  appka.mjs - prvni appka EG.D (Spok…
+   node "/tmp/cp-run10/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" --help
+   appka.mjs - prvni appka EG.D (Spokojenost s prostredim kancelare dnes, 1-5 + dashboard)
+   
+   Spoustej v pracovni slozce z egd-pripravenost:  node "<cesta>/appka.mjs" <prikaz> [volby]
+   
+   Prikazy:
+     cesta                         precte .pripravenost/vysledky.json a doporuci cestu A / A2 / B
+     novy   [--slozka prvni-appka] zalozi projekt ze sablony (nove GUIDy) a nainstaluje balicky (npm
+    ci)
+            [--bez-instalace]      jen zkopiruje sablonu
+     build  [--slozka prvni-appka] postavi .sppkg (npm run build), chyby i do build.log
+     seznam --web <url> [--seznam Spokojenost] [--ano]
+                                   zalozi seznam Spokojenost a sloupce Hodnoceni, Den (bez --ano jen
+    plan)
+     nasadit --web <url> [--slozka prvni-appka] [--stranka prvni-appka] [--nadpis "..."] [--seznam 
+   Spokojenost] [--ano]
+                                   nahraje do katalogu TOHOTO webu, deploy, install/upgrade, stranka
+                                   (Article -> sekce -> web part -> SingleWebPartAppPage), cteni 
+   zpet
+     over   --web <url> [--slozka prvni-appka] [--stranka prvni-appka] [--seznam Spokojenost]
+                                   jen cteni: appka v katalogu, stranka s web partem, polozky 
+   seznamu
+   
+   Spolecne volby: --cli <cesta k @pnp/cli-microsoft365/dist/index.js> (jinak ./node_modules nebo
+   PRVNI_APPKA_M365_CLI / PRIPRAVENOST_M365_CLI).
+   Kody: 0 hotovo, 1 chyba, 2 spatne pouziti, 10 plan bez zapisu (neni chyba).
+   Failed with exit code 2
+
+ ✗ Shell Check existing build patches and document libraries Failed with exit code 1  ls: config: N…
+   ls -la config && ls -la config/webpack-patch 2>/dev/null; node -e "const
+   p=require('./package.json');
+   console.log(JSON.stringify({docxtemplater:p.dependencies?.docxtemplater,pizzip:p.dependencies?.pi
+   zzip,jszip:p.dependencies?.jszip,exceljs:p.dependencies?.exceljs},null,2))"
+   ls: config: No such file or directory
+   node:internal/modules/cjs/loader:1433
+     throw err;
+     ^
+   
+   Error: Cannot find module './package.json'
+   Require stack:
+   - /private/tmp/cp-run10/home/egd-workshop/[eval]
+       at Module._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+       at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+       at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1045:22)
+       at Module._load (node:internal/modules/cjs/loader:1216:25)
+       at wrapModuleLoad (node:internal/modules/cjs/loader:254:19)
+       at Module.require (node:internal/modules/cjs/loader:1527:12)
+       at require (node:internal/modules/helpers:147:16)
+       at [eval]:1:9
+       at runScriptInThisContext (node:internal/vm:209:10)
+       at node:internal/process/execution:446:12 {
+     code: 'MODULE_NOT_FOUND',
+     requireStack: [ '/private/tmp/cp-run10/home/egd-workshop/[eval]' ]
+   }
+   
+   Node.js v22.23.5
+   Failed with exit code 1
+
+ / Search "function cmd(Build|Nasadit|Over)|--cli|SingleWebPartAppPage|createPage|pa… 69 lines found
+
+ JS Read ~/.copilot/skills/egd-prvni-appka/scripts/appka.mjs L200:368 (169 lines read)
+
+ $ Shell Check dependencies and Microsoft 365 CLI status syntax 51 lines…
+   node -e "const p=require('./package.json');
+   console.log(JSON.stringify({docxtemplater:p.dependencies?.docxtemplater,pizzip:p.dependencies?.pi
+   zzip,jszip:p.dependencies?.jszip,exceljs:p.dependencies?.exceljs},null,2))"; ls -la config; node
+   "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" status --help
+
+ $ Shell Check SharePoint file download syntax 51 lines…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo file get --help
+
+ $ Shell Inspect app dependencies and source tree 14 lines…
+   cd prvni-appka && node -e "const p=require('./package.json');
+   console.log(JSON.stringify({docxtemplater:p.dependencies?.docxtemplater,pizzip:p.dependencies?.pi
+   zzip,jszip:p.dependencies?.jszip,exceljs:p.dependencies?.exceljs},null,2))" && ls -la config &&
+   find src -maxdepth 4 -type f -print
+
+ $ Shell Verify Microsoft 365 CLI login status 8 lines…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" status --output json
+
+ $ Shell Inspect read-only SharePoint file listing commands 82 lines…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo file list --help &&
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo folder get --help
+
+ $ Shell Check alternate document-library path 1 line…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo file list --webUrl
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --folderUrl ]8;;
+   "/sites/egd-sonda-ms-dokumenty/Shared Documents/uprava/vstup" --output json
+
+ $ Shell List requested source documents 102 lines…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo file list --webUrl
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --folderUrl ]8;;
+   "/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vstup" --output json
+
+ $ Shell Find the site's document library URL output too large to show (52.8 KB)…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo list list --webUrl
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --output json]8;;
+
+ $ Shell Download and inspect spreadsheet inputs without editing SharePoint 25 lines…
+   mkdir -p "/tmp/cp-run10/home/.copilot/session-state/e4536ce8-99e7-43f0-820a-e2f42bb350c9/files/up
+   rava-input" && node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo file
+   get --webUrl "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --url ]8;;
+   "/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vstup/rozpocet.xlsx" --asFile --path
+   "/tmp/cp-run10/home/.copilot/session-state/e4536ce8-99e7-43f0-820a-e2f42bb350c9/files/uprava-inpu
+   t/rozpocet.xlsx" --output json && python3 -c "import zipfile,xml.etree.ElementTree as ET;
+   p='/tmp/cp-run10/home/.copilot/session-state/e4536ce8-99e7-43f0-820a-e2f42bb350c9/files/uprava-in
+   put/rozpocet.xlsx'; z=zipfile.ZipFile(p); n={'m':']8;id=md-18v0ljl;http://schemas.openxmlformats.org/spreadsheetml/2006/mainhttp://schemas.openxmlformats.org/spreadsheetml]8;;
+   ]8;id=md-18v0ljl;http://schemas.openxmlformats.org/spreadsheetml/2006/main/2006/main]8;;]8;;','r':']8;;]8;id=md-1ypsaef;http://schemas.openxmlformats.org/officeDocument/2006/relationshipshttp://schemas.openxmlformats.org/officeDocument/2006/relationships]8;;]8;;'}; ]8;;
+   w=ET.fromstring(z.read('xl/workbook.xml'));
+   rel=ET.fromstring(z.read('xl/_rels/workbook.xml.rels')); rmap={x.attrib['Id']:x.attrib['Target']
+   for x in rel}; ss=[];
+   if 'xl/sharedStrings.xml' in z.namelist():
+    s=ET.fromstring(z.read('xl/sharedStrings.xml')); ss=[''.join(t.text or '' for t in
+   x.findall('.//m:t',n)) for x in s.findall('m:si',n)]
+   for sh in w.findall('m:sheets/m:sheet',n):
+    target=rmap[sh.attrib['{'+n['r']+'}id']].lstrip('/'); target=target if target.startswith('xl/')
+   else 'xl/'+target; root=ET.fromstring(z.read(target)); print('SHEET',sh.attrib['name'],target)
+    for c in root.findall('.//m:sheetData/m:row/m:c',n):
+     if c.attrib.get('r','') in ('B2','C2','B3','C3') or c.find('m:f',n) is not None:
+      v=c.find('m:v',n); f=c.find('m:f',n); val=v.text if v is not None else '';
+   typ=c.attrib.get('t'); val=ss[int(val)] if typ=='s' and val else val; print(c.attrib.get('r'),
+   'type='+str(typ), 'value='+val, 'formula='+str(f.text if f is not None else None))"
+
+ $ Shell Add browser-side Office document editing libraries 6 lines…
+   cd prvni-appka && npm install --save-exact docxtemplater@3.71.1 pizzip@3.3.0 jszip@3.10.2
+   --no-audit --no-fund
+
+ ● Edit  Edit prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts (+251)
+
+ ● Edit  Edit prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts (+43)
+
+ ● Edit  Edit prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.module.scss (+14)
+
+ ● Edit  Edit prvni-appka/config/package-solution.json (+2 -2)
+
+ / Search "getFullText|render\(data|interface .*Docxtemplater" in *.d.ts (prvni-appka… 6 lines found
+
+ $ Shell Review new dependency and modified files 3 lines…
+   cd prvni-appka && cat package.json | grep -E 'docxtemplater|pizzip|jszip' && git status --short
+   2>/dev/null || true
+
+ $ Shell Verify placeholder tokens in the Word template 5 lines…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo file get --webUrl
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --url ]8;;
+   "/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/vstup/sablona-word.docx" --asFile --path
+   "/tmp/cp-run10/home/.copilot/session-state/e4536ce8-99e7-43f0-820a-e2f42bb350c9/files/uprava-inpu
+   t/sablona-word.docx" --output json && python3 -c "import zipfile; p='/tmp/cp-run10/home/.copilot/
+   session-state/e4536ce8-99e7-43f0-820a-e2f42bb350c9/files/uprava-input/sablona-word.docx';
+   z=zipfile.ZipFile(p); x=z.read('word/document.xml').decode(); print('placeholders:',
+   {k:x.count(k) for k in ['{{jmeno}}','{{utvar}}','{{datum}}','{{hodnoceni}}']})"
+
+ $ Shell Measure placeholders across Word formatting runs 10 lines…
+   cd prvni-appka && node - <<'NODE'
+   const fs = require('fs');
+   const PizZip = require('pizzip');
+   const Docxtemplater = require('docxtemplater');
+   const p = '/tmp/cp-run10/home/.copilot/session-state/e4536ce8-99e7-43f0-820a-e2f42bb350c9/files/u
+   prava-input/sablona-word.docx';
+   const d = new Docxtemplater(new PizZip(fs.readFileSync(p)), { delimiters: { start: '{{', end:
+   '}}' } });
+   const text = d.getFullText();
+   console.log(text);
+   console.log('counts', Object.fromEntries(['jmeno','utvar','datum','hodnoceni'].map(k => [k,
+   text.split(`{{${k}}}`).length - 1])));
+   NODE
+
+ ● Edit  Edit prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts (+4 -2)
+
+ ✗ Shell Build and type-check the modified SPFx app Failed with exit code 1  > prvni-appka@0.0.… 20s
+   cd prvni-appka && npm run build
+   > prvni-appka@0.0.1 build
+   > heft test --clean --production && heft package-solution --production
+   
+    ---- build started ---- 
+   [build:set-browserslist-ignore-old-data-env-var] Setting environment variable 
+   BROWSERSLIST_IGNORE_OLD_DATA=1
+   [build:sass] Starting...
+   [build:static-asset-typings] Processing static assets...
+   [build:static-asset-typings] Finished processing static assets.
+   [build:sass] Compiling 1 files...
+   [build:sass] Finished compiling.
+   [build:typescript] Using TypeScript version 5.8.3
+   [build:typescript] Copied 2 files and linked 0 files
+   [build:lint] Using ESLint version 9.37.0
+   [build:lint] Warning: src/webparts/spokojenost/SpokojenostWebPart.ts:155:17 - 
+   (@typescript-eslint/no-unused-vars) 'klic' is assigned a value but never used.
+   [build:lint] Error: src/webparts/spokojenost/SpokojenostWebPart.ts:162:9 - 
+   (@typescript-eslint/no-floating-promises) Promises must be awaited, end with a call to .catch, 
+   end with a call to .then with a rejection handler or be explicitly marked as ignored with the 
+   `void` operator.
+   [build:webpack] Using Webpack version 5.105.4
+   [build:webpack] Running Webpack compilation
+    ---- build encountered an error (17.922s) ---- 
+   Encountered 1 warning
+     [build:lint] src/webparts/spokojenost/SpokojenostWebPart.ts:155:17 - 
+   (@typescript-eslint/no-unused-vars) 'klic' is assigned a value but never used.
+   Encountered 1 error
+     [build:lint] src/webparts/spokojenost/SpokojenostWebPart.ts:162:9 - 
+   (@typescript-eslint/no-floating-promises) Promises must be awaited, end with a call to .catch, 
+   end with a call to .then with a rejection handler or be explicitly marked as ignored with the 
+   `void` operator.
+   -------------------- Failed (17.924s) --------------------
+   Failed with exit code 1
+
+ ● Edit  Edit prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts (+8 -7)
+
+ $ Shell Rebuild app after fixing lint errors 83 lines…                                          15s
+   cd prvni-appka && npm run build
+
+Úpravy jsou hotové a build prošel. Pro sešit jsem nastavil B2:C3 na `125000, "ok"; 355000, "ok"` podle uvedeného vzoru, odstranil uložené výsledky vzorců a zapnul úplný automatický přepočet při otevření. Teď si přes helper nechám vypsat konkrétní plán bez zápisu: nahrání verze `1.0.0.1` do katalogu tohoto webu, upgrade appky a vytvoření publikované stránky `uprava-copilot` s názvem „Úprava dokumentů“.
+
+ ✗ Shell Show scoped deployment plan for the requested SharePoint site Failed with exit code 10  [I…
+   node "/tmp/cp-run10/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" nasadit --web
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --slozka prvni-appka ]8;;
+   --stranka uprava-copilot --nadpis "Úprava dokumentů" --cli
+   "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js"
+   [INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+   
+   PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty, 
+   katalog tohoto webu, nic tenant-wide):
+     1. nahrat prvni-appka.sppkg (verze 1.0.0.1) do katalogu aplikaci webu (prepsat starsi)
+     2. nasadit (deploy) v katalogu webu
+     3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+     4. zalozit stranku uprava-copilot.aspx ("Úprava dokumentů"), vlozit web part, prepnout na 
+   celostrankovou appku a publikovat
+   
+   Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+   Failed with exit code 10
+
+Plán potvrzuje zápis pouze do katalogu a na web `egd-sonda-ms-dokumenty`; tenant-wide oprávnění se nežádají. Protože jste tento zápis výslovně schválil, pokračuji nasazením a vytvořením stránky.
+
+ $ Shell Deploy the app to the approved site and publish its page 20 lines…                      27s
+   node "/tmp/cp-run10/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" nasadit --web
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --slozka prvni-appka ]8;;
+   --stranka uprava-copilot --nadpis "Úprava dokumentů" --cli
+   "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" --ano
+
+ ✗ Shell Check whether the requested output fo… Error: Soubor nebyl nalezen. Failed with exit code 1
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo folder get --webUrl
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --url ]8;;
+   "/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/copilot" --output json
+
+ $ Shell Verify the deployed app and page read-only 6 lines…
+   node "/tmp/cp-run10/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" over --web
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --slozka prvni-appka ]8;;
+   --stranka uprava-copilot --cli
+   "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js"
+
+ $ Shell Confirm SharePoint folder creation options 42 lines…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo folder add --help
+
+Nasazení i publikovaná stránka jsou ověřené. Výstupní složka zatím neexistovala; zakládám ji nyní ve stejné knihovně pod `uprava`, jak jste požadoval.
+
+ $ Shell Create the approved output folder in the site's document library 14 lines…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo folder add --webUrl
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --parentFolderUrl ]8;;
+   "/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava" --name "copilot" --output json
+
+ $ Shell Remove temporary downloaded source copies No Content
+   rm -f "/tmp/cp-run10/home/.copilot/session-state/e4536ce8-99e7-43f0-820a-e2f42bb350c9/files/uprav
+   a-input/rozpocet.xlsx" "/tmp/cp-run10/home/.copilot/session-state/e4536ce8-99e7-43f0-820a-e2f42bb
+   350c9/files/uprava-input/sablona-word.docx" && rmdir "/tmp/cp-run10/home/.copilot/session-state/e
+   4536ce8-99e7-43f0-820a-e2f42bb350c9/files/uprava-input"
+
+ $ Shell Verify the created output folder 14 lines…
+   node "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js" spo folder get --webUrl
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --url ]8;;
+   "/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/uprava/copilot" --output json
+
+ $ Shell Confirm published page and app package state 6 lines…
+   node "/tmp/cp-run10/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" over --web
+   "]8;id=md-17sbiqv;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumentyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty]8;;]8;;" --slozka prvni-appka ]8;;
+   --stranka uprava-copilot --cli
+   "/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js"
+
+Appka je postavená a nasazená; stránka i výstupní složka jsou ověřené. Otevřete [Úpravu dokumentů](https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/SitePages/uprava-copilot.aspx?env=WebView). Originály zůstanou beze změny, výsledky se ukládají do `Dokumenty/uprava/copilot`; každé tlačítko hlásí výsledek nebo chybu v prvku `role=status`.
+
+Použité varianty: **Vyplnit šablonu** — docxtemplater s PizZipem, včetně jména přihlášeného uživatele, útvaru, dnešního data a celkového počtu hlasů; **Smlouva** a **Prezentace** — JSZip a náhrada textu přes hranice formátovaných úseků; **Rozpočet** — přímá úprava OOXML přes JSZip. V rozpočtu jsem nastavil B2:C3 na `125000, "ok"; 355000, "ok"` a zapnul úplný přepočet při otevření, bez Graph oprávnění. Build prošel; ověřil jsem také nasazení stránky, ale kliky na tlačítka jsem v prohlížeči netestoval.
+
+Session exported to: /tmp/cp-run10/vystup/prepis.md
+
+
+Changes    +322 -11
+AI Credits 3.67 (4m 57s)
+Tokens     ↑ 1.6m (1.5m cached, 70.2k written) • ↓ 25.0k (14.1k reasoning)
+Resume     copilot --resume=e4536ce8-99e7-43f0-820a-e2f42bb350c9

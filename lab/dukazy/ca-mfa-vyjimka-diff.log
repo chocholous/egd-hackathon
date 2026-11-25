@@ -1,0 +1,16 @@
+CA politika „LAB baseline: MFA all users“, conditions.users před a po výjimce (2026-11-22)
+--- před
+{"excludeGroups":[],"excludeGuestsOrExternalUsers":null,"excludeRoles":[],"excludeUsers":["1ad0d25f-6a01-4b4c-b353-b34ebe868c4e","983e4e61-d553-43b3-b92e-a0bbf64fc69c","4a9b2f9a-24ff-4092-800b-e71f91b307b0","7b981009-310c-41b7-9086-a8d57f72f17f","27d26cf0-191f-4a88-adaa-6809c8ed6b37","a8590c41-c0eb-46e3-b22b-6ed52305e722","729c9439-99f0-4012-b21f-125adb4ba64c","33507faf-6706-4c3b-bbb3-c1e15a7e0a6d","22514a8d-8108-401d-bdf8-a3b6398fee75","fda469d6-be68-402d-9a40-f1040be2ec31","a3cc4d8b-1fd6-4319-8658-fbc0339895ce","71a8173e-8e72-4ab6-93e3-cd1e83ced434","2fdb8579-0e79-4e4a-8412-54fb26240056"],"includeGroups":[],"includeGuestsOrExternalUsers":null,"includeRoles":[],"includeUsers":["All"]}
+
+--- po
+{"excludeGroups":["4f80b979-22ca-493e-a0c4-a5eeccbe4cc5"],"excludeGuestsOrExternalUsers":null,"excludeRoles":[],"excludeUsers":["1ad0d25f-6a01-4b4c-b353-b34ebe868c4e","983e4e61-d553-43b3-b92e-a0bbf64fc69c","4a9b2f9a-24ff-4092-800b-e71f91b307b0","7b981009-310c-41b7-9086-a8d57f72f17f","27d26cf0-191f-4a88-adaa-6809c8ed6b37","a8590c41-c0eb-46e3-b22b-6ed52305e722","729c9439-99f0-4012-b21f-125adb4ba64c","33507faf-6706-4c3b-bbb3-c1e15a7e0a6d","22514a8d-8108-401d-bdf8-a3b6398fee75","fda469d6-be68-402d-9a40-f1040be2ec31","a3cc4d8b-1fd6-4319-8658-fbc0339895ce","71a8173e-8e72-4ab6-93e3-cd1e83ced434","2fdb8579-0e79-4e4a-8412-54fb26240056"],"includeGroups":[],"includeGuestsOrExternalUsers":null,"includeRoles":[],"includeUsers":["All"]}
+
+--- rozdíl (jq)
+2c2,4
+<   "excludeGroups": [],
+---
+>   "excludeGroups": [
+>     "4f80b979-22ca-493e-a0c4-a5eeccbe4cc5"
+>   ],
+--- stav teď
+politika „LAB baseline: MFA all users“ (enabled): skupina účastníků JE vyjmutá

@@ -1,0 +1,27 @@
+{
+  "env": "/subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourceGroups/rg-ppf-rooms-lab/providers/Microsoft.App/managedEnvironments/ca-ppf-rooms-env",
+  "img": "acrppfroomsca3lbgs.azurecr.io/ca-egd-dokumenty:0.1",
+  "res": {
+    "cpu": 1.0,
+    "ephemeralStorage": "4Gi",
+    "memory": "2Gi"
+  },
+  "scale": {
+    "cooldownPeriod": 300,
+    "maxReplicas": 2,
+    "minReplicas": 0,
+    "pollingInterval": 30,
+    "rules": [
+      {
+        "http": {
+          "auth": [],
+          "metadata": {
+            "concurrentRequests": "4"
+          }
+        },
+        "name": "http"
+      }
+    ]
+  },
+  "workload": "Consumption"
+}

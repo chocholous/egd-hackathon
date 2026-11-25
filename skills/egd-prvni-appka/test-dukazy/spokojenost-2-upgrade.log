@@ -1,0 +1,22 @@
+Stavim balicek (npm run build, Heft; minuta az dve)...
+[OK]      balicek: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8d3c6e51-bb57-4e00-b8c2-1af463aca4ab/scratchpad/vibecoder/spokojenost/sharepoint/solution/spokojenost.sppkg (12049 B, verze 1.0.0.1)
+rc=0
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka, katalog tohoto webu, nic tenant-wide):
+  1. nahrat spokojenost.sppkg (verze 1.0.0.1) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. stranka spokojenost.aspx uz existuje - jen overim, ze na ni web part je
+[OK]      nahrano do katalogu (appId d3a7f1b3-c5b1-4a29-8ce5-31d4ac941bd0)
+[OK]      nasazeno (deploy)
+[OK]      appka na webu aktualizovana (upgrade)
+[OK]      web part na strance uz je
+[OK]      precteno zpet: stranka spokojenost.aspx, rozlozeni SingleWebPartAppPage, web part 681ca72d-0a69-4cfb-aae5-caa4fc07f5e4 na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka/SitePages/spokojenost.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, po kliknuti na cislo se hlas propise do dashboardu.
+rc=0

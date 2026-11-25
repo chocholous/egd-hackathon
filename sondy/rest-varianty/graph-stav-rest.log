@@ -1,0 +1,9 @@
+# stav na egd09-dev po sonda-graph.ps1 (cteni pres SharePoint REST) 2026-11-23 10:54:38
+GET /_api/web/lists/getbytitle('SpokojenostGraph')?$select=Title,ItemCount
+{"ItemCount":0,"Title":"SpokojenostGraph"}
+GET /_api/web/getfolderbyserverrelativeurl('/sites/egd09-dev/AppCatalog')/files?$select=Name,TimeCreated&$filter=Name eq
+
+GET /_api/web/GetFileByServerRelativeUrl('/sites/egd09-dev/SitePages/graph-sonda.aspx')?$select=Name,TimeCreated
+{"Name":"graph-sonda.aspx","TimeCreated":"2026-11-23T09:36:00Z"}
+GET GetFileByServerRelativeUrl('/sites/egd09-dev/AppCatalog/spokojenost-graph-sonda.sppkg')
+{"Length":"12398","Name":"spokojenost-graph-sonda.sppkg","TimeCreated":"2026-11-23T09:35:59Z"}

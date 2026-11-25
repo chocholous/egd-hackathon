@@ -1,0 +1,29 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Shared%20Documents/Forms/AllItems.aspx",
+ "start": "2026-11-24T19:51:56.558Z",
+ "kroky": [
+  {
+   "krok": "wait:6000",
+   "t": 268,
+   "ok": true
+  },
+  {
+   "krok": "shotv:knihovna",
+   "t": 6269,
+   "vysledek": "sondy/copilot-nativni/dukazy/p2/knihovna.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('button,[role=button],[role=menuitem],a')].map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(x=>x&&/copilot|agent|ask|summar|compare|autofill/i.test(x)).join(' | ')",
+   "t": 6414,
+   "vysledek": "",
+   "ok": true
+  }
+ ],
+ "sit": [],
+ "konzole": [
+  "error: Failed to load resource: the server responded with a status of 404 ()"
+ ],
+ "konec": "2026-11-24T19:52:02.976Z"
+}

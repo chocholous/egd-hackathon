@@ -1,0 +1,134 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/ai.aspx",
+ "start": "2026-11-24T18:46:57.646Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 926,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 3929,
+   "vysledek": "8 zón",
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"] #ai-shrnout",
+   "t": 12586,
+   "ok": true
+  },
+  {
+   "krok": "wait:10000",
+   "t": 12714,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"]').innerText.slice(document.querySelector('[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"]').innerText.indexOf('AI pomocník'), document.querySelector('[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"]').innerText.indexOf('AI pomocník')+700)",
+   "t": 22717,
+   "vysledek": "AI pomocník\nShrnout dnešek (AI)Přečíst soubor (OCR)Kolik AI zbývá dnes\n\nNávrh AI: Hodnocení spokojenosti s kanceláří dnes bylo téměř výlučně pozitivní s jedním hlasem na úrovni 4.",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"9669ff55-924e-4bae-bf73-e84f7de8cd13\"] #ai-shrnout').scrollIntoView({block:'start'})",
+   "t": 22720,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:02-egd09-shrnuti",
+   "t": 22721,
+   "vysledek": "dukazy/karty/ai-spokojenost/shrnuti/02-egd09-shrnuti.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 637,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 693,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 707,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 715,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1721,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 6857,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID%20desc&$top=2000"
+  },
+  {
+   "t": 8256,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(7)/CommentsDisabledScope"
+  },
+  {
+   "t": 8260,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 8324,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(7)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 8354,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderby=ID%"
+  },
+  {
+   "t": 13902,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:47:20.528Z"
+}

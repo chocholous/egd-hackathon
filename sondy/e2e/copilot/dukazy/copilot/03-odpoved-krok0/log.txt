@@ -1,0 +1,75 @@
+ $ Shell Check the provided test tenant and read-only SharePoint access 18 lines…                11s
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; node "$S" sit --web "]8;id=md-bk88m4;https://pavelchocholousgmail.sharepoint.com/sites/egd09-devhttps://pavelchocholousgmail.sharepoint.com/sites/egd09-dev]8;;]8;;"; ]8;;
+   printf '\n--- CLI SIGN-IN STATUS ---\n'; node "$S" prihlaseni; printf '\n--- SHAREPOINT READ-ONLY
+   CHECK ---\n'; node "$S" sharepoint --web
+   "]8;id=md-bk88m4;https://pavelchocholousgmail.sharepoint.com/sites/egd09-devhttps://pavelchocholousgmail.sharepoint.com/sites/egd09-dev]8;;]8;;"]8;;
+
+ / Search "Objednavky predem|Doporuceni|function cmdZprava|const cesta|const it|gith… 88 lines found
+
+ $ Shell Verify the signed-in session against the supplied test tenant 16 lines…                 10s
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; WEB="]8;id=md-bk88m4;https://pavelchocholousgmail.sharepoint.com/sites/egd09-devhttps://pavelchocholousgmail.sharepoint.com/sites/egd09-dev]8;;]8;;"; ]8;;
+   TENANT="pavelchocholousgmail.onmicrosoft.com"; printf '%s\n' '--- TENANT NETWORK CHECK ---'; node
+   "$S" sit --tenant "$TENANT" --web "$WEB"; printf '%s\n' '--- MATCHING CLI SESSION ---'; node "$S"
+   prihlaseni --tenant "$TENANT"; printf '%s\n' '--- SITE ACCESS ---'; node "$S" sharepoint --tenant
+   "$TENANT" --web "$WEB"
+
+ $ Shell Prepare a no-write test plan and update the named readiness report 34 lines…
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; WEB="]8;id=md-bk88m4;https://pavelchocholousgmail.sharepoint.com/sites/egd09-devhttps://pavelchocholousgmail.sharepoint.com/sites/egd09-dev]8;;]8;;"; ]8;;
+   TENANT="pavelchocholousgmail.onmicrosoft.com"; printf '%s\n' '--- SAFE TEST PLAN (NO WRITES)
+   ---'; node "$S" zkouska --tenant "$TENANT" --web "$WEB" --jmeno e2e-copilot; rc=$?; printf
+   'dry-run exit: %s\n' "$rc"; printf '\n--- RECORD USER CONTEXT / SKIPPED ITEMS ---\n'; node "$S"
+   zapis --klic workshop-kontext --stav info --hodnota "Testovací tenant
+   pavelchocholousgmail.onmicrosoft.com; DEV web dodal lektor; uživatel neobjednával v ITSM. Copilot
+   licence a ITSM na žádost přeskočeny."; node "$S" zapis --klic dev-web --stav zelena --hodnota
+   "]8;id=md-bk88m4;https://pavelchocholousgmail.sharepoint.com/sites/egd09-devhttps://pavelchocholousgmail.sharepoint.com/sites/egd09-dev]8;;]8;;; dodal lektor; read-only přístup, ]8;;
+   role Vlastník a webový katalog ověřeny v tenant pavelchocholousgmail.onmicrosoft.com"; node "$S"
+   zapis --klic zkouska --stav zluta --hodnota "Plán zkušebního zápisu nebyl schválen; žádný zápis
+   proveden. Seznam EGD-pripravenost už na webu existuje."; node "$S" zapis --klic copilot-licence
+   --stav info --hodnota "Přeskočeno na žádost; licence nebyla ověřována."; node "$S" zapis --klic
+   github-test --stav info --hodnota "Přeskočeno na žádost; gh na žádný host přihlášen není, firemní
+   přístup ani licence nebyly ověřeny."; node "$S" zapis --klic browser-checks --stav info --hodnota
+   "Ověřeno přes CLI: DEV web, vlastnická role, katalog aplikací a licence Power Apps/Power
+   Automate; prohlížečové UI samostatně neotvíráno."; node "$S" zprava --jmeno e2e-copilot
+
+ MD Read pripravenost-e2e-copilot.md L1:120 (118 lines read)
+
+ $ Shell Mark the test-tenant CLI app as verified and regenerate the report 6 lines…
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; node "$S" zapis --klic appId --stav zelena --hodnota "Úspěšné CLI přihlášení ověřeno
+   v testovacím tenant pavelchocholousgmail.onmicrosoft.com; appId
+   12f19539-b70a-499d-b6dc-517a32c0e904"; node "$S" zprava --jmeno e2e-copilot
+
+ MD Read pripravenost-e2e-copilot.md L45:115 (70 lines read)
+
+ MD Read pripravenost-e2e-copilot.md L90:150 (29 lines read)
+
+ $ Shell Correct login notes and regenerate the readiness report 8 lines…
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; node "$S" zapis --klic varianta-prihlaseni --stav info --hodnota "Existující
+   přihlášení CLI ověřeno v testovacím tenant pavelchocholousgmail.onmicrosoft.com; nový
+   přihlašovací tok nebyl třeba."; node "$S" zapis --klic varianta-pouzita-prihlaseni --stav info
+   --hodnota "Existující CLI relace v testovacím tenant; přihlášení funguje, způsob původního
+   přihlášení nebyl zjišťován."; node "$S" zprava --jmeno e2e-copilot
+
+ ● Edit  Edit pripravenost-e2e-copilot.md (+3 -11)
+
+ MD Read pripravenost-e2e-copilot.md L1:18 (18 lines read)
+
+ MD Read pripravenost-e2e-copilot.md L78:120 (33 lines read)
+
+ / Search "(gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|Bearer[[:spac… No matches found
+
+Připravenost pro testovací tenant je **26 zelených, 4 žluté, 0 červených**. Přihlášení do tenant, přístup k DEV webu, role vlastníka, katalog aplikací i licence Power Apps/Automate vyšly. GitHub/Copilot licence a ITSM jsem přeskočil podle pokynu.
+
+Zpráva je uložená v `/Users/chocholous/egd-e2e-copilot/sandbox/home/egd-workshop/pripravenost-e2e-copilot.md`. Do SharePointu jsem nic nezapisoval; zkušební zápis ani vytvoření appky neproběhly bez výslovného souhlasu.
+
+Session exported to: /Users/chocholous/egd-e2e-copilot/sandbox/vystup/prepis.md
+
+
+Changes    +3 -11
+AI Credits 2.61 (3m 26s)
+Tokens     ↑ 1.0m (959.7k cached, 75.7k written) • ↓ 14.0k (8.9k reasoning)
+Resume     copilot --resume=85f31a58-6dbf-4ad4-9c5c-c1e8518548c9

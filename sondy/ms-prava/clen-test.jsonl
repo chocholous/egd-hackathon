@@ -1,0 +1,7 @@
+{"krok": "clen POST roledefinitions", "http": 403, "odpoved": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))", "cas": "21:15:48"}
+{"krok": "clen breakroleinheritance", "http": 403, "odpoved": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))", "cas": "21:15:48"}
+{"krok": "clen POST sitegroups", "http": 403, "odpoved": "Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))", "cas": "21:15:48"}
+{"krok": "clen web bity", "low": "0x3c431aef", "high": "0x3b0", "ManagePermissions": null, "cas": "21:15:48"}
+{"krok": "eva.vesela seznam Pozadavky bity", "low": "0x3c4313ef", "high": "0x3b0", "cas": "21:15:49"}
+{"krok": "karolina.mala seznam Pozadavky bity", "low": "0xfffbffff", "high": "0x7fffffff", "cas": "21:15:49"}
+{"krok": "jakub.kucera seznam Pozadavky bity", "low": "0x3c4312ef", "high": "0x3b0", "cas": "21:15:50"}

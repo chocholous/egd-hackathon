@@ -1,0 +1,22 @@
++ m365 spo roledefinition add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name EGD Zadavatel CLI2 --rights ViewListItems,AddListItems,EditListItems,OpenItems,ViewVersions,DeleteVersions,ManagePersonalViews,ViewFormPages,Open,ViewPages,CreateSSCSite,BrowseDirectories,BrowseUserInfo,AddDelPrivateWebParts,UpdatePersonalWebParts,UseClientIntegration,UseRemoteAPIs,CreateAlerts,EditMyUserInfo,DeleteListItems
++ m365 spo roledefinition add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name EGD Schvalovatel CLI2 --rights ViewListItems,AddListItems,EditListItems,OpenItems,ViewVersions,DeleteVersions,ManagePersonalViews,ViewFormPages,Open,ViewPages,CreateSSCSite,BrowseDirectories,BrowseUserInfo,AddDelPrivateWebParts,UpdatePersonalWebParts,UseClientIntegration,UseRemoteAPIs,CreateAlerts,EditMyUserInfo,DeleteListItems,CancelCheckout
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name CLI2 Zadavatelé
++ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI2 Zadavatelé --userNames jana.svobodova@pavelchocholousgmail.onmicrosoft.com
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI2 Zadavatelé --roleDefinitionName Čtení
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name CLI2 Schvalovatelé
++ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI2 Schvalovatelé --userNames tomas.prochazka@pavelchocholousgmail.onmicrosoft.com
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI2 Schvalovatelé --roleDefinitionName Čtení
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name CLI2 Správci
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI2 Správci --roleDefinitionName Čtení
++ m365 spo list roleinheritance break --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI2 --clearExistingPermissions --force
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI2 --groupName Vlastníci webu EGD sonda ms-prava --roleDefinitionName Úplné řízení
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI2 --groupName CLI2 Zadavatelé --roleDefinitionName EGD Zadavatel CLI2
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI2 --groupName CLI2 Schvalovatelé --roleDefinitionName EGD Schvalovatel CLI2
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI2 --groupName CLI2 Správci --roleDefinitionName Úplné řízení
++ m365 spo list set --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --title PozadavkyCLI2 --readSecurity 2 --writeSecurity 2
+Kontrola:
+{
+  "HasUniqueRoleAssignments": true,
+  "ReadSecurity": 2,
+  "WriteSecurity": 2
+}

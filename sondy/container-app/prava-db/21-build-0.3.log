@@ -1,0 +1,88 @@
+WARNING: Note: The token in both the accessToken and refreshToken fields is an ACR Refresh Token, not an ACR Access Token. This ACR Refresh Token cannot be used directly to authenticate with registry APIs such as pushing/pulling images and listing repositories/tags. This ACR Refresh Token must be subsequently exchanged for an ACR Access.Please see https://aka.ms/acr/auth/oauth
+WARNING: You can perform manual login using the provided refresh token below, for example: 'docker login loginServer -u 00000000-0000-0000-0000-000000000000 -p refreshToken'
+Login Succeeded
+#0 building with "orbstack" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 192B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/node:22-alpine@sha256:1314fb30ec37592d5845e5a160d522c0e680972aa534549940b8d73bde88481a
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 14.59kB done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [3/5] COPY package.json ./
+#7 DONE 0.1s
+
+#8 [4/5] RUN npm install --omit=dev
+#8 18.03 
+#8 18.03 added 77 packages, and audited 78 packages in 17s
+#8 18.03 
+#8 18.03 17 packages are looking for funding
+#8 18.03   run `npm fund` for details
+#8 18.04 
+#8 18.04 found 0 vulnerabilities
+#8 18.04 npm notice
+#8 18.04 npm notice New major version of npm available! 10.9.9 -> 12.2.3
+#8 18.04 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.3
+#8 18.04 npm notice To update run: npm install -g npm@12.2.3
+#8 18.04 npm notice
+#8 DONE 18.4s
+
+#9 [5/5] COPY server.mjs ./
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers
+#10 exporting layers 0.5s done
+#10 writing image sha256:316861077163773300b8148680bf408f887f0d2de42dce080a2167a02f1e32c4 done
+#10 naming to acrppfroomsca3lbgs.azurecr.io/egd-sonda-data-api:0.3 done
+#10 DONE 0.5s
+
+#11 pushing acrppfroomsca3lbgs.azurecr.io/egd-sonda-data-api:0.3 with docker
+#11 pushing layer 88a9bef8cd98
+#11 pushing layer 53b910de17c5
+#11 pushing layer df420800da5c
+#11 pushing layer b1a43e70fe8e
+#11 pushing layer f06a70e4735f
+#11 pushing layer acb510a1dd0f
+#11 pushing layer 313a78c90b21
+#11 pushing layer 75f1d9657d88
+#11 pushing layer 88a9bef8cd98 16.38kB / 14.31kB 0.4s
+#11 pushing layer df420800da5c 512B / 191B 0.4s
+#11 pushing layer 53b910de17c5 6.39MB / 124.09MB 0.5s
+#11 pushing layer df420800da5c 2.56kB / 191B 0.5s
+#11 pushing layer 88a9bef8cd98 0.7s done
+#11 pushing layer 53b910de17c5 13.85MB / 124.09MB 0.6s
+#11 pushing layer 53b910de17c5 24.81MB / 124.09MB 0.9s
+#11 pushing layer 53b910de17c5 31.18MB / 124.09MB 1.0s
+#11 pushing layer df420800da5c 0.9s done
+#11 pushing layer 53b910de17c5 42.53MB / 124.09MB 1.2s
+#11 pushing layer 53b910de17c5 48.90MB / 124.09MB 1.3s
+#11 pushing layer 53b910de17c5 55.26MB / 124.09MB 1.4s
+#11 pushing layer 53b910de17c5 65.55MB / 124.09MB 1.5s
+#11 pushing layer 53b910de17c5 84.84MB / 124.09MB 1.6s
+#11 pushing layer 53b910de17c5 93.10MB / 124.09MB 1.8s
+#11 pushing layer 53b910de17c5 120.16MB / 124.09MB 2.0s
+#11 pushing layer 53b910de17c5 130.58MB / 124.09MB 2.2s
+#11 pushing layer 53b910de17c5 3.5s done
+#11 pushing layer b1a43e70fe8e 4.5s done
+#11 pushing layer f06a70e4735f 4.5s done
+#11 pushing layer acb510a1dd0f 4.5s done
+#11 pushing layer 313a78c90b21 4.5s done
+#11 pushing layer 75f1d9657d88 4.5s done
+#11 DONE 4.7s
+acrppfroomsca3lbgs.azurecr.io/egd-sonda-data-api:0.3

@@ -1,0 +1,5 @@
+PLAN rezimu single na webu https://pavelchocholousgmail.sharepoint.com/sites/egd01-test:
+  (appku pouzije jen autor a lide, se kterymi web sdilel jednotlive)
+  - web: odebrat skupinu "Vsichni krome externich uzivatelu" (ma Omezený přístup)
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.

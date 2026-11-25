@@ -1,0 +1,9 @@
+### seznam --ano (Z6, skill pracovni strom po opravě) 11:46:55
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev:
+  - seznam "MojeAppka" uz existuje
+  - sloupec Hodnoceni naformatovat jako barevny stitek (EG.D: semafor + cislo)
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "MojeAppka" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev/Lists/MojeAppka
+rc=0

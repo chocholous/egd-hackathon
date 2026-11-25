@@ -1,0 +1,12 @@
+uploaded docx-lib.docx id=01PCVZP6LG6NN3SQBC6ZDYR4F3RPP6FJK6
+convert: http=200 redirects=1 size=221765 time=1.419032s
+dukazy/graph/docx-lib.docx.pdf: PDF document, version 1.7, 1 pages
+uploaded xlsx-exceljs.xlsx id=01PCVZP6IWYGIEGX2GYVDKNEHQQFIJXR6R
+convert: http=200 redirects=1 size=218187 time=1.430989s
+dukazy/graph/xlsx-exceljs.xlsx.pdf: PDF document, version 1.7, 2 pages
+uploaded pptx-pptxgenjs.pptx id=01PCVZP6ODSXKL5QSQAZBKNVCH6ZXIJIAG
+convert: http=200 redirects=1 size=263132 time=1.028196s
+dukazy/graph/pptx-pptxgenjs.pptx.pdf: PDF document, version 1.7, 3 pages
+dukazy/graph/docx-lib.docx.pdf pages=1 fonts=Calibri,Calibri-Bold
+dukazy/graph/pptx-pptxgenjs.pptx.pdf pages=3 fonts=ArialMT,Calibri,Calibri-Bold
+dukazy/graph/xlsx-exceljs.xlsx.pdf pages=2 fonts=Calibri,Calibri-Bold

@@ -1,0 +1,6 @@
+{
+  "name": "egd-vydej-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Výdejní API lab účtů EG.D, bez závislostí"
+}

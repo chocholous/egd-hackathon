@@ -1,0 +1,1 @@
+{"error":"invalid_grant: AADSTS65001: The user or administrator has not consented to use the application with ID '12f19539-b70a-499d-b6dc-517a32c0e904' named 'm365-cli-spfx-lab'. Send an interactive authorization request for this user and resource. Trace ID: 26e7e662-f015-4385-8b09-e742b8522a00 Correlation ID: e157947d-1256-463a-a171-de94a5533b9f Timestamp: 2026-11-22 19:58:22Z"}

@@ -1,0 +1,42 @@
++ seznam Pozadavky
++ Pozadavky.Popis
++ Pozadavky.Stav
++ Pozadavky.Komentar
++ Pozadavky: vlastní práva (kopie zděděných)
++ Pozadavky: egd09@pavelchocholousgmail.onmicrosoft.com → Návrh
++ Pozadavky: egd10@pavelchocholousgmail.onmicrosoft.com → Návrh
++ Pozadavky: 3 ukázkové položky
++ seznam PozadavkyPrava
++ PozadavkyPrava.Popis
++ PozadavkyPrava.Stav
++ PozadavkyPrava.Komentar
++ m365 spo roledefinition add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --name EGD Zadavatel --rights ViewListItems,AddListItems,EditListItems,OpenItems,ViewVersions,DeleteVersions,ManagePersonalViews,ViewFormPages,Open,ViewPages,CreateSSCSite,BrowseDirectories,BrowseUserInfo,AddDelPrivateWebParts,UpdatePersonalWebParts,UseClientIntegration,UseRemoteAPIs,CreateAlerts,EditMyUserInfo,DeleteListItems
++ m365 spo roledefinition add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --name EGD Schvalovatel --rights ViewListItems,AddListItems,EditListItems,OpenItems,ViewVersions,DeleteVersions,ManagePersonalViews,ViewFormPages,Open,ViewPages,CreateSSCSite,BrowseDirectories,BrowseUserInfo,AddDelPrivateWebParts,UpdatePersonalWebParts,UseClientIntegration,UseRemoteAPIs,CreateAlerts,EditMyUserInfo,DeleteListItems,CancelCheckout
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --name Katalog Zadavatelé
++ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --groupName Katalog Zadavatelé --userNames egd09@pavelchocholousgmail.onmicrosoft.com
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --groupName Katalog Zadavatelé --roleDefinitionName Čtení
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --name Katalog Schvalovatelé
++ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --groupName Katalog Schvalovatelé --userNames egd10@pavelchocholousgmail.onmicrosoft.com
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --groupName Katalog Schvalovatelé --roleDefinitionName Čtení
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --name Katalog Správci
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --groupName Katalog Správci --roleDefinitionName Čtení
++ m365 spo list roleinheritance break --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --listTitle PozadavkyPrava --clearExistingPermissions --force
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --listTitle PozadavkyPrava --groupName Vlastníci webu Katalog funkcí EG.D --roleDefinitionName Úplné řízení
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --listTitle PozadavkyPrava --groupName Katalog Zadavatelé --roleDefinitionName EGD Zadavatel
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --listTitle PozadavkyPrava --groupName Katalog Schvalovatelé --roleDefinitionName EGD Schvalovatel
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --listTitle PozadavkyPrava --groupName Katalog Správci --roleDefinitionName Úplné řízení
++ m365 spo list set --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky --title PozadavkyPrava --readSecurity 2 --writeSecurity 2
+Kontrola:
+{
+  "HasUniqueRoleAssignments": true,
+  "ReadSecurity": 2,
+  "WriteSecurity": 2
+}
++ seznam Spokojenost
++ Spokojenost.Hodnoceni
++ Spokojenost.Den
++ seznam Revize
++ Revize.Technik
++ Revize.Termin
++ Revize.Stav
++ Revize.Naklad

@@ -1,0 +1,51 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx
+[3.9s] OK wait:3000  
+[9.8s] OK rozbal  
+4 zón
+[9.9s] OK click:[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"] #who  
+[44.9s] OK wait:35000  
+[44.9s] OK eval:document.querySelector('[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"]').querySelector('#o').innerText.slice(0,700)  
+volám…
+[44.9s] OK eval:document.querySelector('[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"]').querySelector('#o').scrollIntoView({block:'center'})  {"interrupted":false}
+[45.0s] OK shotv:01-egd09-whoami  
+dukazy/karty/obo/01-egd09-whoami.png
+[45.0s] OK click:[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"] #posta  
+[55.0s] OK wait:10000  
+[55.0s] OK eval:document.querySelector('[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"]').querySelector('#o').innerText.slice(0,900)  
+{
+  "cesta": "SPFx → AadHttpClient → Container App → OBO → Graph",
+  "http": 403,
+  "ms": 6302,
+  "odpoved": {
+    "error": "OBO výměna selhala",
+    "detail": {
+      "error": "invalid_grant",
+      "aadsts": "AADSTS65001",
+      "description": "AADSTS65001: The user or administrator has not consented to use the application with ID '9809454b-59c2-4d85-8bf6-dbd1481b1d6b' named 'egd-ca-obo-api'. Send an interactive authorization request for this user and resource. Trace ID: 7b27d7f3-61c8-4ad0-87e6-79a3031a8900 Correlation ID: 174b86f0-7f54-44df-ada9-86d108f96918 Timestamp: 2026-11-24 18:50:26Z"
+    }
+  }
+}
+[55.2s] OK shotv:02-egd09-posta-obo  
+dukazy/karty/obo/02-egd09-posta-obo.png
+[55.2s] OK click:[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"] #primo  
+[63.2s] OK wait:8000  
+[63.2s] OK eval:document.querySelector('[data-sp-web-part-id="f6aa9c1a-afda-448e-a188-96437bc2bd7c"]').querySelector('#o').innerText.slice(0,600)  
+{
+  "cesta": "SPFx → MSGraphClientV3 → Graph (přímo)",
+  "http": 403,
+  "ms": 173,
+  "chyba": "ErrorAccessDenied",
+  "zprava": "Access is denied. Check credentials and try again."
+}
+[63.4s] OK shotv:03-egd09-primo  
+dukazy/karty/obo/03-egd09-primo.png
+[63.4s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/whoami
+  GET 403 https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/posta
+  GET 403 https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/posta
+  GET 403 https://graph.microsoft.com/v1.0/me/messages?$top=5&$select=subject,receivedDateTime

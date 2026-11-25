@@ -1,0 +1,104 @@
+[
+ {
+  "url": "https://api.cnb.cz/cnbapi/exrates/daily?lang=EN",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": false,
+   "err": "Failed to fetch"
+  },
+  "withAuthHeader": {
+   "ok": false,
+   "err": "Failed to fetch"
+  }
+ },
+ {
+  "url": "https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": false,
+   "err": "Failed to fetch"
+  },
+  "withAuthHeader": {
+   "ok": false,
+   "err": "Failed to fetch"
+  }
+ },
+ {
+  "url": "https://www.ote-cr.cz/cs/kratkodobe-trhy/elektrina/denni-trh",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": false,
+   "err": "Failed to fetch"
+  },
+  "withAuthHeader": {
+   "ok": false,
+   "err": "Failed to fetch"
+  }
+ },
+ {
+  "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/27082440",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": true,
+   "status": 200,
+   "bytes": 5433
+  },
+  "withAuthHeader": {
+   "ok": true,
+   "status": 200,
+   "bytes": 5433
+  }
+ },
+ {
+  "url": "https://api.open-meteo.com/v1/forecast?latitude=50.08&longitude=14.43&current=temperature_2m",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": true,
+   "status": 200,
+   "bytes": 324
+  },
+  "withAuthHeader": {
+   "ok": true,
+   "status": 200,
+   "bytes": 323
+  }
+ },
+ {
+  "url": "https://jsonplaceholder.typicode.com/todos/1",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": true,
+   "status": 200,
+   "bytes": 83
+  },
+  "withAuthHeader": {
+   "ok": true,
+   "status": 200,
+   "bytes": 83
+  }
+ },
+ {
+  "url": "https://www.chmi.cz/files/portal/docs/meteo/ote/ote_pocasi.html",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": false,
+   "err": "Failed to fetch"
+  },
+  "withAuthHeader": {
+   "ok": false,
+   "err": "Failed to fetch"
+  }
+ },
+ {
+  "url": "https://example.com/",
+  "origin": "https://pavelchocholousgmail.sharepoint.com",
+  "simple": {
+   "ok": false,
+   "err": "Failed to fetch"
+  },
+  "withAuthHeader": {
+   "ok": false,
+   "err": "Failed to fetch"
+  }
+ }
+]

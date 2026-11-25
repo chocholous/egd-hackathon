@@ -1,0 +1,9 @@
+{"displayName":"EGD PA sonda: HTTP trigger + ČNB",
+ "connectionReferences":{},
+ "definition":{"$schema":"https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#","contentVersion":"1.0.0.0",
+  "parameters":{"$connections":{"defaultValue":{},"type":"Object"},"$authentication":{"defaultValue":{},"type":"SecureObject"}},
+  "triggers":{"manual":{"type":"Request","kind":"Http","inputs":{"schema":{"type":"object","properties":{"den":{"type":"string"}}}}}},
+  "actions":{
+   "Stahni_CNB":{"type":"Http","runAfter":{},"inputs":{"method":"GET","uri":"https://api.cnb.cz/cnbapi/exrates/daily?lang=EN"}},
+   "Odpoved":{"type":"Response","kind":"Http","runAfter":{"Stahni_CNB":["Succeeded"]},"inputs":{"statusCode":200,"headers":{"Content-Type":"application/json"},"body":"@body('Stahni_CNB')"}}},
+  "outputs":{}}}

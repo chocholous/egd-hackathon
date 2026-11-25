@@ -1,0 +1,16 @@
+### cesta
+[INFO]    vysledky: /Users/chocholous/Projects/egd-workshop/sondy/e2e/prace/.pripravenost/vysledky.json
+          npm-ping: zelena (registry odpovida (PONG))
+          node-pro-spfx-1.24: neovereno
+          prihlaseni: neovereno
+          web-cteni: neovereno
+          site-app-catalog: neovereno
+          role-v-katalogu: neovereno
+
+DOPORUCENA CESTA: zadna - chybi pristup k webu; s uzivatelem otevrete web v prohlizeci a poslete vetu pro IT
+rc=0
+### novy --bez-instalace
+[OK]      projekt zalozen: /Users/chocholous/Projects/egd-workshop/sondy/e2e/prace/prvni-appka (reseni prvni-appka, web part 0722b210-3d22-46f6-9e43-86f8cd82078c)
+[OK]      znacka EG.D zapsana do src/webparts/spokojenost/_znacka.scss
+[INFO]    instalaci balicku jsi vynechal (--bez-instalace).
+rc=0

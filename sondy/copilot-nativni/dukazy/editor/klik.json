@@ -1,0 +1,105 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/Home.aspx",
+ "start": "2026-11-24T19:59:17.352Z",
+ "kroky": [
+  {
+   "krok": "wait:6000",
+   "t": 3024,
+   "ok": true
+  },
+  {
+   "krok": "click:Edit",
+   "t": 9026,
+   "ok": true
+  },
+  {
+   "krok": "wait:12000",
+   "t": 9121,
+   "ok": true
+  },
+  {
+   "krok": "shotv:editor2",
+   "t": 21124,
+   "vysledek": "sondy/copilot-nativni/dukazy/editor/editor2.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('button,[role=menuitem],[role=tab]')].map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(x=>x&&/copilot|rewrite|draft|agent|assist|generate/i.test(x)).join(' | ')",
+   "t": 21278,
+   "vysledek": "Open Agents | Copilot",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 1854,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1990,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(1)/CommentsDisabledScope"
+  },
+  {
+   "t": 2056,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate"
+  },
+  {
+   "t": 2531,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2824,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(1)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 4838,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Options20Regular, Drafts20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-carousel-layout_en-us_4a204ce95459297f.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-hero-webpart-bundle_en-us_588b9b1998947e88.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-hero-layout_none_7a2a0e42a3a17847.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-events-webpart_en-us_12c093bc5c97b41f.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-contentrollup-webpart_en-us_f7db0d5ca6c4beae.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-news-webpart-bundle_en-us_a38eba0b81fff67d.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-flex-layout_none_1236f9a55a7791dc.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-carousel-layout_en-us_4a204ce95459297f.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-hero-webpart-bundle_en-us_588b9b1998947e88.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-hero-layout_none_7a2a0e42a3a17847.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-events-webpart_en-us_12c093bc5c97b41f.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-contentrollup-webpart_en-us_f7db0d5ca6c4beae.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-news-webpart-bundle_en-us_a38eba0b81fff67d.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
+  "warning: The resource https://res-1.cdn.office.net/files/sp-client/sp-flex-layout_none_1236f9a55a7791dc.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally."
+ ],
+ "konec": "2026-11-24T19:59:38.632Z"
+}

@@ -1,0 +1,8 @@
+{"t": "11:13:50", "step": "pred", "field": "Den", "filter": "Den eq 'v3'", "status": 200, "sec": 0.6, "n": 0}
+{"t": "11:13:50", "step": "index off", "field": "Den", "via": "rest", "sec": 0.44, "status": 204, "err": ""}
+{"t": "11:13:50", "step": "po", "field": "Den", "after_sec": 0.1, "status": 500, "sec": 0.14, "n": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"t": "11:13:51", "step": "indexed", "list": ["Modified(DateTime)"]}
+{"t": "11:14:12", "step": "pred", "field": "Den", "filter": "Den eq 'v3'", "status": 500, "sec": 0.83, "n": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"t": "11:14:13", "step": "index on", "field": "Den", "via": "rest", "sec": 0.47, "status": 204, "err": ""}
+{"t": "11:14:13", "step": "po", "field": "Den", "after_sec": 0.1, "status": 200, "sec": 0.13, "n": 0}
+{"t": "11:14:13", "step": "indexed", "list": ["Den(Text)", "Modified(DateTime)"]}

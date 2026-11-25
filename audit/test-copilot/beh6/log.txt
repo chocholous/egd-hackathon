@@ -1,0 +1,122 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● skill(egd-pripravenost)
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/windows.md 47 lines read
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/prihlaseni.md 57 lines read
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/zebrik.md 49 lines read
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/github.md 84 lines read
+
+ $ Shell Zobrazit příkazy a pracovní složku 31 lines…
+   node "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" --help &&
+   printf '\n--- WORKSPACE ---\n' && pwd && ls -la
+
+ $ Shell Prověřit nástroje, npm, síť a varianty 22 lines…                                        17s
+   node "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" nastroje; node
+   "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" npm; node
+   "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" sit --domena
+   pavelchocholousgmail.onmicrosoft.com --tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e; node
+   "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" varianty
+
+ $ Shell Nainstalovat Microsoft 365 CLI lokálně 4 lines…                                         28s
+   node "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" cli-instalace
+
+ ✗ Shell Ověřit přihlášení, SharePoint a plán testu Failed with exit code 10  [ZLUTA]  copilot-… 13s
+   S="/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs"; node "$S" zapis
+   --klic copilot-licence --stav zluta --hodnota "uzivatel uvadi licenci; v GitHub nastaveni ani VS
+   Code nebylo overeno"; node "$S" zapis --klic weby-dev-test-prod --stav zluta --hodnota
+   "DEV/TEST/PROD weby nejsou objednane"; node "$S" zapis --klic appId --stav cervena --hodnota
+   "appId pro prihlaseni CLI nebylo dodano; tenant ID neni appId" --it "Prosím o appId registrované
+   aplikace v Entra ID tenantu pavelchocholousgmail.onmicrosoft.com pro CLI for Microsoft 365;
+   delegovaná oprávnění SharePoint a Microsoft Graph podle potřeby a souhlas správce."; node "$S"
+   prihlaseni --tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e; node "$S" sharepoint --web
+   ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;]8;; --tenant ]8;;
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e; node "$S" zkouska --web
+   ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;]8;; --tenant ]8;;
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e
+   [ZLUTA]  copilot-licence: uzivatel uvadi licenci; v GitHub nastaveni ani VS Code nebylo overeno
+   [ZLUTA]  weby-dev-test-prod: DEV/TEST/PROD weby nejsou objednane
+   [CERVENA] appId: appId pro prihlaseni CLI nebylo dodano; tenant ID neni appId
+             veta pro IT: Prosím o appId registrované aplikace v Entra ID tenantu 
+   pavelchocholousgmail.onmicrosoft.com pro CLI for Microsoft 365; delegovaná oprávnění SharePoint a
+    Microsoft Graph podle potřeby a souhlas správce.
+   [ZELENA] prihlaseni: prihlasen pavel.admin@pavelchocholousgmail.onmicrosoft.com, appId 
+   12f19539-b70a-499d-b6dc-517a32c0e904, tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+   [ZELENA] prihlaseni: prihlasen pavel.admin@pavelchocholousgmail.onmicrosoft.com, appId 
+   12f19539-b70a-499d-b6dc-517a32c0e904, tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+   [ZELENA] web-cteni: "Site catalog test" 
+   (https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest)
+   [ZELENA] role-na-webu: Vlastnik (Full Control) (odhad z EffectiveBasePermissions High 2147483647 
+   / Low 4294705151; zapis polozek ano, sprava seznamu ano)
+   [ZELENA] seznamy: 7 viditelnych seznamu/knihoven: Apps for SharePoint (4), Documents (0), 
+   EGD-pripravenost (3), Events (0), Form Templates (0), Site Pages (3), Style Library (0)
+   [INFO]   tenant-app-catalog: https://pavelchocholousgmail.sharepoint.com/sites/apps (pro workshop
+    ho nepotrebujeme; zapisujeme jen do katalogu na vlastnim webu)
+   [ZELENA] site-app-catalog: web ma vlastni katalog aplikaci "Apps for SharePoint" (4 balicku)
+   [ZELENA] role-v-katalogu: muzes nahrat balicek (.sppkg) do katalogu
+   [INFO]   licence-m365: licence: FLOW_FREE, SPE_E5
+   [ZELENA] power-platform-licence: Power Apps / Power Automate v licenci: FLOW_P2_VIRAL, 
+   FLOW_O365_P3, POWERAPPS_O365_P3
+   PLAN ZAPISU (nic se zatim nezapsalo):
+     1. na webu https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest zalozit seznam 
+   "EGD-pripravenost" (jen kdyz jeste neexistuje)
+     2. pridat do nej JEDNU polozku s nazvem "Zkouska chocholous 22. 11. 2026 20:56:42"
+     3. precist ji zpatky
+   Nic se nemaze. Seznam si muzes pozdeji smazat sam v prohlizeci (Obsah webu).
+   Kdyz s tim clovek souhlasi, spust znovu s volbou --ano.
+   Failed with exit code 10
+
+ $ Shell Provést schválený jediný zkušební zápis 4 lines…                                        12s
+   node "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" zkouska --web
+   ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;]8;; --tenant ]8;;
+   972a674c-7b85-4e56-a31f-b2f95b42fd1e --ano
+
+ $ Shell Prověřit SPFx a GitHub, doplnit zjištěné stavy 15 lines…
+   S="/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs"; node "$S" spfx;
+   node "$S" github; node "$S" zapis --klic prihlaseni-identity --stav zluta --hodnota "CLI a
+   SharePoint byly ověřeny, ale přihlášený účet je pavel.admin@pavelchocholousgmail.onmicrosoft.com,
+   ne Test Sest"; node "$S" zapis --klic appId --stav zelena --hodnota "CLI již bylo přihlášeno
+   existujícím profilem; appId nebylo třeba zadávat"; node "$S" zapis --klic varianta-pouzita-node
+   --stav info --hodnota "1 uz je v PATH (Node 22.23.5)"; node "$S" zapis --klic
+   varianta-pouzita-cli --stav info --hodnota "1 npm lokalne v pracovni slozce (CLI 12.0.0)"; node
+   "$S" zapis --klic varianta-pouzita-prihlaseni --stav info --hodnota "jiz prihlaseny existujicim
+   CLI profilem"
+
+ $ Shell Připravit záložní odkazy pro kontrolu v prohlížeči 14 lines…
+   node "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" prohlizec
+   --web ]8;id=md-exfwhr;https://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtesthttps://pavelchocholousgmail.sharepoint.com/sites/sitecatalogtest]8;;
+
+ $ Shell Vytvořit zprávu o připravenosti 4 lines…
+   node "/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" zprava --jmeno
+   "Test Sest"
+
+ MD Read pripravenost-Test-Sest.md 117 lines read
+
+ $ Shell Srovnat stav přihlášení ve zprávě 6 lines…
+   S="/tmp/cp-run6/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs"; node "$S" zapis
+   --klic varianta-pouzita --stav info --hodnota "uz existujici prihlaseny CLI profil, ktery
+   prihlaseni a zkouska uspesne overily"; node "$S" zprava --jmeno "Test Sest"
+
+ ● Edit  Edit pripravenost-Test-Sest.md (+10 -8)
+
+ MD Read pripravenost-Test-Sest.md L72:end (48 lines read)
+
+ MD Read pripravenost-Test-Sest.md L1:18 (18 lines read)
+
+ / Search "token|heslo|password|secret|Bearer|Objednávky předem \(E.ON ITSM\)|vse potr… 1 line found
+
+Technické prostředí je připravené, ale přihlášení nebylo pod účtem Test Sest: SharePoint ověřil účet **pavel.admin**. Po předchozím souhlasu jsem do existujícího seznamu `EGD-pripravenost` přidal a zpětně ověřil jedinou testovací položku; žádnou aplikaci ani další položku jsem nevytvořil a nic neodeslal.
+
+Zpráva je v `/private/tmp/cp-run6/home/egd-workshop/pripravenost-Test-Sest.md`. GitHub přihlášení a Copilot licenci se nepodařilo ověřit; weby DEV/TEST/PROD jsou podle vás neobjednané.
+
+Session exported to: /tmp/cp-run6/vystup/prepis.md
+
+
+Changes    +10 -8
+AI Credits 1.39 (2m 50s)
+Tokens     ↑ 478.5k (443.4k cached, 35.0k written) • ↓ 10.2k (7.4k reasoning)
+Resume     copilot --resume=88ce3228-2247-456a-bd35-6bb904a2767c

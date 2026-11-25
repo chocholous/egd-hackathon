@@ -1,0 +1,81 @@
+{
+  "profil": "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/profil-tomas",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/prvni-appka.aspx?env=WebView",
+  "cas": "2026-11-22T19:55:59.618Z",
+  "sablona": "spokojenost",
+  "nacteniMs": 5252,
+  "shrnuti": {
+    "ms": 1163,
+    "vystup": "Návrh AI: Hodnocení spokojenosti s kanceláří dnes je průměrně 4, přičemž hlasoval pouze jeden člověk, který dal známku 4."
+  },
+  "ocr": {
+    "soubor": "velky.pdf",
+    "ms": 4083,
+    "vystup": "Chyba AI: AI gateway vrátila 502"
+  },
+  "sit": [
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat",
+      "stav": 200,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    },
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/ocr",
+      "stav": 502,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    }
+  ],
+  "bundly": [
+    "200 spokojenost-web-part_cbcb3f3ebe1e4de90df2.js"
+  ]
+}

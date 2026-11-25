@@ -1,0 +1,6 @@
+# appka.mjs build, Node v22.23.5 (systémový) 2026-11-24T09:53:11Z
+Stavim balicek (npm run build, Heft; minuta az dve)...
+[OK]      balicek: /Users/chocholous/Projects/egd-workshop/sondy/overeni/node24/prvni-appka/sharepoint/solution/prvni-appka.sppkg (12065 B, verze 1.0.0.0)
+real 31.96
+user 12.60
+sys 2.93

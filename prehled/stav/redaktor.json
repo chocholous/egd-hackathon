@@ -1,0 +1,53 @@
+{
+  "nazev": "Role: Redaktor podkladů",
+  "stav": "hotovo",
+  "popis": "UI approve ✅ s výhradami (PATCH, POST ❓, role ❓)",
+  "oblast": "podklady",
+  "kdo": "role Redaktor",
+  "vystup": "audit/pro-overovatele.md",
+  "aktualizovano": "2026-11-23T10:22:46Z",
+  "zacatek": "2026-11-22T19:10:31Z",
+  "kroky": 14,
+  "historie": [
+    {
+      "t": "2026-11-22T19:34:55Z",
+      "stav": "bezi",
+      "popis": "2. kolo auditu: 4 agenti opravují nálezy (142 vyřešeno, 66 částečně, 77 nových)"
+    },
+    {
+      "t": "2026-11-22T19:36:28Z",
+      "stav": "bezi",
+      "popis": "2. kolo: hotovo 03, 06, 00, 01, 02, 05; čekám na 04+10 a sondy"
+    },
+    {
+      "t": "2026-11-22T19:44:56Z",
+      "stav": "hotovo",
+      "popis": "2. kolo hotovo: všech 13 souborů; ❓ v audit/pro-overovatele.md"
+    },
+    {
+      "t": "2026-11-22T19:53:20Z",
+      "stav": "hotovo",
+      "popis": "zapracováno měření Ověřovatele do 03 a 4 sond"
+    },
+    {
+      "t": "2026-11-22T20:51:40Z",
+      "stav": "hotovo",
+      "popis": "opraveno tvrzení o mailech (SPFx sendMail ✅, příloha 30 MB) v napojeni, 02, 04"
+    },
+    {
+      "t": "2026-11-23T09:59:52Z",
+      "stav": "hotovo",
+      "popis": "UI approve API access přepsáno ❓→❌ (ai.md, 04, pro-overovatele)"
+    },
+    {
+      "t": "2026-11-23T10:22:20Z",
+      "stav": "hotovo",
+      "popis": "UI approve API access = ✅ (ui-4), CLI approve ❌"
+    },
+    {
+      "t": "2026-11-23T10:22:46Z",
+      "stav": "hotovo",
+      "popis": "UI approve ✅ s výhradami (PATCH, POST ❓, role ❓)"
+    }
+  ]
+}

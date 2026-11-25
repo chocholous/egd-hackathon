@@ -1,0 +1,14 @@
+{
+  "Id": 10,
+  "IsHiddenInUI": false,
+  "LoginName": "c:0-.f|rolemanager|spo-grid-all-users/972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+  "Title": "Všichni kromě externích uživatelů",
+  "PrincipalType": 4,
+  "Email": "",
+  "Expiration": "",
+  "IsEmailAuthenticationGuestUser": false,
+  "IsShareByEmailGuestUser": false,
+  "IsSiteAdmin": false,
+  "UserId": null,
+  "UserPrincipalName": null
+}

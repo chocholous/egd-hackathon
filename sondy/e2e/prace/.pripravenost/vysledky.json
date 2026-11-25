@@ -1,0 +1,282 @@
+{
+  "vysledky": {
+    "system": {
+      "oblast": "Nastroje",
+      "stav": "info",
+      "hodnota": "Darwin 27.2.0 Darwin Kernel Version 27.2.0: Wed Oct 14 23:47:07 PDT 2026; root:xnu-13432.41.4~25/RELEASE_ARM64_T8132 (arm64)",
+      "kdy": "2026-11-24T10:13:31.305Z"
+    },
+    "git": {
+      "oblast": "Nastroje",
+      "stav": "zelena",
+      "hodnota": "git version 2.54.0 (Apple Git-157)",
+      "kdy": "2026-11-24T10:13:31.354Z"
+    },
+    "node": {
+      "oblast": "Nastroje",
+      "stav": "zelena",
+      "hodnota": "v22.23.5 (/opt/homebrew/Cellar/node@22/22.23.5_1/bin/node)",
+      "kdy": "2026-11-24T10:13:31.354Z"
+    },
+    "npm": {
+      "oblast": "Nastroje",
+      "stav": "zelena",
+      "hodnota": "10.9.9",
+      "kdy": "2026-11-24T10:13:33.128Z"
+    },
+    "vscode": {
+      "oblast": "Nastroje",
+      "stav": "zelena",
+      "hodnota": "VS Code 1.146.0",
+      "kdy": "2026-11-24T10:13:36.815Z"
+    },
+    "vscode-copilot": {
+      "oblast": "Nastroje",
+      "stav": "zluta",
+      "hodnota": "rozsireni GitHub Copilot Chat v seznamu neni (novejsi VS Code ho muze mit vestavene)",
+      "oprava": "otevri ve VS Code panel Chat: kdyz tam Copilot je a jde prepnout na Agent, je to v poradku; jinak Extensions -> \"GitHub Copilot Chat\" (kdyz je Marketplace blokovany, IT)",
+      "kdy": "2026-11-24T10:14:06.834Z"
+    },
+    "copilot-cli": {
+      "oblast": "Nastroje",
+      "stav": "zelena",
+      "hodnota": "Copilot CLI GitHub Copilot CLI 1.0.114.",
+      "kdy": "2026-11-24T10:14:08.537Z"
+    },
+    "gh": {
+      "oblast": "Nastroje",
+      "stav": "info",
+      "hodnota": "gh version 2.104.0 (2026-11-12)",
+      "kdy": "2026-11-24T10:14:08.605Z"
+    },
+    "claude-code": {
+      "oblast": "Nastroje",
+      "stav": "zelena",
+      "hodnota": "Claude Code 2.1.331 (Claude Code)",
+      "kdy": "2026-11-24T10:14:19.879Z"
+    },
+    "claude-desktop": {
+      "oblast": "Nastroje",
+      "stav": "zelena",
+      "hodnota": "nalezeno: /Applications/Claude.app",
+      "kdy": "2026-11-24T10:14:19.881Z"
+    },
+    "spusteno-z": {
+      "oblast": "Nastroje",
+      "stav": "info",
+      "hodnota": "Claude Code",
+      "kdy": "2026-11-24T10:14:19.881Z"
+    },
+    "npm-registry": {
+      "oblast": "Sit a npm",
+      "stav": "info",
+      "hodnota": "https://registry.npmjs.org/",
+      "kdy": "2026-11-24T10:14:23.633Z"
+    },
+    "npm-proxy": {
+      "oblast": "Sit a npm",
+      "stav": "info",
+      "hodnota": "proxy=null https-proxy=null strict-ssl=true cafile=null HTTPS_PROXY=ne NODE_EXTRA_CA_CERTS=ne",
+      "kdy": "2026-11-24T10:14:24.765Z"
+    },
+    "npm-ping": {
+      "oblast": "Sit a npm",
+      "stav": "zelena",
+      "hodnota": "registry odpovida (PONG)",
+      "kdy": "2026-11-24T10:14:33.850Z"
+    },
+    "npm-stazeni-metadat": {
+      "oblast": "Sit a npm",
+      "stav": "zelena",
+      "hodnota": "@pnp/cli-microsoft365 12.0.0 je dostupny",
+      "kdy": "2026-11-24T10:14:42.678Z"
+    },
+    "entra-dosazitelne": {
+      "oblast": "Sit a npm",
+      "stav": "zelena",
+      "hodnota": "login.microsoftonline.com odpovida, tenant pavelchocholousgmail.onmicrosoft.com = 972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+      "kdy": "2026-11-24T10:14:43.461Z"
+    },
+    "sharepoint-dosazitelny": {
+      "oblast": "Sit a npm",
+      "stav": "zelena",
+      "hodnota": "pavelchocholousgmail.sharepoint.com odpovida (HTTP 403; 401/403 bez prihlaseni je spravne)",
+      "kdy": "2026-11-24T10:14:43.975Z"
+    },
+    "varianta-node": {
+      "oblast": "Varianty (zebrik)",
+      "stav": "zelena",
+      "hodnota": "funguje: 1 uz je (Node 22.14+/24/26 v PATH), 3 portable archiv z nodejs.org (bez admina); nezmereno: 2 winget (jen Windows; na macOS brew nebo portable). Pouzij prvni funkcni: 1 uz je (Node 22.14+/24/26 v PATH)",
+      "kdy": "2026-11-24T10:14:44.581Z"
+    },
+    "varianta-cli": {
+      "oblast": "Varianty (zebrik)",
+      "stav": "zelena",
+      "hodnota": "funguje: 1 npm lokalne v pracovni slozce (cli-instalace), 3 globalni m365 uz v PATH, 4 bez CLI: prohlizec (prikaz prohlizec); nezmereno: 2 npx (bez instalace, stahuje pri kazdem behu) (nezkouseno, jen zaloha; pozor na cizi balicek m365 na npm). Pouzij prvni funkcni: 1 npm lokalne v pracovni slozce (cli-instalace)",
+      "kdy": "2026-11-24T10:14:46.179Z"
+    },
+    "varianta-prihlaseni": {
+      "oblast": "Varianty (zebrik)",
+      "stav": "zelena",
+      "hodnota": "funguje: 1 device code (--authType deviceCode), 2 prohlizec (--authType browser, redirect na localhost); nezmereno: 3 appId od IT / souhlas spravce (zatim se nikdo neprihlasil). Pouzij prvni funkcni: 1 device code (--authType deviceCode)",
+      "kdy": "2026-11-24T10:14:46.660Z"
+    },
+    "varianta-pouzita": {
+      "oblast": "Varianty (zebrik)",
+      "stav": "info",
+      "hodnota": "uz prihlaseny pres CLI: ne; spusteno z: Claude Code. Co z toho skutecne pouzijes, dopis: zapis --klic varianta-pouzita-<oblast> --stav info --hodnota \"<cislo varianty>\"",
+      "kdy": "2026-11-24T10:14:46.662Z"
+    },
+    "cli-instalace": {
+      "oblast": "Pripojeni k SharePointu",
+      "stav": "zelena",
+      "hodnota": "CLI for Microsoft 365 v12.0.0 lokalne v node_modules",
+      "kdy": "2026-11-24T10:16:40.724Z"
+    },
+    "cli-setup": {
+      "oblast": "Pripojeni k SharePointu",
+      "stav": "zelena",
+      "hodnota": "CLI nastaveno pro skripty (bez interaktivnich dotazu)",
+      "kdy": "2026-11-24T10:16:41.680Z"
+    },
+    "prihlaseni": {
+      "oblast": "Pripojeni k SharePointu",
+      "stav": "zelena",
+      "hodnota": "prihlasen egd10@pavelchocholousgmail.onmicrosoft.com, appId 12f19539-b70a-499d-b6dc-517a32c0e904, tenant pavelchocholousgmail.onmicrosoft.com",
+      "kdy": "2026-11-24T10:27:35.437Z"
+    },
+    "web-cteni": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "zelena",
+      "hodnota": "\"Účastník 10 – DEV\" (https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev)",
+      "kdy": "2026-11-24T10:27:17.212Z"
+    },
+    "role-na-webu": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "zelena",
+      "hodnota": "Vlastnik (Full Control) (odhad z EffectiveBasePermissions High 2147483647 / Low 4294705151; zapis polozek ano, sprava seznamu ano)",
+      "kdy": "2026-11-24T10:27:19.304Z"
+    },
+    "seznamy": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "zelena",
+      "hodnota": "6 viditelnych seznamu/knihoven: Aplikace pro SharePoint (0), Dokumenty (0), Knihovna stylů (0), Stránky webu (1), Šablony formulářů (0), Události (0)",
+      "kdy": "2026-11-24T10:27:21.502Z"
+    },
+    "tenant-app-catalog": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "info",
+      "hodnota": "https://pavelchocholousgmail.sharepoint.com/sites/apps (pro workshop ho nepotrebujeme; zapisujeme jen do katalogu na vlastnim webu)",
+      "kdy": "2026-11-24T10:27:23.479Z"
+    },
+    "site-app-catalog": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "zelena",
+      "hodnota": "web ma vlastni katalog aplikaci \"Aplikace pro SharePoint\" (0 balicku)",
+      "kdy": "2026-11-24T10:27:24.798Z"
+    },
+    "role-v-katalogu": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "zelena",
+      "hodnota": "muzes nahrat balicek (.sppkg) do katalogu",
+      "kdy": "2026-11-24T10:27:24.799Z"
+    },
+    "licence-m365": {
+      "oblast": "Zalozni cesty",
+      "stav": "info",
+      "hodnota": "licence: SPE_E5",
+      "kdy": "2026-11-24T10:27:26.021Z"
+    },
+    "power-platform-licence": {
+      "oblast": "Zalozni cesty",
+      "stav": "zelena",
+      "hodnota": "Power Apps / Power Automate v licenci: FLOW_O365_P3, POWERAPPS_O365_P3",
+      "kdy": "2026-11-24T10:27:26.026Z"
+    },
+    "zalozeni-seznamu": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "zelena",
+      "hodnota": "seznam \"EGD-pripravenost\" zalozen",
+      "kdy": "2026-11-24T10:28:04.814Z"
+    },
+    "zapis-polozky": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "zelena",
+      "hodnota": "polozka 1 zapsana",
+      "kdy": "2026-11-24T10:28:08.050Z"
+    },
+    "cteni-zpet": {
+      "oblast": "Ovladani SharePointu",
+      "stav": "zelena",
+      "hodnota": "precteno zpatky: \"Zkouska chocholous 24. 11. 2026 11:27:33\"",
+      "kdy": "2026-11-24T10:28:10.289Z"
+    },
+    "node-pro-spfx-1.24": {
+      "oblast": "SPFx pripravenost",
+      "stav": "zelena",
+      "hodnota": "Node v22.23.5; SPFx 1.24 chce 22 / 24 / 26 (22 aspon 22.14). Gulp uz neni, build je Heft.",
+      "kdy": "2026-11-24T10:28:10.428Z"
+    },
+    "generator-dostupny": {
+      "oblast": "SPFx pripravenost",
+      "stav": "zelena",
+      "hodnota": "@microsoft/generator-sharepoint@1.24.1 je v registry",
+      "kdy": "2026-11-24T10:28:13.654Z"
+    },
+    "github-hosty": {
+      "oblast": "GitHub",
+      "stav": "zluta",
+      "hodnota": "gh neni k zadnemu hostu prihlasen (nebo vypis nejde precist)",
+      "oprava": "postup v references/github.md krok 4: gh auth login --hostname <adresa firemniho GitHubu>",
+      "kdy": "2026-11-24T10:28:14.104Z"
+    },
+    "git-credential-helper": {
+      "oblast": "GitHub",
+      "stav": "info",
+      "hodnota": "osxkeychain",
+      "kdy": "2026-11-24T10:28:15.362Z"
+    },
+    "varianta-pouzita-node": {
+      "oblast": "Rucne overeno",
+      "stav": "info",
+      "hodnota": "1",
+      "kdy": "2026-11-24T10:28:15.542Z"
+    },
+    "varianta-pouzita-cli": {
+      "oblast": "Rucne overeno",
+      "stav": "info",
+      "hodnota": "3-globalni-m365-v11-(lab-artefakt,-viz-Z2b)",
+      "kdy": "2026-11-24T10:28:15.810Z"
+    },
+    "varianta-pouzita-prihlaseni": {
+      "oblast": "Rucne overeno",
+      "stav": "info",
+      "hodnota": "1-deviceCode",
+      "kdy": "2026-11-24T10:28:16.048Z"
+    },
+    "copilot-licence": {
+      "oblast": "Rucne overeno",
+      "stav": "info",
+      "hodnota": "neovereno-v-E2E",
+      "kdy": "2026-11-24T10:28:16.243Z"
+    }
+  },
+  "tenantId": "972a674c-7b85-4e56-a31f-b2f95b42fd1e",
+  "prihlasen": {
+    "ucet": "egd10@pavelchocholousgmail.onmicrosoft.com",
+    "appId": "12f19539-b70a-499d-b6dc-517a32c0e904",
+    "tenant": "pavelchocholousgmail.onmicrosoft.com"
+  },
+  "web": "https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev",
+  "rolaWeb": "Vlastnik (Full Control)",
+  "licence": {
+    "skus": [
+      "SPE_E5"
+    ],
+    "powerPlatform": [
+      "FLOW_O365_P3",
+      "POWERAPPS_O365_P3"
+    ]
+  },
+  "odkazSeznam": "https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev/Lists/EGD-pripravenost"
+}

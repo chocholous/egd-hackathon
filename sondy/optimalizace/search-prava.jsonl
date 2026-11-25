@@ -1,0 +1,24 @@
+{"test": "admin__Zadosti", "status": 200, "sec": 0.867, "TotalRows": 41, "vraceno": 41, "autori": ["Kučera Jakub", "Nováková Petra", "Pavel Admin (lab)", "Procházka Tomáš", "Procházka Tomáš;Nováková Petra"]}
+{"test": "admin__ZadostiW", "status": 200, "sec": 1.573, "TotalRows": 6, "vraceno": 6, "autori": ["Kučera Jakub", "Pavel Admin (lab)", "Procházka Tomáš", "Procházka Tomáš;Nováková Petra"]}
+{"test": "admin__ZadostiACL", "status": 200, "sec": 0.613, "TotalRows": 3, "vraceno": 3, "autori": ["Kučera Jakub", "Pavel Admin (lab)", "Procházka Tomáš"]}
+{"test": "admin__Velky", "status": 200, "sec": 1.068, "TotalRows": 5959, "vraceno": 500, "autori": ["Pavel Admin (lab)"]}
+{"test": "tomas.prochazka__Zadosti", "status": 200, "sec": 0.682, "TotalRows": 3, "vraceno": 3, "autori": ["Pavel Admin (lab)", "Procházka Tomáš"]}
+{"test": "tomas.prochazka__ZadostiW", "status": 200, "sec": 0.555, "TotalRows": 6, "vraceno": 6, "autori": ["Kučera Jakub", "Pavel Admin (lab)", "Procházka Tomáš", "Procházka Tomáš;Nováková Petra"]}
+{"test": "tomas.prochazka__ZadostiACL", "status": 200, "sec": 0.495, "TotalRows": 2, "vraceno": 2, "autori": ["Pavel Admin (lab)", "Procházka Tomáš"]}
+{"test": "tomas.prochazka__Velky", "status": 200, "sec": 1.163, "TotalRows": 5959, "vraceno": 500, "autori": ["Pavel Admin (lab)"]}
+{"test": "jakub.kucera__Zadosti", "status": 200, "sec": 0.655, "TotalRows": 3, "vraceno": 3, "autori": ["Kučera Jakub", "Pavel Admin (lab)"]}
+{"test": "jakub.kucera__ZadostiW", "status": 200, "sec": 0.467, "TotalRows": 6, "vraceno": 6, "autori": ["Kučera Jakub", "Pavel Admin (lab)", "Procházka Tomáš", "Procházka Tomáš;Nováková Petra"]}
+{"test": "jakub.kucera__ZadostiACL", "status": 200, "sec": 0.484, "TotalRows": 2, "vraceno": 2, "autori": ["Kučera Jakub", "Pavel Admin (lab)"]}
+{"test": "jakub.kucera__Velky", "status": 200, "sec": 9.87, "TotalRows": 5959, "vraceno": 500, "autori": ["Pavel Admin (lab)"]}
+{"test": "eva.vesela__Zadosti", "status": 200, "sec": 1.051, "TotalRows": 41, "vraceno": 41, "autori": ["Kučera Jakub", "Nováková Petra", "Pavel Admin (lab)", "Procházka Tomáš", "Procházka Tomáš;Nováková Petra"]}
+{"test": "eva.vesela__ZadostiW", "status": 200, "sec": 0.597, "TotalRows": 6, "vraceno": 6, "autori": ["Kučera Jakub", "Pavel Admin (lab)", "Procházka Tomáš", "Procházka Tomáš;Nováková Petra"]}
+{"test": "eva.vesela__ZadostiACL", "status": 200, "sec": 0.532, "TotalRows": 3, "vraceno": 3, "autori": ["Kučera Jakub", "Pavel Admin (lab)", "Procházka Tomáš"]}
+{"test": "eva.vesela__Velky", "status": 200, "sec": 1.26, "TotalRows": 5959, "vraceno": 500, "autori": ["Pavel Admin (lab)"]}
+{"test": "petra.novakova__Zadosti", "status": 200, "sec": 0.787, "TotalRows": 41, "vraceno": 41, "autori": ["Kučera Jakub", "Nováková Petra", "Pavel Admin (lab)", "Procházka Tomáš", "Procházka Tomáš;Nováková Petra"]}
+{"test": "petra.novakova__ZadostiW", "status": 200, "sec": 0.994, "TotalRows": 6, "vraceno": 6, "autori": ["Kučera Jakub", "Pavel Admin (lab)", "Procházka Tomáš", "Procházka Tomáš;Nováková Petra"]}
+{"test": "petra.novakova__ZadostiACL", "status": 200, "sec": 1.259, "TotalRows": 0, "vraceno": 0, "autori": []}
+{"test": "petra.novakova__Velky", "status": 200, "sec": 1.689, "TotalRows": 5959, "vraceno": 500, "autori": ["Pavel Admin (lab)"]}
+{"test": "lucie.dvorakova__Zadosti", "status": 403, "sec": 0.209, "chyba": "Attempted to perform an unauthorized operation.", "autori": []}
+{"test": "lucie.dvorakova__ZadostiW", "status": 403, "sec": 0.156, "chyba": "Attempted to perform an unauthorized operation.", "autori": []}
+{"test": "lucie.dvorakova__ZadostiACL", "status": 403, "sec": 0.149, "chyba": "Attempted to perform an unauthorized operation.", "autori": []}
+{"test": "lucie.dvorakova__Velky", "status": 403, "sec": 0.142, "chyba": "Attempted to perform an unauthorized operation.", "autori": []}

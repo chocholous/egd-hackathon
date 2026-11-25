@@ -1,0 +1,9 @@
+[2026-11-24T08:39:28.898Z] web=https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev profil=egd01 balicek=prvni-appka.sppkg
+0 kdo: {"upn":"egd01@pavelchocholousgmail.onmicrosoft.com","adminKolekce":true,"skupiny":["Vlastníci webu Účastník 01 – DEV"],"permHigh":"2147483647","permLow":"4294705151"}
+1 katalog pred: [{"t":"eon-demo-kalkulacka-client-side-solution","id":"2d31d442-1444-4f78-b64b-1bab09f5245c","nasazena":true,"verze":"1.0.0.9"},{"t":"spokojenost-appka-client-side-solution","id":"69aac85c-0a49-4291-b351-9aaef803cdc5","nasazena":true,"verze":"1.0.0.1"},{"t":"prvni-appka-client-side-solution","id":"92f450c3-2610-47d2-9b27-064b2adbb074","nasazena":true,"verze":"1.0.0.0"}]
+2 soubor vybran a OK: true
+3 tlacitka po nahrani: ["Ú0","Nový","Nahrát","Synchronizovat","Sdílet","Víc","Vrátit fokus zpět na konec dialogového okna","Vrátit fokus zpět na začátek dialogového okna","Nasadit","Zrušit"]
+4 kliknuto: input[value="Nasadit"]
+5 katalog po: [{"t":"eon-demo-kalkulacka-client-side-solution","id":"2d31d442-1444-4f78-b64b-1bab09f5245c","nasazena":true,"verze":"1.0.0.9"},{"t":"spokojenost-appka-client-side-solution","id":"69aac85c-0a49-4291-b351-9aaef803cdc5","nasazena":true,"verze":"1.0.0.1"},{"t":"prvni-appka-client-side-solution","id":"92f450c3-2610-47d2-9b27-064b2adbb074","nasazena":true,"verze":"1.0.0.0"}]
+6 nove nebo zmenene v katalogu: []
+SELHALO

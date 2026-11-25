@@ -1,0 +1,5 @@
+# bez pristupu: egd-test-vedle-sebe (po oprave padu)
+uzivatel: undefined (IsSiteAdmin undefined) na https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe
+katalog "undefined" HTTP 403: bez udaje (403 = na web nemas pristup, 404 = seznam/katalog neexistuje)
+web HTTP 403: bez udaje (403 = na web nemas pristup, 404 = seznam/katalog neexistuje)
+rc=0

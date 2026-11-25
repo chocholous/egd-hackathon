@@ -1,0 +1,4 @@
+2026-11-22T20:51:32Z
+m365 spo serviceprincipal permissionrequest list
+{"error":"Request failed with status code 403"}
+rc=0

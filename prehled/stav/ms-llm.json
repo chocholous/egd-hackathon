@@ -1,0 +1,53 @@
+{
+  "nazev": "Ověření skillu egd-llm-gateway",
+  "stav": "hotovo",
+  "popis": "lab ✅ v Claude i Copilot CLI, TEST-copilot.md",
+  "oblast": "skills",
+  "kdo": "ms-llm",
+  "vystup": "skills/egd-llm-gateway/",
+  "aktualizovano": "2026-11-23T10:20:19Z",
+  "zacatek": "2026-11-22T18:54:01Z",
+  "kroky": 8,
+  "historie": [
+    {
+      "t": "2026-11-22T18:54:01Z",
+      "stav": "bezi",
+      "popis": "čtu podklady"
+    },
+    {
+      "t": "2026-11-22T19:22:33Z",
+      "stav": "bezi",
+      "popis": "e2e Shrnout+OCR ✅ v Evidence; testuji AADSTS65001/401 a žádost ze site catalogu; pak přenos do šablony Spokojenost"
+    },
+    {
+      "t": "2026-11-22T19:59:07Z",
+      "stav": "bezi",
+      "popis": "měření hotová (e2e Evidence+Spokojenost, 401/403/429/AADSTS65001/CORS, site catalog žádosti, OCR limit 4 MB); přepisuji SKILL.md"
+    },
+    {
+      "t": "2026-11-22T20:01:59Z",
+      "stav": "hotovo",
+      "popis": "SKILL.md přepsán: kód ✅ e2e v obou šablonách první appky, tabulka chyb ✅ (401/403/429/502/AADSTS65001/Failed to fetch), site catalog žádosti ✅; Neověřeno 9 bodů"
+    },
+    {
+      "t": "2026-11-22T20:08:30Z",
+      "stav": "ceka",
+      "popis": "Claude ✅, žebřík variant doplněn; Copilot CLI test blokovaný: plný disk (155 MB volno)"
+    },
+    {
+      "t": "2026-11-22T20:19:49Z",
+      "stav": "ceka",
+      "popis": "audit k2 zapracován; čeká Copilot CLI test (plný disk, build zakázán)"
+    },
+    {
+      "t": "2026-11-23T10:04:34Z",
+      "stav": "bezi",
+      "popis": "build 1.0.0.3 + Copilot test"
+    },
+    {
+      "t": "2026-11-23T10:20:19Z",
+      "stav": "hotovo",
+      "popis": "lab ✅ v Claude i Copilot CLI, TEST-copilot.md"
+    }
+  ]
+}

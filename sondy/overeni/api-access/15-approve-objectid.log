@@ -1,0 +1,4 @@
+## approve CSOM, Resource = objectId SP
+[{"SchemaVersion":"15.0.0.0","LibraryVersion":"16.0.27911.12005","ErrorInfo":{"ErrorMessage":"The service principal for permssion request egd-overeni-apiaccess-objid could not be found.","ErrorValue":null,"TraceCorrelationId":"776e51a2-2039-0001-45dd-d7af9459b2aa","ErrorCode":-1,"ErrorTypeName":"System.InvalidOperationException"},"TraceCorrelationId":"776e51a2-2039-0001-45dd-d7af9459b2aa"}]
+
+[]

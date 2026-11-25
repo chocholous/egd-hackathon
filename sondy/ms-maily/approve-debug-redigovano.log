@@ -1,0 +1,8 @@
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/contextinfo",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_api/contextinfo",
+  "status": 200,
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_vti_bin/client.svc/ProcessQuery",
+  "url": "https://pavelchocholousgmail-admin.sharepoint.com/_vti_bin/client.svc/ProcessQuery",
+  "status": 200,
+  "data": "[\r{\r\"SchemaVersion\":\"15.0.0.0\",\"LibraryVersion\":\"16.0.27911.12005\",\"ErrorInfo\":{\r\"ErrorMessage\":\"The service principal for permssion request prvni-appka-client-side-solution could not be found.\",\"ErrorValue\":null,\"TraceCorrelationId\":\"786d51a2-30e2-0001-45dd-d9806ec8c17b\",\"ErrorCode\":-1,\"ErrorTypeName\":\"System.InvalidOperationException\"\r},\"TraceCorrelationId\":\"786d51a2-30e2-0001-45dd-d9806ec8c17b\"\r}\r]"
+{"error":"The service principal for permssion request prvni-appka-client-side-solution could not be found."}

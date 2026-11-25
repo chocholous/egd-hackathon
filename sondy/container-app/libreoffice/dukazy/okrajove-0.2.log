@@ -1,0 +1,29 @@
+# 2026-11-24T01:00:15Z okrajové případy, image 0.2
+27 MB nad limit 25 MB:
+upstream connect error or disconnect/reset before headers. reset reason: connection termination http=503 t=3.745873
+27 MB chunked (bez Content-Length):
+upstream connect error or disconnect/reset before headers. reset reason: connection termination http=503 t=3.939480
+3,4 MB náhodných bajtů jako docx:
+{"error":"soubor .docx není ZIP (Office Open XML / ODF)"} http=400 t=0.794223
+neznámá přípona:
+{"error":"neznámá přípona (?ext=docx|xlsx|pptx…)"} http=400
+textový soubor s příponou docx:
+{"error":"soubor .docx není ZIP (Office Open XML / ODF)"} http=400
+12 MB: {"error":"soubor .docx není ZIP (Office Open XML / ODF)"} http=400 t=1.732445
+20 MB: {"error":"soubor .docx není ZIP (Office Open XML / ODF)"} http=400 t=2.551256
+24 MB: {"error":"soubor .docx není ZIP (Office Open XML / ODF)"} http=400 t=2.990009
+26 MB: {"error":"soubor .docx není ZIP (Office Open XML / ODF)"} http=400 t=3.164131
+# 2026-11-24T01:01:44Z MAX_BYTES=50 MiB (diagnostika 503)
+27 MB: {"error":"soubor je větší než 26214400 B"} http=413 t=0.214164
+45 MB: {"error":"soubor je větší než 26214400 B"} http=413 t=0.234488
+55 MB: {"error":"soubor je větší než 26214400 B"} http=413 t=0.207491
+# 2026-11-24T01:02:41Z MAX_BYTES=50 MiB, po 45 s
+27 MB: {"error":"soubor .docx není ZIP (Office Open XML / ODF)"} http=400 t=3.444533
+45 MB: {"error":"soubor .docx není ZIP (Office Open XML / ODF)"} http=400 t=5.097197
+55 MB: {"error":"soubor je větší než 52428800 B"} http=413 t=0.209062
+55 MB chunked: {"error":"soubor je větší než 52428800 B"} http=413 t=6.589688
+# 2026-11-24T01:04:49Z zpět MAX_BYTES=25 MiB
+27 MB: {"error":"soubor je větší než 26214400 B"} http=413 t=0.466283
+27 MB: {"error":"soubor je větší než 26214400 B"} http=413 t=0.232383
+27 MB: {"error":"soubor je větší než 26214400 B"} http=413 t=0.210326
+27 MB chunked: {"error":"soubor je větší než 26214400 B"} http=413 t=3.222493

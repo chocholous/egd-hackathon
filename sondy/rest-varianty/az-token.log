@@ -1,0 +1,5 @@
+# az token (Azure CLI) 2026-11-23 10:54:21, ucet: pavel.chocholous@gmail.com
+SPO token: {"aud":"00000003-0000-0ff1-ce00-000000000000","scp":"user_impersonation","app":"Microsoft Azure CLI"}
+SPO _api/web: HTTP 401
+Graph token scp: Application.ReadWrite.All AppRoleAssignment.ReadWrite.All AuditLog.Read.All DelegatedPermissionGrant.ReadWrite.All Directory.AccessAsUser.All email Group.ReadWrite.All openid profile SubjectNameRegistration.ReadWrite User.Read.All User.ReadWrite.All
+Graph /sites/...egd09-dev: HTTP 403

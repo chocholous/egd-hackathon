@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Lab účty EG.D</title>
+<style>
+:root{--bg:#f6f7f9;--karta:#fff;--text:#1b2330;--tlum:#5d6878;--linka:#dde2e9;--akcent:#0a6e5a;--akcent-text:#fff;--rez:#8a5a00;--rez-bg:#fff4dc;--chyba:#b3261e;--chyba-bg:#fde8e6;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#11161d;--karta:#1a212b;--text:#e7ebf0;--tlum:#9aa5b4;--linka:#2c3542;--akcent:#3fbf9f;--akcent-text:#06231c;--rez:#f0c46a;--rez-bg:#3a2e14;--chyba:#ffb4ab;--chyba-bg:#41120e;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-right)) 48px max(16px,env(safe-area-inset-left))}
+h1{font-size:1.5rem;margin:0 0 4px}
+p.pod{color:var(--tlum);margin:0 0 24px}
+.karta{background:var(--karta);border:1px solid var(--linka);border-radius:12px;padding:20px;margin-bottom:16px}
+label{display:block;font-weight:600;margin-bottom:6px}
+input{width:100%;font:inherit;padding:10px 12px;border:1px solid var(--linka);border-radius:8px;background:var(--bg);color:var(--text)}
+button{font:inherit;font-weight:600;padding:10px 16px;border-radius:8px;border:0;background:var(--akcent);color:var(--akcent-text);cursor:pointer}
+button.vedlejsi{background:transparent;color:var(--text);border:1px solid var(--linka)}
+button:disabled{opacity:.5;cursor:default}
+.radek{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.radek>input{flex:1;min-width:180px}
+ul.ucty{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+ul.ucty li{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid var(--linka);border-radius:10px;background:var(--karta);flex-wrap:wrap}
+.nazev{font-weight:700;font-variant-numeric:tabular-nums}
+.stav{font-size:.9rem;color:var(--tlum)}
+.rez{background:var(--rez-bg);color:var(--rez);border-radius:6px;padding:2px 8px;font-size:.85rem;font-weight:600}
+.chyba{background:var(--chyba-bg);color:var(--chyba);border-radius:8px;padding:10px 12px;margin-top:12px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:8px 16px;margin:12px 0}
+dt{color:var(--tlum)}
+dd{margin:0;font-family:ui-monospace,Menlo,Consolas,monospace;word-break:break-all;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+dd button{padding:4px 10px;font-size:.85rem}
+a{color:var(--akcent);overflow-wrap:anywhere}
+#m-weby{padding-left:20px}
+@media (max-width:520px){dl{grid-template-columns:1fr;gap:2px}dt{margin-top:8px}}
+.drobne{font-size:.9rem;color:var(--tlum)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Lab účty EG.D</h1>
+  <p class="pod">Vibecoding hackathon. Vezměte si jeden volný účet pro sebe.</p>
+
+  <section id="prihlaseni" class="karta">
+    <form id="f-heslo">
+      <label for="heslo">Heslo od organizátora</label>
+      <div class="radek"><input id="heslo" type="password" autocomplete="current-password" required><button>Pokračovat</button></div>
+      <div id="e-heslo" class="chyba" hidden></div>
+    </form>
+  </section>
+
+  <section id="muj" class="karta" hidden>
+    <h2 style="margin:0">Váš účet: <span id="m-ucet"></span></h2>
+    <dl>
+      <dt>Přihlašovací jméno</dt><dd><span id="m-upn"></span><button class="vedlejsi" data-kopie="m-upn">Kopírovat</button></dd>
+      <dt>Heslo</dt><dd><span id="m-heslo"></span><button class="vedlejsi" data-kopie="m-heslo">Kopírovat</button></dd>
+    </dl>
+    <p class="drobne">Přihlaste se na <a href="https://www.office.com" target="_blank" rel="noopener">office.com</a>. Vaše weby:</p>
+    <ul id="m-weby" class="drobne"></ul>
+    <div id="m-cli" hidden>
+      <p class="drobne">Přihlášení agenta do Microsoft 365 (CLI for Microsoft 365):</p>
+      <dl>
+        <dt>appId</dt><dd><span id="m-appid"></span><button class="vedlejsi" data-kopie="m-appid">Kopírovat</button></dd>
+        <dt>Tenant</dt><dd><span id="m-tenant"></span><button class="vedlejsi" data-kopie="m-tenant">Kopírovat</button></dd>
+        <dt>Příkaz</dt><dd><span id="m-prikaz"></span><button class="vedlejsi" data-kopie="m-prikaz">Kopírovat</button></dd>
+      </dl>
+    </div>
+    <p class="drobne">Údaje uvidíte znovu na tomto zařízení. Účet nesdílejte.</p>
+    <button id="b-vracim" class="vedlejsi">Vracím účet</button>
+  </section>
+
+  <section id="vyber" hidden>
+    <div class="karta">
+      <label for="jmeno">Vaše jméno (uvidí ho ostatní u rezervovaného účtu)</label>
+      <input id="jmeno" autocomplete="name" maxlength="60">
+      <div id="e-vyber" class="chyba" hidden></div>
+    </div>
+    <ul id="seznam" class="ucty"></ul>
+    <p class="drobne"><button id="b-obnovit" class="vedlejsi">Obnovit seznam</button></p>
+  </section>
+</main>
+<script>
+const $ = (id) => document.getElementById(id);
+const ulozit = (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} };
+const nacist = (k) => { try { return localStorage.getItem(k); } catch { return null; } };
+let sezeni = nacist("vydej-sezeni");
+
+async function api(akce, body) {
+  const r = await fetch("/api/vydej/" + akce, { method: body ? "POST" : "GET",
+    headers: { "Content-Type": "application/json", "X-Vydej-Sezeni": sezeni || "" }, body: body ? JSON.stringify(body) : undefined });
+  const d = await r.json().catch(() => ({ chyba: "Neočekávaná odpověď serveru." }));
+  return { status: r.status, d };
+}
+function chyba(el, text) { $(el).textContent = text || ""; $(el).hidden = !text; }
+
+function ukazMuj(u) {
+  $("m-ucet").textContent = u.ucet; $("m-upn").textContent = u.upn; $("m-heslo").textContent = u.heslo;
+  $("m-weby").replaceChildren(...(u.weby || []).map((w) => { const li = document.createElement("li"), a = document.createElement("a");
+    a.href = w; a.textContent = w.replace(/^https:\/\//, ""); a.target = "_blank"; a.rel = "noopener"; li.append(a); return li; }));
+  const c = u.cli; $("m-cli").hidden = !c;
+  if (c) { $("m-appid").textContent = c.appId; $("m-tenant").textContent = c.tenant; $("m-prikaz").textContent = c.prikaz; }
+  $("muj").hidden = false; $("vyber").hidden = true;
+}
+
+async function obnov() {
+  const token = nacist("vydej-token");
+  if (token) {
+    const { status, d } = await api("muj", { token });
+    if (status === 200) return ukazMuj(d);
+    if (status === 401) return odhlasit();
+    ulozit("vydej-token", null);
+  }
+  $("muj").hidden = true;
+  const { status, d } = await api("seznam");
+  if (status === 401) return odhlasit();
+  if (status !== 200) return chyba("e-vyber", d.chyba);
+  $("vyber").hidden = false;
+  $("seznam").replaceChildren(...d.ucty.map((u) => {
+    const li = document.createElement("li"), vlevo = document.createElement("div");
+    const n = document.createElement("div"); n.className = "nazev"; n.textContent = u.ucet;
+    const s = document.createElement("div"); s.className = "stav";
+    vlevo.append(n, s);
+    if (u.rezervovano) { const r = document.createElement("span"); r.className = "rez"; r.textContent = "rezervováno" + (u.jmeno ? ": " + u.jmeno : ""); li.append(vlevo, r); }
+    else { s.textContent = "volný"; const b = document.createElement("button"); b.textContent = "Beru tenhle"; b.dataset.ucet = u.ucet; b.onclick = () => beru(u.ucet, b); li.append(vlevo, b); }
+    return li;
+  }));
+}
+
+async function beru(ucet, b) {
+  const jmeno = $("jmeno").value.trim();
+  if (!jmeno) { chyba("e-vyber", "Nejdřív napište své jméno."); $("jmeno").focus(); return; }
+  chyba("e-vyber", ""); b.disabled = true;
+  ulozit("vydej-jmeno", jmeno);
+  const { status, d } = await api("beru", { ucet, jmeno, token: nacist("vydej-token") || undefined });
+  if (status === 200) { ulozit("vydej-token", d.token); return ukazMuj(d); }
+  if (d.mam) return obnov(); // tenhle prohlížeč už účet má (třeba z jiné karty): ukaž ho
+  chyba("e-vyber", d.chyba || "Nepovedlo se."); b.disabled = false; obnov();
+}
+
+function odhlasit() { sezeni = null; ulozit("vydej-sezeni", null); $("vyber").hidden = true; $("muj").hidden = true; $("prihlaseni").hidden = false; }
+
+$("f-heslo").onsubmit = async (e) => {
+  e.preventDefault(); chyba("e-heslo", "");
+  const btn = e.target.querySelector("button"); btn.disabled = true;
+  const { status, d } = await api("prihlasit", { heslo: $("heslo").value });
+  btn.disabled = false;
+  if (status !== 200) return chyba("e-heslo", d.chyba || "Nepovedlo se.");
+  sezeni = d.sezeni; ulozit("vydej-sezeni", sezeni); $("prihlaseni").hidden = true; obnov();
+};
+$("b-vracim").onclick = async () => {
+  const { status, d } = await api("vracim", { token: nacist("vydej-token") });
+  if (status === 200 || status === 404) ulozit("vydej-token", null);
+  obnov();
+};
+$("b-obnovit").onclick = obnov;
+document.addEventListener("click", async (e) => {
+  const id = e.target.dataset && e.target.dataset.kopie; if (!id) return;
+  try { await navigator.clipboard.writeText($(id).textContent); e.target.textContent = "Zkopírováno"; }
+  catch { const r = document.createRange(); r.selectNodeContents($(id)); getSelection().removeAllRanges(); getSelection().addRange(r); }
+});
+$("jmeno").value = nacist("vydej-jmeno") || "";
+if (sezeni) { $("prihlaseni").hidden = true; obnov(); }
+setInterval(() => { if (!$("vyber").hidden) obnov(); }, 15000);
+</script>
+</body>
+</html>

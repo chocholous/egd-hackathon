@@ -1,0 +1,15 @@
+== 1) identita id-egd-data-sp
+clientId=ee4fc785-219b-4c3e-b346-72891ada0b52 principalId=8eb625a2-5d93-40cf-8b81-648ca551c86e
+== 2) přiřazení k ca-egd-data-api
+WARNING: User identity /subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourcegroups/rg-egd-sonda-data-prava/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-egd-data-sp is already assigned to containerapp
+/ Running ..| Running ..\ Running ..- Running ../ Running ..[K[
+  "/subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourcegroups/rg-egd-sonda-data-prava/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-egd-data-pull",
+  "/subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourcegroups/rg-egd-sonda-data-prava/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-egd-data-sp"
+]
+== 3) Sites.Selected (SharePoint) pro MI
+Sites.Selected už přiřazeno
+== 4) fullcontrol na https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-data-prava
+siteId=pavelchocholousgmail.sharepoint.com,6911b88e-1deb-4a13-bbc0-25e8e064c3ee,0073c481-9b23-45c9-9b98-38a40d8f3607
+{"@odata.context":"https://graph.microsoft.com/v1.0/$metadata#sites('pavelchocholousgmail.sharepoint.com%2C6911b88e-1deb-4a13-bbc0-25e8e064c3ee%2C0073c481-9b23-45c9-9b98-38a40d8f3607')/permissions/$entity","id":"aTowaS50fG1zLnNwLmV4dHxlZTRmYzc4NS0yMTliLTRjM2UtYjM0Ni03Mjg5MWFkYTBiNTJAOTcyYTY3NGMtN2I4NS00ZTU2LWEzMWYtYjJmOTViNDJmZDFl","roles":["fullcontrol"],"grantedToIdentitiesV2":[{"application":{"displayName":"id-egd-data-sp","id":"ee4fc785-219b-4c3e-b346-72891ada0b52"}}],"grantedToIdentities":[{"application":{"displayName":"id-egd-data-sp","id":"ee4fc785-219b-4c3e-b346-72891ada0b52"}}]}grant na webu:
+{"id":"aTowaS50fG1zLnNwLmV4dHxlZTRmYzc4NS0yMTliLTRjM2UtYjM0Ni03Mjg5MWFkYTBiNTJAOTcyYTY3NGMtN2I4NS00ZTU2LWEzMWYtYjJmOTViNDJmZDFl","roles":["fullcontrol"],"app":{"displayName":"id-egd-data-sp","id":"ee4fc785-219b-4c3e-b346-72891ada0b52"}}
+HOTOVO: nastav env SP_MI_CLIENT_ID=ee4fc785-219b-4c3e-b346-72891ada0b52

@@ -1,0 +1,95 @@
+
+> appka-spokojenost@0.0.1 build
+> heft test --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:clean] Deleted 0 files and 4 folders
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] Compiling 1 files...
+[build:sass] Finished compiling.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:lint] Using ESLint version 9.37.0
+Webpack patch plugin applying 1 patch file(s)
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (25.167s) ---- 
+ ---- test started ---- 
+[test:jest] Using Jest version 30.2.0
+No tests found, exiting with code 0
+[test:jest] 
+[test:jest] Run start. 0 test suites
+[test:jest] 
+[test:jest] Tests finished:
+[test:jest]   Successes: 0
+[test:jest]   Failures: 0
+[test:jest]   Total: 0
+ ---- test finished (0.803s) ---- 
+-------------------- Finished (25.976s) --------------------
+ ---- package-solution started ---- 
+Found manifest: f8fbbd7b-5022-4888-9121-d544eb74d96a.manifest.json
+Found client-side build resource: chunk.978_7fbf7d7b37d5455f1115.js
+Found client-side build resource: chunk.lib-docx_2ecbc78b58349ef1b16a.js
+Found client-side build resource: chunk.lib-docx_2ecbc78b58349ef1b16a.js.LICENSE.txt
+Found client-side build resource: chunk.lib-exceljs_6fc62e8dc6b316cfd80a.js
+Found client-side build resource: chunk.lib-exceljs_6fc62e8dc6b316cfd80a.js.LICENSE.txt
+Found client-side build resource: chunk.lib-pdf_7d659702965a130bf9f2.js
+Found client-side build resource: chunk.lib-pdf_7d659702965a130bf9f2.js.LICENSE.txt
+Found client-side build resource: chunk.lib-pptx_b8fb7b57f6c8f99ec429.js
+Found client-side build resource: chunk.lib-pptx_b8fb7b57f6c8f99ec429.js.LICENSE.txt
+Found client-side build resource: spokojenost-web-part_325cbf2f22ff1c5769b7.js
+Found client-side build resource: spokojenost-web-part_325cbf2f22ff1c5769b7.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { appka-spokojenost Feature }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug...
+Cleaned /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/AppManifest.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/_rels/.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/[Content_Types].xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/feature_bad91edc-5f3a-411f-a99e-b814d71a8943.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/_rels/feature_bad91edc-5f3a-411f-a99e-b814d71a8943.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/feature_bad91edc-5f3a-411f-a99e-b814d71a8943.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/bad91edc-5f3a-411f-a99e-b814d71a8943/WebPart_f8fbbd7b-5022-4888-9121-d544eb74d96a.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.978_7fbf7d7b37d5455f1115.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.lib-docx_2ecbc78b58349ef1b16a.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.lib-docx_2ecbc78b58349ef1b16a.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.lib-exceljs_6fc62e8dc6b316cfd80a.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.lib-exceljs_6fc62e8dc6b316cfd80a.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.lib-pdf_7d659702965a130bf9f2.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.lib-pdf_7d659702965a130bf9f2.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.lib-pptx_b8fb7b57f6c8f99ec429.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/chunk.lib-pptx_b8fb7b57f6c8f99ec429.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/spokojenost-web-part_325cbf2f22ff1c5769b7.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-dokumenty/appka-spokojenost/sharepoint/solution/debug/ClientSideAssets/spokojenost-web-part_325cbf2f22ff1c5769b7.js.LICENSE.txt
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.946s) ---- 
+-------------------- Finished (0.95s) --------------------

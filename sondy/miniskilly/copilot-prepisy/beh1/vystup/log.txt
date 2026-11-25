@@ -1,0 +1,221 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● skill(egd-data-seznamy)
+
+ ● skill(egd-prvni-appka)
+
+Nejdřív ověřím stávající projekt a možnosti nasazovacího skriptu; seznam ani stránku nebudu zakládat znovu.
+
+ JS Read ~/.copilot/skills/egd-prvni-appka/scripts/appka.mjs L1:220 (220 lines read)
+
+ ✗ Shell Show deployment script options Failed with exit code 2  appka.mjs - prvni appka EG.D (Spok…
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500
+   404dae43c/scratchpad/copilot-data/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" --help
+   appka.mjs - prvni appka EG.D (Spokojenost s prostredim kancelare dnes, 1-5 + dashboard)
+   
+   Spoustej v pracovni slozce z egd-pripravenost:  node "<cesta>/appka.mjs" <prikaz> [volby]
+   
+   Prikazy:
+     cesta                         precte .pripravenost/vysledky.json a doporuci cestu A / A2 / B
+     novy   [--slozka prvni-appka] zalozi projekt ze sablony (nove GUIDy) a nainstaluje balicky (npm
+    ci)
+            [--bez-instalace]      jen zkopiruje sablonu
+     build  [--slozka prvni-appka] postavi .sppkg (npm run build), chyby i do build.log
+     seznam --web <url> [--seznam Spokojenost] [--ano]
+                                   zalozi seznam Spokojenost a sloupce Hodnoceni, Den (bez --ano jen
+    plan)
+     nasadit --web <url> [--slozka prvni-appka] [--stranka spokojenost] [--nadpis "..."] [--seznam 
+   Spokojenost] [--ano]
+                                   nahraje do katalogu TOHOTO webu, deploy, install/upgrade, stranka
+                                   (Article -> sekce -> web part -> SingleWebPartAppPage), cteni 
+   zpet
+     over   --web <url> [--slozka prvni-appka] [--stranka spokojenost] [--seznam Spokojenost]
+                                   jen cteni: appka v katalogu, stranka s web partem, polozky 
+   seznamu
+   
+   Spolecne volby: --cli <cesta k @pnp/cli-microsoft365/dist/index.js> (jinak ./node_modules nebo
+   PRVNI_APPKA_M365_CLI / PRIPRAVENOST_M365_CLI).
+   Kody: 0 hotovo, 1 chyba, 2 spatne pouziti, 10 plan bez zapisu (neni chyba).
+   Failed with exit code 2
+
+ / Search "prvni-appka/**/*" 137674 files found
+
+ JS Read ~/.copilot/skills/egd-prvni-appka/scripts/appka.mjs L220:660 (198 lines read)
+
+ {} Read prvni-appka/config/package-solution.json 39 lines read
+
+ {} Read prvni-appka/package.json 44 lines read
+
+ TS Read prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts 224 lines read
+
+ ✗ Shell Preview targeted deployment plan Failed with exit code 1  [CHYBA]   chybi balicek /private…
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500
+   404dae43c/scratchpad/copilot-data/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" nasadit
+   --web ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --slozka prvni-appka]8;;
+   --stranka spokojenost-copilot --nadpis "Spokojenost (Copilot test)" --cli
+   /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js
+   [CHYBA]   chybi balicek 
+   /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae
+   43c/scratchpad/copilot-data/home/egd-workshop/prvni-appka/sharepoint/solution/prvni-appka.sppkg
+             co dal: nejdriv prikaz build
+   Failed with exit code 1
+
+V projektu se načítalo jen posledních 2 000 položek bez serverového filtru. Upravím načítání na indexovaný sloupec `Den`, stránkování po 1 000 a přehled za 30 kalendářních dní.
+
+ ✗ Shell Check if target page already exists Failed with exit code 1  Error: Soubor /sites/egd-sond…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page get --webUrl
+   ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --name ]8;;
+   spokojenost-copilot.aspx --output json
+   Error: Soubor /sites/egd-sonda-miniskilly/SitePages/spokojenost-copilot.aspx neexistuje.
+   Failed with exit code 1
+
+ $ Shell Inspect vote list columns and index status output too large to show (181.5 KB)…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo field list --webUrl
+   ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --listTitle Spokojenost ]8;;
+   --output json
+
+ $ Shell Confirm existing vote list 63 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo list get --webUrl
+   ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --title Spokojenost ]8;;
+   --output json
+
+ ● Edit  Edit prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts (+33 -19)  Edit prvni-appk…
+
+ $ Shell Verify index on Den column 43 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo field get --webUrl
+   ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --listTitle Spokojenost ]8;;
+   --internalName Den --output json
+
+ $ Shell Build updated SharePoint package 2 lines…                                               26s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500
+   404dae43c/scratchpad/copilot-data/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" build
+   --slozka prvni-appka
+
+ $ Shell Create and verify Den index 6 lines…                                                     6s
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo field set --webUrl
+   ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --listTitle Spokojenost ]8;;
+   --internalName Den --Indexed true --output json && node
+   /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo field get --webUrl
+   ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --listTitle Spokojenost ]8;;
+   --internalName Den --output json | jq '{InternalName, Indexed, IndexStatus}'
+
+ ✗ Shell Verify indexed 30-day REST query Failed with exit code 1  [stdin]:18 if (r.status !== 0) t…
+   node <<'NODE'
+   const { spawnSync } = require('node:child_process');
+   const node = process.execPath;
+   const cli = '/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js';
+   const web = ']8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;;';]8;;
+   const auth = spawnSync(node, [cli, 'util', 'accesstoken', 'get', '--resource',
+   ']8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;', '--output', 'text'], { encoding: 'utf8' });]8;;
+   if (auth.status !== 0 || !auth.stdout.trim()) throw new Error('Nepodařilo se získat přístupový
+   token pro ověření REST.');
+   let token = auth.stdout.trim();
+   try { const parsed = JSON.parse(token); if (typeof parsed === 'string') token = parsed; else
+   token = parsed.accessToken || parsed.access_token || ''; } catch {}
+   if (!token || token.startsWith('{')) throw new Error('CLI nevrátilo očekávaný tvar tokenu.');
+   const d = new Date(); d.setDate(d.getDate() - 29);
+   const p = (n) => String(n).padStart(2, '0');
+   const start = `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+   let url = `${web}/_api/web/lists/getbytitle('Spokojenost')/items?$select=Id,Den,Hodnoceni&$filter
+   =${encodeURIComponent(`Den ge '${start}'`)}&$orderby=ID desc&$top=1000`;
+   let count = 0;
+   let pages = 0;
+   while (url) {
+     const r = spawnSync('curl', ['--silent', '--show-error', '--fail-with-body', '--header',
+   `Authorization: Bearer ${token}`, '--header', 'Accept: application/json;odata=nometadata', url],
+   { encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 });
+     if (r.status !== 0) throw new Error(`REST dotaz selhal (stránka ${pages + 1}): ${r.stderr ||
+   r.stdout}`);
+     const data = JSON.parse(r.stdout);
+     count += data.value.length;
+     pages++;
+     url = data['odata.nextLink'];
+   }
+   console.log(`REST vrátil HTTP 200 na všech stránkách: ${count} hlasů od ${start}, ${pages}
+   stránek po max. 1000.`);
+   NODE
+   [stdin]:18
+     if (r.status !== 0) throw new Error(`REST dotaz selhal (stránka ${pages + 1}): ${r.stderr || 
+   r.stdout}`);
+                         ^
+   
+   Error: REST dotaz selhal (stránka 1): curl: (3) URL rejected: Malformed input to a URL function
+   
+       at [stdin]:18:29
+       at runScriptInThisContext (node:internal/vm:209:10)
+       at node:internal/process/execution:446:12
+       at [stdin]-wrapper:6:24
+       at runScriptInContext (node:internal/process/execution:444:60)
+       at evalFunction (node:internal/process/execution:279:30)
+       at evalTypeScript (node:internal/process/execution:291:3)
+       at node:internal/main/eval_stdin:53:5
+       at ReadStream.<anonymous> (node:internal/process/execution:201:5)
+       at ReadStream.emit (node:events:519:28)
+   
+   Node.js v22.23.5
+   Failed with exit code 1
+
+ $ Shell Verify indexed 30-day REST query 31 lines…
+   node <<'NODE'
+   const { spawnSync } = require('node:child_process');
+   const node = process.execPath;
+   const cli = '/opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js';
+   const web = ']8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;;';]8;;
+   const auth = spawnSync(node, [cli, 'util', 'accesstoken', 'get', '--resource',
+   ']8;id=md-18i5gjp;https://pavelchocholousgmail.sharepoint.comhttps://pavelchocholousgmail.sharepoint.com]8;;]8;;', '--output', 'text'], { encoding: 'utf8' });]8;;
+   if (auth.status !== 0 || !auth.stdout.trim()) throw new Error('Nepodařilo se získat přístupový
+   token pro ověření REST.');
+   let token = auth.stdout.trim();
+   try { const parsed = JSON.parse(token); if (typeof parsed === 'string') token = parsed; else
+   token = parsed.accessToken || parsed.access_token || ''; } catch {}
+   if (!token || token.startsWith('{')) throw new Error('CLI nevrátilo očekávaný tvar tokenu.');
+   const d = new Date(); d.setDate(d.getDate() - 29);
+   const p = (n) => String(n).padStart(2, '0');
+   const start = `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())}`;
+   let url = `${web}/_api/web/lists/getbytitle('Spokojenost')/items?$select=Id,Den,Hodnoceni&$filter
+   =${encodeURIComponent(`Den ge '${start}'`)}&$orderby=${encodeURIComponent('ID desc')}&$top=1000`;
+   let count = 0;
+   let pages = 0;
+   while (url) {
+     const r = spawnSync('curl', ['--silent', '--show-error', '--fail-with-body', '--header',
+   `Authorization: Bearer ${token}`, '--header', 'Accept: application/json;odata=nometadata', url],
+   { encoding: 'utf8', maxBuffer: 8 * 1024 * 1024 });
+     if (r.status !== 0) throw new Error(`REST dotaz selhal (stránka ${pages + 1}): ${r.stderr ||
+   r.stdout}`);
+     const data = JSON.parse(r.stdout);
+     count += data.value.length;
+     pages++;
+     url = data['odata.nextLink'];
+   }
+   console.log(`REST vrátil HTTP 200 na všech stránkách: ${count} hlasů od ${start}, ${pages}
+   stránek po max. 1000.`);
+   NODE
+
+Index `Den` už je zapnutý a přímý SharePoint REST dotaz vrátil všech 2 900 hlasů z období, přes tři stránky, bez chyby limitu. Teď nahraju balíček a vytvořím požadovanou stránku.
+
+ $ Shell Deploy app and publish SharePoint page 20 lines…                                     1m 22s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500
+   404dae43c/scratchpad/copilot-data/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" nasadit
+   --web ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --slozka prvni-appka]8;;
+   --stranka spokojenost-copilot --nadpis "Spokojenost (Copilot test)" --cli
+   /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js --ano
+
+ $ Shell Verify deployed page and app registration 6 lines…                                      14s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500
+   404dae43c/scratchpad/copilot-data/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" over
+   --web ]8;id=md-czswot;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskillyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly]8;;]8;; --slozka prvni-appka]8;;
+   --stranka spokojenost-copilot --cli
+   /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js
+
+Upravil jsem dashboard na **posledních 30 dní**: zobrazuje celkový počet a průměr hlasů i jejich rozložení a denní vývoj. Appka načítá data filtrem podle sloupce `Den` a stránkuje po 1 000 položkách; na seznamu jsem zapnul index `Den`. Seznam jsem nezakládal. Build prošel a appka verze **1.0.0.1** je nasazená na nové stránce **Spokojenost (Copilot test)**.
+
+Ověření REST dotazu vrátilo všech **2 900 hlasů** od 24. 10. na třech stránkách; seznam obsahuje 6 000 hlasů. Nasazení, stránka i web part jsou ověřené. Otevři [Spokojenost (Copilot test)](https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly/SitePages/spokojenost-copilot.aspx?env=WebView) a zkontroluj nadpis a přehled za 30 dní; vykreslení v prohlížeči jsem zde ověřit nemohl.
+
+Session exported to: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/copilot-data/vystup/prepis.md
+
+
+Changes    +34 -20
+AI Credits 1.71 (3m 49s)
+Tokens     ↑ 603.9k (553.8k cached, 50.1k written) • ↓ 10.5k (5.5k reasoning)
+Resume     copilot --resume=b138598f-5fd4-4e19-8d03-f1aafb89d6db

@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "06c70ffb-41d3-4ba2-8ab2-bc612a68e48c", "alias": "UpravaWebPart", "componentType": "WebPart", "version": "*", "manifestVersion": 2,
+  "requiresCustomScript": false, "supportedHosts": ["SharePointWebPart", "SharePointFullPage"], "supportsThemeVariants": false,
+  "preconfiguredEntries": [{ "groupId": "5c03119e-3074-46fd-976b-c60198311f70", "group": { "default": "EG.D sonda" },
+    "title": { "default": "Úprava dokumentů" }, "description": { "default": "Upraví existující docx, xlsx, pptx a vyplní šablonu z Wordu." },
+    "officeFabricIconFontName": "Edit", "properties": { "slozka": "Sdilene dokumenty/uprava" } }]
+}

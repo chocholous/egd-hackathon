@@ -1,0 +1,79 @@
+{
+  "profil": "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/profil-tomas",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/evidence.aspx?env=WebView",
+  "cas": "2026-11-22T19:19:25.575Z",
+  "nacteniMs": 17486,
+  "shrnuti": {
+    "ms": 24149,
+    "vystup": "Návrh shrnutí: Ve 2. patře budovy B na chodbě od pondělí nesvítí tři zářivky, je tam tma a lidé zakopávají o schod u výtahu, proto prosím o jejich výměnu a kontrolu vypínače."
+  },
+  "ocr": {
+    "soubor": "ocr-cs.png",
+    "ms": 1103,
+    "vystup": "Text ze souboru je v Popisu, zkontrolujte ho.",
+    "popisPoOcr": "Na chodbě ve 2. patře budovy B nesvítí od pondělí tři zářivky, je tam tma a lidé zakopávají o schod u výtahu. Prosím o výměnu zářivek a kontrolu, jestli není vadný vypínač.\nČástka k úhradě: 12 345,00 Kč Příliš žluťoučký kůň úpěl ďábelské ódy Dodavatel: Řezníkův závod, s.r.o."
+  },
+  "sit": [
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat",
+      "stav": 200,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    },
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/ocr",
+      "stav": 200,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "demo",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    }
+  ],
+  "ciziOrigin": "TypeError: Failed to fetch"
+}

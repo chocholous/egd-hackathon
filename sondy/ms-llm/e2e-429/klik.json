@@ -1,0 +1,82 @@
+{
+  "profil": "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/profil-tomas",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/evidence.aspx?env=WebView",
+  "cas": "2026-11-22T19:58:18.808Z",
+  "sablona": "evidence",
+  "nacteniMs": 3345,
+  "shrnuti": {
+    "ms": 1304,
+    "vystup": "Návrh shrnutí: V chodbě ve 2. patře budovy B od pondělí nesvítí tři zářivky, je tam tma a hrozí zakopnutí o schod u výtahu, proto prosím o výměnu zářivek a kontrolu vypínače."
+  },
+  "ocr": {
+    "soubor": "ocr-cs.png",
+    "ms": 167,
+    "vystup": "Chyba AI: Dnešní limit AI pro appku je vyčerpaný. Zkuste to zítra.",
+    "popisPoOcr": "Na chodbě ve 2. patře budovy B nesvítí od pondělí tři zářivky, je tam tma a lidé zakopávají o schod u výtahu. Prosím o výměnu zářivek a kontrolu, jestli není vadný vypínač."
+  },
+  "sit": [
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat",
+      "stav": 200,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "tiny",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    },
+    {
+      "metoda": "POST",
+      "url": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/ocr",
+      "stav": 429,
+      "authorization": "Bearer eyJ0eX…(1673 znaků)",
+      "xAppId": "tiny",
+      "hlavickyPozadavku": [
+        ":authority",
+        ":method",
+        ":path",
+        ":scheme",
+        "accept",
+        "accept-encoding",
+        "accept-language",
+        "authorization",
+        "content-length",
+        "content-type",
+        "origin",
+        "priority",
+        "referer",
+        "sec-ch-ua",
+        "sec-ch-ua-mobile",
+        "sec-ch-ua-platform",
+        "sec-fetch-dest",
+        "sec-fetch-mode",
+        "sec-fetch-site",
+        "user-agent",
+        "x-app-id"
+      ]
+    }
+  ],
+  "bundly": [
+    "200 evidence-web-part_3c51f014e24b190b3e8b.js"
+  ]
+}

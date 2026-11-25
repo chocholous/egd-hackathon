@@ -1,0 +1,22 @@
+{"krok": "roledef Contribute", "status": 200, "id": 1073741827, "name": "Přispívání"}
+{"krok": "ensureuser karolina", "status": 200, "id": 14}
+{"krok": "pridat Contribute na web", "status": 200, "err": ""}
+{"krok": "karolina EffectiveBasePermissions na IndexTest", "status": 200, "perm": {"High": "944", "Low": "1011028719"}}
+{"krok": "Contribute přidá položku", "status": 201, "sec": 0.33, "err": ""}
+{"krok": "Contribute vytvoří index", "status": 403, "sec": 0.27, "err": "-2147024891, System.UnauthorizedAccessException Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))"}
+{"krok": "kontrola", "indexed": false}
+{"krok": "odebrat Contribute z webu", "status": 200, "err": ""}
+{"krok": "REST slozeny index", "path": "/FieldIndexes", "status": 404, "err": "-1, Microsoft.SharePoint.Client.ResourceNotFoundException Prostředek pro požadavek FieldIndexes se nedá najít."}
+{"krok": "REST slozeny index", "path": "/Indexes", "status": 404, "err": "-1, Microsoft.SharePoint.Client.ResourceNotFoundException Prostředek pro požadavek Indexes se nedá najít."}
+{"krok": "indexy systémových polí", "seznam": "IndexTest", "pole": [{"Indexed": true, "InternalName": "Modified"}, {"Indexed": false, "InternalName": "Created"}]}
+{"krok": "počet", "seznam": "IndexTest", "n": 6009}
+{"krok": "razeni", "seznam": "IndexTest", "orderby": "Modified desc", "status": 200, "sec": 0.2, "err": ""}
+{"krok": "razeni", "seznam": "IndexTest", "orderby": "Created desc", "status": 500, "sec": 0.2, "err": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"krok": "razeni", "seznam": "IndexTest", "orderby": "ID desc", "status": 200, "sec": 0.16, "err": ""}
+{"krok": "indexy systémových polí", "seznam": "Pozadavky", "pole": [{"Indexed": true, "InternalName": "Modified"}, {"Indexed": false, "InternalName": "Created"}]}
+{"krok": "počet", "seznam": "Pozadavky", "n": 6002}
+{"krok": "razeni", "seznam": "Pozadavky", "orderby": "Modified desc", "status": 200, "sec": 0.21, "err": ""}
+{"krok": "razeni", "seznam": "Pozadavky", "orderby": "Created desc", "status": 500, "sec": 0.15, "err": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"krok": "razeni", "seznam": "Pozadavky", "orderby": "ID desc", "status": 200, "sec": 0.19, "err": ""}
+{"krok":"CLI spo field set Author --Indexed true (node dist/index.js)","rc":0,"sec":5.2,"po":true,"out":""}
+{"krok":"CLI spo field set Author --Indexed false (node dist/index.js)","rc":0,"sec":7.7,"po":false,"out":""}

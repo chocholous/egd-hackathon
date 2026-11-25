@@ -1,0 +1,42 @@
+{
+ "displayName": "EGD PA sonda: diag Request Http trigger + Compose",
+ "connectionReferences": {},
+ "definition": {
+  "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+   "$connections": {
+    "defaultValue": {},
+    "type": "Object"
+   },
+   "$authentication": {
+    "defaultValue": {},
+    "type": "SecureObject"
+   }
+  },
+  "triggers": {
+   "manual": {
+    "type": "Request",
+    "kind": "Http",
+    "inputs": {
+     "schema": {
+      "type": "object",
+      "properties": {
+       "den": {
+        "type": "string"
+       }
+      }
+     }
+    }
+   }
+  },
+  "actions": {
+   "C": {
+    "type": "Compose",
+    "runAfter": {},
+    "inputs": "@triggerBody()"
+   }
+  },
+  "outputs": {}
+ }
+}

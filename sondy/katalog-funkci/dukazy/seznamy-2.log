@@ -1,0 +1,29 @@
+= seznam Pozadavky existuje
+= Pozadavky.Popis existuje
+= Pozadavky.Stav existuje
+= Pozadavky.Komentar existuje
++ Pozadavky: egd09@pavelchocholousgmail.onmicrosoft.com → Návrh
++ Pozadavky: egd10@pavelchocholousgmail.onmicrosoft.com → Návrh
+= seznam PozadavkyPrava existuje
+= PozadavkyPrava.Popis existuje
+= PozadavkyPrava.Stav existuje
+= PozadavkyPrava.Komentar existuje
+= PozadavkyPrava: práva už nastavená
+= seznam Spokojenost existuje
+= Spokojenost.Hodnoceni existuje
+= Spokojenost.Den existuje
+= seznam Revize existuje
+= Revize.Technik existuje
+= Revize.Termin existuje
+= Revize.Stav existuje
+= Revize.Naklad existuje
++ Revize: 5 položek
++ složka sonda
++ složka sonda/assets
++ složka assets
++ šablona a font v /sites/egd-ukazky/Sdilene dokumenty/sonda/assets a /sites/egd-ukazky/Sdilene dokumenty/assets
+total 352
+drwx------@    4 chocholous  staff     128 Nov 24 19:09 .
+drwx------@ 1498 chocholous  staff   47936 Nov 24 19:09 ..
+-rw-r--r--@    1 chocholous  staff  157216 Nov 24 19:09 Roboto-Regular.ttf
+-rw-r--r--@    1 chocholous  staff   16987 Nov 24 19:09 sablona.docx

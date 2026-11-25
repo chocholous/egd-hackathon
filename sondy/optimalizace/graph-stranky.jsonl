@@ -1,0 +1,2 @@
+{"test": "Graph_nextLink_999_s_fields", "rows": 12002, "stranek": 13, "sec": 9.99}
+{"test": "Graph_delta_prvni_plne_nacteni", "rows": 12002, "stranek": 61, "sec": 19.37, "ma_deltaLink": true}

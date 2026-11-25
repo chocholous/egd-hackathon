@@ -1,0 +1,6 @@
+{"i": 1, "user": "lucie.dvorakova", "http": 502, "s": 0.420099, "mode": null, "oboMs": null, "aadsts": "AADSTS7000215"}
+{"i": 2, "user": "lucie.dvorakova", "http": 200, "s": 0.402422, "mode": "secret", "oboMs": 136, "aadsts": null}
+{"i": 3, "user": "lucie.dvorakova", "http": 502, "s": 0.238622, "mode": null, "oboMs": null, "aadsts": "AADSTS7000215"}
+{"i": 1, "user": "lucie.dvorakova", "http": 403, "s": 0.280903, "mode": null, "oboMs": null, "aadsts": "AADSTS65001"}
+{"i": 2, "user": "lucie.dvorakova", "http": 403, "s": 0.269896, "mode": null, "oboMs": null, "aadsts": "AADSTS65001"}
+{"i": 3, "user": "lucie.dvorakova", "http": 403, "s": 0.254596, "mode": null, "oboMs": null, "aadsts": "AADSTS65001"}

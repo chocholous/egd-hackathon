@@ -1,0 +1,228 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/listedit.aspx?List=%7B8f4c76bc-ec53-4904-b9a5-4c32ca593d49%7D
+KROK klik:Upřesnit nastavení
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/advsetng.aspx?List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+--- frame https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/advsetng.aspx?List=%7B8F4C76BC%2DEC53%2
+a: Zapnout režim s vyšším usnadněním
+a: Přejít k hlavnímu obsahu
+a: Vypnout animace
+button[button]: Spouštěč aplikací
+a[link]: SharePoint
+button[button]: Nastavení
+button[button]: Nápověda
+button[button]: KM
+a: SDÍLET
+a: SLEDOVAT
+a: Umožňuje přenést hlavní pozornost na obsah.
+a: EGD sonda ms-prava
+a: UPRAVIT ODKAZY
+a: Nastavení
+a: Domovská stránka
+a: Dokumenty
+a: Stránky
+a: Pozadavky
+a: Obsah webu
+label: Ano
+label: Ne
+a: Informace o správě nastavení oprávnění
+label: Číst všechny položky
+label: Číst položky vytvořené daným uživatelem
+label: Vytvořit a upravit všechny položky
+label: Vytvořit položky a upravit položky vytvořené daným uživatelem
+label: Žádné
+label: Povoleny
+label: Zakázány
+label: Zobrazit vše jako karty
+label: Zobrazit pouze jednu kartu
+input: Přeindexovat seznam
+label: Výchozí rozhraní webu
+label: Nové prostředí
+label: Klasické prostředí
+input: OK
+input: Storno
+pole input[radio] #ctl00_PlaceHolderMain_ContentTypeSection_ctl02_RadEnableContentTypesYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_ContentTypeSection_ctl02_RadEnableContentTypesNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_ItemLevelSecuritySection_ctl09_RadReadSecurityAll title="" aria="" label="Číst všechny položky"
+pole input[radio] #ctl00_PlaceHolderMain_ItemLevelSecuritySection_ctl09_RadReadSecurityOwn title="" aria="" label="Číst položky vytvořené daným uživatelem"
+pole input[radio] #ctl00_PlaceHolderMain_ItemLevelSecuritySection_ctl10_RadWriteSecurityAll title="" aria="" label="Vytvořit a upravit všechny položky"
+pole input[radio] #ctl00_PlaceHolderMain_ItemLevelSecuritySection_ctl10_RadWriteSecurityOwn title="" aria="" label="Vytvořit položky a upravit položky vytvořené daným uživatele"
+pole input[radio] #ctl00_PlaceHolderMain_ItemLevelSecuritySection_ctl10_RadWriteSecurityNone title="" aria="" label="Žádné"
+pole input[radio] #ctl00_PlaceHolderMain_AttachmentsSection_ctl02_RadAttachmentsEnabled title="" aria="" label="Povoleny"
+pole input[radio] #ctl00_PlaceHolderMain_AttachmentsSection_ctl02_RadAttachmentsDisabled title="" aria="" label="Zakázány"
+pole input[radio] #ctl00_PlaceHolderMain_CommentingSection_ctl01_RadEnableCommentingYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_CommentingSection_ctl01_RadEnableCommentingNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_ViewSection_ctl01_RadShowOneTabOnlyNo title="" aria="" label="Zobrazit vše jako karty"
+pole input[radio] #ctl00_PlaceHolderMain_ViewSection_ctl01_RadShowOneTabOnlyYes title="" aria="" label="Zobrazit pouze jednu kartu"
+pole input[radio] #ctl00_PlaceHolderMain_FolderCreationSection_ctl02_RadEnableFoldersYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_FolderCreationSection_ctl02_RadEnableFoldersNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_AllowCrawlSection_ctl02_RadAllowCrawlYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_AllowCrawlSection_ctl02_RadAllowCrawlNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_AllowNonDefaultCrawlViewSection_ctl02_RadAllowNonDefaultCrawlViewYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_AllowNonDefaultCrawlViewSection_ctl02_RadAllowNonDefaultCrawlViewNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_AllowSyncSection_ctl03_RadAllowSyncYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_AllowSyncSection_ctl03_RadAllowSyncNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_AllowGridEditingSection_ctl02_RadAllowGridYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_AllowGridEditingSection_ctl02_RadAllowGridNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_DialogForFormsPagesSection_ctl03_RadDialogForFormsPagesYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_DialogForFormsPagesSection_ctl03_RadDialogForFormsPagesNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_ManagedIndexesSection_ctl02_RadManagedIndexesYes title="" aria="" label="Ano"
+pole input[radio] #ctl00_PlaceHolderMain_ManagedIndexesSection_ctl02_RadManagedIndexesNo title="" aria="" label="Ne"
+pole input[radio] #ctl00_PlaceHolderMain_ListExperienceSection_ctl02_RadDisplayOnAutoExperience title="" aria="" label="Výchozí rozhraní webu"
+pole input[radio] #ctl00_PlaceHolderMain_ListExperienceSection_ctl02_RadDisplayOnNewExperience title="" aria="" label="Nové prostředí"
+pole input[radio] #ctl00_PlaceHolderMain_ListExperienceSection_ctl02_RadDisplayOnClassicExperience title="" aria="" label="Klasické prostředí"
+TEXT:
+Zapnout režim s vyšším usnadněním
+Přejít k hlavnímu obsahu
+Vypnout animace
+SharePoint
+KM
+SDÍLET 
+SLEDOVAT 
+UPRAVIT ODKAZY
+Nastavení 
+ Upřesnit nastavení 
+	
+	
+Domovská stránka
+Dokumenty
+Stránky
+Nejnovější
+Pozadavky
+Obsah webu
+UPRAVIT ODKAZY
+Typy obsahu
+Zadejte, zda má být povolena správa typů obsahu v tomto typu seznamu Seznam. Jednotlivé typy obsahu budou zobrazeny na novém tlačítku a mohou využívat specifickou sadu sloupců, pracovních postupů a dalších prvků.	
+	
+		
+	
+Chcete umožnit správu typů obsahu?
+Ano    Ne
+	
+		
+Oprávnění na úrovni položek
+Určete, které položky mohou uživatelé číst a upravovat.
+Poznámka: Uživatelé s oprávněním Zrušit rezervaci můžou číst a upravovat všechny položky. Informace o správě nastavení oprávnění	
+	
+		
+	
+Přístup pro čtení:   Zadejte, které položky smějí uživatelé číst.
+Číst všechny položky
+Číst položky vytvořené daným uživatelem
+Přístup pro vytváření a úpravy:   Zadejte, které položky smějí uživatelé vytvořit a upravit.
+Vytvořit a upravit všechny položky
+Vytvořit položky a upravit položky vytvořené daným uživatelem
+Žádné
+	
+		
+Přílohy
+Určete, zda uživatelé mohou připojit soubory k položkám v tomto seznamu.	
+	
+		
+	
+Přílohy k položkám seznamu jsou:
+Povoleny
+Zakázány
+	
+		
+Komentáře
+Určete, jestli můžou uživatelé komentovat položky seznamu. Po vypnutí tohoto nastavení se existující komentáře i nadále zobrazí. Komentáře jsou k dispozici pouze v moderních verzích, ne v klasickém prostředí.	
+	
+		
+	
+Povolit přidávání komentářů k položkám na seznamu?
+Ano    Ne
+	
+		
+Zobrazení
+Zvolte, jak se mají zobrazení zobrazovat: zobrazit vše jako karty nebo zobrazit pouze jednu kartu se zbytkem pod nabídkou Další	
+	
+		
+	
+Jak by se měly zobrazovat karty?
+Zobrazit vše jako karty    Zobrazit pouze jednu kartu
+	
+		
+Složky
+Zadejte, zda má být k dispozici příkaz Nová složka. Změna tohoto nastavení neovlivní stávající složky.	
+	
+		
+	
+Chcete zpřístupnit příkaz Nová složka?
+Ano    Ne
+	
+		
+Hledání
+Určete, zda má být tento typ seznamu (Seznam) zobrazen ve výsledcích hledání. Uživatelé, kteří nemají oprávnění k zobrazení těchto položek, neuvidí tyto položky ve výsledcích hledání bez ohledu na toto nastavení.	
+	
+		
+	
+Chcete povolit zobrazení položek z tohoto typu seznamu (Seznam) ve výsledcích hledání?
+Ano    Ne
+	
+		
+Indexování nevýchozích zobrazení
+Určete, jestli se mají indexovat nevýchozí zobrazení tohoto seznamu.	
+	
+		
+	
+Chcete, aby se ve výsledcích hledání zobrazovala nevýchozí zobrazení z tohoto seznamu?
+Ano    Ne
+	
+		
+Přeindexovat seznam
+Kliknutím na tlačítko Přeindexovat pro tento typ seznamu (Seznam) znovu indexujete celý obsah této knihovny dokumentů při dalším plánovaném procházení.	
+	
+		
+	
+	
+	
+		
+Offline a synchronizace
+Určete, zda lze k tomuto Seznam přistupovat offline a synchronizovat s počítačem.	
+	
+		
+	
+Chcete uživatelům povolit synchronizaci tohoto seznamu s počítači s Seznamy Microsoft a přístup k němu v prohlížeči bez připojení k internetu?
+Ano    Ne
+	
+		
+Rychlé úpravy vlastností
+Určete, jestli se u tohoto seznamu typu Seznam dá použít režim Rychlé úpravy a podokno podrobností pro hromadnou úpravu dat.	
+	
+		
+	
+Chcete povolit úpravy položek v tomto seznamu typu Seznam pomocí režimu Rychlé úpravy a podokna podrobností?
+Ano    Ne
+	
+		
+Dialogová okna
+Pokud jsou dialogová okna k dispozici, určete, zda chcete nové formuláře, formuláře pro úpravy a formuláře pro zobrazení spouštět v dialogovém okně. Výběr možnosti Ne způsobí, že při těchto akcích přejdete na celou stránku.
+Poznámka: Dialogová okna nemusí být k dispozici ve všech formulářích.	
+	
+		
+	
+Chcete spustit formuláře v dialogových oknech?
+Ano    Ne
+	
+		
+Správa automatického indexování
+Správa automatického indexování umožní SharePointu udržovat indexy sloupců v tomto seznamu, aby se v rámci jednotlivých zobrazení zajistil co nejlepší výkon při zpracování dotazu. Automaticky vytvořené indexy je možné po jejich odstranění obnovit. Změna tohoto nastavení neovlivní stávající indexy.	
+	
+		
+	
+Chcete povolit automatickou správu indexů?
+Ano    Ne
+	
+		
+Prostředí seznamu
+Vyberte prostředí, které chcete použít pro tento seznam. Nové prostředí je rychlejší, má víc funkcí a líp funguje napříč různými zařízeními.	
+	
+		
+	
+Chcete zobrazit tento seznam v novém nebo klasickém prostředí?
+	Výchozí rozhraní webu
+Nové prostředí
+Klasické prostředí
+	
+		
+ 	 
+

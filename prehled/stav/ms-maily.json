@@ -1,0 +1,53 @@
+{
+  "nazev": "Ověření egd-maily a egd-planovane-ulohy",
+  "stav": "hotovo",
+  "popis": "Copilot test obou skillů prošel, filtr/5000 nad 6000 změřen; čeká jen re-login m365 (Pavel)",
+  "oblast": "miniskilly",
+  "kdo": "ms-maily",
+  "vystup": "skills/egd-maily/TEST-copilot.md, skills/egd-planovane-ulohy/TEST-copilot.md, sondy/ms-maily/README.md",
+  "aktualizovano": "2026-11-23T10:32:52Z",
+  "zacatek": "2026-11-22T18:54:02Z",
+  "kroky": 8,
+  "historie": [
+    {
+      "t": "2026-11-22T18:54:02Z",
+      "stav": "bezi",
+      "popis": "čtu podklady, zakládám web egd-sonda-ms-maily"
+    },
+    {
+      "t": "2026-11-22T19:23:24Z",
+      "stav": "bezi",
+      "popis": "maily ✅ změřeny v SPFx (403 bez schválení, 202 po grantu, limit 30/40 MB); jdu na Power Automate"
+    },
+    {
+      "t": "2026-11-22T19:51:39Z",
+      "stav": "bezi",
+      "popis": "PA klikací cesta ✅ prošla (SSO připojení, běh, plánovaný běh 20:50); přepisuji skilly"
+    },
+    {
+      "t": "2026-11-22T19:56:43Z",
+      "stav": "hotovo",
+      "popis": "Oba skilly přepsány podle labu; zbytky v sekci Neověřeno"
+    },
+    {
+      "t": "2026-11-22T20:47:25Z",
+      "stav": "ceka",
+      "popis": "Opravy podle auditu a žebřík hotové; test v Copilotu čeká na místo na disku"
+    },
+    {
+      "t": "2026-11-22T20:53:04Z",
+      "stav": "ceka",
+      "popis": "Audit 2. kolo opraveno; čeká test v Copilotu a filtr nad 6000 položkami (disk)"
+    },
+    {
+      "t": "2026-11-23T09:50:56Z",
+      "stav": "ceka",
+      "popis": "Audit 2. kola uzavřen auditorem; zbývá test v Copilotu (disk) a filtr nad 6000 položkami"
+    },
+    {
+      "t": "2026-11-23T10:32:52Z",
+      "stav": "hotovo",
+      "popis": "Copilot test obou skillů prošel, filtr/5000 nad 6000 změřen; čeká jen re-login m365 (Pavel)"
+    }
+  ]
+}

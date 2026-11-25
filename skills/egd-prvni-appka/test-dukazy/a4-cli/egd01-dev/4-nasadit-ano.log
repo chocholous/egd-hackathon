@@ -1,0 +1,20 @@
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev, katalog tohoto webu, nic tenant-wide):
+  1. nahrat moje-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku moje-appka-cli.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+[OK]      nahrano do katalogu (appId e6019125-97a3-4dfb-b6ea-392ac321c52b)
+[OK]      nasazeno (deploy)
+[OK]      appka na webu aktualizovana (upgrade)
+[OK]      stranka moje-appka-cli.aspx zalozena (Article + sekce)
+[OK]      web part vlozen na stranku
+[OK]      stranka prepnuta na celostrankovou appku a publikovana
+[OK]      precteno zpet: stranka moje-appka-cli.aspx, rozlozeni SingleWebPartAppPage, web part dde1a220-4db3-4d64-8df7-fef833a21ec6 na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev/SitePages/moje-appka-cli.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev/SitePages/moje-appka-cli.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, po kliknuti na cislo se hlas propise do dashboardu.

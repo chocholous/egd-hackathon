@@ -1,0 +1,49 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/Pozadavky/AllItems.aspx
+KROK css:#O365_MainLink_Settings
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/Pozadavky/AllItems.aspx
+--- frame https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/Pozadavky/AllItems.aspx
+a: Přejít k hlavnímu obsahu
+button[button]: Spouštěč aplikací
+a[link]: SharePoint
+button: Hledat
+button[button]: 
+button[button]: 
+button[button]: Nastavení. Stisknutím klávesy Tab přejdete do rozbalené oblasti.
+button[button]: Nápověda
+button[button]: KM
+button: Prozkoumat
+button: Publikovat
+button: Kompilovat
+button: OneDrive
+a: Domovská stránka EGD sonda ms-prava
+a: EGD sonda ms-prava
+button: 
+button: Navigace Upravit
+button:  Nesledované
+button:  Přístup k webům
+button[menuitem]: Nový
+button[menuitem]: Upravit v zobrazení mřížky
+button[menuitem]: Zpět
+button[menuitem]: Sdílet
+button[menuitem]: Kopírovat odkaz
+button[menuitem]: Více
+button[menuitem]: Podrobnosti
+button[menuitem]: Otevřít v imerzivním režimu
+button: Pozadavky
+button: Filtr
+button: Seskupit podle
+button: Seřadit
+button[tab]: Všechny položky
+button: Přidat zobrazení
+a[link]: Přidat stránku
+a[link]: Přidat aplikaci
+a[link]: Obsah webu
+a[link]: Nastavení seznamu
+a[link]: Informace o webu
+a[link]: AI webu
+a[link]: Oprávnění pro web
+a[link]: Použít šablonu webu
+a[link]: Využití webu
+a[link]: Změna vzhledu
+button[button]: Zavřít podokno
+pole input # title=""

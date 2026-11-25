@@ -1,0 +1,166 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene%20dokumenty/exporty",
+ "start": "2026-11-24T19:53:16.330Z",
+ "kroky": [
+  {
+   "krok": "wait:6000",
+   "t": 1894,
+   "ok": true
+  },
+  {
+   "krok": "click:[aria-label='Copilot']",
+   "t": 7896,
+   "ok": true
+  },
+  {
+   "krok": "wait:20000",
+   "t": 8049,
+   "ok": true
+  },
+  {
+   "krok": "shotv:panel",
+   "t": 28054,
+   "vysledek": "sondy/copilot-nativni/dukazy/p7/panel.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('[role=complementary] *, [class*=ocopilot] *, iframe')].map(e=>e.tagName+':'+(e.getAttribute('aria-label')||e.innerText||e.src||'').slice(0,60)).filter(x=>x.length>5).slice(0,40).join(' | ')",
+   "t": 28231,
+   "vysledek": "IFRAME: | IFRAME:https://owl.officeapps.live.com/suite/StaticLoad.aspx?wx=s&w | IFRAME:https://webshell.suite.office.com/iframe/TokenFactoryIframe?",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 3397,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate"
+  },
+  {
+   "t": 5785,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 8326,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.Directory.DirectorySession/me?$select=mySite"
+  },
+  {
+   "t": 9690,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail-my.sharepoint.com:/personal/egd10_pavelchocholousgmail_onmicrosoft_com:/lists?$filter=displayName%20eq%20%27KARuntime%27&$select=id"
+  },
+  {
+   "t": 9731,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com:/sites/egd-ukazky?$select=id"
+  },
+  {
+   "t": 10243,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail-my.sharepoint.com:/personal/egd10_pavelchocholousgmail_onmicrosoft_com?$select=id"
+  },
+  {
+   "t": 10813,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail-my.sharepoint.com,3fb2389c-af7f-421b-a87f-0954d699b7dd,cf1b1964-137e-41db-897a-e62a3b8052b0/lists/56bc2006-a380-41ba-a8b5-395eb79157c6/drive"
+  },
+  {
+   "t": 10895,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc894,c4885c9f-ebc2-4ace-9beb-c7e9f9cc20f5/lists/a6a412df-f521-4911-bf1f-fbfe70bc27af?$select="
+  },
+  {
+   "t": 10908,
+   "m": "GET",
+   "s": 200,
+   "u": "https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc894,c4885c9f-ebc2-4ace-9beb-c7e9f9cc20f5/lists/a6a412df-f521-4911-bf1f-fbfe70bc27af/columns"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin at",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin att",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nemptyFolder, emptyFolderWithDrop, AvailableOffline16, DefenderApp, OneDriveLogo, OutlookLogoInverse, OneNoteLogoInvers",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin at",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin att",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has a",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has a",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: TypeError: Cannot read properties of undefined (reading 'metadata')\n    at t.exports (https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.008/chatodsp/8.js:6:576922)\n    at t.exports (https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.008/chatodsp/8.js:6:",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: Warning: OpenAI may not support records in schemas! Try an array of key-value pairs instead.",
+  "warning: [zustand devtools middleware] Please install/enable Redux devtools extension",
+  "error: RelayNetwork: No data returned for operation `usePrefetchCopilotUploadsDirectoryQuery`, got error(s):\nNo operation document provided\n\nSee the error `source` property for more information.\n    at r (https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.008/chatodsp/8.js:6:765446)\n",
+  "error: TypeError: r.useSyncExternalStore is not a function\n    at _ (https://res-1.cdn.office.net/midgard/versionless/officeaicopilot-chatinput_lib_peek_peekenabledchatinput_js_ee017efba1d9f8d7aba7.js:11:16685)\n    at https://res-1.cdn.office.net/midgard/versionless/officeaicopilot-chatinput_lib_peek_peeke",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has a",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has a",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an",
+  "warning: The resource https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has a"
+ ],
+ "konec": "2026-11-24T19:53:44.565Z"
+}

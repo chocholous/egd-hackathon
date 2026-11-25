@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "appka-client-side-solution",
+    "id": "af0391ac-55ec-4c26-9a04-19b7d43abaae",
+    "version": "1.0.0.3",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "appka description"
+      },
+      "longDescription": {
+        "default": "appka description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "appka Feature",
+        "description": "The feature that activates elements of the appka solution.",
+        "id": "7c197494-c0f7-4567-b57c-2f200bba014f",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.Read.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/appka.sppkg"
+  }
+}

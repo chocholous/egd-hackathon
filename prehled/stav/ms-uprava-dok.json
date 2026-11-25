@@ -1,0 +1,28 @@
+{
+  "nazev": "Úprava dokumentů v knihovně (Galík 3.2)",
+  "stav": "hotovo",
+  "popis": "+ šablona z desktopového Wordu: MERGEFIELD fldSimple i složené pole ✅, docxtemplater sám pole nechá ❌",
+  "oblast": "dokumenty",
+  "kdo": "ms-dokumenty",
+  "vystup": "sondy/dokumenty/uprava/README.md, skills/egd-dokumenty",
+  "aktualizovano": "2026-11-24T09:56:11Z",
+  "zacatek": "2026-11-24T01:46:40Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-24T01:46:40Z",
+      "stav": "bezi",
+      "popis": "mapuji stav, vstupní soubory"
+    },
+    {
+      "t": "2026-11-24T02:49:30Z",
+      "stav": "hotovo",
+      "popis": "✅ a–d v prohlížeči (docx, xlsx 3 cesty, pptx, šablona z Wordu: docxtemplater/odstavce), naivní ❌; E Graph Excel API ✅ + souběh; Copilot test skillu ❓"
+    },
+    {
+      "t": "2026-11-24T09:56:11Z",
+      "stav": "hotovo",
+      "popis": "+ šablona z desktopového Wordu: MERGEFIELD fldSimple i složené pole ✅, docxtemplater sám pole nechá ❌"
+    }
+  ]
+}

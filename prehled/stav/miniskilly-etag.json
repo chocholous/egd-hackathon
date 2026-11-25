@@ -1,0 +1,23 @@
+{
+  "nazev": "Souběžná editace (ETag) v egd-data-seznamy",
+  "stav": "hotovo",
+  "popis": "REST 2 uživatelé + appka Evidence ve 2 prohlížečích: * ztratí změnu, ETag → 412 a hláška",
+  "oblast": "miniskilly",
+  "kdo": "miniskilly",
+  "vystup": "skills/egd-data-seznamy/SKILL.md § ETag; sondy/miniskilly/etag*.jsonl, ui/etag",
+  "aktualizovano": "2026-11-24T01:55:53Z",
+  "zacatek": "2026-11-24T01:46:34Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-24T01:46:34Z",
+      "stav": "bezi",
+      "popis": "test dvou uživatelů nad jedním záznamem"
+    },
+    {
+      "t": "2026-11-24T01:55:53Z",
+      "stav": "hotovo",
+      "popis": "REST 2 uživatelé + appka Evidence ve 2 prohlížečích: * ztratí změnu, ETag → 412 a hláška"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "meter": "Standard Memory Active Usage",
+    "price": 0.000003,
+    "unit": "1 GiB Second",
+    "tier": 0.0
+  },
+  {
+    "meter": "Standard vCPU Idle Usage",
+    "price": 0.000003,
+    "unit": "1 Second",
+    "tier": 0.0
+  },
+  {
+    "meter": "Standard NC A100 v4 GPU Usage",
+    "price": 0.000688,
+    "unit": "1 Second",
+    "tier": 0.0
+  },
+  {
+    "meter": "Standard vCPU Active Usage",
+    "price": 0.000024,
+    "unit": "1 Second",
+    "tier": 0.0
+  },
+  {
+    "meter": "Standard Memory Idle Usage",
+    "price": 0.000003,
+    "unit": "1 GiB Second",
+    "tier": 0.0
+  },
+  {
+    "meter": "Standard Requests",
+    "price": 0.4,
+    "unit": "1M",
+    "tier": 0.0
+  },
+  {
+    "meter": "Standard NC T4 v3 GPU Usage",
+    "price": 0.000095,
+    "unit": "1 Second",
+    "tier": 0.0
+  }
+]

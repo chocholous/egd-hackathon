@@ -1,0 +1,25 @@
+{"test": "TotalRows_seznamu", "status": 200, "sec": 0.558, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 5555"}]}
+{"test": "Kategorie=K1 (KategorieOWSTEXT)", "status": 200, "sec": 0.552, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 5561", "KategorieOWSTEXT": "K1", "CastkaOWSNMBR": "5561.00000000000"}]}
+{"test": "Castka>=5900 (CastkaOWSNMBR)", "status": 200, "sec": 0.692, "TotalRows": 0, "TotalRowsIncludingDuplicates": 0, "vraceno": 0, "prvni": []}
+{"test": "Neindexovano=N1 (NeindexovanoOWSTEXT)", "status": 200, "sec": 0.711, "TotalRows": 0, "TotalRowsIncludingDuplicates": 0, "vraceno": 0, "prvni": []}
+{"test": "kombinace Kategorie=K1 AND Castka=5900", "status": 200, "sec": 0.711, "TotalRows": 0, "TotalRowsIncludingDuplicates": 0, "vraceno": 0, "prvni": []}
+{"test": "fulltext_Polozka 4588", "status": 200, "sec": 0.83, "TotalRows": 2, "TotalRowsIncludingDuplicates": 2, "vraceno": 2, "prvni": [{"Title": "Polozka 4588"}, {"Title": "Polozka 791"}]}
+{"test": "Castka=4588 (CastkaOWSNMBR)", "status": 200, "sec": 0.701, "TotalRows": 1, "TotalRowsIncludingDuplicates": 1, "vraceno": 1, "prvni": [{"Title": "Polozka 4588", "CastkaOWSNMBR": "4588.00000000000"}]}
+{"test": "Castka<=5 (CastkaOWSNMBR)", "status": 200, "sec": 0.739, "TotalRows": 0, "TotalRowsIncludingDuplicates": 0, "vraceno": 0, "prvni": []}
+{"test": "stranky_po_500_startrow_0_az_konec", "TotalRows": 6001, "stazeno": 6001, "sec": 16.24}
+{"test": "startrow=5000", "status": 200, "sec": 0.529, "TotalRows": 6001, "TotalRowsIncludingDuplicates": 6001, "vraceno": 10, "prvni": [{"Title": "Polozka 4505"}, {"Title": "Polozka 4746"}]}
+{"test": "startrow=5500", "status": 200, "sec": 0.577, "TotalRows": 6001, "TotalRowsIncludingDuplicates": 6001, "vraceno": 10, "prvni": [{"Title": "Polozka 4756"}, {"Title": "Polozka 4596"}]}
+{"test": "startrow=49500", "status": 200, "sec": 2.513, "TotalRows": 6001, "TotalRowsIncludingDuplicates": 6001, "vraceno": 0, "prvni": []}
+{"test": "startrow=50500", "status": 200, "sec": 2.563, "TotalRows": 6001, "TotalRowsIncludingDuplicates": 6001, "vraceno": 0, "prvni": []}
+{"test": "rowlimit=1000", "status": 200, "sec": 1.078, "TotalRows": 5959, "TotalRowsIncludingDuplicates": 5959, "vraceno": 500, "prvni": [{"Title": "Polozka 31"}, {"Title": "Polozka 105"}]}
+{"test": "sort_CastkaOWSNMBR_desc", "status": 400, "sec": 0.823, "chyba": "Není nám jasné, co chcete hledat. Zkontrolujte, jestli používáte správnou syntaxi."}
+{"test": "sort_Created_desc", "status": 200, "sec": 0.513, "TotalRows": 60, "TotalRowsIncludingDuplicates": 60, "vraceno": 3, "prvni": [{"Title": "Polozka 5792", "Created": "2026-11-22T18:19:06.0000000Z"}, {"Title": "Polozka 5796", "Created": "2026-11-22T18:19:06.0000000Z"}]}
+{"test": "sort_LastModifiedTime_desc", "status": 200, "sec": 0.467, "TotalRows": 60, "TotalRowsIncludingDuplicates": 60, "vraceno": 3, "prvni": [{"Title": "Polozka 5792", "LastModifiedTime": "2026-11-22T18:19:06.0000000Z"}, {"Title": "Velky", "LastModifiedTime": "2026-11-22T18:19:06.0000000Z"}]}
+{"test": "sort_Title_asc", "status": 400, "sec": 0.739, "chyba": "Není nám jasné, co chcete hledat. Zkontrolujte, jestli používáte správnou syntaxi."}
+{"test": "refiner_KategorieOWSTEXT", "status": 200, "sec": 0.574, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 31"}]}
+{"test": "refiner_CastkaOWSNMBR", "status": 200, "sec": 0.553, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 31"}]}
+{"test": "refiner_Author", "status": 200, "sec": 0.516, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 31"}], "refinery": [["Author", [["Pavel Admin (lab)", "6001"]]]]}
+{"test": "refiner_ContentTypeId", "status": 200, "sec": 0.575, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 31"}], "refinery": [["ContentTypeId", [["0x0100467FFA94D7BF2142B186DF7D5CCB2038", "6000"]]]]}
+{"test": "refiner_FileType", "status": 200, "sec": 0.521, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 31"}]}
+{"test": "refiner_LastModifiedTime", "status": 200, "sec": 0.54, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 31"}], "refinery": [["LastModifiedTime", [["min or later", "6001"]]]]}
+{"test": "refiner_RefinableString00", "status": 200, "sec": 0.538, "TotalRows": 200, "TotalRowsIncludingDuplicates": 200, "vraceno": 1, "prvni": [{"Title": "Polozka 31"}]}

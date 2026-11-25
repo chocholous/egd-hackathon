@@ -1,0 +1,8 @@
+N=12 appKey=tiny 2026-11-24T08:45:54Z
+kvóta před:
+{"den":"2026-11-24","appKey":"tiny","spotreba":{"tokens":18,"calls":1,"costUsd":0.000012,"pages":0},"limitTokenuZaDen":60}
+výsledky:
+  12 200
+součet tokenů v odpovědích 200: 209
+kvóta po:
+{"den":"2026-11-24","appKey":"tiny","spotreba":{"tokens":35,"calls":2,"costUsd":0.000022400000000000002,"pages":0},"limitTokenuZaDen":60}

@@ -1,0 +1,52 @@
+připojeno k běžícímu Chrome e2e-egd10 (port 50385), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/data.aspx
+[4.9s] OK wait:4000  
+[4.9s] OK eval:[...document.querySelectorAll(".ControlZone")].at(-1).scrollIntoView()  {"interrupted":false}
+[9.9s] OK wait:5000  
+[10.0s] OK click:Ke schválení  
+[13.0s] OK wait:3000  
+[13.1s] OK shotv:05-egd10-pred  
+dukazy/karty/data-etag/egd10/05-egd10-pred.png
+[28.1s] OK wait:15000  
+[28.2s] OK clickn:0:Zamítnout  
+[32.2s] OK wait:4000  
+[32.3s] OK shotv:07-egd10-po-412  
+dukazy/karty/data-etag/egd10/07-egd10-po-412.png
+[32.3s] OK eval:[...document.querySelectorAll(".ControlZone")].at(-1).innerText.slice(0,700)  
+Evidence požadavků
+Zadavatel a schvalovatel
+Nový požadavek
+Moje požadavky
+Ke schválení (3)
+
+Mezitím položku změnil někdo jiný. Načetl jsem aktuální stav, zkontrolujte ho a rozhodněte znovu.
+
+Požadavek	Zadal	Kdy	Stav	Rozhodnutí
+Oprava klimatizace v dispečinku
+Klimatizace v dispečinku Brno hlásí chybu E4, v místnosti je přes 28 °C.
+	Pavel Admin (lab)	24. 11. 2026	Nový	
+Schválit
+Zamítnout
+
+Školení BOZP pro nové kolegy
+Tři noví kolegové nastupují 1. 12., potřebují vstupní školení BOZP a práce ve výškách před prvním výjezdem.
+	Pavel Admin (lab)	24. 11. 2026	Nový	
+Schválit
+Zamítnout
+
+Nový notebook pro technika
+Technik v terénu potřebuje odolný notebook s LTE, protože stávající po třech letech nevy
+[32.4s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  POST 412 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items(4)
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel

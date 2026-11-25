@@ -1,0 +1,16 @@
+karta	ucet	vysledek	co bylo videt	dukaz
+data-etag	egd09+egd10	✅	egd09 odeslal a schválil (POST 204), egd10 současně Zamítnout → POST 412 a hláška „Mezitím položku změnil někdo jiný“	dukazy/karty/data-etag/egd10/07-egd10-po-412.png
+prava-role	egd09+egd10	✅	egd09 role Zadavatel, odeslal; egd10 role Schvalovatel, Ke schválení (1) s položkou egd09	dukazy/karty/prava-role/egd10/03-egd10-ke-schvaleni.png
+prava-db	egd09+egd10	✅	Kdo jsem (API) 200: egd09 roles [Zadavatel], egd10 [Schvalovatel]; Žádosti 200: egd09 [] (jen své), egd10 všechny; studený start 31 s	dukazy/karty/prava-db/egd10/02-egd10-zadosti.png
+dok-spokojenost	egd09	✅	hlas 4 → POST 201 „Díky!“; Word, PDF z Wordu (Graph), PDF pdf-lib, Excel, PowerPoint → HOTOVO, 5 souborů v Dokumenty/exporty	dukazy/karty/dok-spokojenost/02-egd09-export-log.png
+dok-generator	egd09	✅	5 položek Revize; docxtpl (šablona), pdf, xlsx, graphpdf (85 206 B) uloženo do Dokumenty/sonda	dukazy/karty/dok-generator/01-egd09-generator.png
+dok-pdf-ca	egd09	✅	Kdo jsem 200 (studený start 30 s); sablona.docx → POST /api/pdf 200 za 1,3 s, %PDF-, odkaz Stáhnout	dukazy/karty/dok-pdf-ca/02-egd09-pdf.png
+mail	egd09→egd10	✅	Poslat mailem → Graph POST /me/sendMail 202, „OK odesláno moje-pozadavky.csv 103 B“; v Outlooku egd10 zpráva „Přehled požadavků (moje-pozadavky.csv)“ v 19:43	dukazy/karty/mail/egd10-inbox/03-egd10-inbox.png
+ai-gateway	egd09	✅	whoami 200 (studený start ~30 s, scope Gateway.Use, appKey demo); Chat 200 za 1,3 s s českou odpovědí; OCR obrázku 200 (přesný přepis, kvóta 58/50000)	dukazy/karty/ai-gateway/02-egd09-ocr.png
+ai-spokojenost	egd09	✅	Shrnout dnešek → POST /api/chat 200 „Návrh AI: …“; Kolik AI zbývá → GET /api/kvota 200 „185 z 50000 tokenů“	dukazy/karty/ai-spokojenost/shrnuti/02-egd09-shrnuti.png
+ai-llm	egd09	✅	Shrnout popis 1× → 200 „Návrh shrnutí: …“; 2× → 429 „Dnešní limit AI pro appku je vyčerpaný“ (kvóta tiny, záměr karty)	dukazy/karty/ai-llm/02-egd09-podruhe.png
+cizi-api	egd09	✅	ARES 200 (Škoda Auto), ARES přes spHttpClient 200, Open-Meteo 200 (Brno 0,9 °C); ČNB net::ERR_FAILED „nejde volat z prohlížeče (CORS)“ = očekávaný výsledek; export docx do knihovny	dukazy/karty/cizi-api/01-egd09-cizi-api.png
+obo	egd10	✅	se souhlasem Principal (24. 11.): Pošta přes OBO 200, OBO 344 ms, Graph 450 ms, vlastní zprávy	dukazy/karty/obo-egd10/posta-obo-egd10.png
+obo	egd09	✅	bez souhlasu: Pošta přes OBO 403 AADSTS65001 (očekávaná chyba); whoami 200; Pošta přímo z SPFx 403 = záměr	dukazy/karty/obo-egd09/posta-obo-egd09.png
+obo-copilot	egd09	✅	Retrieval přes OBO 403 AADSTS65001 (bez souhlasu se scopy Copilota); Retrieval přímo z SPFx 403 „User does not have valid license“; přes OBO s licencí ❓ nedoměřeno (s licencí jen přímo ze SPFx 200), Chat ❓	dukazy/karty/obo-copilot-egd09/01-retrieval-obo.png
+obo-copilot	egd10 + licence	✅/❓	Chat přes OBO 200 copilotOdpovedel true (13–15 s); Retrieval přímo z SPFx 200, 4 úryvky; Retrieval přes OBO 200 hits [] (2×) ❓	dukazy/copilot-licence/egd10-2/chat.png

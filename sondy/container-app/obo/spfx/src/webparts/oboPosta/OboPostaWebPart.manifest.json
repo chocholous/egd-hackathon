@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "f6aa9c1a-afda-448e-a188-96437bc2bd7c",
+  "alias": "OboPostaWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "SharePointFullPage"],
+  "supportsThemeVariants": false,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "EG.D sonda" },
+    "title": { "default": "OBO pošta" },
+    "description": { "default": "Volá Container App, která jménem uživatele (OBO) přečte jeho poštu; srovnání s přímým Graphem ze SPFx." },
+    "officeFabricIconFontName": "Mail",
+    "properties": { "apiUrl": "", "apiAppId": "" }
+  }]
+}

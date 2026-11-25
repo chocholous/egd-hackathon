@@ -1,0 +1,7 @@
+2026-11-22 21:25:48
+$ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupId 13 --entraGroupIds 1dded882-32c5-4121-88dd-3322748cbbba --output json
+{"error":"Insufficient privileges to complete the operation."}
+rc=1
+$ m365 entra user get --userName martina.cerna@pavelchocholousgmail.onmicrosoft.com --output json
+{"error":"Insufficient privileges to complete the operation."}
+rc=1

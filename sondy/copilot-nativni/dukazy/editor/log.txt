@@ -1,0 +1,13 @@
+připojeno k běžícímu Chrome e2e-egd10 (port 50385), nový panel
+[4.1s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/Home.aspx
+[13.1s] OK wait:9000  
+[13.1s] OK shotv:editor  
+sondy/copilot-nativni/dukazy/editor/editor.png
+[13.1s] OK eval:[...document.querySelectorAll('button,[role=menuitem],[role=tab]')].map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(x=>x&&/copilot|rewrite|draft|agent|ai /i.test(x)).join(' | ')  
+Open Agents | Copilot
+[13.2s] síť: GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value

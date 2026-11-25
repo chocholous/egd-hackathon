@@ -1,0 +1,6 @@
+{"test": "sekvencne_POST_100_polozek", "ok": 100, "sec": 34.56}
+{"test": "paralelne_4_vlakna_POST_100_polozek", "ok": 100, "sec": 7.13}
+{"test": "batch_changeset_100_POST", "ok": 100, "sec": 9.17}
+{"test": "batch_changeset_100_MERGE", "ok": 100, "sec": 8.65, "ukazka": ""}
+{"test": "4_batche_po_100_paralelne_POST", "ok": 400, "sec": 9.96}
+{"test": "paralelne_4_vlakna_MERGE_100", "ok": 100, "sec": 11.83}

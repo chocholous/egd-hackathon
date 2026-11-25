@@ -1,0 +1,10 @@
+# sit s labem 10:56:45, pripravenost.mjs mtime 10:56:45
+[ZELENA] entra-dosazitelne: login.microsoftonline.com odpovida, tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e = 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+[ZELENA] sharepoint-dosazitelny: pavelchocholousgmail.sharepoint.com odpovida (HTTP 403; 401/403 bez prihlaseni je spravne)
+rc=0
+state po sit s --tenant:
+{"tenantId":null}
+# sit bez voleb (E.ON vychozi, jen dosazitelnost)
+[ZELENA] entra-dosazitelne: login.microsoftonline.com odpovida, tenant egd.cz = b914a242-e718-443b-a47c-6b4c649d8c0a
+[ZELENA] sharepoint-dosazitelny: eonos.sharepoint.com odpovida (HTTP 403; 401/403 bez prihlaseni je spravne)
+rc=0

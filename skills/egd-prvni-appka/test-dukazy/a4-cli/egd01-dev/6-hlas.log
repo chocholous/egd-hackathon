@@ -1,0 +1,7 @@
+[egd01] dotaz: $orderby=ID desc&$top=2000
+[egd01] url=https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev/SitePages/moje-appka-cli.aspx?env=WebView appka=true
+[egd01] dotaz: $orderby=ID desc&$top=2000
+[egd01] klik 3: potvrzeno=true zprava="Změněno na 3. Díky!" vybrany="3 Tak napůl"
+[egd01] dashboard: ! 1 hlasů dnes 3,0 průměr dnes (1–5) Rozložení dnes 1 0 2 0 3 1 4 0 5 0 Posledních 7 dní (průměr) – st 18. 11. – čt 19. 11. – pá 20. 11. – so 21
+[egd01] chyby konzole: 2 Permissions policy violation: unload is not allowed in this document. | Permissions policy violation: unload is not allowed in this document.
+VSE OK

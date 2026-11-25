@@ -1,0 +1,11 @@
+deploy 2026-11-24T08:45:25Z
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+/ Running ..| Running ..\ Running ..- Running ../ Running ..| Running ..[K{
+  "img": "acregdsondaai.azurecr.io/egd-llm-gateway:v3",
+  "rev": "ca-egd-llm-gateway--0000003",
+  "stav": "Succeeded"
+}
+Rev                          Img                                          Stav        Health    Traffic
+---------------------------  -------------------------------------------  ----------  --------  ---------
+ca-egd-llm-gateway--0000002  acregdsondaai.azurecr.io/egd-llm-gateway:v2  Running     Healthy   0
+ca-egd-llm-gateway--0000003  acregdsondaai.azurecr.io/egd-llm-gateway:v3  Activating  None      100

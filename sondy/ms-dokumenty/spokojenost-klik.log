@@ -1,0 +1,17 @@
+web part (#log) nenalezen, url= https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/SitePages/spokojenost.aspx?env=WebView
+--- pred document.querySelector('button[aria-label^="4 "]').click()
+VYSLEDEK: undefined
+--- klik docx
+LOG po kliku: HOTOVO docx
+--- klik graphpdf
+LOG po kliku: HOTOVO graphpdf
+--- klik pdf
+LOG po kliku: HOTOVO pdf
+--- klik xlsx
+LOG po kliku: HOTOVO xlsx
+--- klik pptx
+LOG po kliku: HOTOVO pptx
+--- klik ares
+LOG po kliku: HOTOVO ares
+LOG:
+

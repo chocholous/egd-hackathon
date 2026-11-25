@@ -1,0 +1,124 @@
+WARNING: Note: The token in both the accessToken and refreshToken fields is an ACR Refresh Token, not an ACR Access Token. This ACR Refresh Token cannot be used directly to authenticate with registry APIs such as pushing/pulling images and listing repositories/tags. This ACR Refresh Token must be subsequently exchanged for an ACR Access.Please see https://aka.ms/acr/auth/oauth
+WARNING: You can perform manual login using the provided refresh token below, for example: 'docker login loginServer -u 00000000-0000-0000-0000-000000000000 -p refreshToken'
+Login Succeeded
+#0 building with "orbstack" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 721B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 DONE 0.5s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:e9f565d32859f0cbfb52125eafe8be39390f24dac302dc3cdf566e8ba3ab21ee
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 64B done
+#5 DONE 0.0s
+
+#6 [4/6] COPY package.json ./
+#6 CACHED
+
+#7 [3/6] WORKDIR /app
+#7 CACHED
+
+#8 [5/6] RUN npm install --omit=dev
+#8 CACHED
+
+#9 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends       libreoffice-writer-nogui libreoffice-calc-nogui libreoffice-impress-nogui       fonts-crosextra-carlito fonts-crosextra-caladea fonts-liberation2 fonts-dejavu-core fontconfig     && rm -rf /var/lib/apt/lists/* && fc-cache -f
+#9 CACHED
+
+#10 [6/6] COPY server.mjs ./
+#10 CACHED
+
+#11 exporting to image
+#11 exporting layers done
+#11 writing image sha256:a4f3b9c8d3b3f1582238420a2b629c85ff2cde4469a93303e7a80ec4ec7c63b6 done
+#11 naming to acrppfroomsca3lbgs.azurecr.io/ca-egd-dokumenty:0.1 done
+#11 DONE 0.0s
+
+#12 pushing acrppfroomsca3lbgs.azurecr.io/ca-egd-dokumenty:0.1 with docker
+#12 pushing layer 47252fe89aaf
+#12 pushing layer 60e86fddcd25
+#12 pushing layer 6d6527e44f8e
+#12 pushing layer dd52c19e4e19
+#12 pushing layer 3761b67fc052
+#12 pushing layer 0e13b71b82a1
+#12 pushing layer b5561a64a8a5
+#12 pushing layer c4da131eaaf2
+#12 pushing layer 2d7efcc31ab7
+#12 pushing layer 1d7b9dd8778e
+#12 pushing layer 47252fe89aaf 512B / 5.12kB 0.3s
+#12 pushing layer 47252fe89aaf 7.68kB / 5.12kB 0.3s
+#12 pushing layer 6d6527e44f8e 512B / 170B 0.4s
+#12 pushing layer 60e86fddcd25 4.13MB / 3.43MB 0.5s
+#12 pushing layer 6d6527e44f8e 2.56kB / 170B 0.4s
+#12 pushing layer 47252fe89aaf 0.7s done
+#12 pushing layer 6d6527e44f8e 0.7s done
+#12 pushing layer dd52c19e4e19 0.8s done
+#12 pushing layer 3761b67fc052 22.38MB / 423.14MB 1.0s
+#12 pushing layer 0e13b71b82a1 3.58kB / 388B 1.0s
+#12 pushing layer b5561a64a8a5 2.15MB / 7.19MB 1.2s
+#12 pushing layer 60e86fddcd25 1.3s done
+#12 pushing layer b5561a64a8a5 7.22MB / 7.19MB 1.3s
+#12 pushing layer c4da131eaaf2 9.97MB / 144.99MB 1.4s
+#12 pushing layer 3761b67fc052 47.65MB / 423.14MB 1.8s
+#12 pushing layer 0e13b71b82a1 1.9s done
+#12 pushing layer c4da131eaaf2 18.33MB / 144.99MB 2.0s
+#12 pushing layer 2d7efcc31ab7 21.50kB / 8.90kB 2.1s
+#12 pushing layer 3761b67fc052 68.82MB / 423.14MB 2.3s
+#12 pushing layer 1d7b9dd8778e 3.79MB / 74.87MB 2.4s
+#12 pushing layer 1d7b9dd8778e 7.56MB / 74.87MB 2.5s
+#12 pushing layer 1d7b9dd8778e 11.93MB / 74.87MB 2.8s
+#12 pushing layer 2d7efcc31ab7 3.0s done
+#12 pushing layer c4da131eaaf2 27.24MB / 144.99MB 3.2s
+#12 pushing layer b5561a64a8a5 3.5s done
+#12 pushing layer 1d7b9dd8778e 20.13MB / 74.87MB 3.6s
+#12 pushing layer 3761b67fc052 93.88MB / 423.14MB 3.7s
+#12 pushing layer 1d7b9dd8778e 30.34MB / 74.87MB 3.9s
+#12 pushing layer 1d7b9dd8778e 34.68MB / 74.87MB 4.5s
+#12 pushing layer c4da131eaaf2 37.27MB / 144.99MB 4.6s
+#12 pushing layer 1d7b9dd8778e 39.65MB / 74.87MB 5.1s
+#12 pushing layer c4da131eaaf2 46.18MB / 144.99MB 5.3s
+#12 pushing layer 1d7b9dd8778e 44.58MB / 74.87MB 6.6s
+#12 pushing layer 3761b67fc052 116.12MB / 423.14MB 6.6s
+#12 pushing layer 1d7b9dd8778e 48.42MB / 74.87MB 6.7s
+#12 pushing layer c4da131eaaf2 58.44MB / 144.99MB 6.8s
+#12 pushing layer 1d7b9dd8778e 54.39MB / 74.87MB 7.2s
+#12 pushing layer c4da131eaaf2 66.23MB / 144.99MB 7.5s
+#12 pushing layer 1d7b9dd8778e 59.25MB / 74.87MB 7.8s
+#12 pushing layer 1d7b9dd8778e 65.65MB / 74.87MB 8.5s
+#12 pushing layer 1d7b9dd8778e 70.50MB / 74.87MB 9.1s
+#12 pushing layer 3761b67fc052 139.96MB / 423.14MB 9.2s
+#12 pushing layer c4da131eaaf2 76.26MB / 144.99MB 9.5s
+#12 pushing layer 1d7b9dd8778e 77.95MB / 74.87MB 9.7s
+#12 pushing layer c4da131eaaf2 86.29MB / 144.99MB 10.7s
+#12 pushing layer c4da131eaaf2 96.87MB / 144.99MB 11.4s
+#12 pushing layer 3761b67fc052 165.48MB / 423.14MB 12.2s
+#12 pushing layer c4da131eaaf2 108.57MB / 144.99MB 12.6s
+#12 pushing layer 1d7b9dd8778e 12.7s done
+#12 pushing layer c4da131eaaf2 116.93MB / 144.99MB 13.4s
+#12 pushing layer c4da131eaaf2 125.84MB / 144.99MB 13.9s
+#12 pushing layer 3761b67fc052 187.08MB / 423.14MB 14.0s
+#12 pushing layer c4da131eaaf2 133.31MB / 144.99MB 14.3s
+#12 pushing layer c4da131eaaf2 142.38MB / 144.99MB 14.7s
+#12 pushing layer 3761b67fc052 208.54MB / 423.14MB 14.9s
+#12 pushing layer 3761b67fc052 231.29MB / 423.14MB 17.2s
+#12 pushing layer c4da131eaaf2 17.2s done
+#12 pushing layer 3761b67fc052 253.06MB / 423.14MB 18.6s
+#12 pushing layer 3761b67fc052 278.29MB / 423.14MB 19.4s
+#12 pushing layer 3761b67fc052 302.41MB / 423.14MB 20.5s
+#12 pushing layer 3761b67fc052 325.80MB / 423.14MB 21.6s
+#12 pushing layer 3761b67fc052 348.42MB / 423.14MB 22.5s
+#12 pushing layer 3761b67fc052 371.40MB / 423.14MB 23.4s
+#12 pushing layer 3761b67fc052 395.39MB / 423.14MB 24.1s
+#12 pushing layer 3761b67fc052 419.96MB / 423.14MB 25.6s
+#12 pushing layer 3761b67fc052 27.3s done
+#12 DONE 28.5s
+push: acrppfroomsca3lbgs.azurecr.io/ca-egd-dokumenty:0.1
+tools/ca-dokumenty-deploy.sh push  0.56s user 0.33s system 2% cpu 33.578 total

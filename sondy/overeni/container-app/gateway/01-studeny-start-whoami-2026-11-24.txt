@@ -1,0 +1,10 @@
+# studený start, 2026-11-24T00:41:11Z, replik před: 0
+## whoami #1
+{"who":{"oid":"4a9b2f9a-24ff-4092-800b-e71f91b307b0","upn":"pavel.chocholous@gmail.com","clientAppId":"04b07795-8ddb-461a-bbee-02f9e1bf7b46","scopes":["Gateway.Use"],"roles":[]},"appKey":"default"}
+[HTTP 200, 27.936643s]
+## whoami #2
+{"who":{"oid":"4a9b2f9a-24ff-4092-800b-e71f91b307b0","upn":"pavel.chocholous@gmail.com","clientAppId":"04b07795-8ddb-461a-bbee-02f9e1bf7b46","scopes":["Gateway.Use"],"roles":[]},"appKey":"default"}
+[HTTP 200, 0.220634s]
+## whoami #3
+{"who":{"oid":"4a9b2f9a-24ff-4092-800b-e71f91b307b0","upn":"pavel.chocholous@gmail.com","clientAppId":"04b07795-8ddb-461a-bbee-02f9e1bf7b46","scopes":["Gateway.Use"],"roles":[]},"appKey":"default"}
+[HTTP 200, 0.197155s]

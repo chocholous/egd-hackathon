@@ -1,0 +1,43 @@
+{
+  "nazev": "Role: Ověřovatel sond",
+  "stav": "hotovo",
+  "popis": "UI approve API access ✅ pod pavel.admin (ui-4); dřívější ❌ byl host #ext#",
+  "oblast": "sondy",
+  "kdo": "role Ověřovatel",
+  "vystup": "sondy/overeni/README.md",
+  "aktualizovano": "2026-11-23T10:22:01Z",
+  "zacatek": "2026-11-22T19:11:34Z",
+  "kroky": 6,
+  "historie": [
+    {
+      "t": "2026-11-22T19:11:34Z",
+      "stav": "bezi",
+      "popis": "start, čtu audit"
+    },
+    {
+      "t": "2026-11-22T19:28:49Z",
+      "stav": "bezi",
+      "popis": "úkol 1 hotov (Visitor), úkol 2: CLI/CSOM approve selhává u 3 forem resource, Graph grant ✅; UI čeká na přihlášení admina; jdu na úkol 3"
+    },
+    {
+      "t": "2026-11-22T19:46:08Z",
+      "stav": "bezi",
+      "popis": "úkoly 1-4 hotové, README v sondy/overeni; čeká 502 repro (běží) a UI schválení (čeká na admin login)"
+    },
+    {
+      "t": "2026-11-22T19:51:31Z",
+      "stav": "hotovo",
+      "popis": "úkoly 1-5 změřeny; zbývá UI schválení API access (čeká na admin login)"
+    },
+    {
+      "t": "2026-11-23T09:59:35Z",
+      "stav": "hotovo",
+      "popis": "UI approve API access odkliknuto: nepersistuje (❌), viz README oddíl 2"
+    },
+    {
+      "t": "2026-11-23T10:22:01Z",
+      "stav": "hotovo",
+      "popis": "UI approve API access ✅ pod pavel.admin (ui-4); dřívější ❌ byl host #ext#"
+    }
+  ]
+}

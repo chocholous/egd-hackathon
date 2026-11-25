@@ -1,0 +1,66 @@
+{"host": "^fd\\.api\\.iris\\.microsoft\\.com$","paths": ["^v3/Delivery/GetCreative(?:\\?.*)?$","^v3/Delivery/Events/Impression(?:\\?.*)?$","^v4/api/selection(?:\\?.*)?$"]},{"host": "^arc\\.msn\\.com$","paths": ["^v3/Delivery/GetCreative(?:\\?.*)?$","^v3/Delivery/Events/Impression(?:\\?.*)?$","^v4/api/selection(?:\\?.*)?$"]},{"host": "^arc-emea\\.msn\\.com$","paths": ["^v3/Delivery/GetCreative(?:\\?.*)?$","^v3/Delivery/Events/Impression(?:\\?.*)?$","^v4/api/selection(?:\\?.*)?$"]},{"host": "^ris\\.api\\.iris\\.microsoft\\.com$","paths": ["^v1/a/[A-Za-z0-9_-]+(?:\\?.*)?$"]},{"host": "^eudb\\.ris\\.api\\.iris\\.microsoft\\.com$","paths": ["^v1/a/[A-Za-z0-9_-]+(?:\\?.*)?$"]}],
+                    allowedResources: [{resource: "api.office.net",hosts: ["ocws.officeapps.live.com"]},{resource: "graph.microsoft.com",hosts: ["graph.microsoft.com"]},{resource: "wcss.wwprod.officeshell.svc.cloud.microsoft",hosts: ["wcss.wwprod.officeshell.svc.cloud.microsoft", "eudb.wcss.wwprod.officeshell.svc.cloud.microsoft", "wwdb.wcss.wwprod.officeshell.svc.cloud.microsoft"]},{resource: "webshell.suite.office.com",hosts: ["webshell.suite.office.com", "eudb.webshell.suite.office.com", "wwdb.webshell.suite.office.com"]},{resource: "management.azure.com",hosts: ["management.azure.com"]},{resource: "outlook.office.com",hosts: ["outlook.office.com"]},{resource: "clients.config.office.net",hosts: ["clients.config.office.net"]},{"resource": "arc.msn.com/v4","hosts": ["arc.msn.com","arc-emea.msn.com","ris.api.iris.microsoft.com", "eudb.ris.api.iris.microsoft.com","fd.api.iris.microsoft.com"]}],
+                    shouldAttachOauthTokens: true,
+                    trustedOriginAuthoritiesSetFromServer: false
+                };
+
+                O365SuiteServiceProxy.RequestExecutorMessageProcessor.init(requestExecutorSettings);
+
+                var tokenFactorySettings = {
+                    clientId: "89bee1f7-5e6e-4d8a-9f3d-ecd601259da7",
+                    authority: "https\u003A//login.microsoftonline.com/organizations",
+                    cacheLocation: "sessionStorage",
+                    parentPageOrigin: "https\u003A//pavelchocholousgmail.sharepoint.com",
+                    upn: "egd10\u0040pavelchocholousgmail.onmicrosoft.com"
+                };
+
+                O365MSALTokenFactoryIframe.TokenFactoryInsideIframe.init(tokenFactorySettings);
+    
+
+
+
+## https://webshell.suite.office.com/iframe/TokenFactoryIframe
+
+    
+        
+                var tokenFactorySettings = {
+                    clientId: "89bee1f7-5e6e-4d8a-9f3d-ecd601259da7",
+                    authority: "https\u003A//login.microsoftonline.com/organizations",
+                    cacheLocation: "sessionStorage",
+                    parentPageOrigin: null,
+                    upn: null
+                };
+
+                O365MSALTokenFactoryIframe.TokenFactoryInsideIframe.init(tokenFactorySettings);
+    
+
+
+
+## https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_layouts/15/chat.aspx?isFromFab=true&ap
+Copilot
+Hello Účastník 10!
+What can I help with in Spokojenost?
+Find recent items
+Add items from file
+Set due date reminders
+Format the list for readability
+You said:
+
+Kolik položek je v seznamu a jaké je průměrné hodnocení?
+
+Copilot said:
+Copilot
+
+V seznamu je 1 položka a průměrné hodnocení je 4 (z 1 hodnocení). 1
+
+1
+2026-11-24
+Zobraz podrobnosti této položky
+Vypiš údaje ze seznamu v tabulce
+Shrň dostupná hodnocení
+
+
+
+
+Ask a question about Spokojenost
+AI-generated content may be incorrect

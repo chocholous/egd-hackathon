@@ -1,0 +1,6 @@
+[zuzana.kralova] dotaz: $orderby=ID desc&$top=2000
+[zuzana.kralova] url=https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/prvni-appka.aspx?env=WebView appka=true
+[zuzana.kralova] klik 3: potvrzeno=false zprava="-" vybrany="-"
+[zuzana.kralova] dashboard: . 1 hlasů dnes 4,0 průměr dnes (1–5) Rozložení dnes 1 0 2 0 3 0 4 1 5 0 Posledních 7 dní (průměr) – po 16. 11. – út 17. 11. – st 18. 11. – čt 19
+[zuzana.kralova] chyby konzole: 1 Failed to load resource: the server responded with a status of 403 ()
+SELHALO: 1

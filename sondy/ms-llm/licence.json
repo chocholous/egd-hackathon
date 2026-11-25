@@ -1,0 +1,42 @@
+[
+  {
+    "en": 1,
+    "plans": [
+      "M365_COPILOT_CONNECTORS",
+      "FLOW_O365_P1",
+      "POWERAPPS_O365_P1",
+      "M365_COPILOT_BUSINESS_CHAT",
+      "M365_COPILOT_APPS",
+      "M365_COPILOT_TEAMS",
+      "M365_COPILOT_SHAREPOINT",
+      "M365_COPILOT_INTELLIGENT_SEARCH",
+      "GRAPH_CONNECTORS_COPILOT",
+      "COPILOT_STUDIO_IN_COPILOT_FOR_M365"
+    ],
+    "sku": "BUSINESS_PREMIUM_AND_MICROSOFT_365_COPILOT_FOR_BUSINESS",
+    "used": 1
+  },
+  {
+    "en": 10000,
+    "plans": [
+      "FLOW_P2_VIRAL"
+    ],
+    "sku": "FLOW_FREE",
+    "used": 2
+  },
+  {
+    "en": 25,
+    "plans": [],
+    "sku": "AGENT_365",
+    "used": 0
+  },
+  {
+    "en": 25,
+    "plans": [
+      "FLOW_O365_P3",
+      "POWERAPPS_O365_P3"
+    ],
+    "sku": "SPE_E5",
+    "used": 23
+  }
+]

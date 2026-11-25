@@ -1,0 +1,12 @@
+{
+ "currentuser": {
+  "LoginName": "i:0#.f|membership|egd01@pavelchocholousgmail.onmicrosoft.com",
+  "Title": "Účastník 01",
+  "Email": "egd01@pavelchocholousgmail.onmicrosoft.com",
+  "IsSiteAdmin": true
+ },
+ "seznam": {
+  "HasUniqueRoleAssignments": false,
+  "Title": "OverEni-site-owner"
+ }
+}

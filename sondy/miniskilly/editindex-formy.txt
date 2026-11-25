@@ -1,0 +1,193 @@
+[7.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly/_layouts/15/EditIndex.aspx?List=%7B247e7b80-8759-4b65-8168-08388ec38356%7D
+TEXT:
+Turn on more accessible mode
+Skip to main content
+Turn off Animations
+SharePoint
+OH
+SHARE 
+FOLLOW 
+EDIT LINKS
+Indexed Columns 
+ Edit index 
+	
+	
+Home
+Documents
+Pages
+Recent
+IndexTest
+Pozadavky
+Spokojenost
+Site contents
+EDIT LINKS
+Use this page to create a new index, or delete an existing one. Certain indices are created by the system and cannot be deleted.
+
+
+Primary Column
+
+Select the primary column for this index.	
+
+	
+		
+	
+Primary column for this index:
+
+
+
+	
+Cislo
+Color Tag
+Compliance Asset Id
+Created
+Created By
+Datum
+Modified
+Modified By
+Odkaz
+Osoba
+T01
+T02
+T03
+T04
+T05
+T06
+T07
+T08
+T09
+T10
+T11
+T12
+T13
+T14
+T15
+T16
+T17
+T18
+T19
+T20
+T21
+T22
+T23
+T24
+T25
+Title
+Txt
+Typ obsahu
+Volba
+
+
+	
+		
+
+
+
+Secondary Column
+
+Select the secondary column for this index. If this is left blank, then this index will be a single column index on the selected Primary column. If a secondary index is specified, then this index becomes a compound index. Only certain field types can participate in compound indices.	
+
+	
+		
+	
+Secondary column for this index:
+
+
+
+	
+(none)
+Created
+Created By
+Datum
+Modified
+Modified By
+Odkaz
+Osoba
+Typ obsahu
+
+
+	
+		
+
+
+
+
+ 	 
+
+
+FORMY: {
+ "selects": [
+  {
+   "id": "ctl00_PlaceHolderMain_ctl01_ctl02_primaryColumnDropDown",
+   "name": "ctl00$PlaceHolderMain$ctl01$ctl02$primaryColumnDropDown",
+   "options": [
+    "Cislo",
+    "Color Tag",
+    "Compliance Asset Id",
+    "Created",
+    "Created By",
+    "Datum",
+    "Modified",
+    "Modified By",
+    "Odkaz",
+    "Osoba",
+    "T01",
+    "T02",
+    "T03",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08",
+    "T09",
+    "T10",
+    "T11",
+    "T12",
+    "T13",
+    "T14",
+    "T15",
+    "T16",
+    "T17",
+    "T18",
+    "T19",
+    "T20",
+    "T21",
+    "T22",
+    "T23",
+    "T24",
+    "T25",
+    "Title",
+    "Txt",
+    "Typ obsahu",
+    "Volba"
+   ]
+  },
+  {
+   "id": "ctl00_PlaceHolderMain_ctl02_ctl02_secondaryColumnDropDown",
+   "name": "ctl00$PlaceHolderMain$ctl02$ctl02$secondaryColumnDropDown",
+   "options": [
+    "(none)",
+    "Created",
+    "Created By",
+    "Datum",
+    "Modified",
+    "Modified By",
+    "Odkaz",
+    "Osoba",
+    "Typ obsahu"
+   ]
+  }
+ ],
+ "buttons": [
+  "O365_MainLink_NavMenu |",
+  "O365_MainLink_Settings |",
+  "O365_MainLink_Help |",
+  "O365_MainLink_Me | OH",
+  "ctl00_PlaceHolderMain_ctl03_RptControls_BtnCreate | Create",
+  "ctl00_PlaceHolderMain_ctl03_RptControls_BtnCancel | Cancel"
+ ],
+ "inputs": [],
+ "links": [
+  " -> null"
+ ]
+}
+[8.0s] shot sondy/miniskilly/ui/13-editindex-sekundarni.png

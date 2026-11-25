@@ -1,0 +1,34 @@
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty:
+  - zalozit seznam "Spokojenost" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek
+[OK]      seznam "Spokojenost" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec Den
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "Spokojenost" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/Lists/Spokojenost
+seznam rc=0
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty, katalog tohoto webu, nic tenant-wide):
+  1. nahrat appka-spokojenost.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku spokojenost.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+[OK]      nahrano do katalogu (appId 501592b3-ba4b-456b-8ab9-c3daa7ab4c2f)
+[OK]      nasazeno (deploy)
+[OK]      appka nainstalovana na web
+[OK]      stranka spokojenost.aspx zalozena (Article + sekce)
+[OK]      web part vlozen na stranku
+[OK]      stranka prepnuta na celostrankovou appku a publikovana
+[OK]      precteno zpet: stranka spokojenost.aspx, rozlozeni SingleWebPartAppPage, web part f8fbbd7b-5022-4888-9121-d544eb74d96a na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/SitePages/spokojenost.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty/SitePages/spokojenost.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, po kliknuti na cislo se hlas propise do dashboardu.
+nasadit rc=0

@@ -1,0 +1,3 @@
+== Zadavatelé: ["jakub.kucera@pavelchocholousgmail.onmicrosoft.com"]
+== Schvalovatelé: ["eva.vesela@pavelchocholousgmail.onmicrosoft.com"]
+== Správci: []

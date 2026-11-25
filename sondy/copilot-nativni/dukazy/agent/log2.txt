@@ -1,0 +1,14 @@
+připojeno k běžícímu Chrome e2e-egd10 (port 50385), nový panel
+[1.1s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene%20dokumenty/Forms/AllItems.aspx?FolderCTID=0x0120003984BADAE45F464E8CA9E5ED9C22201E&id=%2Fsites%2Fegd%2Dukazky%2FSdilene%20dokumenty%2Fexporty
+[8.1s] OK wait:7000  
+[8.2s] OK click:[aria-label='Show Copilot actions for selected items']  
+[9.7s] OK wait:1500  
+[9.7s] OK eval:[...document.querySelectorAll('[role=menuitem]')].find(x=>/Create an agent/.test(x.innerText)).click()  
+[34.7s] OK wait:25000  
+[34.8s] OK shotv:create-agent2  
+sondy/copilot-nativni/dukazy/agent/create-agent2.png
+[34.8s] OK eval:[...document.querySelectorAll('input,textarea,button')].map(b=>(b.getAttribute('aria-label')||b.placeholder||b.innerText||'').trim()).filter(Boolean).slice(-25).join(' | ')  
+Show Copilot actions for this item | spokojenost.docx | More Actions | Share | Show Copilot actions for this item | spokojenost.pdf | More Actions | Share | Show Copilot actions for this item | spokojenost.pptx | More Actions | Share | Show Copilot actions for this item | spokojenost.xlsx | More Actions | Share | Show Copilot actions for this item | spokojenost-prehled.pdf | More Actions | Share | Show Copilot actions for this item | Ask a question about exporty | Copilot | Ask a question | Create an agent
+[34.8s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserFirstRun.Experiences

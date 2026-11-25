@@ -1,0 +1,23 @@
+{
+  "nazev": "Ověření odpovědí na otázky T. Galíka",
+  "stav": "hotovo",
+  "popis": "37 položek: ✅12 📘1 ❓8 ⛔5 ❌11; top mezera: neodpovězený mail 23. 11. (appId, katalog)",
+  "oblast": "prehled",
+  "kdo": "galik-otazky",
+  "vystup": "prehled/galik-otazky.md",
+  "aktualizovano": "2026-11-24T01:02:04Z",
+  "zacatek": "2026-11-24T00:55:15Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-24T00:55:15Z",
+      "stav": "bezi",
+      "popis": "inventura otázek"
+    },
+    {
+      "t": "2026-11-24T01:02:04Z",
+      "stav": "hotovo",
+      "popis": "37 položek: ✅12 📘1 ❓8 ⛔5 ❌11; top mezera: neodpovězený mail 23. 11. (appId, katalog)"
+    }
+  ]
+}

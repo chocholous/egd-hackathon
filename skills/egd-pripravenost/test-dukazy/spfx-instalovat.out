@@ -1,0 +1,7 @@
+[ZELENA] node-pro-spfx-1.24: Node v22.23.5; SPFx 1.24 chce 22 / 24 / 26 (22 aspon 22.14). Gulp uz neni, build je Heft.
+[CERVENA] generator-dostupny: vyprsel cas - nejspis proxy nebo firewall
+          co dal: bez npm nepujde CLI ani SPFx; zkus to z jine site, a zatim pokracuj kroky v prohlizeci (prikaz prohlizec)
+          veta pro IT: Prosim o pristup k npm registry (https://registry.npmjs.org) pres firemni proxy, nebo o adresu firemniho zrcadla npm. Potrebuji ho pro nastroje SharePoint Framework a CLI for Microsoft 365 (vyvoj SharePoint aplikaci, workshop EG.D). Pozadavky aktualne konci vyprsenim casu.
+Instaluji yo@7.0.1 a @microsoft/generator-sharepoint@1.24.1 do /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/final/.pripravenost/spfx-test (lokalne, par minut)...
+[ZELENA] generator-instalace: yo + generator SharePoint jdou nainstalovat lokalne a spustit
+rc=0

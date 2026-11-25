@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "appka-pdf-mail-client-side-solution",
+    "id": "63897f4b-8cf7-4f75-868e-94fde0c54381",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "appka-spokojenost description"
+      },
+      "longDescription": {
+        "default": "appka-spokojenost description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "appka-pdf-mail Feature",
+        "description": "The feature that activates elements of the appka-spokojenost solution.",
+        "id": "e1f0edc7-2b0c-406b-b950-fe515a494832",
+        "version": "1.0.0.1"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Mail.Send"
+      },
+      {
+        "resource": "egd-ca-dokumenty",
+        "scope": "access_as_user"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/appka-pdf-mail.sppkg"
+  }
+}

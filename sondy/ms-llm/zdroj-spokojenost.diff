@@ -1,0 +1,107 @@
+--- skills/egd-prvni-appka/templates/spokojenost/src/webparts/spokojenost/SpokojenostWebPart.ts	2026-11-22 20:10:58
++++ sondy/ms-llm/spokojenost-ai/src/webparts/spokojenost/SpokojenostWebPart.ts	2026-11-22 21:02:58
+@@ -6,8 +6,12 @@
+ import { Version } from '@microsoft/sp-core-library';
+ import { type IPropertyPaneConfiguration, PropertyPaneTextField } from '@microsoft/sp-property-pane';
+ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
+-import { SPHttpClient, type SPHttpClientResponse } from '@microsoft/sp-http';
++import { SPHttpClient, type SPHttpClientResponse, AadHttpClient } from '@microsoft/sp-http';
+ 
++const GATEWAY_URL = '';   // TEST v1.0.0.2: prázdné = simulace (od IT zatím nic)
++const API_APP_ID = '7b59591a-0058-4799-be76-0d1f5b79ca95';
++const APP_KEY = 'demo';
++
+ import styles from './SpokojenostWebPart.module.scss';
+ 
+ export interface ISpokojenostWebPartProps {
+@@ -45,7 +49,82 @@
+   private _chyba = '';
+   private _zprava = '';
+   private _ukladam = false;
++
++  // ---------- AI přes gateway (skill egd-llm-gateway) ----------
++
++  private async _ai<T>(cesta: string, telo: object): Promise<T> {
++    if (!GATEWAY_URL) return { text: '(Ukázka – AI zatím není napojená. Až IT dodá adresu gateway, odpoví model.)' } as unknown as T;
++    const klient = await this.context.aadHttpClientFactory.getClient(API_APP_ID);
++    const r = await klient.post(`${GATEWAY_URL}${cesta}`, AadHttpClient.configurations.v1, {
++      headers: { 'Content-Type': 'application/json', 'X-App-Id': APP_KEY },
++      body: JSON.stringify(telo)
++    });
++    if (r.status === 429) throw new Error('Dnešní limit AI pro appku je vyčerpaný. Zkuste to zítra.');
++    if (!r.ok) throw new Error(`AI gateway vrátila ${r.status}`);
++    return (await r.json()) as T;
++  }
++
++  // GET (např. /api/kvota = dnešní spotřeba appky a uživatele)
++  private async _aiGet<T>(cesta: string): Promise<T> {
++    if (!GATEWAY_URL) return { spotreba: { tokens: 0 }, limitTokenuZaDen: 0 } as unknown as T;
++    const klient = await this.context.aadHttpClientFactory.getClient(API_APP_ID);
++    const r = await klient.get(`${GATEWAY_URL}${cesta}`, AadHttpClient.configurations.v1, { headers: { 'X-App-Id': APP_KEY } });
++    if (!r.ok) throw new Error(`AI gateway vrátila ${r.status}`);
++    return (await r.json()) as T;
++  }
++
++  // shrnutí textu
++  private async _shrn(text: string): Promise<string> {
++    const o = await this._ai<{ text: string }>('/api/chat',
++      { prompt: `Shrň jednou větou česky:\n${text}`, max_tokens: 200 });
++    return o.text;
++  }
++
++  // OCR souboru z <input type="file">
++  private async _ocr(soubor: File): Promise<string> {
++    const b = new Uint8Array(await soubor.arrayBuffer());
++    let bin = ''; b.forEach((x) => { bin += String.fromCharCode(x); });
++    const o = await this._ai<{ text: string }>('/api/ocr', { base64: btoa(bin), model: 'prebuilt-read' });
++    return o.text;
++  }
+ 
++  // text pro AI: čísla z dashboardu (žádné jméno ani osobní údaj)
++  private _textProAi(dnes: string): string {
++    const dnesni = this._hlasy.filter((h) => h.Den === dnes && h.Hodnoceni);
++    const rozlozeni = STUPNE.map(([n]) => `${n}: ${dnesni.filter((h) => h.Hodnoceni === n).length}x`).join(', ');
++    return `Hodnocení spokojenosti s kanceláří dnes (1 = velmi nespokojen, 5 = velmi spokojen). Hlasů: ${dnesni.length}. Rozložení: ${rozlozeni}.`;
++  }
++
++  private _aiKarta(dnes: string): HTMLElement {
++    const vystup = el('p', { id: 'ai-vystup', role: 'status' });
++    const shrnout = el('button', { type: 'button', id: 'ai-shrnout' }, ['Shrnout dnešek (AI)']) as HTMLButtonElement;
++    shrnout.addEventListener('click', () => {
++      shrnout.disabled = true; vystup.textContent = 'Přemýšlím…';
++      this._shrn(this._textProAi(dnes))
++        .then((t) => { vystup.textContent = `Návrh AI: ${t}`; })
++        .catch((e: Error) => { vystup.textContent = `Chyba AI: ${e.message}`; })
++        .then(() => { shrnout.disabled = false; }, () => { shrnout.disabled = false; });
++    });
++    const soubor = el('input', { type: 'file', id: 'ai-soubor', accept: '.pdf,.png,.jpg,.jpeg' }) as HTMLInputElement;
++    const precist = el('button', { type: 'button', id: 'ai-ocr' }, ['Přečíst soubor (OCR)']) as HTMLButtonElement;
++    precist.addEventListener('click', () => {
++      const f = soubor.files?.[0];
++      if (!f) { vystup.textContent = 'Vyberte soubor (PDF nebo obrázek).'; return; }
++      precist.disabled = true; vystup.textContent = 'Čtu soubor…';
++      this._ocr(f)
++        .then((t) => { vystup.textContent = `Text ze souboru: ${t}`; })
++        .catch((e: Error) => { vystup.textContent = `Chyba AI: ${e.message}`; })
++        .then(() => { precist.disabled = false; }, () => { precist.disabled = false; });
++    });
++    const kvota = el('button', { type: 'button', id: 'ai-kvota' }, ['Kolik AI zbývá dnes']) as HTMLButtonElement;
++    kvota.addEventListener('click', () => {
++      this._aiGet<{ spotreba: { tokens: number }; limitTokenuZaDen: number }>('/api/kvota')
++        .then((k) => { vystup.textContent = `Dnes spotřebováno ${k.spotreba.tokens} z ${k.limitTokenuZaDen} tokenů.`; })
++        .catch((e: Error) => { vystup.textContent = `Chyba AI: ${e.message}`; });
++    });
++    return el('div', { class: styles.karta }, [el('h2', {}, ['AI pomocník']), shrnout, soubor, precist, kvota, vystup]);
++  }
++
+   // ---------- data ----------
+ 
+   private _url(cesta: string): string {
+@@ -132,6 +211,7 @@
+     if (this._zprava) koren.appendChild(el('p', { class: styles.zprava, role: 'status' }, [this._zprava]));
+ 
+     koren.appendChild(this._dashboard(dnes));
++    koren.appendChild(this._aiKarta(dnes));
+     this.domElement.replaceChildren(koren);
+   }
+ 

@@ -1,0 +1,6 @@
+--- eval fetch("/sites/egd-sonda-ms-dokumenty/_api/web/GetFileByServerRelativePath(decodedurl='/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty/spokojenost.pdf')/$value").then(async r => { const t = await r.text(); return r.status + ' ' + t.length + ' B; ' + (t.match(/Producer\s*\([^)]*\)/) || ['bez Producer'])[0] + '; ' + (t.match(/%PDF-[0-9.]+/)||[''])[0]; })
+VYSLEDEK: 200 59203 B; bez Producer; %PDF-1.7
+--- eval fetch("/sites/egd-sonda-ms-dokumenty/_api/web/GetFileByServerRelativePath(decodedurl='/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty/spokojenost.pdf')?$select=Length,TimeLastModified", {headers:{Accept:'application/json;odata=nometadata'}}).then(r => r.text())
+VYSLEDEK: {"Length":"61933","TimeLastModified":"2026-11-23T10:29:18Z"}
+LOG:
+

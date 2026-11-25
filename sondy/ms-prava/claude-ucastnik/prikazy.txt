@@ -1,0 +1,43 @@
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; tools/lab-m365.sh status; echo "rc=$?"; tools/lab-m365.sh spo web get --url $W --withGroups --output json > /private/tmp/claude-501/webget.json 2>&1; echo "rc=$?"; head -c 3000 /private/tmp/claude-501/webget.json
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; M=tools/lab-m365.sh
+$M spo group member list --webUrl $W --groupName "Vlastníci webu EGD sonda ms-prava" --output text; echo "rc=$?"
+$M spo list get --webUrl $W --title PozadavkyClaude --properties "ReadSecurity,WriteSecurity,HasUniqueRoleAssignments" --output json; echo "rc=$?"
+$M spo roledefinition list --webUrl $W --output text; echo "rc=$?"
+$M spo group list --webUrl $W --output text; echo "rc=$?"
+$M spo list roleassignment list --webUrl $W --listTitle PozadavkyClaude --output text; echo "rc=$?"
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; M=tools/lab-m365.sh
+Z="ViewListItems,AddListItems,EditListItems,DeleteListItems,OpenItems,ViewVersions,DeleteVersions,ManagePersonalViews,ViewFormPages,Open,ViewPages,CreateSSCSite,BrowseDirectories,BrowseUserInfo,AddDelPrivateWebParts,UpdatePersonalWebParts,UseClientIntegration,UseRemoteAPIs,CreateAlerts,EditMyUserInfo"
+S="${Z/DeleteListItems,/},CancelCheckout"
+echo "$S"
+$M spo roledefinition add --webUrl $W --name "Objednávky Zadavatel" --rights "$Z" --output json; echo "rc=$?"
+$M spo roledefinition add --webUrl $W --name "Objednávky Schvalovatel" --rights "$S" --output json; echo "rc=$?"
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; M=tools/lab-m365.sh
+for g in Zadavatelé Schvalovatelé Správci; do $M spo group add --webUrl $W --name "Objednávky $g" --output json; echo "rc=$? group $g"; done
+$M spo group member add --webUrl $W --groupName "Objednávky Zadavatelé" --userNames "jakub.kucera@pavelchocholousgmail.onmicrosoft.com" --output json; echo "rc=$?"
+$M spo group member add --webUrl $W --groupName "Objednávky Schvalovatelé" --userNames "eva.vesela@pavelchocholousgmail.onmicrosoft.com" --output json; echo "rc=$?"
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; M=tools/lab-m365.sh
+for g in Zadavatelé Schvalovatelé Správci; do echo "== $g"; $M spo group member list --webUrl $W --groupName "Objednávky $g" --output text; echo "rc=$?"; done
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; M=tools/lab-m365.sh; S=PozadavkyClaude
+for g in Zadavatelé Schvalovatelé Správci; do $M spo web roleassignment add --webUrl $W --groupName "Objednávky $g" --roleDefinitionName "Čtení" --output json; echo "rc=$? web $g"; done
+$M spo list roleinheritance break --webUrl $W --listTitle $S --clearExistingPermissions --force --output json; echo "rc=$? break"
+$M spo list roleassignment add --webUrl $W --listTitle $S --groupName "Vlastníci webu EGD sonda ms-prava" --roleDefinitionName "Úplné řízení" --output json; echo "rc=$? owners"
+$M spo list roleassignment add --webUrl $W --listTitle $S --groupName "Objednávky Zadavatelé" --roleDefinitionName "Objednávky Zadavatel" --output json; echo "rc=$? zad"
+$M spo list roleassignment add --webUrl $W --listTitle $S --groupName "Objednávky Schvalovatelé" --roleDefinitionName "Objednávky Schvalovatel" --output json; echo "rc=$? schv"
+$M spo list roleassignment add --webUrl $W --listTitle $S --groupName "Objednávky Správci" --roleDefinitionName "Úplné řízení" --output json; echo "rc=$? spr"
+$M spo list set --webUrl $W --title $S --readSecurity 2 --writeSecurity 2 --output json; echo "rc=$? set"
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; M=tools/lab-m365.sh; S=PozadavkyClaude
+$M spo list get --webUrl $W --title $S --properties "ReadSecurity,WriteSecurity,HasUniqueRoleAssignments" --output json; echo "rc=$?"
+$M spo list get --webUrl $W --title $S --withPermissions --output json > /private/tmp/claude-501/lp.json 2>&1; echo "rc=$?"
+jq -c '.RoleAssignments[]|{p:.Member.Title,r:[.RoleDefinitionBindings[].Name]}' /private/tmp/claude-501/lp.json
+$M spo roledefinition get --webUrl $W --name "Objednávky Schvalovatel" --output json; echo "rc=$?"
+$M spo roledefinition get --webUrl $W --name "Objednávky Zadavatel" --output json; echo "rc=$?"
+$M spo web roleassignment list --webUrl $W --output text 2>&1 | head -5; echo "rc=$?"
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; M=tools/lab-m365.sh; S=PozadavkyClaude
+head -c 400 /private/tmp/claude-501/lp.json; echo
+$M spo roledefinition get --help 2>&1 | head -20
+$M spo list roleassignment --help 2>&1 | head -20
+cd /Users/chocholous/Projects/egd-workshop && W=https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava; M=tools/lab-m365.sh
+$M spo roledefinition list --webUrl $W --output json > /private/tmp/claude-501/rd.json; echo "rc=$?"; jq -c '.[]|select(.Name|startswith("Objedn"))|{Id,Name,BasePermissions}' /private/tmp/claude-501/rd.json
+$M request --url "$W/_api/web/lists/getbytitle('PozadavkyClaude')/roleassignments?\$expand=Member,RoleDefinitionBindings" --method get --accept "application/json;odata=nometadata" > /private/tmp/claude-501/ra.json; echo "rc=$?"
+jq -c '.value[]|{p:.Member.Title,r:[.RoleDefinitionBindings[].Name]}' /private/tmp/claude-501/ra.json
+$M request --url "$W/_api/web/roleassignments?\$expand=Member,RoleDefinitionBindings&\$filter=startswith(Member/Title,'Objedn')" --method get --accept "application/json;odata=nometadata" > /private/tmp/claude-501/wra.json; echo "rc=$?"; jq -c '.value[]|{p:.Member.Title,r:[.RoleDefinitionBindings[].Name]}' /private/tmp/claude-501/wra.json

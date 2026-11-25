@@ -1,0 +1,2 @@
+../../../../../../../private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/fin.ts(1,20): error TS2550: Property 'finally' does not exist on type 'Promise<number>'. Do you need to change your target library? Try changing the 'lib' compiler option to 'es2018' or later.
+rc=2

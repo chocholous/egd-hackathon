@@ -1,0 +1,5 @@
+[08:49:09] stranka: sablony: ["Spouštěč aplikací","SharePoint","Hledat","","Nastavení","Nápověda","Ú0","Prozkoumat","Publikovat","Kompilovat","OneDrive","Stránky","Příspěvky","Kategorie","Vytvořit prázdné","Otevřít a vytvořit soukromý koncept","clear"]
+[08:49:19] stranka: url: https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev/_layouts/15/createpagefromtemplate.aspx
+[08:49:49] stranka: CHYBA TimeoutError: locator.click: Timeout 30000ms exceeded.
+[08:49:49] stranka: viditelne: ["Spouštěč aplikací","SharePoint","Hledat","","Nastavení","Nápověda","Ú0","Prozkoumat","Publikovat","Kompilovat","OneDrive","Stránky","Příspěvky","Kategorie","Vytvořit prázdné","Otevřít a vytvořit soukromý koncept","clear"]
+stranka SELHALO

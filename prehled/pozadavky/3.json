@@ -1,0 +1,12 @@
+{
+  "cesta": "Generovat v prohlížeči v SPFx (docx, exceljs, pptxgenjs, pdf-lib), věrné PDF přes Graph ?format=pdf",
+  "poznamka": "Graph PDF chce Files.Read.All se souhlasem správce; PDF s češtinou potřebuje vložený font",
+  "zdroj": "sondy/ms-dokumenty/README.md",
+  "skill": "ano",
+  "nazev": "Generování a úprava dokumentů (PDF, Word, PPT, Excel)",
+  "realne": "ano",
+  "test": "lab",
+  "cislo": 3,
+  "aktualizovano": "2026-11-22T20:02:22Z",
+  "skill_cesta": "skills/egd-dokumenty"
+}

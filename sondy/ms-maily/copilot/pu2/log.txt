@@ -1,0 +1,38 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● skill(egd-planovane-ulohy)
+
+Nejjednodušší cesta je **naplánovaný cloud flow v Power Automate**. Pro čtení SharePoint seznamu a odeslání e-mailu obvykle stačí standardní konektory; z odkazu ale nejde poznat, jakou máte licenci ani jaká pravidla nastavilo EG.D. Zatím jsem nic nezakládal ani nespouštěl.
+
+**Postup, až budeš flow vytvářet:**
+
+1. Otevři `make.powerautomate.com` pod pracovním účtem a ověř, že se portál otevře. Zatím nic nevytvářej. Pokud licenci nebo dostupné prostředí nevidíš, ověř to s IT.
+2. V Power Automate zvol **Create → Scheduled cloud flow**. Nastav opakování na pracovní dny od pondělí do pátku v **06:00**.
+3. V akci **Recurrence** nastav časové pásmo **(UTC+01:00) Prague** a zkontroluj, že je čas 6:00. Tím se má správně zohlednit letní a zimní čas.
+4. Přidej SharePoint akci **Get items**. Vyber web `https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily` a seznam **Požadavky**.
+5. Rozhodni, co přesně znamená „za poslední den“:
+   - **Posledních 24 hodin** je nejjednodušší filtr podle pole *Created*. V pondělí ale nezahrne požadavky starší než 24 hodin, například ty ze soboty.
+   - Pokud má pondělní e-mail pokrýt i víkend, nastavte období od posledního pracovního běhu, případně od pátku 6:00. Tuto logiku je potřeba výslovně doplnit a otestovat.
+   
+   Při větším seznamu požádej o nastavení filtru už v **Get items** a stránkování; nestahovat bez omezení celý seznam. Názvy polí v OData filtru mohou být jiné než jejich zobrazované názvy.
+6. Přidej **Create HTML table** a vyber jen užitečné sloupce, například název požadavku, datum vytvoření, stav a zadavatele.
+7. Přidej **Send an email (V2)** z Office 365 Outlooku. Zadej příjemce, předmět a do těla vlož tabulku. E-mail bude standardně odeslaný účtem, jehož Outlook připojení flow používá.
+8. Flow ulož a zapni. Při prvním testu ověř, že seznam vrací správné položky a tabulka v e-mailu má očekávaný obsah. Pak ověř historii běhů a doručení po prvním **plánovaném** spuštění v 6:00.
+
+**Co ověřit nebo chtít po IT:**
+
+- Zda tvoje licence dovoluje vytvářet a provozovat cloud flows se standardními konektory **SharePoint** a **Office 365 Outlook**. To nelze bezpečně odvodit jen z názvu licence; ověření v portálu nebo u IT je rozhodující.
+- Zda smíš číst seznam **Požadavky** a zda můžeš v daném Power Automate prostředí vytvářet flow. Pokud uložení narazí na oprávnění prostředí, zeptej se na roli **Environment Maker**.
+- Jestli firemní pravidla (například DLP) dovolují propojit SharePoint a Outlook a zda může flow zůstat dlouhodobě vlastněné tvým účtem. Při odchodu nebo zablokování vlastníka může být potřeba převod na týmový či servisní účet.
+- Které sloupce smějí být v e-mailu a zda je v pořádku posílat je do osobní schránky.
+
+Do požadavku na IT můžeš napsat: *„Prosím o ověření, zda můj účet smí v Power Automate vytvořit a provozovat naplánovaný cloud flow se standardními konektory SharePoint a Office 365 Outlook. Flow má v pracovní dny v 6:00 posílat přehled nových položek ze seznamu Požadavky na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily. Prosím také o ověření oprávnění k seznamu, prostředí Power Automate a vhodného období reportu, zejména pokrytí víkendu v pondělí.“*
+
+Session exported to: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/ccb9eeb2-48b3-4e11-b554-86593a877872/scratchpad/cp/pu2/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 0.28 (30s)
+Tokens     ↑ 34.1k (24.8k cached, 9.3k written) • ↓ 2.7k (1.6k reasoning)
+Resume     copilot --resume=179a5908-5ab7-4f67-b0d4-ed5bda4fe416

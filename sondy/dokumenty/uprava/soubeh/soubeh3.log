@@ -1,0 +1,12 @@
+editor v Excelu Online: petra.novakova, volá API z web partu: petra.novakova
+03:46:04 editor píše do C6 (neodesláno)
+03:46:06 [e-range] 1551 ms: HOTOVO e-range (1510 ms): relace=ne PATCH 709 ms (celkem 1510 ms) | [["Položka","Cena v Kč",""],["Materiál",125000,"API 3:46:05"],["Práce",355000,"API 3:46:05"],["Doprava a montáž",60000,""],["Celkem",540000,""],["","",""]]
+03:46:10 [e-range] 1173 ms: HOTOVO e-range (1116 ms): relace=ne PATCH 517 ms (celkem 1116 ms) | [["Položka","Cena v Kč",""],["Materiál",125000,"API 3:46:05"],["Práce",355000,"API 3:46:05"],["Doprava a montáž",60000,""],["Celkem",540000,""],["","",""]]
+03:46:10 editor odeslal C6
+03:46:11 [e-tabulka] 591 ms: HOTOVO e-tabulka (544 ms): tabulka Polozky už existuje
+03:46:12 [e-radek] 1179 ms: HOTOVO e-radek (1124 ms): POST rows 526 ms (celkem 1124 ms) | rozpocet!F1:G5 [["Položka","Částka"],["Materiál",120000],["Práce",300000],["Rezerva 3:37:48",25000],["Rezerva 3:46:11",25000]]
+03:46:13 [e-range-relace] 1013 ms: HOTOVO e-range-relace (962 ms): relace=ano PATCH 85 ms (celkem 962 ms) | [["Položka","Cena v Kč",""],["Materiál",125000,"API 3:46:13"],["Práce",355000,"API 3:46:13"],["Doprava a montáž",60000,""],["Celkem",540000,""],["","",""]]
+03:46:13 editor zapsal B2=999
+03:46:15 [e-range] 1163 ms: HOTOVO e-range (1112 ms): relace=ne PATCH 536 ms (celkem 1112 ms) | [["Položka","Cena v Kč",""],["Materiál",125000,"API 3:46:13"],["Práce",355000,"API 3:46:13"],["Doprava a montáž",60000,""],["Celkem",540000,""],["","",""]]
+03:46:27 snímek Excelu po API
+03:46:28 [e-range] 1172 ms: HOTOVO e-range (1145 ms): relace=ne PATCH 546 ms (celkem 1145 ms) | [["Položka","Cena v Kč",""],["Materiál",125000,"API 3:46:27"],["Práce",355000,"API 3:46:27"],["Doprava a montáž",60000,""],["Celkem",540000,""],["","",""]]

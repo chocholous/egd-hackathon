@@ -1,0 +1,35 @@
+### cesta 11:28:22
+[INFO]    vysledky: /Users/chocholous/Projects/egd-workshop/sondy/e2e/prace/.pripravenost/vysledky.json
+[INFO]    web z kontroly: https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev
+          npm-ping: zelena (registry odpovida (PONG))
+          node-pro-spfx-1.24: zelena (Node v22.23.5; SPFx 1.24 chce 22 / 24 / 26 (22 aspon 22.14). Gulp uz neni, build je Heft.)
+          prihlaseni: zelena (prihlasen egd10@pavelchocholousgmail.onmicrosoft.com, appId 12f19539-b70a-499d-b6dc-517a32c0e904, tenant pavelchocholousgmail.onmicrosoft.com)
+          web-cteni: zelena ("Účastník 10 – DEV" (https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev))
+          site-app-catalog: zelena (web ma vlastni katalog aplikaci "Aplikace pro SharePoint" (0 balicku))
+          role-v-katalogu: zelena (muzes nahrat balicek (.sppkg) do katalogu)
+
+DOPORUCENA CESTA: A: SPFx web part, nasazeni skriptem (prikazy novy -> build -> seznam -> nasadit)
+rc=0
+### seznam --web https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev --slozka prvni-appka 11:28:22
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev:
+  - zalozit seznam "MojeAppka" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek (EG.D: semafor + cislo)
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+rc=10
+### seznam --web https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev --slozka prvni-appka --ano 11:28:25
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev:
+  - zalozit seznam "MojeAppka" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek (EG.D: semafor + cislo)
+[OK]      seznam "MojeAppka" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec Den
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "MojeAppka" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd10-dev/Lists/MojeAppka
+rc=0

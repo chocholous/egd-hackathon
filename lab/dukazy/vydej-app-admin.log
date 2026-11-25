@@ -1,0 +1,3 @@
+admin špatné heslo: (401, '{"chyba":"Špatné admin heslo."}')
+admin správné heslo egd10: (200, '{"uvolneno":"egd10"}')
+rezervace (0): žádné

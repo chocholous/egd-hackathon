@@ -1,0 +1,28 @@
+{
+  "nazev": "Container App s LibreOffice (PDF)",
+  "stav": "hotovo",
+  "popis": "✅ SPFx→CA→PDF, diakritika, studený start 25–28 s, teplý 1,1 s",
+  "oblast": "sondy",
+  "kdo": "Claude (session ca-libreoffice)",
+  "vystup": "sondy/container-app/libreoffice.md",
+  "aktualizovano": "2026-11-24T01:12:12Z",
+  "zacatek": "2026-11-24T00:40:34Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-24T00:40:34Z",
+      "stav": "planovano",
+      "popis": "zadáno hlavní session"
+    },
+    {
+      "t": "2026-11-24T00:40:43Z",
+      "stav": "bezi",
+      "popis": "čtu podklady, stavím image"
+    },
+    {
+      "t": "2026-11-24T01:12:12Z",
+      "stav": "hotovo",
+      "popis": "✅ SPFx→CA→PDF, diakritika, studený start 25–28 s, teplý 1,1 s"
+    }
+  ]
+}

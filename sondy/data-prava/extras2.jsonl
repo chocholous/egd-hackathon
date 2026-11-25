@@ -1,0 +1,32 @@
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "zadavatel1", "status": 200, "body": "tajny obsah"}
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "zadavatel2", "status": 404, "body": "Soubor /sites/egd-sonda-data-prava/Lists/Zadosti/Attachments/12/tajne.txt neexistuje."}
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "schvalovatel", "status": 200, "body": "tajny obsah"}
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "schvalovatel_edit", "status": 404, "body": "Soubor /sites/egd-sonda-data-prava/Lists/Zadosti/Attachments/12/tajne.txt neexistuje."}
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "spravce", "status": 200, "body": "tajny obsah"}
+{"step": "ACL: zadavatel pridava", "who": "zadavatel1", "status": 201}
+{"step": "ACL: zadavatel pridava", "who": "zadavatel2", "status": 201}
+Traceback (most recent call last):
+  File "/Users/chocholous/Projects/egd-workshop/tools/data-prava-sp.py", line 406, in <module>
+    main()
+    ~~~~^^
+  File "/Users/chocholous/Projects/egd-workshop/tools/data-prava-sp.py", line 402, in main
+    globals()["cmd_" + a.cmd](a)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/Users/chocholous/Projects/egd-workshop/tools/data-prava-sp.py", line 316, in cmd_extras2
+    s, j = req("GET", L2 + "/items?$select=Id,Title", who="spravce"); ids = {i["Title"]: i["Id"] for i in j["value"]}
+                                                                                                          ~^^^^^^^^^
+KeyError: 'value'
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "zadavatel2", "status": 404, "body": "Soubor /sites/egd-sonda-data-prava/Lists/Zadosti/Attachments/12/tajne.txt neexistuje."}
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "schvalovatel", "status": 200, "body": "tajny obsah"}
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "schvalovatel_edit", "status": 404, "body": "Soubor /sites/egd-sonda-data-prava/Lists/Zadosti/Attachments/12/tajne.txt neexistuje."}
+{"step": "priloha pres GetFileByServerRelativeUrl", "who": "spravce", "status": 200, "body": "tajny obsah"}
+{"step": "ACL: break (copy=false)", "item": "acl zadavatel1", "status": 200}
+{"step": "ACL: break (copy=false)", "item": "acl zadavatel2", "status": 200}
+{"step": "ACL: kdo co vidi", "who": "zadavatel1", "status": 200, "sees": ["acl zadavatel1"]}
+{"step": "ACL: kdo co vidi", "who": "zadavatel2", "status": 200, "sees": ["acl zadavatel2"]}
+{"step": "ACL: kdo co vidi", "who": "schvalovatel", "status": 200, "sees": ["acl zadavatel1", "acl zadavatel2"]}
+{"step": "ACL: kdo co vidi", "who": "schvalovatel_edit", "status": 404, "sees": "Seznam ZadostiACL neexistuje na serveru s adresou URL https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-data-prava."}
+{"step": "ACL: zadavatel2 edituje cizi", "status": 404}
+{"step": "ACL: zadavatel sam rozbije dedicnost na sve polozce", "status": 200}
+{"step": "Velky: indexovany filtr s >5000 vysledky", "status": 500, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"step": "Velky: indexovany filtr s >5000 vysledky (zadavatel)", "status": 500, "err": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}

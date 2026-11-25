@@ -1,0 +1,8 @@
+{"krok": "karolina do Vlastníků (schvalovatel pro test)", "status": 201, "err": ""}
+{"krok": "žádost", "status": 201, "id": 6003, "err": ""}
+{"krok": "jakub do Vlastníků (schvalovatel pro test)", "status": 201, "err": ""}
+{"krok": "úklid associatedownergroup", "kdo": "karolina.mala", "status": 200, "err": ""}
+{"krok": "úklid associatedownergroup", "kdo": "jakub.kucera", "status": 200, "err": ""}
+{"krok": "úklid associatedmembergroup", "kdo": "karolina.mala", "status": 200, "err": ""}
+{"krok": "vlastníci po", "u": ["pavel.admin@pavelchocholousgmail.onmicrosoft.com"]}
+{"krok": "členové po", "u": ["jakub.kucera@pavelchocholousgmail.onmicrosoft.com"]}

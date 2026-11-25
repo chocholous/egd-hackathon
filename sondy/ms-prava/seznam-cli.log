@@ -1,0 +1,12 @@
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava:
+  - zalozit seznam "PozadavkyCLI" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek
+[OK]      seznam "PozadavkyCLI" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec Den
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "PozadavkyCLI" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/PozadavkyCLI

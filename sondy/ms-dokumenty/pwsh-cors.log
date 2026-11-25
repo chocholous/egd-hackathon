@@ -1,0 +1,3 @@
+7.5.4
+https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041 -> 200 Access-Control-Allow-Origin=[*]
+https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ -> 200 Access-Control-Allow-Origin=[]

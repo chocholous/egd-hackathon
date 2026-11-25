@@ -1,0 +1,11 @@
+# 2026-11-23, HOME=~/.m365-osobni (lab CLI účet)
+$ m365 status
+appId         : 12f19539-b70a-499d-b6dc-517a32c0e904
+appTenant     : 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+authType      : deviceCode
+cloudType     : Public
+connectedAs   : pavel.admin@pavelchocholousgmail.onmicrosoft.com
+connectionName: 3b095dc0-5542-4cd1-8ff2-5d1ca41c7cca
+
+$ m365 entra enterpriseapp get --displayName "SharePoint Online Web Client Extensibility"
+{"error":"Insufficient privileges to complete the operation."}

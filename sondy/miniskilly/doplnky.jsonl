@@ -1,0 +1,14 @@
+{"krok": "razeni", "seznam": "Pozadavky", "orderby": "Created desc", "who": "admin", "status": 500, "sec": 0.19, "err": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu.", "prvni": null}
+{"krok": "razeni", "seznam": "Pozadavky", "orderby": "Modified desc", "who": "admin", "status": 200, "sec": 0.47, "err": "", "prvni": [[6001, "2026-11-22T19:29:00Z"], [5962, "2026-11-22T18:47:43Z"], [6000, "2026-11-22T18:47:44Z"]]}
+{"krok": "razeni", "seznam": "Pozadavky", "orderby": "ID desc", "who": "admin", "status": 200, "sec": 0.22, "err": "", "prvni": [[6001, "2026-11-22T19:29:00Z"], [6000, "2026-11-22T18:47:44Z"], [5999, "2026-11-22T18:47:44Z"]]}
+{"krok": "ID desc vs Created", "n": 50, "poradi_sedi": false}
+{"krok": "ucty", "admin_id": 6, "jakub_id": 13, "jakub_status": 200}
+{"krok": "jakub (Člen) přidá položku", "status": 201, "sec": 0.28, "err": ""}
+{"krok": "AuthorId eq já (index Author)", "who": "admin", "status": 500, "sec": 0.19, "n": null, "err": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"krok": "AuthorId eq já (index Author)", "who": "jakub.kucera", "status": 200, "sec": 0.18, "n": 1, "err": ""}
+{"krok": "Stav eq Nový and AuthorId eq admin", "status": 200, "sec": 0.2, "n": 299, "err": ""}
+{"krok": "index pod rolí", "who": "jakub.kucera", "role": "Člen", "status": 204, "sec": 0.39, "err": ""}
+{"krok": "kontrola", "indexed": true}
+{"krok": "index pod rolí", "who": "karolina.mala", "role": "Návštěvník", "status": 403, "sec": 0.19, "err": "-2147024891, System.UnauthorizedAccessException Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))"}
+{"krok": "kontrola", "indexed": false}
+{"krok": "Návštěvník přidá položku", "status": 403, "sec": 0.21, "err": "-2147024891, System.UnauthorizedAccessException Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))"}

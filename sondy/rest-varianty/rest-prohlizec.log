@@ -1,0 +1,13 @@
+OK  contextinfo: HTTP 200
+OK  currentuser: HTTP 200
+uzivatel: {"Title":"Pavel Admin (lab)","IsSiteAdmin":true}
+OK  seznam: HTTP 201
+OK  pole: HTTP 200
+OK  pole: HTTP 200
+OK  pole: HTTP 200
+OK  zpet: HTTP 200
+zpet: [{"EnforceUniqueValues":false,"Indexed":true,"InternalName":"DenCislo"},{"EnforceUniqueValues":true,"Indexed":true,"InternalName":"Klic"}]
+OK  upload sppkg: HTTP 200
+OK  AvailableApps: HTTP 200
+app: {"Deployed":true,"ID":"10b1b69b-2466-4029-83db-c12d7283cea5","Title":"spokojenost-appka-client-side-solution"}
+OK  deploy: HTTP 200

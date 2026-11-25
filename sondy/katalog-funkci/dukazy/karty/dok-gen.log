@@ -1,0 +1,41 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/dokumenty.aspx
+[3.9s] OK wait:3000  
+[12.6s] OK rozbal  
+8 zón
+[12.6s] OK eval:document.querySelector('[data-sp-web-part-id="fbeaf821-f908-453a-ad1c-c4e13c485e73"]').scrollIntoView()  {"interrupted":false}
+[14.1s] OK wait:1500  
+[14.2s] OK click:[data-sp-web-part-id="fbeaf821-f908-453a-ad1c-c4e13c485e73"] [data-k=docxtpl]  
+[22.2s] OK wait:8000  
+[22.3s] OK click:[data-sp-web-part-id="fbeaf821-f908-453a-ad1c-c4e13c485e73"] [data-k=pdf]  
+[32.3s] OK wait:10000  
+[32.3s] OK click:[data-sp-web-part-id="fbeaf821-f908-453a-ad1c-c4e13c485e73"] [data-k=xlsx]  
+[40.3s] OK wait:8000  
+[40.4s] OK click:[data-sp-web-part-id="fbeaf821-f908-453a-ad1c-c4e13c485e73"] [data-k=graphpdf]  
+[54.4s] OK wait:14000  
+[54.4s] OK eval:document.querySelector('[data-sp-web-part-id="fbeaf821-f908-453a-ad1c-c4e13c485e73"]').querySelector('#log').innerText  
+uloženo do knihovny: sonda/revize-sablona.docx (15370 B)
+HOTOVO docxtpl za 425 ms
+uloženo do knihovny: sonda/revize.pdf (11355 B)
+HOTOVO pdf za 643 ms
+uloženo do knihovny: sonda/revize.xlsx (7096 B)
+HOTOVO xlsx za 550 ms
+uloženo do knihovny: sonda/revize.docx (10094 B)
+Graph ?format=pdf → 85206 B (application/pdf)
+uloženo do knihovny: sonda/revize.pdf (85206 B)
+HOTOVO graphpdf za 1561 ms
+
+[54.5s] OK eval:document.querySelector('[data-sp-web-part-id="fbeaf821-f908-453a-ad1c-c4e13c485e73"]').scrollIntoView()  {"interrupted":false}
+[54.6s] OK shotv:01-egd09-generator  
+dukazy/karty/dok-generator/01-egd09-generator.png
+[54.6s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Revize')/items?$select
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Dokumenty')/rootFolder
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 302 https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc89

@@ -1,0 +1,7 @@
+{"krok": "stav_pred", "status": 200, "data": {"ItemCount": 12009}}
+{"krok": "nastav_false", "status": 400, "chyba": "The property 'EnableThrottling' does not exist on type 'SP.List'. Make sure to only use property names that are defined by the type."}
+{"krok": "stav_po", "data": {}}
+{"test": "top5001", "status": 500, "sec": 0.147, "rows": null, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení sezna"}
+{"test": "neindexovany", "status": 500, "sec": 0.149, "rows": null, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení sezna"}
+{"krok": "vrat_true", "status": 400}
+{"krok": "stav_zpet", "data": {}}

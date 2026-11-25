@@ -1,0 +1,4 @@
+[OK]      projekt zalozen: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka (reseni prvni-appka, web part 4d0850fa-6cee-41a0-be2c-b0aac1ed61fb)
+Instaluji balicky SharePoint Frameworku (npm ci, lokalne, bez admina; stovky MB, par minut)...
+[OK]      balicky nainstalovane. Dalsi krok: build
+rc=0

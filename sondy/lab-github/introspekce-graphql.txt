@@ -1,0 +1,18 @@
+# 2026-11-22 20:08:17  gh api graphql: Mutation fields (filtr)
+addEnterpriseOrganizationMember
+createEnterpriseOrganization
+grantEnterpriseOrganizationsMigratorRole
+inviteEnterpriseAdmin
+inviteEnterpriseMember
+removeEnterpriseOrganization
+revokeEnterpriseOrganizationsMigratorRole
+transferEnterpriseOrganization
+updateEnterpriseOrganizationProjectsSetting
+
+# CreateEnterpriseOrganizationInput
+clientMutationId
+enterpriseId
+login
+profileName
+billingEmail
+adminLogins

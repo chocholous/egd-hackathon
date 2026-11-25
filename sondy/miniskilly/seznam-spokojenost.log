@@ -1,0 +1,12 @@
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly:
+  - zalozit seznam "Spokojenost" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek
+[OK]      seznam "Spokojenost" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec Den
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "Spokojenost" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly/Lists/Spokojenost

@@ -1,0 +1,1 @@
+{"error":{"code":"invalidRequest","innerError":{"code":"badArgument"},"message":"Invalid hostname for this tenancy"}}

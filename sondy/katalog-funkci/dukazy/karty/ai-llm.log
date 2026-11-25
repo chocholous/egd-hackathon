@@ -1,0 +1,32 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[1.0s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/ai.aspx
+[4.0s] OK wait:3000  
+[12.6s] OK rozbal  
+8 zón
+[12.7s] OK fill:[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"] #evidence-nazev=Porucha klimatizace  
+[12.7s] OK fill:[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"] #evidence-popis=V dispečinku Brno hlásí klimatizace chybu E4, teplota přes 28 °C, technik nemůže pracovat u serverů, potřebujeme opravu do pátku.  
+[12.9s] OK click:[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"] #evidence-shrnout  
+[22.9s] OK wait:10000  
+[22.9s] OK eval:document.querySelector('[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"]').querySelector('#evidence-ai') ? document.querySelector('[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"]').querySelector('#evidence-ai').innerText : document.querySelector('[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"]').innerText.slice(0,800)  
+Návrh shrnutí: V dispečinku Brno hlásí klimatizace chybu E4 a teplota přes 28 °C, technik proto nemůže pracovat u serverů, proto potřebujeme opravu do pátku.
+[22.9s] OK eval:document.querySelector('[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"]').querySelector('#evidence-shrnout').scrollIntoView({block:'center'})  {"interrupted":false}
+[23.1s] OK shotv:01-egd09-shrnout  
+dukazy/karty/ai-llm/01-egd09-shrnout.png
+[23.1s] OK click:[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"] #evidence-shrnout  
+[31.1s] OK wait:8000  
+[31.1s] OK eval:document.querySelector('[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"]').querySelector('#evidence-ai') ? document.querySelector('[data-sp-web-part-id="4d0850fa-6cee-41a0-be2c-b0aac1ed61fb"]').querySelector('#evidence-ai').innerText : ''  
+Chyba AI: Dnešní limit AI pro appku je vyčerpaný. Zkuste to zítra.
+[31.2s] OK shotv:02-egd09-podruhe  
+dukazy/karty/ai-llm/02-egd09-podruhe.png
+[31.3s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  POST 200 https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat
+  POST 429 https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat

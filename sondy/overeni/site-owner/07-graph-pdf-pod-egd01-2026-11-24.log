@@ -1,0 +1,22 @@
+# 2026-11-24T10:31:27Z Graph ?format=pdf pod tokenem egd01 (ROPC, heslo ze secrets, nevypisuje se)
+## klient 42df0072-be8f-47a4-88b2-84f8b6ada0c6: token OK, scp: Files.ReadWrite.All Sites.ReadWrite.All profile openid email
+site: pavelchocholousgmail.sharepoint.com,3b17928e-96ce-4c0f-b88c-
+  upload sablona.docx: http=201 id=01NMKFLNXLKW6ELJC3UJEI3LTHNMZ2B7IN
+  convert sablona.docx: http=200 size=56937 time=0.958323s
+PDF document, version 1.7, 1 pages (zip 
+  upload xlsx-exceljs.xlsx: http=201 id=01NMKFLNT6GSKJAUW76NCYYBCJZPZYLJM3
+  convert xlsx-exceljs.xlsx: http=200 size=218187 time=1.431131s
+PDF document, version 1.7, 2 pages
+  upload pptx-pptxgenjs.pptx: http=201 id=01NMKFLNQAN5UKTLBATBHZM5ZPHUU2MDWG
+  convert pptx-pptxgenjs.pptx: http=200 size=263132 time=1.426097s
+PDF document, version 1.7, 3 pages
+## klient 953de580-40df-4b86-97d9-bd118be6a282: token OK, scp: Files.Read.All profile openid email
+site: pavelchocholousgmail.sharepoint.com,3b17928e-96ce-4c0f-b88c-
+  upload sablona.docx: http=403 id=—
+  upload xlsx-exceljs.xlsx: http=403 id=—
+  upload pptx-pptxgenjs.pptx: http=403 id=—
+## klient ac1ff591-098c-43fa-b451-1117430d9bd9: token OK, scp: Files.Read profile openid email
+site: accessDenied
+  upload sablona.docx: http=403 id=—
+  upload xlsx-exceljs.xlsx: http=403 id=—
+  upload pptx-pptxgenjs.pptx: http=403 id=—

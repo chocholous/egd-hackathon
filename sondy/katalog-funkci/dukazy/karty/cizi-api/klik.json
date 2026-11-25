@@ -1,0 +1,179 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/cizi-api.aspx",
+ "start": "2026-11-24T18:48:26.293Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 887,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 3894,
+   "vysledek": "4 zón",
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"229a4c9b-2eb7-4ecb-8bc1-27a8879e38db\"] [data-k=ares]",
+   "t": 9742,
+   "ok": true
+  },
+  {
+   "krok": "wait:6000",
+   "t": 9999,
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"229a4c9b-2eb7-4ecb-8bc1-27a8879e38db\"] [data-k=aressp]",
+   "t": 16001,
+   "ok": true
+  },
+  {
+   "krok": "wait:6000",
+   "t": 16072,
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"229a4c9b-2eb7-4ecb-8bc1-27a8879e38db\"] [data-k=meteo]",
+   "t": 22074,
+   "ok": true
+  },
+  {
+   "krok": "wait:6000",
+   "t": 22136,
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"229a4c9b-2eb7-4ecb-8bc1-27a8879e38db\"] [data-k=cnb]",
+   "t": 28139,
+   "ok": true
+  },
+  {
+   "krok": "wait:8000",
+   "t": 28208,
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"229a4c9b-2eb7-4ecb-8bc1-27a8879e38db\"] [data-k=docx]",
+   "t": 36210,
+   "ok": true
+  },
+  {
+   "krok": "wait:8000",
+   "t": 36270,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"229a4c9b-2eb7-4ecb-8bc1-27a8879e38db\"]').querySelector('#log').innerText",
+   "t": 44272,
+   "vysledek": "ARES: Škoda Auto a.s., tř. Václava Klementa 869, Mladá Boleslav II, 29301 Mladá Boleslav\nHOTOVO ares za 105 ms\nARES přes spHttpClient: status 200\nHOTOVO aressp za 81 ms\nBrno teď: 0.9 °C\nHOTOVO meteo za 125 ms\nCHYBA cnb: Error: ČNB nejde volat z prohlížeče (CORS). Původní chyba: TypeError: Failed to fetch\nuloženo /sites/egd-ukazky/Sdilene dokumenty/exporty/pozadavky.docx (9851 B)\nHOTOVO docx za 644 ms\n",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"229a4c9b-2eb7-4ecb-8bc1-27a8879e38db\"]').querySelector('#log').scrollIntoView({block:'center'})",
+   "t": 44276,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:01-egd09-cizi-api",
+   "t": 44278,
+   "vysledek": "dukazy/karty/cizi-api/01-egd09-cizi-api.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 547,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 630,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2085,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 4701,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 4776,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderby=ID%"
+  },
+  {
+   "t": 6117,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(8)/CommentsDisabledScope"
+  },
+  {
+   "t": 6193,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(8)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 10094,
+   "m": "GET",
+   "s": 200,
+   "u": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041"
+  },
+  {
+   "t": 16151,
+   "m": "GET",
+   "s": 200,
+   "u": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/00177041"
+  },
+  {
+   "t": 22260,
+   "m": "GET",
+   "s": 200,
+   "u": "https://api.open-meteo.com/v1/forecast?latitude=49.19&longitude=16.61&current=temperature_2m"
+  },
+  {
+   "t": 28277,
+   "m": "GET",
+   "s": "FAILED net::ERR_FAILED",
+   "u": "https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "error: Access to fetch at 'https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ' from origin 'https://pavelchocholousgmail.sharepoint.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+  "error: Failed to load resource: net::ERR_FAILED",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:49:10.664Z"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "konec": "2026-11-25T08:31:26Z",
+    "sku": "BUSINESS_PREMIUM_AND_MICROSOFT_365_COPILOT_FOR_BUSINESS",
+    "trial": true
+  },
+  {
+    "konec": null,
+    "sku": "FLOW_FREE",
+    "trial": false
+  },
+  {
+    "konec": "2026-11-25T10:37:06Z",
+    "sku": "AGENT_365",
+    "trial": true
+  },
+  {
+    "konec": "2026-11-25T03:04:00Z",
+    "sku": "SPE_E5",
+    "trial": true
+  }
+]

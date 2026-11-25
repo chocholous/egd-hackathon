@@ -1,0 +1,23 @@
+{
+  "nazev": "Díra 10: sdílení položky tlačítkem Sdílet (4.3 E)",
+  "stav": "hotovo",
+  "popis": "❌ Eva sdílet smí (Jakub dostal Přispívání), ale při ReadSecurity=2 položku nevidí ani přímo (404)",
+  "oblast": "lab",
+  "kdo": "lab-ucty",
+  "vystup": "lab/dukazy/sdileni-polozky/README.md",
+  "aktualizovano": "2026-11-24T02:28:29Z",
+  "zacatek": "2026-11-24T02:22:15Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-24T02:22:15Z",
+      "stav": "bezi",
+      "popis": "příprava seznamu ReadSecurity=2 na egd05-dev"
+    },
+    {
+      "t": "2026-11-24T02:28:29Z",
+      "stav": "hotovo",
+      "popis": "❌ Eva sdílet smí (Jakub dostal Přispívání), ale při ReadSecurity=2 položku nevidí ani přímo (404)"
+    }
+  ]
+}

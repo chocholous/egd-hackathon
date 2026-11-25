@@ -1,0 +1,75 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene%20dokumenty/Forms/AllItems.aspx",
+ "start": "2026-11-24T19:52:26.030Z",
+ "kroky": [
+  {
+   "krok": "wait:7000",
+   "t": 4641,
+   "ok": true
+  },
+  {
+   "krok": "shotv:knihovna",
+   "t": 11642,
+   "vysledek": "sondy/copilot-nativni/dukazy/p4/knihovna.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll('button,[role=button],[role=menuitem],a,[role=tab]')].map(b=>(b.getAttribute('aria-label')||b.innerText||'').trim()).filter(x=>x&&/copilot|agent|ask|summar|compare|autofill|knowledge/i.test(x)).join(' | ')",
+   "t": 11819,
+   "vysledek": "Copilot | Show Copilot actions for selected items | Show Copilot actions for this item | Show Copilot actions for this item | Show Copilot actions for this item | Copilot",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 2476,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserFirstRun.Experiences"
+  },
+  {
+   "t": 2630,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserFirstRun.Experiences"
+  },
+  {
+   "t": 2779,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate"
+  },
+  {
+   "t": 5984,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/2f654c60-8e32-4279-852c-1496d7589980/probe-tw-application-customizer_040a75dc34feeed7acee.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin at",
+  "warning: A preload for 'https://pavelchocholousgmail.sharepoint.com/sites/apps/ClientSideAssets/8165f3a2-3121-4a0d-a2cc-29d93d3c85b9/p-24-tw-application-customizer_6f4a4588f456ca2b9945.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin att",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nemptyFolder, emptyFolderWithDrop, AvailableOffline16, DefenderApp, OneDriveLogo, OutlookLogoInverse, OneNoteLogoInvers",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Failed to load resource: the server responded with a status of 404 ()"
+ ],
+ "konec": "2026-11-24T19:52:37.854Z"
+}

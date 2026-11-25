@@ -1,0 +1,99 @@
+ ● skill(egd-pripravenost)
+
+ $ Shell Identify system, shell, user, and preparation script 12 lines…
+   printf 'OS: '; uname -s; printf 'Shell: %s\n' "$SHELL"; printf 'User: '; whoami; printf 'Working
+   directory: '; pwd; printf '\nTool locations:\n'; command -v node || true; command -v npm || true;
+   command -v git || true; command -v gh || true; printf '\nPreparation script: '; test -f "/Users/c
+   hocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs"
+   && echo present || echo missing
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/prihlaseni.md 57 lines read
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/github.md 84 lines read
+
+ $ Shell Read preparation commands and check installed tools 40 lines…
+   node "/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pri
+   pravenost.mjs" --help && printf '\n--- NASTROJE ---\n' && node "/Users/chocholous/egd-e2e-copilot
+   /sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs" nastroje
+
+ $ Shell Check npm connectivity, Microsoft network access, and working variants 12 lines…
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; node "$S" npm; npm_rc=$?; node "$S" sit --host eonos.sharepoint.com; sit_rc=$?; node
+   "$S" varianty; variant_rc=$?; printf '\n[status] npm=%s sit=%s varianty=%s\n' "$npm_rc" "$sit_rc"
+   "$variant_rc"; exit 0
+
+ $ Shell Record selected setup variants and install Microsoft 365 CLI locally 8 lines…            9s
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; node "$S" zapis --klic varianta-pouzita-node --stav info --hodnota "1 uz je (Node
+   22.14+/24/26 v PATH)"; node "$S" zapis --klic varianta-pouzita-cli --stav info --hodnota "1 npm
+   lokalne v pracovni slozce"; node "$S" zapis --klic varianta-pouzita-prihlaseni --stav info
+   --hodnota "1 device code (appId je nutne dodat od IT)"; node "$S" cli-instalace
+
+ $ Shell Check GitHub sign-in, SPFx compatibility, and browser fallback paths 20 lines…
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; node "$S" github; node "$S" spfx; node "$S" prohlizec
+
+ $ Shell Record unverified prerequisites and generate readiness report 33 lines…
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; node "$S" zapis --klic appId --stav cervena --hodnota "appId aplikace se souhlasem
+   správce chybí; přihlášení do CLI nebylo spuštěno" --it "Prosím o appId registrované aplikace v
+   Entra ID tenantu E.ON, přes kterou se smím přihlásit nástrojem CLI for Microsoft 365 (device
+   code) k SharePointu; delegovaná oprávnění pro SharePoint a Microsoft Graph podle potřeby CLI se
+   souhlasem správce a povolené public client flows. Účel: nasazování SharePoint Framework aplikací
+   na můj web (workshop EG.D)."; node "$S" zapis --klic dev-web --stav zluta --hodnota "adresa DEV
+   webu nebyla zadána; nelze ověřit přístup, katalog ani seznamy" --it "Prosím o zřízení webů
+   SharePoint DEV / TEST / PROD pro workshop EG.D; po zřízení DEV webu prosím vlastník webu požádá
+   Product Team E.ON o site collection app catalog."; node "$S" zapis --klic zkouska --stav zluta
+   --hodnota "zkušební zápis přeskočen: chybí adresa DEV webu a výslovný souhlas"; node "$S" zapis
+   --klic copilot-licence --stav zluta --hodnota "licenci nebylo možné ověřit v přihlášeném VS Code
+   účtu ani na GitHubu" --it "Prosím o přidělení licence GitHub Copilot (Business) pro můj účet –
+   workshop vibecodingu EG.D 25. 11."; node "$S" zapis --klic github-test --stav zluta --hodnota "gh
+   není přihlášen; firemní GitHub host a Copilot licenci je třeba ověřit s IT a v prohlížeči" --it
+   "Prosím o přístup do firemní organizace GitHub Enterprise a licenci GitHub Copilot pro účastníka
+   workshopu EG.D; potřebuji adresu firemního GitHubu a možnost přihlášení přes SSO."; node "$S"
+   zapis --klic spfx-instalace --stav zluta --hodnota "Node 22.23.5 a generátor SPFx 1.24 jsou
+   kompatibilní/dostupné; zkušební instalace stovek MB nebyla spuštěna bez souhlasu"; node "$S"
+   zapis --klic browser-checks --stav zluta --hodnota "neověřeno v prohlížeči: DEV web, Power Apps,
+   Power Automate a licence Microsoft 365"; node "$S" zprava --jmeno chocholous
+
+ MD Read pripravenost-chocholous.md 99 lines read
+
+ / Search "(gh[pousr]_[A-Za-z0-9_]{20,}|eyJ[A-Za-z0-9_-]{20,}\.|password|heslo|token)"… 1 line found
+
+ / Search "cli-instalace|Instaluji|CLI for Microsoft 365" (~/.copilot/skills/egd-pr… 124 lines found
+
+ $ Shell Verify locally installed Microsoft 365 CLI version and location 5 lines…
+   npm ls --depth=0 --parseable 2>/dev/null; printf '\nLocal package metadata: '; node -e "try {
+   console.log(require('./node_modules/@pnp/cli-microsoft365/package.json').version) } catch (e) {
+   console.log('not present') }"; printf 'Global package metadata: '; npm root -g
+
+ $ Shell Confirm the installed local CLI is usable and report its version 13 lines…
+   printf 'Local CLI real path: '; realpath node_modules/@pnp/cli-microsoft365/dist/index.js; printf
+   'Local CLI metadata: '; node -e
+   "console.log(require('./node_modules/@pnp/cli-microsoft365/package.json').version)"; printf
+   'Local CLI runtime version: '; node node_modules/@pnp/cli-microsoft365/dist/index.js version
+   --output text; printf '\nTop-level package files:\n'; cat package.json
+
+ JS Read ~/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs L1:120 (120 lines read)
+
+ $ Shell Correct CLI version in the report using verified local installation 6 lines…
+   S="/Users/chocholous/egd-e2e-copilot/sandbox/home/.copilot/skills/egd-pripravenost/scripts/pripra
+   venost.mjs"; node "$S" zapis --klic cli-instalace --stav zelena --hodnota "CLI for Microsoft 365
+   v12.0.0 (ověřeno z lokálního node_modules; spouští se přes Node)"; node "$S" zprava --jmeno
+   chocholous
+
+ MD Read pripravenost-chocholous.md L1:20 (20 lines read)
+
+ / Search "(gh[pousr]_[A-Za-z0-9_]{20,}|github_pat_[A-Za-z0-9_]{20,}|Bearer[[:spac… No matches found
+
+Připravenost je **částečná**. Node, npm, síťové kontroly, CLI for Microsoft 365 a kompatibilita se SPFx vyšly; přihlášení ke GitHubu ani licenci Copilota se nepodařilo ověřit. Bez adresy DEV webu a appId nešlo ověřit SharePoint ani pokračovat k nasazení appky. Nic jsem do SharePointu nezapisoval.
+
+Zpráva s výsledky a požadavky pro IT je v ` /Users/chocholous/egd-e2e-copilot/sandbox/home/egd-workshop/pripravenost-chocholous.md` (bez mezery na začátku cesty). **Pošli prosím soubor Pavlovi.**
+
+Session exported to: /Users/chocholous/egd-e2e-copilot/sandbox/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 1.21 (1m 37s)
+Tokens     ↑ 484.4k (447.9k cached, 36.5k written) • ↓ 6.2k (3.6k reasoning)
+Resume     copilot --resume=85f31a58-6dbf-4ad4-9c5c-c1e8518548c9

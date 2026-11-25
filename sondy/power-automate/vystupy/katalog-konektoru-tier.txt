@@ -1,0 +1,1395 @@
+shared_sharepointonline Standard SharePoint
+shared_onedriveforbusiness Standard OneDrive for Business
+shared_salesforce Premium Salesforce
+shared_sql Premium SQL Server
+shared_dropbox Standard Dropbox
+shared_10to8 Standard 10to8 Appointment Scheduling
+shared_1docstop Premium 1DocStop
+shared_1mecorporate Premium 1Me Corporate
+shared_365training Premium 365 Training
+shared_3eevents Premium 3E Events
+shared_a365adminmcp Premium Microsoft 365 Admin Center MCP
+shared_a365copilotchatmcp Premium Work IQ Copilot MCP
+shared_a365memcp Premium Work IQ User MCP
+shared_a365outlookcalendarmcp Premium Work IQ Calendar MCP
+shared_a365outlookmailmcp Premium Work IQ Mail MCP
+shared_a365teamsmcp Premium Work IQ Teams MCP
+shared_a365wordmcp Premium Work IQ Word MCP
+shared_aadinvitationmanager Premium Microsoft Entra ID Identity and Access
+shared_abbreviationsip Premium Abbreviations
+shared_absentify Premium absentify
+shared_abstractcompanyenric Premium Abstract Company Enrichment (Independent Publisher)
+shared_abstractemailvalidat Premium Abstract Email Validator (Independent Publisher)
+shared_abstractexchangerate Premium Abstract Exchange Rates (Independent Publisher)
+shared_abstractholidays Premium Abstract Holidays (Independent Publisher)
+shared_abstractibanvalidato Premium Abstract IBAN Validator (Independent Publisher)
+shared_abstractipgeolocatio Premium Abstract IP Geolocation (Independent Publisher)
+shared_abstractphonevalidat Premium Abstract Phone Validator (Independent Publisher)
+shared_abstracttimezones Premium Abstract Timezones (Independent Publisher)
+shared_abstractvatvalidator Premium Abstract VAT Validator (Independent Publisher)
+shared_acceptmission Premium AcceptMission
+shared_aci Premium Azure Container Instance
+shared_acl Premium Azure Confidential Ledger
+shared_acschat Premium Azure Communication Chat
+shared_acsemail Premium Azure Communication Email
+shared_acsidentity Premium Azure Communication Services Identity
+shared_acssmsevents Premium Azure Communication Services SMS Events
+shared_act Standard Act!
+shared_activityinfo Premium ActivityInfo
+shared_actsoft Premium TeamWherx
+shared_acumatica Premium Acumatica
+shared_addresslabs Premium Address Labs (Independent Publisher)
+shared_adobeacrobatknowledg Premium Adobe Acrobat Knowledge Base
+shared_adobeacrobatsignsand Standard Adobe Acrobat Sign Sandbox
+shared_adobecommerce Premium Adobe Commerce
+shared_adobecreativecloud Premium Adobe Creative Cloud
+shared_adobeexperiencemanag Premium Adobe Experience Manager
+shared_adobepdftools Premium Adobe PDF Services
+shared_adobesign Standard Adobe Acrobat Sign
+shared_adomcpserver Premium Azure DevOps MCP
+shared_adpemployeeselfservi Premium ADP Employee Self-Service
+shared_adpmcp Premium ADP® MCP
+shared_advanceddataoperatio Premium Advanced Data Operations
+shared_aexum Premium Aexum
+shared_affinitymcp Premium Affinity MCP
+shared_africastalkingairtime Premium Africa's Talking Airtime
+shared_africastalkingsms Premium Africa's Talking SMS
+shared_africastalkingvoice Premium Africa's Talking Voice
+shared_agent365mcpserver Premium Agent 365 MCP Server
+shared_agentsdk Standard Agent SDK
+shared_agilepointnx Premium AgilePoint NX
+shared_agilite Premium Agilite
+shared_ahead Standard Ahead
+shared_aheadintranet Premium Ahead (Intranet)
+shared_ahrefsmcp Premium Ahrefs
+shared_aiforged Premium AIForged
+shared_aikidocs Premium AikiDocs
+shared_aiornot Premium AI or Not (Independent Publisher)
+shared_airmeet Premium Airmeet
+shared_airslate Premium airSlate
+shared_aiteamsmaestro Premium AI TeamsMaestro
+shared_akeylesssecretsmanag Premium Akeyless Secrets Manager
+shared_alchemy Premium Microsoft 365 Self-Help
+shared_alembaitsm Premium Alemba ITSM
+shared_alertrelay Premium Alert Relay
+shared_aletheia Premium Aletheia
+shared_aliru Premium Ally
+shared_alisqi Premium AlisQI
+shared_alkymi Premium Alkymi
+shared_allgeo Premium allGeo
+shared_almabase Premium Almabase
+shared_almanac Premium Almanac (Independent Publisher)
+shared_almanacbypassby Premium Almanac by PassBy
+shared_alvao Premium ALVAO
+shared_amazonredshift Premium Amazon Redshift
+shared_amazons3 Premium Amazon S3
+shared_amazons3bucket Premium Amazon S3 Bucket (Independent Publisher)
+shared_amazonsqs Premium Amazon SQS
+shared_ancoremateapps Premium ancoreMate Apps
+shared_ancoremateautomation Premium ancoreMate Automations
+shared_ancorematecatalog Premium ancoreMate Catalog
+shared_ancorematecontent Premium ancoreMate Content
+shared_ancorematereloads Premium ancoreMate Reloads
+shared_ancorematespacesanda Premium ancoreMate Spaces and Access
+shared_annatureip Premium Annature (Independent Publisher)
+shared_anttextautomation Premium Ant Text Automation
+shared_anyrunthreatintellig Premium ANY.RUN Threat Intelligence
+shared_apify Premium Apify
+shared_apollo Premium Apollo
+shared_appfigures Standard Appfigures
+shared_applicationinsights Premium Azure Application Insights
+shared_apppowerforms Premium App Power Forms
+shared_approvals Standard Standard approvals
+shared_appsforops Premium AppsForOps Timeline
+shared_appstoreconnect Premium App Store Connect - App Store (Independent Publisher)
+shared_appstudioapi Premium Cloud Connect Studio
+shared_apptigentcloudtools Premium CloudTools for Salesforce
+shared_apptigentpowertoolslite Premium Apptigent PowerTools LITE
+shared_apptigentpowertoolspro Premium Apptigent PowerTools
+shared_apyhubdocumentreadability Premium ApyHub Document Readability (Independent Publisher)
+shared_apyhubgenerateical Premium ApyHub Generate iCal (Independent Publisher)
+shared_aquaforest Premium Aquaforest PDF
+shared_arandaservicemanagem Premium Aranda Service Management
+shared_arcgis Premium ArcGIS
+shared_arcgisenterprise Premium ArcGIS Enterprise
+shared_arcgispaas Premium ArcGIS PaaS
+shared_ariabyconvosight Premium Aria by Convosight
+shared_arm Premium Azure Resource Manager
+shared_asana Standard Asana
+shared_asdr Premium AutoSeller
+shared_asite Premium Asite
+shared_asitecanada Premium Asite (Canada)
+shared_asitehongkong Premium Asite (Hong Kong)
+shared_asiteksa Premium Asite (KSA)
+shared_asiteuae Premium Asite (UAE)
+shared_asiteusgov Premium Asite (US Gov.)
+shared_aspsms Premium ASPSMS
+shared_assemblyai Premium AssemblyAI
+shared_assentlyesign Premium Assently E-Sign
+shared_assistantstudiov2 Premium Dynamics 365 Sales Insights
+shared_audioscrape Premium Audioscrape
+shared_autentiesignaturewor Premium Autenti E-Signature Workflow
+shared_authbinder Premium AuthBinder
+shared_autodeskforgedataexc Premium Autodesk Data Exchange
+shared_autoreview Premium AutoReview
+shared_avepointcloudgovernance Premium AvePoint Cloud Governance
+shared_aweber Premium AWeber
+shared_axtensioncontentgate Premium Content Gate
+shared_azuread Standard Microsoft Entra ID
+shared_azureadapplications Premium Microsoft Entra ID App Registrations
+shared_azureadip Premium Microsoft Entra ID Protection
+shared_azureagentservice Standard Azure AI Foundry Agent Service
+shared_azureaifoundryinference Standard Azure AI Foundry Inference
+shared_azureaisearch Premium Azure AI Search
+shared_azureaisearchfoundryiq Standard Azure - Foundry IQ
+shared_azureappservice Premium Azure App Service
+shared_azureautomation Premium Azure Automation
+shared_azureblob Premium Azure Blob Storage
+shared_azurecommunicationservicessms Premium Azure Communication Services SMS
+shared_azuredatafactory Premium Azure Data Factory
+shared_azuredatalake Premium Azure Data Lake
+shared_azuredigitaltwins Standard Azure Digital Twins
+shared_azureeventgrid Premium Azure Event Grid
+shared_azureeventgridpublish Premium Azure Event Grid Publish
+shared_azurefile Premium Azure File Storage
+shared_azureiotcentral Premium Azure IoT Central V3
+shared_azureloganalytics Premium Azure Log Analytics
+shared_azureloganalyticsdatacollector Premium Azure Log Analytics Data Collector
+shared_azuremaps Standard Azure Maps
+shared_azuremonitorlogs Premium Azure Monitor Logs
+shared_azuremonitorlogsingestion Premium Azure Monitor Logs Ingestion
+shared_azuremysql Premium Azure Database for MySQL
+shared_azureopenai Premium Azure OpenAI
+shared_azurequeues Premium Azure Queues
+shared_azurespeechpronuncia Premium Azure Speech Pronunciation Assessment
+shared_azuretables Premium Azure Table Storage
+shared_azuretexttospeech Premium Azure Text to speech
+shared_azurevm Premium Azure VM
+shared_basecamp Standard Basecamp 3
+shared_basecamp2 Standard Basecamp 2
+shared_bastiongpt Premium BastionGPT
+shared_beauhurst Premium Beauhurst (Independent Publisher)
+shared_benchmarkemail Premium Benchmark Email
+shared_benifex Premium Benifex
+shared_bentley Standard ProjectWise Design Integration
+shared_bernieportal Premium BerniePortal
+shared_bidintelligence Premium Bid Intelligence
+shared_bigcommerce Premium BigCommerce
+shared_bigdatacom Premium Bigdata-com
+shared_bigmindmcp Premium Bigmind
+shared_billconverterbypower Premium BILL Converter by Power2Apps
+shared_billspls Premium BillsPLS
+shared_bingmaps Standard Bing Maps
+shared_bingsearch Standard Bing Search
+shared_bitbucket Premium Bitbucket
+shared_bitly Standard Bitly
+shared_bitskout Premium Bitskout
+shared_bitvorecellenus Premium Bitvore Cellenus
+shared_biztalk Standard BizTalkServer
+shared_bizzy Standard AtBot Logic
+shared_bizzyadmin Standard AtBot Admin
+shared_blackbaudaltruconsti Premium Blackbaud Altru Constituent
+shared_blackbaudchurchmanag Premium Blackbaud Church Management
+shared_blackbaudconstituent Premium Blackbaud Raisers Edge NXT Constituents
+shared_blackbaudcrmconstitu Premium Blackbaud CRM Constituent
+shared_blackbaudcrmprospect Premium Blackbaud CRM Prospect
+shared_blackbauddocuments Premium Blackbaud Raisers Edge NXT Documents
+shared_blackbaudevents Premium Blackbaud Raisers Edge NXT Events
+shared_blackbaudfenxtgenera Premium Blackbaud FENXT General Ledger
+shared_blackbaudfenxtpayabl Premium Blackbaud FENXT Payable
+shared_blackbaudfenxtquery Premium Blackbaud FENXT Query
+shared_blackbaudfundraising Premium Blackbaud Raisers Edge NXT Fundraising
+shared_blackbaudgifts Premium Blackbaud RENXT Gifts
+shared_blackbaudinteraction Premium Blackbaud Raisers Edge NXT Interactions
+shared_blackbaudlists Premium Blackbaud Raisers Edge NXT Lists
+shared_blackbaudmerchantser Premium Blackbaud Merchant Services
+shared_blackbaudprospects Premium Blackbaud Raisers Edge NXT Prospects
+shared_blackbaudraisersedge Premium Blackbaud Raisers Edge NXT
+shared_blackbaudrenxtimport Premium Blackbaud RENXT Import
+shared_blackbaudrenxtquery Premium Blackbaud RENXT Query
+shared_blackbaudrenxtreport Premium Blackbaud RENXT Reports
+shared_blackbaudrenxtvolunt Premium Blackbaud RENXT Volunteer
+shared_blackbaudskyaddins Premium Blackbaud SKY Add-ins
+shared_blockchaincorda Premium Corda Blockchain
+shared_blockchainethereum Premium Ethereum Blockchain
+shared_blogger Standard Blogger
+shared_bloomflow Premium Bloomflow
+shared_blueink Premium BlueInk
+shared_blueskysocial Premium Bluesky Social (Independent Publisher)
+shared_boardmark Premium BoardMark
+shared_boldsign Premium BoldSign
+shared_boomappconnect Premium boomapp connect
+shared_box Standard Box
+shared_boxmcpserver Premium Box MCP Server
+shared_bravesearch Premium Brave Search (Independent Publisher)
+shared_briefcase Premium Briefcase
+shared_bttn Standard bttn
+shared_bttnone Premium Bttn ONE
+shared_bucsanalytics Premium BUCS Analytics
+shared_buffer Standard Buffer
+shared_buildingminds Premium BuildingMinds DigitalTwin Core
+shared_bulksms Premium BulkSMS
+shared_businessassist Premium Business Assist
+shared_businessbox Premium Business Box
+shared_businessmapmcp Premium Businessmap MCP
+shared_businessratechecker Premium BusinessRateChecker
+shared_buzz Premium Buzz
+shared_byword Premium Byword (Independent Publisher)
+shared_calculateworkingday Premium Calculate Working Day
+shared_calendarpro Premium Calendar Pro
+shared_calendly Premium Calendly (legacy)
+shared_calendlyv2 Premium Calendly
+shared_campfire Standard Campfire
+shared_candidatezip Premium CandidateZip Resume/Job Parser
+shared_capsulecrm Premium Capsule CRM
+shared_captisaforms Premium Captisa Forms
+shared_carbonedocumentgener Premium Carbone - Document Generator
+shared_cardplatform Premium CardPlatform Adaptive Cards
+shared_cascade Premium Cascade
+shared_cascadestrategynew Premium Cascade Strategy New
+shared_casper365 Premium Casper365 for Education
+shared_cbblockchainseal Premium CB Blockchain Seal
+shared_cdataconnectai Premium CData Connect AI
+shared_cdkdrivecustomer Premium CDK Drive Customer
+shared_cdkdriveservicevehicles Premium CDK Drive Service Vehicles
+shared_cdkeleadproductreferencedata Premium Elead Product Reference Data
+shared_cdkeleadsalescustomers Premium Elead Sales Customers
+shared_cdkeleadsalesopportunities Premium Elead Sales Opportunities
+shared_celonis Premium Celonis
+shared_celonismcpserver Premium Celonis MCP Server
+shared_centralmcp Premium Central MCP
+shared_centrical Premium Centrical
+shared_certinalesign Premium Certinal eSign
+shared_certopus Premium Certopus
+shared_certyneo Premium Certyneo
+shared_cgtrader Premium CGTrader
+shared_chainpointnode Premium Chainpoint
+shared_chatter Premium Chatter
+shared_cimcp Premium D365 Customer Insights MCP
+shared_cioplenu Premium cioplenu
+shared_ciresonservicemanage Premium Cireson Service Manager Portal
+shared_ciscowebexmeetings Standard Cisco Webex Meetings
+shared_ciscoworkspaces Premium Cisco Workspaces
+shared_civicplustransform Premium CivicPlus Transform
+shared_clarifymcp Premium Clarify CRM
+shared_classwise Premium ClassWise
+shared_clevertap Premium CleverTap
+shared_clicksendpostcards Premium ClickSend Postcards
+shared_clicksendsms Premium ClickSend
+shared_clinicaltrials Premium Clinical Trials (Independent Publisher)
+shared_cloudappsecurity Standard Defender for Cloud Apps
+shared_cloudbot Premium Cloud BOT
+shared_cloudconvert Premium CloudConvert
+shared_cloudfactory Premium Cloud Factory
+shared_cloudmersive Premium Cloudmersive Virus Scan
+shared_cloudmersivebarcode Premium Cloudmersive Barcode
+shared_cloudmersivecdr Premium Cloudmersive CDR
+shared_cloudmersiveconvert Premium Cloudmersive Document Conversion
+shared_cloudmersivecurrency Premium Cloudmersive Currency
+shared_cloudmersivedv Premium Cloudmersive Data Validation
+shared_cloudmersivefileproc Premium Cloudmersive File Processing
+shared_cloudmersiveimagepr Premium Cloudmersive Image Processing
+shared_cloudmersivenlp Premium Cloudmersive NLP
+shared_cloudmersivepdf Premium Cloudmersive PDF
+shared_cloudmersivesecurity Premium Cloudmersive Security
+shared_cloudmersivevideoandmedia Premium Cloudmersive Video and Media
+shared_cluedin Premium CluedIn
+shared_cmi Premium CMI
+shared_cobblestonecontracti Premium CobbleStone - Contract Insight
+shared_cognitedatafusionblu Premium Cognite Data Fusion
+shared_cognitiveservicescomputervision Standard Computer Vision API
+shared_cognitiveservicescontentmoderator Standard Content Moderator
+shared_cognitiveservicescustomvision Standard Custom Vision
+shared_cognitiveservicesqnamaker Standard QnA Maker
+shared_cognitiveservicesspe Standard Azure Batch Speech-to-text
+shared_cognitiveservicestextanalytics Standard Azure Cognitive Service for Language
+shared_cognitoforms Standard Cognito Forms
+shared_cognizantautomationc Premium Cognizant Automation Center
+shared_cohesitygaia Premium Cohesity Gaia
+shared_cohesitygaiamcp Premium Cohesity Gaia MCP
+shared_commercemerchandising Premium Dynamics 365 Commerce Merchandising
+shared_commercientcpq Premium Commercient
+shared_commondataservice Premium Microsoft Dataverse
+shared_commondataserviceforapps Premium Microsoft Dataverse
+shared_communitycliqagent Premium CommunitycliQ Agent
+shared_composerbytachytelic Premium Composer by Tachytelic
+shared_confluence Standard Confluence
+shared_connect2all Premium Connect2All
+shared_connect2allonpremises Premium Connect2All on-premises
+shared_connectiveesignatures Premium Connective eSignatures
+shared_connectwisepsa Premium ConnectWise PSA (Independent Publisher)
+shared_connpassip Premium connpass (Independent Publisher)
+shared_consumercomplaints Premium Consumer Complaints (Independent Publisher)
+shared_contactspro Premium Contacts Pro
+shared_contentmanagerpowerc Premium Content Manager Power Connect
+shared_contentsquaremcp Premium Contentsquare
+shared_contentunderstanding Standard Azure AI Content Understanding
+shared_contextsmsmcp Premium ContextSMS MCP
+shared_continuum Premium Continuum
+shared_contosohub Premium Contoso Hub
+shared_conversionservice Standard Content Conversion
+shared_converterbypower2apps Premium Converter by Power2Apps
+shared_convinceiq Premium ConvinceIQ
+shared_copilotflow Premium Generative actions
+shared_copilotforfinance Standard Copilot for Finance
+shared_copilotforsales Premium Copilot for Sales
+shared_copilotforservice Premium Copilot for Service extension (preview)
+shared_copyaiip Premium Copy.ai
+shared_cornerstonelearningv Premium Cornerstone Learning vILT
+shared_corptaxsandbox Premium CSC Corptax
+shared_cortellisregulatorymcp Premium Cortellis Regulatory Intel
+shared_cosmobot Premium COSMO Bot
+shared_coveo Premium Coveo
+shared_cpqsync Premium CPQSync
+shared_cradlai Premium Cradl AI
+shared_crmbot Premium CRM Bot
+shared_cronofymcp Premium Cronofy MCP
+shared_crossbeam Premium Crossbeam
+shared_csvconverterbypower2 Premium CSV Converter by Power2Apps
+shared_ctwo Premium C TWO
+shared_customerinsights Premium Dynamics 365 Customer Insights
+shared_customerintelligence Premium Customer Intelligence-Saifs AI
+shared_customjs Premium CustomJS
+shared_cxcardsbysurveyapp Premium CX Cards by Surveyapp
+shared_cyberday Premium Cyberday
+shared_d365contactcenteradminmcpserver Premium D365 Contact Center Admin MCP
+shared_d365contactcentermcpserver Premium Dynamics365 Contact Center MCP
+shared_d365customerservicemcpserver Premium Dynamics 365 MCP Server
+shared_d365cxcustomerinsightsmcpserver Premium D365 CX Customer Insights MCP
+shared_d365cxmcpserver Premium D365 CX MCP Server
+shared_d365cxsalesmcpserver Premium D365 CX Sales MCP Server
+shared_d365cxservicemcpserver Premium D365 CX Service MCP Server
+shared_d365cxwemmcpserver Premium D365 CX WEM MCP Server
+shared_d365salesmcpserver Premium Dynamics 365 Sales MCP Server
+shared_d7messaging Premium D7Messaging
+shared_d7sms Premium D7SMS
+shared_dadjokes Premium Dad Jokes (Independent Publisher)
+shared_data8 Premium Data8 Data Enrichment
+shared_dataactivator Premium Data Activator
+shared_dataactivatorpreview Premium Data Activator Early Access
+shared_datablend Premium Datablend
+shared_databookc4s Premium Databook C4S
+shared_databoxip Premium Databox (Independent Publisher)
+shared_databricks Premium Azure Databricks
+shared_databricksinc Premium Databricks
+shared_dataflows Standard Power Query Dataflows
+shared_dataflowssms Premium DataFlows SMS
+shared_datascopeforms Premium DataScope Forms
+shared_datassentialmcp Premium Datassential MCP
+shared_dayforcehcm Premium Dayforce HCM
+shared_db2 Premium DB2
+shared_dbftoxmlconverter Premium DBF2XML
+shared_deckofcards Premium Deck of Cards (Independent Publisher)
+shared_deepboxsign Premium DeepSign
+shared_deepgram Premium Deepgram (Independent Publisher)
+shared_deepl Premium DeepL
+shared_deeptree Premium DeepTree
+shared_defendersoc Premium Microsoft Defender SOC
+shared_deltekcostpoint Premium Deltek Costpoint
+shared_demandforecasting Premium Demand Forecasting
+shared_desk365 Premium Desk365
+shared_deskdirector Premium DeskDirector
+shared_diffcheckerip Premium Diffchecker
+shared_digileanconnect Premium DigiLEAN Connect
+shared_dimescheduler Premium Dime.Scheduler (on-prem)
+shared_dimeschedulerv2 Premium Dime.Scheduler
+shared_directcaselegalresea Premium DirectCase Legal Research
+shared_disqus Standard Disqus
+shared_docfusion365 Premium DocFusion365 – SP
+shared_docjuris Premium DocJuris
+shared_docparser Premium Docparser
+shared_docq Premium }exghts gen. Document & more
+shared_doctopdf Premium Doc To PDF
+shared_docugami Premium Docugami
+shared_docugenerate Premium DocuGenerate
+shared_documentai Premium Document AI
+shared_documentaikonfuzio Premium Document AI Konfuzio
+shared_documentdb Premium Azure Cosmos DB
+shared_documentdrafter Premium Document Drafter
+shared_documentero Premium Documentero
+shared_documentmerge Premium Document Merge
+shared_documentscorepackapi Premium DocumentsCorePack
+shared_documentscorepackfor Premium DocumentsCorePack for BC
+shared_documotor Premium DocuMotor
+shared_docurain Premium Docurain
+shared_docusign Standard Docusign
+shared_docusigndemo Standard Docusign Demo
+shared_docusignmcp Premium Docusign MCP
+shared_docusignmcpdemo Premium Docusign MCP Demo
+shared_docuware Premium DocuWare
+shared_dokobitportal Premium Dokobit Portal
+shared_dokobituniversalapi Premium Dokobit Universal API
+shared_domaintoolsirisenric Premium DomainTools Iris Enrich
+shared_domaintoolsirisinves Premium DomainTools Iris Investigate
+shared_doppler Premium Doppler Farhan Latif (Independent Publisher)
+shared_dox42 Premium dox42
+shared_doyouok Premium Doyouok
+shared_dqondemand Premium DQ on Demand
+shared_draup Premium Draup
+shared_draupmcpserver Premium Draup MCP Server
+shared_dunandbradstreetmcps Premium Dun and Bradstreet MCP Server
+shared_durationcalculator Premium Duration Calculator (Independent Publisher)
+shared_dvelop Premium d.velop
+shared_dvlavehicleenquiryse Premium DVLA Vehicle Enquiry Service (Independent Publisher)
+shared_dynamics365ratingsre Premium Dynamics 365 Commerce - Ratings and Reviews
+shared_dynamicsax Premium Fin & Ops Apps (Dynamics 365)
+shared_dynamicsignal Premium Dynamic Signal
+shared_dynamicsnavision Premium Dynamics NAV
+shared_dynamicssmbonprem Premium Dynamics 365 Business Central (on-premises)
+shared_dynamicssmbsaas Premium Dynamics 365 Business Central
+shared_dynamicstranslations Premium Dynamics Translation Service
+shared_dynatrace Premium Dynatrace
+shared_easypostdocumentatio Premium EasyPost Mail
+shared_easyredmine Premium Easy8
+shared_easyvista Premium EasyVista Service Manager
+shared_easyvistaselfhelp Premium Easyvista Self Help
+shared_easyvistaservicemana Premium EasyVista Service Manager
+shared_ebms Premium EBMS
+shared_ecfr Premium eCFR (Independent Publisher)
+shared_ecode360 Premium eCode360 (Independent Publisher)
+shared_edenai Premium Eden AI
+shared_edgility Premium Edgility
+shared_eduframe Premium Eduframe
+shared_egain Premium Egain
+shared_egnyte Premium Egnyte
+shared_egnytemcpserver Premium Egnyte MCP Server
+shared_egoi Premium E-goi
+shared_eigenevents Premium Eigen Events
+shared_elasticocr Standard ElasticOCR
+shared_elasticsearchmcptool Premium Elasticsearch MCP Tools
+shared_elfsquad Premium Elfsquad Product Configurator
+shared_elfsquaddata Premium Elfsquad Data
+shared_emaildomainchecker Premium Email Domain Checker
+shared_emailveritasurlcheck Premium Email Veritas – URL Checker
+shared_emfluencemp Premium emfluence Marketing Platform
+shared_emigo Premium Emigo
+shared_empiriolabsai Premium EmpirioLabs AI
+shared_emtatlasaims Premium EMT ATLAS AIMS
+shared_encodianbarcode Standard Encodian - Barcode
+shared_encodianconvert Standard Encodian - Convert
+shared_encodiandocumentmanager Standard Encodian
+shared_encodianexcel Standard Encodian - Excel
+shared_encodianfiler Standard Mizorix Filer
+shared_encodiangeneral Standard Encodian - General
+shared_encodianimage Standard Encodian - Image
+shared_encodianpdf Standard Encodian - PDF
+shared_encodianpowerpoint Standard Encodian - PowerPoint
+shared_encodiantrigr Standard Encodian - Sign
+shared_encodianutilities Standard Encodian - Utilities
+shared_encodianword Standard Encodian - Word
+shared_engagementcloud Premium Engagement Cloud
+shared_enlyftforcopilot Premium Enlyft Insights
+shared_enosixarnoldcopilotc Premium Enosix arnold™ Copilot Cowork
+shared_entegrations Premium Entegrations.io
+shared_entersoft Premium Entersoft
+shared_entraidpasswordreset Premium Entra ID Password Reset (Independent Publisher)
+shared_enveloop Premium Enveloop (Independent Publisher)
+shared_envoy Premium Envoy
+shared_esign Premium E-Sign
+shared_eventbrite Premium Eventbrite
+shared_eventhubs Premium Event Hubs
+shared_eventtia Premium Eventtia
+shared_eventtickets Premium Event Tickets
+shared_evocom Premium Evocom
+shared_ewaycrm Premium eWay-CRM
+shared_exactonlinepremium Premium Exact Online Premium
+shared_exasol Premium Exasol
+shared_excel Standard Excel
+shared_excelonline Standard Excel Online (OneDrive)
+shared_excelonlinebusiness Standard Excel Online (Business)
+shared_expensya Premium Expensya
+shared_expensyamanagement Premium Expensya Management
+shared_experlogixcpq Premium Experlogix CPQ
+shared_experlogixsmartflows Premium Experlogix Smart Flows
+shared_expirationreminder Standard Expiration Reminder
+shared_expocad Premium EXPOCAD
+shared_ezekiamcp Premium Ezekia-MCP
+shared_faanotam Premium FuseLagNotam1.1 (Independent Publisher)
+shared_fabriciqmcpserver Premium Fabric IQ Ontology MCP
+shared_faceapi Standard Face API
+shared_factset Premium FactSet
+shared_fantasypremierleagueip Premium Fantasy Premier League (Independent Publisher)
+shared_farsightdnsdb Premium Farsight DNSDB
+shared_fbimostwanted Premium FBI Most Wanted (Independent Publisher)
+shared_featheryforms Premium Feathery Forms
+shared_featheryip Premium Feathery
+shared_federalreservemarkets Premium Federal Reserve Markets (Independent Publisher)
+shared_fema Premium FEMA (Independent Publisher)
+shared_fhirbase Premium FHIRBase
+shared_fhirclinical Premium FHIRClinical
+shared_fhirlink Premium FHIRlink
+shared_fieldequip Premium FieldEquip
+shared_filescom Premium Files.com
+shared_filesystem Standard File System
+shared_finalcadoneconnect Premium Finalcad One Connect 4.0
+shared_financialconductauth Premium FCA (Independent Publisher)
+shared_financialedgenxtquer Premium Financial Edge NXT Query
+shared_finra Premium FINRA (Independent Publisher)
+shared_firefliesmcp Premium Fireflies
+shared_firetext Premium FireText
+shared_fiscaldataservice Premium Fiscal Data Service (Independent Publisher)
+shared_fitbit Premium Fitbit (Independent Publisher)
+shared_flexportmcp Premium Flexport MCP
+shared_flic Standard Flic
+shared_fliplet Premium Fliplet
+shared_flotiqheadlesscms Premium Flotiq headless CMS
+shared_flowforma Premium FlowForma
+shared_flowformav2 Premium FlowForma V2
+shared_flowmanagement Standard Power Automate Management
+shared_flowpush Standard Notifications
+shared_fluidkinnectorzforpr Premium Fluid Kinnectorz for Procore
+shared_folderitdms Premium Folderit DMS
+shared_forcamforcebridge Premium FORCAM FORCE Bridge
+shared_forcemanagercrm Premium ForceManager CRM
+shared_formfeed Premium Formfeed
+shared_formrecognizer Standard Azure AI Document Intelligence (form recognizer)
+shared_formspace Premium Formspace
+shared_formstackforms Premium Formstack Forms
+shared_foxinsights Premium FoxInsights
+shared_foxitesign Premium Foxit eSign
+shared_freshbooks Premium FreshBooks
+shared_freshdesk Standard Freshdesk
+shared_freshservice Premium Freshservice
+shared_ftp Standard FTP
+shared_fulcrum Premium Fulcrum
+shared_fullenrich Premium FullEnrich
+shared_fuxsyautodeskfusionm Premium Fuxsy-ADSKFusionManagePaid (Independent Publisher)
+shared_geotax Premium Pitney Bowes Tax Calculator
+shared_germanfederalparliament Premium German Federal Parliament (Independent Publisher)
+shared_gestioo Premium Send to Gestioo
+shared_getaccept Premium GetAccept
+shared_getmyinvoices Premium GetMyInvoices
+shared_getwhysmcp Premium GetWhys MCP
+shared_gienitsservermcp Premium Gieni TS Server MCP
+shared_giscloud Premium GIS Cloud
+shared_github Standard GitHub
+shared_glaasspro Premium Glaass Pro
+shared_globaldatabasecopilo Premium Global Database (Copilot)
+shared_globalexchangerates Premium Global Exchange Rates
+shared_globalsourcepartners Premium GlobalSource Partners
+shared_gmosign Premium GMO Sign
+shared_gofileroom Standard GoFileRoom
+shared_goformz Premium GoFormz
+shared_gong Premium Gong
+shared_googlecalendar Standard Google Calendar
+shared_googlecontacts Standard Google Contacts
+shared_googledrive Standard Google Drive
+shared_googlegemini Premium Google Gemini (Independent Publisher)
+shared_googlepalm Premium Google PaLM (Independent Publisher)
+shared_googlesheet Standard Google Sheets
+shared_googletasks Standard Google Tasks
+shared_gotomeeting Premium GoToMeeting
+shared_gototraining Premium GoToTraining
+shared_gotowebinar Premium GoToWebinar
+shared_govee Premium Govee (Independent Publisher)
+shared_grainmcp Premium Grain
+shared_gratavid Premium Gratavid
+shared_gravityformsbyreenhanced Premium Gravity Forms by reenhanced
+shared_gravityformsprofessi Premium Gravity Forms Professional
+shared_gravitysms Premium Gravity SMS
+shared_groopit Premium Groopit
+shared_gsaanalytics Premium GSA Analytics (Independent Publisher)
+shared_gsaperdiem Premium GSA Per Diem (Independent Publisher)
+shared_gsapubliccomment Premium GSA Public Comment (Independent Publisher)
+shared_gsasitescanning Premium GSA Site Scanning (Independent Publisher)
+shared_gscwizard Premium GSC Wizard
+shared_harnesspdfx Premium Harness PDFx
+shared_hashgeneratorip Premium Hash Generator (Independent Publisher)
+shared_haystack Premium Haystack
+shared_hellosign Premium HelloSign
+shared_hginsightsmcp Premium HG Insights Connect
+shared_hhsmediaservices Premium HHS Media Services (Independent Publisher)
+shared_highgearworkflow Premium HighGear Workflow
+shared_highq Premium HighQ
+shared_highspotforsalescopi Premium Highspot
+shared_highspotmcptestjan20 Premium Highspot MCP
+shared_hipchat Standard HipChat
+shared_hithorizons Premium HitHorizons
+shared_hivecpqproductconfig Premium Hive CPQ Product Configurator
+shared_holopinip Premium Holopin
+shared_honeywellforge Premium Honeywell Forge
+shared_hostio Premium Host.io (Independent Publisher)
+shared_hotprofile Premium HotProfile
+shared_houdinio Premium Houdin.io
+shared_houseraterqa Premium HouseRater QA
+shared_hrcloud Premium HR Cloud
+shared_hrflowai Premium HrFlow.ai
+shared_htmltopdfconverter Premium HTML to PDF by Pascalcase
+shared_hubspotcmsv2 Premium HubSpot CMS V2 (Independent Publisher)
+shared_hubspotconversations Premium HubSpot Conversations V2 (Independent Publisher)
+shared_hubspotcrmv2 Premium HubSpot CRM V2 (Independent Publisher)
+shared_hubspotengagementsv2 Premium HubSpot Engagements V2 (Independent Publisher)
+shared_hubspotfilesv2 Premium HubSpot Files V2 (Independent Publisher)
+shared_hubspotmarketingv2 Premium HubSpot Marketing V2 (Independent Publisher)
+shared_hubspotsettingsv2 Premium HubSpot Settings V2 (Independent Publisher)
+shared_huddle Premium Huddle
+shared_huddleforusgovhealth Premium Huddle for US Gov & Healthcare
+shared_huddoboards Premium Huddo Boards
+shared_huedatagate Premium HUE Datagate
+shared_hume Premium Hume (Independent Publisher)
+shared_hvivehicleinspection Premium HVI Vehicle Inspection V1.2
+shared_hyasinsight Premium HYAS Insight
+shared_iaconnectdynamiccode Premium IA-Connect Dynamic Code
+shared_iaconnectjava Premium IA-Connect Java
+shared_iaconnectjml Premium IA-Connect JML
+shared_iaconnectmainframe Premium IA-Connect Mainframe
+shared_iaconnectmsoffice Premium IA-Connect to Microsoft Office
+shared_iaconnectsapgui Premium IA-Connect SAP GUI
+shared_iaconnectsession Premium IA-Connect Session
+shared_iaconnectui Premium IA-Connect UI
+shared_iaconnectwebbrowser Premium IA-Connect Web Browser
+shared_iajus Premium IAJUS
+shared_icepanelmcp Premium IcePanel MCP
+shared_idanalyzer Premium ID Analyzer
+shared_ideanote Premium Ideanote
+shared_ifactoproofofdeliver Premium iFacto Proof Of Delivery
+shared_iftttmcpserverstream Premium IFTTT MCP Server Streamable
+shared_ilovepdfv2 Premium iLovePDF
+shared_ilovesign Premium iLoveSign
+shared_imanageai Premium iManage AI
+shared_imanagedatamarts Premium iManage Data Marts
+shared_imanageinsightplus Premium iManage Insight Plus
+shared_imanagetracker Premium iManage Tracker
+shared_imanagework Premium iManage Work
+shared_imanageworkforadmins Premium iManage Work for Admins
+shared_imanageworkmcp Premium iManage Work MCP
+shared_imis Premium iMIS
+shared_impala Premium Apache Impala
+shared_impexium Premium Impexium
+shared_impower Premium Impower ERP
+shared_imprezian Premium Imprezian360-CRM
+shared_indaadhaarnm Premium IN-D Aadhaar Number Masking
+shared_indfacematch Premium IN-D Face Match
+shared_indinsurance Premium IN-D Insurance (ICD10 & CPT)
+shared_indinvoicedatacapture Premium IN-D Invoice Data Capture
+shared_indkycindia Premium IN-D KYC India
+shared_indpayables Premium IN-D Payables
+shared_industrialappstore Premium Industrial App Store
+shared_ineight Premium InEight
+shared_infobip Premium Infobip
+shared_infoquery Premium InfoQuery
+shared_informix Premium Informix
+shared_infoshare Premium InfoShare
+shared_infovetted Premium InfoVetted
+shared_infusionsoft Premium Infusionsoft
+shared_inloox Premium InLoox
+shared_inoreader Standard Inoreader
+shared_inqubajourney Premium inQuba Journey
+shared_insightly Standard Insightly
+shared_instapaper Standard Instapaper
+shared_integrablepdf Premium Integrable PDF
+shared_integrationtoolbox Premium Integration Toolbox
+shared_intelixiocanalysismc Premium Intelix IOC Analysis MCP
+shared_intelligo Premium Intelligo
+shared_intellihr Premium intelliHR
+shared_intentionaldatasources Premium Intentional Data Sources
+shared_interaction Premium InterAction
+shared_intercom Standard Intercom
+shared_inventoryintelligenc Premium Inventory Intelligence
+shared_iobeya Premium iObeya
+shared_iotcentral Premium Azure IoT Central V2
+shared_ipqsfraudandriskscor Premium IPQS Fraud and Risk Scoring
+shared_ironfangrender Premium Ironfang Render
+shared_isoplanner Premium ISOPlanner
+shared_itautomate Premium ITautomate
+shared_jamieai Premium Jamie AI
+shared_jasperip Premium Jasper (Independent Publisher)
+shared_jbhunt Premium JBHunt
+shared_jedoxodatahub Premium Jedox OData Hub
+shared_jgintegrations Premium JG Integrations
+shared_jira Premium Jira
+shared_jotform Premium JotForm
+shared_jotformenterprise Premium Jotform Enterprise
+shared_junglemail365 Premium JungleMail 365
+shared_jupyrest Premium Jupyrest
+shared_k2workflow Standard K2 Workflow
+shared_kagi Premium Kagi (Independent Publisher)
+shared_kaizala Standard Microsoft Kaizala
+shared_kanbanize Premium Businessmap
+shared_kanbantool Premium Kanban Tool
+shared_kc Premium KC
+shared_keepersecretsmanager Premium Keeper Secrets Manager
+shared_keyvault Premium Azure Key Vault
+shared_khalibrelms Premium Khalibre LMS
+shared_kintone Premium kintone
+shared_knowledgelake Premium KnowledgeLake
+shared_knowledgeonerecfind6 Premium Knowledgeone RecFind6
+shared_korto Premium KORTO V2
+shared_kroki Premium Kroki
+shared_kusto Premium Azure Data Explorer
+shared_kyndrylmainframe Premium Kyndryl mainframe
+shared_langai Premium Lang.ai
+shared_languagequestionansw Premium Language - Question Answering
+shared_lansweeperappforsent Premium Lansweeper App For Sentinel
+shared_lassox Premium Lasso X
+shared_latinsharedocuments Premium LatinShare Documents
+shared_latinshareshpmanagement Premium LatinShare SHP Management
+shared_latinshareshppermissions Premium LatinShare SHP Permissions
+shared_lawlift Premium Lawlift
+shared_lawmatemcpserver Premium LawMate MCP Server
+shared_lawnise Premium Lawnise
+shared_lawtoolboxmcp Premium LawToolBox MCP
+shared_lawvu Premium LawVu
+shared_lcpicordis Premium LCP - iCordis
+shared_leaddesk Premium LeadDesk
+shared_leadinfo Premium Leadinfo
+shared_leadiqmcp Premium LeadIQ MCP
+shared_leadloader Premium Repfabric
+shared_leadscorer Premium Lead Scorer
+shared_leankit Premium LeanKit
+shared_learn365mcp Premium Learn365 MCP
+shared_leavedates Premium Leave Dates (Independent Publisher)
+shared_legalbotaitools Premium LegalBot AI Tools
+shared_legalesign Premium Legalesign
+shared_letterdrop Premium Letterdrop (Independent Publisher)
+shared_lettria Premium Lettria (Independent Publisher)
+shared_lettriagdprcompliance Premium Lettria GDPR Compliance
+shared_lexpowersign Premium Lex Power Sign
+shared_libraryofcongressip Premium Library of Congress
+shared_lifx Premium LIFX
+shared_linkedinv2 Standard LinkedIn V2
+shared_linkly Premium Linkly
+shared_linkmobility Premium LINK Mobility
+shared_literasearch Premium Litera Search
+shared_livechat Premium LiveChat
+shared_livetilesbots Premium LiveTiles Bots
+shared_lms365 Standard LMS365
+shared_lnkbio Premium Lnk.Bio
+shared_logicflows Standard Logic flows
+shared_loginllamaip Premium LoginLlama
+shared_loopio Premium Loopio
+shared_loopioeu Premium Loopio-EU
+shared_loopioint01 Premium Loopio-Int01
+shared_lseg Premium LSEG
+shared_lucidmcpserver Premium Lucid MCP Server
+shared_luis Standard LUIS
+shared_luwarenimbus Premium Luware Nimbus
+shared_m365messagecenter Standard Microsoft 365 message center
+shared_m365updatesapp Standard Updates App (Microsoft 365)
+shared_maersk Premium Maersk (Independent Publisher)
+shared_mailchimp Premium MailChimp
+shared_mailform Premium Mailform
+shared_mailgun Premium Mailgun
+shared_mailinatorip Premium Mailinator
+shared_mailparser Premium MailParser
+shared_mailrith Premium Mailrith
+shared_maintenancerequestox Premium Maintenance Request - Oxmaint (Independent Publisher)
+shared_mandrill Premium Mandrill
+shared_mapboxip Premium Mapbox (Independent Publisher)
+shared_mappro Premium Map Pro
+shared_maqtextanalytics Premium Text Analytics
+shared_marketingintelligenc Premium Marketing Intelligence
+shared_marketoma Standard Marketo MA (deprecated)
+shared_marksign Premium Mark Sign
+shared_mavimai Premium Mavim AI
+shared_mavimimprove Premium Mavim-iMprove
+shared_mavimintelligentxfor Premium Mavim Intelligent Xformation
+shared_maximizer Premium Deprecated Integration
+shared_maximizercrm Premium Maximizer CRM
+shared_mcnenotification Premium MCNE Notification
+shared_mcphivetintegration Premium MCP Hive.T Integration
+shared_medallia Premium Medallia
+shared_mediastack Premium Mediastack (Independent Publisher)
+shared_medium Standard Medium
+shared_meekou Premium Meekou Share (Independent Publisher)
+shared_meetingroommap Premium MeetingRoomMap
+shared_meisterplan Premium Meisterplan
+shared_mensagia Premium Mensagia
+shared_mentorcliqmcp Premium MentorcliQ MCP
+shared_mergeshuttleservice Premium Merge Shuttle Service
+shared_microsoft365compliance Premium Microsoft 365 compliance
+shared_microsoftacronyms Premium Microsoft Acronyms
+shared_microsoftadvertisingmcp Premium Microsoft Advertising
+shared_microsoftbookings Standard Microsoft Bookings
+shared_microsoftcopilotstudio Standard Microsoft Copilot Studio
+shared_microsoftflowforadmins Standard Power Automate for Admins
+shared_microsoftforms Standard Microsoft Forms
+shared_microsoftformspro Standard Dynamics 365 Customer Voice
+shared_microsoftgraphadduse Premium Microsoft Graph Add Users (Independent Publisher)
+shared_microsoftgraphsecurity Premium Microsoft Graph Security (deprecated)
+shared_microsoftlearndocsmcpserver Premium Microsoft Learn Docs MCP
+shared_microsoftpartnercent Standard Microsoft Partner Center
+shared_microsoftschooldatas Standard Microsoft School Data Sync V2
+shared_microsoftschooldatasync Standard Microsoft School Data Sync
+shared_microsoftsearch Premium M365 Search (Deprecated)
+shared_microsofttranslator Standard Microsoft Translator
+shared_microsofttranslatorv Standard Microsoft Translator V3
+shared_mimeautomationip Premium Mime Automation (Independent Publisher)
+shared_miningbridgeintel Premium MiningBridge Intelligence
+shared_minisouphtmlparser Premium MiniSoup HTML Parser (Independent Publisher)
+shared_mistral Premium Mistral (Independent Publisher)
+shared_mitto Premium Mitto
+shared_mobaro Premium Mobaro
+shared_mobiletextalertsmcps Premium Mobile Text Alerts MCP Server
+shared_mobilistotele Premium Mobili Stotele
+shared_mobilyws Premium MobilyWS
+shared_mobsimsendsms Premium MOBSIM Send SMS
+shared_mockarooip Premium Mockaroo (Independent Publisher)
+shared_mockster Premium Mockster
+shared_monday Premium monday
+shared_mondaycom Premium monday.com
+shared_mongodb Premium MongoDB
+shared_moreappforms Premium MoreApp Forms
+shared_morf Premium Morf
+shared_morningstar Premium Morningstar
+shared_morta Premium Morta
+shared_motawordtranslations Premium MotaWord Translations
+shared_motimate Premium Motimate
+shared_msdschain Premium MSDS Chain
+shared_msgraphgroupsanduser Premium MS Graph Groups and Users
+shared_msnweather Standard MSN Weather
+shared_mtarget Premium Mtarget SMS
+shared_muhimbi Standard Nutrient Document Converter
+shared_muhimbipdf Premium Muhimbi PDF
+shared_mural Premium MURAL
+shared_myacclaro Premium My Acclaro
+shared_myhours Premium My Hours
+shared_mysql Premium MySQL
+shared_nablecloudcommander Premium N-able Cloud Commander
+shared_nableclouduserhub Premium N-able Cloud User Hub
+shared_nameapi Premium NameAPI (Independent Publisher)
+shared_narvar Premium Narvar
+shared_nasafirms Premium NASA FIRMS (Independent Publisher)
+shared_nationalweatherservice Premium National Weather Service (Independent Publisher)
+shared_nbold Premium nBold
+shared_nceiclimatedata Premium NCEI Climate Data (Independent Publisher)
+shared_neimo Premium neimo
+shared_netdocuments Standard NetDocuments
+shared_netvolution Premium Netvolution
+shared_neum Premium Neum (Independent Publisher)
+shared_newsdataio Premium NewsData.io (Independent Publisher)
+shared_nexmo Premium Nexmo
+shared_nextcom Premium Nextcom
+shared_nimflow Premium Nimflow
+shared_nintexworkflow Premium Nintex Workflow
+shared_nitro Premium Nitro
+shared_nitropdfservices Premium Nitro PDF Services
+shared_nitrosign Premium Nitro Sign
+shared_nitrosignenterprisev Premium Nitro Sign Enterprise Verified
+shared_nodefusionportal Premium Nodefusion Portal
+shared_nomasign Premium NomaSign
+shared_nosco Premium Nosco
+shared_notiivybrowsernotif Premium Notiivy Browser Notifications
+shared_novatamcp Premium Novata MCP
+shared_noxtuasubmission Premium Noxtua AI
+shared_nozbe Premium Nozbe
+shared_npstoday Premium nps.today
+shared_nunify Premium nunify
+shared_nutrientconverttopdf Premium Nutrient - Convert to PDF
+shared_nutrientextractfromp Premium Nutrient - Extract from PDF
+shared_nutrientpdfocr Premium Nutrient - PDF OCR
+shared_nutrientwatermarktop Premium Nutrient - Watermark to PDF
+shared_nutrientworkflowauto Premium Nutrient Workflow Automation
+shared_objectiveconnect Premium Objective Connect
+shared_occuspace Premium Occuspace
+shared_office365 Standard Office 365 Outlook
+shared_office365groups Standard Office 365 Groups
+shared_office365groupsmail Standard Office 365 Groups Mail
+shared_office365users Standard Office 365 Users
+shared_office365video Standard Office 365 Video
+shared_officeaiagent Standard OfficeAi Agent
+shared_oncehub Premium oncehub
+shared_oneblink Premium OneBlink
+shared_onedeclarativeconn Premium OneDeclarativeConn
+shared_oneflow Premium Oneflow
+shared_onenote Standard OneNote (Business)
+shared_oneplan Premium OnePlan
+shared_oodrivesign Premium Oodrive Sign
+shared_openaiassistants Premium OpenAI Assistants (Independent Publisher)
+shared_openbrewerydb Premium Open Brewery DB (Independent Publisher)
+shared_openelevation Premium Open-Elevation (Independent Publisher)
+shared_openexperience Premium Open Experience
+shared_openlegacyibmias400 Premium OpenLegacy IBM I (AS400)
+shared_openlegacyibmmainframe Premium OpenLegacy IBM Mainframe
+shared_openpm Premium openpm (Independent Publisher)
+shared_openqr Premium OpenQR (Independent Publisher)
+shared_openrouter Premium OpenRouter (Independent Publisher)
+shared_opentextcoreshare Premium OpenText Core Share
+shared_opentextcsbyonefox Premium OpenText Extended ECM
+shared_opentextdocumentum Premium OpenText Documentum
+shared_opentextedocsbyonefox Premium OpenText eDOCS
+shared_optiapi Premium OptiAPI
+shared_oqsha Premium OQSHA
+shared_oracle Premium Oracle Database
+shared_orbusinfinity Premium OrbusInfinity
+shared_ordnancesurveyplaces Premium Ordnance Survey Places
+shared_ottobot Premium Otto.bot
+shared_outlook Standard Outlook.com
+shared_outlooktasks Standard Outlook Tasks
+shared_outreach Premium Outreach
+shared_outreachinsights Premium Outreach Insights
+shared_pagepixelsscreenshot Premium PagePixels Screenshots
+shared_pagerduty Standard PagerDuty
+shared_panviva Premium Panviva
+shared_pappers Premium Pappers (Independent Publisher)
+shared_parishsoftfamilysuit Premium ParishSoft Family Suite
+shared_parserr Standard Parserr
+shared_parseur Premium Parseur
+shared_partnercenterevents Premium Partner Center Events
+shared_partnercenterref Premium Partner Center Referrals
+shared_partnerlinq Premium PartnerLinq
+shared_passageby1passwordau Premium Passage by 1Password - Auth (Independent Publisher)
+shared_passageby1passwordma Premium Passage by 1Password - Manage (Independent Publisher)
+shared_passimai Premium Passim AI
+shared_passlet Premium Passlet
+shared_patchops Premium PatchOps
+shared_patent Premium Patent
+shared_paylocity Premium Paylocity
+shared_pdf4me Premium PDF4me
+shared_pdf4meai Premium PDF4me AI
+shared_pdf4mebarcode Premium PDF4me Barcode
+shared_pdf4meconnect Premium PDF4me Connect
+shared_pdf4meconvert Premium PDF4me Convert
+shared_pdf4meexcel Premium PDF4me Excel
+shared_pdf4meimage Premium PDF4me Image
+shared_pdf4mepdf Premium PDF4me PDF
+shared_pdf4meswissqr Premium PDF4me SwissQR
+shared_pdf4meword Premium PDF4me Word
+shared_pdfblocks Premium PDF Blocks
+shared_pdfco Premium PDFco
+shared_pdfcross Premium PDFcross
+shared_pdfless Premium Pdfless
+shared_pdftools Premium PDF Tools
+shared_peakboard Premium Peakboard
+shared_peltarion Premium Peltarion AI
+shared_penneosignproduction Premium Penneo Sign Production
+shared_penneosignsandbox Premium Penneo Sign Sandbox
+shared_perfectwiki Premium Perfect Wiki
+shared_perkmcp Premium Perk MCP
+shared_perplexityai Premium Perplexity AI (Independent Publisher)
+shared_personr Premium Personr
+shared_pilot Premium Senpilot
+shared_pilotthings Premium Pilot Things
+shared_pineconeip Premium Pinecone
+shared_pinterest Standard Pinterest
+shared_pipedrive Premium Pipedrive
+shared_pipelinercrm Premium Pipeliner CRM
+shared_pipwarekpis Premium PIPware KPIs
+shared_pitneybowes Premium Pitney Bowes Data Validation
+shared_pivotaltracker Standard Pivotal Tracker
+shared_pixelmeip Premium PixelMe
+shared_pkisigning Premium PKIsigning
+shared_planful Premium Planful
+shared_planner Standard Planner
+shared_playbookux Premium PlaybookUX
+shared_pling Premium Pling
+shared_plivo Premium Plivo
+shared_plumsail Standard Plumsail Documents
+shared_plumsailforms Standard Plumsail Forms
+shared_plumsailhelpdesk Standard Plumsail HelpDesk
+shared_plumsailsp Standard Plumsail Actions
+shared_poka Premium Poka
+shared_pokeapicore Premium PokeAPI Core (Independent Publisher)
+shared_pokeapiworld Premium PokeAPI World (Independent Publisher)
+shared_polarispsa Premium Polaris PSA
+shared_politemail Premium PoliteMail
+shared_polygon Premium Polygon (Independent Publisher)
+shared_postgresql Premium PostgreSQL
+shared_powellteams Premium Powell Teams
+shared_powerappsforadmins Standard Power Apps for Admins
+shared_powerappsforappmakers Standard Power Apps for Makers
+shared_powerappsnotification Standard Power Apps Notification
+shared_powerappsnotificationv2 Standard Power Apps Notification V2
+shared_powerassist Premium Power Assist
+shared_powerbi Standard Power BI
+shared_powerform7 Premium Power Form 7
+shared_powerplatformadminv2 Standard Power Platform for Admins V2
+shared_powerplatformforadmins Standard Power Platform for Admins
+shared_powertextor Premium Power Textor
+shared_powervirtualagents Standard Power Virtual Agents
+shared_ppmexpress Premium PPM Express
+shared_preserve365 Premium Preserve365
+shared_prioritymatrix Premium Priority Matrix
+shared_prioritymatrixhipaa Premium Priority Matrix HIPAA
+shared_processmining Premium Process Mining
+shared_processstreet Premium Process Street
+shared_processstreetmcpserv Premium Process Street MCP Server
+shared_profisee Premium Profisee
+shared_progressusadvancedpr Premium Progressus Advanced Projects
+shared_projectonline Standard Project Online
+shared_projectplace Premium ProjectPlace
+shared_projectroadmap Standard Portfolio and Roadmap
+shared_projectum Premium Projectum Present It
+shared_projectwiseshare Premium Projectwise Share
+shared_prosaiforsalescopilo Premium PROS AI
+shared_prowfmauthentication Premium UKG PRO WFM Authentication
+shared_public360 Premium Public 360
+shared_puggamifiedengagement Premium PUG Gamified Engagement
+shared_pureleads Premium Pure Leads
+shared_pushcut Premium Pushcut
+shared_pushtodisplay Premium PushToDisplay
+shared_qdrant Premium Qdrant (Independent Publisher)
+shared_qppngintegrationhub Premium QPP NextGen
+shared_qrstuff Premium QRStuff
+shared_quire3 Premium Quire
+shared_rainbird Premium Rainbird
+shared_ramquestactions Premium RamQuest Actions
+shared_ramquestevents Premium RamQuest Events
+shared_rapidplatform Premium RAPID Platform
+shared_raptordocmanagement Premium 9A Raptor Document Warehouse
+shared_realaccretive Premium RealAccretive
+shared_realfavicongenerator Premium RealFaviconGenerator (Independent Publisher)
+shared_receptful Premium Receptful
+shared_recordedfuture Premium Recorded Future
+shared_recordedfutureidenti Premium Recorded Future Identity
+shared_recordedfuturesandbo Premium Recorded Future Sandbox
+shared_recordedfuturev2 Premium Recorded Future V2
+shared_redjudiciallegal Premium Red Judicial
+shared_redmine Standard Redmine
+shared_redquesmartinvoiceca Premium Redque
+shared_reecopediamcp Premium Reecopedia MCP
+shared_reflectip Premium Reflect
+shared_regexflowexecutepyth Premium RegexFlow ExecutePython
+shared_regexflowregularexpr Premium RegexFlow Regular Expression
+shared_regolink Premium RegoLink for Clarity PPM
+shared_rencore Standard Rencore Code
+shared_rencoregovernance Premium Rencore Governance
+shared_repfabricjob Premium Repfabric Job Loader
+shared_repfabricleadloader Premium Repfabric Lead Loader
+shared_replicon Premium Replicon
+shared_requestor Premium Requestor
+shared_requests Premium Repfabric Data Loader
+shared_rescocloud Premium Resco Cloud
+shared_rescoreports Premium Resco Reports
+shared_responsivemcp Premium Responsive MCP
+shared_revai Premium Rev AI (Independent Publisher)
+shared_revelationhelpdesk Premium Revelation helpdesk
+shared_reversa Premium Reversa
+shared_reversinglabsa1000 Premium ReversingLabs A1000
+shared_riskiqdigitalfootprint Premium RiskIQ Digital Footprint
+shared_riskiqintelligence Premium RiskIQ
+shared_riskiqpassivetotal Premium RiskIQ Illuminate
+shared_robolytix Premium Robolytix
+shared_robotsforpowerbi Premium Robots for Power BI
+shared_rowshare Premium RowShare
+shared_rsign Premium RSign
+shared_rss Standard RSS
+shared_safetyculture Premium iAuditor
+shared_saifsaimediagenerati Premium Saifs AI Media Generation
+shared_saperp Premium SAP ERP
+shared_saplingai Premium Sapling.ai (Independent Publisher)
+shared_sapodata Premium SAP OData
+shared_sasdecisioning Premium SAS Decisioning
+shared_savvly Premium Savvly
+shared_scriveesign Premium Scrive eSign
+shared_searchapigooglesearch Premium SearchAPI - Google Search (Independent Publisher)
+shared_secib Premium SECIB
+shared_secplugscan Premium ScanCloud
+shared_secretserver Premium Secret Server
+shared_securemessagedelivery Premium DataMotion
+shared_securitycopilot Standard Microsoft Security Copilot
+shared_seebotrunlink Premium SeeBotRun - Link
+shared_seekout Premium SeekOut
+shared_seektable Premium SeekTable
+shared_seismic Premium Seismic
+shared_seismicconfiguration Premium Seismic Configuration
+shared_seismiccontentdiscov Premium Seismic Content Discovery
+shared_seismicengagement Premium Seismic Engagement
+shared_seismicforcopilotfor Premium Seismic for Copilot for Sales
+shared_seismiclibrary Premium Seismic Library
+shared_seismiclivedoc Premium Seismic Livedoc
+shared_seismicmcp Premium Seismic MCP
+shared_seismicplanner Premium Seismic Planner
+shared_seismicprograms Premium Seismic Programs
+shared_seismicworkspace Premium Seismic Workspace
+shared_sendansms Premium TopMessage
+shared_sendgrid Standard SendGrid
+shared_sendmode Premium Sendmode
+shared_senenergydatabysherp Premium SEN Energy Data by Sherpas
+shared_sentinelmcp Premium Microsoft Sentinel MCP
+shared_serpapi Premium SerpApi
+shared_serverless360 Premium Serverless360 BAM & Tracking
+shared_service-now Premium ServiceNow
+shared_servicebus Premium Service Bus
+shared_servicebus-1 Premium Service Bus
+shared_servicedeskpluscloud Premium ServiceDesk Plus Cloud
+shared_serviceobjects Premium Service Objects
+shared_serwersms Premium SerwerSMS
+shared_sftp Standard SFTP
+shared_sftpwithssh Standard SFTP - SSH
+shared_shapemcp Premium Shape MCP
+shared_shareeffect Premium Share-Effect
+shared_sharepointembedded Standard SharePoint Embedded
+shared_sherpadigital Premium Sherpa Digital
+shared_sherwebplatformmcpse Premium Sherweb Platform MCP Server
+shared_shifts Standard Shifts for Microsoft Teams
+shared_shop Premium Shop (Independent Publisher)
+shared_shopranos Premium Shopranos
+shared_shorturl Premium Short URL
+shared_showcaseworkshop Premium Showcase Workshop
+shared_showpad Premium Showpad eOS
+shared_showpadmcp Premium Showpad MCP
+shared_sigmaconsocr Premium Sigma Conso CR
+shared_signatureapi Premium SignatureAPI
+shared_signhost Premium Signhost
+shared_signi Premium Signi.com
+shared_signinghub Premium SigningHub
+shared_signinghubwebhooks Premium SigningHub Webhooks
+shared_signl4 Premium Derdack SIGNL4
+shared_signl4mobilealerting Premium SIGNL4 - Mobile Alerting
+shared_signnow Premium SignNow
+shared_signnoweu Premium SignNow EU
+shared_signrequest Premium SignRequest
+shared_simpleedi Premium Simple-EDI
+shared_simplesurvey Premium SimpleSurvey
+shared_sinch Premium Sinch
+shared_sirvarelocatingemplo Premium Sirva Relocating Employee
+shared_sitetechnologies Premium SITE Technologies
+shared_skribblesign Premium Skribble Sign
+shared_skypeforbiz Standard Skype for Business Online
+shared_skypointcloud Premium SkyPoint Cloud
+shared_slack Standard Slack
+shared_slascone Premium Slascone
+shared_slite Premium Slite
+shared_smapone Premium smapOne
+shared_smarp Premium Smarp
+shared_smartcommondemanddoc Premium SmartCOMM DocGen
+shared_smartdialog Premium SmartDialog
+shared_smarterdrafter Premium Smarter Drafter
+shared_smarterdraftermcp Premium Smarter Drafter MCP
+shared_smartsheet Standard Smartsheet
+shared_smartsheetau Premium Smartsheet AU
+shared_smartsheeteu Premium Smartsheet EU
+shared_smartsheetus Premium Smartsheet US
+shared_sms77io Premium sms77io
+shared_smsapi Premium SMSAPI
+shared_smsforapplications Premium Retarus SMS
+shared_smslink Premium SMSLink
+shared_smtp Standard SMTP
+shared_snapforms Premium Snapforms
+shared_snaplii Premium Snaplii
+shared_snowflakev2 Premium Snowflake
+shared_sociabble Premium Sociabble
+shared_socialinsider Premium Socialinsider
+shared_socradarxtimcp Premium SOCRadar XTI MCP
+shared_soft1 Standard Soft1
+shared_softonewebcrm Premium Softone Web CRM
+shared_softools Premium Softools
+shared_solosign Premium SoloSign HMAC Hash Creator
+shared_sparkpost Standard SparkPost
+shared_sparsepowerboxtools Premium Sparse Power Box Tools
+shared_spinpanel Premium Spinpanel
+shared_springglobal Premium Spring Global
+shared_sproofsign Premium sproof Sign
+shared_sqldw Premium Azure SQL Data Warehouse
+shared_stablebaseline Premium Stable Baseline
+shared_stackiq Premium STACK IQ
+shared_staffbase Premium Staffbase
+shared_staffcircle Premium StaffCircle
+shared_starmind Premium Starmind
+shared_starrezrestv1 Premium StarRez REST v1
+shared_staychartedaimodeltr Premium StayCharted AI Model Trainer
+shared_stormboard Premium Stormboard
+shared_strakerverify Premium Straker Verify
+shared_strategicportfoliomanager Premium NH360 Portfolio Insights
+shared_stratws Premium Stratws
+shared_stripe Premium Stripe
+shared_supermcp Premium SuperMCP
+shared_surexerolite Premium SureXeroLite  (Independent Publisher)
+shared_survalyzereu Premium Survalyzer Eu
+shared_survalyzerswiss Premium Survalyzer Swiss
+shared_survey123 Standard Survey123
+shared_surveymonkey Premium SurveyMonkey
+shared_surveymonkeycanada Premium SurveyMonkey Canada
+shared_syntheticdatagenerat Premium Synthetic Data Generator
+shared_sytex Premium Sytex
+shared_tabscannerreceiptocr Premium Tabscanner Receipt OCR (Independent Publisher)
+shared_tago Premium Tago
+shared_taktikalcore Premium Taktikal Core
+shared_talkdesk Premium Talkdesk
+shared_tallyfy Premium Tallyfy
+shared_talxisdatafeed Premium TALXIS Data Feed
+shared_taqnyat Premium Taqnyat
+shared_tastewisemcp Premium Tastewise
+shared_tavily Premium Tavily (Independent Publisher)
+shared_tavilymcp Premium Tavily MCP
+shared_taxgraph Premium TaxGraph
+shared_taxidpro Premium Tax ID Pro (Independent Publisher)
+shared_tdox Premium TDox
+shared_teamflect Premium Teamflect
+shared_teamforms Premium Team Forms
+shared_teams Standard Microsoft Teams
+shared_teamsspirit Premium Teams-Spirit
+shared_teamsvirtualevents Standard Microsoft Teams Virtual Events (deprecated)
+shared_teamwork Premium Teamwork Projects
+shared_tegolysign Premium tegolySIGN
+shared_telephonyxtendedsrv Premium Telephony Xtended Serv Interf
+shared_telesignsms Premium TeleSign SMS
+shared_templafy Premium Templafy
+shared_templionix Premium TemplioniX
+shared_tendocsdocuments Premium Tendocs Documents
+shared_tenzoai Premium Tenzo AI
+shared_teradata Premium Teradata
+shared_tesseronasmbasicdata Premium Tesseron Basic Data
+shared_tesseronasmticket Premium Tesseron Ticket
+shared_tesseronasset Premium Tesseron Asset Management
+shared_tesseroninvoice Premium Tesseron Invoice
+shared_textminemcp Premium TextMine MCP
+shared_textrequest Premium Text Request
+shared_thebotplatform Premium The Bot Platform
+shared_theeventscalendar Premium The Events Calendar
+shared_theguardian Premium The Guardian (Independent Publisher)
+shared_ticketingevents Premium Ticketing.events
+shared_ticketmaster Premium Ticketmaster (Independent Publisher)
+shared_tikit Premium Tikit
+shared_tilitervisionagents Premium Tiliter Vision Agents
+shared_tilkee Premium Tilkee
+shared_timeapi Premium TimeAPI (Independent Publisher)
+shared_timeghost Premium timeghost
+shared_timemachine Premium Time Machine
+shared_timeneye Premium Timeneye
+shared_tldrip Premium TLDR
+shared_tly Premium T.LY (Independent Publisher)
+shared_todo Standard Microsoft To-Do (Business)
+shared_todoconsumer Standard Microsoft To-Do (Consumer)
+shared_todoist Standard Todoist
+shared_toodledo Standard Toodledo
+shared_tophhiecloud Premium Tophhie Cloud
+shared_toucantext Premium ToucanText
+shared_touchsmsv2documentat Premium touchSMS
+shared_tpcportal Premium TPC Portal
+shared_tractionguest Premium Traction Guest
+shared_tradegov Premium Trade.Gov (Independent Publisher)
+shared_transform2all Premium Transform2All
+shared_translatorv2 Standard Microsoft Translator V2
+shared_trello Standard Trello
+shared_trialcommander Premium Trial Commander
+shared_tribal Premium Tribal - Platform
+shared_tribalmaytas Premium Tribal - Maytas
+shared_tribalsits Premium Tribal - SITS
+shared_triggercmd Premium TRIGGERcmd
+shared_truedialogmcp Premium TrueDialog MCP
+shared_truedialogsms Premium TrueDialog SMS
+shared_trustual Premium Trustual
+shared_tulip Premium Tulip
+shared_tuxmailer Premium TuxMailer
+shared_twelfth Premium Twelfth
+shared_twilio Standard Twilio
+shared_twitter Standard X
+shared_txtsync Premium TxtSync
+shared_tyntec2fa Premium tyntec 2FA
+shared_tyntecportabilitycheck Premium tyntec Phone Verification
+shared_tyntecsms Premium tyntec SMS Business
+shared_tyntecviber Premium tyntec Viber Business
+shared_tyntecwa Premium tyntec WhatsApp Business
+shared_typeform Standard Typeform
+shared_uberfreight Premium Uber Freight
+shared_ubiqodbyskiply Premium Ubiqod by Skiply
+shared_ubiqodbyskiplyv2 Premium Ubiqod by Taqt
+shared_uiflow Premium Desktop flows
+shared_uipath Premium UiPath
+shared_uipathorchestrator Premium UiPath Orchestrator
+shared_ukgprohcm Premium UKG Pro HCM
+shared_ukgprowfmemployee Premium UKG Pro WFM Employee
+shared_ukgprowfmpeople Premium UKG Pro WFM People
+shared_ukgprowfmtimekeeping Premium UKG Pro WFM Timekeeping
+shared_uplandpanvivaus Premium Upland Panviva US
+shared_usajobs Premium USAJOBS (Independent Publisher)
+shared_usb4sap Premium USB4SAP
+shared_usbanktreasurymanage Premium U.S. Bank Treasury Management
+shared_uscongresscrs Premium US Congress CRS (Independent Publisher)
+shared_uservoice Premium UserVoice
+shared_vantage365imaging Premium Vantage 365 Imaging
+shared_varuna Premium Varuna
+shared_vatcheckapiip Premium vatcheckapi
+shared_vena Premium Vena Solutions
+shared_ventipixassetandinventory Premium Ventipix Asset and Inventory
+shared_verified Premium Verified
+shared_veriskuwintelligence Premium Verisk UW Intelligence
+shared_veteransaffairsfacil Premium Veterans Affairs Facilities (Independent Publisher)
+shared_veteransaffairsforms Premium Veterans Affairs Forms (Independent Publisher)
+shared_veteransaffairsprovi Premium Veterans Affairs Providers (Independent Publisher)
+shared_viafirma Premium Viafirma
+shared_videoindexer-v2 Standard Video Indexer (V2)
+shared_vimeo Standard Vimeo
+shared_vineforce Premium Trovve
+shared_virtproddynoauthdisc Premium Yardi Virtuoso
+shared_virtualdataplatform Premium Virtual Data Platform
+shared_virustotal Premium Virus Total
+shared_visualstudioteamservices Premium Azure DevOps
+shared_vivainsightsmcp Premium Viva Insights Agent
+shared_vocean Premium Vocean
+shared_voicemonkey Premium Voice Monkey (Independent Pubshisher)
+shared_voicerss Premium VoiceRSS (Independent Pubisher)
+shared_vome Premium Vome
+shared_vonage Premium Vonage
+shared_voxaide Premium VoxAide
+shared_waaila Premium Waaila
+shared_wauld Premium Wauld
+shared_wavelength Premium Wavelength
+shared_waybackmachineip Premium Wayback Machine (Independent Publisher)
+shared_waywedo Premium Way We Do
+shared_wdatp Premium Microsoft Defender ATP
+shared_weavoliquidloom Premium Weavo Liquid Loom
+shared_webcontents Premium HTTP with Microsoft Entra ID (preauthorized)
+shared_webcontentsv2 Premium HTTP With Microsoft Entra ID
+shared_webex Standard Webex
+shared_webhoodurlscanner Premium Webhood URL Scanner
+shared_webmerge Standard Formstack Documents
+shared_websitecarbon Premium Website Carbon (ndependent Publisher)
+shared_wendocslinker Premium WenDocs Linker
+shared_whoisfreaks Premium WhoisFreaks
+shared_windows365 Premium Windows 365
+shared_windsorai Premium Windsor.ai
+shared_withoutwireinventory Premium WithoutWire Inventory Platform
+shared_witivio Premium Witivio
+shared_wmata Premium WMATA (Independent Publisher)
+shared_woocommerce Premium WooCommerce
+shared_woodpecker Premium Woodpecker (Independent Publisher)
+shared_wordliftgraphql Premium Default title
+shared_wordonlinebusiness Premium Word Online (Business)
+shared_wordpress Standard WordPress
+shared_workablemcp Premium Workable MCP
+shared_workdaysoap Premium Workday
+shared_workforceinsightsmcp Premium Workforce Insights
+shared_workiqmcp Standard Work IQ MCP
+shared_workiqonedrive Premium Work IQ OneDrive MCP
+shared_workiqsharepoint Premium Work IQ SharePoint MCP
+shared_workmobile Premium WorkMobile
+shared_workpoint Premium WorkPoint
+shared_workpoint365 Premium WorkPoint 365
+shared_workpoint365mcp Premium WorkPoint 365 MCP
+shared_workspan Premium WorkSpan
+shared_workstemau Premium Workstem AU
+shared_workstemhk Premium Workstem HK
+shared_wpconnectrforwordpre Premium WP Connectr for WordPress
+shared_wpformsbyreenhancedl Premium WPForms by Reenhanced LLC
+shared_wqrmriskforecastserv Premium WQRM Risk Forecast Services
+shared_wttrin Premium wttr.in (Independent Publisher)
+shared_xbridgerdocumentmanager Premium Xbridger Document Manager
+shared_xcgatepreview Premium XC-Gate
+shared_xeroaccountingmagnet Premium Xero Accounting - Magnetism
+shared_xooablockchain Premium Xooa Blockchain Database
+shared_xooadb Premium Xooa Blockchain Smart Contract
+shared_xpertdoc Premium Xpertdoc (Deprecated)
+shared_xsspdfsolutionsinteg Premium XSS PDF Solutions Integrations
+shared_xssqrcodesolutions Premium XSS QR Code Solutions
+shared_yakchat Premium YakChat
+shared_yammer Standard Viva Engage
+shared_yarado Premium Yarado
+shared_yeeflow Premium Yeeflow
+shared_yeelight Premium Yeelight
+shared_zahara Premium Zahara
+shared_zanranscaffolder Premium Zanran Scaffolder
+shared_zapiermcp Premium Zapier MCP
+shared_zellis Premium Zellis
+shared_zendesk Premium Zendesk
+shared_zendeskmcpplugin Premium Zendesk MCP Plugin
+shared_zenkraft Premium Zenkraft
+shared_zenlogin Premium Zenlogin (Independent Publisher)
+shared_zeptomail Premium Zoho ZeptoMail
+shared_zeroheight Premium zeroheight
+shared_zerotrainaicore Premium ZeroTrain AI Core
+shared_zetaleap Premium Zetaleap
+shared_zforms Premium Zoho Forms
+shared_zint Premium Zint
+shared_zippydoc Premium ZIPPYDOC
+shared_zohocalendar Premium Zoho Calendar
+shared_zohoinvoicebasic Premium Zoho Invoice Basic (Independent Publisher)
+shared_zohomail Premium Zoho Mail
+shared_zohosign Premium Zoho Sign
+shared_zohoteaminbox Premium Zoho TeamInbox
+shared_zoominfogtm Premium ZoomInfo GTM MCP
+shared_zreports Premium zReports
+shared_zuvadocai Premium Zuva DocAI
+shared_zvanuparvaldnieks Premium Zvanu Parvaldnieks

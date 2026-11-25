@@ -1,0 +1,15 @@
+OK  upload sppkg: HTTP 200
+OK  AvailableApps(ID): HTTP 200
+app: {"Deployed":false,"ID":"d2b54859-e186-442f-a5d6-d92479b7c281","Title":"spokojenost-appka-client-side-solution"}
+OK  deploy: HTTP 200
+OK  install: HTTP 200
+web part fdb087f9-63ee-432e-890f-84ae273fe357 v GetClientSideWebParts: true
+OK  stranka create: HTTP 201
+stranka id/name: 4 undefined
+OK  stranka savepage: HTTP 200
+OK  stranka layout -> SingleWebPartAppPage: HTTP 204
+OK  stranka publish: HTTP 200
+OK  layout zpet: HTTP 200
+stranka: {"PageLayoutType":"Article","Title":"Spokojenost B","Name":null}
+RENDER: Skip to main content Spokojenost B Spokojenost s prostředím kanceláře dnes pondělí 23. listopadu 2026 Jak jste dnes spokojení s prostředím kanceláře? 1 2 3 4 5 1 = velmi nespokojen(a) 5 = velmi spokojen(a) Dnešní výsledek – průměr dne (z 5) 0 hlasů dnes Dnes zatím nikdo nehodnotil. 1 0 (0 %) 2 0 (0 
+otazka v DOM: true

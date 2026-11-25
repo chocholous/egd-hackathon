@@ -1,0 +1,6 @@
+2026-11-24T02:19:14Z | od: egd-report@pavelchocholousgmail.onmicrosoft.com | odesílatel: egd-report@pavelchocholousgmail.onmicrosoft.com | Denní report kurzů ČNB 2026-11-23 (řetěz Job → LLM → PDF) | příloha: True
+    příloha: report-cnb-2026-11-23.pdf 29954 B application/pdf
+    příloha: report-cnb-2026-11-23.docx 11341 B application/vnd.openxmlformats-officedocument.wordprocessingml.document
+2026-11-24T02:11:49Z | od: egd-report@pavelchocholousgmail.onmicrosoft.com | odesílatel: egd-report@pavelchocholousgmail.onmicrosoft.com | Denní report kurzů ČNB 2026-11-23 (řetěz Job → LLM → PDF) | příloha: True
+    příloha: report-cnb-2026-11-23.pdf 30050 B application/pdf
+    příloha: report-cnb-2026-11-23.docx 11371 B application/vnd.openxmlformats-officedocument.wordprocessingml.document

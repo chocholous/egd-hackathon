@@ -1,0 +1,8 @@
+## 2026-11-24T00:57:55Z varianta 1: m365 spo serviceprincipal permissionrequest list/approve
+{"error":"Request failed with status code 403"}
+
+## 2026-11-24T00:58:03Z varianta 2: tools/ai-spfx-api-grant.sh (Graph oauth2PermissionGrant pro SharePoint Online Web Client Extensibility)
+{
+  "id": "3lM8GAZBE0aVLKnP00hXsKHnYgm81MRDgYYC6HiW5fA",
+  "scope": "access_as_user"
+}

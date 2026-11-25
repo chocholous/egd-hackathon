@@ -1,0 +1,185 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx",
+ "start": "2026-11-24T19:47:12.954Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 1530,
+   "ok": true
+  },
+  {
+   "krok": "rozbal:4000",
+   "t": 4531,
+   "vysledek": "6 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#retr').click()",
+   "t": 12762,
+   "ok": true
+  },
+  {
+   "krok": "eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})",
+   "t": 12776,
+   "vysledek": 839,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText",
+   "t": 14788,
+   "vysledek": "{\n  \"cesta\": \"SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/retrieval\",\n  \"http\": 200,\n  \"ms\": 1575,\n  \"odpoved\": {\n    \"mode\": \"mi\",\n    \"who\": \"egd10@pavelchocholousgmail.onmicrosoft.com\",\n    \"oboScope\": \"profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read\",\n    \"oboMs\": 276,\n    \"graphStatus\": 200,\n    \"graphMs\": 1127,\n    \"requestId\": \"11005966-3508-4d29-8a80-f50ba6e7bceb\",\n    \"hits\": []\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').scrollIntoView({block:'center'})",
+   "t": 14794,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:retr",
+   "t": 14795,
+   "vysledek": "dukazy/copilot-licence/egd10-2/retr.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#pretr').click()",
+   "t": 15057,
+   "ok": true
+  },
+  {
+   "krok": "eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})",
+   "t": 15064,
+   "vysledek": 1797,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText",
+   "t": 16568,
+   "vysledek": "{\n  \"cesta\": \"SPFx → MSGraphClientV3 → Graph beta /copilot/retrieval (přímo)\",\n  \"http\": 200,\n  \"ms\": 1432,\n  \"odpoved\": {\n    \"retrievalHits\": [\n      {\n        \"webUrl\": \"https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.docx\",\n        \"extracts\": [\n          {\n            \"text\": \"\\r\\n# Spokojenost s prostředím kanceláře\\r\\n Den Hlasů Průměr (1–5) 2026-11-24 1 4\",\n            \"relevanceScore\": 0\n          }\n        ],\n        \"resourceType\": \"listItem\",\n        \"resourceMetadata\": {}\n      },\n      {\n        \"webUrl\": \"https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.pdf\",\n        \"extracts\": [\n          {\n            \"text\": \"\\r\\n# Spokojenost s prostředím kanceláře \\r\\nDen Hlasů Průměr (1–5) 2026-11-24 1 4 \",\n            \"relevanceScore\": 0\n          }\n        ],\n        \"resourceType\": \"listItem\",\n        \"resourceMetadata\": {}\n      },\n      {\n        \"webUrl\": \"https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost-prehled.pdf\",\n        \"extracts\": [\n          {\n            \"text\": \"Spokojenost s prostředím kanceláře – přehled po dnech 2026-11-24   hlasů: 1   průměr: 4\",\n            \"relevanceScore\": 0\n          }\n        ],\n        \"resourceType\": \"listItem\",\n        \"resourceMetadata\": {}\n      },\n      {\n        \"webUrl\": \"https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/Sdilene dokumenty/exporty/spokojenost.pptx\",\n        \"extracts\": [\n          {\n            \"text\": \"PptxGenJS Presentation Spokojenost s prostředím kanceláře Den Hlasů Průměr (1–5) 2026-11-24 1 4\",\n            \"relevanceScore\": 0\n          }\n        ],\n        \"resourceType\": \"listItem\",\n        \"resourceMetadata\": {}\n      }\n    ]\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').scrollIntoView({block:'center'})",
+   "t": 16569,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:pretr",
+   "t": 16571,
+   "vysledek": "dukazy/copilot-licence/egd10-2/pretr.png",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#chat').click()",
+   "t": 16633,
+   "ok": true
+  },
+  {
+   "krok": "eval:new Promise(r=>{const t=Date.now();const i=setInterval(()=>{const s=document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText;if(!s.startsWith('volám')||Date.now()-t>90000){clearInterval(i);r(s.length)}},500)})",
+   "t": 16637,
+   "vysledek": 1225,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').innerText",
+   "t": 33642,
+   "vysledek": "{\n  \"cesta\": \"SPFx → AadHttpClient → Container App → OBO → Graph /api/copilot/chat\",\n  \"http\": 200,\n  \"ms\": 16789,\n  \"odpoved\": {\n    \"mode\": \"mi\",\n    \"who\": \"egd10@pavelchocholousgmail.onmicrosoft.com\",\n    \"oboScope\": \"profile openid email https://graph.microsoft.com/ChannelMessage.Read.All https://graph.microsoft.com/Chat.Read https://graph.microsoft.com/ExternalItem.Read.All https://graph.microsoft.com/Files.Read.All https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.ReadBasic https://graph.microsoft.com/OnlineMeetingTranscript.Read.All https://graph.microsoft.com/People.Read.All https://graph.microsoft.com/Sites.Read.All https://graph.microsoft.com/User.Read\",\n    \"oboMs\": 213,\n    \"krok\": \"chat\",\n    \"konverzaceMs\": 1920,\n    \"graphStatus\": 200,\n    \"graphMs\": 14494,\n    \"requestId\": \"218c069e-ab77-442b-94c5-c5049d3f0535\",\n    \"copilotOdpovedel\": true,\n    \"odpoved\": \"V dostupných firemních datech se mi **nepodařilo dohledat údaj, ze kterého by šel průměr spokojenosti s prostředím kanceláře spolehlivě vypočítat**. Nechci proto hodnotu odhadovat.\\n\\nPokud mi pošlete výsledky dotazníku nebo tabulku s hodnocením, průměr spočítám přímo z nich.\",\n    \"zdroje\": [],\n    \"zprav\": 2\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelectorAll(\"[data-sp-web-part-id=\\\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\\\"]\")[1].querySelector('#o').scrollIntoView({block:'center'})",
+   "t": 33646,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:chat",
+   "t": 33650,
+   "vysledek": "dukazy/copilot-licence/egd10-2/chat.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 703,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 834,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 836,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 3058,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 8340,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(17)/CommentsDisabledScope"
+  },
+  {
+   "t": 8509,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(17)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 14346,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/retrieval"
+  },
+  {
+   "t": 16491,
+   "m": "POST",
+   "s": 200,
+   "u": "https://graph.microsoft.com/beta/copilot/retrieval"
+  },
+  {
+   "t": 33438,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/copilot/chat"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T19:47:46.684Z"
+}

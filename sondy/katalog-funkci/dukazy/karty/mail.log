@@ -1,0 +1,26 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/email.aspx
+[3.9s] OK wait:3000  
+[9.8s] OK rozbal  
+4 zón
+[9.8s] OK eval:document.querySelector('[data-sp-web-part-id="56f0f09f-1e2b-4810-a93b-d8633dc23c7b"]').scrollIntoView()  {"interrupted":false}
+[9.9s] OK click:[data-sp-web-part-id="56f0f09f-1e2b-4810-a93b-d8633dc23c7b"] button >> text=Moje požadavky  
+[12.9s] OK wait:3000  
+[12.9s] OK fill:[data-sp-web-part-id="56f0f09f-1e2b-4810-a93b-d8633dc23c7b"] #mail-komu=egd10@pavelchocholousgmail.onmicrosoft.com  
+[12.9s] OK eval:document.querySelector('[data-sp-web-part-id="56f0f09f-1e2b-4810-a93b-d8633dc23c7b"]').querySelector('#mail-komu').scrollIntoView({block:'center'})  {"interrupted":false}
+[13.0s] OK shotv:01-egd09-pred  
+dukazy/karty/mail/01-egd09-pred.png
+[13.1s] OK click:[data-sp-web-part-id="56f0f09f-1e2b-4810-a93b-d8633dc23c7b"] #mail-poslat  
+[21.1s] OK wait:8000  
+[21.1s] OK eval:document.querySelector('[data-sp-web-part-id="56f0f09f-1e2b-4810-a93b-d8633dc23c7b"]').querySelector('#mail-vysledek').innerText  
+OK odesláno moje-pozadavky.csv 103 B za 554 ms
+[21.2s] OK shotv:02-egd09-odeslano  
+dukazy/karty/mail/02-egd09-odeslano.png
+[21.3s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveB
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$sel
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  POST 202 https://graph.microsoft.com/v1.0/me/sendMail

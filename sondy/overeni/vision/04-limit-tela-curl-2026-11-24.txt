@@ -1,0 +1,19 @@
+# 2026-11-24T07:43:03Z limit velikosti těla /api/chat (obrázek = náhodná data v base64, očekávám 400 od modelu u těl pod limitem gateway)
+## tělo 1000304 B
+HTTP 502, 1.804337s, 1000304 B odesláno
+{"error":"Model vrátil chybu","detail":{"error":{"message":"You uploaded an unsupported image. Please make sure your image has of one the following formats: ['webp', 'gif', 'jpeg', 'png'].","type":"invalid_request_error","param":null,"code":"invalid_image_format"}}}
+## tělo 5000304 B
+HTTP 502, 2.681201s, 5000304 B odesláno
+{"error":"Model vrátil chybu","detail":{"error":{"message":"You uploaded an unsupported image. Please make sure your image has of one the following formats: ['webp', 'png', 'gif', 'jpeg'].","type":"invalid_request_error","param":null,"code":"invalid_image_format"}}}
+## tělo 14000304 B
+HTTP 502, 4.341010s, 14000304 B odesláno
+{"error":"Model vrátil chybu","detail":{"error":{"message":"You uploaded an unsupported image. Please make sure your image has of one the following formats: ['jpeg', 'png', 'webp', 'gif'].","type":"invalid_request_error","param":null,"code":"invalid_image_format"}}}
+## tělo 16000304 B
+HTTP 413, 1.925079s, 16000304 B odesláno
+{"error":"Tělo je větší než 15 MB"}
+# 2026-11-24T07:43:26Z platný velký JPEG (šum 3200×3200), tělo 31310620 B
+HTTP 500, 8.059895s
+
+# 2026-11-24T07:43:42Z platný velký JPEG (šum 2200×2200), tělo 14798656 B
+HTTP 200, 5.459094s
+{"text":"Na obrázku je zobrazená barevná digitální šumová textura.","usage":{"completion_tokens":19,"completion_tokens_details":{"accepted_prediction_tokens":0,"audio_tokens":0,"reasoning_tokens":0,"rejected_prediction_tokens":0},"latency_checkpoint":{"engine_tbt_ms":7,"engine_ttft_ms":124,"engine_ttlt_ms":258,"pre_inference_ms":354,"service_tbt_ms":7,"service_ttft_ms":529,"service_ttlt_ms"

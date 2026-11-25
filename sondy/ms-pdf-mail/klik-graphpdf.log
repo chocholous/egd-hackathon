@@ -1,0 +1,4 @@
+[console.error] Failed to load resource: the server responded with a status of 404 ()
+[graph] 202 https://graph.microsoft.com/v1.0/me/sendMail | Mail.Send v tokenu: true | délka těla 83008
+adresát vyplněn do #pdf-komu: eva.vesela@pavelchocholousgmail.onmicrosoft.com | sendMail: 202 | od kliku 2602 ms
+výsledek v UI: Odesláno: spokojenost-word-2026-11-24.pdf (61933 B) na eva.vesela@pavelchocholousgmail.onmicrosoft.com.

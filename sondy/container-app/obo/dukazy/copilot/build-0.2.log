@@ -1,0 +1,61 @@
+WARNING: Note: The token in both the accessToken and refreshToken fields is an ACR Refresh Token, not an ACR Access Token. This ACR Refresh Token cannot be used directly to authenticate with registry APIs such as pushing/pulling images and listing repositories/tags. This ACR Refresh Token must be subsequently exchanged for an ACR Access.Please see https://aka.ms/acr/auth/oauth
+WARNING: You can perform manual login using the provided refresh token below, for example: 'docker login loginServer -u 00000000-0000-0000-0000-000000000000 -p refreshToken'
+Login Succeeded
+#0 building with "orbstack" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 192B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-alpine
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/node:22-alpine@sha256:1314fb30ec37592d5845e5a160d522c0e680972aa534549940b8d73bde88481a
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 10.66kB done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [3/5] COPY package.json ./
+#7 CACHED
+
+#8 [4/5] RUN npm install --omit=dev
+#8 CACHED
+
+#9 [5/5] COPY server.mjs ./
+#9 DONE 0.1s
+
+#10 exporting to image
+#10 exporting layers 0.0s done
+#10 writing image sha256:25e92d818dbcf1951cd2f47ea4d11ff520028df644bd6bb43d9278c5202f871d done
+#10 naming to acrppfroomsca3lbgs.azurecr.io/egd-ca-obo:0.2 done
+#10 DONE 0.0s
+
+#11 pushing acrppfroomsca3lbgs.azurecr.io/egd-ca-obo:0.2 with docker
+#11 pushing layer 6a14bc5640ce
+#11 pushing layer a043c4882e9c
+#11 pushing layer 3a0785967b13
+#11 pushing layer b1a43e70fe8e
+#11 pushing layer f06a70e4735f
+#11 pushing layer acb510a1dd0f
+#11 pushing layer 313a78c90b21
+#11 pushing layer 75f1d9657d88
+#11 pushing layer 6a14bc5640ce 12.80kB / 10.41kB 0.4s
+#11 pushing layer 6a14bc5640ce 0.7s done
+#11 pushing layer a043c4882e9c 1.6s done
+#11 pushing layer 3a0785967b13 1.6s done
+#11 pushing layer b1a43e70fe8e 1.6s done
+#11 pushing layer f06a70e4735f 1.6s done
+#11 pushing layer acb510a1dd0f 1.6s done
+#11 pushing layer 313a78c90b21 1.6s done
+#11 pushing layer 75f1d9657d88 1.6s done
+#11 DONE 1.8s
+acrppfroomsca3lbgs.azurecr.io/egd-ca-obo:0.2

@@ -1,0 +1,63 @@
+
+> egd-ca-dokumenty-spfx@0.1.0 build
+> heft build --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] No SCSS files to process.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (2.366s) ---- 
+-------------------- Finished (2.368s) --------------------
+ ---- package-solution started ---- 
+Found manifest: 874880f3-cc01-4935-a0ad-393df1499f29.manifest.json
+Found client-side build resource: pdf-prevod-web-part_a2fc2dc7c2701ef12f58.js
+Found client-side build resource: pdf-prevod-web-part_a2fc2dc7c2701ef12f58.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { Převod do PDF sonda }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug...
+Cleaned /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/AppManifest.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/_rels/.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/[Content_Types].xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/feature_219789ea-5ff4-4072-9b17-da47df6aaa8c.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/_rels/feature_219789ea-5ff4-4072-9b17-da47df6aaa8c.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/feature_219789ea-5ff4-4072-9b17-da47df6aaa8c.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/219789ea-5ff4-4072-9b17-da47df6aaa8c/WebPart_874880f3-cc01-4935-a0ad-393df1499f29.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/ClientSideAssets/pdf-prevod-web-part_a2fc2dc7c2701ef12f58.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/debug/ClientSideAssets/pdf-prevod-web-part_a2fc2dc7c2701ef12f58.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/libreoffice/spfx/sharepoint/solution/egd-ca-dokumenty.sppkg
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.203s) ---- 
+-------------------- Finished (0.206s) --------------------

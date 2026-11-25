@@ -1,0 +1,14 @@
+{"user": "-", "call": "GET /healthz", "http": 200, "sec": 19.22, "body": "{\"ok\":true}"}
+{"user": "-", "call": "GET /api/zadosti", "http": 401, "sec": 0.18, "body": "{\"error\":\"chybí token\"}"}
+{"user": "lucie.dvorakova", "call": "GET /api/zadosti", "http": 403, "sec": 0.35, "body": "{\"error\":\"bez aplikační role\",\"upn\":\"lucie.dvorakova@pavelchocholousgmail.onmicrosoft.com\"}"}
+{"user": "tomas.prochazka", "call": "GET /api/me", "http": 200, "sec": 33.31, "body": "{\"upn\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"oid\":\"33507faf-6706-4c3b-bbb3-c1e15a7e0a6d\",\"roles\":[\"Zadavatel\"]}"}
+{"user": "tomas.prochazka", "call": "POST /api/zadosti", "http": 201, "sec": 0.29, "body": "{\"id\":3}"}
+{"user": "jakub.kucera", "call": "POST /api/zadosti", "http": 201, "sec": 0.18, "body": "{\"id\":4}"}
+{"user": "tomas.prochazka", "call": "GET /api/zadosti", "http": 200, "sec": 0.16, "body": "[{\"Id\":1,\"Nazev\":\"Notebook\",\"Castka\":30000,\"Stav\":\"Schvaleno\",\"AutorUpn\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"Vytvoreno\":\"2026-11-22T18:28:44.142Z\"},{\"Id\":3,\"Nazev\":\"overeni-tomas\","}
+{"user": "jakub.kucera", "call": "GET /api/zadosti", "http": 200, "sec": 0.17, "body": "[{\"Id\":4,\"Nazev\":\"overeni-jakub\",\"Castka\":200,\"Stav\":\"Nova\",\"AutorUpn\":\"jakub.kucera@pavelchocholousgmail.onmicrosoft.com\",\"Vytvoreno\":\"2026-11-22T19:36:53.239Z\"}]"}
+{"user": "eva.vesela", "call": "GET /api/zadosti", "http": 200, "sec": 0.17, "body": "[{\"Id\":1,\"Nazev\":\"Notebook\",\"Castka\":30000,\"Stav\":\"Schvaleno\",\"AutorUpn\":\"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com\",\"Vytvoreno\":\"2026-11-22T18:28:44.142Z\"},{\"Id\":3,\"Nazev\":\"overeni-tomas\","}
+{"user": "tomas.prochazka", "call": "POST /api/zadosti/3/stav", "http": 403, "sec": 0.16, "body": "{\"error\":\"role nesmí měnit stav\",\"roles\":[\"Zadavatel\"]}"}
+{"user": "eva.vesela", "call": "POST /api/zadosti/3/stav", "http": 200, "sec": 0.18, "body": "{\"ok\":true}"}
+{"user": "eva.vesela", "call": "POST /api/zadosti", "http": 403, "sec": 0.16, "body": "{\"error\":\"role nesmí zakládat\",\"roles\":[\"Schvalovatel\"]}"}
+{"user": "eva.vesela", "call": "DELETE /api/zadosti/3", "http": 403, "sec": 0.15, "body": "{\"error\":\"maže jen Spravce\",\"roles\":[\"Schvalovatel\"]}"}
+{"user": "petra.novakova", "call": "GET /api/me", "http": 200, "sec": 0.16, "body": "{\"upn\":\"petra.novakova@pavelchocholousgmail.onmicrosoft.com\",\"oid\":\"7b981009-310c-41b7-9086-a8d57f72f17f\",\"roles\":[\"Spravce\"]}"}

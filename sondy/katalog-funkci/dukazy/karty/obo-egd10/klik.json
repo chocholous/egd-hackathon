@@ -1,0 +1,148 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx",
+ "start": "2026-11-24T19:05:00.506Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 1984,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 4986,
+   "vysledek": "4 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\"p\")].find(p=>p.innerText.startsWith(\"Na tomto webu\"))?.innerText",
+   "t": 10823,
+   "vysledek": "Na tomto webu: ukázka obou variant souhlasu. egd10 souhlas má (správce udělil API → Graph jen jemu, typ Principal, User.Read Mail.ReadBasic): Pošta přes OBO vrátí jeho poslední zprávy. egd09 souhlas nemá: tentýž klik skončí 403 s chybou AADSTS65001 „user or administrator has not consented“. Souhlas pro všechny (AllPrincipals) by tu chybu odstranil u každého. Uživatel si ho dát sám nesmí, protože to v E.ON bude rozhodnutí IT.",
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"] #posta",
+   "t": 10826,
+   "ok": true
+  },
+  {
+   "krok": "wait:6000",
+   "t": 10934,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"f6aa9c1a-afda-448e-a188-96437bc2bd7c\"] #o').innerText.match(/\"graphStatus\": \\d+/)?.[0]",
+   "t": 16937,
+   "vysledek": "\"graphStatus\": 200",
+   "ok": true
+  },
+  {
+   "krok": "eval:[...document.querySelectorAll(\"p\")].find(p=>p.innerText.startsWith(\"Na tomto webu\")).scrollIntoView()",
+   "t": 16942,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "shotv:stranka-graph-egd10",
+   "t": 16945,
+   "vysledek": "dukazy/karty/obo-egd10/stranka-graph-egd10.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 603,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 646,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 903,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream"
+  },
+  {
+   "t": 903,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://pavelchocholousgmail.sharepoint.com/_layouts/15/images/BLANK.gif"
+  },
+  {
+   "t": 903,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=89bee1f7-5e6e-4d8a-9f3d-ecd601259da7&scope=https%3A%2F%2Fwebshell.suite.office.com%2F.default%20openid%20profile%20offli"
+  },
+  {
+   "t": 1529,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1810,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 2956,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 7235,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(13)/CommentsDisabledScope"
+  },
+  {
+   "t": 7397,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(13)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 11407,
+   "m": "GET",
+   "s": 200,
+   "u": "https://ca-egd-obo.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/posta"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Options20Regular, Drafts20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More "
+ ],
+ "konec": "2026-11-24T19:05:17.586Z"
+}

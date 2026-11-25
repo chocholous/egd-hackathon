@@ -1,0 +1,10 @@
+desktop_rezervace            "egd10"
+desktop_cli                  {"viditelny":true,"appId":"12f19539-b70a-499d-b6dc-517a32c0e904","tenant":"pavelchocholousgmail.onmicrosoft.com","prikaz":"m365 login --authType deviceCode --appId 12f19539-b70a-499d-b6dc-517a32c0e904 --tenant pavelchocholousgmail.onmicrosoft.com"}
+desktop_cli_po_reloadu       true
+desktop_bez_posunu           true
+mobil_rezervace              "egd09"
+mobil_cli                    {"viditelny":true,"appId":"12f19539-b70a-499d-b6dc-517a32c0e904","tenant":"pavelchocholousgmail.onmicrosoft.com","prikaz":"m365 login --authType deviceCode --appId 12f19539-b70a-499d-b6dc-517a32c0e904 --tenant pavelchocholousgmail.onmicrosoft.com"}
+mobil_cli_po_reloadu         true
+mobil_bez_posunu             true
+uvolneno_egd10               200
+uvolneno_egd09               200

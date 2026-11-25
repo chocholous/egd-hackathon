@@ -1,0 +1,99 @@
+# Dve appky vedle sebe na /sites/egd-test-vedle-sebe, 22. 11. 2026, pavel.admin, CLI 11.11
+## novy + build (egd-prvni-appka)
+[OK]      projekt zalozen: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8d3c6e51-bb57-4e00-b8c2-1af463aca4ab/scratchpad/vedle/prvni-appka (reseni prvni-appka, web part 39a661bd-baef-44f0-b7fe-b9832331dccf)
+Instaluji balicky SharePoint Frameworku (npm ci, lokalne, bez admina; stovky MB, par minut)...
+[OK]      balicky nainstalovane. Dalsi krok: build
+Stavim balicek (npm run build, Heft; minuta az dve)...
+[OK]      balicek: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/8d3c6e51-bb57-4e00-b8c2-1af463aca4ab/scratchpad/vedle/prvni-appka/sharepoint/solution/prvni-appka.sppkg (12051 B, verze 1.0.0.0)
+## seznam + nasadit egd-prvni-appka
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe:
+  - zalozit seznam "Spokojenost" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek
+[OK]      seznam "Spokojenost" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec Den
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "Spokojenost" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/Lists/Spokojenost
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe, katalog tohoto webu, nic tenant-wide):
+  1. nahrat prvni-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku prvni-appka.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+[OK]      nahrano do katalogu (appId 4d7dd357-f856-4ca9-8702-cea935f614e2)
+[OK]      nasazeno (deploy)
+[OK]      appka nainstalovana na web
+[OK]      stranka prvni-appka.aspx zalozena (Article + sekce)
+[OK]      web part vlozen na stranku
+[OK]      stranka prepnuta na celostrankovou appku a publikovana
+[OK]      precteno zpet: stranka prvni-appka.aspx, rozlozeni SingleWebPartAppPage, web part 39a661bd-baef-44f0-b7fe-b9832331dccf na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/prvni-appka.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/prvni-appka.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, po kliknuti na cislo se hlas propise do dashboardu.
+## seznam + nasadit egd-pripravenost (jeho appka.mjs a jeho .sppkg)
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe:
+  - zalozit seznam "SpokojenostHodnoceni" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec DenCislo
+  - pridat sloupec Klic
+  - sloupce DenCislo a Klic budou indexovane (limit 5000 polozek), Klic unikatni = 1 hodnoceni na uzivatele a den
+[OK]      seznam "SpokojenostHodnoceni" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec DenCislo
+[OK]      sloupec Klic
+[OK]      sloupec Title -> "Den"
+[OK]      precteno zpet: seznam "SpokojenostHodnoceni" ma sloupce Hodnoceni, DenCislo, Klic
+[OK]      indexy: DenCislo a Klic jsou indexovane
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/Lists/SpokojenostHodnoceni
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe, katalog tohoto webu, nic tenant-wide):
+  1. nahrat spokojenost-appka.sppkg (verze 1.0.0.1) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku spokojenost.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+[OK]      nahrano do katalogu (appId 386c8598-f369-44e9-a979-b78f27e5c0f3)
+[OK]      nasazeno (deploy)
+[OK]      appka nainstalovana na web
+[OK]      stranka spokojenost.aspx zalozena (Article + sekce)
+[OK]      web part vlozen na stranku
+[OK]      stranka prepnuta na celostrankovou appku a publikovana
+[OK]      precteno zpet: stranka spokojenost.aspx, rozlozeni SingleWebPartAppPage, web part 4d69ec87-319c-4ae4-913a-3acca597f6ed na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/spokojenost.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/spokojenost.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, po kliknuti na 1-5 se hlas ukaze v dashboardu.
+## cteni zpet
+== spo app list (katalog webu)
+{"error":"Prostředek pro požadavek SP.RequestContext.current/web/sitecollectionappcatalog/ se nedá najít."}
+== spo app instance list
+{"Title":"prvni-appka-client-side-solution","ProductId":"59cbc283-a5d4-4aae-9e3c-a0f02e9f2c3b"}
+{"Title":"spokojenost-appka-client-side-solution","ProductId":"e892d80c-3a03-42af-a5e6-3dd10c42f0af"}
+== seznamy
+Spokojenost
+SpokojenostHodnoceni
+== over prvni-appka
+[OK]      katalog webu: prvni-appka-client-side-solution verze 1.0.0.0, nasazeno true
+[OK]      stranka prvni-appka.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam Spokojenost: 0 hlasu
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/prvni-appka.aspx?env=WebView
+== over pripravenost
+[OK]      katalog webu: spokojenost-appka-client-side-solution verze 1.0.0.1, nasazeno true
+[OK]      stranka spokojenost.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam SpokojenostHodnoceni: 0 polozek
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/spokojenost.aspx?env=WebView

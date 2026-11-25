@@ -1,0 +1,16 @@
+běh: job-egd-retez-96aennt  start 02:10:44
+{
+  "end": "2026-11-24T02:11:51+00:00",
+  "name": "job-egd-retez-96aennt",
+  "start": "2026-11-24T02:10:44+00:00",
+  "status": "Succeeded"
+}
+log (Log Analytics má zpoždění 1–5 min; opakuj: az monitor log-analytics query -w 527af16d-c3f2-4d11-b89b-0f6d33b9b8b9 …):
+{"krok":"cnb","ms":233,"http":200,"meny":30,"den":"2026-11-23"}	PrimaryResult	2026-11-24T02:11:13.2771011Z
+{"krok":"token-gateway","ms":964,"aud":"7b59591a-0058-4799-be76-0d1f5b79ca95","roles":["Gateway.App"],"oid":"b67b9a49-7673-4b30-be76-f5b3e51c5c20","azp":"92fbf658-7633-41be-a331-6fb2cc1df74d"}	PrimaryResult	2026-11-24T02:11:13.2771011Z
+{"krok":"llm","ms":34079,"http":200,"model":"gpt-4.1-mini-2025-04-14","tokens":483,"costUsd":0.0004248,"gatewayMs":3249,"znaku":557}	PrimaryResult	2026-11-24T02:11:45.2968512Z
+{"krok":"docx","ms":34279,"bajty":11009}	PrimaryResult	2026-11-24T02:11:46.2805568Z
+{"krok":"token-pdf","ms":34512,"aud":"54c0b31d-b482-4d3f-900c-3e6c0e5fe870","roles":["Dokumenty.App"],"oid":"b67b9a49-7673-4b30-be76-f5b3e51c5c20","azp":"92fbf658-7633-41be-a331-6fb2cc1df74d"}	PrimaryResult	2026-11-24T02:11:46.2805568Z
+{"krok":"pdf","ms":35841,"http":200,"bajty":29806,"serverConvertMs":"1173","magic":"%PDF-"}	PrimaryResult	2026-11-24T02:11:47.2760187Z
+{"krok":"hotovo","ms":36559,"den":"2026-11-23","llm":{"http":200,"model":"gpt-4.1-mini-2025-04-14","tokens":483,"costUsd":0.0004248,"gatewayMs":3249},"pdfBajty":29806,"docxBajty":11009}	PrimaryResult	2026-11-24T02:11:47.2760187Z
+{"krok":"mail","ms":36559,"http":202,"odesilatel":"egd-report@pavelchocholousgmail.onmicrosoft.com","prijemci":"tomas.prochazka@pavelchocholousgmail.onmicrosoft.com"}	PrimaryResult	2026-11-24T02:11:47.2760187Z

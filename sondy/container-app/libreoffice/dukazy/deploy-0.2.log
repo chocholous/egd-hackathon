@@ -1,0 +1,7 @@
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+WARNING: option '--subscription' will be ignored due to use of '--ids'.
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+WARNING: The behavior of this command has been altered by the following extension: containerapp
+/ Running ..| Running ..\ Running ..- Running ../ Running ..| Running ..[KWARNING: The behavior of this command has been altered by the following extension: containerapp
+deploy: https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io  (API appId 54c0b31d-b482-4d3f-900c-3e6c0e5fe870)
+tools/ca-dokumenty-deploy.sh deploy --tag 0.2  3.43s user 1.51s system 12% cpu 38.431 total

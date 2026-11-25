@@ -1,0 +1,9 @@
+{"krok": "jana pridava", "http": 201, "id": 1, "cas": "21:47:47"}
+{"krok": "tomas pridava svou", "http": 201, "id": 2, "cas": "21:47:47"}
+{"krok": "tomas bity", "low": "0x3c4313ef", "CancelCheckout": true, "DeleteListItems": true, "cas": "21:47:47"}
+{"krok": "tomas vidi", "http": 200, "polozky": ["Jana cizí pro mazání", "Tomas vlastní"], "cas": "21:47:48"}
+{"krok": "tomas schvaluje cizi (MERGE)", "http": 204, "chyba": null, "cas": "21:47:48"}
+{"krok": "tomas maze cizi", "http": 200, "chyba": null, "cas": "21:47:49"}
+{"krok": "tomas maze svou", "http": 200, "chyba": null, "cas": "21:47:50"}
+{"krok": "tomas recycle cizi", "http": 400, "chyba": "Položka neexistuje. Je možné, že ji odstranil jiný uživatel.", "cas": "21:47:50"}
+{"krok": "jana vidi", "http": 200, "polozky": [], "cas": "21:47:50"}

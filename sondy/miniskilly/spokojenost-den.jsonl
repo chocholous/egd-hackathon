@@ -1,0 +1,12 @@
+{"t": "20:49:43", "step": "query", "filter": "Den ge '2026-10-23'", "orderby": null, "status": 500, "sec": 2.46, "n": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"t": "20:49:44", "step": "pred", "field": "Den", "filter": "Den eq 'v3'", "status": 500, "sec": 1.04, "n": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"t": "20:49:45", "step": "index on", "field": "Den", "via": "rest", "sec": 0.53, "status": 204, "err": ""}
+{"t": "20:49:45", "step": "po", "field": "Den", "after_sec": 0.2, "status": 200, "sec": 0.17, "n": 0}
+{"t": "20:49:45", "step": "indexed", "list": ["Den(Text)"]}
+{"t": "20:49:47", "step": "query", "filter": "Den ge '2026-10-23'", "orderby": null, "status": 200, "sec": 1.25, "n": 100}
+{"t": "20:49:48", "step": "query", "filter": "Den ge '2026-09-28'", "orderby": null, "status": 500, "sec": 0.99, "n": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"t": "20:49:49", "step": "query", "filter": "Den eq '2026-11-22' and AuthorId eq 6", "orderby": null, "status": 200, "sec": 1.1, "n": 0}
+{"t": "20:49:50", "step": "pred", "field": "Den", "filter": "Den eq 'v3'", "status": 200, "sec": 1.07, "n": 0}
+{"t": "20:49:53", "step": "index off", "field": "Den", "via": "rest", "sec": 2.39, "status": 204, "err": ""}
+{"t": "20:49:53", "step": "po", "field": "Den", "after_sec": 0.5, "status": 500, "sec": 0.52, "n": "-2147024860, Microsoft.SharePoint.SPQueryThrottledException Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"t": "20:49:54", "step": "indexed", "list": []}

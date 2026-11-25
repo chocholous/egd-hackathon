@@ -1,0 +1,8 @@
+# appka.mjs over 20:58:54, appka.mjs mtime 20:57:54
+[OK]      katalog webu: spokojenost-appka-client-side-solution verze 1.0.0.0, nasazeno true
+[OK]      stranka spokojenost.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam SpokojenostHodnoceni: 0 polozek
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev/SitePages/spokojenost.aspx?env=WebView
+rc=0

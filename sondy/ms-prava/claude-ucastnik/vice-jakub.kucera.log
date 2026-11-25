@@ -1,0 +1,58 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/PozadavkyClaude/AllItems.aspx
+KROK wait:6000
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/PozadavkyClaude/AllItems.aspx
+KROK check:input[aria-label='Jana cizí - upravil schvalovatel']
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/PozadavkyClaude/AllItems.aspx
+KROK wait:1500
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/PozadavkyClaude/AllItems.aspx
+KROK klik:Více
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/PozadavkyClaude/AllItems.aspx
+KROK wait:1500
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/PozadavkyClaude/AllItems.aspx
+--- frame https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/Lists/PozadavkyClaude/AllItems.aspx
+a: Přejít k hlavnímu obsahu
+button[button]: Spouštěč aplikací
+a[link]: SharePoint
+button: Hledat
+button[button]: 
+button[button]: Nastavení
+button[button]: Nápověda
+button[button]: JK
+button: Prozkoumat
+button: Publikovat
+button: Kompilovat
+button: OneDrive
+a: Domovská stránka EGD sonda ms-prava
+a: EGD sonda ms-prava
+a[link]: Domovská stránka
+a[link]: Dokumenty
+a[link]: Stránky
+a[link]: Pozadavky
+a[link]: Obsah webu
+button:  Nesledované
+button[menuitem]: Nový
+button[menuitem]: Upravit
+button[menuitem]: Upravit v zobrazení mřížky
+button[menuitem]: Zpět
+button[menuitem]: Sdílet
+button[menuitem]: Kopírovat odkaz
+button[menuitem]: Více
+button[menuitem]: Počet vybraných položek: 1
+button[menuitem]: Podrobnosti
+button: PozadavkyClaude
+label: Přidat tento seznam do oblíbených
+button: Filtr
+button: Seskupit podle
+button: Seřadit
+button[tab]: Všechny položky
+button: Přidat zobrazení
+button: Další akce
+button: Přidat komentář
+button[menuitem]:  Komentář
+button[menuitem]:  Odstranit
+button[menuitem]:  Integrovat 
+button[menuitem]:  Historie verzí
+pole input[checkbox] #LIST_FAVORITE_BUTTON title="" aria="Přidat tento seznam do oblíbených" label=""
+pole input[checkbox] # title="" aria="Vybrat všechny řádky" label=""
+pole input[checkbox] # title="" aria="Jana cizí - upravil schvalovatel" label=""
+pole input[text] # title="" aria="" label=""

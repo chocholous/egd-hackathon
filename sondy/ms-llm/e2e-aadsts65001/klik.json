@@ -1,0 +1,20 @@
+{
+  "profil": "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/515dcfa2-a3d4-4bea-972d-58e7d2ffdf85/scratchpad/profil-tomas",
+  "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-llm/SitePages/evidence.aspx?env=WebView",
+  "cas": "2026-11-22T19:40:50.622Z",
+  "nacteniMs": 33417,
+  "shrnuti": {
+    "ms": 401,
+    "vystup": "Chyba AI: invalid_grant:AADSTS65001: Access to this resource is blocked. Contact your administrator for assistance."
+  },
+  "ocr": {
+    "soubor": "ocr-cs.png",
+    "ms": 68,
+    "vystup": "Chyba AI: Token request previously failed",
+    "popisPoOcr": "Na chodbě ve 2. patře budovy B nesvítí od pondělí tři zářivky, je tam tma a lidé zakopávají o schod u výtahu. Prosím o výměnu zářivek a kontrolu, jestli není vadný vypínač."
+  },
+  "sit": [],
+  "bundly": [
+    "200 evidence-web-part_d33e8b8961ee5f599eda.js"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "nazev": "PDF + mail: A, B, C1 ✅",
+  "stav": "hotovo",
+  "popis": "C1 LibreOffice CA: studený 35,5 s, teplý 2,0 s, doručeno %PDF-1.6",
+  "oblast": "miniskilly",
+  "kdo": "ms-maily",
+  "vystup": "skills/egd-maily, sondy/ms-pdf-mail",
+  "aktualizovano": "2026-11-24T02:06:31Z",
+  "zacatek": "2026-11-24T01:46:28Z",
+  "kroky": 4,
+  "historie": [
+    {
+      "t": "2026-11-24T01:46:28Z",
+      "stav": "bezi",
+      "popis": "průzkum skillu egd-dokumenty"
+    },
+    {
+      "t": "2026-11-24T01:59:03Z",
+      "stav": "hotovo",
+      "popis": "✅ obě varianty doručeny, %PDF-1.7"
+    },
+    {
+      "t": "2026-11-24T02:00:45Z",
+      "stav": "bezi",
+      "popis": "obnova projektu, tlačítko docx→CA→mail"
+    },
+    {
+      "t": "2026-11-24T02:06:31Z",
+      "stav": "hotovo",
+      "popis": "C1 LibreOffice CA: studený 35,5 s, teplý 2,0 s, doručeno %PDF-1.6"
+    }
+  ]
+}

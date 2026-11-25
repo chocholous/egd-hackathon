@@ -1,0 +1,3 @@
+PowerApp kind: POST bez tokenu -> 401 DirectApiAuthorizationRequired
+PowerApp kind: POST s tokenem aud https://service.flow.microsoft.com(/) a https://service.powerapps.com -> 403 MisMatchingOAuthClaims
+Button, Teams kind: listCallbackUrl -> 400 ListCallbackUrlOperationBlocked

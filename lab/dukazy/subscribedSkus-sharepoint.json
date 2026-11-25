@@ -1,0 +1,40 @@
+[
+  {
+    "sku": "BUSINESS_PREMIUM_AND_MICROSOFT_365_COPILOT_FOR_BUSINESS",
+    "sharepoint": [
+      {
+        "n": "SHAREPOINTSTANDARD",
+        "s": "Success"
+      },
+      {
+        "n": "SHAREPOINTWAC",
+        "s": "Success"
+      },
+      {
+        "n": "M365_COPILOT_SHAREPOINT",
+        "s": "Success"
+      }
+    ]
+  },
+  {
+    "sku": "FLOW_FREE",
+    "sharepoint": []
+  },
+  {
+    "sku": "AGENT_365",
+    "sharepoint": []
+  },
+  {
+    "sku": "SPE_E5",
+    "sharepoint": [
+      {
+        "n": "SHAREPOINTWAC",
+        "s": "Success"
+      },
+      {
+        "n": "SHAREPOINTENTERPRISE",
+        "s": "Success"
+      }
+    ]
+  }
+]

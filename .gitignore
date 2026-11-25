@@ -1,0 +1,43 @@
+# Prostředí a závislosti
+.venv/
+node_modules/
+.npm/
+.cache/
+
+# Výstupy buildů SPFx (zdroj je v src/, výsledné .sppkg se dá postavit znovu)
+sondy/**/lib/
+**/temp/
+**/dist/
+**/release/
+**/.heft/
+*.sppkg
+
+# Tajemství a přihlášení — nikdy do gitu
+*.secrets.json
+.env
+.env.*
+!.env.example
+*.pem
+*.pfx
+*.key
+**/storage-state*.json
+**/storageState*.json
+.claude/settings.local.json
+
+# Falešné HOME adresáře z běhů Copilota (cache, tokeny)
+**/copilot/*/home/
+**/.copilot/
+
+# Systém
+.DS_Store
+
+# Vygenerovaná velká testovací data (náhodný šum, dají se vyrobit znovu)
+sondy/dokumenty/out-big/
+sondy/ms-llm/velky*
+
+# Výdej účtů: kódy a vygenerovaná stránka s (šifrovanými) údaji
+*.secrets/
+lab/vydej/vydej-uctu.html
+
+# Lokální archivy dočasných souborů (ne do gitu)
+archiv/

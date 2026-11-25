@@ -1,0 +1,7 @@
+# uživatel=tomas.prochazka web=https://pavelchocholousgmail.sharepoint.com/sites/apps 2026-11-22T19:16:26Z
+web-title (čtení webu)	200	{"Title":"App catalog","Url":"https://pavelchocholousgmail.sharepoint.com/sites/apps"}
+effective-perms (EffectiveBasePermissions web)	200	{"High":"688","Low":"138612833"}
+lists (čtení seznamů)	200	{"value":[{"Title":"App Requests"},{"Title":"appdata"},{"Title":"appfiles"}]}
+knihovna-polozky (čtení knihovny Apps for SharePoint)	200	{"odata.nextLink":"https://pavelchocholousgmail.sharepoint.com/sites/apps/_api/web/lists/getbytitle(%27Apps%20for%20SharePoint%27)/items?%24skiptoken=Paged%3dTR
+zalozit-seznam (POST lists)	403	{"odata.error":{"code":"-2147024891, System.UnauthorizedAccessException","message":{"lang":"en-US","value":"Access is denied. (Exception from HRESULT: 0x8007000
+upload-souboru (add do knihovny)	403	{"odata.error":{"code":"-2147024891, System.UnauthorizedAccessException","message":{"lang":"en-US","value":"Access denied."}}}

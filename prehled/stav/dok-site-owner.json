@@ -1,0 +1,32 @@
+{
+  "nazev": "Matice: co smí site owner",
+  "stav": "hotovo",
+  "popis": "matice v 10 a 05 ✅ vč. m365 CLI; e2e egd10 prošlo (sondy/e2e/README.md), odkaz v obou dokumentech",
+  "oblast": "podklady",
+  "kdo": "redaktor",
+  "aktualizovano": "2026-11-24T20:43:38Z",
+  "zacatek": "2026-11-24T10:25:25Z",
+  "kroky": 4,
+  "historie": [
+    {
+      "t": "2026-11-24T10:25:25Z",
+      "stav": "planovano",
+      "popis": "čeká na měření Ověřovatele pod egd01 a e2e pod egd10; pak matice do 05 a 10"
+    },
+    {
+      "t": "2026-11-24T10:35:18Z",
+      "stav": "bezi",
+      "popis": "matice v 10 a 05 hotová pro body 1–5; čeká m365 CLI (bod 6) a e2e egd10"
+    },
+    {
+      "t": "2026-11-24T10:36:14Z",
+      "stav": "bezi",
+      "popis": "bod 6 (m365 CLI) ✅ doplněn; čeká jen e2e egd10"
+    },
+    {
+      "t": "2026-11-24T20:43:38Z",
+      "stav": "hotovo",
+      "popis": "matice v 10 a 05 ✅ vč. m365 CLI; e2e egd10 prošlo (sondy/e2e/README.md), odkaz v obou dokumentech"
+    }
+  ]
+}

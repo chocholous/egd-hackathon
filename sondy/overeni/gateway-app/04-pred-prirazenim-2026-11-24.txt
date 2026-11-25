@@ -1,0 +1,12 @@
+# 2026-11-24T07:42:11Z PŘED přiřazením role Gateway.App
+## token-info
+{
+  "aud": "7b59591a-0058-4799-be76-0d1f5b79ca95",
+  "appid": null,
+  "roles": null,
+  "idtyp": null,
+  "tid": "972a674c-7b85-4e56-a31f-b2f95b42fd1e"
+}
+## GET /api/whoami
+{"error":"Token nemá scope Gateway.Use ani roli Gateway.App"}
+[HTTP 403, 0.191663s]

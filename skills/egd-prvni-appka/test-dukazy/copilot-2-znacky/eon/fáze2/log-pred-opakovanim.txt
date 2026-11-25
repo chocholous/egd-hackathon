@@ -1,0 +1,101 @@
+ $ Shell Vytvořit SPFx projekt E.ON 4 lines…                                                     30s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" novy
+   --slozka prvni-appka --znacka eon
+
+ ● Read shell output Waiting up to 120 seconds for command output 4 lines…                    1m 24s
+
+ $ Shell Sestavit SPFx balíček 2 lines…                                                          17s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" build
+   --slozka prvni-appka
+
+Projekt E.ON je sestavený. Teď si nechám vypsat plán pro založení seznamu na cílovém webu a ověřím, že skript skutečně míří jen tam, než provede zápis.
+
+ ✗ Shell Zobrazit plán vytvoření seznamu Failed with exit code 10  PLAN na webu https://pavelch… 28s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" seznam
+   --web "]8;id=md-x8gkkn;https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eonhttps://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon]8;;]8;;" --slozka prvni-appka]8;;
+   PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon:
+     - zalozit seznam "MojeAppka" (bezny seznam, v navigaci webu)
+     - pridat sloupec Hodnoceni
+     - pridat sloupec Den
+     - sloupec Hodnoceni naformatovat jako barevny stitek (E.ON: cervena skala + cislo)
+   
+   Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+   Failed with exit code 10
+
+ $ Shell Založit seznam na cílovém webu 12 lines…                                                19s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" seznam
+   --web "]8;id=md-x8gkkn;https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eonhttps://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon]8;;]8;;" --slozka prvni-appka ]8;;
+   --ano
+
+ ✗ Shell Zobrazit plán nasazení aplikace Failed with exit code 10  [INFO]    prihlasen: pavel.a… 14s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" nasadit
+   --web "]8;id=md-x8gkkn;https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eonhttps://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon]8;;]8;;" --slozka prvni-appka ]8;;
+   --nadpis "Spokojenost s prostředím kanceláře dnes"
+   [INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+   
+   PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon, katalog 
+   tohoto webu, nic tenant-wide):
+     1. nahrat prvni-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+     2. nasadit (deploy) v katalogu webu
+     3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+     4. zalozit stranku prvni-appka.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web 
+   part, prepnout na celostrankovou appku a publikovat
+   
+   Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+   Failed with exit code 10
+
+ ✗ Shell Nasadit aplikaci jen na cílový web Failed with exit code 1  [INFO]    prihlasen: pavel… 14s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" nasadit
+   --web "]8;id=md-x8gkkn;https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eonhttps://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon]8;;]8;;" --slozka prvni-appka ]8;;
+   --nadpis "Spokojenost s prostředím kanceláře dnes" --ano
+   [INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+   
+   PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon, katalog 
+   tohoto webu, nic tenant-wide):
+     1. nahrat prvni-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+     2. nasadit (deploy) v katalogu webu
+     3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+     4. zalozit stranku prvni-appka.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web 
+   part, prepnout na celostrankovou appku a publikovat
+   [OK]      nahrano do katalogu (appId bdd450de-e836-4de5-af5a-a2c40f252a1e)
+   [CHYBA]   deploy: Error: Prostředek pro požadavek 
+   SP.RequestContext.current/web/sitecollectionappcatalog/ se nedá najít.
+   Failed with exit code 1
+
+Seznam je vytvořen, ale nasazení se zastavilo: cílový web vrací chybu, že jeho katalog aplikací nelze najít. Nepokouším se nic mazat ani zapisovat na jiný web; ověřím bezpečnou záložní variantu bez kódu pro již vytvořený seznam.
+
+ MD Read ~/.copilot/skills/egd-prvni-appka/references/chyby.md 85 lines read
+
+ MD Read ~/.copilot/skills/egd-prvni-appka/references/bez-kodu.md 44 lines read
+
+ ✗ Shell Ověřit aktuální stav na cílovém webu Failed with exit code 1  [OK]      katalog webu: p… 6s
+   node "/private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c62
+   95599c8c7/scratchpad/pa/sb-eon/home/.copilot/skills/egd-prvni-appka/scripts/appka.mjs" over --web
+   "]8;id=md-x8gkkn;https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eonhttps://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon]8;;]8;;" --slozka prvni-appka]8;;
+   [OK]      katalog webu: prvni-appka-client-side-solution verze 1.0.0.0, nasazeno false
+   [CHYBA]   stranka prvni-appka.aspx: Error: Soubor 
+   /sites/egd-test-cp-eon/SitePages/prvni-appka.aspx neexistuje.
+   [OK]      seznam MojeAppka: 0 hlasu
+   
+   Neco chybi (viz vyse). Ze se appka vykresli a funguje, ukaze jen prohlizec:
+     https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon/SitePages/prvni-appka.aspx?en
+   v=WebView
+   Failed with exit code 1
+
+Aplikace se na stránku nenasadila: web nemá dostupný katalog aplikací, takže stránka `prvni-appka.aspx` nevznikla. Založený seznam **MojeAppka** ale můžete používat už teď — otevřete [seznam na cílovém webu](https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon/Lists/MojeAppka), zvolte **Nový**, vyplňte **Hodnocení** 1–5 a **Den** jako `2026-11-24`; pro přehled seskupte zobrazení podle sloupce **Den** a u **Hodnocení** zapněte součet **Průměr** a **Počet**. Tato záložní varianta není samostatná appka a sama nevynucuje jeden hlas denně; hlasující jsou viditelní.
+
+Aby šla nasadit původní aplikace E.ON, požádejte IT: „Prosím o založení katalogu aplikací pro kolekci webů (site collection app catalog) na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-cp-eon. Účel: nasazení SharePoint Framework web partu pro tým, jen na tento web, bez nasazení do celého tenantu.“
+
+Session exported to: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/5f69cff6-031c-4b89-a84d-c6295599c8c7/scratchpad/pa/sb-eon/vystup/prepis.md
+
+
+Changes    +0 -0
+AI Credits 1.17 (5m 37s)
+Tokens     ↑ 439.1k (397.7k cached, 41.3k written) • ↓ 5.0k (2.7k reasoning)
+Resume     copilot --resume=58111c4d-6640-4c42-8482-aa485334cc04

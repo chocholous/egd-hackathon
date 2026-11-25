@@ -1,0 +1,6 @@
+{"krok": "CurrentChangeToken", "token": "1;3;22ac1a69-d352-4003-b1a1-604ef72c6e78;639309718093030000;1477571170"}
+{"test": "GetChanges_bez_tokenu_prvni_stranka", "status": 200, "sec": 0.299, "zmen": 1000, "chyba": null}
+{"test": "GetChanges_od_tokenu", "status": 200, "sec": 0.167, "zmen": 5, "vzorek": [{"ItemId": 12001, "Typ": 1}, {"ItemId": 12002, "Typ": 1}, {"ItemId": 10, "Typ": 2}, {"ItemId": 20, "Typ": 2}, {"ItemId": 30, "Typ": 2}]}
+{"test": "GetListItemChangesSinceToken_bez_tokenu_RowLimit100", "status": 200, "sec": 0.361, "delka": 363993, "vzorek": "<?xml version=\"1.0\" encoding=\"utf-8\" ?><GetListItemChangesSinceTokenResult><listitems MinTimeBetweenSyncs='0' RecommendedTimeBetweenSyncs='180' MaxBulkDocumentSyncSize='500' MaxRecommendedEmbeddedFile"}
+{"krok": "ChangeToken z odpovedi", "token": "1;3;22ac1a69-d352-4003-b1a1-604ef72c6e78;639309718132570000;1477571252"}
+{"test": "GetListItemChangesSinceToken_s_tokenem_po_1_zmene", "status": 200, "sec": 0.213, "delka": 3761, "vzorek": "<?xml version=\"1.0\" encoding=\"utf-8\" ?><GetListItemChangesSinceTokenResult><listitems MinTimeBetweenSyncs='0' RecommendedTimeBetweenSyncs='180' MaxBulkDocumentSyncSize='500' MaxRecommendedEmbeddedFileSize='500' EffectivePermMask='9223372036854513663' xmlns:s='uuid:BDC6E3F0-6DA3-11d1-A2A3-00AA00C1488"}

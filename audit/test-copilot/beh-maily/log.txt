@@ -1,0 +1,610 @@
+ ● Copilot Fusion selected GPT-6 Luna because it was the best choice out of the models available in
+   your plan.
+
+ ● skill(egd-maily)
+
+ ● skill(egd-dokumenty)
+
+Plán: nejdřív prohlédnu `prvni-appka` a její nasazovací skripty, doplním PDF/Word→LibreOffice/mail do existujícího web partu, přidám pouze žádosti o potřebná oprávnění (nic neschválím), postavím balíček a nasadím jej i stránku `pdf-mail-copilot` jen na uvedený web. Do jeho knihovny nahraji konfigurační JSON a font; žádný e-mail neodešlu.
+
+ $ Shell Inspect app and worktree 85 lines…
+   pwd && ls -la && find prvni-appka -maxdepth 3 -type f | sort | head -80 && git status --short
+   2>/dev/null || true
+
+ $ Shell Locate source, CLI and font 24 lines…
+   find prvni-appka -path 'prvni-appka/node_modules' -prune -o -type f -print | sort && printf
+   '\n--- CLI ---\n' && ls -l /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js &&
+   printf '\n--- font candidates ---\n' && find /tmp/cp-run8/home/.copilot/skills/egd-dokumenty
+   -type f -name 'Roboto-Regular.ttf' -print
+
+ / Search "prvni-appka/{src,config,tools,package.json,README*}/**" 10 files found
+
+ SS Read prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.module.scss 74 lines read
+
+ {} Read prvni-appka/package.json 44 lines read
+
+ TS Read prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts 224 lines read
+
+ {} Read prvni-appka/config/package-solution.json 39 lines read
+
+ $ Shell Check CLI options and available fonts 53 lines…                                          6s
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js --help | head -40; printf
+   '\n--- local fonts ---\n'; find /System/Library/Fonts /Library/Fonts -type f \( -iname '*Roboto*'
+   -o -iname '*Arial*' \) -print 2>/dev/null | head -20
+
+ ✗ Shell Check Microsoft 365 CLI session Failed with exit code 1  Error: Unrecognized key: "cli" Ru…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js status --cli
+   Error: Unrecognized key: "cli"
+   Run 'm365 status -h' for help.
+   Failed with exit code 1
+
+ $ Shell Check site deployment commands 88 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo appcatalog add --help
+   --cli | head -100; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo
+   app add --help --cli | head -100
+
+ $ Shell Check upload and page commands 118 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file add --help --cli
+   | head -80; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page add
+   --help --cli | head -100
+
+ $ Shell Check font and PDF libraries No Content
+   find /private/tmp/cp-run8/home -type f -name 'Roboto-Regular.ttf' -print 2>/dev/null | head -20;
+   find prvni-appka/node_modules -maxdepth 1 -type d \( -name 'pdf-lib' -o -name '@pdf-lib' -o -name
+   'docx' \) -print
+
+ $ Shell Check Microsoft 365 login status 8 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js status --output json
+
+ $ Shell Inspect page web part and deploy commands 50 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page
+   clientsidewebpart --help | head -120; node
+   /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app deploy --help | head
+   -100
+
+ $ Shell Inspect library and app catalog commands 88 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo folder add --help |
+   head -70; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo web get
+   --help | head -70; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo
+   site appcatalog --help | head -80
+
+ $ Shell Read web part manifest and versions 67 lines…
+   cat prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.manifest.json && printf '\n---
+   solution current ---\n' && cat prvni-appka/config/package-solution.json && printf '\n--- versions
+   ---\n' && node -v && npm -v
+
+ $ Shell Inspect target SharePoint web 77 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo web get --url
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --output json]8;;
+
+ $ Shell Check app catalog scope details 138 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo site appcatalog list
+   --help full | head -100; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js
+   spo site appcatalog add --help full | head -100
+
+ $ Shell Inspect page creation options 164 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page
+   clientsidewebpart add --help full | head -140; node
+   /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page add --help examples |
+   head -90
+
+Cíl potvrzuje český SharePoint web a přihlášený CLI účet. Přidám obě varianty s aktuálním stránkovaným přehledem hlasů, PDF s vloženým fontem a převod přes konfigurované API; požadavky na `Mail.Send` i API přístup zůstanou pouze žádostmi, bez schválení.
+
+ ● Edit  Edit prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts (+166 -1)
+
+ TS Read prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts L35:330 (296 lines read)
+
+ ● Edit  Edit prvni-appka/src/webparts/spokojenost/SpokojenostWebPart.ts (-4)  Edit prvni-appka/src…
+
+ $ Shell Install exact PDF and Word packages 1 line…
+   npm install --save-exact pdf-lib@1.17.1 @pdf-lib/fontkit@1.1.1 docx@9.16.0
+
+ ● Fetching web content  Content type text/css; charset=utf-8 cannot be simplified to markdown. Here
+
+ $ Shell Check target site app catalog 54 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo site appcatalog list
+   --query "[?AbsoluteUrl==']8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;;']" ]8;;
+   --output json; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo
+   request --help | head -80
+
+ $ Shell Verify voting list and inspect file lookup 102 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo list get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --title Spokojenost --output]8;;
+   json | head -50; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file
+   get --help | head -80
+
+ ● Fetching web content  Content type text/css; charset=utf-8 cannot be simplified to markdown. Here
+
+ $ Shell Confirm target voting list 5 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo list get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --title Spokojenost --query ]8;;
+   '{Title:Title,Id:Id,ItemCount:ItemCount}' --output json
+
+ ✗ Shell Check request syntax and target page absence Failed with exit code 1  REQUEST ======= Exec…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js request --help | head
+   -90; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file get
+   --webUrl ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --url ]8;;
+   '/sites/egd-sonda-ms-maily/SitePages/pdf-mail-copilot.aspx' --output json
+   REQUEST
+   =======
+   
+   Executes the specified web request using CLI for Microsoft 365
+   
+   
+   USAGE
+   
+     m365 request [options]
+   
+   
+   OPTIONS
+   
+     -u, --url <url>
+       The request URL.
+   
+     -m, --method [method]
+       The HTTP request method. Accepted values are get, post, put, patch, delete, head, options. 
+   The default value is get.
+   
+     -r, --resource [resource]
+       The resource uri for which the CLI should acquire a token from Microsoft Entra ID in order to
+    access the service.
+   
+     -b, --body [body]
+       The request body. Optionally use @example.json to load the body from a file.
+   
+     -p, --filePath [filePath]
+       The file path to save the response to. This option can be used when downloading files.
+   
+     -h, --help [help]
+       Output usage information. Optionally, specify which section of command's help you want to 
+   see. Allowed values are options, examples, remarks, permissions, response, full. Default is 
+   options.
+   
+     --query [query]
+       JMESPath query string. See http://jmespath.org/ for more information and examples.
+   
+     -o, --output [output]
+       Output type. json, text, csv, md, none. Default json.
+   
+     --verbose
+       Runs command with verbose logging.
+   
+     --debug
+       Runs command with debug logging.
+   Error: Soubor /sites/egd-sonda-ms-maily/SitePages/pdf-mail-copilot.aspx neexistuje.
+   Failed with exit code 1
+
+ ● Read shell output Reading command output 10 lines…
+
+ ● Edit  Create prvni-appka/assets/prevod-api.json (+4)
+
+ $ Shell Download Roboto font for Czech PDF 2 lines…
+   mkdir -p prvni-appka/assets && curl -fL --silent --show-error
+   ']8;id=md-1n27uxh;https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttfhttps://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbWmT.ttf]8;;]8;;']8;;
+   -o prvni-appka/assets/Roboto-Regular.ttf && file prvni-appka/assets/Roboto-Regular.ttf && ls -lh
+   prvni-appka/assets/Roboto-Regular.ttf
+
+ $ Shell Build and package SharePoint app 1 line…
+   npm run build
+
+ $ Shell Check font glyph coverage and dependencies 37 lines…
+   node - <<'NODE'
+   const fs = require('fs');
+   const fontkit = require('./prvni-appka/node_modules/@pdf-lib/fontkit');
+   const font = fontkit.create(fs.readFileSync('./prvni-appka/assets/Roboto-Regular.ttf'));
+   for (const char of 'ěščřžýáíéůúďťňČŘŽ') {
+     if (!font.hasGlyphForCodePoint(char.codePointAt(0))) throw new Error(`Roboto is missing
+   ${char}`);
+   }
+   console.log('Roboto includes Czech accented glyphs.');
+   NODE
+   cat prvni-appka/package.json | grep -A8 '"dependencies"'
+
+ $ Shell Find target document library root 7 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js request --url
+   ']8;id=md-zqnxsx;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/defaultDocumentLibrary/rootFolder?$select=ServerRelativeUrlhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/defaultDocumentLib]8;;
+   ]8;id=md-zqnxsx;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/defaultDocumentLibrary/rootFolder?$select=ServerRelativeUrlrary/rootFolder?$select=ServerRelativeUrl]8;;]8;;' --method get --output json]8;;
+
+ $ Shell Inspect folder and site app upload syntax 66 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo folder get --help |
+   head -70; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app add
+   --help examples | head -70
+
+ ● Read shell output Reading command output 6 lines…
+
+ ✗ Shell  <command with shellId: 24 is already running, wait for output with read_bash, stop it with
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo folder get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --url ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets' --output json || true; node
+   /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --url ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets/prevod-api.json' --output json || true
+   <command with shellId: 24 is already running, wait for output with read_bash, stop it with 
+   stop_bash tool>
+
+ ✗ Shell  <command with shellId: 25 is already running, wait for output with read_bash, stop it with
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app get --help | head
+   -80; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page publish
+   --help | head -70
+   <command with shellId: 25 is already running, wait for output with read_bash, stop it with 
+   stop_bash tool>
+
+ $ Shell Verify Czech font coverage and package dependencies 34 lines…
+   node - <<'NODE'
+   const fs = require('fs');
+   const fontkit = require('@pdf-lib/fontkit');
+   const font = fontkit.create(fs.readFileSync('assets/Roboto-Regular.ttf'));
+   for (const char of 'ěščřžýáíéůúďťňČŘŽ') {
+     if (!font.hasGlyphForCodePoint(char.codePointAt(0))) throw new Error(`Roboto is missing
+   ${char}`);
+   }
+   console.log('Roboto includes Czech accented glyphs.');
+   NODE
+   cat package.json | grep -A14 '"dependencies"'
+
+ ✗ Shell Build and package SharePoint app Failed with exit code 1  npm error Missing script: "build…
+   npm run build
+   npm error Missing script: "build"
+   npm error
+   npm error To see a list of scripts, run:
+   npm error   npm run
+   npm error A complete log of this run can be found in: 
+   /tmp/cp-run8/home/.npm/_logs/2026-11-24T03_07_55_658Z-debug-0.log
+   Failed with exit code 1
+
+ $ Shell Verify Czech font coverage and dependencies 22 lines…
+   cd prvni-appka && node - <<'NODE'
+   const fs = require('fs');
+   const fontkit = require('@pdf-lib/fontkit');
+   const font = fontkit.create(fs.readFileSync('assets/Roboto-Regular.ttf'));
+   for (const char of 'ěščřžýáíéůúďťňČŘŽ') {
+     if (!font.hasGlyphForCodePoint(char.codePointAt(0))) throw new Error(`Roboto is missing
+   ${char}`);
+   }
+   console.log('Roboto includes Czech accented glyphs.');
+   NODE
+   cat package.json | grep -A14 '"dependencies"'
+
+ $ Shell Check for existing assets on target web 40 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo folder get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --url ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets' --output json || true; node
+   /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --url ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets/prevod-api.json' --output json || true
+
+ $ Shell Build and package SharePoint app 82 lines…                                              20s
+   cd prvni-appka && npm run build
+
+Build už prošel a font obsahuje všechny české znaky. Na webu už existuje složka `assets` i konfigurační soubor, proto před nahráním ověřím jejich obsah a upravím jen požadované soubory; balíček nasadím výhradně přes katalog tohoto webu.
+
+ $ Shell Verify packaged permission requests 49 lines…
+   cd prvni-appka && node - <<'NODE'
+   const fs = require('fs');
+   const cp = require('child_process');
+   const pkg = require('./package.json');
+   console.log(`Dependencies: ${pkg.dependencies['pdf-lib']},
+   ${pkg.dependencies['@pdf-lib/fontkit']}, ${pkg.dependencies.docx}`);
+   console.log(`Package artifact: ${fs.existsSync('sharepoint/solution/prvni-appka.sppkg')}`);
+   NODE
+   cat config/package-solution.json
+
+ $ Shell Read existing conversion API configuration 1 line…                                       5s
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --url ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets/prevod-api.json' --asString --output json
+
+ $ Shell Inspect site installation commands 113 lines…                                            6s
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo folder list --help |
+   head -80; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app install
+   --help | head -100; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo
+   app list --help | head -80
+
+ $ Shell Add document libraries to the app manifest 1 line…
+   cd prvni-appka && npm install --save-exact pdf-lib@1.17.1 @pdf-lib/fontkit@1.1.1 docx@9.16.0 &&
+   node -e "const p=require('./package.json');console.log(p.dependencies['pdf-lib'],p.dependencies['
+   @pdf-lib/fontkit'],p.dependencies.docx)"
+
+ $ Shell Inspect root npm artifacts 14 lines…
+   ls -la && if [ -f package.json ]; then cat package.json; fi
+
+ $ Shell Inspect existing library assets 4 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo folder list --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --parentFolderUrl ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets' --fields Name,ServerRelativeUrl --output
+   json; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file get
+   --webUrl ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --url ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets/prevod-api.json' --asString --output text
+
+ $ Shell Inspect library file listing 42 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file list --help |
+   head -80
+
+ $ Shell Read existing API config bytes 1 line…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js request --url "]8;id=md-1qbtpcy;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=https://pa]8;;
+   ]8;id=md-1qbtpcy;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=velchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(d]8;;
+   ]8;id=md-1qbtpcy;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=ecodedurl=]8;;]8;;'/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json')/$value" ]8;;
+   --method get --filePath /tmp/egd-prevod-api-existing.json --output none && cat
+   /tmp/egd-prevod-api-existing.json
+
+ $ Shell Check existing app in site catalog 1 line…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app list
+   --appCatalogScope sitecollection --appCatalogUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --query ]8;;
+   "[?Name=='prvni-appka-client-side-solution']" --output json
+
+ ● Read shell output Reading command output 1 line…
+
+ $ Shell List existing target assets 12 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file list --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --folderUrl ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets' --fields Name,Length,ServerRelativeUrl
+   --output json
+
+ $ Shell Read existing conversion config content 1 line…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js request --url ']8;id=md-p8t4br;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=%27/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json%27)/$valuehttps://pa]8;;
+   ]8;id=md-p8t4br;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=%27/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json%27)/$valuevelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(d]8;;
+   ]8;id=md-p8t4br;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=%27/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json%27)/$valueecodedurl=%27/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json%27)/$value]8;;]8;;' ]8;;
+   --method get --filePath /tmp/egd-prevod-api-existing.json --output none && cat
+   /tmp/egd-prevod-api-existing.json
+
+ ● Read shell output Reading command output 15 lines…
+
+ $ Shell Download existing SharePoint PDF font for validation 1 line…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --url ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets/Roboto-Regular.ttf' --asFile --path
+   /tmp/egd-prevod-font-existing.ttf --output none && ls -lh /tmp/egd-prevod-font-existing.ttf
+
+ $ Shell Inspect page publish and verification commands 73 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page publish --help |
+   head -80; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page get
+   --help | head -80
+
+ $ Shell Validate existing SharePoint font glyph coverage 8 lines…
+   cd prvni-appka && node - <<'NODE'
+   const fs = require('fs');
+   const fontkit = require('@pdf-lib/fontkit');
+   for (const path of ['/tmp/egd-prevod-font-existing.ttf', 'assets/Roboto-Regular.ttf']) {
+     const font = fontkit.create(fs.readFileSync(path));
+     const missing = [...'ěščřžýáíéůúďťňČŘŽ'].filter((c) =>
+   !font.hasGlyphForCodePoint(c.codePointAt(0)));
+     console.log(`${path}: ${missing.length ? `missing ${missing.join('')}` : 'Czech glyphs OK'}`);
+   }
+   NODE
+
+ ✗ Shell Remove accidental root npm artifacts Failed with exit code 1  removed 11 packages, and aud…
+   npm uninstall --prefix /private/tmp/cp-run8/home/egd-workshop @pdf-lib/fontkit docx pdf-lib &&
+   npm prune --prefix /private/tmp/cp-run8/home/egd-workshop && ls -la
+   /private/tmp/cp-run8/home/egd-workshop && rm /private/tmp/cp-run8/home/egd-workshop/package.json
+   /private/tmp/cp-run8/home/egd-workshop/package-lock.json && if [ -d
+   /private/tmp/cp-run8/home/egd-workshop/node_modules ]; then rmdir
+   /private/tmp/cp-run8/home/egd-workshop/node_modules; fi
+   removed 11 packages, and audited 1 package in 439ms
+   
+   found 0 vulnerabilities
+   
+   up to date, audited 1 package in 195ms
+   
+   found 0 vulnerabilities
+   total 16
+   drwxr-xr-x@  6 chocholous  wheel  192 Nov 24 04:07 .
+   drwxr-xr-x@ 11 chocholous  wheel  352 Nov 24 04:07 ..
+   drwxr-xr-x@  6 chocholous  wheel  192 Nov 24 04:09 node_modules
+   -rw-r--r--@  1 chocholous  wheel   91 Nov 24 04:09 package-lock.json
+   -rw-r--r--@  1 chocholous  wheel    3 Nov 24 04:09 package.json
+   drwxr-xr-x@ 21 chocholous  wheel  672 Nov 24 04:08 prvni-appka
+   rmdir: /private/tmp/cp-run8/home/egd-workshop/node_modules: Directory not empty
+   Failed with exit code 1
+
+ ✗ Shell Clean accidental root npm files Failed with exit code 1  rm: /private/tmp/cp-run8/home/egd…
+   rm /private/tmp/cp-run8/home/egd-workshop/package.json
+   /private/tmp/cp-run8/home/egd-workshop/package-lock.json
+   /private/tmp/cp-run8/home/egd-workshop/node_modules/.package-lock.json && rmdir
+   /private/tmp/cp-run8/home/egd-workshop/node_modules && ls -la
+   /private/tmp/cp-run8/home/egd-workshop
+   rm: /private/tmp/cp-run8/home/egd-workshop/package.json: No such file or directory
+   rm: /private/tmp/cp-run8/home/egd-workshop/package-lock.json: No such file or directory
+   Failed with exit code 1
+
+ $ Shell Confirm font and API configuration 7 lines…
+   shasum -a 256 prvni-appka/assets/Roboto-Regular.ttf /tmp/egd-prevod-font-existing.ttf && node -
+   <<'NODE'
+   const fs = require('fs');
+   const config = JSON.parse(fs.readFileSync('prvni-appka/assets/prevod-api.json', 'utf8'));
+   if (config.url !==
+   ']8;id=md-1naho8o;https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.iohttps://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io]8;;]8;;' || ]8;;
+   config.appId !== '54c0b31d-b482-4d3f-900c-3e6c0e5fe870') throw new Error('Config mismatch');
+   console.log('Local API config matches requested values.');
+   NODE
+
+ $ Shell Rebuild app with its own dependencies 84 lines…                                         13s
+   cd prvni-appka && npm run build
+
+ $ Shell Inspect remaining generated root npm directory 5 lines…
+   ls -la /private/tmp/cp-run8/home/egd-workshop && find
+   /private/tmp/cp-run8/home/egd-workshop/node_modules -maxdepth 2 -type f -print 2>/dev/null | head
+   -20
+
+ $ Shell Verify packaged permission requests and runtime config separation 6 lines…
+   cd prvni-appka && unzip -p sharepoint/solution/prvni-appka.sppkg AppManifest.xml | grep -oE
+   'Mail.Send|egd-ca-dokumenty|access_as_user' | sort -u && printf '\n--- config in bundle? ---\n'
+   && if grep -R -l '54c0b31d-b482-4d3f-900c-3e6c0e5fe870' lib; then exit 1; else echo 'API appId is
+   not embedded in JS.'; fi
+
+ $ Shell Confirm site app catalog state before deployment 50 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app list
+   --appCatalogScope sitecollection --appCatalogUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --output json]8;;
+
+ ● Edit  Edit prvni-appka/config/package-solution.json (+2 -2)
+
+Knihovna webu už obsahuje správný `prevod-api.json` i font s ověřenou českou diakritikou. Katalog tohoto webu už má starší nasazení stejné appky (1.0.0.1), proto zvedám verzi na 1.0.0.2, aby šlo bezpečně publikovat upgrade jen do něj.
+
+ $ Shell Inspect leftover root npm directory 3 lines…
+   find /private/tmp/cp-run8/home/egd-workshop/node_modules -mindepth 1 -maxdepth 3 -print
+
+ $ Shell Build version 1.0.0.2 for deployment 84 lines…                                           9s
+   cd prvni-appka && npm run build
+
+Připravený balíček obsahuje pouze žádosti o `Mail.Send` a `access_as_user`; ověřil jsem také, že appId API není v JavaScript bundlu. Teď nahrávám balíček jen do katalogu daného webu a aktualizuji v jeho knihovně oba požadované soubory.
+
+ $ Shell Remove empty root npm directories 4 lines…
+   rmdir /private/tmp/cp-run8/home/egd-workshop/node_modules/@pdf-lib
+   /private/tmp/cp-run8/home/egd-workshop/node_modules/@types
+   /private/tmp/cp-run8/home/egd-workshop/node_modules/.bin
+   /private/tmp/cp-run8/home/egd-workshop/node_modules && ls -la
+   /private/tmp/cp-run8/home/egd-workshop
+
+ $ Shell Upload conversion API config to target library 25 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file add --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --folder ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets' --path
+   /private/tmp/cp-run8/home/egd-workshop/prvni-appka/assets/prevod-api.json --overwrite true
+   --output json
+
+ $ Shell Upload Czech Roboto font to target library 25 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file add --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --folder ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets' --path
+   /private/tmp/cp-run8/home/egd-workshop/prvni-appka/assets/Roboto-Regular.ttf --overwrite true
+   --output json
+
+ $ Shell Upload app package to target site catalog 25 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app add --filePath
+   /private/tmp/cp-run8/home/egd-workshop/prvni-appka/sharepoint/solution/prvni-appka.sppkg
+   --overwrite --appCatalogScope sitecollection --appCatalogUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --output json]8;;
+
+ $ Shell Inspect app upgrade and page list commands 67 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app upgrade --help |
+   head -80; node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page list
+   --help | head -70
+
+ $ Shell Deploy package in the target site catalog No Content
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app deploy --id
+   68eb8916-7ded-4acf-9561-6f56b3a1336e --appCatalogScope sitecollection --appCatalogUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --output json]8;;
+
+ $ Shell Verify uploaded PDF assets 12 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo file list --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --folderUrl ]8;;
+   '/sites/egd-sonda-ms-maily/Sdilene dokumenty/assets' --fields Name,Length,ServerRelativeUrl
+   --output json
+
+ $ Shell Verify site-only package deployment 26 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app list
+   --appCatalogScope sitecollection --appCatalogUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --query ]8;;
+   "[?Title=='prvni-appka-client-side-solution']" --output json
+
+Balíček 1.0.0.2 je nasazený v katalogu cílového webu; SharePoint ho zatím neinstaloval do samotného webu. Instaluji pouze do tohoto webu, poté vytvořím stránku s web partem a ověřím publikovanou adresu.
+
+ $ Shell Install app only on the target web No Content
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app install --id
+   68eb8916-7ded-4acf-9561-6f56b3a1336e --siteUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --appCatalogScope ]8;;
+   sitecollection --output json
+
+ $ Shell Verify target web installation 26 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app list
+   --appCatalogScope sitecollection --appCatalogUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --query ]8;;
+   "[?Title=='prvni-appka-client-side-solution']" --output json
+
+ $ Shell Create requested modern page No Content
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page add --name
+   pdf-mail-copilot.aspx --title 'PDF mailem – Spokojenost' --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --layoutType Article ]8;;
+   --output json
+
+ ✗ Shell Add the satisfaction web part to the pa… Error: Invalid section '1' Failed with exit code 1
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page
+   clientsidewebpart add --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --pageName ]8;;
+   pdf-mail-copilot.aspx --webPartId a1692412-d600-4fef-b261-a79ed539cc3c --section 1 --column 1
+   --order 1 --output json
+
+ ✗ Shell Add the web part to the first av… Error: Invalid column 'undefined' Failed with exit code 1
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page
+   clientsidewebpart add --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --pageName ]8;;
+   pdf-mail-copilot.aspx --webPartId a1692412-d600-4fef-b261-a79ed539cc3c --output json
+
+ $ Shell Inspect empty page layout before adding app part 68 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --name pdf-mail-copilot.aspx]8;;
+   --output json
+
+ $ Shell Inspect how to add a section to the blank page 138 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page section add
+   --help full | head -140
+
+ $ Shell Add a single-column content section to the page No Content
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page section add
+   --pageName pdf-mail-copilot.aspx --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --sectionTemplate OneColumn ]8;;
+   --order 1 --output json
+
+ $ Shell Add the satisfaction web part to the page section No Content
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page
+   clientsidewebpart add --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --pageName ]8;;
+   pdf-mail-copilot.aspx --webPartId a1692412-d600-4fef-b261-a79ed539cc3c --section 1 --column 1
+   --order 1 --output json
+
+ $ Shell Verify the page contains the app web part 70 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --name pdf-mail-copilot.aspx]8;;
+   --output json
+
+ $ Shell Publish the new PDF mail page No Content
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page publish --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --name pdf-mail-copilot.aspx]8;;
+   --output json
+
+Stránka má správný web part a je publikovaná. Dokončuji kontrolu verze, publikačního stavu a obsahu souboru s API; neposílal jsem testovací e-mail ani neudělil žádný souhlas.
+
+ $ Shell Confirm final app version and dependency metadata 21 lines…
+   cd prvni-appka && node - <<'NODE'
+   const fs = require('fs');
+   const p = require('./package.json');
+   const c = JSON.parse(fs.readFileSync('config/package-solution.json', 'utf8'));
+   console.log(JSON.stringify({version:c.solution.version, dependencies:{pdfLib:p.dependencies['pdf-
+   lib'],fontkit:p.dependencies['@pdf-lib/fontkit'],docx:p.dependencies.docx},
+   permissionRequests:c.solution.webApiPermissionRequests}, null, 2));
+   NODE
+
+ $ Shell Verify runtime API configuration in the web library 4 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js request --url ']8;id=md-p8t4br;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=%27/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json%27)/$valuehttps://pa]8;;
+   ]8;id=md-p8t4br;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=%27/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json%27)/$valuevelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(d]8;;
+   ]8;id=md-p8t4br;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/_api/web/GetFileByServerRelativePath(decodedurl=%27/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json%27)/$valueecodedurl=%27/sites/egd-sonda-ms-maily/Sdilene%20dokumenty/assets/prevod-api.json%27)/$value]8;;]8;;' ]8;;
+   --method get --filePath /tmp/egd-prevod-api-final.json --output none && cat
+   /tmp/egd-prevod-api-final.json
+
+ $ Shell Verify the published page 67 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo page get --webUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --name pdf-mail-copilot.aspx]8;;
+   --metadataOnly --output json
+
+ $ Shell Verify installed version and permissions 26 lines…
+   node /opt/homebrew/lib/node_modules/@pnp/cli-microsoft365/dist/index.js spo app list
+   --appCatalogScope sitecollection --appCatalogUrl
+   ]8;id=md-15xby99;https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-mailyhttps://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily]8;;]8;; --query ]8;;
+   "[?Title=='prvni-appka-client-side-solution']" --output json
+
+ $ Shell Clean temporary verification files No Content
+   rm /tmp/egd-prevod-api-existing.json /tmp/egd-prevod-font-existing.ttf
+   /tmp/egd-prevod-api-final.json
+
+Hotovo. Appka **1.0.0.2** je nasazená jen na uvedený web a stránka je publikovaná: [PDF mailem](https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-maily/SitePages/pdf-mail-copilot.aspx). Obsahuje obě tlačítka, načítá všechny stránky hlasů a soubory `assets/prevod-api.json` i český font jsou v knihovně webu.
+
+`npm run build` prošel. Požadavky na `Mail.Send` a `access_as_user` jsou v balíčku, ale žádný souhlas jsem neudělil; pokud nejsou oprávnění už schválená, odeslání nebo převod může vyžadovat správce. Testovací e-mail jsem neposílal.
+
+Session exported to: /tmp/cp-run8/vystup/prepis.md
+
+
+Changes    +200 -9
+AI Credits 6.56 (7m 34s)
+Tokens     ↑ 3.5m (3.4m cached, 102.7k written) • ↓ 38.0k (24.8k reasoning)
+Resume     copilot --resume=1fa631a8-4c11-4fac-a060-233fc1c27115

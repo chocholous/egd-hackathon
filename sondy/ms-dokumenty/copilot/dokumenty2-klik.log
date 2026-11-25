@@ -1,0 +1,13 @@
+web part (#log) nenalezen, url= https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-dokumenty-en/SitePages/spokojenost-copilot.aspx?env=WebView
+--- eval (async()=>{const b=document.querySelector('button[aria-label^="3 "]'); if(!b) return 'hlas nenalezen'; b.click(); await new Promise(r=>setTimeout(r,5000)); return document.querySelector('[role=status]')?.textContent||'bez zprávy';})()
+VYSLEDEK: Zapsáno: 3. Díky!
+--- eval (async()=>{const b=[...document.querySelectorAll('button')].find(x=>x.textContent.trim()==='Word'); if(!b) return 'tlačítko Word nenalezeno'; b.click(); const s=()=>document.querySelector('#export-status')?.textContent||''; for(let i=0;i<120;i++){await new Promise(r=>setTimeout(r,500)); if(/^(Hotovo|Chyba)/.test(s())) return 'Word → '+s();} return 'Word timeout: '+s();})()
+VYSLEDEK: Word → Hotovo: docx byl stažen a uložen do knihovny Dokumenty/exporty.
+--- eval (async()=>{const b=[...document.querySelectorAll('button')].find(x=>x.textContent.trim()==='Excel'); if(!b) return 'tlačítko Excel nenalezeno'; b.click(); const s=()=>document.querySelector('#export-status')?.textContent||''; for(let i=0;i<120;i++){await new Promise(r=>setTimeout(r,500)); if(/^(Hotovo|Chyba)/.test(s())) return 'Excel → '+s();} return 'Excel timeout: '+s();})()
+VYSLEDEK: Excel → Hotovo: xlsx byl stažen a uložen do knihovny Dokumenty/exporty.
+--- eval (async()=>{const b=[...document.querySelectorAll('button')].find(x=>x.textContent.trim()==='PDF'); if(!b) return 'tlačítko PDF nenalezeno'; b.click(); const s=()=>document.querySelector('#export-status')?.textContent||''; for(let i=0;i<120;i++){await new Promise(r=>setTimeout(r,500)); if(/^(Hotovo|Chyba)/.test(s())) return 'PDF → '+s();} return 'PDF timeout: '+s();})()
+VYSLEDEK: PDF → Hotovo: pdf byl stažen a uložen do knihovny Dokumenty/exporty.
+--- eval fetch("/sites/egd-sonda-ms-dokumenty-en/_api/web/GetFolderByServerRelativePath(decodedurl='/sites/egd-sonda-ms-dokumenty-en/Shared Documents/exporty')/Files?$select=Name,Length,TimeLastModified", {headers:{Accept:'application/json;odata=nometadata'}}).then(r=>r.json()).then(j=>j.value.filter(f=>f.Name.startsWith('spokojenost')).map(f=>f.Name+' '+f.Length+' '+f.TimeLastModified).join(' | '))
+VYSLEDEK: spokojenost.docx 16970 2026-11-23T11:16:49Z | spokojenost.xlsx 13420 2026-11-23T11:16:47Z | spokojenost.pdf 61485 2026-11-23T11:16:50Z
+LOG:
+-

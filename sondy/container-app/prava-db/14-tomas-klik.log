@@ -1,0 +1,152 @@
+--- pred (document.querySelector('#iid').value='6', document.querySelector('#komu').value='eva.vesela@pavelchocholousgmail.onmicrosoft.com', 'vyplneno')
+VYSLEDEK: vyplneno
+--- klik me
+LOG po kliku: HOTOVO me HTTP 200 (26911 ms)
+{
+  "upn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+  "oid": "33507faf-6706-4c3b-bbb3-c1e15a7e0a6d",
+  "roles": [
+    "Zadavatel"
+  ],
+  "ver": "0.2"
+}
+--- klik zadosti
+LOG po kliku: HOTOVO zadosti HTTP 200 (103 ms)
+[
+  {
+    "Id": 1,
+    "Nazev": "Notebook",
+    "Castka": 30000,
+    "Stav": "Schvaleno",
+    "AutorUpn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+    "Vytvoreno": "2026-11-22T18:28:44.142Z"
+  },
+  {
+    "Id": 3,
+    "Nazev": "overeni-tomas",
+    "Castka": 100,
+    "Stav": "Schvaleno",
+    "AutorUpn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+    "Vytvoreno": "2026-11-22T19:36:52.299Z"
+  },
+  {
+    "Id": 5,
+    "Nazev": "overeni-tomas",
+    "Castka": 100,
+    "Stav": "Schvaleno",
+    "AutorUpn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+    "Vytvoreno": "2026-11-24T00:48:56.605Z"
+  },
+  {
+    "Id": 7,
+    "Nazev": "overeni-tomas",
+    "Castka": 100,
+    "Stav": "Schvaleno",
+    "AutorUpn": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+    "Vytvoreno": "2026-11-24T00:51:51.399Z"
+  }
+]
+--- klik polozky
+LOG po kliku: HOTOVO polozky HTTP 200 (219 ms)
+{
+  "value": [
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 6,
+      "ID": 6,
+      "Title": "prava-db prohlížeč (Tomáš)"
+    },
+    {
+      "Author": {
+        "Title": "Kučera Jakub"
+      },
+      "Id": 5,
+      "ID": 5,
+      "Title": "prava-db 015133 (C)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 4,
+      "ID": 4,
+      "Title": "prava-db 015133 (A)"
+    },
+    {
+      "Author": {
+        "Title": "Kučera Jakub"
+      },
+      "Id": 3,
+      "ID": 3,
+      "Title": "prava-db 015114 (C)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 2,
+      "ID": 2,
+      "Title": "prava-db 015114 (A)"
+    },
+    {
+      "Author": {
+        "Title": "Procházka Tomáš"
+      },
+      "Id": 1,
+      "ID": 1,
+      "Title": "prava-db 015053 (A)"
+    }
+  ]
+}
+--- eval (document.querySelector('button[data-k="sdilet"]').click(), new Promise(r=>setTimeout(()=>r(document.querySelector('#log').textContent),12000)))
+VYSLEDEK: HOTOVO sdilet HTTP 200 (4649 ms)
+{
+  "ok": true,
+  "id": 6,
+  "sdilel": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+  "jako": "vlastnik",
+  "kroky": [
+    {
+      "krok": "breakroleinheritance",
+      "http": 200
+    },
+    {
+      "krok": "autor-Contribute",
+      "kdo": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+      "http": 200
+    },
+    {
+      "krok": "addroleassignment",
+      "kdo": "eva.vesela@pavelchocholousgmail.onmicrosoft.com",
+      "role": "Čtení",
+      "http": 200
+    }
+  ]
+}
+LOG:
+HOTOVO sdilet HTTP 200 (4649 ms)
+{
+  "ok": true,
+  "id": 6,
+  "sdilel": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+  "jako": "vlastnik",
+  "kroky": [
+    {
+      "krok": "breakroleinheritance",
+      "http": 200
+    },
+    {
+      "krok": "autor-Contribute",
+      "kdo": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com",
+      "http": 200
+    },
+    {
+      "krok": "addroleassignment",
+      "kdo": "eva.vesela@pavelchocholousgmail.onmicrosoft.com",
+      "role": "Čtení",
+      "http": 200
+    }
+  ]
+}

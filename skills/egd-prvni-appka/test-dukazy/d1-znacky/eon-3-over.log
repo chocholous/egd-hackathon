@@ -1,0 +1,6 @@
+[OK]      katalog webu: znacka-eon-client-side-solution verze 1.0.0.2, nasazeno true
+[OK]      stranka znacka-eon.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam MojeAppkaEon: 6 hlasu (posledni: 2026-11-15 -> 2; 2026-11-16 -> 3; 2026-11-17 -> 4; 2026-11-18 -> 5; 2026-11-24 -> 3)
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev/SitePages/znacka-eon.aspx?env=WebView

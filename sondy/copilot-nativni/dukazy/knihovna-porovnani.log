@@ -1,0 +1,68 @@
+nts/Impression(?:\\?.*)?$","^v4/api/selection(?:\\?.*)?$"]},{"host": "^ris\\.api\\.iris\\.microsoft\\.com$","paths": ["^v1/a/[A-Za-z0-9_-]+(?:\\?.*)?$"]},{"host": "^eudb\\.ris\\.api\\.iris\\.microsoft\\.com$","paths": ["^v1/a/[A-Za-z0-9_-]+(?:\\?.*)?$"]}],
+                    allowedResources: [{resource: "api.office.net",hosts: ["ocws.officeapps.live.com"]},{resource: "graph.microsoft.com",hosts: ["graph.microsoft.com"]},{resource: "wcss.wwprod.officeshell.svc.cloud.microsoft",hosts: ["wcss.wwprod.officeshell.svc.cloud.microsoft", "eudb.wcss.wwprod.officeshell.svc.cloud.microsoft", "wwdb.wcss.wwprod.officeshell.svc.cloud.microsoft"]},{resource: "webshell.suite.office.com",hosts: ["webshell.suite.office.com", "eudb.webshell.suite.office.com", "wwdb.webshell.suite.office.com"]},{resource: "management.azure.com",hosts: ["management.azure.com"]},{resource: "outlook.office.com",hosts: ["outlook.office.com"]},{resource: "clients.config.office.net",hosts: ["clients.config.office.net"]},{"resource": "arc.msn.com/v4","hosts": ["arc.msn.com","arc-emea.msn.com","ris.api.iris.microsoft.com", "eudb.ris.api.iris.microsoft.com","fd.api.iris.microsoft.com"]}],
+                    shouldAttachOauthTokens: true,
+                    trustedOriginAuthoritiesSetFromServer: false
+                };
+
+                O365SuiteServiceProxy.RequestExecutorMessageProcessor.init(requestExecutorSettings);
+
+                var tokenFactorySettings = {
+                    clientId: "89bee1f7-5e6e-4d8a-9f3d-ecd601259da7",
+                    authority: "https\u003A//login.microsoftonline.com/organizations",
+                    cacheLocation: "sessionStorage",
+                    parentPageOrigin: "https\u003A//pavelchocholousgmail.sharepoint.com",
+                    upn: "egd10\u0040pavelchocholousgmail.onmicrosoft.com"
+                };
+
+                O365MSALTokenFactoryIframe.TokenFactoryInsideIframe.init(tokenFactorySettings);
+    
+
+
+
+## https://webshell.suite.office.com/iframe/TokenFactoryIframe
+
+    
+        
+                var tokenFactorySettings = {
+                    clientId: "89bee1f7-5e6e-4d8a-9f3d-ecd601259da7",
+                    authority: "https\u003A//login.microsoftonline.com/organizations",
+                    cacheLocation: "sessionStorage",
+                    parentPageOrigin: null,
+                    upn: null
+                };
+
+                O365MSALTokenFactoryIframe.TokenFactoryInsideIframe.init(tokenFactorySettings);
+    
+
+
+
+## https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_layouts/15/chat.aspx?isFromFab=true&ap
+Copilot
+Hello Účastník 10!
+Welcome! Enhance your productivity with this agent. Start a conversation by asking a question or selecting one of the suggested prompts.
+How can you help me?
+Which files are relevant to me?
+Find files about a topic
+You said:
+
+Porovnej soubory spokojenost.docx a spokojenost.xlsx. Co mají společného a v čem se liší?
+
+Copilot said:
+Copilot
+
+Společné: Oba soubory uvádějí datum 24. 11. 2026 a hodnocení 4. 12
+
+Rozdíly: Dokument Word shrnuje výsledek jako 1 hlas a průměr 4 z 5 pro „spokojenost s prostředím kanceláře“. 1 Excel obsahuje list Hlasy s jedním záznamem: datum a hodnocení; počet hlasů ani průměr v něm nejsou uvedené jako souhrnné údaje. 2
+
+1
+spokojenost.docx
++1
+Shrň výsledky z obou souborů do jednoho přehledu
+Zkontroluj, zda se data v obou souborech shodují
+Vytvoř stručnou tabulku společných údajů a rozdílů
+
+
+
+
+Ask a question about exporty
+AI-generated content may be incorrect

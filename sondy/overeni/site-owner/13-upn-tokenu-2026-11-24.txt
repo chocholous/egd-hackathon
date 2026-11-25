@@ -1,0 +1,3 @@
+42df0072-be8f-47a4-88b2-84f8b6ada0c6 upn= egd01@pavelchocholousgmail.onmicrosoft.com scp= Files.ReadWrite.All Sites.ReadWrite.All profile openid email tid= 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+953de580-40df-4b86-97d9-bd118be6a282 upn= egd01@pavelchocholousgmail.onmicrosoft.com scp= Files.Read.All profile openid email tid= 972a674c-7b85-4e56-a31f-b2f95b42fd1e
+ac1ff591-098c-43fa-b451-1117430d9bd9 upn= egd01@pavelchocholousgmail.onmicrosoft.com scp= Files.Read profile openid email tid= 972a674c-7b85-4e56-a31f-b2f95b42fd1e

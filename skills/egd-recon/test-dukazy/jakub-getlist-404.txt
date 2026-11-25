@@ -1,0 +1,1 @@
+{"url":"https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly/_api/web/GetList('/sites/egd-sonda-miniskilly/AppCatalogNeexistuje')/EffectiveBasePermissions","s":404,"t":"{\"odata.error\":{\"code\":\"-2147024894, System.IO.FileNotFoundException\",\"message\":{\"lang\":\"en-US\",\"value\":\"File Not Found.\"}}}"}

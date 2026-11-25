@@ -1,0 +1,16 @@
+--- klik ares
+--- klik aressp
+--- klik meteo
+--- klik cnb
+KONZOLE error: Access to fetch at 'https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ' from origin 'https://pavelchocholousgmail.sharepoint.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.
+SIT FAIL https://api.cnb.cz/cnbapi/exrates/daily?lang=CZ: net::ERR_FAILED
+KONZOLE error: Failed to load resource: net::ERR_FAILED
+LOG:
+ARES: Škoda Auto a.s., tř. Václava Klementa 869, Mladá Boleslav II, 29301 Mladá Boleslav
+HOTOVO ares za 407 ms
+ARES přes spHttpClient: status 200
+HOTOVO aressp za 104 ms
+Brno teď: 3.4 °C
+HOTOVO meteo za 123 ms
+CHYBA cnb: Error: ČNB nejde volat z prohlížeče (CORS). Původní chyba: TypeError: Failed to fetch
+

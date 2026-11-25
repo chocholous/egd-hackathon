@@ -1,0 +1,63 @@
+
+> egd-ca-obo-spfx@0.1.0 build
+> heft build --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] No SCSS files to process.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (2.152s) ---- 
+-------------------- Finished (2.155s) --------------------
+ ---- package-solution started ---- 
+Found manifest: f6aa9c1a-afda-448e-a188-96437bc2bd7c.manifest.json
+Found client-side build resource: obo-posta-web-part_da4840991a6938fb871a.js
+Found client-side build resource: obo-posta-web-part_da4840991a6938fb871a.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { OBO pošta sonda }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug...
+Cleaned /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/AppManifest.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/_rels/.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/[Content_Types].xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/feature_7b25e437-8e15-43e6-a2d7-ca806700aed0.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/_rels/feature_7b25e437-8e15-43e6-a2d7-ca806700aed0.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/feature_7b25e437-8e15-43e6-a2d7-ca806700aed0.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/7b25e437-8e15-43e6-a2d7-ca806700aed0/WebPart_f6aa9c1a-afda-448e-a188-96437bc2bd7c.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/ClientSideAssets/obo-posta-web-part_da4840991a6938fb871a.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/debug/ClientSideAssets/obo-posta-web-part_da4840991a6938fb871a.js.LICENSE.txt
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/container-app/obo/spfx/sharepoint/solution/egd-ca-obo.sppkg
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (0.173s) ---- 
+-------------------- Finished (0.175s) --------------------

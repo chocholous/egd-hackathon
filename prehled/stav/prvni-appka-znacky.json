@@ -1,0 +1,28 @@
+{
+  "nazev": "egd-prvni-appka: dvě značky + nálezy E2E",
+  "stav": "hotovo",
+  "popis": "Z5 sdílení webu ověřeno (Upravit), Z6 štítek opraven",
+  "oblast": "skilly",
+  "kdo": "skill-prvni-appka",
+  "vystup": "skills/egd-prvni-appka/TEST.md",
+  "aktualizovano": "2026-11-24T10:46:17Z",
+  "zacatek": "2026-11-24T10:00:52Z",
+  "kroky": 3,
+  "historie": [
+    {
+      "t": "2026-11-24T10:00:52Z",
+      "stav": "hotovo",
+      "popis": "šablona umí obě značky, otázka v SKILL.md, --znacka v appka.mjs, lab egd01-dev OK; hex E.ON dočasné"
+    },
+    {
+      "t": "2026-11-24T10:04:02Z",
+      "stav": "hotovo",
+      "popis": "tokeny E.ON doplněny a přeměřeny (1.0.0.2), SKILL.md Node 22/24 + pracovní složka"
+    },
+    {
+      "t": "2026-11-24T10:46:17Z",
+      "stav": "hotovo",
+      "popis": "Z5 sdílení webu ověřeno (Upravit), Z6 štítek opraven"
+    }
+  ]
+}

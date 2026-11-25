@@ -1,0 +1,3 @@
+# 2026-11-24T00:44:41Z image (v 10-container-app.md: 501)
+{"error":"Generování obrázků není nasazeno (kvóta modelu gpt-image je v subscription 0, vyžaduje žádost o přístup)."}
+[HTTP 501, 0.218159s]

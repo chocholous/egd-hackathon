@@ -1,0 +1,2 @@
+scp=Files.Read profile openid email http=403 bytes=59 {"error":{"code":"accessDenied","message":"Access denied"}}
+scp=Files.Read.All profile openid email http=200 bytes=68048 

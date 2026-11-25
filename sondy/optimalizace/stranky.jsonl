@@ -1,0 +1,6 @@
+{"test": "REST_nextLink_po_1000", "rows": 12000, "stranek": 12, "sec": 7.13}
+{"test": "RenderListDataAsStream_NextHref_po_1000", "rows": 12000, "stranek": 12, "sec": 6.59}
+{"test": "ID_rozsahy_po_1000_vlaken_1", "rows": 12000, "chyby": 0, "sec": 7.03}
+{"test": "ID_rozsahy_po_1000_vlaken_4", "rows": 12000, "chyby": 0, "sec": 0.84}
+{"test": "ID_rozsahy_po_1000_vlaken_8", "rows": 12000, "chyby": 0, "sec": 0.57}
+{"test": "top5000_jedno_volani", "status": 200, "sec": 0.607, "rows": 5000, "id_prvni_posledni": [1, 5000], "nextLink": true}

@@ -1,0 +1,5 @@
+# 23. 11. 2026, první build appka-spokojenost (npm run build), před opravou _souhrn; log byl přepsán druhým buildem, řádky opsány z výstupu
+[build:typescript] Error: src/webparts/spokojenost/SpokojenostWebPart.ts:225:16 - (TS2802) Type 'MapIterator<[string, number[]]>' can only be iterated through when using the '--downlevelIteration' flag or with a '--target' of 'es2015' or higher.
+[build:typescript] Error: src/webparts/spokojenost/SpokojenostWebPart.ts:226:34 - (TS7006) Parameter 's' implicitly has an 'any' type.
+[build:typescript] Error: src/webparts/spokojenost/SpokojenostWebPart.ts:226:37 - (TS7006) Parameter 'x' implicitly has an 'any' type.
+Encountered 3 errors

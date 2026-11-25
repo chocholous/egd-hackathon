@@ -1,0 +1,12 @@
+# 2026-11-22 20:08:17  lab-github-entra.sh group --ucty egd01 (suchý běh)
+[suchý běh] založil bych bezpečnostní skupinu grp-egd-github
+  [suchý běh] přidal bych egd01@pavelchocholousgmail.onmicrosoft.com
+rc=0
+# plan
+1. (Pavel) GitHub: enterprise s EMU, shortcode, setup user SHORTCODE_admin, OIDC "Enable OIDC configuration".
+2. (Pavel, Global Admin lab tenantu) souhlas s aplikací "GitHub Enterprise Managed User (OIDC)" v Entra.
+3. (Pavel) PAT classic setup usera se scope scim:enterprise a bez expirace.
+# --help org
+Použití: tools/lab-github-org.sh <příkaz> [volby] [--apply]
+
+Příkazy (vše jen vypíše plán, dokud není --apply; kromě check, ten jen čte):

@@ -1,0 +1,25 @@
+seznam id: 982bd7b0-696e-4ea7-8eb6-a70aab0e57a9
+klik Oprávnění pro: Seznam: true
+seznam uz ma vlastni opravneni
+klik Udělit oprávnění: true
+dialog: https://pavelchocholousgmail.sharepoint.com/sites/egd01-test/_layouts/15/user.aspx
+navrh skupiny: 0
+urovne: ["Úplné řízení","Návrh","Úpravy","Přispívání","Čtení"]
+tlacitko sdilet: 1
+volba vlastni polozky: 0
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('input[type=submit][value="OK"]').first()
+
+    at /Users/chocholous/Projects/egd-workshop/skills/egd-prvni-appka/test-dukazy/rezim-ui.mjs:91:65 {
+  log: [
+    `  - waiting for locator('input[type=submit][value="OK"]').first()`
+  ],
+  name: 'TimeoutError'
+}
+
+Node.js v22.23.5

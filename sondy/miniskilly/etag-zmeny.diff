@@ -1,0 +1,51 @@
+--- etag-EvidenceWebPart.orig.ts	2026-11-24 02:49:26
++++ etag-appka/src/webparts/evidence/EvidenceWebPart.ts	2026-11-24 02:51:57
+@@ -25,6 +25,7 @@
+   Created: string;
+   AuthorId: number;
+   Author?: { Title: string };
++  '@odata.etag'?: string; // verze položky v okamžiku načtení
+ }
+ 
+ type Zalozka = 'novy' | 'moje' | 'schvalit';
+@@ -72,22 +73,24 @@
+     while (url) {
+       const r: SPHttpClientResponse = await this.context.spHttpClient.get(url, SPHttpClient.configurations.v1, { headers: JSON_HLAVICKY });
+       if (!r.ok) throw new Error(await this._popisChyby(r));
+-      const j = (await r.json()) as { value: T[]; 'odata.nextLink'?: string };
++      const j = (await r.json()) as { value: T[]; '@odata.nextLink'?: string; 'odata.nextLink'?: string };
+       vysledek.push(...j.value);
+-      url = j['odata.nextLink'];
++      url = j['@odata.nextLink'] ?? j['odata.nextLink'];
+     }
+     return vysledek;
+   }
+ 
+-  private async _zapis(cesta: string, telo: object, merge = false): Promise<void> {
++  // etag = verze z načtení ('"3"'); bez etagu jen nová položka. '*' by tiše přepsalo cizí změnu.
++  private async _zapis(cesta: string, telo: object, etag?: string): Promise<void> {
+     const headers: Record<string, string> = { ...JSON_HLAVICKY };
+-    if (merge) { headers['IF-MATCH'] = '*'; headers['X-HTTP-Method'] = 'MERGE'; }
++    if (etag) { headers['IF-MATCH'] = etag; headers['X-HTTP-Method'] = 'MERGE'; }
+     const r = await this.context.spHttpClient.post(this._url(cesta), SPHttpClient.configurations.v1, { headers, body: JSON.stringify(telo) });
+     if (!r.ok) throw new Error(await this._popisChyby(r));
+   }
+ 
+   private async _popisChyby(r: SPHttpClientResponse): Promise<string> {
+     if (r.status === 404) return `Seznam "${this.properties.seznam}" na tomhle webu neni. Zalozte ho (agent: prikaz "seznam") nebo opravte nazev v nastaveni web partu.`;
++    if (r.status === 412) return 'Mezitím položku změnil někdo jiný. Načetl jsem aktuální stav, zkontrolujte ho a rozhodněte znovu.';
+     if (r.status === 403) return 'Na tuhle akci nemate na seznamu pravo. Pozadejte vlastnika webu o roli Clen (Member).';
+     let text = '';
+     try { text = (await r.text()).slice(0, 300); } catch { /* nic */ }
+@@ -184,9 +187,9 @@
+   private _akce(p: IPolozka): HTMLElement {
+     const komentar = el('input', { type: 'text', placeholder: 'Komentář (nepovinný)', 'aria-label': `Komentář k ${p.Title}` }) as HTMLInputElement;
+     const rozhodni = (stav: string): void => {
+-      this._zapis(`/items(${p.Id})`, { Stav: stav, Komentar: komentar.value.trim() }, true)
++      this._zapis(`/items(${p.Id})`, { Stav: stav, Komentar: komentar.value.trim() }, p['@odata.etag'])
+         .then(async () => { await this._nacti(); this._zprava = `"${p.Title}": ${stav}.`; this.render(); })
+-        .catch((e: Error) => { this._chyba = e.message; this.render(); });
++        .catch(async (e: Error) => { await this._nacti(); this._chyba = e.message; this.render(); });
+     };
+     const ano = el('button', { type: 'button', class: styles.primarni }, ['Schválit']);
+     const ne = el('button', { type: 'button', class: styles.sekundarni }, ['Zamítnout']);

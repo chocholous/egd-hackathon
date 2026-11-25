@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spokojenost-client-side-solution",
+    "id": "422154ca-0605-411f-b026-dcf191c8701f",
+    "version": "1.0.0.1",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.24.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spokojenost description"
+      },
+      "longDescription": {
+        "default": "spokojenost description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Files.Read.All"
+      }
+    ],
+    "features": [
+      {
+        "title": "spokojenost Feature",
+        "description": "The feature that activates elements of the spokojenost solution.",
+        "id": "e44f8453-aa40-441c-97a0-92ecfe281126",
+        "version": "1.0.0.1"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spokojenost.sppkg"
+  }
+}

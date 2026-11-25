@@ -1,0 +1,9 @@
+# 2026-11-22T19:43:07Z původní appRoleAssignmentRequired=false
+## A) required=false (výchozí)
+  karolina.mala: token vydán; gateway /api/whoami → 200
+  tomas.prochazka: token vydán; gateway /api/whoami → 200
+## B) required=true
+  karolina.mala: token NEvydán: AADSTS50105: Your administrator has configured the application EGD sonda AI gateway ('7b59591a-0058-4799-be76-0d1f5b79ca95') to block users unless they
+  tomas.prochazka: token vydán; gateway /api/whoami → 200
+## C) vracím required=false
+  hotovo: false

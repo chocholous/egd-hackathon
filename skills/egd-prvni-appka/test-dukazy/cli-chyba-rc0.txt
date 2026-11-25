@@ -1,0 +1,13 @@
+# Mereno 22. 11. 2026, CLI for Microsoft 365 v11.11.0, primo node dist/index.js (jak to vola appka.mjs), HOME=~/.m365-osobni
+
+$ node dist/index.js spo app list --appCatalogScope sitecollection --appCatalogUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-test-neexistuje --output json
+{"error":"404 FILE NOT FOUND"}
+rc=1
+
+$ node dist/index.js spo app list --appCatalogScope sitecollection --appCatalogUrl https://pavelchocholousgmail.sharepoint.com/sites/zasedacky-lab --output json
+{"error":"Prostředek pro požadavek SP.RequestContext.current/web/sitecollectionappcatalog/ se nedá najít."}
+rc=1
+
+$ node dist/index.js spo list get --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka --title Neexistuje --output json
+{"error":"Seznam Neexistuje neexistuje na serveru s adresou URL https://pavelchocholousgmail.sharepoint.com/sites/egd-test-prvni-appka."}
+rc=1

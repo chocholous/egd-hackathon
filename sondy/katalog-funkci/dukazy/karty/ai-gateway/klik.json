@@ -1,0 +1,198 @@
+{
+ "profil": "e2e-egd09",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/ai.aspx",
+ "start": "2026-11-24T18:44:41.348Z",
+ "kroky": [
+  {
+   "krok": "wait:3000",
+   "t": 1040,
+   "ok": true
+  },
+  {
+   "krok": "rozbal",
+   "t": 4043,
+   "vysledek": "8 zón",
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24\"]').scrollIntoView()",
+   "t": 12693,
+   "vysledek": {
+    "interrupted": false
+   },
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24\"] #who",
+   "t": 12699,
+   "ok": true
+  },
+  {
+   "krok": "waitfor:status",
+   "t": 12848,
+   "ok": true
+  },
+  {
+   "krok": "wait:1000",
+   "t": 44548,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24\"]').innerText.slice(0,1200)",
+   "t": 45549,
+   "vysledek": "AI gateway (sonda)\n\nwhoami Chat  OCR souboru\n{\n  \"status\": 200,\n  \"ms\": 31221,\n  \"json\": {\n    \"who\": {\n      \"oid\": \"299f78ab-616c-4cb0-8162-073c777fc4ec\",\n      \"upn\": \"egd09@pavelchocholousgmail.onmicrosoft.com\",\n      \"clientAppId\": \"08e18876-6177-487e-b8b5-cf950c1e598c\",\n      \"scopes\": [\n        \"Gateway.Use\"\n      ],\n      \"roles\": []\n    },\n    \"appKey\": \"demo\"\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24\"] #chat",
+   "t": 45551,
+   "ok": true
+  },
+  {
+   "krok": "wait:12000",
+   "t": 45615,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24\"]').innerText.slice(0,1500)",
+   "t": 57619,
+   "vysledek": "AI gateway (sonda)\n\nwhoami Chat  OCR souboru\n{\n  \"status\": 200,\n  \"ms\": 1289,\n  \"json\": {\n    \"text\": \"SharePoint je platforma od Microsoftu pro správu dokumentů a týmovou spolupráci umožňující vytváření, sdílení a organizaci informací v rámci organizace.\",\n    \"usage\": {\n      \"completion_tokens\": 39,\n      \"completion_tokens_details\": {\n        \"accepted_prediction_tokens\": 0,\n        \"audio_tokens\": 0,\n        \"reasoning_tokens\": 0,\n        \"rejected_prediction_tokens\": 0\n      },\n      \"latency_checkpoint\": {\n        \"engine_tbt_ms\": 7,\n        \"engine_ttft_ms\": 29,\n        \"engine_ttlt_ms\": 318,\n        \"pre_inference_ms\": 65,\n        \"service_tbt_ms\": 7,\n        \"service_ttft_ms\": 396,\n        \"service_ttlt_ms\": 675,\n        \"user_visible_ttft_ms\": 331\n      },\n      \"prompt_tokens\": 19,\n      \"prompt_tokens_details\": {\n        \"audio_tokens\": 0,\n        \"cached_tokens\": 0\n      },\n      \"total_tokens\": 58\n    },\n    \"costUsd\": 0.00007,\n    \"model\": \"gpt-4.1-mini-2025-04-14\",\n    \"ms\": 1188,\n    \"kvotaDnes\": {\n      \"tokens\": 58,\n      \"limit\": 50000\n    }\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "shotv:01-egd09-chat",
+   "t": 57626,
+   "vysledek": "dukazy/karty/ai-gateway/01-egd09-chat.png",
+   "ok": true
+  },
+  {
+   "krok": "file:[data-sp-web-part-id=\"5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24\"] #f=/Users/chocholous/Projects/egd-workshop/sondy/ai/ocr-cs.png",
+   "t": 57743,
+   "ok": true
+  },
+  {
+   "krok": "click:[data-sp-web-part-id=\"5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24\"] #ocr",
+   "t": 57752,
+   "ok": true
+  },
+  {
+   "krok": "wait:15000",
+   "t": 57827,
+   "ok": true
+  },
+  {
+   "krok": "eval:document.querySelector('[data-sp-web-part-id=\"5b0b4f5c-2d3a-4a51-9d0e-6a1f3c7e8b24\"]').innerText.slice(0,1500)",
+   "t": 72832,
+   "vysledek": "AI gateway (sonda)\n\nwhoami Chat  OCR souboru\n{\n  \"status\": 200,\n  \"ms\": 1283,\n  \"json\": {\n    \"text\": \"Částka k úhradě: 12 345,00 Kč Příliš žluťoučký kůň úpěl ďábelské ódy Dodavatel: Řezníkův závod, s.r.o.\",\n    \"pages\": 1,\n    \"costUsd\": 0.0015,\n    \"ms\": 1189,\n    \"kvotaDnes\": {\n      \"tokens\": 58,\n      \"limit\": 50000\n    }\n  }\n}",
+   "ok": true
+  },
+  {
+   "krok": "shotv:02-egd09-ocr",
+   "t": 72862,
+   "vysledek": "dukazy/karty/ai-gateway/02-egd09-ocr.png",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 529,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 630,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 630,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 661,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1982,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 6958,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID%20desc&$top=2000"
+  },
+  {
+   "t": 8353,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/EffectiveBasePermissions"
+  },
+  {
+   "t": 8413,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(7)/CommentsDisabledScope"
+  },
+  {
+   "t": 8448,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Pozadavky')/items?$select=Id,Title,Popis,Stav,Komentar,Created,AuthorId,Author/Title&$expand=Author&$orderby=ID%"
+  },
+  {
+   "t": 8453,
+   "m": "GET",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21a4364d%7D')/GetItemById(7)/likedByInformation?$expand=likedby&$top=10"
+  },
+  {
+   "t": 44078,
+   "m": "GET",
+   "s": 200,
+   "u": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/whoami"
+  },
+  {
+   "t": 46900,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/chat"
+  },
+  {
+   "t": 59124,
+   "m": "POST",
+   "s": 200,
+   "u": "https://ca-egd-llm-gateway.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io/api/ocr"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "error: Failed to load resource: the server responded with a status of 404 ()",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti",
+  "warning: The resource https://res.public.onecdn.static.microsoft/files/odsp-web-prod_2026-11-13.013/spappbarwebpack/spappbarwebpack.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intenti"
+ ],
+ "konec": "2026-11-24T18:45:54.326Z"
+}

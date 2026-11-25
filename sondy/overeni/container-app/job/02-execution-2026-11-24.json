@@ -1,0 +1,55 @@
+{
+  "id": "/subscriptions/05a636d8-d8e3-49d2-a450-4b3ff7cc0a13/resourceGroups/rg-egd-sonda-napojeni/providers/Microsoft.App/jobs/job-egd-report/executions/job-egd-report-r83t40z",
+  "name": "job-egd-report-r83t40z",
+  "properties": {
+    "endTime": "2026-11-24T00:43:33+00:00",
+    "startTime": "2026-11-24T00:42:54+00:00",
+    "status": "Succeeded",
+    "template": {
+      "containers": [
+        {
+          "args": [
+            "-c",
+            "import os,base64;exec(base64.b64decode(os.environ['S']))"
+          ],
+          "command": [
+            "python3"
+          ],
+          "env": [
+            {
+              "name": "S",
+              "value": "IyEvdXNyL2Jpbi9lbnYgcHl0aG9uMwoiIiJEZW5uw60gcmVwb3J0OiBzdMOhaG5lIGt1cnp5IMSMTkIgKHZlxZllam7DqSBBUEkgYmV6IENPUlMpLCB2eXJvYsOtIENTViBhIHBvxaFsZSBobyBlLW1haWxlbSBzIHDFmcOtbG9ob3UKcMWZZXMgTWljcm9zb2Z0IEdyYXBoIHNlbmRNYWlsIHMgaWRlbnRpdG91IG1hbmFnZWQgaWRlbnRpdHkgKENvbnRhaW5lciBBcHBzIEpvYikuIEplbiBzdGFuZGFyZG7DrSBrbmlob3ZuYS4KCktvbmZpZ3VyYWNlIHogcHJvc3TFmWVkw60gKMW+w6FkbsOpIHBldm7DqSBob2Rub3R5IHYga8OzZHUpOgogIE1BSUxfU0VOREVSICAgc2NocsOhbmthLCB6ZSBrdGVyw6kgc2Ugb2Rlc8OtbMOhIChtdXPDrSBuYSBuaSBtw610IE1JIEV4Y2hhbmdlIFJCQUMgQXBwbGljYXRpb24gTWFpbC5TZW5kKQogIE1BSUxfVE8gICAgICAgcMWZw61qZW1jZSAoxI3DoXJrb3UpCiAgTUFJTF9ORUdBVElWRV9TRU5ERVIgICh2b2xpdGVsbsOpKSBqaW7DoSBzY2hyw6Fua2E7IHNrcmlwdCB6a3Vzw60gb2Rlc2xhdCBpIHogbsOtIGEgb8SNZWvDoXbDoSA0MDMgKGTFr2theiBvbWV6ZW7DrSBSQkFDKQogIENOQl9VUkwgICAgICAgemRyb2ogZGF0IChwb3Zpbm7DqTsgbmFwxZkuIGh0dHBzOi8vYXBpLmNuYi5jei9jbmJhcGkvZXhyYXRlcy9kYWlseT9sYW5nPUVOKQpUb2tlbjogQ29udGFpbmVyIEFwcHMgKElERU5USVRZX0VORFBPSU5UICsgSURFTlRJVFlfSEVBREVSKSwgbG9rw6FsbsSbIC0tdG9rZW4gPGp3dD4gbmVibyBlbnYgR1JBUEhfVE9LRU4uClBvdcW+aXTDrTogbmFwb2plbmktcmVwb3J0LWpvYi5weSBbLS1kcnktcnVuXSBbLS10b2tlbiBKV1RdICAgKC0tZHJ5LXJ1biBqZW4gc3TDoWhuZSBhIHZ5cMOtxaFlIENTVikiIiIKaW1wb3J0IGFyZ3BhcnNlLCBiYXNlNjQsIGNzdiwgaW8sIGpzb24sIG9zLCBzeXMsIHVybGxpYi5lcnJvciwgdXJsbGliLnBhcnNlLCB1cmxsaWIucmVxdWVzdAoKYXAgPSBhcmdwYXJzZS5Bcmd1bWVudFBhcnNlcihkZXNjcmlwdGlvbj1fX2RvY19fLCBmb3JtYXR0ZXJfY2xhc3M9YXJncGFyc2UuUmF3RGVzY3JpcHRpb25IZWxwRm9ybWF0dGVyKQphcC5hZGRfYXJndW1lbnQoIi0tZHJ5LXJ1biIsIGFjdGlvbj0ic3RvcmVfdHJ1ZSIpOyBhcC5hZGRfYXJndW1lbnQoIi0tdG9rZW4iKQphID0gYXAucGFyc2VfYXJncygpCgpkZWYgbmVlZChuKToKICAgIHYgPSBvcy5lbnZpcm9uLmdldChuKQogICAgaWYgbm90IHYgYW5kIG5vdCBhLmRyeV9ydW46IHN5cy5leGl0KGYiY2h5YsOtIHByb23Em25uw6EgcHJvc3TFmWVkw60ge259IikKICAgIHJldHVybiB2CgpkZWYgaHR0cCh1cmwsIGRhdGE9Tm9uZSwgaGVhZGVycz1Ob25lLCBtZXRob2Q9Tm9uZSk6CiAgICByID0gdXJsbGliLnJlcXVlc3QuUmVxdWVzdCh1cmwsIGRhdGE9ZGF0YSwgaGVhZGVycz1oZWFkZXJzIG9yIHt9LCBtZXRob2Q9bWV0aG9kKQogICAgdHJ5OgogICAgICAgIHdpdGggdXJsbGliLnJlcXVlc3QudXJsb3BlbihyLCB0aW1lb3V0PTYwKSBhcyB4OiByZXR1cm4geC5zdGF0dXMsIHgucmVhZCgpCiAgICBleGNlcHQgdXJsbGliLmVycm9yLkhUVFBFcnJvciBhcyBlOiByZXR1cm4gZS5jb2RlLCBlLnJlYWQoKQoKZGVmIGdyYXBoX3Rva2VuKCk6CiAgICBpZiBhLnRva2VuIG9yIG9zLmVudmlyb24uZ2V0KCJHUkFQSF9UT0tFTiIpOiByZXR1cm4gYS50b2tlbiBvciBvcy5lbnZpcm9uWyJHUkFQSF9UT0tFTiJdCiAgICBlcCwgaGQgPSBvcy5lbnZpcm9uWyJJREVOVElUWV9FTkRQT0lOVCJdLCBvcy5lbnZpcm9uWyJJREVOVElUWV9IRUFERVIiXQogICAgcywgYiA9IGh0dHAoZiJ7ZXB9P3Jlc291cmNlPWh0dHBzOi8vZ3JhcGgubWljcm9zb2Z0LmNvbSZhcGktdmVyc2lvbj0yMDE5LTA4LTAxIiwgaGVhZGVycz17IlgtSURFTlRJVFktSEVBREVSIjogaGR9KQogICAgaWYgcyAhPSAyMDA6IHN5cy5leGl0KGYidG9rZW4gTUkgc2VsaGFsIHtzfToge2JbOjMwMF19IikKICAgIHJldHVybiBqc29uLmxvYWRzKGIpWyJhY2Nlc3NfdG9rZW4iXQoKY25iID0gb3MuZW52aXJvbi5nZXQoIkNOQl9VUkwiKSBvciBzeXMuZXhpdCgiY2h5YsOtIHByb23Em25uw6EgcHJvc3TFmWVkw60gQ05CX1VSTCIpCnMsIGIgPSBodHRwKGNuYikKaWYgcyAhPSAyMDA6IHN5cy5leGl0KGYixIxOQiB7c306IHtiWzozMDBdfSIpCnJhdGVzID0ganNvbi5sb2FkcyhiKVsicmF0ZXMiXQpidWYgPSBpby5TdHJpbmdJTygpOyB3ID0gY3N2LndyaXRlcihidWYsIGRlbGltaXRlcj0iOyIpCncud3JpdGVyb3coWyJ2YWxpZEZvciIsICJjb3VudHJ5IiwgImN1cnJlbmN5IiwgImFtb3VudCIsICJjb2RlIiwgInJhdGVfQ1pLIl0pCmZvciByIGluIHJhdGVzOiB3LndyaXRlcm93KFtyWyJ2YWxpZEZvciJdLCByWyJjb3VudHJ5Il0sIHJbImN1cnJlbmN5Il0sIHJbImFtb3VudCJdLCByWyJjdXJyZW5jeUNvZGUiXSwgclsicmF0ZSJdXSkKY3N2X2J5dGVzID0gYnVmLmdldHZhbHVlKCkuZW5jb2RlKCJ1dGYtOC1zaWciKQpkYXkgPSByYXRlc1swXVsidmFsaWRGb3IiXQp0b3AgPSB7clsiY3VycmVuY3lDb2RlIl06IHJbInJhdGUiXSAvIHJbImFtb3VudCJdIGZvciByIGluIHJhdGVzIGlmIHJbImN1cnJlbmN5Q29kZSJdIGluICgiRVVSIiwgIlVTRCIsICJHQlAiLCAiUExOIil9CnByaW50KGYic3Rhxb5lbm8ge2xlbihyYXRlcyl9IGt1cnrFryBwcm8ge2RheX07IENTViB7bGVuKGNzdl9ieXRlcyl9IEI7IHt0b3B9IikKaWYgYS5kcnlfcnVuOiBzeXMuc3Rkb3V0LndyaXRlKGJ1Zi5nZXR2YWx1ZSgpWzo0MDBdKTsgc3lzLmV4aXQoMCkKCmRlZiBzZW5kKHNlbmRlcik6CiAgICBib2R5ID0geyJtZXNzYWdlIjogewogICAgICAgICJzdWJqZWN0IjogZiJEZW5uw60gcmVwb3J0IGt1cnrFryDEjE5CIHtkYXl9IChzb25kYSBuYXBvamVuaSkiLAogICAgICAgICJib2R5IjogeyJjb250ZW50VHlwZSI6ICJIVE1MIiwgImNvbnRlbnQiOiAiPHA+UmVwb3J0IHZ5Z2VuZXJvdmFuw70gQ29udGFpbmVyIEFwcHMgSm9iZW0uPC9wPjx1bD4iICsKICAgICAgICAgICAgICAgICAiIi5qb2luKGYiPGxpPntrfToge3Y6LjNmfSBDWks8L2xpPiIgZm9yIGssIHYgaW4gdG9wLml0ZW1zKCkpICsgZiI8L3VsPjxwPntsZW4ocmF0ZXMpfSBtxJtuIHYgcMWZw61sb3plLjwvcD4ifSwKICAgICAgICAidG9SZWNpcGllbnRzIjogW3siZW1haWxBZGRyZXNzIjogeyJhZGRyZXNzIjogdC5zdHJpcCgpfX0gZm9yIHQgaW4gbmVlZCgiTUFJTF9UTyIpLnNwbGl0KCIsIildLAogICAgICAgICJhdHRhY2htZW50cyI6IFt7IkBvZGF0YS50eXBlIjogIiNtaWNyb3NvZnQuZ3JhcGguZmlsZUF0dGFjaG1lbnQiLCAibmFtZSI6IGYia3VyenktY25iLXtkYXl9LmNzdiIsCiAgICAgICAgICAgICAgICAgICAgICAgICAiY29udGVudFR5cGUiOiAidGV4dC9jc3YiLCAiY29udGVudEJ5dGVzIjogYmFzZTY0LmI2NGVuY29kZShjc3ZfYnl0ZXMpLmRlY29kZSgpfV19LAogICAgICAgICJzYXZlVG9TZW50SXRlbXMiOiBGYWxzZX0KICAgIHJldHVybiBodHRwKGYiaHR0cHM6Ly9ncmFwaC5taWNyb3NvZnQuY29tL3YxLjAvdXNlcnMve3VybGxpYi5wYXJzZS5xdW90ZShzZW5kZXIpfS9zZW5kTWFpbCIsCiAgICAgICAgICAgICAgICBqc29uLmR1bXBzKGJvZHkpLmVuY29kZSgpLCB7IkF1dGhvcml6YXRpb24iOiAiQmVhcmVyICIgKyBncmFwaF90b2tlbigpLCAiQ29udGVudC1UeXBlIjogImFwcGxpY2F0aW9uL2pzb24ifSwgIlBPU1QiKQoKc2VuZGVyID0gbmVlZCgiTUFJTF9TRU5ERVIiKQpzLCBiID0gc2VuZChzZW5kZXIpOyBwcmludChmInNlbmRNYWlsIGpha28ge3NlbmRlcn06IEhUVFAge3N9IHtiWzozMDBdLmRlY29kZShlcnJvcnM9J3JlcGxhY2UnKX0iKQpuZWcgPSBvcy5lbnZpcm9uLmdldCgiTUFJTF9ORUdBVElWRV9TRU5ERVIiKQppZiBuZWc6CiAgICBzMiwgYjIgPSBzZW5kKG5lZyk7IHByaW50KGYiTkVHQVRJVk7DjSB0ZXN0IHNlbmRNYWlsIGpha28ge25lZ306IEhUVFAge3MyfSB7YjJbOjMwMF0uZGVjb2RlKGVycm9ycz0ncmVwbGFjZScpfSIpCnN5cy5leGl0KDAgaWYgcyA9PSAyMDIgZWxzZSAxKQo="
+            },
+            {
+              "name": "MAIL_SENDER",
+              "value": "egd-report@pavelchocholousgmail.onmicrosoft.com"
+            },
+            {
+              "name": "MAIL_TO",
+              "value": "tomas.prochazka@pavelchocholousgmail.onmicrosoft.com"
+            },
+            {
+              "name": "CNB_URL",
+              "value": "https://api.cnb.cz/cnbapi/exrates/daily?lang=EN"
+            },
+            {
+              "name": "MAIL_NEGATIVE_SENDER",
+              "value": "alice@pavelchocholousgmail.onmicrosoft.com"
+            }
+          ],
+          "image": "mcr.microsoft.com/azurelinux/base/python:3.12",
+          "imageType": "ContainerImage",
+          "name": "report",
+          "resources": {
+            "cpu": 0.25,
+            "ephemeralStorage": "",
+            "memory": "0.5Gi"
+          }
+        }
+      ],
+      "initContainers": []
+    }
+  },
+  "resourceGroup": "rg-egd-sonda-napojeni",
+  "type": "Microsoft.App/jobs/executions"
+}

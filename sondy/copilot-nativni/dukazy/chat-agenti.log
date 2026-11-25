@@ -1,0 +1,9 @@
+CHYBA chat-agenti TimeoutError: locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByText('Agents', { exact: true }).first()
+    - locator resolved to <span class="Y1VTbUlU OFlJUnRZ aUF0V3pE">Agents</span>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrol

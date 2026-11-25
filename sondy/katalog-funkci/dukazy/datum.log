@@ -1,0 +1,21 @@
+== A: spo listitem add s ISO 8601 vč. času
+{"Id":null,"Termin":null}
+== B: REST POST items (JSON, ISO)
+{"Id":6,"Termin":"2026-12-03T00:00:00Z"}
+== C: regionální nastavení webu
+{
+  "TimeZone": {
+    "Description": "(UTC-08:00) Tichomoří USA a Kanada"
+  },
+  "DateFormat": 1,
+  "DateSeparator": ".",
+  "LocaleId": 1029
+}
+
+== 24. 11. oprava: pásmo webu egd-ukazky 13 → 6 (Praha) přes CSOM ProcessQuery (tools/spo-web-pasmo.sh), ErrorInfo null
+po změně, seznam Revize, sloupec Termin (DateOnly), FieldValuesAsText:
+  REST {"Termin":"2026-12-03T00:00:00Z"}  → uloženo 2026-12-03T00:00:00Z → zobrazí 03.12.2026
+  REST {"Termin":"2026-12-03T00:00:00"}   → uloženo 2026-12-02T23:00:00Z → zobrazí 03.12.2026 (bez Z = místní půlnoc webu)
+  CLI spo listitem add --Termin 03.12.2026 → uloženo 2026-12-02T23:00:00Z
+  (před změnou, pásmo 13: REST ...T00:00:00Z → zobrazí 02.12.2026)
+testovací položky 6–9 v koši

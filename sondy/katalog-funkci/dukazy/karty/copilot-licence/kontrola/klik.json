@@ -1,0 +1,125 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx",
+ "start": "2026-11-24T19:44:37.239Z",
+ "kroky": [
+  {
+   "krok": "wait:4000",
+   "t": 4160,
+   "ok": true
+  },
+  {
+   "krok": "eval:location.host + \" \" + document.title",
+   "t": 8162,
+   "vysledek": "pavelchocholousgmail.sharepoint.com Graph jménem uživatele",
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 1861,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1861,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1956,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_layouts/15/online/handlers/SpoSuiteLinks.ashx?Locale=en-US&v=2&mobilereq=0&msajax=1"
+  },
+  {
+   "t": 1956,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-4.2.1&apikey=d634483c08244c1ca09af2b2d952c92e-a"
+  },
+  {
+   "t": 1956,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://browser.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream&client-id=NO_AUTH&client-version=1DS-Web-JS-3.2.15&apikey=5c65bbc4edbf480d9637ace04d62bd98-"
+  },
+  {
+   "t": 1956,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://eu-mobile.events.data.microsoft.com/OneCollector/1.0/?cors=true&content-type=application/x-json-stream"
+  },
+  {
+   "t": 1956,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://login.microsoftonline.com/972a674c-7b85-4e56-a31f-b2f95b42fd1e/oauth2/v2.0/token?client-request-id=50833fdf-094c-4f62-ab2b-5fce87843535"
+  },
+  {
+   "t": 1956,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://login.microsoftonline.com/972a674c-7b85-4e56-a31f-b2f95b42fd1e/oauth2/v2.0/token?client-request-id=d2d3f2fe-49f1-416d-b729-287a1d9758b4"
+  },
+  {
+   "t": 1956,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/EE/FullDashboardContent"
+  },
+  {
+   "t": 1956,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://pavelchocholousgmail.sharepoint.com/_layouts/15/images/BLANK.gif"
+  },
+  {
+   "t": 1956,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/v2.1/billingPolicies?feature=CopilotAgentSPO"
+  },
+  {
+   "t": 1957,
+   "m": "POST",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://pavelchocholousgmail.sharepoint.com/_api/v2.1/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc894,c4885c9f-ebc2-4ace-9beb-c7e9f9cc20f5/pages/oneDrive.sendActivities"
+  },
+  {
+   "t": 1957,
+   "m": "GET",
+   "s": "FAILED net::ERR_ABORTED",
+   "u": "https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize?client_id=89bee1f7-5e6e-4d8a-9f3d-ecd601259da7&scope=https%3A%2F%2Fwebshell.suite.office.com%2F.default%20openid%20profile%20offli"
+  },
+  {
+   "t": 3351,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Options20Regular, Drafts20Regular"
+ ],
+ "konec": "2026-11-24T19:44:45.407Z"
+}

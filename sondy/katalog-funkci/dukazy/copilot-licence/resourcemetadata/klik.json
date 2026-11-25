@@ -1,0 +1,128 @@
+{
+ "profil": "e2e-egd10",
+ "url": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/graph.aspx",
+ "start": "2026-11-24T19:54:45.426Z",
+ "kroky": [
+  {
+   "krok": "wait:5000",
+   "t": 3318,
+   "ok": true
+  },
+  {
+   "krok": "eval:(async()=>{const ml=await window.moduleLoaderPromise;const tp=await ml.context._aadTokenFactory.getTokenProvider();const t=await tp.getToken(\"https://graph.microsoft.com\");const out=[];for(const rm of [null,[\"title\",\"author\"],null,[\"title\",\"author\"]]){const b={queryString:\"Jaký je průměr spokojenosti s prostředím kanceláře?\",dataSource:\"sharePoint\",maximumNumberOfResults:5,...(rm?{resourceMetadata:rm}:{})};const r=await fetch(\"https://graph.microsoft.com/beta/copilot/retrieval\",{method:\"POST\",headers:{Authorization:\"Bearer \"+t,\"content-type\":\"application/json\"},body:JSON.stringify(b)});const j=await r.json();out.push({rm,http:r.status,hits:(j.retrievalHits||[]).length,req:r.headers.get(\"request-id\")})}return out})()",
+   "t": 8320,
+   "vysledek": [
+    {
+     "rm": null,
+     "http": 200,
+     "hits": 4,
+     "req": "69fa9631-3abb-4726-9491-86cab91211ca"
+    },
+    {
+     "rm": [
+      "title",
+      "author"
+     ],
+     "http": 200,
+     "hits": 4,
+     "req": "2272d46d-3d9d-4976-b79f-7b11af538bc3"
+    },
+    {
+     "rm": null,
+     "http": 200,
+     "hits": 4,
+     "req": "9779008b-9ef0-42cb-b05c-e0e390eaa384"
+    },
+    {
+     "rm": [
+      "title",
+      "author"
+     ],
+     "http": 200,
+     "hits": 4,
+     "req": "0214e21f-9779-422e-9d47-f51c0a80c539"
+    }
+   ],
+   "ok": true
+  }
+ ],
+ "sit": [
+  {
+   "t": 923,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1344,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1346,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 1372,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate2"
+  },
+  {
+   "t": 3350,
+   "m": "POST",
+   "s": 200,
+   "u": "https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCreate"
+  },
+  {
+   "t": 3774,
+   "m": "GET",
+   "s": 404,
+   "u": "https://graph.microsoft.com/v1.0/users/egd10@pavelchocholousgmail.onmicrosoft.com/photo/$value"
+  },
+  {
+   "t": 9628,
+   "m": "POST",
+   "s": 200,
+   "u": "https://graph.microsoft.com/beta/copilot/retrieval"
+  },
+  {
+   "t": 10948,
+   "m": "POST",
+   "s": 200,
+   "u": "https://graph.microsoft.com/beta/copilot/retrieval"
+  },
+  {
+   "t": 12338,
+   "m": "POST",
+   "s": 200,
+   "u": "https://graph.microsoft.com/beta/copilot/retrieval"
+  },
+  {
+   "t": 13530,
+   "m": "POST",
+   "s": 200,
+   "u": "https://graph.microsoft.com/beta/copilot/retrieval"
+  }
+ ],
+ "konzole": [
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "error: Permissions policy violation: unload is not allowed in this document.",
+  "warning: invalid contentSourceFilter config",
+  "warning: Some icons were re-registered. Applications should only call registerIcons for any given icon once. Redefining what an icon is may have unintended consequences. Duplicates include: \nOptions20Regular, Drafts20Regular, Options20Regular, GlobalNavButton, ChevronDown, ChevronUp, Edit, Add, Cancel, More ",
+  "error: Failed to load resource: the server responded with a status of 404 ()"
+ ],
+ "konec": "2026-11-24T19:54:58.958Z"
+}

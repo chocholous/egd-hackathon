@@ -1,0 +1,1 @@
+Studený start 2026-11-22: neprihlaseny 401 za 30.09 s (první volání po nečinnosti), následně whoami 6.6 s (token + start), pak 0.17-0.4 s. Zdroj: výstup ai-gateway-probe.sh z 19:29:40Z (terminál), min-replicas=0.

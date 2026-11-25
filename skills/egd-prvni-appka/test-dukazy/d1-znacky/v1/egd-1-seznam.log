@@ -1,0 +1,12 @@
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev:
+  - zalozit seznam "MojeAppkaEgd" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek (EG.D: semafor + cislo)
+[OK]      seznam "MojeAppkaEgd" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec Den
+[OK]      sloupec Hodnoceni naformatovan
+[OK]      precteno zpet: seznam "MojeAppkaEgd" ma sloupce Hodnoceni, Den
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev/Lists/MojeAppkaEgd

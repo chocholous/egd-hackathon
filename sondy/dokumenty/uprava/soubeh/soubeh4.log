@@ -1,0 +1,4 @@
+editor v Excelu Online: petra.novakova, volá API z web partu: petra.novakova
+03:47:30 editor zapsal G2=111 v Excelu Online
+03:47:31 [e-radek] 1387 ms: HOTOVO e-radek (1340 ms): POST rows 540 ms (celkem 1340 ms) | rozpocet!F1:G6 [["Položka","Částka"],["Materiál",120000],["Práce",300000],["Rezerva 3:37:48",25000],["Rezerva 3:46:11",25000],["Rezerva 3:47:30",25000]]
+03:47:37 [e-radek] 1176 ms: HOTOVO e-radek (1114 ms): POST rows 567 ms (celkem 1114 ms) | rozpocet!F1:G6 [["Položka","Částka"],["Materiál",120000],["Práce",300000],["Rezerva 3:37:48",25000],["Rezerva 3:46:11",25000],["Rezerva 3:47:30",25000]]

@@ -1,0 +1,74 @@
+// Vzhled EG.D: indigo #1200E0 (akce, vybrane), inkoust #261B62 (text), chladna plocha #F0F1F5.
+$indigo: #1200E0;
+$inkoust: #261B62;
+$plocha: #F0F1F5;
+$okraj: #D5D7E3;
+$tlumeny: #5a5480;
+
+.appka {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  color: $inkoust;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 16px; }
+  h2 { font-size: 15px; font-weight: 600; margin: 0 0 12px; }
+}
+
+.karta { background: $plocha; border-radius: 28px; padding: 20px 24px; }
+.otazka { font-size: 18px; margin: 0 0 16px; }
+.poznamka { font-size: 13px; color: $tlumeny; margin: 12px 0 0; }
+
+.tlacitka { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.stupen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 6px;
+  border: 1px solid $okraj;
+  border-radius: 20px;
+  background: #fff;
+  color: $inkoust;
+  cursor: pointer;
+  font: inherit;
+  &:hover { border-color: $indigo; }
+  &:focus-visible { outline: 2px solid $indigo; outline-offset: 2px; }
+  &:disabled { opacity: 0.6; cursor: default; }
+}
+.vybrany { background: $indigo; border-color: $indigo; color: #fff; }
+.cislo { font-size: 28px; font-weight: 600; line-height: 1; }
+.popisek { font-size: 12px; text-align: center; }
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.dlazdice { border: 1px solid $okraj; border-radius: 20px; padding: 16px 20px; }
+.hodnota { font-size: 36px; font-weight: 600; line-height: 1.1; }
+.nazev { font-size: 13px; color: $tlumeny; }
+.panel { border: 1px solid $okraj; border-radius: 20px; padding: 16px 20px; }
+
+.pruh { display: grid; grid-template-columns: 16px 1fr 28px; align-items: center; gap: 8px; margin: 6px 0; font-size: 13px; }
+.pruhCislo { font-weight: 600; }
+.pruhStopa { background: $plocha; border-radius: 6px; height: 12px; overflow: hidden; }
+.pruhVypln { background: $indigo; height: 100%; border-radius: 6px; }
+.pruhPocet { text-align: right; color: $tlumeny; }
+
+.dny { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; align-items: end; }
+.den { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 12px; }
+.denHodnota { font-weight: 600; }
+.denStopa { width: 100%; max-width: 28px; height: 90px; background: $plocha; border-radius: 6px; display: flex; align-items: flex-end; overflow: hidden; }
+.denVypln { width: 100%; background: $inkoust; border-radius: 6px; }
+.denNazev { color: $tlumeny; white-space: nowrap; font-size: 11px; }
+
+.chyba { background: #FBE1E0; color: #8A1C14; border-radius: 8px; padding: 10px 14px; }
+.zprava { background: #DDF4E4; color: #0B5A2A; border-radius: 8px; padding: 10px 14px; }
+
+@media (max-width: 600px) {
+  .dashboard { grid-template-columns: 1fr; }
+  .popisek { display: none; }
+}

@@ -1,0 +1,89 @@
+# appka.mjs 20:48:59
+== cesta
+[INFO]    vysledky: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/final2/.pripravenost/vysledky.json
+[INFO]    web z kontroly: https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev
+          npm-ping: zelena (registry odpovida (PONG))
+          node-pro-spfx-1.24: zelena (Node v22.23.5; SPFx 1.24 chce 22 / 24 / 26 (22 aspon 22.14). Gulp uz neni, build je Heft.)
+          prihlaseni: zelena (prihlasen pavel.admin@pavelchocholousgmail.onmicrosoft.com, appId 12f19539-b70a-499d-b6dc-517a32c0e904, tenant 972a674c-7b85-4e56-a31f-b2f95b42fd1e)
+          web-cteni: zelena ("Účastník 09 – DEV" (https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev))
+          site-app-catalog: zelena (web ma vlastni katalog aplikaci "Aplikace pro SharePoint" (0 balicku))
+          role-v-katalogu: zelena (muzes nahrat balicek (.sppkg) do katalogu)
+
+DOPORUCENA CESTA: A: SPFx web part, nasazeni skriptem (prikazy novy -> build -> seznam -> nasadit)
+== novy
+[OK]      projekt zalozen: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/final2/spokojenost-appka (reseni spokojenost-appka, web part deaa3dc1-76bd-42ba-a134-bd7dd1c6a81c)
+Instaluji balicky SharePoint Frameworku (npm ci, lokalne, bez admina; stovky MB, par minut)...
+[OK]      balicky nainstalovane. Dalsi krok: build
+rc=0
+== build
+Stavim balicek (npm run build, Heft; minuta az dve)...
+[OK]      balicek: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/c383f5cb-8f69-4fd1-b190-5505ca641bc6/scratchpad/final2/spokojenost-appka/sharepoint/solution/spokojenost-appka.sppkg (12398 B, verze 1.0.0.0)
+rc=0
+== seznam plan
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev:
+  - zalozit seznam "SpokojenostHodnoceni" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec DenCislo
+  - pridat sloupec Klic
+  - sloupce DenCislo a Klic budou indexovane (limit 5000 polozek), Klic unikatni = 1 hodnoceni na uzivatele a den
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+rc=10
+== seznam --ano
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev:
+  - zalozit seznam "SpokojenostHodnoceni" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec DenCislo
+  - pridat sloupec Klic
+  - sloupce DenCislo a Klic budou indexovane (limit 5000 polozek), Klic unikatni = 1 hodnoceni na uzivatele a den
+[OK]      seznam "SpokojenostHodnoceni" zalozen
+[OK]      sloupec Hodnoceni
+[OK]      sloupec DenCislo
+[OK]      sloupec Klic
+[OK]      sloupec Title -> "Den"
+[OK]      precteno zpet: seznam "SpokojenostHodnoceni" ma sloupce Hodnoceni, DenCislo, Klic
+[OK]      indexy: DenCislo a Klic jsou indexovane
+
+Seznam v prohlizeci: https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev/Lists/SpokojenostHodnoceni
+rc=0
+== nasadit plan
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev, katalog tohoto webu, nic tenant-wide):
+  1. nahrat spokojenost-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku spokojenost.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.
+rc=10
+== nasadit --ano
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev, katalog tohoto webu, nic tenant-wide):
+  1. nahrat spokojenost-appka.sppkg (verze 1.0.0.0) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku spokojenost.aspx ("Spokojenost s prostředím kanceláře dnes"), vlozit web part, prepnout na celostrankovou appku a publikovat
+[OK]      nahrano do katalogu (appId 10b1b69b-2466-4029-83db-c12d7283cea5)
+[OK]      nasazeno (deploy)
+[OK]      appka nainstalovana na web
+[OK]      stranka spokojenost.aspx zalozena (Article + sekce)
+[OK]      web part vlozen na stranku
+[OK]      stranka prepnuta na celostrankovou appku a publikovana
+[OK]      precteno zpet: stranka spokojenost.aspx, rozlozeni SingleWebPartAppPage, web part deaa3dc1-76bd-42ba-a134-bd7dd1c6a81c na ni je
+
+Otevri v prohlizeci (bez ramu SharePointu):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev/SitePages/spokojenost.aspx?env=WebView
+S ramem SharePointu (na upravy):
+  https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev/SitePages/spokojenost.aspx
+Hotovo je az to, co uzivatel uvidi v prohlizeci: appka se nacte, po kliknuti na 1-5 se hlas ukaze v dashboardu.
+rc=0
+== over
+[OK]      katalog webu: spokojenost-appka-client-side-solution verze 1.0.0.0, nasazeno true
+[OK]      stranka spokojenost.aspx: rozlozeni SingleWebPartAppPage, web part na ni je
+[OK]      seznam SpokojenostHodnoceni: 0 polozek
+
+Na SharePointu je vse na miste. Ze se appka vykresli a funguje, ukaze jen prohlizec:
+  https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev/SitePages/spokojenost.aspx?env=WebView
+rc=0

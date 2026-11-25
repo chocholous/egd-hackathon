@@ -1,0 +1,5 @@
+## přidání tagu na SP testovacího API
+patched
+## approve přes CLI po přidání tagu
+{"error":"The service principal for permssion request egd-overeni-apiaccess could not be found."}
+

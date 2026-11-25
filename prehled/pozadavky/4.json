@@ -1,0 +1,12 @@
+{
+  "cesta": "SharePoint skupiny Zadavatel/Schvalovatel/Správce + seznam „vidí jen své“; složitější role přes Entra app role a API",
+  "poznamka": "Entra skupina v SP skupině neověřena (propsání); vlastní úrovně v E.ON ❓",
+  "zdroj": "sondy/ms-prava/zjisteni.md",
+  "skill": "ano",
+  "nazev": "Víceúrovňová autentizace a práva",
+  "realne": "ano",
+  "test": "lab",
+  "cislo": 4,
+  "aktualizovano": "2026-11-23T10:12:17Z",
+  "skill_cesta": "skills/egd-prava-role"
+}

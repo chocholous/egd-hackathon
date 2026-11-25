@@ -1,0 +1,25 @@
+Archive:  sharepoint/solution/spokojenost.sppkg
+  Length      Date    Time    Name
+---------  ---------- -----   ----
+     1030  11-23-2026 11:14   AppManifest.xml
+      312  11-23-2026 11:14   ClientSideAssets.xml
+      189  11-23-2026 11:14   ClientSideAssets.xml.config.xml
+        0  11-23-2026 11:14   ClientSideAssets/
+     1250  11-23-2026 11:14   ClientSideAssets/chunk.lib-docx_e7820819bb8652609daa.js.LICENSE.txt
+     1223  11-23-2026 11:14   ClientSideAssets/chunk.lib-exceljs_f227112d27e4d79125cb.js.LICENSE.txt
+      821  11-23-2026 11:14   ClientSideAssets/spokojenost-web-part_699cc291445939c4b99c.js.LICENSE.txt
+     1035  11-23-2026 11:14   [Content_Types].xml
+        0  11-23-2026 11:14   _rels/
+      288  11-23-2026 11:14   _rels/.rels
+      486  11-23-2026 11:14   _rels/AppManifest.xml.rels
+     1493  11-23-2026 11:14   _rels/ClientSideAssets.xml.rels
+      560  11-23-2026 11:14   _rels/feature_e44f8453-aa40-441c-97a0-92ecfe281126.xml.rels
+        0  11-23-2026 11:14   e44f8453-aa40-441c-97a0-92ecfe281126/
+     2386  11-23-2026 11:14   e44f8453-aa40-441c-97a0-92ecfe281126/WebPart_6cb71949-befa-4069-a54c-93cbcbbf3fa3.xml
+      300  11-23-2026 11:14   feature_e44f8453-aa40-441c-97a0-92ecfe281126.xml
+      189  11-23-2026 11:14   feature_e44f8453-aa40-441c-97a0-92ecfe281126.xml.config.xml
+    24805  11-23-2026 11:14   ClientSideAssets/spokojenost-web-part_699cc291445939c4b99c.js
+   941012  11-23-2026 11:14   ClientSideAssets/chunk.lib-exceljs_f227112d27e4d79125cb.js
+   295237  11-23-2026 11:14   ClientSideAssets/chunk.lib-docx_e7820819bb8652609daa.js
+---------                     -------
+  1272616                     20 files

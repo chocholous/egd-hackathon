@@ -1,0 +1,8 @@
+{"displayName":"EGD PA sonda: Recurrence + HTTP ČNB",
+ "connectionReferences":{},
+ "definition":{"$schema":"https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#","contentVersion":"1.0.0.0",
+  "parameters":{"$connections":{"defaultValue":{},"type":"Object"},"$authentication":{"defaultValue":{},"type":"SecureObject"}},
+  "triggers":{"Recurrence":{"type":"Recurrence","recurrence":{"frequency":"Month","interval":12}}},
+  "actions":{"Stahni_CNB":{"type":"Http","runAfter":{},"inputs":{"method":"GET","uri":"https://api.cnb.cz/cnbapi/exrates/daily?lang=EN"}},
+   "Delka":{"type":"Compose","runAfter":{"Stahni_CNB":["Succeeded"]},"inputs":"@length(string(body('Stahni_CNB')))"}},
+  "outputs":{}}}

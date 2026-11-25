@@ -1,0 +1,9 @@
+= úroveň EGD Zadavatel už existuje
++ m365 spo roledefinition add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name EGD Schvalovatel bez mazání --rights ViewListItems,AddListItems,EditListItems,OpenItems,ViewVersions,DeleteVersions,ManagePersonalViews,ViewFormPages,Open,ViewPages,CreateSSCSite,BrowseDirectories,BrowseUserInfo,AddDelPrivateWebParts,UpdatePersonalWebParts,UseClientIntegration,UseRemoteAPIs,CreateAlerts,EditMyUserInfo,CancelCheckout
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name CLI Zadavatelé
++ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Zadavatelé --userNames tomas.prochazka@pavelchocholousgmail.onmicrosoft.com,jana.svobodova@pavelchocholousgmail.onmicrosoft.com
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Zadavatelé --roleDefinitionName Čtení
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name CLI Schvalovatelé
++ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Schvalovatelé --userNames ondrej.horakk@pavelchocholousgmail.onmicrosoft.com
+{"error":"Uživatel neexistuje nebo není jedinečný."}
+CHYBA v: m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Schvalovatelé --userNames ondrej.horakk@pavelchocholousgmail.onmicrosoft.com

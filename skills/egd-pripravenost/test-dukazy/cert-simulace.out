@@ -1,0 +1,17 @@
+# 1) bez nic (ocekavana chyba certifikatu)
+npm error code DEPTH_ZERO_SELF_SIGNED_CERT
+npm error errno DEPTH_ZERO_SELF_SIGNED_CERT
+# 2) npm --strict-ssl=false (jednorazove)
+npm notice PONG 43ms
+# 3) npm --cafile c.pem (spravne reseni, certifikat od IT)
+npm notice PONG 51ms
+# 4) node fetch bez nic
+CHYBA DEPTH_ZERO_SELF_SIGNED_CERT
+# 5) node NODE_EXTRA_CA_CERTS
+OK 200
+# 6) node NODE_TLS_REJECT_UNAUTHORIZED=0 (jen toto okno)
+OK 200
+# 7) npm s promennou npm_config_strict_ssl=false (jen toto okno terminalu)
+npm notice PONG 33ms
+# 8) NODE_TLS_REJECT_UNAUTHORIZED=0 se dedi do podprocesu (node -> node)
+OK 200

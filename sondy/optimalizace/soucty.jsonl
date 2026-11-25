@@ -1,0 +1,2 @@
+{"test": "naivni_IF-MATCH_*", "pozadovano": 20, "vysledna_hodnota": 3.0, "ztraceno": 17.0, "neuspesne_pokusy_celkem": null, "vzdano": null}
+{"test": "ETag_a_opakovani_pri_412", "pozadovano": 20, "vysledna_hodnota": 20.0, "ztraceno": 0.0, "neuspesne_pokusy_celkem": 77, "vzdano": 0}

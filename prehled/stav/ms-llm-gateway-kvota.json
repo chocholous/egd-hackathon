@@ -1,0 +1,18 @@
+{
+  "nazev": "Atomicita kvóty gateway",
+  "stav": "hotovo",
+  "popis": "v3 nasazena: ETag If-Match + rezervace; tiny 2×200/10×429 a zapsáno = spotřeba, demo 12×200 213=213",
+  "oblast": "ms-llm",
+  "kdo": "ms-llm",
+  "vystup": "sondy/ms-llm/gateway-atomicita/README.md",
+  "aktualizovano": "2026-11-24T08:48:19Z",
+  "zacatek": "2026-11-24T08:48:19Z",
+  "kroky": 1,
+  "historie": [
+    {
+      "t": "2026-11-24T08:48:19Z",
+      "stav": "hotovo",
+      "popis": "v3 nasazena: ETag If-Match + rezervace; tiny 2×200/10×429 a zapsáno = spotřeba, demo 12×200 213=213"
+    }
+  ]
+}

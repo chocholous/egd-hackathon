@@ -1,0 +1,6 @@
+/_api/web/lists/getbytitle('MojeAppka')/items?$select=ID,Hodnoceni,Den,Created,Author/Title&$expand=Author
+{"status":200,"telo":{"value":[{"Author":{"Title":"Účastník 01"},"Id":1,"Hodnoceni":5,"Den":"2026-11-24","ID":1,"Created":"2026-11-24T09:13:37Z"}]}}
+/_api/web/lists/getbytitle('Spokojenost')?$select=ItemCount,LastItemModifiedDate
+{"status":200,"telo":{"ItemCount":2,"LastItemModifiedDate":"2026-11-22T19:23:41Z"}}
+/_api/web/lists/getbytitle('SpokojenostHodnoceni')?$select=ItemCount,LastItemModifiedDate
+{"status":404,"telo":"{\"odata.error\":{\"code\":\"-1, System.ArgumentException\",\"message\":{\"lang\":\"en-US\",\"value\":\"List 'SpokojenostHodnoceni' does not exist at site with URL 'https://pavelchocholousgmail.sharepoint.com/sites/egd01-dev'.\"}}}"}

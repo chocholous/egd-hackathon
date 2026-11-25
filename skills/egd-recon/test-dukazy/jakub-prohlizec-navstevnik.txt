@@ -1,0 +1,5 @@
+# jen Navstevnik (skupina 4): egd09-dev
+uzivatel: Kučera Jakub (IsSiteAdmin false) na https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev
+katalog "Apps for SharePoint" HTTP 200: High 176 / Low 138612833 -> viewListItems=ANO addListItems=ne editListItems=ne manageLists=ne addAndCustomizePages=ne
+web HTTP 200: High 176 / Low 138612833 -> viewListItems=ANO addListItems=ne editListItems=ne manageLists=ne addAndCustomizePages=ne
+rc=0

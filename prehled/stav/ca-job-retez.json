@@ -1,0 +1,23 @@
+{
+  "nazev": "Job: ČNB → LLM → PDF → mail",
+  "stav": "hotovo",
+  "popis": "✅ 2 běhy Succeeded, mail s PDF+docx doručen (teplý 67 s, studený 100 s)",
+  "oblast": "sondy",
+  "kdo": "Claude (session ca-libreoffice)",
+  "vystup": "sondy/container-app/job-retez.md",
+  "aktualizovano": "2026-11-24T02:19:51Z",
+  "zacatek": "2026-11-24T01:46:24Z",
+  "kroky": 2,
+  "historie": [
+    {
+      "t": "2026-11-24T01:46:24Z",
+      "stav": "bezi",
+      "popis": "čtu podklady"
+    },
+    {
+      "t": "2026-11-24T02:19:51Z",
+      "stav": "hotovo",
+      "popis": "✅ 2 běhy Succeeded, mail s PDF+docx doručen (teplý 67 s, studený 100 s)"
+    }
+  ]
+}

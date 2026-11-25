@@ -1,0 +1,5 @@
+# apfs-dedupe 2026-11-24T09:35:47Z
+groups=112047 replaced=58159 skipped=92057 logical_bytes=174495693 dry_run=False
+real 1014.02
+user 93.08
+sys 356.19

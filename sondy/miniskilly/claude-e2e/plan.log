@@ -1,0 +1,9 @@
+[INFO]    prihlasen: pavel.admin@pavelchocholousgmail.onmicrosoft.com
+
+PLAN (vse jen na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-miniskilly, katalog tohoto webu, nic tenant-wide):
+  1. nahrat prvni-appka.sppkg (verze 1.0.0.1) do katalogu aplikaci webu (prepsat starsi)
+  2. nasadit (deploy) v katalogu webu
+  3. nainstalovat appku na web, nebo aktualizovat, kdyz uz tam je
+  4. zalozit stranku spokojenost-claude.aspx ("Spokojenost (Claude test)"), vlozit web part, prepnout na celostrankovou appku a publikovat
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.

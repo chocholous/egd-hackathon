@@ -1,0 +1,10 @@
+egd01: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5
+egd02: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5
+egd03: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5
+egd04: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5
+egd05: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5
+egd06: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5
+egd07: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5
+egd08: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5
+egd09: Microsoft_365_Business_Standard_EEA_(no_Teams)
+egd10: Microsoft_365_Business_Standard_EEA_(no_Teams), SPE_E5

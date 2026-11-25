@@ -1,0 +1,18 @@
+{
+  "nazev": "Zákaz diakritiky a mezer v názvech seznamů",
+  "stav": "hotovo",
+  "popis": "pravidlo v egd-data-seznamy + egd-externi-api, ověřeno v labu",
+  "oblast": "skilly",
+  "kdo": "miniskilly",
+  "vystup": "sondy/miniskilly/nazvy-diakritika.out",
+  "aktualizovano": "2026-11-24T18:58:31Z",
+  "zacatek": "2026-11-24T18:58:31Z",
+  "kroky": 1,
+  "historie": [
+    {
+      "t": "2026-11-24T18:58:31Z",
+      "stav": "hotovo",
+      "popis": "pravidlo v egd-data-seznamy + egd-externi-api, ověřeno v labu"
+    }
+  ]
+}

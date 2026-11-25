@@ -1,0 +1,8 @@
+# cesta A3 jako Navstevnik: egd09-dev
+{"krok":"stránka","url":"https://pavelchocholousgmail.sharepoint.com/sites/egd09-dev/SitePages/Home.aspx"}
+{"krok":"contextinfo (digest)","status":200,"msg":"digest ok"}
+{"krok":"kdo jsem","status":200,"msg":""}
+{"krok":"A3 krok 1: založit seznam","status":403,"msg":"Access is denied. (Exception from HRESULT: 0x80070005 (E_ACCESSDENIED))"}
+{"krok":"A3 krok 3: nahrát balíček do katalogu","status":403,"msg":"Access denied."}
+{"krok":"A3: číst nabídku appek webu","status":200,"msg":""}
+rc=0

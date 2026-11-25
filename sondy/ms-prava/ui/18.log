@@ -1,0 +1,76 @@
+URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/listedit.aspx?List=%7B8f4c76bc-ec53-4904-b9a5-4c32ca593d49%7D
+KROK klikobs:Oprávnění pro:
+  -> URL: https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D,list&List=%7B8F4C76BC%2DEC53%2D4904%2DB9A5%2D4C32CA593D49%7D
+--- frame https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava/_layouts/15/user.aspx?obj=%7B8F4C76BC%2DEC53%2D4904
+a: Zapnout režim s vyšším usnadněním
+a: Přeskočit příkazy pásu karet
+a: Přejít k hlavnímu obsahu
+a: Vypnout animace
+button[button]: Spouštěč aplikací
+a[link]: SharePoint
+button[button]: Nastavení
+button[button]: Nápověda
+button[button]: KM
+li[tab]: PROCHÁZENÍ Karta 1 z 2
+a: PROCHÁZENÍ Karta 1 z 2
+li[tab]: OPRÁVNĚNÍ Skupina Nástroje pro oprávnění, karta 2 z 2
+a: OPRÁVNĚNÍ Skupina Nástroje pro oprávnění, karta 2 z 2
+a: SDÍLET
+a: SLEDOVAT
+a: Umožňuje přenést hlavní pozornost na obsah.
+a[button]: Spravovat nadřazený objekt
+a[button]: Ukončit dědění oprávnění
+a[button]: Zkontrolovat oprávnění
+a: Domovská stránka
+a: Dokumenty
+a: Stránky
+a: Pozadavky
+a: Obsah webu
+a: UPRAVIT ODKAZY
+a: (EGD sonda ms-prava)
+a: Jméno
+a: Typ
+a: Úrovně oprávnění
+a: Členové webu EGD sonda ms-prava
+a: Návštěvníci webu EGD sonda ms-prava
+a: Vlastníci webu EGD sonda ms-prava
+TEXT:
+Zapnout režim s vyšším usnadněním
+Přeskočit příkazy pásu karet
+Přejít k hlavnímu obsahu
+Vypnout animace
+SharePoint
+KM
+K procházení pásu karet lze použít standardní navigační klávesy prohlížeče. Pro přecházení mezi skupinami použijte kombinaci kláves Ctrl+Šipka doleva nebo Ctrl+Šipka doprava. Chcete-li přejít na první kartu pásu karet, použijte kombinaci kláves Ctrl+[. Chcete-li přejít na poslední vybraný příkaz, použijte kombinaci kláves Ctrl+]. K aktivaci příkazu použijte klávesu Enter.
+PROCHÁZENÍ
+Karta 1 z 2
+Nástroje pro oprávnění
+OPRÁVNĚNÍ
+Skupina Nástroje pro oprávnění, karta 2 z 2
+SDÍLET 
+SLEDOVAT 
+Spravovat nadřazený
+objekt
+Ukončit dědění
+oprávnění
+Dědičnost
+Zkontrolovat
+oprávnění
+Zkontrolovat
+Domovská stránka
+Dokumenty
+Stránky
+Nejnovější
+Pozadavky
+Obsah webu
+UPRAVIT ODKAZY
+Důležité Stav
+Tento seznam dědí oprávnění z nadřazeného objektu. (EGD sonda ms-prava)
+Jméno	Typ	Úrovně oprávnění
+ Členové webu EGD sonda ms-prava
+	Skupina služby SharePoint	Úpravy
+ Návštěvníci webu EGD sonda ms-prava
+	Skupina služby SharePoint	Čtení
+ Vlastníci webu EGD sonda ms-prava
+	Skupina služby SharePoint	Úplné řízení
+

@@ -1,0 +1,51 @@
+### OPTIONS https://api.cnb.cz/cnbapi/exrates/daily?lang=EN
+HTTP/1.1 403 Forbidden
+Date: Sun, 22 Nov 2026 19:40:05 GMT
+Server: Apache
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preloa                         d
+X-Frame-Options: DENY
+Content-Length: 199
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+</body></html>
+
+### OPTIONS https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt
+HTTP/1.1 200 OK
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: no-cache
+Connection: close
+Content-Type: text/html; charset=utf-8
+Pragma: no-cache
+Content-Length: 11051
+
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <title>Přístup byl zablokován - Česká národní banka</title>
+
+### OPTIONS https://www.ote-cr.cz/cs/
+HTTP/1.1 404 Not Found
+cache-control: no-cache
+content-type: text/html
+connection: close
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>404 Page not found</title>
+

@@ -1,0 +1,10 @@
+skupina se Vsemi: Návštěvníci webu Účastník 01 – TEST
+radek: 1 | zaskrtavatko: 1
+klik Akce: true
+dialog: Chystáte se odebrat ze skupiny následující členy:
+    Všichni kromě externích uživatelů
+Chcete tyto členy odebrat?
+     -> OK
+klik Odebrat uživatele ze skupiny: true
+stav: {"web":["Omezený přístup"],"seznamVlastni":false,"writeSecurity":1,"seznam":["Omezený přístup"]}
+ZAPSANO

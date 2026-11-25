@@ -1,0 +1,38 @@
+{
+  "nazev": "Copilot Graph API přes OBO na ca-egd-obo",
+  "stav": "hotovo",
+  "popis": "uzavřeno: funguje jen s licencí Copilot; všechny granty včetně egd10 vráceny na User.Read Mail.ReadBasic, licence zpět u alice (ověřeno 24. 11. večer)",
+  "oblast": "sondy",
+  "kdo": "ca-obo",
+  "vystup": "sondy/container-app/obo-copilot.md",
+  "aktualizovano": "2026-11-24T20:47:37Z",
+  "zacatek": "2026-11-24T08:40:41Z",
+  "kroky": 5,
+  "historie": [
+    {
+      "t": "2026-11-24T08:40:41Z",
+      "stav": "bezi",
+      "popis": "studuji ms-llm sondu"
+    },
+    {
+      "t": "2026-11-24T08:49:52Z",
+      "stav": "ceka",
+      "popis": "endpointy a granty hotové, měření bez licence hotové; čekám na licenci od ms-llm"
+    },
+    {
+      "t": "2026-11-24T19:30:36Z",
+      "stav": "hotovo",
+      "popis": "uzavřeno: funguje jen s licencí Copilot; granty vráceny 19:24Z (egd10 ponechán)"
+    },
+    {
+      "t": "2026-11-24T20:43:07Z",
+      "stav": "hotovo",
+      "popis": "uzavřeno: funguje jen s licencí Copilot; tomas a petra vráceny 19:24Z; egd10 rozšířený, ponechán (Pavel 24. 11.)"
+    },
+    {
+      "t": "2026-11-24T20:47:37Z",
+      "stav": "hotovo",
+      "popis": "uzavřeno: funguje jen s licencí Copilot; všechny granty včetně egd10 vráceny na User.Read Mail.ReadBasic, licence zpět u alice (ověřeno 24. 11. večer)"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+--- klik graphpdf
+LOG po kliku: HOTOVO graphpdf
+--- klik pdf
+LOG po kliku: HOTOVO pdf
+--- eval fetch("/sites/egd-sonda-ms-dokumenty/_api/web/GetFolderByServerRelativePath(decodedurl='/sites/egd-sonda-ms-dokumenty/Sdilene dokumenty/exporty')/Files?$select=Name,Length,TimeLastModified", {headers:{Accept:'application/json;odata=nometadata'}}).then(r=>r.json()).then(j=>j.value.filter(f=>f.Name.startsWith('spokojenost')).map(f=>f.Name+' '+f.Length+' '+f.TimeLastModified).join(' | '))
+VYSLEDEK: spokojenost.pdf 8098 2026-11-23T11:10:46Z | spokojenost.docx 16969 2026-11-23T11:10:43Z | spokojenost.pptx 61167 2026-11-23T10:21:34Z | spokojenost.xlsx 13412 2026-11-23T10:21:33Z
+LOG:
+

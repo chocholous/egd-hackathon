@@ -1,0 +1,22 @@
+= úroveň EGD Zadavatel už existuje
+= úroveň EGD Schvalovatel bez mazání už existuje
+= skupina CLI Zadavatelé už existuje
++ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Zadavatelé --userNames jana.svobodova@pavelchocholousgmail.onmicrosoft.com
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Zadavatelé --roleDefinitionName Čtení
+= skupina CLI Schvalovatelé už existuje
++ m365 spo group member add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Schvalovatelé --userNames tomas.prochazka@pavelchocholousgmail.onmicrosoft.com
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Schvalovatelé --roleDefinitionName Čtení
++ m365 spo group add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --name CLI Správci
++ m365 spo web roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --groupName CLI Správci --roleDefinitionName Čtení
++ m365 spo list roleinheritance break --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI --clearExistingPermissions --force
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI --groupName Vlastníci webu EGD sonda ms-prava --roleDefinitionName Úplné řízení
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI --groupName CLI Zadavatelé --roleDefinitionName EGD Zadavatel
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI --groupName CLI Schvalovatelé --roleDefinitionName EGD Schvalovatel bez mazání
++ m365 spo list roleassignment add --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --listTitle PozadavkyCLI --groupName CLI Správci --roleDefinitionName Úplné řízení
++ m365 spo list set --webUrl https://pavelchocholousgmail.sharepoint.com/sites/egd-sonda-ms-prava --title PozadavkyCLI --readSecurity 2 --writeSecurity 2
+Kontrola:
+{
+  "HasUniqueRoleAssignments": true,
+  "ReadSecurity": 2,
+  "WriteSecurity": 2
+}

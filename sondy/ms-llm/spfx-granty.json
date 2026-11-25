@@ -1,0 +1,47 @@
+[
+  {
+    "res": "e9e4c7a2-9a70-413e-bf92-fb987471717d",
+    "scope": "AppCatalog.Read.All AppCatalog.Submit Calendars.Read Calendars.Read.Shared Calendars.ReadBasic Calendars.ReadWrite Calendars.ReadWrite.Shared Channel.Create Channel.ReadBasic.All ChatMember.Read EduAssignments.ReadBasic EduRoster.ReadBasic FileStorageContainer.Selected Files.Read Files.Read.All Files.ReadWrite.All Group-Conversation.ReadWrite.All Group.Read.All GroupMember.Read.All InformationProtectionPolicy.Read People.Read People.Read.All Place.Read.All Presence.Read.All PrintJob.Create PrintJob.ReadBasic PrinterShare.ReadBasic.All SensitivityLabel.Read Sites.Read.All Tasks.ReadWrite Team.ReadBasic.All TeamsAppInstallation.ReadWriteForTeam TeamsAppInstallation.ReadWriteSelfForTeam TeamsTab.Create User.Read User.ReadBasic.All Mail.Send",
+    "type": "AllPrincipals"
+  },
+  {
+    "res": "a36195c1-6ab6-4e80-9985-f46a49b69f40",
+    "scope": "user_impersonation",
+    "type": "AllPrincipals"
+  },
+  {
+    "res": "b553da66-7ce7-410e-a8c9-b0b169a666e2",
+    "scope": "Files.ReadWrite.All TermStore.ReadWrite.All Sites.ReadWrite.All Sites.FullControl.All M365BillingPlatform.Read.All AllProfiles.Manage",
+    "type": "AllPrincipals"
+  },
+  {
+    "res": "93494e5c-1d54-468b-9c41-f7d6e5c8cfda",
+    "scope": "User.Read User.ReadBasic.All Calendars.Read",
+    "type": "AllPrincipals"
+  },
+  {
+    "res": "a8392cf6-809b-41e1-b3b0-c49a4f6a3b86",
+    "scope": "Report.Read.All UserState.ReadWrite.All Dataset.Read.All MLModel.Execute.All Workspace.Read.All App.Read.All Dashboard.Read.All Item.Read.All Fabric.Embed",
+    "type": "AllPrincipals"
+  },
+  {
+    "res": "8340b547-1b7d-4c72-90a5-afd0f4e0d0c9",
+    "scope": "user_impersonation",
+    "type": "AllPrincipals"
+  },
+  {
+    "res": "8a1ac519-f08c-4f1b-889c-317a9645208a",
+    "scope": "Forms.ReadWrite",
+    "type": "AllPrincipals"
+  },
+  {
+    "res": "f18c9d7f-b3ab-4d3b-97a8-4d4afcbc1736",
+    "scope": "Presuny.Manage",
+    "type": "AllPrincipals"
+  },
+  {
+    "res": "4b368df2-9977-460f-8688-ce84efa250b9",
+    "scope": "Gateway.Use",
+    "type": "AllPrincipals"
+  }
+]

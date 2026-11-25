@@ -1,0 +1,216 @@
+ ● skill(egd-pripravenost)
+
+Začínám neinvazivní kontrolou prostředí; bez adresy DEV webu a bez potvrzení přihlášení či zápisu přeskočím kroky, které by měnily SharePoint.
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/github.md 84 lines read
+
+ MD Read ~/.copilot/skills/egd-pripravenost/references/zebrik.md 49 lines read
+
+ $ Shell Zjistit příkazy kontroly připravenosti 26 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" --help
+
+ ✗ Shell Ověřit pracovní složku a stav repozitáře Failed with exit code 1  /Users/chocholous/Projec…
+   pwd && git status --short && ls -ld "$HOME/Projects/egd-workshop/tools/stav.sh" "$PWD"
+   /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/egd-workshop
+    M ../../../../../../prehled/.verze
+    M ../../../../../../prehled/stav/audit-overeni.json
+    M ../../../../../../prehled/stav/e2e-ucastnik.json
+    M ../../../../../../prehled/stav/miniskilly-recon.json
+    M ../../../../../../prehled/stav/prvni-appka-znacky.json
+    M ../../../../../../prehled/stav/test-copilot.json
+    M ../../../../../container-app/obo.md
+    M ../../../../../container-app/obo/api/server.mjs
+    M ../../../../../container-app/obo/spfx/config/package-solution.json
+    M ../../../../../container-app/obo/spfx/src/webparts/oboPosta/OboPostaWebPart.ts
+    M ../../../../../container-app/obo/stav.json
+    M ../../../../../../tools/ca-obo-klik.mjs
+    M ../../../../../../tools/ca-obo.sh
+   ?? ../../../../../../prehled/epl-navrhy.html
+   ?? ../../../../../../prehled/stav/e2e-copilot.json
+   ?? ../../../../../../prehled/stav/prvni-appka-rezimy.json
+   ?? ../../../../../container-app/obo-copilot.md
+   ?? ../../../../../container-app/obo/dukazy/copilot/
+   ?? ../../../dukazy/
+   ?? ../../
+   ?? ../../../../../ms-llm/copilot-graph/grant-zaloha-pred-chat.json
+   ?? ../../../../../overeni/node24/prvni-appka/
+   ls: /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/Projects/egd-workshop/
+   tools/stav.sh: No such file or directory
+   drwxr-xr-x@ 2 chocholous  staff  64 Nov 24 14:09 
+   /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/egd-workshop
+   Failed with exit code 1
+
+ $ Shell Zapsat začátek kontroly do přehledu práce 1 line…
+   "/Users/chocholous/Projects/egd-workshop/tools/stav.sh" e2e-copilot-pripravenost-20261124 bezi
+   "Kontrola připravenosti na workshop" -p "Provádím neinvazivní kontroly nástrojů a sítí; jméno/DEV
+   web ani potvrzení zápisu nejsou k dispozici." -o pripravenost -k "Copilot CLI" -v "Zpráva
+   připravenosti bude vytvořena po kontrolách"
+
+ $ Shell Zjistit systém a dostupné příkazy 6 lines…
+   uname -a && command -v node && command -v npm && command -v gh && node --version && npm --version
+
+ $ Shell Zkontrolovat lokální vývojové nástroje 12 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" nastroje
+
+Základní nástroje jsou převážně zelené: běží macOS, Node 22, Git, Copilot CLI i Claude; licence v editoru zatím vyžaduje ruční ověření. Teď ověřím síť/npm, dostupné varianty a GitHub přihlášení.
+
+ $ Shell Zkontrolovat GitHub CLI přihlášení 3 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" github
+
+ $ Shell Ověřit dostupnost Microsoft a SharePoint endpointů 2 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" sit
+
+ $ Shell Změřit dostupné varianty Node, CLI a přihlášení 4 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" varianty
+
+ $ Shell Ověřit přístup k npm registry 4 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" npm
+
+ $ Shell Zkontrolovat pracovní složku před lokální instalací 7 lines…
+   ls -la && if [ -d node_modules ]; then printf '\nnode_modules exists\n'; else printf
+   '\nnode_modules absent\n'; fi && if [ -f package-lock.json ]; then printf 'package-lock
+   exists\n'; else printf 'package-lock absent\n'; fi
+
+ / Search "cli-instalace|npm install|node_modules" (~/.copilot/skills/egd-pripraveno… 94 lines found
+
+ $ Shell Najít existující node_modules jako zdravý vzor 12 lines…
+   fd -H -I -t d '^node_modules$' --prune /Users/chocholous/Projects/egd-workshop
+
+ $ Shell Prověřit zdraví a vhodnost Node záloh 7 lines…
+   for d in /Users/chocholous/Projects/egd-workshop/sondy/e2e/prace/node_modules
+   /Users/chocholous/Projects/egd-workshop/sondy/e2e/prace/prvni-appka/node_modules
+   /Users/chocholous/Projects/egd-workshop/sondy/overeni/node24/prvni-appka/node_modules; do printf
+   '\n%s\n' "$d"; fd -H -I -t f -S -1b '^package\.json$' "$d" | head -5; if [ -f
+   "$d/@pnp/cli-microsoft365/package.json" ]; then node -p
+   "require('$d/@pnp/cli-microsoft365/package.json').version"; fi; done
+
+ $ Shell Ověřit verzi Node pro SharePoint Framework 3 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" spfx
+
+Síť i npm jsou dostupné, SharePoint host odpovídá a Node splňuje SPFx 1.24; ale `gh` není přihlášený. Nyní provedu místní instalaci CLI podle kontrolního postupu; přihlášení a změny SharePointu neprovedu bez údajů a souhlasu.
+
+ $ Shell Nainstalovat Microsoft 365 CLI lokálně 4 lines…                                         27s
+   cp -c -R /Users/chocholous/Projects/egd-workshop/sondy/e2e/prace/node_modules ./node_modules &&
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" cli-instalace
+
+ $ Shell Ověřit, zda je CLI přihlášeno k tenantovi 2 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" prihlaseni
+
+ JS Read ~/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs L300:345 (46 lines read)
+
+ JS Read ~/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs L80:95 (16 lines read)
+
+ $ Shell Prověřit cestu k CLI bez čtení tokenů 8 lines…
+   printf 'cwd=%s\n' "$(pwd -P)"; ls -ld node_modules node_modules/@pnp
+   node_modules/@pnp/cli-microsoft365 2>/dev/null; node -e "try { console.log('local-cli=' +
+   require('./node_modules/@pnp/cli-microsoft365/package.json').version) } catch {
+   console.log('local-cli=missing') }"; printf 'path-cli='; command -v m365 || true; if [ -n
+   "$PRIPRAVENOST_M365_CLI" ]; then printf 'override=present\n'; else printf 'override=absent\n';
+   fi;
+
+ $ Shell Ověřit přihlášení přímo v lokálním CLI 12 2 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" prihlaseni --cli
+   "$PWD/node_modules/@pnp/cli-microsoft365/dist/index.js"
+
+ {} Read .pripravenost/vysledky.json 131 lines read
+
+ JS Read ~/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs L560:625 (66 lines read)
+
+ JS Read ~/.copilot/skills/egd-pripravenost/scripts/pripravenost.mjs L385:475 (91 lines read)
+
+Kontrola odhalila, že CLI je přihlášené k jinému (ne workshopovému) tenantovi; neodhlašuji ho ani neměním. Instalace lokalizovala CLI 12, ale přednastavená cesta testovala globální CLI 11, proto teď ověřím lokální instalaci explicitní cestou a výsledek ve zprávě oddělím od tohoto přihlášení.
+
+ $ Shell Ověřit CLI 12 lokální instalaci přímo 3 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" cli-instalace --cli
+   "$PWD/node_modules/@pnp/cli-microsoft365/dist/index.js"
+
+ $ Shell Zaznamenat neověřené kroky a nutné požadavky 36 lines…
+   S="/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-pri
+   pravenost/scripts/pripravenost.mjs"; node "$S" zapis --klic prihlaseni --stav zluta --oblast
+   "Pripojeni k SharePointu" --hodnota "CLI je prihlaseno k jinemu tenantovi; prihlaseni k E.ON
+   nebylo overeno. Agent prihlaseni ani odhlaseni neprovadel." && node "$S" zapis --klic
+   copilot-licence --stav zluta --oblast Nastroje --hodnota "Nelze overit bez rucni kontroly VS
+   Code; rozsireni Copilot Chat nebylo v seznamu nalezeno. Otevrit Chat a overit rezim Agent a
+   pristup." && node "$S" zapis --klic github-test --stav zluta --oblast GitHub --hodnota "gh neni
+   prihlaseno; firemni host, pristup do organizace a Copilot licence nebyly overeny." --it "Prosim o
+   potvrzeni adresy firemniho GitHubu, pristupu do organizace EG.D/E.ON a pridelene licence GitHub
+   Copilot pro workshop." && node "$S" zapis --klic dev-web-url --stav zluta --oblast "Ovladani
+   SharePointu" --hodnota "Adresa DEV webu nebyla zadana; SharePoint pristup a katalog aplikaci
+   nelze overit." && node "$S" zapis --klic site-app-catalog --stav zluta --oblast "Ovladani
+   SharePointu" --hodnota "Neovereno: chybi adresa DEV webu." && node "$S" zapis --klic appId --stav
+   cervena --oblast "Pripojeni k SharePointu" --hodnota "Schvalene appId pro tenant E.ON nebylo
+   dodano; prihlaseni k E.ON nelze provest." --it "Prosim o appId aplikace CLI for Microsoft 365
+   schvalene spravcem Entra ID pro prihlaseni k SharePointu v tenantovi E.ON." && node "$S" zapis
+   --klic zkouska --stav zluta --oblast "Ovladani SharePointu" --hodnota "Neprovedeno: chybi DEV URL
+   a vyslovny souhlas k zapisu jednoho zkusebniho seznamu a polozky." && node "$S" zapis --klic
+   power-platform-browser --stav zluta --oblast "Zalozni cesty" --hodnota "Power Apps a Power
+   Automate nebyly otevreny v prihlasenem prohlizeci; vyzadujou rucni kontrolu." && node "$S" zapis
+   --klic generator-install --stav zluta --oblast "SPFx pripravenost" --hodnota "Instalace
+   generatoru nebyla spustena; vyzaduje souhlas se stazenim stovek MB." && node "$S" zapis --klic
+   varianta-pouzita-node --stav info --hodnota "1 - Node 22.23.5 uz je v PATH" && node "$S" zapis
+   --klic varianta-pouzita-cli --stav info --hodnota "1 - lokalni npm instalace CLI 12 v pracovni
+   slozce" && node "$S" zapis --klic varianta-pouzita-prihlaseni --stav info --hodnota "Nepouzito;
+   prihlaseni nebylo provadeno"
+
+ {} Read .pripravenost/vysledky.json L125:end (74 lines read)
+
+ ● Edit  Edit .pripravenost/vysledky.json (-5)
+
+ $ Shell Vytvořit zprávu o připravenosti 4 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" zprava --jmeno ucastnik
+
+ MD Read pripravenost-ucastnik.md 96 lines read
+
+ $ Shell Doplnit síťové a variantní výsledky do zprávy 6 lines…
+   S="/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-pri
+   pravenost/scripts/pripravenost.mjs"; node "$S" sit && node "$S" varianty
+
+ $ Shell Obnovit finální zprávu po doplnění kontrol 4 lines…
+   node "/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/.copilot/skills/egd-
+   pripravenost/scripts/pripravenost.mjs" zprava --jmeno ucastnik
+
+ MD Read pripravenost-ucastnik.md 107 lines read
+
+ ● Edit  Edit pripravenost-ucastnik.md (+2 -1)
+
+ $ Shell Zkontrolovat změny vytvořené kontrolou No Content
+   git status --short --untracked-files=all -- sondy/e2e/copilot/sandbox/home/egd-workshop
+
+ $ Shell Ověřit zprávu, JSON a nepřítomnost přihlašovacích údajů 9 lines…
+   node -e "JSON.parse(require('fs').readFileSync('.pripravenost/vysledky.json', 'utf8'));
+   console.log('vysledky.json: validni JSON')" && test -s pripravenost-ucastnik.md && ! rg -n
+   'egd09|12f19539|eyJ[A-Za-z0-9_-]{10,}|password[[:space:]]*[:=]|heslo[[:space:]]*[:=]'
+   pripravenost-ucastnik.md .pripravenost/vysledky.json && printf 'report: existuje; citlive
+   prihlasovaci udaje nenalezeny\n' && rg -n 'DEV / TEST / PROD|neoverene|adresa DEV webu nebyla
+   zadana|appId' pripravenost-ucastnik.md
+
+ $ Shell Zapsat dokončení kontroly do přehledu práce 1 line…
+   "/Users/chocholous/Projects/egd-workshop/tools/stav.sh" e2e-copilot-pripravenost-20261124 hotovo
+   "Kontrola připravenosti na workshop" -p "Lokální nástroje a síť ověřeny; CLI 12 nainstalováno.
+   E.ON login, GitHub/licence, DEV web, katalog a browser přístupy zůstávají neověřené; bez loginu a
+   zápisu." -o pripravenost -k "Copilot CLI" -v
+   "sondy/e2e/copilot/sandbox/home/egd-workshop/pripravenost-ucastnik.md"
+
+Připravenost je **částečná**: Node 22, npm, lokální CLI 12 i síťové kontroly prošly. Přihlášení CLI míří na jiný tenant; E.ON přístup, firemní GitHub a Copilot licenci se nepodařilo ověřit. DEV web nebyl zadán, takže SharePoint ani jeho katalog aplikací nebylo možné prověřit. Nic jsem nepřihlašoval ani nezapisoval do SharePointu.
+
+Zpráva je zde: [pripravenost-ucastnik.md](/Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/home/egd-workshop/pripravenost-ucastnik.md). Jméno v názvu je zatím provizorní. Před workshopem ověřte licenci Copilot, objednání webů DEV/TEST/PROD a požádejte o katalog aplikací na DEV webu. Pošlete prosím zprávu Pavlovi.
+
+Session exported to: /Users/chocholous/Projects/egd-workshop/sondy/e2e/copilot/sandbox/vystup/prepis.md
+
+
+Changes    +2 -6
+AI Credits 2.96 (3m 55s)
+Tokens     ↑ 1.3m (1.2m cached, 69.8k written) • ↓ 17.8k (12.9k reasoning)
+Resume     copilot --resume=68c3bfb0-7b26-4938-80e8-15cdba11f3ca

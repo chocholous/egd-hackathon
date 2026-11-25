@@ -1,0 +1,30 @@
+13c13
+< Značky: ✅ ověřeno v labu 22. 11. 2026 (důkaz v závorce, cesty od kořene repa `egd-workshop`) · ❓ neověřeno (viz sekce Neověřeno).
+---
+> Značky: ✅ ověřeno v labu 22.–23. 11. 2026 (důkaz v závorce, cesty od kořene repa `egd-workshop`) · ❓ neověřeno (viz sekce Neověřeno).
+72,73c72,73
+<    Schvalovatel nemá mazat? Při kopii navíc odškrtni **Odstranit položky** (zaškrtávátko v UI existuje, `ui/05`, ale
+<    tenhle proklik jsem neudělal ❓; stejnou úroveň bez mazání jsem ověřil přes CLI ✅, viz B).
+---
+>    Schvalovatel nemá mazat? Při kopii navíc odškrtni **Odstranit položky** ✅ (úroveň „EGD Schvalovatel UI bez mazání“
+>    má stejné bity jako z CLI, `Low` 1011028967 = bez `DeleteListItems`; `sondy/ms-prava/ui/40-*`, `ui/41-*`).
+79,82c79,83
+<    e-mailem“ → **Sdílet**. Sebe ze skupin Zadavatelé a Schvalovatelé odeber (Akce → Odebrat uživatele ze skupiny ❓ neprokliknuto).
+<    (V labu jsem Čtení dával dodatečně: Rozšířené nastavení → **Udělit oprávnění** → skupina → ZOBRAZIT MOŽNOSTI →
+<    Vybrat úroveň oprávnění **Čtení** → Sdílet; `sondy/ms-prava/ui/31-*.log`. Zaškrtnutí Čtení přímo ve formuláři
+<    Vytvořit skupinu je stejné nastavení, sám jsem ho nekliknul ❓.)
+---
+>    e-mailem“ → **Sdílet**. Sebe ze skupin Zadavatelé a Schvalovatelé odeber: na stránce skupiny zaškrtni svůj řádek →
+>    **Akce** → **Odebrat uživatele ze skupiny** → potvrď dialog ✅ (`sondy/ms-prava/ui/43-*`).
+>    Zaškrtnutí **Čtení** ve formuláři Vytvořit skupinu dá skupině Čtení na webu ✅ (`ui/42-*`, kontrola
+>    `_api/web/roleassignments`). Zapomněl jsi ho? Dodatečně: Rozšířené nastavení → **Udělit oprávnění** → skupina →
+>    ZOBRAZIT MOŽNOSTI → Vybrat úroveň oprávnění **Čtení** → Sdílet ✅ (`ui/31-*.log`).
+108a110,113
+> **Nepoužívej `--output none`:** chybu pak CLI nevypíše, vrátí jen kód 1 a v řetězu `&&` se další kroky tiše
+> přeskočí ✅ (chybějící `--listTitle`: s `none` prázdný výstup a `rc=1`, s `--output json` hláška
+> `Specify one of the following options: listId, listTitle, listUrl.`; CLI v11.11.0, `sondy/ms-prava/zjisteni.md`).
+> Copilot to v testu udělal a role schvalovatele na seznamu chyběla, dokud ji kontrolou nenašel a nedoplnil.
+234,236d238
+< | Formulář Vytvořit skupinu se zaškrtnutým Čtení | Čtení jsem dával přes Udělit oprávnění (ověřeno); zaškrtávátko ve formuláři existuje (`ui/09`), ale neprokliknuto | Jedno založení skupiny se zaškrtnutím a kontrola `_api/web/roleassignments` |
+< | Odebrání sebe ze skupiny (Akce → Odebrat uživatele) | Neprokliknuto | Proklik na stránce skupiny |
+< | A krok 1: odškrtnutí „Odstranit položky“ při kopii úrovně | Neprokliknuto (stejná úroveň přes CLI ✅) | `tools/spo-ui-krok.mjs … unchecklabel:Odstranit položky` |

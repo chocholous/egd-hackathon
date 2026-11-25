@@ -1,0 +1,77 @@
+
+> prvni-appka@0.0.1 build
+> heft test --clean --production && heft package-solution --production
+
+ ---- build started ---- 
+[build:clean] Deleted 0 files and 6 folders
+[build:set-browserslist-ignore-old-data-env-var] Setting environment variable BROWSERSLIST_IGNORE_OLD_DATA=1
+[build:sass] Starting...
+[build:static-asset-typings] Processing static assets...
+[build:static-asset-typings] Finished processing static assets.
+[build:sass] Compiling 1 files...
+[build:sass] Finished compiling.
+[build:typescript] Using TypeScript version 5.8.3
+[build:typescript] Copied 2 files and linked 0 files
+[build:lint] Using ESLint version 9.37.0
+[build:webpack] Using Webpack version 5.105.4
+[build:webpack] Running Webpack compilation
+ ---- build finished (89.065s) ---- 
+ ---- test started ---- 
+[test:clean] Deleted 11 files and 3 folders
+[test:jest] Using Jest version 30.2.0
+No tests found, exiting with code 0
+[test:jest] 
+[test:jest] Run start. 0 test suites
+[test:jest] 
+[test:jest] Tests finished:
+[test:jest]   Successes: 0
+[test:jest]   Failures: 0
+[test:jest]   Total: 0
+ ---- test finished (7.033s) ---- 
+-------------------- Finished (96.103s) --------------------
+ ---- package-solution started ---- 
+Found manifest: 4d0850fa-6cee-41a0-be2c-b0aac1ed61fb.manifest.json
+Found client-side build resource: evidence-web-part_4e8558ce73d8a464034d.js
+Found client-side build resource: evidence-web-part_4e8558ce73d8a464034d.js.LICENSE.txt
+Verifying configuration...
+Done!
+
+Normalizing solution information...
+Attempting creating component definitions for {1} manifests
+Created component definitions for {1} manifests
+feature.componentIds not set! Adding 1 components to feature { prvni-appka Feature }.
+Done!
+
+Reading custom Feature XML...
+Done!
+
+Validating App Package...
+Done!
+
+Reading resources...
+Done!
+
+Reading Sharepoint Assets & Creating XML...
+Done!
+
+Writing solution XML to /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug...
+Cleaned /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/AppManifest.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/_rels/AppManifest.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/_rels/.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/[Content_Types].xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/feature_cb89df2b-a3f2-4416-941a-d21c473519d8.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/_rels/feature_cb89df2b-a3f2-4416-941a-d21c473519d8.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/feature_cb89df2b-a3f2-4416-941a-d21c473519d8.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/cb89df2b-a3f2-4416-941a-d21c473519d8/WebPart_4d0850fa-6cee-41a0-be2c-b0aac1ed61fb.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/ClientSideAssets.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/_rels/ClientSideAssets.xml.rels
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/ClientSideAssets.xml.config.xml
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/ClientSideAssets/evidence-web-part_4e8558ce73d8a464034d.js
+Created file: /Users/chocholous/Projects/egd-workshop/sondy/ms-llm/prvni-appka/sharepoint/solution/debug/ClientSideAssets/evidence-web-part_4e8558ce73d8a464034d.js.LICENSE.txt
+Done!
+
+ALL DONE!
+
+ ---- package-solution finished (12.326s) ---- 
+-------------------- Finished (12.333s) --------------------

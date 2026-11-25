@@ -1,0 +1,15 @@
+# 2026-11-22T19:33:22Z apim-policy-test.sh apim-egd-sonda-ai rg-egd-sonda-ai (SKU Consumption)
+WARNING: api_id is not a known attribute of class <class 'azure.mgmt.apimanagement.models._models_py3.ApiContract'> and will be ignored
+ODMÍTNUTO llm-token-limit: "message":"One or more fields contain incorrect values:"
+ODMÍTNUTO azure-openai-token-limit: "message":"One or more fields contain incorrect values:"
+OK      llm-emit-token-metric
+OK      azure-openai-emit-token-metric
+OK      llm-semantic-cache-lookup
+ODMÍTNUTO rate-limit-by-key: "message":"One or more fields contain incorrect values:"
+ODMÍTNUTO quota-by-key: "message":"One or more fields contain incorrect values:"
+OK      rate-limit
+ODMÍTNUTO quota: "message":"One or more fields contain incorrect values:"
+OK      validate-azure-ad-token
+OK      validate-jwt
+OK      set-header+authentication-managed-identity
+rc=0

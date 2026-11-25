@@ -1,0 +1,71 @@
+WARNING: Note: The token in both the accessToken and refreshToken fields is an ACR Refresh Token, not an ACR Access Token. This ACR Refresh Token cannot be used directly to authenticate with registry APIs such as pushing/pulling images and listing repositories/tags. This ACR Refresh Token must be subsequently exchanged for an ACR Access.Please see https://aka.ms/acr/auth/oauth
+WARNING: You can perform manual login using the provided refresh token below, for example: 'docker login loginServer -u 00000000-0000-0000-0000-000000000000 -p refreshToken'
+Login Succeeded
+#0 building with "orbstack" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 721B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#2 DONE 0.8s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:e9f565d32859f0cbfb52125eafe8be39390f24dac302dc3cdf566e8ba3ab21ee
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 6.26kB done
+#5 DONE 0.0s
+
+#6 [3/6] WORKDIR /app
+#6 CACHED
+
+#7 [2/6] RUN apt-get update && apt-get install -y --no-install-recommends       libreoffice-writer-nogui libreoffice-calc-nogui libreoffice-impress-nogui       fonts-crosextra-carlito fonts-crosextra-caladea fonts-liberation2 fonts-dejavu-core fontconfig     && rm -rf /var/lib/apt/lists/* && fc-cache -f
+#7 CACHED
+
+#8 [4/6] COPY package.json ./
+#8 CACHED
+
+#9 [5/6] RUN npm install --omit=dev
+#9 CACHED
+
+#10 [6/6] COPY server.mjs ./
+#10 DONE 0.1s
+
+#11 exporting to image
+#11 exporting layers 0.0s done
+#11 writing image sha256:6c0e5dba61919801f16a5659f68754ecd3b4dccc7ee73d491c5170a7b82295aa done
+#11 naming to acrppfroomsca3lbgs.azurecr.io/ca-egd-dokumenty:0.3 done
+#11 DONE 0.0s
+
+#12 pushing acrppfroomsca3lbgs.azurecr.io/ca-egd-dokumenty:0.3 with docker
+#12 pushing layer d4b5602d6b14
+#12 pushing layer 60e86fddcd25
+#12 pushing layer 6d6527e44f8e
+#12 pushing layer dd52c19e4e19
+#12 pushing layer 3761b67fc052
+#12 pushing layer 0e13b71b82a1
+#12 pushing layer b5561a64a8a5
+#12 pushing layer c4da131eaaf2
+#12 pushing layer 2d7efcc31ab7
+#12 pushing layer 1d7b9dd8778e
+#12 pushing layer d4b5602d6b14 512B / 6.01kB 0.3s
+#12 pushing layer d4b5602d6b14 8.19kB / 6.01kB 0.3s
+#12 pushing layer d4b5602d6b14 0.7s done
+#12 pushing layer dd52c19e4e19 1.8s done
+#12 pushing layer 60e86fddcd25 1.8s done
+#12 pushing layer 6d6527e44f8e 1.8s done
+#12 pushing layer 3761b67fc052 1.8s done
+#12 pushing layer 0e13b71b82a1 1.8s done
+#12 pushing layer b5561a64a8a5 1.8s done
+#12 pushing layer c4da131eaaf2 1.8s done
+#12 pushing layer 2d7efcc31ab7 1.8s done
+#12 pushing layer 1d7b9dd8778e 1.8s done
+#12 DONE 2.0s
+push: acrppfroomsca3lbgs.azurecr.io/ca-egd-dokumenty:0.3
+tools/ca-dokumenty-deploy.sh push --tag 0.3  0.54s user 0.32s system 10% cpu 8.103 total
+deploy: https://ca-egd-dokumenty.purplebeach-ef4cada1.swedencentral.azurecontainerapps.io  (API appId 54c0b31d-b482-4d3f-900c-3e6c0e5fe870)

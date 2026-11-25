@@ -1,0 +1,5 @@
+2026-11-22T19:45:59Z
+$ node t.mjs lab/vydej/vydej-uctu.html lab/ucastnici.secrets.json
+ms na odemceni: 285
+spravny kod ok: 10 /10; cizi kod odmitnut: 10 /10
+syntax ok

@@ -1,0 +1,18 @@
+{"test": "ItemCount_seznamu", "status": 200, "sec": 0.171, "rows": null}
+{"test": "pocet_filtrovane_pres_items_(Stav=Nový,$select=Id)", "status": 200, "sec": 0.189, "rows": 600, "id_prvni_posledni": [1, 11968], "pocet": 600}
+{"test": "$count_v_REST", "status": 200, "sec": 1.368, "rows": 1, "id_prvni_posledni": [1, 1], "nextLink": true}
+{"test": "$inlinecount", "status": 200, "sec": 0.187, "rows": 1, "id_prvni_posledni": [1, 1], "nextLink": true}
+{"test": "items/$count", "status": 404, "sec": 0.199, "chyba": "Prostředek pro požadavek $count se nedá najít."}
+{"test": "ItemCount_pres_GetItemById?", "status": 200, "sec": 0.157, "rows": null}
+{"test": "RenderListDataAsStream_SUM_Castka_filtr_Kategorie=K01", "status": 200, "sec": 0.206, "radku": 1, "agregaty_prvni_radek": {"Castka.SUM": "298 200"}, "skupiny": []}
+{"test": "RenderListDataAsStream_COUNT_Castka_filtr_Kategorie=K01", "status": 200, "sec": 0.18, "radku": 1, "agregaty_prvni_radek": {"Castka.COUNT": "600"}, "skupiny": []}
+{"test": "RenderListDataAsStream_AVG_Castka_filtr_Kategorie=K01", "status": 200, "sec": 0.201, "radku": 1, "agregaty_prvni_radek": {"Castka.AVG": "497"}, "skupiny": []}
+{"test": "RenderListDataAsStream_MAX_Castka_filtr_Kategorie=K01", "status": 200, "sec": 0.233, "radku": 1, "agregaty_prvni_radek": {"Castka.MAX": "987"}, "skupiny": []}
+{"test": "RenderListDataAsStream_MIN_Castka_filtr_Kategorie=K01", "status": 200, "sec": 0.19, "radku": 1, "agregaty_prvni_radek": {"Castka.MIN": "7"}, "skupiny": []}
+{"test": "RenderListDataAsStream_SUM_Castka_bez_filtru", "status": 500, "sec": 0.215, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "RenderListDataAsStream_SUM_Castka_Castka_lt_500_(vic_nez_5000_shod)", "status": 500, "sec": 0.268, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "RenderListDataAsStream_GroupBy_Kategorie_filtr_Datum_unor-brezen_(indexovany)", "status": 200, "sec": 0.268, "radku": 20, "agregaty_prvni_radek": {"Kategorie.COUNT.group": "18", "Castka.SUM": "266 556", "Castka.SUM.agg": "8 780"}, "skupiny": [["K00", "18", "8 780"], ["K01", "36", "17 292"], ["K02", "36", "17 544"], ["K03", "36", "17 796"], ["K04", "36", "18 048"], ["K05", "36", "18 300"], ["K06", "36", "16 552"], ["K07", "36", "16 804"], ["K08", "36", "17 056"], ["K09", "36", "17 308"], ["K10", "36", "17 560"], ["K11", "36", "17 812"], ["K12", "18", "7 772"], ["K13", "18", "7 898"], ["K14", "18", "8 024"], ["K15", "18", "8 150"], ["K16", "18", "8 276"], ["K17", "18", "8 402"], ["K18", "18", "8 528"], ["K19", "18", "8 654"]]}
+{"test": "RenderListDataAsStream_GroupBy_Kategorie_bez_filtru", "status": 500, "sec": 1.304, "chyba": "Požadovaná operace je zakázána, protože překračuje mezní hodnotu zobrazení seznamu."}
+{"test": "GroupBy_porovnani_s_REST_filtrem", "skupin_agregace": 20, "skupin_REST": 20, "neshody": {"K00": {"agregace": [18, 8780.0], "REST": [36, 17040.0]}, "K11": {"agregace": [36, 17812.0], "REST": [18, 9646.0]}}}
+{"test": "kontrola_skutecne_hodnoty", "K01_pocet": 600, "K01_soucet": 298200.0, "K01_avg": 497.0, "K01_max": 987.0, "K01_min": 7.0, "soucet_vse": 5994000.0, "soucet_Castka_lt_500": 1497000.0, "pocet_zaznamu_brezen": 558}
+{"test": "Search_TotalRows_pro_seznam", "status": 200, "sec": 0.442, "total": 1}

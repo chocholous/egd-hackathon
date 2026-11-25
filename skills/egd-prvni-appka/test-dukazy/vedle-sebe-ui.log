@@ -1,0 +1,15 @@
+[prvni-appka] https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/prvni-appka.aspx?env=WebView
+  dotaz: getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID desc&$top=2000 
+  dotaz: getbytitle('Spokojenost')/items 
+  dotaz: getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID desc&$top=2000 
+[prvni-appka] klik 4: potvrzeno=true zprava="Zapsáno: 4. Díky!" vybrany="4 Spíš spokojen/a" chyby konzole=0 
+[pripravenost] https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe/SitePages/spokojenost.aspx?env=WebView
+  dotaz: getbytitle('SpokojenostHodnoceni')/items?$select=Hodnoceni,DenCislo&$filter=DenCislo ge 20261109&$orderby=DenCislo desc&$top=1000 
+  dotaz: getbytitle('SpokojenostHodnoceni')/items?$select=Hodnoceni,DenCislo&$filter=Klic eq '10|20261122'&$top=1 
+  dotaz: getbytitle('SpokojenostHodnoceni')/items 
+  dotaz: getbytitle('SpokojenostHodnoceni')/items?$select=Hodnoceni,DenCislo&$filter=DenCislo ge 20261109&$orderby=DenCislo desc&$top=1000 
+  dotaz: getbytitle('SpokojenostHodnoceni')/items?$select=Hodnoceni,DenCislo&$filter=Klic eq '10|20261122'&$top=1 
+[pripravenost] klik 2: potvrzeno=true zprava="Děkujeme, vaše hodnocení je uložené." vybrany="2" chyby konzole=0 
+  dotaz: getbytitle('Spokojenost')/items?$select=Id,Hodnoceni,Den,AuthorId&$orderby=ID desc&$top=2000 
+[prvni-appka] po navratu vybrany="4 Spíš spokojen/a"
+VSE OK

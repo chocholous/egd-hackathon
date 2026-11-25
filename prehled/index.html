@@ -1,0 +1,250 @@
+<title>EG.D hackathon – stav prací</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap">
+<style>
+/* Layout: odpočet + součty nahoře, pod tím čtyři sloupce podle stavu (na telefonu pod sebou). */
+:root {
+  --bg: #f6f6fb; --surface: #ffffff; --fg: #15142b; --muted: #5d5c78; --line: #dddcec;
+  --accent: #1200e0; --accent-soft: #e9e7ff;
+  --run: #0a6cff; --plan: #7a7896; --wait: #b25e00; --done: #1f7a4d;
+  --font-display: "Space Grotesk", "IBM Plex Sans", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f0e1d; --surface: #191830; --fg: #ecebf8; --muted: #a3a1c2; --line: #2d2b4a;
+  --accent: #8f86ff; --accent-soft: #24206b;
+  --run: #5aa0ff; --plan: #9a98b8; --wait: #f0a04b; --done: #5cc98f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f0e1d; --surface: #191830; --fg: #ecebf8; --muted: #a3a1c2; --line: #2d2b4a;
+  --accent: #8f86ff; --accent-soft: #24206b;
+  --run: #5aa0ff; --plan: #9a98b8; --wait: #f0a04b; --done: #5cc98f; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.45; }
+.wrap { max-width: 1280px; margin: 0 auto; padding-block: 24px 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 20px; }
+header { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: 1.7rem; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); margin: 4px 0 0; }
+.clocks { display: flex; flex-wrap: wrap; gap: 8px; }
+.countdown { font-family: var(--font-mono); font-size: .95rem; background: var(--accent-soft); color: var(--accent);
+  padding: 8px 12px; border-radius: 6px; font-variant-numeric: tabular-nums; }
+.stats { display: flex; flex-wrap: wrap; gap: 8px; }
+.stat { display: flex; align-items: baseline; gap: 8px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+.stat b { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+.stat i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.filters button { font: inherit; font-size: .85rem; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line);
+  background: transparent; color: var(--muted); cursor: pointer; }
+.filters button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filters button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.board { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; align-items: start; }
+@media (max-width: 980px) { .board { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .board { grid-template-columns: minmax(0, 1fr); } }
+.col { display: grid; gap: 10px; min-width: 0; }
+.col h2 { font-family: var(--font-display); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; margin: 0;
+  display: flex; justify-content: space-between; color: var(--muted); border-bottom: 2px solid var(--c); padding-bottom: 6px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--c); border-radius: 6px;
+  padding: 10px 12px; display: grid; gap: 6px; min-width: 0; }
+.card h3 { font-size: .98rem; font-weight: 600; margin: 0; text-wrap: balance; }
+.card p { margin: 0; color: var(--muted); font-size: .88rem; overflow-wrap: anywhere; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; font-size: .78rem; }
+.chip { padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.who { color: var(--muted); }
+.out { font-family: var(--font-mono); font-size: .78rem; color: var(--fg); overflow-wrap: anywhere; }
+.out a { color: var(--accent); }
+.time { font-family: var(--font-mono); font-size: .74rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.goals h2 { font-family: var(--font-display); font-size: 1.15rem; margin: 0; }
+.goal-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+.total { display: flex; align-items: center; gap: 10px; font-family: var(--font-mono); font-size: .9rem; min-width: min(100%, 260px); }
+.goals .note { margin: 2px 0 10px; }
+.goal-list { display: grid; gap: 6px; }
+.goal { display: grid; grid-template-columns: minmax(0, 1fr) 120px; gap: 4px 14px; align-items: center; background: var(--surface);
+  border: 1px solid var(--line); border-left: 3px solid var(--gc); border-radius: 6px; padding: 8px 12px; }
+.goal h3 { margin: 0; font-size: .93rem; font-weight: 600; }
+.goal p { margin: 0; font-size: .82rem; color: var(--muted); grid-column: 1 / -1; overflow-wrap: anywhere; }
+.goal .gm { font-size: .76rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 10px; grid-column: 1 / -1; }
+.bar { height: 8px; border-radius: 999px; background: var(--line); overflow: hidden; flex: 1; }
+.bar i { display: block; height: 100%; background: var(--gc, var(--accent)); }
+.pct { display: flex; align-items: center; gap: 8px; font-family: var(--font-mono); font-size: .8rem; }
+@media (max-width: 560px) { .goal { grid-template-columns: minmax(0, 1fr); } }
+.req h2 { font-family: var(--font-display); font-size: 1.15rem; margin: 0; }
+.req .note { margin: 2px 0 10px; }
+.req-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 10px; }
+.rq { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 10px 12px; display: grid; gap: 6px; min-width: 0; }
+.rq h3 { margin: 0; font-size: .95rem; font-weight: 600; text-wrap: balance; }
+.rq h3 b { font-family: var(--font-mono); color: var(--muted); margin-right: 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.badge { font-size: .76rem; padding: 2px 8px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+.b-ok { color: var(--done); } .b-mid { color: var(--wait); } .b-no { color: #c0392b; } .b-run { color: var(--run); } .b-unk { color: var(--plan); }
+.rq p { margin: 0; font-size: .85rem; color: var(--muted); overflow-wrap: anywhere; }
+.rq p.cesta { color: var(--fg); }
+.hist { font-size: .8rem; color: var(--muted); }
+.hist summary { cursor: pointer; }
+.hist ol { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 3px; }
+.hist li { overflow-wrap: anywhere; }
+.empty { color: var(--muted); font-size: .88rem; padding: 10px 0; }
+.note { color: var(--muted); font-size: .82rem; }
+.pulse { animation: p 1.6s ease-in-out infinite; }
+@keyframes p { 50% { opacity: .45 } }
+@media (prefers-reduced-motion: reduce) { .pulse { animation: none } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>EG.D hackathon – stav prací</h1>
+      <p class="sub">Vibecoding hackathon, středa 25. 11. 2026, 12:30–17:00, České Budějovice. Stránka se aktualizuje sama.</p>
+    </div>
+    <div class="clocks">
+      <div class="countdown" id="countdown">do workshopu …</div>
+    </div>
+  </header>
+  <section class="goals" aria-labelledby="goal-h">
+    <div class="goal-head">
+      <h2 id="goal-h">Jak blízko jsme cíli</h2>
+      <div class="total" id="total"></div>
+    </div>
+    <p class="note">Co musí platit ve středu 25. 11. Pokrok je odhad hlavní session z hlášení agentů.</p>
+    <div class="goal-list" id="goals"><p class="empty">Načítám cíle…</p></div>
+  </section>
+  <section class="req" aria-labelledby="req-h">
+    <h2 id="req-h">Tomášovy požadavky: jde to?</h2>
+    <p class="note">Pro každý požadavek: je reálný v prostředí EG.D, jak je ověřený a jestli na něj máme miniskill.</p>
+    <div class="req-grid" id="req"><p class="empty">Načítám požadavky…</p></div>
+  </section>
+  <div class="stats" id="stats"></div>
+  <div class="filters" id="filters" role="group" aria-label="Filtr podle oblasti"></div>
+  <main class="board" id="board">
+    <p class="empty" id="loading">Načítám úkoly… Až je Claude zapíše, objeví se tu karty podle stavu: běží, naplánováno, čeká na Pavla, hotovo.</p>
+  </main>
+  <p class="note" id="note">Zapisuje Claude a jeho agenti. U běžících úkolů je čas posledního hlášení agenta: agent hlásí jen větší kroky, takže 10–20 minut bez hlášení je běžné a neznamená, že práce stojí.</p>
+</div>
+
+<script>
+const COLS = [
+  { key: "bezi", label: "Běží", c: "var(--run)" },
+  { key: "planovano", label: "Naplánováno", c: "var(--plan)" },
+  { key: "ceka", label: "Čeká na Pavla", c: "var(--wait)" },
+  { key: "hotovo", label: "Hotovo", c: "var(--done)" },
+];
+let items = [], filtr = "vše";
+const $ = id => document.getElementById(id);
+
+function rel(iso) {
+  const t = Date.parse(iso); if (!t) return "";
+  const m = Math.round((Date.now() - t) / 60000);
+  if (m < 1) return "teď"; if (m < 60) return `před ${m} min`;
+  const h = Math.round(m / 60); if (h < 24) return `před ${h} h`;
+  return new Date(t).toLocaleString("cs-CZ", { day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit" });
+}
+function delka(od, doIso) {
+  const t = Date.parse(od); if (!t) return "";
+  const m = Math.max(0, Math.round(((doIso ? Date.parse(doIso) : Date.now()) - t) / 60000));
+  const s = m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${m % 60} min`;
+  return s;
+}
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+function render() {
+  const oblasti = ["vše", ...new Set(items.map(i => i.oblast).filter(Boolean))];
+  const f = $("filters"); f.replaceChildren();
+  oblasti.forEach(o => { const b = el("button", "", o); b.type = "button"; b.setAttribute("aria-pressed", String(o === filtr));
+    b.onclick = () => { filtr = o; render(); }; f.append(b); });
+  const vis = items.filter(i => filtr === "vše" || i.oblast === filtr);
+  const s = $("stats"); s.replaceChildren();
+  COLS.forEach(c => { const n = vis.filter(i => i.stav === c.key).length; const d = el("div", "stat");
+    const dot = el("i"); dot.style.background = c.c; d.append(dot, el("span", "", c.label), el("b", "", String(n))); s.append(d); });
+  const board = $("board"); board.replaceChildren();
+  COLS.forEach(c => {
+    const col = el("section", "col"); col.style.setProperty("--c", c.c);
+    const list = vis.filter(i => i.stav === c.key).sort((a, b) => (Date.parse(b.aktualizovano) || 0) - (Date.parse(a.aktualizovano) || 0));
+    const h = el("h2"); h.append(el("span", "", c.label), el("span", "", String(list.length))); col.append(h);
+    if (!list.length) col.append(el("p", "empty", "nic"));
+    list.forEach(i => {
+      const card = el("article", "card"); card.style.setProperty("--c", c.c);
+      const t = el("h3", c.key === "bezi" ? "" : "", i.nazev || "(bez názvu)"); card.append(t);
+      if (i.popis) card.append(el("p", "", i.popis));
+      const meta = el("div", "meta"); if (i.oblast) meta.append(el("span", "chip", i.oblast)); if (i.kdo) meta.append(el("span", "who", i.kdo)); card.append(meta);
+      if (i.vystup) { const o = el("div", "out");
+        if (/^https?:\/\//.test(i.vystup)) { const a = el("a", "", i.vystup); a.href = i.vystup; a.target = "_blank"; a.rel = "noopener"; o.append(a); }
+        else o.textContent = i.vystup; card.append(o); }
+      const kdy = { bezi: "● poslední hlášení ", planovano: "naplánováno ", ceka: "čeká od ", hotovo: "dokončeno " }[c.key] || "";
+      const info = [kdy + rel(i.aktualizovano)];
+      if (i.kroky) info.push(`${i.kroky} ${i.kroky === 1 ? "krok" : i.kroky < 5 ? "kroky" : "kroků"}`);
+      if (i.zacatek) info.push(c.key === "bezi" ? "běží " + delka(i.zacatek) : "trvalo " + delka(i.zacatek, i.aktualizovano));
+      const tm = el("div", "time" + (c.key === "bezi" ? " pulse" : ""), info.join(" · ")); card.append(tm);
+      if (Array.isArray(i.historie) && i.historie.length > 1) {
+        const d = el("details", "hist"); d.append(el("summary", "", "historie kroků"));
+        const ol = el("ol"); i.historie.slice().reverse().forEach(h => {
+          const li = el("li"); li.append(el("span", "time", rel(h.t) + " "), el("span", "", (h.popis || "") + (h.stav ? ` (${h.stav})` : ""))); ol.append(li); });
+        d.append(ol); card.append(d);
+      }
+      col.append(card);
+    });
+    board.append(col);
+  });
+}
+function odpocet(id, iso, co, poTerminu) {
+  const d = Date.parse(iso) - Date.now();
+  if (d <= 0) { $(id).textContent = poTerminu; return; }
+  const dn = Math.floor(d / 864e5), h = Math.floor(d % 864e5 / 36e5), m = Math.floor(d % 36e5 / 6e4);
+  $(id).textContent = `${co} ${dn ? dn + " d " : ""}${h} h ${m} min`;
+}
+function tick() {
+  odpocet("countdown", "2026-11-25T12:30:00+01:00", "do workshopu (st 12:30)", "workshop probíhá nebo proběhl");
+}
+tick(); setInterval(() => { tick(); if (items.length) render(); }, 60000);
+
+(async () => {
+  const timer = setTimeout(() => { $("loading") && ($("loading").textContent = "Data se nepodařilo načíst. Zkus stránku otevřít znovu (přihlášený)."); }, 10000);
+  const db = window.claude ? await window.claude.use("db") : null;
+  if (!db) { clearTimeout(timer); $("loading").textContent = "Živá data jsou dostupná jen přihlášeným v claude.ai."; return; }
+  const R = { ano: ["reálné: ano", "b-ok"], castecne: ["reálné: částečně", "b-mid"], ne: ["reálné: ne", "b-no"], nevime: ["reálné: zatím nevíme", "b-unk"] };
+  const T = { lab: ["otestováno v labu", "b-ok"], dokumentace: ["jen z dokumentace", "b-mid"], bezi: ["test běží", "b-run"], ne: ["neotestováno", "b-no"] };
+  const S = { ano: ["miniskill: máme", "b-ok"], rozpracovany: ["miniskill: rozpracovaný", "b-run"], ne: ["miniskill: chybí", "b-no"] };
+  const G = { hotovo: ["hotovo", "var(--done)"], jde: ["jde podle plánu", "var(--run)"], ceka: ["čeká na Pavla", "var(--wait)"],
+              riziko: ["riziko", "#c0392b"], nezahajeno: ["nezahájeno", "var(--plan)"] };
+  const bar = (p, col) => { const b = el("div", "bar"); const i = el("i"); i.style.width = Math.max(0, Math.min(100, p || 0)) + "%"; if (col) i.style.background = col; b.append(i); return b; };
+  db.collection("cile").onSnapshot(snap => {
+    const box = $("goals"); box.replaceChildren();
+    const list = snap.docs.map(d => d.data() || {}).sort((a, b) => (a.poradi || 99) - (b.poradi || 99));
+    if (!list.length) { box.append(el("p", "empty", "Zatím nic.")); return; }
+    const avg = Math.round(list.reduce((s, g) => s + (g.pokrok || 0), 0) / list.length);
+    const done = list.filter(g => g.stav === "hotovo").length, risk = list.filter(g => g.stav === "riziko").length;
+    const t = $("total"); t.replaceChildren(bar(avg), el("span", "", `${avg} % · hotovo ${done}/${list.length}${risk ? ` · rizika ${risk}` : ""}`));
+    list.forEach(g => {
+      const s = G[g.stav] || ["", "var(--plan)"]; const c = el("article", "goal"); c.style.setProperty("--gc", s[1]);
+      c.append(el("h3", "", g.nazev || ""));
+      const p = el("div", "pct"); p.append(bar(g.pokrok, s[1]), el("span", "", (g.pokrok || 0) + " %")); c.append(p);
+      if (g.chybi) c.append(el("p", "", g.chybi));
+      const m = el("div", "gm"); m.append(el("span", "chip", s[0]));
+      if (g.termin) m.append(el("span", "", "termín: " + g.termin)); if (g.kdo) m.append(el("span", "", "na tahu: " + g.kdo));
+      if (g.aktualizovano) m.append(el("span", "", "změna " + rel(g.aktualizovano))); c.append(m);
+      box.append(c);
+    });
+  }, () => {});
+  db.collection("pozadavky").onSnapshot(snap => {
+    const box = $("req"); box.replaceChildren();
+    const list = snap.docs.map(d => d.data() || {}).sort((a, b) => (a.cislo || 0) - (b.cislo || 0));
+    if (!list.length) { box.append(el("p", "empty", "Zatím nic.")); return; }
+    list.forEach(q => {
+      const c = el("article", "rq"); const h = el("h3"); h.append(el("b", "", String(q.cislo || "")), document.createTextNode(q.nazev || "")); c.append(h);
+      const bd = el("div", "badges");
+      [[R, q.realne], [T, q.test], [S, q.skill]].forEach(([m, k]) => { const x = m[k]; if (x) bd.append(el("span", "badge " + x[1], x[0])); });
+      c.append(bd);
+      if (q.cesta) c.append(el("p", "cesta", q.cesta));
+      if (q.poznamka) c.append(el("p", "", "Háček: " + q.poznamka));
+      const meta = [q.zdroj, q.skill_cesta, q.aktualizovano ? "změna " + rel(q.aktualizovano) : ""].filter(Boolean).join(" · ");
+      if (meta) c.append(el("div", "out", meta));
+      box.append(c);
+    });
+  }, () => {});
+  db.collection("ukoly").onSnapshot(snap => {
+    clearTimeout(timer);
+    items = snap.docs.map(d => ({ id: d.id, ...(d.data() || {}) }));
+    if (!items.length) { $("board").replaceChildren(el("p", "empty", "Zatím žádné úkoly. Claude je sem zapíše při další změně stavu.")); return; }
+    render();
+  }, () => { clearTimeout(timer); $("note").textContent = "Spojení s daty se přerušilo; otevři stránku znovu."; });
+})();
+</script>

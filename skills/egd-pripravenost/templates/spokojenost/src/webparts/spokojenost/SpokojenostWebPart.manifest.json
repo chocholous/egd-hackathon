@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "c64c9aa4-39ba-428f-ba39-74edfacd09b0",
+  "alias": "SpokojenostWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "SharePointFullPage"],
+  "supportsThemeVariants": false,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Advanced" },
+    "title": { "default": "Spokojenost s prostředím kanceláře" },
+    "description": { "default": "Jedno hodnocení 1–5 na uživatele a den a malý dashboard (průměr dne, rozložení, trend)." },
+    "officeFabricIconFontName": "Emoji2",
+    "properties": {
+      "nadpis": "Spokojenost s prostředím kanceláře dnes",
+      "seznam": "SpokojenostHodnoceni",
+      "dnu": 14
+    }
+  }]
+}

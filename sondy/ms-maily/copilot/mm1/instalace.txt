@@ -1,0 +1,6 @@
+nainstalovano: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/ccb9eeb2-48b3-4e11-b554-86593a877872/scratchpad/cp/mm1/home/.copilot/skills/egd-prvni-appka
+OK: Copilot skill 'egd-prvni-appka' vidi
+2:  egd-prvni-appka - Postav s uživatelem z EG.D první jednoduchou appku na SharePointu nejjednodušší cestou, která v jeho prostředí funguje - SPFx web 
+nainstalovano: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/ccb9eeb2-48b3-4e11-b554-86593a877872/scratchpad/cp/mm1/home/.copilot/skills/egd-maily
+OK: Copilot skill 'egd-maily' vidi
+2:  egd-maily - Nauč SPFx appku EG.D poslat e-mail s přílohou - jménem přihlášeného uživatele přes Microsoft Graph sendMail (bez Azure, jen jedno schv

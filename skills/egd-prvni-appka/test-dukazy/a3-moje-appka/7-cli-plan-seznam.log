@@ -1,0 +1,7 @@
+PLAN na webu https://pavelchocholousgmail.sharepoint.com/sites/egd-test-vedle-sebe:
+  - zalozit seznam "MojeAppka" (bezny seznam, v navigaci webu)
+  - pridat sloupec Hodnoceni
+  - pridat sloupec Den
+  - sloupec Hodnoceni naformatovat jako barevny stitek
+
+Nic jsem nezapsal. Ukaz plan uzivateli a po jeho "ano" spust znovu s --ano.

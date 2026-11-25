@@ -1,0 +1,4 @@
+unauthorized_client
+AADSTS700038: 00000000-0000-0000-0000-000000000000 is not a valid application identifier. Trace ID: b86d61ef-4031-4749-87c7-59e7388e0900 Correlation ID: 3c582faa-afee-48fb-84cf-b18934c8951d Timestamp: 2026-11-22 19:24:33Z
+unauthorized_client
+AADSTS700016: Application with identifier '11111111-2222-3333-4444-555555555555' was not found in the directory '972a674c-7b85-4e56-a31f-b2f95b42fd1e'. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You may have sent your authentication request to the wrong tenant. Trace ID: 60207722-c6bc-4a55-8886-20649af83000 Correlation ID: 4a3afefc-f5cb-4121-8a18-28c5292fef59 Timestamp: 2026-11-22 19:25:16Z

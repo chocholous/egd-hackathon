@@ -1,0 +1,74 @@
+připojeno k běžícímu Chrome e2e-egd09 (port 65528), nový panel
+[0.9s] URL https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/SitePages/dokumenty.aspx
+[3.9s] OK wait:3000  
+[12.6s] OK rozbal  
+8 zón
+[12.6s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').scrollIntoView()  {"interrupted":false}
+[12.7s] OK click:Spíš spokojen  
+[13.0s] OK waitfor:Díky  
+[13.1s] OK click:Word  
+[22.1s] OK wait:9000  
+[22.2s] OK click:PDF (z Wordu)  
+[34.2s] OK wait:12000  
+[34.3s] OK click:PDF (pdf-lib)  
+[42.3s] OK wait:8000  
+[42.4s] OK click:Excel  
+[50.4s] OK wait:8000  
+[50.4s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').scrollIntoView()  {"interrupted":false}
+[50.5s] OK shotv:01-egd09-hlas-exporty  
+dukazy/karty/dok-spokojenost/01-egd09-hlas-exporty.png
+[50.5s] OK eval:document.querySelector('[data-sp-web-part-id="f8fbbd7b-5022-4888-9121-d544eb74d96a"]').innerText.slice(250,2000)  
+Díky!
+
+1
+hlasů dnes
+4,0
+průměr dnes (1–5)
+Rozložení dnes
+1
+0
+2
+0
+3
+0
+4
+1
+5
+0
+Posledních 7 dní (průměr)
+–
+st 18. 11.
+–
+čt 19. 11.
+–
+pá 20. 11.
+–
+so 21. 11.
+–
+ne 22. 11.
+–
+po 23. 11.
+4,0
+út 24. 11.
+Export
+Word
+PDF (z Wordu)
+PDF (pdf-lib)
+Excel
+PowerPoint
+ARES
+
+HOTOVO xlsx
+[50.5s] síť: POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  POST 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/SP.UserProfiles.PersonalCache/ReadCacheOrCre
+  GET 404 https://graph.microsoft.com/v1.0/users/egd09@pavelchocholousgmail.onmicrosoft.com/photo/$value
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Revize')/items?$select
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Dokumenty')/rootFolder
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists('%7Bb49edfda-f3ec-41fb-ac26-b7ab21
+  POST 201 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items
+  GET 200 https://pavelchocholousgmail.sharepoint.com/sites/egd-ukazky/_api/web/lists/getbytitle('Spokojenost')/items?$s
+  GET 302 https://graph.microsoft.com/v1.0/sites/pavelchocholousgmail.sharepoint.com,07479b6a-2384-4297-ad2a-ee7775cbc89

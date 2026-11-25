@@ -1,0 +1,17 @@
+OK  upload sppkg: HTTP 200
+OK  AvailableApps(ID): HTTP 200
+app: {"Deployed":false,"ID":"515b8da2-16ba-42d5-a253-db0758034000","Title":"spokojenost-appka-client-side-solution"}
+OK  deploy: HTTP 200
+OK  install: HTTP 200
+web part 79aee750-81cb-4473-bfb7-a5a617227f3b v GetClientSideWebParts: true
+OK  stranka create: HTTP 201
+stranka id/name: 3 undefined
+OK  stranka savepage: HTTP 200
+OK  stranka checkoutpage: HTTP 200
+OK  stranka layout -> SingleWebPartAppPage (ValidateUpdateListItem): HTTP 200
+OK  stranka publish: HTTP 200
+ERR layout zpet: HTTP 404 {"odata.error":{"code":"-1, System.ArgumentException","message":{"lang":"en-US","value":"List 'Site Pages' does not exist at site with URL 'https://pavelchocholousgmail.sharepoint.com/sites/egd05-dev'."}}}
+stranka: {"odata.error":{"code":"-1, System.ArgumentException","message":{"lang":"en-US","value":"List 'Site Pages' does not exist at site with URL 'https://pavelchocholousgmail.sharepoint.com/sites/egd05-dev'."}}}
+RENDER: Skip to main content Spokojenost s prostředím kanceláře dnes pondělí 23. listopadu 2026 Jak jste dnes spokojení s prostředím kanceláře? 1 2 3 4 5 1 = velmi nespokojen(a) 5 = velmi spokojen(a) Dnešní výsledek – průměr dne (z 5) 0 hlasů dnes Dnes zatím nikdo nehodnotil. 1 0 (0 %) 2 0 (0 %) 3 0 (0 %) 4
+otazka v DOM: true
+{"s":200,"j":{"Id":3,"PageLayoutType":"SingleWebPartAppPage","ID":3}}

@@ -1,0 +1,76 @@
+# LLM flow 161eb740 (Foundry)
+08584062337006313772884927156CU15 Succeeded 2026-11-22T18:46:24.8475634Z ""
+Vysledek Succeeded OK ""
+Zeptej_se_LLM Succeeded OK ""
+# Compose flow b4ffdc0a
+08584062338798556013601165372CU20 Succeeded 2026-11-22T18:43:25.6230423Z ""
+# tiers
+{
+ "connectionReferences": {
+  "shared_azureaifoundryinference": "Standard"
+ },
+ "apiOperations_summary": [
+  {
+   "type": "OpenApiConnection",
+   "swaggerOperationId": "ChatCompletion",
+   "api": {
+    "name": "shared_azureaifoundryinference",
+    "id": "/providers/Microsoft.PowerApps/apis/shared_azureaifoundryinference",
+    "type": "/providers/Microsoft.PowerApps/apis",
+    "properties": {
+     "displayName": "Azure AI Foundry Inference",
+     "iconUri": "https://static.powerapps.com/resource/ppcr/releases/v1.0.1826/1.0.1826.4893/azureaifoundryinference/icon.png",
+     "metadata": {
+      "source": "marketplace",
+      "brandColor": "#FFFFFF",
+      "allowSharing": true,
+      "useNewApimVersion": "true",
+      "version": {
+       "previous": "releases/v1.0.1819\\1.0.1819.4795",
+       "current": "releases/v1.0.1826\\1.0.1826.4893"
+      }
+     },
+     "tier": "Standard",
+     "isCustomApi": false,
+     "description": "This is a first-party Swagger specification for Azure AI Foundry models, specifically designed for Chat Completion tasks. It currently supports only the Chat Completions endpoint."
+    }
+   }
+  },
+  {
+   "type": "Compose"
+  }
+ ],
+ "triggers": {
+  "Recurrence": "Recurrence"
+ }
+}
+# mail-shared / grant / convert-pdf runs
+78b7eef6-3250-92bf-4882-f90db33d8fd0
+08584062333994758887719208869CU16 Failed 2026-11-22T18:51:26.0031589Z "ActionFailed"
+c076f6d0-e76a-e9e5-cfa0-a6d16692c9ae
+08584062333676499151212027529CU30 Failed 2026-11-22T18:51:57.8286822Z "ActionFailed"
+6492f614-5ef3-7908-961c-d4a1f8a312e8
+08584062333850600666586227031CU17 Failed 2026-11-22T18:51:40.4188128Z "ActionFailed"
+08584062321274213474455520585CU08 Succeeded 2026-11-22T19:12:38.0575004Z ""
+Feed Succeeded OK ""
+Pocet Succeeded OK ""
+# vision/OCR flow 24b88ead-77e4-ff41-2da9-8509a3a69e43
+08584062318229180406857182410CU25 Succeeded 2026-11-22T19:17:42.5611603Z ""
+# výstup (přepis faktury): FAKTURA c. 2026-0142 / Dodavatel: Test s.r.o., ICO 12345678 / Odběratel: EG.D, a.s. / splatnost 15. 12. 2026 / 12 345,00 CZK
+
+# 2026-11-23 po přihlášení člověka (pa-browser-session.mjs login + repair): všechna egd-sonda-* připojení Connected
+# convert-pdf 6492f614-5ef3-7908-961c-d4a1f8a312e8: běh 08584061560729177697363392148CU08 Succeeded (Nacti_docx, Na_PDF, Do_OneDrive, Do_SharePointu)
+# mail-shared 78b7eef6-3250-92bf-4882-f90db33d8fd0: běh 08584061560371391754616334768CU21 Failed, akce Posli (SharedMailboxSendEmailV2) 404 ErrorItemNotFound "The specified object was not found in the store" (Send As pro Tomáše je přidělen, viz sendas-get-recipientpermission.txt)
+# grant c076f6d0-e76a-e9e5-cfa0-a6d16692c9ae: běh 08584061560353790895145255205CU19 Failed, akce Sdilej (GrantAccess) 400 "The selected permission level is not valid" pro roleValue Read
+# grant role varianty e07b38c5-efb7-9468-188a-0c8274f2aea0: Edit, View, Can view, Contribute, Full Control všechny BadRequest (platné hodnoty dává dynamická nabídka GetItemAccessRoleOptions, přes API zatím nezjištěno)
+# queue-llm 766a529e-299f-027d-6f2f-b4cd3a7b5725 (po doplnění item/Title do PatchItem): položka id 2 v Zadosti přidána přes m365 spo listitem add, Vysledek vyplněn po 43 s (měřeno po 10 s, trigger Recurrence 1 min):
+#   "Power Automate je nástroj od Microsoftu pro automatizaci opakujících se úkolů a procesů mezi různými aplikacemi a službami."
+# 2026-11-24 řetěz retez 1cac9ed2-a632-0675-3ac2-eb2ccd8d69f4: běh 08584061219814742534302752492CU05 Succeeded (LLM, Nacti_docx, Do_OneDrive, Na_PDF, Posli [SendEmailV2 s PDF přílohou], Do_SharePointu)
+# 2026-11-24 Premium: subscribedSkus = SPE_E5, BUSINESS_PREMIUM_AND_MICROSOFT_365_COPILOT_FOR_BUSINESS, FLOW_FREE, AGENT_365 (žádný PA Premium); start flow 04cafff2-… (HTTP) → 403 MissingAdequateQuotaPolicy
+# 2026-11-24 Word Online Populate flow 54ef5251-a9e7-f111-84ea-000d3a832204: vznikl Suspended; start → 409 CannotStartUnpublishedSolutionFlow
+# 2026-11-24 doplněné díry
+# excel-update b059d042-deac-947e-f4d0-afb95fd1c69e běh 08584061194338581447147296676CU25 Succeeded; GetItems: Klic A Hodnota zmeneno-flow, Klic B puvodni
+# grant-httprequest 66b0cc58-6e98-8c4b-8a01-5e55a2c512a8 běh 08584061197996115527473851755CU02 Succeeded; roleassignments položky 1: eva.vesela@ = Read
+# grant role varianty 2: 8427c3b5-5189-1c81-415a-1372bea7f5ad běh 08584061199177387194292798074CU28: 7 hodnot (id, view, read, Can edit …) BadRequest
+# mail-shared po FullAccess: 08584061199948292007303024342CU04 a 08584061193248786673320168946CU24 Failed 404 ErrorItemNotFound
+# mail-from eb66b33c-d00d-a077-ada7-cc3c7e2ae9a8 běh 08584061192681984003357588528CU15 Succeeded (SendEmailV2, From = egd-report@)

@@ -1,0 +1,6 @@
+nainstalovano: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/copilot-data2/home/.copilot/skills/egd-data-seznamy
+OK: Copilot skill 'egd-data-seznamy' vidi
+106:  egd-data-seznamy - Nauč SPFx appku EG.D ukládat a upravovat data v SharePoint seznamu tak, aby fungovala i s tisíci záznamy - indexy sloupců (UI, CLI
+nainstalovano: /private/tmp/claude-501/-Users-chocholous-Projects-egd-workshop/938d6b77-a8a5-4ff5-8abd-500404dae43c/scratchpad/copilot-data2/home/.copilot/skills/egd-prvni-appka
+OK: Copilot skill 'egd-prvni-appka' vidi
+107:  egd-prvni-appka - Postav s uživatelem z EG.D první jednoduchou appku na SharePointu nejjednodušší cestou, která v jeho prostředí funguje - SPFx we

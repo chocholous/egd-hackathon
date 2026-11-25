@@ -1,0 +1,8 @@
+PowerShell 7.5.4
+ZS obsahuje DeleteListItems: False; CancelCheckout: True
+--- kontrola přiřazení na seznamu
+Vlastníci webu EGD sonda ms-prava = Úplné řízení
+Pavel Admin (lab) = Úplné řízení
+Objednávky Zadavatelé = Objednávky Zadavatel
+Objednávky Schvalovatelé = Objednávky Schvalovatel
+Objednávky Správci = Úplné řízení

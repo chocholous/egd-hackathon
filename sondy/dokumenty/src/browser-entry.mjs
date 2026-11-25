@@ -1,0 +1,21 @@
+import { genDocx } from './gen-docx.mjs';
+import { makeTemplate, genDocxFromTemplate } from './gen-docxtpl.mjs';
+import { genExcelJs } from './gen-exceljs.mjs';
+import { genSheetJs } from './gen-sheetjs.mjs';
+import { genPptx } from './gen-pptx.mjs';
+import { genPdfLib } from './gen-pdf.mjs';
+import { genPdfMake } from './gen-pdfmake.mjs';
+const b64 = (u) => { let s = ''; for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(s); };
+const unb64 = (s) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+window.runAll = async (regB64, boldB64) => {
+  const res = {}; const reg = unb64(regB64), bold = unb64(boldB64);
+  const go = async (n, f) => { const t = performance.now(); try { const u = await f(); res[n] = { b64: b64(new Uint8Array(u)), ms: Math.round(performance.now() - t) }; } catch (e) { res[n] = { error: String(e && e.message || e) }; } };
+  await go('docx-lib.docx', genDocx);
+  await go('docx-sablona.docx', async () => genDocxFromTemplate(await makeTemplate()));
+  await go('xlsx-exceljs.xlsx', genExcelJs);
+  await go('xlsx-sheetjs.xlsx', async () => genSheetJs());
+  await go('pptx-pptxgenjs.pptx', genPptx);
+  await go('pdf-pdflib.pdf', () => genPdfLib(reg));
+  await go('pdf-pdfmake.pdf', () => genPdfMake(reg, bold));
+  return res;
+};
